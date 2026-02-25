@@ -1,0 +1,27 @@
+List of Dungeons
+
+1. Dungeon of Valor and Ember
+    Tema: Gua vulkanik dan reruntuhan benteng kuno. Penuh dengan monster tipe beast dan prajurit api yang menguji raw power dan pertahanan fisik. Sangat beresonansi dengan class Knight.
+    Boss Depth 20: The Ashen Warlord
+    Reward: Crimson Orb (Melambangkan keberanian dan kekuatan fisik).
+
+2. Dungeon of Knowledge and Wisdom
+    Tema: Perpustakaan kuno yang terdistorsi oleh sihir dan menara astral. Musuh didominasi oleh golem magis, penyihir gila, dan teka-teki ilusi. Sangat beresonansi dengan class Sorcerer.
+    Boss Depth 20: The Grand Archivist
+    Reward: Azure Orb (Melambangkan kecerdasan dan mana yang tak terbatas).
+
+3. Dungeon of Whispers and Shadows
+    Tema: Hutan mati yang selalu diselimuti kabut dan jurang gelap. Dihuni oleh assassin, monster beracun, dan roh-roh penasaran. Menguji kecepatan dan kelincahan (Evasion/AGI). Sangat beresonansi dengan class Wanderer.
+    Boss Depth 20: The Phantom Stalker
+    Reward: Obsidian Orb (Melambangkan kelincahan dan misteri).
+
+4. Dungeon of Thorns and Resilience
+    Tema: Rawa beracun dan labirin akar raksasa di bawah bumi. Musuh di sini memiliki HP yang sangat tebal dan memberikan damage over time (seperti racun). Menguji seberapa tinggi VIT dan daya tahan karakter pemain.
+    Boss Depth 20: The Rotting Behemoth
+    Reward: Emerald Orb (Melambangkan daya tahan dan keabadian alam).
+
+5. Dungeon of Echoes and Destiny
+    Tema: Dimensi pecahan cermin dan kuil suci yang terbengkalai. Dungeon tersulit di antara kelimanya, tempat di mana masa lalu dan masa depan bertabrakan. Monster di sini tidak memiliki kelemahan elemen yang spesifik.
+    Boss Depth 20: The Oracle of Ruin
+    Reward: Radiant Orb (Melambangkan takdir dan penyatuan jiwa).
+
