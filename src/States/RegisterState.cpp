@@ -1,4 +1,4 @@
-#include "LoginState.h"
+#include "RegisterState.h"
 #include "HubState.h"
 #include "Core/StateManager.h"
 #include "../lib/json.hpp" // Library JSON
@@ -7,11 +7,11 @@
 
 using json = nlohmann::json;
 
-LoginState::LoginState() : attemptLogin(false), isLoggedIn(false) {}
+RegisterState::RegisterState() : attemptLogin(false), isLoggedIn(false) {}
 
-void LoginState::init() {}
+void RegisterState::init() {}
 
-void LoginState::handleInput(StateManager& stateManager) {
+void RegisterState::handleInput(StateManager& stateManager) {
     // Karena CLI, input langsung mem-blok layar (wajar untuk game CLI)
     std::cout << "Masukkan Username (ketik 'exit' untuk keluar): ";
     std::cin >> inputUsername;
@@ -27,12 +27,12 @@ void LoginState::handleInput(StateManager& stateManager) {
     attemptLogin = true; // Tandai bahwa user mencoba login
 }
 
-void LoginState::update(StateManager& stateManager) {
+void RegisterState::update(StateManager& stateManager) {
     if (attemptLogin && !isLoggedIn) {
         attemptLogin = false; // Reset trigger
 
         // Buka file JSON
-        std::ifstream file("data/saves.json");
+        std::ifstream file("../data/saves.json");
         if (!file.is_open()) {
             std::cout << "[Error] Gagal membuka data/saves.json! Pastikan file ada.\n";
             return;
@@ -67,7 +67,7 @@ void LoginState::update(StateManager& stateManager) {
     }
 }
 
-void LoginState::render() {
+void RegisterState::render() {
     // Render dipanggil setiap frame, tapi karena CLI kita batasi teksnya agar tidak spam
     // Kita biarkan handleInput yang mengambil alih tampilan form login.
     if (!attemptLogin) {

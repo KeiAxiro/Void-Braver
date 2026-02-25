@@ -1,6 +1,6 @@
 #include "Game.h"
 #include "StateManager.h"
-#include "States/LoginState.h" // Nanti kamu bisa buat file ini
+#include "../States/MainMenuState.h" // Perhatikan path menggunakan ../
 #include <iostream>
 
 Game::Game() : isRunning(false) {}
@@ -8,11 +8,15 @@ Game::~Game() {}
 
 void Game::init() {
     isRunning = true;
-    
-    // Contoh: Masukkan state pertama kamu di sini.
-    // stateManager.pushState(std::make_unique<LoginState>());
     std::cout << "Game Engine Berhasil Diinisialisasi!\n";
-    stateManager.pushState(std::make_unique<LoginState>()); // Mulai dengan layar login
+    
+    // 1. Masukkan layar pertama ke "ruang tunggu"
+    stateManager.pushState(std::make_unique<MainMenuState>());
+    
+    // 2. EKSEKUSI RUANG TUNGGU SEKARANG JUGA!
+    // Wajib dipanggil agar MainMenuState langsung masuk ke tumpukan 
+    // sebelum Game Loop pertama kali berputar.
+    stateManager.processStateChanges(); 
 }
 
 void Game::handleInput() {
@@ -20,16 +24,26 @@ void Game::handleInput() {
 }
 
 void Game::update() {
-    stateManager.update();
-
-    // Jika tumpukan layar habis, matikan game
+    // 1. Cek apakah tumpukan layar habis
     if (!stateManager.hasStates()) {
         isRunning = false; 
+        return;
     }
+
+    // 2. Jalankan logika layar yang sedang aktif saat ini
+    // (Misal: MainMenuState mengecek input dari pemain)
+    stateManager.update();
+
+    // 3. EKSEKUSI RUANG TUNGGU DI SINI (SETELAH UPDATE SELESAI)
+    // Jika update tadi meminta ganti layar, layar akan langsung terganti
+    // sebelum masuk ke tahap render() atau balik meminta input di frame berikutnya.
+    stateManager.processStateChanges(); 
 }
 
 void Game::render() {
-    stateManager.render();
+    if (isRunning && stateManager.hasStates()) {
+        stateManager.render();
+    }
 }
 
 void Game::clean() {

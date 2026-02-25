@@ -21,5 +21,5 @@ public:
     void clean();       ///< Membersihkan sisa data sebelum keluar
 
     /// @brief Mengecek status mesin game
-    bool running() const { return isRunning; } 
+    bool running() const { return stateManager.hasStates(); } // Game tetap berjalan selama masih ada state di dalam tumpukan
 };

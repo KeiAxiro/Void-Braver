@@ -4,7 +4,7 @@
 class ConsoleUI {
 public:
     // Membersihkan layar terminal
-    static void clearScreen();
+ static void clearScreen();
     
     // Mewarnai teks menjadi Magenta (biasanya untuk barang langka/cerita)
     static void printMagenta(const std::string& text);
@@ -14,4 +14,10 @@ public:
     
     // Mengembalikan warna ke standar (putih/abu-abu terminal)
     static void resetColor();
+
+    // Menunggu pemain menekan Enter untuk melanjutkan (biasanya setelah pesan penting)
+    static void pause();
+    
+    // Mengembalikan warna ke standar (putih/abu-abu terminal)
+    static void printHeader(const std::string& title);
 };

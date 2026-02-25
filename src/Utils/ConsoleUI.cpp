@@ -20,3 +20,15 @@ void ConsoleUI::resetColor() {
     // Mengembalikan warna ke bawaan terminal
     std::cout << "\033[0m";
 }
+
+void ConsoleUI::pause() {
+    std::cout << "\nTekan Enter untuk melanjutkan...";
+    std::cin.ignore(10000, '\n'); 
+}
+
+void ConsoleUI::printHeader(const std::string& title) {
+    clearScreen();
+    std::cout << "=======================================\n";
+    std::cout << "          " << title << "          \n";
+    std::cout << "=======================================\n\n";
+}

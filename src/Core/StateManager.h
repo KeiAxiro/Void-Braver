@@ -14,17 +14,29 @@ private:
     /// Tumpukan memori pintar untuk menyimpan layar game
     std::stack<std::unique_ptr<GameState>> states;
 
+    // Antrean memori untuk layar baru
+    std::unique_ptr<GameState> newState;
+    
+    // Bendera penanda status
+    bool isRemoving;
+    bool isAdding;
+    bool isReplacing;
+
 public:
+    StateManager();
     /**
      * @brief Menambah layar baru ke puncak tumpukan.
      * @param newState Pointer unik dari GameState yang baru.
      */
-    void pushState(std::unique_ptr<GameState> newState);
+    void pushState(std::unique_ptr<GameState> state, bool replace = false);
     
     /**
      * @brief Menghapus layar teratas (kembali ke layar sebelumnya).
      */
     void popState();
+
+    /// @brief JANTUNG PERUBAHAN: Dieksekusi dengan aman oleh Game.cpp
+    void processStateChanges();
 
     /// @brief Meneruskan input ke layar yang sedang aktif (paling atas)
     void handleInput();

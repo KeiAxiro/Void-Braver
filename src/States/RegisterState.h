@@ -3,10 +3,10 @@
 #include <string>
 
 /**
- * @class LoginState
+ * @class RegisterState
  * @brief Layar pertama saat game dibuka. Meminta pemain memasukkan PIN.
  */
-class LoginState : public GameState {
+class RegisterState : public GameState {
 private:
     std::string inputUsername;
     std::string inputPassword;
@@ -14,7 +14,7 @@ private:
     bool isLoggedIn;
 
 public:
-    LoginState();
+    RegisterState();
     /// @brief Menyiapkan data awal saat layar login dibuka
     void init() override;
 

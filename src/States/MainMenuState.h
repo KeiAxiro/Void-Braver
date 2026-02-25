@@ -2,18 +2,15 @@
 #include "GameState.h"
 #include <string>
 #include <iostream>
-#include "../lib/json.hpp" // Sesuaikan path jika berbeda
 
-using json = nlohmann::json;
 
-class HubState : public GameState {
+class MainMenuState : public GameState {
 private:
-    std::string accountName; // Data User
-    json playerCharData;     // Data Player/Karakter (dikirim dari Login)
+    
 
 public:
     // Constructor menerima data dari LoginState
-    HubState(const std::string& username, const json& charData);
+    MainMenuState();
 
     void init() override;
     void handleInput(StateManager& stateManager) override;
