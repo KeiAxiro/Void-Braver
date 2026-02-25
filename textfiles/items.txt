@@ -1,0 +1,185 @@
+Consumables
+
+Healing Potion: Memulihkan sejumlah HP (misal: 25% dari Max HP). Sangat penting untuk semua class.
+Mana Elixir: Memulihkan sejumlah Mana/MP (misal: 30% dari Max Mana). Sangat krusial untuk Archon agar bisa terus mengeluarkan sihir.
+Soul Lantern: Memberikan Auto-Revive satu kali kesempatan.
+Infinity spehere: Mengurangi seluruh durasi cooldown skill yang sedang aktif sebanyak 1-2 turn secara instan. 
+
+====================================
+====================================
+
+Equipment - Knight
+
+Weapon
+No	Nama Weapon	            Asal	Weapon ATK	    Keterangan
+1	Rusty Greatsword	    Shop	+10	            Pedang tua yang sudah berkarat.
+2	Iron Claymore	        Shop	+22	            Senjata standar prajurit kerajaan.
+3	Steel Bastard Sword	    Shop	+35	            Lebih ringan namun sangat tajam.
+4	Knight’s Heavy Axe	    Shop	+50	            Kapak berat untuk menghancurkan zirah.
+5	Royal Vanguard Blade	Shop	+70	            Pedang kehormatan penjaga istana.
+6	Ashen Smasher	        Craft	+95	            Dibuat dari lava beku Dungeon of Ember.
+7	Deep-Earth Maul	        Craft	+125	        Palu raksasa dari akar Dungeon of Thorns.
+8	Executioner’s Pride	    Craft	+160	        Senjata legendaris para algojo kerajaan.
+9	Void-Iron Cleaver	    Craft	+210	        Besi yang ditempa dengan energi The Void.
+10	Calamity Breaker	    Craft	+280	        Senjata pamungkas untuk sang Warlord.
+
+Helmet
+No	Nama Helmet	            Asal	HP Bonus	DEF Bonus
+1	Leather Coif	        Shop	+20	        +2
+2	Iron Pot Helm	        Shop	+45	        +5
+3	Steel Sallet	        Shop	+80	        +10
+4	Guard’s Visor	        Shop	+120	    +18
+5	Commander’s Crest	    Shop	+180	    +25
+6	Ember-Steel Mask	    Craft	+260	    +38
+7	Grave-Guardian Helm	    Craft	+350	    +52
+8	Gladiator’s Crown	    Craft	+460	    +70
+9	Abyssal Greathelm	    Craft	+600	    +95
+10	Marshall’s Iron Face	Craft	+800	    +130
+
+Armor
+No	Nama Armor	            Asal	HP Bonus	DEF Bonus
+1	Padded Tunic	        Shop	+50	        +5
+2	Reinforced Leather	    Shop	+110	    +12
+3	Iron Chainmail	        Shop	+200	    +22
+4	Half-Plate Mail	        Shop	+320	    +35
+5	Knight’s Plate	        Shop	+480	    +55
+6	Volcanic Cuirass	    Craft	+700	    +85
+7	Ancient Oak Armor	    Craft	+1000	    +120
+8	Dragonscale Hauberk	    Craft	+1400	    +170
+9	Void-Reaper Plate	    Craft	+1900	    +230
+10	God-King’s Bastion	    Craft	+2500	    +310
+
+No	Nama Boots	            Asal	HP Bonus	DEF Bonus
+1	Traveler’s Boots	    Shop	+15	        +1
+2	Hardened Soles	        Shop	+35	        +3
+3	Iron Greaves	        Shop	+65	        +7
+4	Plated Sabatons	        Shop	+100	    +12
+5	Heavy War-Boots	        Shop	+150	    +20
+6	Magma-Walkers	        Craft	+220	    +32
+7	Ever-Root Greaves	    Craft	+310	    +45
+8	Titan’s Footsteps	    Craft	+420	    +62
+9	Shadow-Step Sabatons	Craft	+560	    +85
+10	Grand Marshall’s Stride	Craft	+750	    +115
+
+====================================
+====================================
+
+Equipment - Sorcerer
+
+No	Nama Weapon	            Asal	Weapon ATK	    Keterangan
+1	Apprentice Wand	        Shop	+15	            Tongkat kayu sederhana untuk pemula.
+2	Birch Staff	            Shop	+30	            Kayu birch yang telah diberkati mana.
+3	Crystal Scepter	        Shop	+48	            Fokus kristal untuk mempertajam mantra.
+4	Scholar's Grimoire	    Shop	+65	            Buku mantra berisi teori sihir dasar.
+5	High Mage Rod	        Shop	+90	            Senjata standar para penyihir istana.
+6	Ignis Core Staff	    Craft	+120	        Inti api dari Dungeon of Ember.
+7	Tome of Eternity	    Craft	+160	        Buku kuno dari Dungeon of Wisdom.
+8	Celestial Spire	        Craft	+210	        Tongkat yang menyerap energi bintang.
+9	Abyssal Eye	            Craft	+280	        Orb yang menatap langsung ke kegelapan.
+10	Genesis Pillar	        Craft	+380	        Senjata pamungkas untuk sang Archon.
+
+No	Nama Helmet	            Asal	HP Bonus	DEF Bonus
+1	Cotton Hood	            Shop	+12	        +1
+2	Silk Circlet	        Shop	+30	        +3
+3	Mage’s Cowl	            Shop	+55	        +6
+4	Sage’s Veil	            Shop	+85	        +10
+5	Wizard’s Tricorn	    Shop	+130	    +15
+6	Cinder Hood	            Craft	+190	    +22
+7	Tiara of Insight	    Craft	+260	    +32
+8	Diadem of Stars	        Craft	+350	    +45
+9	Crown of the Void	    Craft	+480	    +65
+10	Astral Halo	            Craft	+650	    +90
+
+No	Nama Armor	            Asal	HP Bonus	DEF Bonus
+1	Novice Robe	            Shop	+30	        +3
+2	Scholar’s Tunic	        Shop	+75	        +7
+3	Arcane Garb	            Shop	+140	    +14
+4	Mystic Vestment	        Shop	+230	    +22
+5	Archmage’s Cloak	    Shop	+350	    +35
+6	Pyromancer’s Mantle	    Craft	+520	    +55
+7	Elder Root Robe	        Craft	+750	    +80
+8	Nebula Gown	            Craft	+1050	    +115
+9	Voidshaper Shroud	    Craft	+1450	    +160
+10	Eternity Raiment	    Craft	+1950	    +220
+
+No	Nama Boots	            Asal	HP Bonus	DEF Bonus
+1	Cloth Slippers	        Shop	+10	        +1
+2	Linen Shoes	            Shop	+25	        +2
+3	Mage’s Sandals	        Shop	+48	        +5
+4	Enchanter’s Boots	    Shop	+75	        +8
+5	Sorcerer’s Stride	    Shop	+110	    +13
+6	Flame-Walk Shoes	    Craft	+165	    +20
+7	Ley-Line Greaves	    Craft	+235	    +30
+8	Phase Boots	            Craft	+330	    +45
+9	Abyssal Walkers	        Craft	+450	    +65
+10	God-Stepper Soles	    Craft	+620	    +95
+
+====================================
+====================================
+
+Equipment - Wanderer
+
+No	Nama Weapon	            Asal	Weapon ATK	    Keterangan
+1	Short Bow	            Shop	+12	            Busur kayu ringan untuk berburu.
+2	Hunter's Crossbow	    Shop	+25	            Crossbow standar dengan daya tembus stabil.
+3	Composite Bow	        Shop	+40	            Busur campuran kayu dan tulang.
+4	Heavy Arbalest	        Shop	+58	            Crossbow berat dengan mekanisme besi.
+5	Ranger's Longbow	    Shop	+80	            Busur panjang standar pasukan pengintai.
+6	Flamestrike Bow	        Craft	+105	        Busur yang talinya terbuat dari serat api.
+7	Verdant Crossbow	    Craft	+140	        Crossbow organik dari kayu Dungeon of Thorns.
+8	Eagle-Eye Piercer	    Craft	+185	        Busur legendaris dengan akurasi mutlak.
+9	Void-Stinger	        Craft	+245	        Crossbow yang menembakkan energi hampa.
+10	Final Nightfall	        Craft	+330	        Senjata pamungkas untuk sang Nightfall.
+
+No	Nama Helmet	            Asal	HP Bonus	DEF Bonus
+1	Cloth Bandana	        Shop	+15	        +1
+2	Leather Cap	            Shop	+38	        +4
+3	Scout Hood	            Shop	+68	        +8
+4	Reinforced Coif	        Shop	+100	    +14
+5	Tracker’s Mask	        Shop	+155	    +20
+6	Cinder Hood	            Craft	+225	    +30
+7	Silent Nightcap	        Craft	+305	    +42
+8	Assassin’s Visage	    Craft	+405	    +58
+9	Specter’s Gaze	        Craft	+540	    +80
+10	Shroud of Nightfall	    Craft	+720	    +110
+
+ No	Nama Armor	            Asal	HP Bonus	DEF Bonus
+1	Rough Tunic	            Shop	+40	        +4
+2	Leather Jerkin	        Shop	+95	        +10
+3	Studded Vest	        Shop	+170	    +18
+4	Ranger’s Garb	        Shop	+275	    +28
+5	Duelist’s Leather	    Shop	+415	    +45
+6	Salamander Hide	        Craft	+610	    +70
+7	Nature’s Embrace	    Craft	+875	    +100
+8	Mistwalker Tunic	    Craft	+1225	    +140
+9	Abyssal Stealth-Suit	Craft	+1675	    +195
+10	Eternal Night-Skin	    Craft	+2200	    +265
+
+No	Nama Boots	            Asal	HP Bonus	DEF Bonus
+1	Soft Sandals	        Shop	+12	        +1
+2	Leather Boots	        Shop	+30	        +2
+3	Padded Shoes	        Shop	+55	        +6
+4	Scout Greaves	        Shop	+88	        +10
+5	Silent Striders	        Shop	+130	    +17
+6	Magma-Step Boots	    Craft	+190	    +26
+7	Wind-Runner Boots	    Craft	+275	    +38
+8	Shadow-Step Treads	    Craft	+375	    +55
+9	Ghost-Walkers	        Craft	+505	    +75
+10	Nightfall’s Path	    Craft	+680	    +105
+
+====================================
+====================================
+
+Accesories
+
+No	Nama Accessory	    Atribut Baru            Fungsi di Late Game
+1	Iron Ring	        +10% STR	            Bonus makin besar seiring naiknya level Knight.
+2	Glass Monocle	    +10% INT	            Sangat kuat untuk menunjang damage Sorcerer.
+3	Feather Charm	    +10% AGI	            Karena tak ada Evasion, AGI kini menambah Damage Wanderer secara signifikan.
+4	Vitality Band	    +15% Max HP	            Meningkatkan daya tahan secara masif di Level 100.
+5	Mana Crystal	    +20% Max MP         	Memastikan mana pool cukup untuk rotasi skill Tier 3.
+6	Warrior’s Emblem	+8% Total Damage	    Pengali akhir untuk mempercepat clearance musuh.
+7	Steel Gauntlet	    +15% Total DEF	        Sangat krusial untuk menahan serangan The Void.
+8	Medallion of Life	HP Regen +5% / Turn	    Membantu menghemat penggunaan Healing Potion.
+9	Silver Rosary	    +20% Potency Item	    Healing Potion (25%) menjadi (45%) saat dipakai.
+10	Void Pendulum	    -1 Turn Cooldown	    Item paling dicari untuk spamming skill.

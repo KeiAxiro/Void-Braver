@@ -1,0 +1,48 @@
+Tier 1: Knight
+    Cooldown 2 turn - Pommel Strike (Menggantikan Shield Bash): Menghantam wajah musuh dengan keras menggunakan gagang pedang/senjata berat, memiliki peluang besar membuat musuh terkena stun selama 1 turn.
+    Cooldown 1 turn - Iron Cleave: Tebasan horizontal yang sangat brutal dengan jangkauan luas, sepenuhnya mengandalkan stat STR.
+    Cooldown 3 turn - Challenger's Roar: Raungan yang memprovokasi musuh untuk menyerangnya, sekaligus menegangkan otot dan menyesuaikan kuda-kuda untuk meningkatkan DEF diri sendiri selama 2 turn.
+
+Tier 2: Vanguard
+    Cooldown 3 turn - Impact Crater: Melompat dan menghantam tanah dengan ujung senjata, menciptakan gelombang kejut yang merusak keseimbangan musuh.
+    Cooldown 4 turn - Blood and Iron: Skill buff yang memompa adrenalin; mengorbankan 5% HP karakter untuk meningkatkan STR dan DEF secara drastis selama 3 turn.
+    Cooldown 3 turn - Shattering Onslaught: Serangan beruntun menggunakan momentum berat senjata yang mampu menghancurkan (debuff) Defense musuh.
+
+Tier 3: Warlord
+    Cooldown 4 turn - Calamity End: Tebasan vertikal penghancur mematikan. Jika HP musuh berada di bawah 20%, serangan ini memiliki peluang untuk langsung mengeksekusi musuh (Instant Kill).
+    Cooldown 5 turn - Dominion Aura: Memancarkan aura intimidasi murni dari sang Warlord yang secara permanen menurunkan Attack musuh dan menaikkan ketahanan fisik karakter hingga akhir pertarungan.
+    Cooldown 6 turn - Undying Juggernaut: Menolak untuk mati murni karena tekad dan ketebalan zirah. Mengabaikan semua damage yang masuk (Invincible) selama 1 turn dan menyimpan rasa sakit itu untuk meledakkan serangan balik ke musuh di turn berikutnya.
+
+====================================
+
+Tier 1: Sorcerer
+    Cooldown 0 turn - Mana Bolt: Tembakan energi sihir murni berbasis INT.
+    Cooldown 2 turn - Ignite: Membakar musuh, memberikan damage berkelanjutan (DoT) selama 3 turn.
+    Cooldown 3 turn - Arcane Shield: Menciptakan pelindung dari mana untuk menyerap damage yang masuk.
+
+Tier 2: Archmage
+    Cooldown 2 turn - Chain Lightning: Sihir listrik yang melompat antar musuh (jika lebih dari satu) atau memberikan shock.
+    Cooldown 3 turn - Frost Nova: Membekukan musuh, mengurangi AGI musuh secara drastis selama beberapa turn.
+    Cooldown 4 turn - Meteor Fall: Memanggil meteor raksasa dengan multiplier INT yang sangat besar.
+
+Tier 3: Archon
+    Cooldown 5 turn - Abyssal Singularity: Menciptakan titik gravitasi hampa yang menyedot HP musuh secara masif.
+    Cooldown 5 turn - Astral Rebirth: Memulihkan Mana secara instan dan meningkatkan Magic Damage sebesar 50%.
+    Cooldown 6 turn - Void Apocalypse: Mantra pemusnah massal yang mengabaikan semua Resistance musuh.
+
+====================================
+
+Tier 1: Wanderer
+    Cooldown 1 turn - Quick Draw: Serangan cepat yang selalu menyerang pertama kali di awal turn.
+    Cooldown 2 turn - Toxic Arrow: Menembakkan panah beracun yang memberikan status Poison.
+    Cooldown 3 turn - Agility Boost: Meningkatkan stat AGI selama 3 turn.
+
+Tier 2: Nightstalker
+    Cooldown 3 turn - Shadow Strike: Menyerang dari kegelapan, meningkatkan Critical Rate secara drastis.
+    Cooldown 3 turn - Phantom Veil: Meningkatkan Evasion hingga 50% untuk turn berikutnya.
+    Cooldown 3 turn - Blade Dance: Serangan beruntun sebanyak 3-5 kali dengan damage cepat.
+
+Tier 3: Nightfall
+    Cooldown 4 turn - Oblivion Edge: Tebasan yang memiliki peluang kecil untuk membunuh musuh non-bos secara instan.
+    Cooldown 4 turn - Eternal Silence: Serangan yang mencegah musuh menggunakan skill selama 2 turn.
+    Cooldown 5 turn - Nightfall menyatu dengan bayangan selama 1 turn. Menghindar dari seluruh serangan musuh dan menjamin serangan berikutnya adalah Critical Damage sebesar 2.5x. Setelah efek berakhir, Nightfall tidak dapat menggunakan Guard selama 2 turn.
