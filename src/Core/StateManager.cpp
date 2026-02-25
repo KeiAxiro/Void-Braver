@@ -1,18 +1,31 @@
 #include "StateManager.h"
 
-void StateManager::pushState(std::unique_ptr<GameState> newState) {
-    states.push(std::move(newState));
-    states.top()->init(); // Otomatis inisialisasi state baru
+StateManager::StateManager() : isRemoving(false), isAdding(false), isReplacing(false) {}
+
+void StateManager::pushState(std::unique_ptr<GameState> state, bool replace) {
+    isAdding = true;
+    isReplacing = replace;
+    newState = std::move(state);
 }
 
 void StateManager::popState() {
-    if (!states.empty()) {
-        states.pop();
-    }
+    isRemoving = true;
 }
 
-void StateManager::handleInput() {
-    if (!states.empty()) states.top()->handleInput(*this);
+void StateManager::processStateChanges() {
+    if (isRemoving && !states.empty()) {
+        states.pop();
+        isRemoving = false;
+    }
+
+    if (isAdding) {
+        if (isReplacing && !states.empty()) {
+            states.pop();
+        }
+        states.push(std::move(newState));
+        states.top()->init();
+        isAdding = false;
+    }
 }
 
 void StateManager::update() {

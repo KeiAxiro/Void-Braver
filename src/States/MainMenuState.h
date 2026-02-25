@@ -1,21 +1,21 @@
 #pragma once
 #include "../core/GameState.h"
 #include "../core/StateManager.h"
-// #include "Auth/LoginState.h"    // TAMBAHKAN INI
-// #include "Auth/RegisterState.h" // TAMBAHKAN INI
+#include "LoginState.h"    // TAMBAHKAN INI
+#include "RegisterState.h" // TAMBAHKAN INI
 #include <iostream>
 #include <string>
 
-class HubState : public GameState {
+class MainMenuState : public GameState {
 public:
     void init() override {}
 
     void render() override {
         std::cout << "\n====================================\n";
-        std::cout << "      CLI VOID BRAVER - HUB MENU      \n";
+        std::cout << "      CLI RPG GAME - MAIN MENU      \n";
         std::cout << "====================================\n";
-        std::cout << "1. awdawdawdaw\n";
-        std::cout << "2. Rewadawd1gister\n";
+        std::cout << "1. Login\n";
+        std::cout << "2. Register\n";
         std::cout << "3. Exit\n";
         std::cout << "Pilihan: ";
     }
@@ -26,11 +26,11 @@ public:
 
         if (input == "1") {
             // Push layar Login
-            // stateManager.pushState(std::make_unique<LoginState>());
+            stateManager.pushState(std::make_unique<LoginState>());
         } 
         else if (input == "2") {
             // Push layar Register
-            // stateManager.pushState(std::make_unique<RegisterState>());
+            stateManager.pushState(std::make_unique<RegisterState>());
         } 
         else if (input == "3") {
             std::cout << "\n[Sistem]: Keluar dari game...\n";

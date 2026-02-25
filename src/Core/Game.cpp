@@ -1,7 +1,6 @@
 #include "Game.h"
-#include "StateManager.h"
-#include "States/LoginState.h" // Nanti kamu bisa buat file ini
 #include <iostream>
+#include "../states/MainMenuState.h" // Nanti kita buat file ini
 
 Game::Game() : isRunning(false) {}
 Game::~Game() {}
@@ -9,29 +8,24 @@ Game::~Game() {}
 void Game::init() {
     isRunning = true;
     
-    // Contoh: Masukkan state pertama kamu di sini.
-    // stateManager.pushState(std::make_unique<LoginState>());
-    std::cout << "Game Engine Berhasil Diinisialisasi!\n";
-    stateManager.pushState(std::make_unique<LoginState>()); // Mulai dengan layar login
+    // Masukkan layar pertama ke tumpukan
+    stateManager.pushState(std::make_unique<MainMenuState>());
+    stateManager.processStateChanges(); 
 }
 
-void Game::handleInput() {
-    stateManager.handleInput();
-}
+void Game::run() {
+    init();
 
-void Game::update() {
-    stateManager.update();
-
-    // Jika tumpukan layar habis, matikan game
-    if (!stateManager.hasStates()) {
-        isRunning = false; 
+    // Game Loop sinkronous khusus CLI
+    while (isRunning && stateManager.hasStates()) {
+        stateManager.render();   // 1. Gambar teks ke layar
+        stateManager.update();   // 2. Minta input & jalankan logika
+        stateManager.processStateChanges(); // 3. Ganti layar jika diminta
     }
-}
 
-void Game::render() {
-    stateManager.render();
+    clean();
 }
 
 void Game::clean() {
-    std::cout << "\nMembersihkan memori... Game dimatikan dengan aman. Sampai jumpa!\n";
+    std::cout << "\nMenyimpan progres... Keluar dari game dengan aman.\n";
 }

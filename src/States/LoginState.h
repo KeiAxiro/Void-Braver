@@ -1,25 +1,54 @@
 #pragma once
-#include "GameState.h"
+#include "Core/GameState.h"
+#include "Core/StateManager.h"
+#include "Core/AccountManager.h"
+#include "HubState.h"
+#include <iostream>
+#include <string>
 
-/**
- * @class LoginState
- * @brief Layar pertama saat game dibuka. Meminta pemain memasukkan PIN.
- */
 class LoginState : public GameState {
 private:
-    int pinInput;         ///< Menyimpan input angka dari pemain
-    bool isLoginSuccess;  ///< Menandai apakah login berhasil
+    AccountManager accManager;
 
 public:
-    /// @brief Menyiapkan data awal saat layar login dibuka
-    void init() override;
+    void init() override {}
 
-    /// @brief Membaca ketikan angka dari pemain
-    void handleInput(StateManager& stateManager) override;
+    void render() override {
+        std::cout << "\n=== MENU LOGIN ===\n";
+        std::cout << "Ketik 'batal' pada username untuk kembali.\n";
+    }
 
-    /// @brief Mengecek apakah PIN benar dan memindahkan layar jika sukses
-    void update(StateManager& stateManager) override;
+    void update(StateManager& stateManager) override {
+        std::string username, password;
+        
+        std::cout << "Username: ";
+        std::cin >> username;
+        if (username == "batal") {
+            stateManager.popState(); return;
+        }
 
-    /// @brief Menampilkan teks UI ke layar terminal
-    void render() override;
+        std::cout << "Password: ";
+        std::cin >> password;
+
+        if (accManager.loginAccount(username, password)) {
+            std::cout << "\n[Success]: Login berhasil! Selamat datang, " << username << "!\n";
+            // Nanti di sini kita ganti state ke Hub In-Game atau Character Selection!
+            // stateManager.pushState(std::make_unique<CharacterSelectionState>(username), true);
+            
+            // Untuk sementara, kita pop agar kembali ke main menu
+            stateManager.popState(); 
+        } else {
+            std::cout << "\n[Error]: Username atau Password salah!\n";
+        }
+
+        if (accManager.loginAccount(username, password)) {
+            std::cout << "\n[Success]: Login berhasil! Selamat datang, " << username << "!\n";
+            
+            // Masuk ke menu pemilihan karakter (gunakan parameter replace=true 
+            // agar layar Login dibuang dan diganti layar Select Character)
+            stateManager.pushState(std::make_unique<HubState>(), false);
+        } else {
+            std::cout << "\n[Error]: Username atau Password salah!\n";
+        }
+    }
 };
