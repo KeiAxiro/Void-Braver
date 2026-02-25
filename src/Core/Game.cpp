@@ -1,6 +1,6 @@
 #include "Game.h"
 #include "StateManager.h"
-#include "../States/LoginState.h"
+#include "States/LoginState.h"
 #include <iostream>
 
 /// Instance global StateManager untuk mengelola state/layar dalam game
