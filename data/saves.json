@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "username": "admin",
+      "password": "123",
+      "player_data": {
+        "char_name": "Arthur",
+        "level": 5,
+        "hp": 150,
+        "gold": 1000
+      }
+    },
+    {
+      "username": "testuser",
+      "password": "abc",
+      "player_data": {
+        "char_name": "Lancelot",
+        "level": 2,
+        "hp": 80,
+        "gold": 50
+      }
+    }
+  ]
+}
