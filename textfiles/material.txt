@@ -1,0 +1,140 @@
+Knight Materials
+
+    Iron Scrap (Universal/Shop)
+    Heavy Ore (Material Dasar Knight - Drop Dungeon)
+    Refined Plate (Material Olahan - Dibuat di Alchemist dari 5x Heavy Ore)
+    Void Essence (Material Rare - Drop Dungeon Depth tinggi)
+
+Nama Weapon                 Resep Material
+Iron Claymore               10x Iron Scrap + 5x Heavy Ore
+Knight’s Heavy Axe          15x Heavy Ore + 5x Iron Scrap
+Ashen Smasher               30x Heavy Ore + 2x Void Essence
+Deep-Earth Maul             10x Refined Plate + 5x Void Essence
+Executioner’s Pride         15x Refined Plate + 10x Void Essence
+Void-Iron Cleaver           20x Void Essence + 10x Refined Plate
+Calamity Breaker            40x Void Essence + 20x Refined Plate
+
+Nama Helmet	                Resep Material
+Iron Pot Helm 	            6x Iron Scrap + 3x Heavy Ore
+Guard’s Visor 	            12x Heavy Ore + 1x Void Essence
+Ember-Steel Mask            20x Heavy Ore + 3x Void Essence
+Grave-Guardian Helm 	    6x Refined Plate + 5x Void Essence
+Gladiator’s Crown 	        10x Refined Plate + 8x Void Essence
+Abyssal Greathelm 	        15x Void Essence + 10x Refined Plate
+Marshall’s Iron Face 	    25x Void Essence + 15x Refined Plate
+
+Nama Armor	                Resep Material
+Reinforced Leather 	        10x Iron Scrap + 8x Heavy Ore
+Half-Plate Mail             20x Heavy Ore + 2x Void Essence
+Volcanic Cuirass 	        35x Heavy Ore + 5x Void Essence
+Ancient Oak Armor 	        12x Refined Plate + 8x Void Essence
+Dragonscale Hauberk 	    18x Refined Plate + 12x Void Essence
+Void-Reaper Plate 	        30x Void Essence + 15x Refined Plate
+God-King’s Bastion      	50x Void Essence + 25x Refined Plate
+
+Nama Boots	                Resep Material
+Hardened Soles 	            5x Iron Scrap + 3x Heavy Ore
+Plated Sabatons 	        10x Heavy Ore + 1x Void Essence
+Magma-Walkers 	            18x Heavy Ore + 3x Void Essence
+Ever-Root Greaves 	        5x Refined Plate + 5x Void Essence
+Titan’s Footsteps 	        8x Refined Plate + 8x Void Essence
+Shadow-Step Sabatons        12x Void Essence + 8x Refined Plate
+Grand Marshall’s Stride     20x Void Essence + 12x Refined Plate
+
+====================================
+====================================
+
+Sorcerer Materials
+
+    Iron Scrap (Universal/Shop)
+    Mana Shard (Material Dasar Sorcerer - Drop Dungeon)
+    Arcane Crystal (Material Olahan - Dibuat di Alchemist dari 5x Mana Shard)
+    Void Essence (Material Rare - Drop Dungeon Depth tinggi)
+
+Nama Weapon	                Resep Material
+Birch Staff 	            10x Iron Scrap + 5x Mana Shard
+Scholar's Grimoire 	        15x Mana Shard + 5x Iron Scrap
+Ignis Core Staff 	        30x Mana Shard + 2x Void Essence
+Tome of Eternity 	        10x Arcane Crystal + 5x Void Essence
+Celestial Spire 	        15x Arcane Crystal + 10x Void Essence
+Abyssal Eye 	            20x Void Essence + 10x Arcane Crystal
+Genesis Pillar 	            40x Void Essence + 20x Arcane Crystal
+
+Nama Helmet	                Resep Material
+Silk Circlet 	            6x Iron Scrap + 3x Mana Shard
+Sage’s Veil 	            12x Mana Shard + 1x Void Essence
+Cinder Hood 	            20x Mana Shard + 3x Void Essence
+Tiara of Insight 	        6x Arcane Crystal + 5x Void Essence
+Diadem of Stars 	        10x Arcane Crystal + 8x Void Essence
+Crown of the Void 	        15x Void Essence + 10x Arcane Crystal
+Astral Halo 	            25x Void Essence + 15x Arcane Crystal
+
+Nama Armor	                Resep Material
+Scholar’s Tunic             10x Iron Scrap + 8x Mana Shard
+Mystic Vestment 	        20x Mana Shard + 2x Void Essence
+Pyromancer’s Mantle 	    35x Mana Shard + 5x Void Essence
+Elder Root Robe 	        12x Arcane Crystal + 8x Void Essence
+Nebula Gown 	            18x Arcane Crystal + 12x Void Essence
+Voidshaper Shroud 	        30x Void Essence + 15x Arcane Crystal
+Eternity Raiment 	        50x Void Essence + 25x Arcane Crystal
+
+Nama Boots	                Resep Material
+Linen Shoes 	            5x Iron Scrap + 3x Mana Shard
+Enchanter’s Boots 	        10x Mana Shard + 1x Void Essence
+Flame-Walk Shoes            18x Mana Shard + 3x Void Essence
+Ley-Line Greaves 	        5x Arcane Crystal + 5x Void Essence
+Phase Boots                 8x Arcane Crystal + 8x Void Essence
+Abyssal Walkers 	        12x Void Essence + 8x Arcane Crystal
+God-Stepper Soles 	        20x Void Essence + 12x Arcane Crystal
+
+====================================
+====================================
+
+Wanderer Materials
+
+    Iron Scrap (Universal/Shop)
+    Fine Fiber (Material Dasar Wanderer - Drop Dungeon)
+    Silent Thread (Material Olahan - Dibuat di Alchemist dari 5x Fine Fiber)
+    Void Essence (Material Rare - Drop Dungeon Depth tinggi)
+
+Nama Weapon	                Resep Material
+Hunter's Crossbow 	        10x Iron Scrap + 5x Fine Fiber
+Heavy Arbalest 	            15x Fine Fiber + 5x Iron Scrap
+Flamestrike Bow 	        30x Fine Fiber + 2x Void Essence
+Verdant Crossbow 	        10x Silent Thread + 5x Void Essence
+Eagle-Eye Piercer 	        15x Silent Thread + 10x Void Essence
+Void-Stinger 	            20x Void Essence + 10x Silent Thread
+Final Nightfall 	        40x Void Essence + 20x Silent Thread
+
+Nama Helmet	                Resep Material
+Leather Cap 	            6x Iron Scrap + 3x Fine Fiber
+Reinforced Coif 	        12x Fine Fiber + 1x Void Essence
+Cinder Hood 	            20x Fine Fiber + 3x Void Essence
+Silent Nightcap 	        6x Silent Thread + 5x Void Essence
+Assassin’s Visage 	        10x Silent Thread + 8x Void Essence
+Specter’s Gaze 	            15x Void Essence + 10x Silent Thread
+Shroud of Nightfall 	    25x Void Essence + 15x Silent Thread
+
+Nama Armor	                Resep Material
+Leather Jerkin 	            10x Iron Scrap + 8x Fine Fiber
+Ranger’s Garb 	            20x Fine Fiber + 2x Void Essence
+Salamander Hide 	        35x Fine Fiber + 5x Void Essence
+Nature’s Embrace 	        12x Silent Thread + 8x Void Essence
+Mistwalker Tunic 	        18x Silent Thread + 12x Void Essence
+Abyssal Stealth-Suit 	    30x Void Essence + 15x Silent Thread
+Eternal Night-Skin 	        50x Void Essence + 25x Silent Thread
+
+====================================
+====================================
+
+No	Nama Accessory	        Atribut Utama	        Resep Material
+1	Iron Ring	            +10% STR	            20x Heavy Ore + 10x Iron Scrap
+2	Glass Monocle	        +10% INT	            20x Mana Shard + 10x Iron Scrap
+3	Feather Charm	        +10% AGI	            20x Fine Fiber + 10x Iron Scrap
+4	Vitality Band	        +15% Max HP	            10x Heavy Ore + 10x Mana Shard + 10x Fine Fiber
+5	Mana Crystal	        +20% Max MP	            30x Mana Shard + 5x Void Essence
+6	Warrior’s Emblem	    +8% Total Damage	    10x Refined Plate + 10x Arcane Crystal + 10x Silent Thread
+7	Steel Gauntlet	        +15% Total DEF	        15x Refined Plate + 5x Void Essence
+8	Medallion of Life	    HP Regen 5% / Turn	    15x Arcane Crystal + 5x Void Essence
+9	Silver Rosary	        +20% Potency Item	    15x Silent Thread + 5x Void Essence
+10	Void Pendulum	        -1 Turn Cooldown	    30x Void Essence + 5x (Refined Plate + Arcane Crystal + Silent Thread)

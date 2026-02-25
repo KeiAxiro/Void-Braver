@@ -1,0 +1,28 @@
+Tier 1: Knight
+
+   Nama Skill	        Kalkulasi Output	Mana Cost	Cooldown	Mekanik
+    Pommel Strike	    1.2×STR+WeaponATK	15 MP	    2 Turn	    Memberikan efek Stun (Musuh tidak bisa bergerak selama 1 turn).
+    Iron Cleave	        1.8×STR+WeaponATK	10 MP	    1 Turn	    Serangan murni dengan multiplier damage yang stabil.
+    Challenger's Roar	N/A	                20 MP	    3 Turn	    Buff: Meningkatkan 30% Total DEF selama 2 turn.
+====================================
+====================================
+
+Tier 1: Sorcerer
+
+    Nama Skill	        Kalkulasi Output	Mana Cost	Cooldown	Mekanik
+    Mana Bolt	        1.5×INT+WeaponATK	5 MP	    0 Turn	    Serangan dasar sihir tanpa waktu tunggu.
+    Ignite	            Initial: 0.8×INT    20 MP	    2 Turn	    Memberikan damage berkelanjutan (Burn) selama 3 turn.
+                        DoT: 0.4×INT
+    Arcane Shield	    2.5×INT	            25 MP	    3 Turn	    Shield: Menyerap damage sebesar angka output sebelum mengurangi HP.
+
+====================================
+====================================
+
+Tier 1: Wanderer
+
+    Nama Skill	        Kalkulasi Output	Mana Cost	Cooldown	Mekanik
+    Quick Draw	        1.3×AGI+WeaponATK	10 MP	    1 Turn	    Priority: Serangan ini selalu keluar paling pertama dalam satu turn.
+    Toxic Arrow	        Initial: 1.0×AGI    15 MP	    2 Turn	    Memberikan status Poison (Damage per turn) selama 3 turn.
+                        DoT: 0.5×AGI
+    Agility Boost	    N/A	                20 MP	    3 Turn	    Buff: Meningkatkan 25% Stat AGI dasar selama 3 turn.
+
