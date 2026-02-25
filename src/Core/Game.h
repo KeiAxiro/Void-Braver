@@ -1,18 +1,25 @@
 #pragma once
+#include "StateManager.h"
 
+/**
+ * @class Game
+ * @brief Kelas utama yang mengatur siklus hidup (Game Loop) dari awal hingga akhir.
+ */
 class Game {
 private:
-    bool isRunning; // Penanda apakah game masih menyala atau sudah ditutup
+    bool isRunning;           ///< Penanda apakah game masih menyala
+    StateManager stateManager; ///< Manager layar (Sekarang menjadi bagian dari Game, bukan global)
 
 public:
-    Game();  // Konstruktor (dipanggil pertama kali saat game dibuat)
-    ~Game(); // Destruktor (dipanggil saat game dihancurkan)
+    Game();
+    ~Game();
 
-    void init();        // Menyiapkan game (memuat data, dsb)
-    void handleInput(); // Membaca ketikan keyboard pemain
-    void update();      // Menghitung logika (HP berkurang, dsb)
-    void render();      // Menampilkan teks ke layar terminal
-    void clean();       // Membersihkan memori sebelum keluar
+    void init();        ///< Menyiapkan mesin dan memuat state pertama
+    void handleInput(); ///< Membaca input pemain per frame
+    void update();      ///< Menghitung logika game per frame
+    void render();      ///< Menggambar hasil ke layar per frame
+    void clean();       ///< Membersihkan sisa data sebelum keluar
 
-    bool running() { return isRunning; } // Mengecek status game
+    /// @brief Mengecek status mesin game
+    bool running() const { return isRunning; } 
 };

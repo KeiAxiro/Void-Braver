@@ -7,14 +7,17 @@ int main() {
     // 2. Nyalakan dan siapkan mesinnya
     game.init();
 
-    // 3. JANTUNG GAME: Selama game menyala, terus putar siklus ini
+    // 3. JANTUNG GAME (Game Loop): Terus berputar selama game berjalan
     while (game.running()) {
         game.handleInput(); // Baca perintah pemain
         game.update();      // Hitung efek perintahnya
         game.render();      // Tampilkan hasilnya
+        
+        // Catatan: Di game nyata, kamu butuh fungsi "Sleep" atau "Delta Time" 
+        // di sini agar CPU tidak terpakai 100%.
     }
 
-    // 4. Jika siklus berhenti (pemain mengetik 'keluar'), bersihkan sisa data
+    // 4. Bersihkan sisa data saat game keluar
     game.clean();
 
     return 0;

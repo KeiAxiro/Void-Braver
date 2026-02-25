@@ -1,12 +1,13 @@
 #include "StateManager.h"
 
 void StateManager::pushState(std::unique_ptr<GameState> newState) {
-    states.push(std::move(newState)); // Taruh piring baru ke puncak
+    states.push(std::move(newState));
+    states.top()->init(); // Otomatis inisialisasi state baru
 }
 
 void StateManager::popState() {
     if (!states.empty()) {
-        states.pop(); // Buang piring teratas
+        states.pop();
     }
 }
 
