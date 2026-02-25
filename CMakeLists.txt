@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.10)
 
 # 2. Nama proyek game kamu dan bahasa yang dipakai (CXX = C++)
-project(CLI_RPG_Game CXX)
+project(Void-Braver CXX)
 
 # 3. Atur standar C++ (C++17 sangat disarankan agar pustaka JSON bekerja optimal)
 set(CMAKE_CXX_STANDARD 17)
