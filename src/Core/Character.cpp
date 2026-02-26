@@ -1,27 +1,33 @@
-#include "Include/Character.h"
+#include "Core/Character.h"
 #include <algorithm> // Untuk std::max, std::min jika diperlukan nanti
 
 Character::Character(std::string charName, Gender charGender, JobClass charClass)
-    : name(std::move(charName)), gender(charGender), jobClass(charClass) {
+    : name(std::move(charName)), gender(charGender), jobClass(charClass)
+{
     calculateBaseStats();
-    currentHp = maxHp; 
+    currentHp = maxHp;
 }
 
-void Character::calculateBaseStats() {
-    baseStats = Stats(5, 5, 5, 5); 
+void Character::calculateBaseStats()
+{
+    baseStats = Stats(5, 5, 5, 5);
 
-    if (gender == Gender::Male) {
-        baseStats.vit += 2; 
-    } else if (gender == Gender::Female) {
-        baseStats.str += 2; 
+    if (gender == Gender::Male)
+    {
+        baseStats.vit += 2;
+    }
+    else if (gender == Gender::Female)
+    {
+        baseStats.str += 2;
         baseStats.intl += 2;
         baseStats.agi += 2;
     }
 
     maxHp = 100 + (baseStats.vit * 10);
-    
-    if (gender == Gender::Male) {
-        maxHp += (maxHp * 10 / 100); 
+
+    if (gender == Gender::Male)
+    {
+        maxHp += (maxHp * 10 / 100);
     }
 }
 

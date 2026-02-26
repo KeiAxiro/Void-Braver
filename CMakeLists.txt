@@ -1,21 +1,19 @@
-cmake_minimum_required(VERSION 3.20)
+cmake_minimum_required(VERSION 3.10)
+project(Void-Braver)
 
-project(Void-Braver LANGUAGES CXX)
+# Gunakan C++17 (Disarankan karena fitur-fitur modern dan library nlohmann::json)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-set(CMAKE_CXX_STANDARD 23)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_CXX_EXTENSIONS OFF)
+# Otomatis mencari SEMUA file .cpp di dalam folder src dan subfoldernya
+# (Jadi kamu nggak perlu nambahin manual ke sini tiap kali bikin file .cpp baru)
+file(GLOB_RECURSE SOURCES "src/*.cpp")
 
-file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS src/*.cpp)
-
+# Bikin file executable (Void-Braver.exe)
 add_executable(${PROJECT_NAME} ${SOURCES})
 
-target_include_directories(${PROJECT_NAME} PRIVATE
-    src
-    lib
-)
-
-target_compile_options(${PROJECT_NAME} PRIVATE
-    -Wextra
-    -Wpedantic
-)
+# 🔥 BAGIAN PALING PENTING 🔥
+# Beritahu compiler di mana letak folder "include" kita.
+# Berkat baris ini, kamu bisa langsung ketik: #include "Core/AccountManager.h" 
+# di file .cpp manapun tanpa pusing mikirin "../" atau "../../"
+target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)

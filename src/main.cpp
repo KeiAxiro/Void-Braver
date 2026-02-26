@@ -1,8 +1,9 @@
-#include "Core/Include/Game.h"
+#include "Core/Game.h"
 
-int main() {
+int main()
+{
     Game game;
     game.run(); // Menjalankan seluruh siklus game
-    
+
     return 0;
 }

@@ -43,3 +43,6 @@
 /* CMake generated files */
 build/
 .output/
+
+__pycache__/
+*.py
