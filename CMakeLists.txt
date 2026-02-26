@@ -1,21 +1,22 @@
-# 1. Batas versi minimum CMake yang dibutuhkan
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.20)
 
-# 2. Nama proyek game kamu dan bahasa yang dipakai (CXX = C++)
-project(Void-Braver CXX)
+project(Void-Braver LANGUAGES CXX)
 
-# 3. Atur standar C++ (C++17 sangat disarankan agar pustaka JSON bekerja optimal)
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED True)
+set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
 
-# 4. Beri tahu CMake di mana letak "Buku Menu" (file .h / .hpp)
-# Agar file .cpp di folder manapun bisa saling mengenali satu sama lain
-include_directories(${CMAKE_SOURCE_DIR}/src)
-include_directories(${CMAKE_SOURCE_DIR}/lib)
+file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS src/*.cpp)
 
-# 5. TRIK AJAIB UNTUK PEMULA: Kumpulkan semua file .cpp secara otomatis!
-# Perintah ini akan memindai folder src/ beserta semua sub-foldernya (Core, Combat, dll)
-file(GLOB_RECURSE SOURCES "src/*.cpp")
-
-# 6. Rakit semuanya menjadi satu aplikasi (file .exe / executable) yang bisa dimainkan
 add_executable(${PROJECT_NAME} ${SOURCES})
+
+target_include_directories(${PROJECT_NAME} PRIVATE
+    src
+    lib
+)
+
+target_compile_options(${PROJECT_NAME} PRIVATE
+    -Wall
+    -Wextra
+    -Wpedantic
+)
