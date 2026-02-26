@@ -3,14 +3,14 @@
 
 class Game {
 private:
-    bool isRunning;
+    bool isRunning{false};
     StateManager stateManager;
 
 public:
     Game();
-    ~Game();
+    ~Game() = default;
 
     void init();
-    void run();   // Loop utama digabung di sini
+    void run(); 
     void clean();
 };

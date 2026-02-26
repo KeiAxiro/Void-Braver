@@ -1,35 +1,27 @@
-#include "Character.h"
-#include <iostream>
+#include "Include/Character.h"
+#include <algorithm> // Untuk std::max, std::min jika diperlukan nanti
 
-Character::Character(std::string name, Gender gender, JobClass jobClass)
-    : name(name), gender(gender), jobClass(jobClass), 
-      level(1), currentXp(0), unspentStatPoints(0) {
-    
+Character::Character(std::string charName, Gender charGender, JobClass charClass)
+    : name(std::move(charName)), gender(charGender), jobClass(charClass) {
     calculateBaseStats();
-    currentHp = maxHp; // Isi HP sampai penuh saat pertama dibuat
+    currentHp = maxHp; 
 }
 
 void Character::calculateBaseStats() {
-    // Stat dasar umum
     baseStats = Stats(5, 5, 5, 5); 
 
-    // Konsep No. 4: Buff Gender
     if (gender == Gender::Male) {
-        // Male: +10% HP (Nanti dihitung saat kalkulasi MaxHP)
-        // Kita beri base VIT ekstra sebagai contoh
         baseStats.vit += 2; 
     } else if (gender == Gender::Female) {
-        // Female: +10% ATK
         baseStats.str += 2; 
         baseStats.intl += 2;
         baseStats.agi += 2;
     }
 
-    // Kalkulasi Max HP (Konsep No. 8: VIT menambah total HP)
     maxHp = 100 + (baseStats.vit * 10);
     
     if (gender == Gender::Male) {
-        maxHp += (maxHp * 10 / 100); // Ekstra +10% HP untuk Male
+        maxHp += (maxHp * 10 / 100); 
     }
 }
 

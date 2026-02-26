@@ -1,70 +1,58 @@
-#include "AccountManager.h"
+#include "Include/AccountManager.h"
 #include <fstream>
 #include <iostream>
-#include "lib/json.hpp"
 
 using json = nlohmann::json;
 
-AccountManager::AccountManager() : dbFile("../data/databases/accounts.json") {
-    // Buat file JSON kosong jika belum ada saat program jalan
-    std::ifstream file(dbFile);
-    if (!file.is_open()) {
-        std::ofstream newFile(dbFile);
-        newFile << json::object(); // Tulis {}
-        newFile.close();
+AccountManager::AccountManager(std::string filePath) : dbFilePath(std::move(filePath)) {
+    loadDatabase();
+}
+
+void AccountManager::loadDatabase() {
+    std::ifstream file(dbFilePath);
+    if (file.is_open()) {
+        file >> dbCache;
+    } else {
+        dbCache = json::object(); // Buat empty JSON jika file tidak ada
+        saveDatabase();
     }
 }
 
-bool AccountManager::isUsernameTaken(const std::string& username) {
-    std::ifstream file(dbFile);
-    json db;
-    if (file >> db) {
-        return db.contains(username);
+void AccountManager::saveDatabase() {
+    std::ofstream file(dbFilePath);
+    if (file.is_open()) {
+        file << dbCache.dump(4);
     }
-    return false;
+}
+
+bool AccountManager::isUsernameTaken(const std::string& username) const {
+    return dbCache.contains(username);
 }
 
 bool AccountManager::registerAccount(const std::string& username, const std::string& password) {
-    if (isUsernameTaken(username)) return false; // Gagal jika username sudah ada
+    if (isUsernameTaken(username)) return false;
 
-    std::ifstream inFile(dbFile);
-    json db;
-    inFile >> db; // Baca data yang sudah ada
-    inFile.close();
-
-    // Tambahkan user baru. (Catatan: Untuk game sungguhan password harus di-hash!)
-    db[username] = {
-        {"password", password},
-        {"characters", json::array()} // Siapkan slot karakter untuk nanti
+    dbCache[username] = {
+        {"password", password}, // TODO: Integrasikan hashing library seperti Argon2/Bcrypt di sini
+        {"characters", json::array()} 
     };
 
-    std::ofstream outFile(dbFile);
-    outFile << db.dump(4); // Simpan kembali ke file dengan indentasi 4 spasi biar rapi
-    outFile.close();
-
+    saveDatabase(); // Hanya write ke file saat ada perubahan
     return true;
 }
 
 bool AccountManager::loginAccount(const std::string& username, const std::string& password) {
-    std::ifstream file(dbFile);
-    json db;
-    if (file >> db) {
-        if (db.contains(username) && db[username]["password"] == password) {
-            return true; // Login berhasil
-        }
+    if (isUsernameTaken(username)) {
+        return dbCache[username]["password"] == password;
     }
-    return false; // Login gagal (username tidak ada / password salah)
+    return false;
 }
-std::vector<std::string> AccountManager::getCharacterList(const std::string& username) {
+
+std::vector<std::string> AccountManager::getCharacterList(const std::string& username) const {
     std::vector<std::string> charList;
-    std::ifstream file(dbFile);
-    json db;
-    if (file >> db) {
-        if (db.contains(username) && db[username].contains("characters")) {
-            // Looping isi array "characters" di JSON
-            for (const auto& character : db[username]["characters"]) {
-                charList.push_back(character["name"]); 
-            }
+    if (isUsernameTaken(username) && dbCache[username].contains("characters")) {
+        for (const auto& character : dbCache[username]["characters"]) {
+            charList.push_back(character["name"]); 
         }
     }
     return charList;

@@ -1,31 +1,48 @@
-#include "Game.h"
+#include "Include/Game.h"
 #include <iostream>
-#include "../states/MainMenuState.h" // Nanti kita buat file ini
+#include "States/Include/MainMenuState.h" // Atau .h jika sudah dipisah
+#include "Utils/ConsoleUI.h" // 
 
+// 1. HARUS ADA: Constructor
 Game::Game() : isRunning(false) {}
-Game::~Game() {}
 
+// 3. HARUS ADA: Fungsi Init
 void Game::init() {
     isRunning = true;
-    
-    // Masukkan layar pertama ke tumpukan
+    // Berikan state awal
     stateManager.pushState(std::make_unique<MainMenuState>());
     stateManager.processStateChanges(); 
 }
 
-void Game::run() {
-    init();
-
-    // Game Loop sinkronous khusus CLI
-    while (isRunning && stateManager.hasStates()) {
-        stateManager.render();   // 1. Gambar teks ke layar
-        stateManager.update();   // 2. Minta input & jalankan logika
-        stateManager.processStateChanges(); // 3. Ganti layar jika diminta
-    }
-
-    clean();
+// 4. HARUS ADA: Fungsi Clean
+void Game::clean() {
+    std::cout << "\n[Sistem]: Menyimpan data dan keluar...\n";
 }
 
-void Game::clean() {
-    std::cout << "\nMenyimpan progres... Keluar dari game dengan aman.\n";
+void Game::run() {
+    init(); 
+
+    while (isRunning && stateManager.hasStates()) {
+        // [OPSIONAL] Bersihkan terminal tiap frame jika kamu punya fungsi clearScreen
+        ConsoleUI::clearScreen(); 
+
+        // --- TAMBAHKAN BLOK KODE INI ---
+        // Cek apakah ada notifikasi/pesan sistem dari State sebelumnya
+        if (!stateManager.getNotify().empty()) {
+            std::cout << "\n" << stateManager.getNotify() << "\n";
+            stateManager.clearNotify(); // Wajib di-clear agar tidak muncul terus-menerus
+        }
+        // -------------------------------
+
+        // Render UI dari State yang sedang aktif
+        stateManager.render();
+        
+        // Minta input dan proses logika
+        stateManager.update();
+        
+        // Ganti state jika ada perintah pindah menu
+        stateManager.processStateChanges();
+    }
+
+    clean(); 
 }

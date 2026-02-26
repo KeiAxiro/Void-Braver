@@ -7,7 +7,8 @@ class GameState {
 public:
     virtual ~GameState() = default;
     
-    virtual void init() = 0; 
+// Di dalam GameState.h
+virtual void init(StateManager& stateManager) = 0; // Tambahkan parameter ini
     
     // update() sekarang bertugas: meminta std::cin DAN memproses logikanya
     virtual void update(StateManager& stateManager) = 0; 

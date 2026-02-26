@@ -1,6 +1,4 @@
-#include "StateManager.h"
-
-StateManager::StateManager() : isRemoving(false), isAdding(false), isReplacing(false) {}
+#include "Include/StateManager.h"
 
 void StateManager::pushState(std::unique_ptr<GameState> state, bool replace) {
     isAdding = true;
@@ -12,28 +10,41 @@ void StateManager::popState() {
     isRemoving = true;
 }
 
+// void StateManager::clearState(){
+//     while (!states.empty()) {
+//         states.pop();
+//     }
+// }
+
 void StateManager::processStateChanges() {
     if (isRemoving && !states.empty()) {
         states.pop();
         isRemoving = false;
     }
 
-    if (isAdding) {
+    if (isAdding && newState) {
         if (isReplacing && !states.empty()) {
             states.pop();
         }
+        
         states.push(std::move(newState));
-        states.top()->init();
+        states.top()->init(*this); // Panggil init() saat state baru ditambahkan
+        
         isAdding = false;
+        isReplacing = false;
     }
 }
 
 void StateManager::update() {
-    if (!states.empty()) states.top()->update(*this);
+    if (!states.empty()) {
+        states.top()->update(*this); 
+    }
 }
 
 void StateManager::render() {
-    if (!states.empty()) states.top()->render();
+    if (!states.empty()) {
+        states.top()->render();
+    }
 }
 
 bool StateManager::hasStates() const {
