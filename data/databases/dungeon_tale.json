@@ -1,0 +1,842 @@
+[
+  {
+    "tale_id": "1",
+    "dungeon_id": "1",
+    "depth": "1",
+    "chapter_name": "Bab 1: Memasuki Reruntuhan",
+    "depth_title": "Bara Api yang Memanggil",
+    "lore_content": "The Chronicler menceritakan masa lalu benteng ini sebelum hancur."
+  },
+  {
+    "tale_id": "2",
+    "dungeon_id": "1",
+    "depth": "2",
+    "chapter_name": "Bab 1: Memasuki Reruntuhan",
+    "depth_title": "Jejak Pasukan Penjaga",
+    "lore_content": "Ditemukannya sisa-sisa zirah para prajurit kerajaan."
+  },
+  {
+    "tale_id": "3",
+    "dungeon_id": "1",
+    "depth": "3",
+    "chapter_name": "Bab 1: Memasuki Reruntuhan",
+    "depth_title": "Runtuhnya Tembok Obsidian",
+    "lore_content": "Kisah hari pertama benteng ini diserang oleh sesuatu yang tak kasat mata."
+  },
+  {
+    "tale_id": "4",
+    "dungeon_id": "1",
+    "depth": "4",
+    "chapter_name": "Bab 1: Memasuki Reruntuhan",
+    "depth_title": "Raungan dari Kawah Bawah",
+    "lore_content": "The Chronicler menjelaskan asal-usul monster buas yang kini menghuni tempat ini."
+  },
+  {
+    "tale_id": "5",
+    "dungeon_id": "1",
+    "depth": "5",
+    "chapter_name": "Bab 1: Memasuki Reruntuhan",
+    "depth_title": "Abu yang Tak Pernah Padam",
+    "lore_content": "Menyadari bahwa api di benteng ini menolak untuk mati, menahan kutukan."
+  },
+  {
+    "tale_id": "6",
+    "dungeon_id": "1",
+    "depth": "6",
+    "chapter_name": "Bab 2: Invasi Kegelapan",
+    "depth_title": "Senjata Patah di Lautan Magma",
+    "lore_content": "Kisah tentang para Blacksmith yang bekerja siang malam membuat senjata penangkal bayangan."
+  },
+  {
+    "tale_id": "7",
+    "dungeon_id": "1",
+    "depth": "7",
+    "chapter_name": "Bab 2: Invasi Kegelapan",
+    "depth_title": "Sumpah Sang Kesatria Merah",
+    "lore_content": "Memperkenalkan sosok Jenderal yang memimpin pertahanan."
+  },
+  {
+    "tale_id": "8",
+    "dungeon_id": "1",
+    "depth": "8",
+    "chapter_name": "Bab 2: Invasi Kegelapan",
+    "depth_title": "Ketika Langit Menjadi Gelap",
+    "lore_content": "Deskripsi mengerikan dari The Chronicler saat The Void mulai menelan langit benteng."
+  },
+  {
+    "tale_id": "9",
+    "dungeon_id": "1",
+    "depth": "9",
+    "chapter_name": "Bab 2: Invasi Kegelapan",
+    "depth_title": "Keputusasaan di Ruang Barikade",
+    "lore_content": "Jeritan dan ketakutan prajurit biasa yang menghadapi entitas tanpa wujud."
+  },
+  {
+    "tale_id": "10",
+    "dungeon_id": "1",
+    "depth": "10",
+    "chapter_name": "Bab 2: Invasi Kegelapan",
+    "depth_title": "Kejatuhan Sang Jenderal",
+    "lore_content": "Kekalahan sang Jenderal yang heroik namun tragis di tengah jembatan lava."
+  },
+  {
+    "tale_id": "11",
+    "dungeon_id": "1",
+    "depth": "11",
+    "chapter_name": "Bab 3: Korupsi Api",
+    "depth_title": "Api yang Berubah Hitam",
+    "lore_content": "The Chronicler menjelaskan bagaimana The Void mencemari elemen api di gunung tersebut."
+  },
+  {
+    "tale_id": "12",
+    "dungeon_id": "1",
+    "depth": "12",
+    "chapter_name": "Bab 3: Korupsi Api",
+    "depth_title": "Monster yang Lahir dari Kepanikan",
+    "lore_content": "Mutasi para prajurit menjadi monster beast karena energi gelap."
+  },
+  {
+    "tale_id": "13",
+    "dungeon_id": "1",
+    "depth": "13",
+    "chapter_name": "Bab 3: Korupsi Api",
+    "depth_title": "Pesan Terakhir di Dinding Hangus",
+    "lore_content": "Sebuah catatan darah dari prajurit yang meminta maaf pada keluarganya."
+  },
+  {
+    "tale_id": "14",
+    "dungeon_id": "1",
+    "depth": "14",
+    "chapter_name": "Bab 3: Korupsi Api",
+    "depth_title": "Kebangkitan Pasukan Abu",
+    "lore_content": "Prajurit yang telah mati dihidupkan kembali sebagai boneka The Void."
+  },
+  {
+    "tale_id": "15",
+    "dungeon_id": "1",
+    "depth": "15",
+    "chapter_name": "Bab 3: Korupsi Api",
+    "depth_title": "Lorong Keputusasaan",
+    "lore_content": "Jalan turun menuju inti gunung yang kini dipenuhi aura kematian pekat."
+  },
+  {
+    "tale_id": "16",
+    "dungeon_id": "1",
+    "depth": "16",
+    "chapter_name": "Bab 4: Pusat Kawah & Sang Penjaga",
+    "depth_title": "Jantung Gunung Berapi",
+    "lore_content": "Penjelasan tentang ruang magma tempat esensi kerajaan dulu disimpan."
+  },
+  {
+    "tale_id": "17",
+    "dungeon_id": "1",
+    "depth": "17",
+    "chapter_name": "Bab 4: Pusat Kawah & Sang Penjaga",
+    "depth_title": "Gema Peperangan yang Terlupakan",
+    "lore_content": "Mendengar ilusi suara peperangan masa lalu yang terjebak dalam ruang waktu."
+  },
+  {
+    "tale_id": "18",
+    "dungeon_id": "1",
+    "depth": "18",
+    "chapter_name": "Bab 4: Pusat Kawah & Sang Penjaga",
+    "depth_title": "Kegilaan The Ashen Warlord",
+    "lore_content": "Sang Jenderal dari Depth 7 yang kini dibangkitkan oleh The Void menjadi Bos penjaga."
+  },
+  {
+    "tale_id": "19",
+    "dungeon_id": "1",
+    "depth": "19",
+    "chapter_name": "Bab 4: Pusat Kawah & Sang Penjaga",
+    "depth_title": "Percikan Harapan Terakhir",
+    "lore_content": "Kesadaran The Ashen Warlord yang meronta-ronta di dalam kendali The Void, menunggu untuk dibebaskan."
+  },
+  {
+    "tale_id": "20",
+    "dungeon_id": "1",
+    "depth": "20",
+    "chapter_name": "Bab 4: Pusat Kawah & Sang Penjaga",
+    "depth_title": "Lahirnya Crimson Orb",
+    "lore_content": "Cerita penutup dari pengorbanan jiwa sang Warlord yang mengkristal menjadi Crimson Orb setelah dikalahkan."
+  },
+  {
+    "tale_id": "21",
+    "dungeon_id": "2",
+    "depth": "1",
+    "chapter_name": "Bab 1: Era Keemasan",
+    "depth_title": "Gerbang Pengetahuan Abadi",
+    "lore_content": "The Chronicler mengenang masa ketika cendekiawan dari seluruh penjuru dunia berkumpul di tempat ini."
+  },
+  {
+    "tale_id": "22",
+    "dungeon_id": "2",
+    "depth": "2",
+    "chapter_name": "Bab 1: Era Keemasan",
+    "depth_title": "Rak Buku Setinggi Bintang",
+    "lore_content": "Deskripsi tentang Menara Astral, tempat pengetahuan dari bumi dan langit disimpan."
+  },
+  {
+    "tale_id": "23",
+    "dungeon_id": "2",
+    "depth": "3",
+    "chapter_name": "Bab 1: Era Keemasan",
+    "depth_title": "Simfoni Tinta dan Kertas",
+    "lore_content": "Kehidupan damai para penyihir yang mendedikasikan hidupnya murni untuk penelitian."
+  },
+  {
+    "tale_id": "24",
+    "dungeon_id": "2",
+    "depth": "4",
+    "chapter_name": "Bab 1: Era Keemasan",
+    "depth_title": "Goresan Tinta yang Bergetar",
+    "lore_content": "Anomali pertama: buku-buku kuno mulai menulis halamannya sendiri dengan bahasa yang tak dikenali."
+  },
+  {
+    "tale_id": "25",
+    "dungeon_id": "2",
+    "depth": "5",
+    "chapter_name": "Bab 1: Era Keemasan",
+    "depth_title": "Ramalan dari Celah Bintang",
+    "lore_content": "Penemuan sebuah perkamen rahasia yang meramalkan kedatangan entitas tanpa wujud: The Void."
+  },
+  {
+    "tale_id": "26",
+    "dungeon_id": "2",
+    "depth": "6",
+    "chapter_name": "Bab 2: Rasa Ingin Tahu yang Mematikan",
+    "depth_title": "Bisikan di Balik Halaman",
+    "lore_content": "Suara-suara aneh mulai merasuki pikiran para pembaca, membuat mereka terjaga berhari-hari."
+  },
+  {
+    "tale_id": "27",
+    "dungeon_id": "2",
+    "depth": "7",
+    "chapter_name": "Bab 2: Rasa Ingin Tahu yang Mematikan",
+    "depth_title": "Eksperimen Sang Alkemis Gila",
+    "lore_content": "Usaha putus asa para penyihir menggunakan sihir hitam untuk menciptakan perisai pelindung."
+  },
+  {
+    "tale_id": "28",
+    "dungeon_id": "2",
+    "depth": "8",
+    "chapter_name": "Bab 2: Rasa Ingin Tahu yang Mematikan",
+    "depth_title": "Pecahnya Kaca Realita",
+    "lore_content": "Kegagalan eksperimen yang menyebabkan ruang dan waktu di dalam perpustakaan mulai terdistorsi."
+  },
+  {
+    "tale_id": "29",
+    "dungeon_id": "2",
+    "depth": "9",
+    "chapter_name": "Bab 2: Rasa Ingin Tahu yang Mematikan",
+    "depth_title": "Debat Berdarah",
+    "lore_content": "Kewarasan yang hilang; para cendekiawan mulai saling membunuh karena paranoia."
+  },
+  {
+    "tale_id": "30",
+    "dungeon_id": "2",
+    "depth": "10",
+    "chapter_name": "Bab 2: Rasa Ingin Tahu yang Mematikan",
+    "depth_title": "Pemberontakan Golem Penjaga",
+    "lore_content": "Golem magis yang diciptakan untuk melindungi buku, kini diretas oleh The Void dan membantai penciptanya."
+  },
+  {
+    "tale_id": "31",
+    "dungeon_id": "2",
+    "depth": "11",
+    "chapter_name": "Bab 3: Labirin Ilusi dan Distorsi",
+    "depth_title": "Koridor Tanpa Ujung",
+    "lore_content": "Lorong perpustakaan melipat dirinya sendiri menjadi labirin yang tak bisa diselesaikan."
+  },
+  {
+    "tale_id": "32",
+    "dungeon_id": "2",
+    "depth": "12",
+    "chapter_name": "Bab 3: Labirin Ilusi dan Distorsi",
+    "depth_title": "Gravitasi yang Runtuh",
+    "lore_content": "Puing-puing bangunan, buku, dan mayat penyihir yang melayang di udara melawan gravitasi."
+  },
+  {
+    "tale_id": "33",
+    "dungeon_id": "2",
+    "depth": "13",
+    "chapter_name": "Bab 3: Labirin Ilusi dan Distorsi",
+    "depth_title": "Buku Berkulit Dosa",
+    "lore_content": "Penemuan grimoire terkutuk yang akan menyerap jiwa siapapun yang berani membacanya."
+  },
+  {
+    "tale_id": "34",
+    "dungeon_id": "2",
+    "depth": "14",
+    "chapter_name": "Bab 3: Labirin Ilusi dan Distorsi",
+    "depth_title": "Bayangan Masa Lalu",
+    "lore_content": "Teror ilusi di mana The Void menampilkan ketakutan terbesar dari pikiran sang Hero."
+  },
+  {
+    "tale_id": "35",
+    "dungeon_id": "2",
+    "depth": "15",
+    "chapter_name": "Bab 3: Labirin Ilusi dan Distorsi",
+    "depth_title": "Tangisan di Menara Lonceng",
+    "lore_content": "Jeritan jiwa-jiwa cendekiawan yang terjebak di antara dimensi, tidak hidup namun tidak bisa mati."
+  },
+  {
+    "tale_id": "36",
+    "dungeon_id": "2",
+    "depth": "16",
+    "chapter_name": "Bab 4: Inti Menara & Sang Pustakawan",
+    "depth_title": "Ruang Baca Sang Pemimpin",
+    "lore_content": "Memasuki tempat suci milik penyihir terkuat di kerajaan, sang kepala perpustakaan."
+  },
+  {
+    "tale_id": "37",
+    "dungeon_id": "2",
+    "depth": "17",
+    "chapter_name": "Bab 4: Inti Menara & Sang Pustakawan",
+    "depth_title": "Tinta Menjadi Darah",
+    "lore_content": "Seluruh pengetahuan dan tulisan di ruangan ini telah terkontaminasi penuh oleh energi hitam The Void."
+  },
+  {
+    "tale_id": "38",
+    "dungeon_id": "2",
+    "depth": "18",
+    "chapter_name": "Bab 4: Inti Menara & Sang Pustakawan",
+    "depth_title": "Obsesi The Grand Archivist",
+    "lore_content": "Sang kepala perpustakaan rela menjual jiwanya pada The Void demi mengawetkan seluruh buku."
+  },
+  {
+    "tale_id": "39",
+    "dungeon_id": "2",
+    "depth": "19",
+    "chapter_name": "Bab 4: Inti Menara & Sang Pustakawan",
+    "depth_title": "Mata yang Melihat Segalanya",
+    "lore_content": "Wujud mutasi The Grand Archivist yang kini menyatu dengan perpustakaan itu sendiri."
+  },
+  {
+    "tale_id": "40",
+    "dungeon_id": "2",
+    "depth": "20",
+    "chapter_name": "Bab 4: Inti Menara & Sang Pustakawan",
+    "depth_title": "Lahirnya Azure Orb",
+    "lore_content": "Jiwanya disucikan kembali bersama intisari pengetahuan kerajaan mengkristal menjadi Azure Orb."
+  },
+  {
+    "tale_id": "41",
+    "dungeon_id": "3",
+    "depth": "1",
+    "chapter_name": "Bab 1: Hutan yang Terlupakan",
+    "depth_title": "Kanopi Zamrud yang Memudar",
+    "lore_content": "Masa ketika daun-daun di hutan ini bersinar di bawah sinar bulan, sebelum kabut menelan segalanya."
+  },
+  {
+    "tale_id": "42",
+    "dungeon_id": "3",
+    "depth": "2",
+    "chapter_name": "Bab 1: Hutan yang Terlupakan",
+    "depth_title": "Jejak Kaki Tanpa Suara",
+    "lore_content": "Pengenalan tentang ordo pelindung bayangan kerajaan; prajurit elit yang bergerak tanpa suara."
+  },
+  {
+    "tale_id": "43",
+    "dungeon_id": "3",
+    "depth": "3",
+    "chapter_name": "Bab 1: Hutan yang Terlupakan",
+    "depth_title": "Nyanyian Burung Hantu yang Terdiam",
+    "lore_content": "Kisah sedih saat hewan-hewan dan roh penjaga hutan mulai mati satu per satu."
+  },
+  {
+    "tale_id": "44",
+    "dungeon_id": "3",
+    "depth": "4",
+    "chapter_name": "Bab 1: Hutan yang Terlupakan",
+    "depth_title": "Kabut yang Mengaburkan Arah",
+    "lore_content": "The Void mengubah embun pagi menjadi kabut hitam yang membuat pemburu tersesat di rumah sendiri."
+  },
+  {
+    "tale_id": "45",
+    "dungeon_id": "3",
+    "depth": "5",
+    "chapter_name": "Bab 1: Hutan yang Terlupakan",
+    "depth_title": "Mata di Balik Rimbunan Gelap",
+    "lore_content": "Satwa liar mulai bermutasi menjadi monster buas dengan mata menyala."
+  },
+  {
+    "tale_id": "46",
+    "dungeon_id": "3",
+    "depth": "6",
+    "chapter_name": "Bab 2: Paranoia dan Pengkhianatan",
+    "depth_title": "Racun di Ujung Belati",
+    "lore_content": "Para pemburu mulai menggunakan racun terlarang dan ilmu hitam untuk melawan anomali hutan."
+  },
+  {
+    "tale_id": "47",
+    "dungeon_id": "3",
+    "depth": "7",
+    "chapter_name": "Bab 2: Paranoia dan Pengkhianatan",
+    "depth_title": "Bisikan yang Membelah Pikiran",
+    "lore_content": "The Void mulai membisikkan kebohongan, memicu benih kecurigaan di antara para assassin."
+  },
+  {
+    "tale_id": "48",
+    "dungeon_id": "3",
+    "depth": "8",
+    "chapter_name": "Bab 2: Paranoia dan Pengkhianatan",
+    "depth_title": "Ilusi Tarian Daun Gugur",
+    "lore_content": "Halusinasi massal akibat spora beracun; kawan terlihat seperti monster."
+  },
+  {
+    "tale_id": "49",
+    "dungeon_id": "3",
+    "depth": "9",
+    "chapter_name": "Bab 2: Paranoia dan Pengkhianatan",
+    "depth_title": "Pohon Ek Tempat Menggantung Dosa",
+    "lore_content": "Penemuan pelindung bayangan yang saling mengeksekusi saudara sendiri karena paranoia."
+  },
+  {
+    "tale_id": "50",
+    "dungeon_id": "3",
+    "depth": "10",
+    "chapter_name": "Bab 2: Paranoia dan Pengkhianatan",
+    "depth_title": "Putusnya Tali Persaudaraan",
+    "lore_content": "Pertumpahan darah terakhir mengubah hutan pelindung menjadi kuburan massal."
+  },
+  {
+    "tale_id": "51",
+    "dungeon_id": "3",
+    "depth": "11",
+    "chapter_name": "Bab 3: Turun ke Jurang Keputusasaan",
+    "depth_title": "Jurang Tanpa Dasar",
+    "lore_content": "Jalan setapak sempit menuju celah bumi yang gelap; satu langkah salah berarti mati."
+  },
+  {
+    "tale_id": "52",
+    "dungeon_id": "3",
+    "depth": "12",
+    "chapter_name": "Bab 3: Turun ke Jurang Keputusasaan",
+    "depth_title": "Akar Berdarah yang Menjalar",
+    "lore_content": "Akar-akar pohon raksasa yang kini hidup dan menghisap darah dari mayat."
+  },
+  {
+    "tale_id": "53",
+    "dungeon_id": "3",
+    "depth": "13",
+    "chapter_name": "Bab 3: Turun ke Jurang Keputusasaan",
+    "depth_title": "Gema Tangisan di Bawah Tanah",
+    "lore_content": "Roh pelindung bayangan terjebak; jiwa mereka diikat oleh The Void."
+  },
+  {
+    "tale_id": "54",
+    "dungeon_id": "3",
+    "depth": "14",
+    "chapter_name": "Bab 3: Turun ke Jurang Keputusasaan",
+    "depth_title": "Bunga Kematian yang Mekar",
+    "lore_content": "Flora mematikan yang menyemburkan gas pelumpuh saraf."
+  },
+  {
+    "tale_id": "55",
+    "dungeon_id": "3",
+    "depth": "15",
+    "chapter_name": "Bab 3: Turun ke Jurang Keputusasaan",
+    "depth_title": "Jembatan Akar Rapuh",
+    "lore_content": "Ujian keseimbangan di atas jurang gelap, makhluk bayangan siap menarik siapa saja yang lengah."
+  },
+  {
+    "tale_id": "56",
+    "dungeon_id": "3",
+    "depth": "16",
+    "chapter_name": "Bab 4: Sarang Sang Pengintai",
+    "depth_title": "Sarang Sang Laba-laba Bayangan",
+    "lore_content": "Memasuki pusat episentrum kabut, tempat di mana cahaya sama sekali tidak bisa masuk."
+  },
+  {
+    "tale_id": "57",
+    "dungeon_id": "3",
+    "depth": "17",
+    "chapter_name": "Bab 4: Sarang Sang Pengintai",
+    "depth_title": "Siluet yang Menari dalam Gelap",
+    "lore_content": "Menghadapi serangan beruntun dari entitas super cepat yang sulit ditangkap mata."
+  },
+  {
+    "tale_id": "58",
+    "dungeon_id": "3",
+    "depth": "18",
+    "chapter_name": "Bab 4: Sarang Sang Pengintai",
+    "depth_title": "Kekosongan Hati The Phantom Stalker",
+    "lore_content": "Pemimpin assassin menyerahkan jiwanya pada The Void agar anak buahnya diampuni, namun ia ditipu."
+  },
+  {
+    "tale_id": "59",
+    "dungeon_id": "3",
+    "depth": "19",
+    "chapter_name": "Bab 4: Sarang Sang Pengintai",
+    "depth_title": "Tatapan Kosong Sang Pembunuh",
+    "lore_content": "Wujud mutasi The Phantom Stalker yang kini hanya memiliki satu insting dasar: membunuh."
+  },
+  {
+    "tale_id": "60",
+    "dungeon_id": "3",
+    "depth": "20",
+    "chapter_name": "Bab 4: Sarang Sang Pengintai",
+    "depth_title": "Kelahiran Obsidian Orb",
+    "lore_content": "Jiwa sang pemimpin bebas, meninggalkan esensi kelincahan yang memadat menjadi Obsidian Orb."
+  },
+  {
+    "tale_id": "61",
+    "dungeon_id": "4",
+    "depth": "1",
+    "chapter_name": "Bab 1: Suaka yang Membusuk",
+    "depth_title": "Mata Air Kehidupan",
+    "lore_content": "The Chronicler mengenang masa ketika air rawa ini bisa menyembuhkan luka separah apa pun."
+  },
+  {
+    "tale_id": "62",
+    "dungeon_id": "4",
+    "depth": "2",
+    "chapter_name": "Bab 1: Suaka yang Membusuk",
+    "depth_title": "Akar Penyangga Bumi",
+    "lore_content": "Kisah tentang pohon-pohon raksasa yang akarnya menembus hingga ke inti dunia."
+  },
+  {
+    "tale_id": "63",
+    "dungeon_id": "4",
+    "depth": "3",
+    "chapter_name": "Bab 1: Suaka yang Membusuk",
+    "depth_title": "Spora Ungu Pertama",
+    "lore_content": "Awal mula jatuhnya kutukan The Void yang turun seperti salju beracun dari langit."
+  },
+  {
+    "tale_id": "64",
+    "dungeon_id": "4",
+    "depth": "4",
+    "chapter_name": "Bab 1: Suaka yang Membusuk",
+    "depth_title": "Air yang Mengubah Wujud",
+    "lore_content": "Mata air jernih mulai berubah menjadi lumpur hitam kental yang membakar kulit."
+  },
+  {
+    "tale_id": "65",
+    "dungeon_id": "4",
+    "depth": "5",
+    "chapter_name": "Bab 1: Suaka yang Membusuk",
+    "depth_title": "Duri Penolakan Alam",
+    "lore_content": "Flora di rawa mencoba melawan kutukan dengan menumbuhkan duri-duri raksasa."
+  },
+  {
+    "tale_id": "66",
+    "dungeon_id": "4",
+    "depth": "6",
+    "chapter_name": "Bab 2: Bertahan di Tengah Kelayuan",
+    "depth_title": "Lumpur dan Besi",
+    "lore_content": "Para petarung rawa menutupi tubuh dengan lumpur ajaib untuk menahan gigitan mutan."
+  },
+  {
+    "tale_id": "67",
+    "dungeon_id": "4",
+    "depth": "7",
+    "chapter_name": "Bab 2: Bertahan di Tengah Kelayuan",
+    "depth_title": "Pawai Para Raksasa",
+    "lore_content": "Hewan purba masif mulai kehilangan akal sehat karena terus menghirup miasma."
+  },
+  {
+    "tale_id": "68",
+    "dungeon_id": "4",
+    "depth": "8",
+    "chapter_name": "Bab 2: Bertahan di Tengah Kelayuan",
+    "depth_title": "Tenggelamnya Kuil Penawar",
+    "lore_content": "Kuil penyembuhan terakhir yang akhirnya tertelan oleh rawa hisap hidup."
+  },
+  {
+    "tale_id": "69",
+    "dungeon_id": "4",
+    "depth": "9",
+    "chapter_name": "Bab 2: Bertahan di Tengah Kelayuan",
+    "depth_title": "Paru-Paru Penuh Abu Beracun",
+    "lore_content": "Penderitaan para penyintas yang perlahan mati lemas karena udara terlalu pekat."
+  },
+  {
+    "tale_id": "70",
+    "dungeon_id": "4",
+    "depth": "10",
+    "chapter_name": "Bab 2: Bertahan di Tengah Kelayuan",
+    "depth_title": "Sang Penjaga yang Membatu",
+    "lore_content": "Treant raksasa mengorbankan diri menjadi batu untuk menutup jalan masuk racun."
+  },
+  {
+    "tale_id": "71",
+    "dungeon_id": "4",
+    "depth": "11",
+    "chapter_name": "Bab 3: Inti Bumi yang Berdarah",
+    "depth_title": "Urat Nadi Dunia yang Menghitam",
+    "lore_content": "Turun ke sistem akar raksasa yang kini memompa getah beracun berwarna hitam pekat."
+  },
+  {
+    "tale_id": "72",
+    "dungeon_id": "4",
+    "depth": "12",
+    "chapter_name": "Bab 3: Inti Bumi yang Berdarah",
+    "depth_title": "Asimilasi Daging dan Kayu",
+    "lore_content": "Pemandangan mengerikan di mana jasad petarung rawa menyatu dengan akar pohon yang hidup."
+  },
+  {
+    "tale_id": "73",
+    "dungeon_id": "4",
+    "depth": "13",
+    "chapter_name": "Bab 3: Inti Bumi yang Berdarah",
+    "depth_title": "Cangkang yang Tak Tembus Pedang",
+    "lore_content": "Evolusi monster dengan zirah kulit kayu sekeras baja, kebal serangan ringan."
+  },
+  {
+    "tale_id": "74",
+    "dungeon_id": "4",
+    "depth": "14",
+    "chapter_name": "Bab 3: Inti Bumi yang Berdarah",
+    "depth_title": "Sungai Asam Pelebur Tulang",
+    "lore_content": "Lingkungan ekstrem di mana uapnya saja bisa melelehkan perlengkapan besi."
+  },
+  {
+    "tale_id": "75",
+    "dungeon_id": "4",
+    "depth": "15",
+    "chapter_name": "Bab 3: Inti Bumi yang Berdarah",
+    "depth_title": "Detak Jantung di Dalam Lumpur",
+    "lore_content": "Mendengar suara detak jantung lambat yang menggetarkan dinding gua; Bos semakin dekat."
+  },
+  {
+    "tale_id": "76",
+    "dungeon_id": "4",
+    "depth": "16",
+    "chapter_name": "Bab 4: Penjaga Terakhir Alam",
+    "depth_title": "Rahim Kebusukan",
+    "lore_content": "Memasuki pusat rawa di mana The Void memusatkan seluruh energi racunnya."
+  },
+  {
+    "tale_id": "77",
+    "dungeon_id": "4",
+    "depth": "17",
+    "chapter_name": "Bab 4: Penjaga Terakhir Alam",
+    "depth_title": "Rintihan Sang Titan",
+    "lore_content": "Mendengar penderitaan makhluk purba penjaga rawa yang telah disiksa ratusan tahun."
+  },
+  {
+    "tale_id": "78",
+    "dungeon_id": "4",
+    "depth": "18",
+    "chapter_name": "Bab 4: Penjaga Terakhir Alam",
+    "depth_title": "Beban The Rotting Behemoth",
+    "lore_content": "Sang penjaga menyerap seluruh racun ke tubuhnya untuk menyelamatkan kerajaan."
+  },
+  {
+    "tale_id": "79",
+    "dungeon_id": "4",
+    "depth": "19",
+    "chapter_name": "Bab 4: Penjaga Terakhir Alam",
+    "depth_title": "Kekuatan yang Menolak Mati",
+    "lore_content": "Kengerian wujud Behemoth yang dagingnya membusuk namun beregenerasi secara instan."
+  },
+  {
+    "tale_id": "80",
+    "dungeon_id": "4",
+    "depth": "20",
+    "chapter_name": "Bab 4: Penjaga Terakhir Alam",
+    "depth_title": "Kelahiran Emerald Orb",
+    "lore_content": "Esensi kehidupan alam yang murni tersisa dan mengkristal menjadi Emerald Orb."
+  },
+  {
+    "tale_id": "81",
+    "dungeon_id": "5",
+    "depth": "1",
+    "chapter_name": "Bab 1: Kuil di Ujung Waktu",
+    "depth_title": "Lantai Cermin Perak",
+    "lore_content": "The Chronicler mengenang kuil megah di mana pantulan menunjukkan versi dirimu yang sempurna."
+  },
+  {
+    "tale_id": "82",
+    "dungeon_id": "5",
+    "depth": "2",
+    "chapter_name": "Bab 1: Kuil di Ujung Waktu",
+    "depth_title": "Nyanyian Bintang Jatuh",
+    "lore_content": "Ritual para pendeta yang membaca takdir kerajaan melalui pergerakan rasi bintang."
+  },
+  {
+    "tale_id": "83",
+    "dungeon_id": "5",
+    "depth": "3",
+    "chapter_name": "Bab 1: Kuil di Ujung Waktu",
+    "depth_title": "Retakan Pertama pada Takdir",
+    "lore_content": "Hari di mana cermin suci tiba-tiba retak, dan ramalan bintang berubah kosong."
+  },
+  {
+    "tale_id": "84",
+    "dungeon_id": "5",
+    "depth": "4",
+    "chapter_name": "Bab 1: Kuil di Ujung Waktu",
+    "depth_title": "Lonceng Kematian Masa Depan",
+    "lore_content": "Lonceng berdentang sendiri; peringatan dari masa depan tentang kedatangan The Void."
+  },
+  {
+    "tale_id": "85",
+    "dungeon_id": "5",
+    "depth": "5",
+    "chapter_name": "Bab 1: Kuil di Ujung Waktu",
+    "depth_title": "Pantulan yang Berkhianat",
+    "lore_content": "Bayangan para pendeta di cermin mulai bergerak sendiri dan menarik mereka ke dalam kaca."
+  },
+  {
+    "tale_id": "86",
+    "dungeon_id": "5",
+    "depth": "6",
+    "chapter_name": "Bab 2: Distorsi Realita",
+    "depth_title": "Gema dari Kemarin",
+    "lore_content": "Kuil mulai memutar ulang suara jeritan para prajurit dari peperangan masa lalu."
+  },
+  {
+    "tale_id": "87",
+    "dungeon_id": "5",
+    "depth": "7",
+    "chapter_name": "Bab 2: Distorsi Realita",
+    "depth_title": "Lorong yang Berjalan Mundur",
+    "lore_content": "Tata ruang kuil melawan akal sehat; berjalan maju membawamu kembali ke tempat semula."
+  },
+  {
+    "tale_id": "88",
+    "dungeon_id": "5",
+    "depth": "8",
+    "chapter_name": "Bab 2: Distorsi Realita",
+    "depth_title": "Air Mata Para Nabi",
+    "lore_content": "Keputusasaan peramal yang melihat jutaan kemungkinan di mana kerajaan selalu hancur."
+  },
+  {
+    "tale_id": "89",
+    "dungeon_id": "5",
+    "depth": "9",
+    "chapter_name": "Bab 2: Distorsi Realita",
+    "depth_title": "Takdir yang Ditulis Ulang",
+    "lore_content": "Permadani sejarah kerajaan yang benangnya perlahan terurai dan terbakar menjadi abu."
+  },
+  {
+    "tale_id": "90",
+    "dungeon_id": "5",
+    "depth": "10",
+    "chapter_name": "Bab 2: Distorsi Realita",
+    "depth_title": "Prajurit Tanpa Wajah",
+    "lore_content": "Monster campuran antara kenangan masa lalu dan teror masa depan."
+  },
+  {
+    "tale_id": "91",
+    "dungeon_id": "5",
+    "depth": "11",
+    "chapter_name": "Bab 3: Labirin Pecahan Dimensi",
+    "depth_title": "Kehampaan yang Berkilau",
+    "lore_content": "Berjalan di atas pecahan kaca yang melayang di ruang hampa tanpa gravitasi."
+  },
+  {
+    "tale_id": "92",
+    "dungeon_id": "5",
+    "depth": "12",
+    "chapter_name": "Bab 3: Labirin Pecahan Dimensi",
+    "depth_title": "Tragedi yang Terulang",
+    "lore_content": "Terjebak dalam putaran waktu, melihat detik-detik kematian kerajaan berulang kali."
+  },
+  {
+    "tale_id": "93",
+    "dungeon_id": "5",
+    "depth": "13",
+    "chapter_name": "Bab 3: Labirin Pecahan Dimensi",
+    "depth_title": "Suara dari Garis Waktu yang Mati",
+    "lore_content": "Bisikan para pahlawan dari dimensi lain yang telah gagal mengalahkan The Void."
+  },
+  {
+    "tale_id": "94",
+    "dungeon_id": "5",
+    "depth": "14",
+    "chapter_name": "Bab 3: Labirin Pecahan Dimensi",
+    "depth_title": "Kepingan Jiwa yang Hilang",
+    "lore_content": "Kutukan kuil yang membuat siapapun yang memasukinya melupakan namanya sendiri."
+  },
+  {
+    "tale_id": "95",
+    "dungeon_id": "5",
+    "depth": "15",
+    "chapter_name": "Bab 3: Labirin Pecahan Dimensi",
+    "depth_title": "Penjaga Gerbang Paradoks",
+    "lore_content": "Entitas penjaga murni energi cahaya dan kegelapan, tidak terikat oleh waktu."
+  },
+  {
+    "tale_id": "96",
+    "dungeon_id": "5",
+    "depth": "16",
+    "chapter_name": "Bab 4: Pusat Badai Waktu",
+    "depth_title": "Mata Pusaran Takdir",
+    "lore_content": "Memasuki altar utama di mana waktu benar-benar berhenti bergerak."
+  },
+  {
+    "tale_id": "97",
+    "dungeon_id": "5",
+    "depth": "17",
+    "chapter_name": "Bab 4: Pusat Badai Waktu",
+    "depth_title": "Pandangan yang Membutakan",
+    "lore_content": "Menyadari bahwa The Void bukanlah sekadar monster, melainkan Akhir itu sendiri."
+  },
+  {
+    "tale_id": "98",
+    "dungeon_id": "5",
+    "depth": "18",
+    "chapter_name": "Bab 4: Pusat Badai Waktu",
+    "depth_title": "Kutukan Sang Peramal",
+    "lore_content": "Sang Oracle mencoba menyerap energi masa depan untuk mencegah kiamat, namun pikirannya hancur."
+  },
+  {
+    "tale_id": "99",
+    "dungeon_id": "5",
+    "depth": "19",
+    "chapter_name": "Bab 4: Pusat Badai Waktu",
+    "depth_title": "Kesedihan The Oracle of Ruin",
+    "lore_content": "Menghadapi Oracle yang dikendalikan The Void, mampu memprediksi gerakan player."
+  },
+  {
+    "tale_id": "100",
+    "dungeon_id": "5",
+    "depth": "20",
+    "chapter_name": "Bab 4: Pusat Badai Waktu",
+    "depth_title": "Lahirnya Radiant Orb",
+    "lore_content": "Aliran waktu kembali stabil sesaat, esensi takdir murni mengkristal menjadi Radiant Orb."
+  },
+  {
+    "tale_id": "101",
+    "dungeon_id": "6",
+    "depth": "1",
+    "chapter_name": "Bab Final",
+    "depth_title": "Panglima Gerhana",
+    "lore_content": "Langkah pertama Hero menembus dimensi The Void melawan Eclipse Vanguard."
+  },
+  {
+    "tale_id": "102",
+    "dungeon_id": "6",
+    "depth": "2",
+    "chapter_name": "Bab Final",
+    "depth_title": "Tangan Kanan Kehancuran",
+    "lore_content": "Menghadapi Architect of Ruin yang memanipulasi gravitasi dan pikiran."
+  },
+  {
+    "tale_id": "103",
+    "dungeon_id": "6",
+    "depth": "3",
+    "chapter_name": "Bab Final",
+    "depth_title": "Wujud Pertama: Lahirnya Sang Kehampaan",
+    "lore_content": "The Void menampakkan wujud pusaran badai anomali tanpa bentuk yang melahap cahaya."
+  },
+  {
+    "tale_id": "104",
+    "dungeon_id": "6",
+    "depth": "4",
+    "chapter_name": "Bab Final",
+    "depth_title": "Wujud Kedua: Penelan Realita",
+    "lore_content": "The Void berevolusi menjadi monster raksasa berlengan banyak pemegang senjata realita retak."
+  },
+  {
+    "tale_id": "105",
+    "dungeon_id": "6",
+    "depth": "5",
+    "chapter_name": "Bab Final",
+    "depth_title": "Wujud Sempurna: Akhir dari Segalanya",
+    "lore_content": "Entri terakhir The Chronicler: apakah akan berakhir dengan cahaya, atau ketiadaan abadi."
+  }
+]

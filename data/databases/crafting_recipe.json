@@ -1,0 +1,1172 @@
+[
+  {
+    "recipe_id": "1",
+    "target_item_id": "3",
+    "material_item_id": "2",
+    "quantity_required": "5"
+  },
+  {
+    "recipe_id": "2",
+    "target_item_id": "5",
+    "material_item_id": "4",
+    "quantity_required": "5"
+  },
+  {
+    "recipe_id": "3",
+    "target_item_id": "7",
+    "material_item_id": "6",
+    "quantity_required": "5"
+  },
+  {
+    "recipe_id": "4",
+    "target_item_id": "1102",
+    "material_item_id": "1",
+    "quantity_required": "10"
+  },
+  {
+    "recipe_id": "5",
+    "target_item_id": "1102",
+    "material_item_id": "2",
+    "quantity_required": "5"
+  },
+  {
+    "recipe_id": "6",
+    "target_item_id": "1104",
+    "material_item_id": "2",
+    "quantity_required": "15"
+  },
+  {
+    "recipe_id": "7",
+    "target_item_id": "1104",
+    "material_item_id": "1",
+    "quantity_required": "5"
+  },
+  {
+    "recipe_id": "8",
+    "target_item_id": "1106",
+    "material_item_id": "2",
+    "quantity_required": "30"
+  },
+  {
+    "recipe_id": "9",
+    "target_item_id": "1106",
+    "material_item_id": "3",
+    "quantity_required": "2"
+  },
+  {
+    "recipe_id": "10",
+    "target_item_id": "1107",
+    "material_item_id": "3",
+    "quantity_required": "10"
+  },
+  {
+    "recipe_id": "11",
+    "target_item_id": "1107",
+    "material_item_id": "2",
+    "quantity_required": "15"
+  },
+  {
+    "recipe_id": "12",
+    "target_item_id": "1108",
+    "material_item_id": "3",
+    "quantity_required": "20"
+  },
+  {
+    "recipe_id": "13",
+    "target_item_id": "1108",
+    "material_item_id": "2",
+    "quantity_required": "30"
+  },
+  {
+    "recipe_id": "14",
+    "target_item_id": "1109",
+    "material_item_id": "3",
+    "quantity_required": "35"
+  },
+  {
+    "recipe_id": "15",
+    "target_item_id": "1109",
+    "material_item_id": "2",
+    "quantity_required": "50"
+  },
+  {
+    "recipe_id": "16",
+    "target_item_id": "1110",
+    "material_item_id": "8",
+    "quantity_required": "40"
+  },
+  {
+    "recipe_id": "17",
+    "target_item_id": "1110",
+    "material_item_id": "3",
+    "quantity_required": "20"
+  },
+  {
+    "recipe_id": "18",
+    "target_item_id": "1112",
+    "material_item_id": "1",
+    "quantity_required": "6"
+  },
+  {
+    "recipe_id": "19",
+    "target_item_id": "1112",
+    "material_item_id": "2",
+    "quantity_required": "3"
+  },
+  {
+    "recipe_id": "20",
+    "target_item_id": "1114",
+    "material_item_id": "2",
+    "quantity_required": "15"
+  },
+  {
+    "recipe_id": "21",
+    "target_item_id": "1114",
+    "material_item_id": "1",
+    "quantity_required": "5"
+  },
+  {
+    "recipe_id": "22",
+    "target_item_id": "1116",
+    "material_item_id": "2",
+    "quantity_required": "25"
+  },
+  {
+    "recipe_id": "23",
+    "target_item_id": "1116",
+    "material_item_id": "3",
+    "quantity_required": "2"
+  },
+  {
+    "recipe_id": "24",
+    "target_item_id": "1117",
+    "material_item_id": "3",
+    "quantity_required": "8"
+  },
+  {
+    "recipe_id": "25",
+    "target_item_id": "1117",
+    "material_item_id": "2",
+    "quantity_required": "15"
+  },
+  {
+    "recipe_id": "26",
+    "target_item_id": "1118",
+    "material_item_id": "3",
+    "quantity_required": "15"
+  },
+  {
+    "recipe_id": "27",
+    "target_item_id": "1118",
+    "material_item_id": "2",
+    "quantity_required": "25"
+  },
+  {
+    "recipe_id": "28",
+    "target_item_id": "1119",
+    "material_item_id": "3",
+    "quantity_required": "25"
+  },
+  {
+    "recipe_id": "29",
+    "target_item_id": "1119",
+    "material_item_id": "2",
+    "quantity_required": "40"
+  },
+  {
+    "recipe_id": "30",
+    "target_item_id": "1120",
+    "material_item_id": "8",
+    "quantity_required": "25"
+  },
+  {
+    "recipe_id": "31",
+    "target_item_id": "1120",
+    "material_item_id": "3",
+    "quantity_required": "15"
+  },
+  {
+    "recipe_id": "32",
+    "target_item_id": "1122",
+    "material_item_id": "1",
+    "quantity_required": "10"
+  },
+  {
+    "recipe_id": "33",
+    "target_item_id": "1122",
+    "material_item_id": "2",
+    "quantity_required": "8"
+  },
+  {
+    "recipe_id": "34",
+    "target_item_id": "1124",
+    "material_item_id": "2",
+    "quantity_required": "25"
+  },
+  {
+    "recipe_id": "35",
+    "target_item_id": "1124",
+    "material_item_id": "3",
+    "quantity_required": "2"
+  },
+  {
+    "recipe_id": "36",
+    "target_item_id": "1126",
+    "material_item_id": "2",
+    "quantity_required": "40"
+  },
+  {
+    "recipe_id": "37",
+    "target_item_id": "1126",
+    "material_item_id": "3",
+    "quantity_required": "5"
+  },
+  {
+    "recipe_id": "38",
+    "target_item_id": "1127",
+    "material_item_id": "3",
+    "quantity_required": "15"
+  },
+  {
+    "recipe_id": "39",
+    "target_item_id": "1127",
+    "material_item_id": "2",
+    "quantity_required": "30"
+  },
+  {
+    "recipe_id": "40",
+    "target_item_id": "1128",
+    "material_item_id": "3",
+    "quantity_required": "25"
+  },
+  {
+    "recipe_id": "41",
+    "target_item_id": "1128",
+    "material_item_id": "2",
+    "quantity_required": "45"
+  },
+  {
+    "recipe_id": "42",
+    "target_item_id": "1129",
+    "material_item_id": "3",
+    "quantity_required": "40"
+  },
+  {
+    "recipe_id": "43",
+    "target_item_id": "1129",
+    "material_item_id": "2",
+    "quantity_required": "60"
+  },
+  {
+    "recipe_id": "44",
+    "target_item_id": "1130",
+    "material_item_id": "8",
+    "quantity_required": "50"
+  },
+  {
+    "recipe_id": "45",
+    "target_item_id": "1130",
+    "material_item_id": "3",
+    "quantity_required": "25"
+  },
+  {
+    "recipe_id": "46",
+    "target_item_id": "1132",
+    "material_item_id": "1",
+    "quantity_required": "5"
+  },
+  {
+    "recipe_id": "47",
+    "target_item_id": "1132",
+    "material_item_id": "2",
+    "quantity_required": "3"
+  },
+  {
+    "recipe_id": "48",
+    "target_item_id": "1134",
+    "material_item_id": "2",
+    "quantity_required": "15"
+  },
+  {
+    "recipe_id": "49",
+    "target_item_id": "1134",
+    "material_item_id": "1",
+    "quantity_required": "5"
+  },
+  {
+    "recipe_id": "50",
+    "target_item_id": "1136",
+    "material_item_id": "2",
+    "quantity_required": "25"
+  },
+  {
+    "recipe_id": "51",
+    "target_item_id": "1136",
+    "material_item_id": "3",
+    "quantity_required": "2"
+  },
+  {
+    "recipe_id": "52",
+    "target_item_id": "1137",
+    "material_item_id": "3",
+    "quantity_required": "8"
+  },
+  {
+    "recipe_id": "53",
+    "target_item_id": "1137",
+    "material_item_id": "2",
+    "quantity_required": "15"
+  },
+  {
+    "recipe_id": "54",
+    "target_item_id": "1138",
+    "material_item_id": "3",
+    "quantity_required": "12"
+  },
+  {
+    "recipe_id": "55",
+    "target_item_id": "1138",
+    "material_item_id": "2",
+    "quantity_required": "20"
+  },
+  {
+    "recipe_id": "56",
+    "target_item_id": "1139",
+    "material_item_id": "3",
+    "quantity_required": "20"
+  },
+  {
+    "recipe_id": "57",
+    "target_item_id": "1139",
+    "material_item_id": "2",
+    "quantity_required": "30"
+  },
+  {
+    "recipe_id": "58",
+    "target_item_id": "1140",
+    "material_item_id": "8",
+    "quantity_required": "20"
+  },
+  {
+    "recipe_id": "59",
+    "target_item_id": "1140",
+    "material_item_id": "3",
+    "quantity_required": "12"
+  },
+  {
+    "recipe_id": "60",
+    "target_item_id": "1202",
+    "material_item_id": "1",
+    "quantity_required": "10"
+  },
+  {
+    "recipe_id": "61",
+    "target_item_id": "1202",
+    "material_item_id": "4",
+    "quantity_required": "5"
+  },
+  {
+    "recipe_id": "62",
+    "target_item_id": "1204",
+    "material_item_id": "4",
+    "quantity_required": "15"
+  },
+  {
+    "recipe_id": "63",
+    "target_item_id": "1204",
+    "material_item_id": "1",
+    "quantity_required": "5"
+  },
+  {
+    "recipe_id": "64",
+    "target_item_id": "1206",
+    "material_item_id": "4",
+    "quantity_required": "30"
+  },
+  {
+    "recipe_id": "65",
+    "target_item_id": "1206",
+    "material_item_id": "5",
+    "quantity_required": "2"
+  },
+  {
+    "recipe_id": "66",
+    "target_item_id": "1207",
+    "material_item_id": "5",
+    "quantity_required": "10"
+  },
+  {
+    "recipe_id": "67",
+    "target_item_id": "1207",
+    "material_item_id": "4",
+    "quantity_required": "15"
+  },
+  {
+    "recipe_id": "68",
+    "target_item_id": "1208",
+    "material_item_id": "5",
+    "quantity_required": "20"
+  },
+  {
+    "recipe_id": "69",
+    "target_item_id": "1208",
+    "material_item_id": "4",
+    "quantity_required": "30"
+  },
+  {
+    "recipe_id": "70",
+    "target_item_id": "1209",
+    "material_item_id": "5",
+    "quantity_required": "35"
+  },
+  {
+    "recipe_id": "71",
+    "target_item_id": "1209",
+    "material_item_id": "4",
+    "quantity_required": "50"
+  },
+  {
+    "recipe_id": "72",
+    "target_item_id": "1210",
+    "material_item_id": "8",
+    "quantity_required": "40"
+  },
+  {
+    "recipe_id": "73",
+    "target_item_id": "1210",
+    "material_item_id": "5",
+    "quantity_required": "20"
+  },
+  {
+    "recipe_id": "74",
+    "target_item_id": "1212",
+    "material_item_id": "1",
+    "quantity_required": "6"
+  },
+  {
+    "recipe_id": "75",
+    "target_item_id": "1212",
+    "material_item_id": "4",
+    "quantity_required": "3"
+  },
+  {
+    "recipe_id": "76",
+    "target_item_id": "1214",
+    "material_item_id": "4",
+    "quantity_required": "15"
+  },
+  {
+    "recipe_id": "77",
+    "target_item_id": "1214",
+    "material_item_id": "1",
+    "quantity_required": "5"
+  },
+  {
+    "recipe_id": "78",
+    "target_item_id": "1216",
+    "material_item_id": "4",
+    "quantity_required": "25"
+  },
+  {
+    "recipe_id": "79",
+    "target_item_id": "1216",
+    "material_item_id": "5",
+    "quantity_required": "2"
+  },
+  {
+    "recipe_id": "80",
+    "target_item_id": "1217",
+    "material_item_id": "5",
+    "quantity_required": "8"
+  },
+  {
+    "recipe_id": "81",
+    "target_item_id": "1217",
+    "material_item_id": "4",
+    "quantity_required": "15"
+  },
+  {
+    "recipe_id": "82",
+    "target_item_id": "1218",
+    "material_item_id": "5",
+    "quantity_required": "15"
+  },
+  {
+    "recipe_id": "83",
+    "target_item_id": "1218",
+    "material_item_id": "4",
+    "quantity_required": "25"
+  },
+  {
+    "recipe_id": "84",
+    "target_item_id": "1219",
+    "material_item_id": "5",
+    "quantity_required": "25"
+  },
+  {
+    "recipe_id": "85",
+    "target_item_id": "1219",
+    "material_item_id": "4",
+    "quantity_required": "40"
+  },
+  {
+    "recipe_id": "86",
+    "target_item_id": "1220",
+    "material_item_id": "8",
+    "quantity_required": "25"
+  },
+  {
+    "recipe_id": "87",
+    "target_item_id": "1220",
+    "material_item_id": "5",
+    "quantity_required": "15"
+  },
+  {
+    "recipe_id": "88",
+    "target_item_id": "1222",
+    "material_item_id": "1",
+    "quantity_required": "10"
+  },
+  {
+    "recipe_id": "89",
+    "target_item_id": "1222",
+    "material_item_id": "4",
+    "quantity_required": "8"
+  },
+  {
+    "recipe_id": "90",
+    "target_item_id": "1224",
+    "material_item_id": "4",
+    "quantity_required": "25"
+  },
+  {
+    "recipe_id": "91",
+    "target_item_id": "1224",
+    "material_item_id": "5",
+    "quantity_required": "2"
+  },
+  {
+    "recipe_id": "92",
+    "target_item_id": "1226",
+    "material_item_id": "4",
+    "quantity_required": "40"
+  },
+  {
+    "recipe_id": "93",
+    "target_item_id": "1226",
+    "material_item_id": "5",
+    "quantity_required": "5"
+  },
+  {
+    "recipe_id": "94",
+    "target_item_id": "1227",
+    "material_item_id": "5",
+    "quantity_required": "15"
+  },
+  {
+    "recipe_id": "95",
+    "target_item_id": "1227",
+    "material_item_id": "4",
+    "quantity_required": "30"
+  },
+  {
+    "recipe_id": "96",
+    "target_item_id": "1228",
+    "material_item_id": "5",
+    "quantity_required": "25"
+  },
+  {
+    "recipe_id": "97",
+    "target_item_id": "1228",
+    "material_item_id": "4",
+    "quantity_required": "45"
+  },
+  {
+    "recipe_id": "98",
+    "target_item_id": "1229",
+    "material_item_id": "5",
+    "quantity_required": "40"
+  },
+  {
+    "recipe_id": "99",
+    "target_item_id": "1229",
+    "material_item_id": "4",
+    "quantity_required": "60"
+  },
+  {
+    "recipe_id": "100",
+    "target_item_id": "1230",
+    "material_item_id": "8",
+    "quantity_required": "50"
+  },
+  {
+    "recipe_id": "101",
+    "target_item_id": "1230",
+    "material_item_id": "5",
+    "quantity_required": "25"
+  },
+  {
+    "recipe_id": "102",
+    "target_item_id": "1232",
+    "material_item_id": "1",
+    "quantity_required": "5"
+  },
+  {
+    "recipe_id": "103",
+    "target_item_id": "1232",
+    "material_item_id": "4",
+    "quantity_required": "3"
+  },
+  {
+    "recipe_id": "104",
+    "target_item_id": "1234",
+    "material_item_id": "4",
+    "quantity_required": "15"
+  },
+  {
+    "recipe_id": "105",
+    "target_item_id": "1234",
+    "material_item_id": "1",
+    "quantity_required": "5"
+  },
+  {
+    "recipe_id": "106",
+    "target_item_id": "1236",
+    "material_item_id": "4",
+    "quantity_required": "25"
+  },
+  {
+    "recipe_id": "107",
+    "target_item_id": "1236",
+    "material_item_id": "5",
+    "quantity_required": "2"
+  },
+  {
+    "recipe_id": "108",
+    "target_item_id": "1237",
+    "material_item_id": "5",
+    "quantity_required": "8"
+  },
+  {
+    "recipe_id": "109",
+    "target_item_id": "1237",
+    "material_item_id": "4",
+    "quantity_required": "15"
+  },
+  {
+    "recipe_id": "110",
+    "target_item_id": "1238",
+    "material_item_id": "5",
+    "quantity_required": "12"
+  },
+  {
+    "recipe_id": "111",
+    "target_item_id": "1238",
+    "material_item_id": "4",
+    "quantity_required": "20"
+  },
+  {
+    "recipe_id": "112",
+    "target_item_id": "1239",
+    "material_item_id": "5",
+    "quantity_required": "20"
+  },
+  {
+    "recipe_id": "113",
+    "target_item_id": "1239",
+    "material_item_id": "4",
+    "quantity_required": "30"
+  },
+  {
+    "recipe_id": "114",
+    "target_item_id": "1240",
+    "material_item_id": "8",
+    "quantity_required": "20"
+  },
+  {
+    "recipe_id": "115",
+    "target_item_id": "1240",
+    "material_item_id": "5",
+    "quantity_required": "12"
+  },
+  {
+    "recipe_id": "116",
+    "target_item_id": "1302",
+    "material_item_id": "1",
+    "quantity_required": "10"
+  },
+  {
+    "recipe_id": "117",
+    "target_item_id": "1302",
+    "material_item_id": "6",
+    "quantity_required": "5"
+  },
+  {
+    "recipe_id": "118",
+    "target_item_id": "1304",
+    "material_item_id": "6",
+    "quantity_required": "15"
+  },
+  {
+    "recipe_id": "119",
+    "target_item_id": "1304",
+    "material_item_id": "1",
+    "quantity_required": "5"
+  },
+  {
+    "recipe_id": "120",
+    "target_item_id": "1306",
+    "material_item_id": "6",
+    "quantity_required": "30"
+  },
+  {
+    "recipe_id": "121",
+    "target_item_id": "1306",
+    "material_item_id": "7",
+    "quantity_required": "2"
+  },
+  {
+    "recipe_id": "122",
+    "target_item_id": "1307",
+    "material_item_id": "7",
+    "quantity_required": "10"
+  },
+  {
+    "recipe_id": "123",
+    "target_item_id": "1307",
+    "material_item_id": "6",
+    "quantity_required": "15"
+  },
+  {
+    "recipe_id": "124",
+    "target_item_id": "1308",
+    "material_item_id": "7",
+    "quantity_required": "20"
+  },
+  {
+    "recipe_id": "125",
+    "target_item_id": "1308",
+    "material_item_id": "6",
+    "quantity_required": "30"
+  },
+  {
+    "recipe_id": "126",
+    "target_item_id": "1309",
+    "material_item_id": "7",
+    "quantity_required": "35"
+  },
+  {
+    "recipe_id": "127",
+    "target_item_id": "1309",
+    "material_item_id": "6",
+    "quantity_required": "50"
+  },
+  {
+    "recipe_id": "128",
+    "target_item_id": "1310",
+    "material_item_id": "8",
+    "quantity_required": "40"
+  },
+  {
+    "recipe_id": "129",
+    "target_item_id": "1310",
+    "material_item_id": "7",
+    "quantity_required": "20"
+  },
+  {
+    "recipe_id": "130",
+    "target_item_id": "1312",
+    "material_item_id": "1",
+    "quantity_required": "6"
+  },
+  {
+    "recipe_id": "131",
+    "target_item_id": "1312",
+    "material_item_id": "6",
+    "quantity_required": "3"
+  },
+  {
+    "recipe_id": "132",
+    "target_item_id": "1314",
+    "material_item_id": "6",
+    "quantity_required": "15"
+  },
+  {
+    "recipe_id": "133",
+    "target_item_id": "1314",
+    "material_item_id": "1",
+    "quantity_required": "5"
+  },
+  {
+    "recipe_id": "134",
+    "target_item_id": "1316",
+    "material_item_id": "6",
+    "quantity_required": "25"
+  },
+  {
+    "recipe_id": "135",
+    "target_item_id": "1316",
+    "material_item_id": "7",
+    "quantity_required": "2"
+  },
+  {
+    "recipe_id": "136",
+    "target_item_id": "1317",
+    "material_item_id": "7",
+    "quantity_required": "8"
+  },
+  {
+    "recipe_id": "137",
+    "target_item_id": "1317",
+    "material_item_id": "6",
+    "quantity_required": "15"
+  },
+  {
+    "recipe_id": "138",
+    "target_item_id": "1318",
+    "material_item_id": "7",
+    "quantity_required": "15"
+  },
+  {
+    "recipe_id": "139",
+    "target_item_id": "1318",
+    "material_item_id": "6",
+    "quantity_required": "25"
+  },
+  {
+    "recipe_id": "140",
+    "target_item_id": "1319",
+    "material_item_id": "7",
+    "quantity_required": "25"
+  },
+  {
+    "recipe_id": "141",
+    "target_item_id": "1319",
+    "material_item_id": "6",
+    "quantity_required": "40"
+  },
+  {
+    "recipe_id": "142",
+    "target_item_id": "1320",
+    "material_item_id": "8",
+    "quantity_required": "25"
+  },
+  {
+    "recipe_id": "143",
+    "target_item_id": "1320",
+    "material_item_id": "7",
+    "quantity_required": "15"
+  },
+  {
+    "recipe_id": "144",
+    "target_item_id": "1322",
+    "material_item_id": "1",
+    "quantity_required": "10"
+  },
+  {
+    "recipe_id": "145",
+    "target_item_id": "1322",
+    "material_item_id": "6",
+    "quantity_required": "8"
+  },
+  {
+    "recipe_id": "146",
+    "target_item_id": "1324",
+    "material_item_id": "6",
+    "quantity_required": "25"
+  },
+  {
+    "recipe_id": "147",
+    "target_item_id": "1324",
+    "material_item_id": "7",
+    "quantity_required": "2"
+  },
+  {
+    "recipe_id": "148",
+    "target_item_id": "1326",
+    "material_item_id": "6",
+    "quantity_required": "40"
+  },
+  {
+    "recipe_id": "149",
+    "target_item_id": "1326",
+    "material_item_id": "7",
+    "quantity_required": "5"
+  },
+  {
+    "recipe_id": "150",
+    "target_item_id": "1327",
+    "material_item_id": "7",
+    "quantity_required": "15"
+  },
+  {
+    "recipe_id": "151",
+    "target_item_id": "1327",
+    "material_item_id": "6",
+    "quantity_required": "30"
+  },
+  {
+    "recipe_id": "152",
+    "target_item_id": "1328",
+    "material_item_id": "7",
+    "quantity_required": "25"
+  },
+  {
+    "recipe_id": "153",
+    "target_item_id": "1328",
+    "material_item_id": "6",
+    "quantity_required": "45"
+  },
+  {
+    "recipe_id": "154",
+    "target_item_id": "1329",
+    "material_item_id": "7",
+    "quantity_required": "40"
+  },
+  {
+    "recipe_id": "155",
+    "target_item_id": "1329",
+    "material_item_id": "6",
+    "quantity_required": "60"
+  },
+  {
+    "recipe_id": "156",
+    "target_item_id": "1330",
+    "material_item_id": "8",
+    "quantity_required": "50"
+  },
+  {
+    "recipe_id": "157",
+    "target_item_id": "1330",
+    "material_item_id": "7",
+    "quantity_required": "25"
+  },
+  {
+    "recipe_id": "158",
+    "target_item_id": "1332",
+    "material_item_id": "1",
+    "quantity_required": "5"
+  },
+  {
+    "recipe_id": "159",
+    "target_item_id": "1332",
+    "material_item_id": "6",
+    "quantity_required": "3"
+  },
+  {
+    "recipe_id": "160",
+    "target_item_id": "1334",
+    "material_item_id": "6",
+    "quantity_required": "15"
+  },
+  {
+    "recipe_id": "161",
+    "target_item_id": "1334",
+    "material_item_id": "1",
+    "quantity_required": "5"
+  },
+  {
+    "recipe_id": "162",
+    "target_item_id": "1336",
+    "material_item_id": "6",
+    "quantity_required": "25"
+  },
+  {
+    "recipe_id": "163",
+    "target_item_id": "1336",
+    "material_item_id": "7",
+    "quantity_required": "2"
+  },
+  {
+    "recipe_id": "164",
+    "target_item_id": "1337",
+    "material_item_id": "7",
+    "quantity_required": "8"
+  },
+  {
+    "recipe_id": "165",
+    "target_item_id": "1337",
+    "material_item_id": "6",
+    "quantity_required": "15"
+  },
+  {
+    "recipe_id": "166",
+    "target_item_id": "1338",
+    "material_item_id": "7",
+    "quantity_required": "12"
+  },
+  {
+    "recipe_id": "167",
+    "target_item_id": "1338",
+    "material_item_id": "6",
+    "quantity_required": "20"
+  },
+  {
+    "recipe_id": "168",
+    "target_item_id": "1339",
+    "material_item_id": "7",
+    "quantity_required": "20"
+  },
+  {
+    "recipe_id": "169",
+    "target_item_id": "1339",
+    "material_item_id": "6",
+    "quantity_required": "30"
+  },
+  {
+    "recipe_id": "170",
+    "target_item_id": "1340",
+    "material_item_id": "8",
+    "quantity_required": "20"
+  },
+  {
+    "recipe_id": "171",
+    "target_item_id": "1340",
+    "material_item_id": "7",
+    "quantity_required": "12"
+  },
+  {
+    "recipe_id": "172",
+    "target_item_id": "1401",
+    "material_item_id": "2",
+    "quantity_required": "20"
+  },
+  {
+    "recipe_id": "173",
+    "target_item_id": "1401",
+    "material_item_id": "1",
+    "quantity_required": "10"
+  },
+  {
+    "recipe_id": "174",
+    "target_item_id": "1402",
+    "material_item_id": "4",
+    "quantity_required": "20"
+  },
+  {
+    "recipe_id": "175",
+    "target_item_id": "1402",
+    "material_item_id": "1",
+    "quantity_required": "10"
+  },
+  {
+    "recipe_id": "176",
+    "target_item_id": "1403",
+    "material_item_id": "6",
+    "quantity_required": "20"
+  },
+  {
+    "recipe_id": "177",
+    "target_item_id": "1403",
+    "material_item_id": "1",
+    "quantity_required": "10"
+  },
+  {
+    "recipe_id": "178",
+    "target_item_id": "1404",
+    "material_item_id": "2",
+    "quantity_required": "15"
+  },
+  {
+    "recipe_id": "179",
+    "target_item_id": "1404",
+    "material_item_id": "4",
+    "quantity_required": "15"
+  },
+  {
+    "recipe_id": "180",
+    "target_item_id": "1404",
+    "material_item_id": "6",
+    "quantity_required": "15"
+  },
+  {
+    "recipe_id": "181",
+    "target_item_id": "1405",
+    "material_item_id": "4",
+    "quantity_required": "40"
+  },
+  {
+    "recipe_id": "182",
+    "target_item_id": "1405",
+    "material_item_id": "5",
+    "quantity_required": "10"
+  },
+  {
+    "recipe_id": "183",
+    "target_item_id": "1406",
+    "material_item_id": "3",
+    "quantity_required": "10"
+  },
+  {
+    "recipe_id": "184",
+    "target_item_id": "1406",
+    "material_item_id": "5",
+    "quantity_required": "10"
+  },
+  {
+    "recipe_id": "185",
+    "target_item_id": "1406",
+    "material_item_id": "7",
+    "quantity_required": "10"
+  },
+  {
+    "recipe_id": "186",
+    "target_item_id": "1407",
+    "material_item_id": "3",
+    "quantity_required": "25"
+  },
+  {
+    "recipe_id": "187",
+    "target_item_id": "1407",
+    "material_item_id": "2",
+    "quantity_required": "30"
+  },
+  {
+    "recipe_id": "188",
+    "target_item_id": "1408",
+    "material_item_id": "5",
+    "quantity_required": "25"
+  },
+  {
+    "recipe_id": "189",
+    "target_item_id": "1408",
+    "material_item_id": "4",
+    "quantity_required": "30"
+  },
+  {
+    "recipe_id": "190",
+    "target_item_id": "1409",
+    "material_item_id": "7",
+    "quantity_required": "25"
+  },
+  {
+    "recipe_id": "191",
+    "target_item_id": "1409",
+    "material_item_id": "6",
+    "quantity_required": "30"
+  },
+  {
+    "recipe_id": "192",
+    "target_item_id": "1410",
+    "material_item_id": "8",
+    "quantity_required": "30"
+  },
+  {
+    "recipe_id": "193",
+    "target_item_id": "1410",
+    "material_item_id": "3",
+    "quantity_required": "5"
+  },
+  {
+    "recipe_id": "194",
+    "target_item_id": "1410",
+    "material_item_id": "5",
+    "quantity_required": "5"
+  },
+  {
+    "recipe_id": "195",
+    "target_item_id": "1410",
+    "material_item_id": "7",
+    "quantity_required": "5"
+  }
+]

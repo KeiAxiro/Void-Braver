@@ -1,0 +1,147 @@
+[
+  {
+    "character_id": "1",
+    "skill_id": "13",
+    "remaining_turns": "2"
+  },
+  {
+    "character_id": "1",
+    "skill_id": "14",
+    "remaining_turns": "4"
+  },
+  {
+    "character_id": "1",
+    "skill_id": "15",
+    "remaining_turns": "2"
+  },
+  {
+    "character_id": "1",
+    "skill_id": "19",
+    "remaining_turns": "1"
+  },
+  {
+    "character_id": "2",
+    "skill_id": "3",
+    "remaining_turns": "1"
+  },
+  {
+    "character_id": "2",
+    "skill_id": "8",
+    "remaining_turns": "5"
+  },
+  {
+    "character_id": "2",
+    "skill_id": "11",
+    "remaining_turns": "4"
+  },
+  {
+    "character_id": "2",
+    "skill_id": "24",
+    "remaining_turns": "3"
+  },
+  {
+    "character_id": "3",
+    "skill_id": "4",
+    "remaining_turns": "2"
+  },
+  {
+    "character_id": "4",
+    "skill_id": "16",
+    "remaining_turns": "4"
+  },
+  {
+    "character_id": "5",
+    "skill_id": "13",
+    "remaining_turns": "1"
+  },
+  {
+    "character_id": "5",
+    "skill_id": "16",
+    "remaining_turns": "3"
+  },
+  {
+    "character_id": "5",
+    "skill_id": "26",
+    "remaining_turns": "5"
+  },
+  {
+    "character_id": "7",
+    "skill_id": "5",
+    "remaining_turns": "2"
+  },
+  {
+    "character_id": "9",
+    "skill_id": "6",
+    "remaining_turns": "3"
+  },
+  {
+    "character_id": "9",
+    "skill_id": "25",
+    "remaining_turns": "3"
+  },
+  {
+    "character_id": "10",
+    "skill_id": "27",
+    "remaining_turns": "5"
+  },
+  {
+    "character_id": "14",
+    "skill_id": "26",
+    "remaining_turns": "1"
+  },
+  {
+    "character_id": "16",
+    "skill_id": "11",
+    "remaining_turns": "1"
+  },
+  {
+    "character_id": "16",
+    "skill_id": "21",
+    "remaining_turns": "1"
+  },
+  {
+    "character_id": "17",
+    "skill_id": "23",
+    "remaining_turns": "5"
+  },
+  {
+    "character_id": "18",
+    "skill_id": "7",
+    "remaining_turns": "4"
+  },
+  {
+    "character_id": "18",
+    "skill_id": "19",
+    "remaining_turns": "1"
+  },
+  {
+    "character_id": "18",
+    "skill_id": "23",
+    "remaining_turns": "2"
+  },
+  {
+    "character_id": "18",
+    "skill_id": "24",
+    "remaining_turns": "3"
+  },
+  {
+    "character_id": "19",
+    "skill_id": "5",
+    "remaining_turns": "1"
+  },
+  {
+    "character_id": "20",
+    "skill_id": "13",
+    "remaining_turns": "3"
+  },
+  {
+    "character_id": "20",
+    "skill_id": "24",
+    "remaining_turns": "4"
+  },
+  {
+    "character_id": "20",
+    "skill_id": "27",
+    "remaining_turns": "3"
+  }
+]

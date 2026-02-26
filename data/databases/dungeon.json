@@ -1,0 +1,50 @@
+[
+  {
+    "dungeon_id": "1",
+    "name": "Dungeon of Valor and Ember",
+    "theme": "Gua vulkanik dan reruntuhan benteng kuno. Penuh dengan monster tipe beast dan prajurit api yang menguji raw power dan pertahanan fisik.",
+    "recommended_class_id": "1",
+    "boss_name": "The Ashen Warlord",
+    "reward_orb": "Crimson Orb"
+  },
+  {
+    "dungeon_id": "2",
+    "name": "Dungeon of Knowledge and Wisdom",
+    "theme": "Perpustakaan kuno yang terdistorsi oleh sihir dan menara astral. Musuh didominasi oleh golem magis, penyihir gila, dan teka-teki ilusi.",
+    "recommended_class_id": "2",
+    "boss_name": "The Grand Archivist",
+    "reward_orb": "Azure Orb"
+  },
+  {
+    "dungeon_id": "3",
+    "name": "Dungeon of Whispers and Shadows",
+    "theme": "Hutan mati yang selalu diselimuti kabut dan jurang gelap. Dihuni oleh assassin, monster beracun, dan roh-roh penasaran. Menguji kecepatan dan kelincahan (Evasion/AGI).",
+    "recommended_class_id": "3",
+    "boss_name": "The Phantom Stalker",
+    "reward_orb": "Obsidian Orb"
+  },
+  {
+    "dungeon_id": "4",
+    "name": "Dungeon of Thorns and Resilience",
+    "theme": "Rawa beracun dan labirin akar raksasa di bawah bumi. Musuh memiliki HP tebal dan memberikan damage over time. Menguji tingginya VIT.",
+    "recommended_class_id": null,
+    "boss_name": "The Rotting Behemoth",
+    "reward_orb": "Emerald Orb"
+  },
+  {
+    "dungeon_id": "5",
+    "name": "Dungeon of Echoes and Destiny",
+    "theme": "Dimensi pecahan cermin dan kuil suci yang terbengkalai. Dungeon tersulit tanpa kelemahan elemen spesifik.",
+    "recommended_class_id": null,
+    "boss_name": "The Oracle of Ruin",
+    "reward_orb": "Radiant Orb"
+  },
+  {
+    "dungeon_id": "6",
+    "name": "Tahta Kehampaan",
+    "theme": "Dimensi akhir tempat The Void bersemayam, terdiri dari konstelasi bintang yang mati.",
+    "recommended_class_id": null,
+    "boss_name": null,
+    "reward_orb": null
+  }
+]

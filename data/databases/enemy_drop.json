@@ -1,0 +1,912 @@
+[
+  {
+    "drop_id": "1",
+    "enemy_id": "1",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "2",
+    "enemy_id": "1",
+    "item_id": "1"
+  },
+  {
+    "drop_id": "3",
+    "enemy_id": "1",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "4",
+    "enemy_id": "2",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "5",
+    "enemy_id": "2",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "6",
+    "enemy_id": "2",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "7",
+    "enemy_id": "3",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "8",
+    "enemy_id": "3",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "9",
+    "enemy_id": "3",
+    "item_id": "1"
+  },
+  {
+    "drop_id": "10",
+    "enemy_id": "4",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "11",
+    "enemy_id": "4",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "12",
+    "enemy_id": "4",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "13",
+    "enemy_id": "5",
+    "item_id": "1"
+  },
+  {
+    "drop_id": "14",
+    "enemy_id": "5",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "15",
+    "enemy_id": "5",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "16",
+    "enemy_id": "6",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "17",
+    "enemy_id": "6",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "18",
+    "enemy_id": "6",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "19",
+    "enemy_id": "7",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "20",
+    "enemy_id": "7",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "21",
+    "enemy_id": "7",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "22",
+    "enemy_id": "8",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "23",
+    "enemy_id": "8",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "24",
+    "enemy_id": "8",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "25",
+    "enemy_id": "9",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "26",
+    "enemy_id": "9",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "27",
+    "enemy_id": "9",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "28",
+    "enemy_id": "10",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "29",
+    "enemy_id": "10",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "30",
+    "enemy_id": "10",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "31",
+    "enemy_id": "11",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "32",
+    "enemy_id": "11",
+    "item_id": "1"
+  },
+  {
+    "drop_id": "33",
+    "enemy_id": "11",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "34",
+    "enemy_id": "12",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "35",
+    "enemy_id": "12",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "36",
+    "enemy_id": "12",
+    "item_id": "1"
+  },
+  {
+    "drop_id": "37",
+    "enemy_id": "13",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "38",
+    "enemy_id": "13",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "39",
+    "enemy_id": "13",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "40",
+    "enemy_id": "14",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "41",
+    "enemy_id": "14",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "42",
+    "enemy_id": "14",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "43",
+    "enemy_id": "15",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "44",
+    "enemy_id": "15",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "45",
+    "enemy_id": "15",
+    "item_id": "1"
+  },
+  {
+    "drop_id": "46",
+    "enemy_id": "16",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "47",
+    "enemy_id": "16",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "48",
+    "enemy_id": "16",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "49",
+    "enemy_id": "17",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "50",
+    "enemy_id": "17",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "51",
+    "enemy_id": "17",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "52",
+    "enemy_id": "18",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "53",
+    "enemy_id": "18",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "54",
+    "enemy_id": "18",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "55",
+    "enemy_id": "19",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "56",
+    "enemy_id": "19",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "57",
+    "enemy_id": "19",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "58",
+    "enemy_id": "20",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "59",
+    "enemy_id": "20",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "60",
+    "enemy_id": "20",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "61",
+    "enemy_id": "21",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "62",
+    "enemy_id": "21",
+    "item_id": "1"
+  },
+  {
+    "drop_id": "63",
+    "enemy_id": "21",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "64",
+    "enemy_id": "22",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "65",
+    "enemy_id": "22",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "66",
+    "enemy_id": "22",
+    "item_id": "1"
+  },
+  {
+    "drop_id": "67",
+    "enemy_id": "23",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "68",
+    "enemy_id": "23",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "69",
+    "enemy_id": "23",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "70",
+    "enemy_id": "24",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "71",
+    "enemy_id": "24",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "72",
+    "enemy_id": "24",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "73",
+    "enemy_id": "25",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "74",
+    "enemy_id": "25",
+    "item_id": "1"
+  },
+  {
+    "drop_id": "75",
+    "enemy_id": "25",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "76",
+    "enemy_id": "26",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "77",
+    "enemy_id": "26",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "78",
+    "enemy_id": "26",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "79",
+    "enemy_id": "27",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "80",
+    "enemy_id": "27",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "81",
+    "enemy_id": "27",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "82",
+    "enemy_id": "28",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "83",
+    "enemy_id": "28",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "84",
+    "enemy_id": "28",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "85",
+    "enemy_id": "29",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "86",
+    "enemy_id": "29",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "87",
+    "enemy_id": "29",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "88",
+    "enemy_id": "30",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "89",
+    "enemy_id": "30",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "90",
+    "enemy_id": "30",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "91",
+    "enemy_id": "31",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "92",
+    "enemy_id": "31",
+    "item_id": "1"
+  },
+  {
+    "drop_id": "93",
+    "enemy_id": "31",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "94",
+    "enemy_id": "32",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "95",
+    "enemy_id": "32",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "96",
+    "enemy_id": "32",
+    "item_id": "1"
+  },
+  {
+    "drop_id": "97",
+    "enemy_id": "33",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "98",
+    "enemy_id": "33",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "99",
+    "enemy_id": "33",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "100",
+    "enemy_id": "34",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "101",
+    "enemy_id": "34",
+    "item_id": "1"
+  },
+  {
+    "drop_id": "102",
+    "enemy_id": "34",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "103",
+    "enemy_id": "35",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "104",
+    "enemy_id": "35",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "105",
+    "enemy_id": "35",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "106",
+    "enemy_id": "36",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "107",
+    "enemy_id": "36",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "108",
+    "enemy_id": "36",
+    "item_id": "1"
+  },
+  {
+    "drop_id": "109",
+    "enemy_id": "37",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "110",
+    "enemy_id": "37",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "111",
+    "enemy_id": "37",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "112",
+    "enemy_id": "38",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "113",
+    "enemy_id": "38",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "114",
+    "enemy_id": "38",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "115",
+    "enemy_id": "39",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "116",
+    "enemy_id": "39",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "117",
+    "enemy_id": "39",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "118",
+    "enemy_id": "40",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "119",
+    "enemy_id": "40",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "120",
+    "enemy_id": "40",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "121",
+    "enemy_id": "41",
+    "item_id": "1"
+  },
+  {
+    "drop_id": "122",
+    "enemy_id": "41",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "123",
+    "enemy_id": "41",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "124",
+    "enemy_id": "42",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "125",
+    "enemy_id": "42",
+    "item_id": "1"
+  },
+  {
+    "drop_id": "126",
+    "enemy_id": "42",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "127",
+    "enemy_id": "43",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "128",
+    "enemy_id": "43",
+    "item_id": "1"
+  },
+  {
+    "drop_id": "129",
+    "enemy_id": "43",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "130",
+    "enemy_id": "44",
+    "item_id": "1"
+  },
+  {
+    "drop_id": "131",
+    "enemy_id": "44",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "132",
+    "enemy_id": "44",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "133",
+    "enemy_id": "45",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "134",
+    "enemy_id": "45",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "135",
+    "enemy_id": "45",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "136",
+    "enemy_id": "46",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "137",
+    "enemy_id": "46",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "138",
+    "enemy_id": "46",
+    "item_id": "1"
+  },
+  {
+    "drop_id": "139",
+    "enemy_id": "47",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "140",
+    "enemy_id": "47",
+    "item_id": "1"
+  },
+  {
+    "drop_id": "141",
+    "enemy_id": "47",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "142",
+    "enemy_id": "48",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "143",
+    "enemy_id": "48",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "144",
+    "enemy_id": "48",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "145",
+    "enemy_id": "49",
+    "item_id": "1"
+  },
+  {
+    "drop_id": "146",
+    "enemy_id": "49",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "147",
+    "enemy_id": "49",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "148",
+    "enemy_id": "50",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "149",
+    "enemy_id": "50",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "150",
+    "enemy_id": "50",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "151",
+    "enemy_id": "51",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "152",
+    "enemy_id": "51",
+    "item_id": "1"
+  },
+  {
+    "drop_id": "153",
+    "enemy_id": "51",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "154",
+    "enemy_id": "52",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "155",
+    "enemy_id": "52",
+    "item_id": "1"
+  },
+  {
+    "drop_id": "156",
+    "enemy_id": "52",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "157",
+    "enemy_id": "53",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "158",
+    "enemy_id": "53",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "159",
+    "enemy_id": "53",
+    "item_id": "1"
+  },
+  {
+    "drop_id": "160",
+    "enemy_id": "54",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "161",
+    "enemy_id": "54",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "162",
+    "enemy_id": "54",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "163",
+    "enemy_id": "55",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "164",
+    "enemy_id": "55",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "165",
+    "enemy_id": "55",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "166",
+    "enemy_id": "56",
+    "item_id": "8"
+  },
+  {
+    "drop_id": "167",
+    "enemy_id": "56",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "168",
+    "enemy_id": "56",
+    "item_id": "1"
+  },
+  {
+    "drop_id": "169",
+    "enemy_id": "57",
+    "item_id": "8"
+  },
+  {
+    "drop_id": "170",
+    "enemy_id": "57",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "171",
+    "enemy_id": "57",
+    "item_id": "1"
+  },
+  {
+    "drop_id": "172",
+    "enemy_id": "58",
+    "item_id": "8"
+  },
+  {
+    "drop_id": "173",
+    "enemy_id": "58",
+    "item_id": "6"
+  },
+  {
+    "drop_id": "174",
+    "enemy_id": "58",
+    "item_id": "1"
+  },
+  {
+    "drop_id": "175",
+    "enemy_id": "59",
+    "item_id": "8"
+  },
+  {
+    "drop_id": "176",
+    "enemy_id": "59",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "177",
+    "enemy_id": "59",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "178",
+    "enemy_id": "60",
+    "item_id": "8"
+  },
+  {
+    "drop_id": "179",
+    "enemy_id": "60",
+    "item_id": "1"
+  },
+  {
+    "drop_id": "180",
+    "enemy_id": "60",
+    "item_id": "2"
+  },
+  {
+    "drop_id": "181",
+    "enemy_id": "60",
+    "item_id": "4"
+  },
+  {
+    "drop_id": "182",
+    "enemy_id": "60",
+    "item_id": "6"
+  }
+]
