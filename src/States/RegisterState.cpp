@@ -8,7 +8,7 @@ void RegisterState::init(StateManager &stateManager) {}
 void RegisterState::render()
 {
     ConsoleUI::printHeader("REGISTER ACCOUNT");
-    std::cout << "Ketik 'batal' pada username untuk kembali ke menu utama.\n\n";
+    std::cout << "Ketik 'batal' pada username atau password untuk kembali ke menu utama.\n\n";
 }
 
 void RegisterState::update(StateManager &stateManager)
@@ -16,9 +16,11 @@ void RegisterState::update(StateManager &stateManager)
     std::string username, password;
 
     std::cout << "Masukkan Username: ";
-    std::cin >> username;
+    // Menggunakan std::ws untuk membersihkan buffer dan getline agar aman dari spasi
+    std::getline(std::cin >> std::ws, username);
 
-    if (username == "batal" || password == "batal")
+    // Cek pembatalan di tahap username
+    if (username == "batal")
     {
         stateManager.setNotify(ConsoleUI::Green("Registrasi dibatalkan. Kembali ke menu utama."));
         stateManager.popState();
@@ -26,16 +28,18 @@ void RegisterState::update(StateManager &stateManager)
     }
 
     std::cout << "Masukkan Password: ";
-    std::cin >> password;
+    std::getline(std::cin >> std::ws, password);
 
-    if (username == "batal" || password == "batal")
+    // Cek pembatalan di tahap password
+    if (password == "batal")
     {
-        stateManager.setNotify(ConsoleUI::Green("Registrasi dibatalkan. Silakan login."));
+        stateManager.setNotify(ConsoleUI::Green("Registrasi dibatalkan. Kembali ke menu utama."));
         stateManager.popState();
         return;
     }
 
     // MENGGUNAKAN ACCOUNT MANAGER DARI CONTEXT GLOBAL
+    // Di balik layar, ini otomatis memanggil JsonDbHelper<Account> kita yang baru!
     if (stateManager.getContext().accountManager.registerAccount(username, password))
     {
         stateManager.setNotify(ConsoleUI::Green("Registrasi berhasil! Silakan login."));
@@ -44,5 +48,6 @@ void RegisterState::update(StateManager &stateManager)
     else
     {
         stateManager.setNotify(ConsoleUI::Red("Registrasi Gagal! Username '" + username + "' sudah digunakan."));
+        // Tidak di-pop, sehingga layar akan merender ulang RegisterState agar user bisa mencoba lagi
     }
 }
