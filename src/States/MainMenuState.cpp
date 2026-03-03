@@ -1,7 +1,7 @@
 #include "States/MainMenuState.h"
 #include "States/LoginState.h"
 #include "States/RegisterState.h"
-#include "Utils/ConsoleUI.h" // Asumsi kamu punya helper UI
+#include "Utils/ConsoleUI.h" 
 #include <iostream>
 #include <string>
 
@@ -12,11 +12,23 @@ void MainMenuState::init(StateManager &stateManager)
 
 void MainMenuState::render()
 {
-    ConsoleUI::printHeader("MAIN MENU");
-    std::cout << "1. Login\n";
-    std::cout << "2. Register\n";
-    std::cout << "3. Exit\n";
-    std::cout << "Pilihan: ";
+    // Menggunakan Raw String Literal R"( ... )" untuk ASCII Art judul Void Braver
+    std::cout << R"(
+================================================================
+__   __  ___   ___  ___       ___   ___    _   _   _  ___  ___ 
+\ \ / / / _ \ |_ _||   \     | _ ) | _ \  /_\ | | | || __|| _ \
+ \ V / | (_) | | | | |) |    | _ \ |   / / _ \| |_| || _| |   /
+  \_/   \___/ |___||___/     |___/ |_|_\/_/ \_\\___/ |___||_|_\
+                                                                   
+================================================================
+)" << '\n';
+
+    std::cout << "                        [ MAIN MENU ]\n\n";
+    std::cout << "                [1] Mulai Petualangan (Login)\n";
+    std::cout << "                [2] Buat Akun Baru (Register)\n";
+    std::cout << "                [3] Keluar dari Dunia (Exit)\n";
+    std::cout << "\n================================================================\n";
+    std::cout << "\nPilihanmu: ";
 }
 
 void MainMenuState::update(StateManager &stateManager)
