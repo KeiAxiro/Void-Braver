@@ -1,5 +1,5 @@
 #include "States/LoginState.h"
-#include "States/HubState.h" // Pindah ke pemilihan karakter setelah login
+#include "States/CharSelectionState.h" // Perbaikan: Arahkan ke seleksi karakter
 #include "Utils/ConsoleUI.h"
 #include <iostream>
 #include <string>
@@ -28,16 +28,13 @@ void LoginState::update(StateManager &stateManager)
     std::cout << "Password: ";
     std::cin >> p;
 
-    // MENGGUNAKAN ACCOUNT MANAGER DARI CONTEXT GLOBAL
     if (stateManager.getContext().accountManager.loginAccount(u, p))
     {
-        // Simpan username yang sedang login ke context global
         stateManager.getContext().currentUsername = u;
-
         stateManager.setNotify(ConsoleUI::Green("Login Berhasil! Selamat datang, " + u));
 
-        // Ganti state login ini dengan HubState (Replace = true)
-        stateManager.pushState(std::make_unique<HubState>(), true);
+        // PINDAH KE SELEKSI KARAKTER (Replace login state agar tidak bisa back ke login)
+        stateManager.pushState(std::make_unique<CharSelectionState>(), true);
     }
     else
     {
