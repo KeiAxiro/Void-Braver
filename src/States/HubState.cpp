@@ -4,16 +4,16 @@
 #include <string>
 
 void HubState::init(StateManager &stateManager) {}
-
 void HubState::render()
 {
-    ConsoleUI::printHeader("CLI VOID BRAVER - HUB MENU");
+    ConsoleUI::printHeader("CLI VOID BRAVER - MAIN HUB");
 
-    std::cout << "1. Pergi ke Toko (Shop)\n";
-    std::cout << "2. Masuk Dungeon\n";
-    std::cout << "3. Cek Status Karakter\n";
-    std::cout << "4. Logout\n";
-    std::cout << "Pilihan: ";
+    std::cout << " Silahkan pilih aksi yang ingin dilakukan:\n\n";
+    std::cout << " [" << ConsoleUI::Yellow("1") << "] Pergi ke Toko (Shop)\n";
+    std::cout << " [" << ConsoleUI::Red("2") << "] Masuk Dungeon\n";
+    std::cout << " [" << ConsoleUI::Cyan("3") << "] Cek Status Karakter\n";
+    std::cout << " [" << ConsoleUI::Green("4") << "] Logout\n";
+    std::cout << "\n Pilihan: ";
 }
 
 void HubState::update(StateManager &stateManager)
