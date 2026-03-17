@@ -42,30 +42,34 @@ struct Item
 // ==========================================
 Equipment getEquipmentData(string name)
 {
-    // WEAPON
+    // WEAPON (ATK, DEF, HP)
     if (name == "Calamity Breaker")
         return {"Calamity Breaker", "Weapon", 750, 0, 0};
     if (name == "Void-Iron Cleaver")
-        return {"Void-Iron Cleaver", "Weapon", 610, 0, 0};
+        return {"Void-Iron Cleaver", "Weapon", 210, 0, 0};
     if (name == "Rusty Greatsword")
-        return {"Rusty Greatsword", "Weapon", 15, 0, 0};
-    // HELMET
+        return {"Rusty Greatsword", "Weapon", 10, 0, 0};
+
+    // HELMET (ATK, DEF, HP) -> Sesuai SQL Baru
     if (name == "Marshall's Iron Face")
-        return {"Marshall's Iron Face", "Helmet", 0, 1500, 8000};
+        return {"Marshall's Iron Face", "Helmet", 0, 200, 8000};
     if (name == "Iron Pot Helm")
-        return {"Iron Pot Helm", "Helmet", 0, 50, 250};
-    // ARMOR
+        return {"Iron Pot Helm", "Helmet", 0, 5, 45};
+
+    // ARMOR (ATK, DEF, HP)
     if (name == "God-King's Bastion")
-        return {"God-King's Bastion", "Armor", 0, 3000, 15000};
+        return {"God-King's Bastion", "Armor", 0, 400, 15000};
     if (name == "Knight's Plate")
-        return {"Knight's Plate", "Armor", 0, 300, 1500};
+        return {"Knight's Plate", "Armor", 0, 55, 480};
     if (name == "Leather Jerkin")
-        return {"Leather Jerkin", "Armor", 0, 50, 300};
-    // BOOTS
-    if (name == "Grand Marshall's Stride")
-        return {"Grand Marshall's Stride", "Boots", 0, 1500, 8000};
+        return {"Leather Jerkin", "Armor", 0, 10, 95};
+
+    // BOOTS (ATK, DEF, HP)
+    if (name == "Marshall's Stride")
+        return {"Marshall's Stride", "Boots", 0, 200, 8000};
     if (name == "Traveler's Boots")
-        return {"Traveler's Boots", "Boots", 0, 25, 100};
+        return {"Traveler's Boots", "Boots", 0, 1, 15};
+
     // ACCESSORY
     if (name == "Vitality Band")
         return {"Vitality Band", "Accessory", 0, 0, 0};
@@ -126,17 +130,48 @@ struct Player
 
     int getAtkPower()
     {
-        float multiplier = (job == "Knight") ? ((level <= 50) ? 2.0f : 7.0f) : 1.0f;
-        float strWeight = 1.0f, intWeight = 0.2f, agiWeight = 0.4f;
+        float multiplier = 1.0f;
+        float strWeight = 0, intWeight = 0, agiWeight = 0;
 
-        int agiCap = 260;
-        int effectiveAgi = min(agi, agiCap);
-        int excessAgi = max(0, agi - agiCap);
+        int effectiveAgi = agi;
+        int excessAgi = 0;
+        int effectiveInt = intel;
+        int excessInt = 0;
 
-        float totalStatValue = (str * strWeight) + (intel * intWeight) + (effectiveAgi * agiWeight);
+        // Pengali untuk status yang melebihi batas (Overcap)
         float overcapMultiplier = (level <= 50) ? 2.0f : 6.0f;
 
-        int pureStatPower = (int)(totalStatValue * multiplier) + (int)(excessAgi * overcapMultiplier);
+        if (job == "Knight")
+        {
+            multiplier = 2.0f + (level * 0.05f);
+            strWeight = 1.0f;
+            intWeight = 0.2f;
+            agiWeight = 0.4f;
+        }
+        else if (job == "Sorcerer")
+        {
+            multiplier = 1.5f + (level * 0.04f);
+            strWeight = 0.2f;
+            intWeight = 1.0f;
+            agiWeight = 0.3f;
+            int intCap = 260;
+            effectiveInt = min(intel, intCap);
+            excessInt = max(0, intel - intCap);
+        }
+        else if (job == "Wanderer")
+        {
+            multiplier = 1.0f + (level * 0.03f);
+            strWeight = 0.4f;
+            intWeight = 0.2f;
+            agiWeight = 1.0f;
+            int agiCap = 260;
+            effectiveAgi = min(agi, agiCap);
+            excessAgi = max(0, agi - agiCap);
+        }
+
+        float totalStatValue = (str * strWeight) + (effectiveInt * intWeight) + (effectiveAgi * agiWeight);
+        int overcapBonus = (int)(excessAgi * overcapMultiplier) + (int)(excessInt * overcapMultiplier);
+        int pureStatPower = (int)(totalStatValue * multiplier) + overcapBonus;
         return pureStatPower + getSynergizedWeaponAtk();
     }
 
@@ -146,7 +181,6 @@ struct Player
         return min(0.65f, rate);
     }
 
-    // Fungsi helper untuk menambah item ke tas
     void addItemToInventory(string itemName, string itemType)
     {
         if (itemName == "Kosong")
@@ -160,6 +194,97 @@ struct Player
             }
         }
         inventory.push_back({itemName, itemType, 1});
+    }
+
+    // ==========================================
+    // FITUR BARU: KALKULASI EXP & ADD EXP
+    // ==========================================
+    int getNextLevelExp()
+    {
+        // 1. Tentukan kedalaman (Depth) dungeon berdasarkan level pemain
+        int depth = (level - 1) / 5 + 1;
+        if (depth > 20)
+            depth = 20;
+
+        // 2. Data Drop EXP per Depth
+        int depthExp[] = {0, 50, 120, 250, 450, 700, 1050, 1500, 2100, 2800, 3700,
+                          4800, 6100, 7600, 9400, 11500, 14000, 17000, 20500, 24500, 30000};
+
+        int expPerRun = depthExp[depth];
+
+        // 3. Tentukan target jumlah Run
+        float runs = 1.0f;
+        if (level <= 20)
+        {
+            runs = 1.0f + ((level - 1) / 19.0f) * 2.0f; // Lvl 1(1x) -> Lvl 20(3x)
+        }
+        else if (level <= 30)
+        {
+            runs = 3.0f + ((level - 20) / 10.0f) * 1.0f; // Lvl 20(3x) -> Lvl 30(4x)
+        }
+        else if (level <= 40)
+        {
+            runs = 4.0f + ((level - 30) / 10.0f) * 1.0f; // Lvl 30(4x) -> Lvl 40(5x)
+        }
+        else if (level <= 60)
+        {
+            runs = 5.0f + ((level - 40) / 20.0f) * 3.0f; // Lvl 40(5x) -> Lvl 60(8x)
+        }
+        else if (level <= 70)
+        {
+            runs = 8.0f + ((level - 60) / 10.0f) * 3.0f; // Lvl 60(8x) -> Lvl 70(11x)
+        }
+        else if (level <= 80)
+        {
+            runs = 11.0f + ((level - 70) / 10.0f) * 2.0f; // Lvl 70(11x) -> Lvl 80(13x)
+        }
+        else if (level <= 95)
+        {
+            runs = 13.0f + ((level - 80) / 15.0f) * 5.0f; // Lvl 80(13x) -> Lvl 95(18x)
+        }
+        else
+        {
+            runs = 18.0f + ((level - 95) / 5.0f) * 2.0f; // Lvl 95(18x) -> Lvl 100(20x)
+        }
+
+        return (int)(expPerRun * runs);
+    }
+
+    // Logika penambahan EXP dan Kenaikan Level berantai
+    void addExp(int amount)
+    {
+        exp += amount;
+        int initialLevel = level;
+
+        // Loop ini memungkinkan pemain naik beberapa level sekaligus jika EXP yang dimasukkan sangat besar
+        while (exp >= getNextLevelExp() && level < 100)
+        {
+            exp -= getNextLevelExp(); // Sisa EXP disimpan untuk level berikutnya
+            level++;
+            statPoints += 5;
+        }
+
+        int levelsGained = level - initialLevel;
+
+        cout << "\n " << string(52, '=') << endl;
+        cout << " [ CHEAT DIAKTIFKAN ] Memperoleh " << amount << " EXP!" << endl;
+        cout << " " << string(52, '-') << endl;
+
+        if (levelsGained > 0)
+        {
+            cout << " LEVEL UP! Karakter naik " << levelsGained << " Level." << endl;
+            cout << " Stat Points     : +" << (levelsGained * 5) << " (Total: " << statPoints << ")" << endl;
+        }
+
+        cout << " Level Saat Ini  : " << level << " (Maks. 100)" << endl;
+        cout << " Progress EXP    : " << exp << " / " << getNextLevelExp() << endl;
+        cout << " Kapasitas HP    : " << getMaxHp() << " HP" << endl;
+
+        if (job == "Knight")
+        {
+            cout << " Multiplier ATK  : " << fixed << setprecision(2) << (2.0f + (level * 0.05f)) << "x" << endl;
+        }
+        cout << " " << string(52, '=') << endl;
     }
 };
 
@@ -203,28 +328,25 @@ void showStatsMenu(Player &p)
         cout << "                 STATUS KARAKTER                  " << endl;
         cout << string(50, '=') << endl;
 
-        // Atribut Tempur
         cout << " [ Atribut Tempur ]" << endl;
         cout << left << setw(9) << " Max HP" << " : " << setw(7) << p.getMaxHp() << " | (Base + Equip " << p.getTotalEquipHp() << ")" << endl;
         cout << left << setw(9) << " Max MP" << " : " << setw(7) << p.getMaxMp() << " |" << endl;
         cout << left << setw(9) << " ATK" << " : " << setw(7) << p.getAtkPower() << " | (Equip ATK Bersinergi +" << p.getSynergizedWeaponAtk() << ")" << endl;
         cout << left << setw(9) << " DEF" << " : " << setw(7) << p.getDefense() << " | (Equip +" << p.getTotalEquipDef() << ")" << endl;
-        cout << left << setw(9) << " Crit" << " : " << fixed << setprecision(1) << p.getCritRate() * 100 << "%" << setw(1) << "  |" << endl;
+        cout << left << setw(9) << " Crit" << " : " << fixed << setprecision(1) << p.getCritRate() * 100 << "%" << setw(1) << "   |" << endl;
         cout << "--------------------------------------------------" << endl;
 
-        // Weapon Synergy (Ditampilkan kembali)
         cout << " [ Weapon Synergy ]" << endl;
-        cout << left << setw(26) << " Stat Mastery (Primary)" << " : " << p.getPrimaryStat() << endl;
-        cout << left << setw(26) << " Weapon Efficiency" << " : " << fixed << setprecision(0) << (p.getWeaponEfficiency() * 100) << "%" << endl;
+        cout << left << setw(26) << " Stat Mastery (Primary)" << "  : " << p.getPrimaryStat() << endl;
+        cout << left << setw(26) << " Weapon Efficiency" << "  : " << fixed << setprecision(0) << (p.getWeaponEfficiency() * 100) << "%" << endl;
         cout << "--------------------------------------------------" << endl;
 
-        // Base Stats
         cout << " [ Base Stats ] - Poin Tersisa: " << p.statPoints << endl;
-        cout << left << setw(6) << " STR" << " : " << setw(11) << p.str << " | " << setw(5) << "INT" << " : " << p.intel << endl;
-        cout << left << setw(6) << " AGI" << " : " << setw(11) << p.agi << " | " << setw(5) << "VIT" << " : " << p.vit << endl;
-        cout << "==================================================" << endl;
-        cout << " 1. Alokasi stats" << endl;
-        cout << " 2. Kembali" << endl;
+        cout << left << setw(6) << " STR" << " : " << setw(11) << p.str << "| " << setw(5) << " INT" << " : " << p.intel << endl;
+        cout << left << setw(6) << " AGI" << " : " << setw(11) << p.agi << "| " << setw(5) << " VIT" << " : " << p.vit << endl;
+        cout << "==================================================" << endl
+             << endl;
+        cout << left << "  " << setw(27) << "1. Alokasi Stats" << "2. Kembali" << endl;
         cout << "--------------------------------------------------" << endl;
         cout << " Pilih aksi: ";
 
@@ -234,7 +356,7 @@ void showStatsMenu(Player &p)
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             continue;
         }
-        // ... (Logika alokasi stats tetap sama) ...
+
         if (choice == 1 && p.statPoints > 0)
         {
             int statChoice;
@@ -286,24 +408,22 @@ void showEquipmentMenu(Player &p)
     do
     {
         clearScreen();
-        cout << string(50, '=') << endl;
-        cout << "                EQUIPMENT SAAT INI                " << endl;
-        cout << string(50, '=') << endl;
+        cout << string(60, '=') << endl;
+        cout << "                     EQUIPMENT SAAT INI" << endl;
+        cout << string(60, '=') << endl;
 
-        // Header Kolom
-        cout << left << "  " << setw(11) << "SLOT" << " | " << setw(20) << "NAMA ITEM" << " | BONUS" << endl;
-        cout << string(50, '-') << endl;
+        cout << left << "  " << setw(11) << "SLOT" << " | " << setw(25) << "NAMA ITEM" << " | BONUS" << endl;
+        cout << string(60, '-') << endl;
 
-        // Baris Item - Menggunakan format yang lebih lega dan sejajar
         auto printRow = [](string slot, Equipment e)
         {
-            cout << left << "  " << setw(11) << slot << " : " << setw(20) << e.name;
+            cout << left << "  " << setw(11) << slot << " | " << setw(25) << e.name << " | ";
             if (e.atkBonus > 0)
-                cout << " ATK +" << e.atkBonus;
+                cout << "ATK +" << e.atkBonus;
             else if (e.defBonus > 0 || e.hpBonus > 0)
-                cout << " D+" << e.defBonus << " H+" << e.hpBonus;
+                cout << "D+" << e.defBonus << " H+" << e.hpBonus;
             else if (e.name != "Kosong")
-                cout << " Special";
+                cout << "Special";
             cout << endl;
         };
 
@@ -313,13 +433,11 @@ void showEquipmentMenu(Player &p)
         printRow("Boots", p.boots);
         printRow("Accessory", p.accessory);
 
-        cout << string(50, '=') << endl;
+        cout << string(60, '=') << endl
+             << endl;
 
-        // Pilihan Menu 2 Kolom (Agar konsisten dengan dashboard)
-        cout << left << "  " << setw(26) << "1. Pasang / Ubah" << endl
-             << "  " << "2. Kembali" << endl;
-
-        cout << string(50, '-') << endl;
+        cout << left << "  " << setw(31) << "1. Pasang / Ubah" << "2. Kembali" << endl;
+        cout << string(60, '-') << endl;
         cout << " Pilih aksi: ";
 
         if (!(cin >> choice))
@@ -331,10 +449,6 @@ void showEquipmentMenu(Player &p)
 
         if (choice == 1)
         {
-            // ... (Logika pemilihan slot dan item tetap sama seperti sebelumnya) ...
-            // Pastikan UI di dalam logika "Pilih Slot" juga menggunakan string(50, '-')
-            // agar lebarnya tetap konsisten 50 karakter.
-
             int slotChoice;
             cout << "\n [ Pilih Slot yang Ingin Diubah ]" << endl;
             cout << " 1.Weapon | 2.Helmet | 3.Armor | 4.Boots | 5.Acc" << endl;
@@ -357,11 +471,11 @@ void showEquipmentMenu(Player &p)
 
             vector<int> validIndices;
             int dIdx = 1;
-            for (int i = 0; i < p.inventory.size(); i++)
+            for (int i = 0; i < (int)p.inventory.size(); i++)
             {
                 if (p.inventory[i].type == targetType)
                 {
-                    cout << " " << dIdx << ". " << setw(20) << p.inventory[i].name << " (x" << p.inventory[i].quantity << ")" << endl;
+                    cout << " " << dIdx << ". " << setw(25) << p.inventory[i].name << " (x" << p.inventory[i].quantity << ")" << endl;
                     validIndices.push_back(i);
                     dIdx++;
                 }
@@ -380,7 +494,7 @@ void showEquipmentMenu(Player &p)
                 cout << "\n Berhasil melepas equipment!" << endl;
                 pauseMenu();
             }
-            else if (itemChoice > 0 && itemChoice <= validIndices.size())
+            else if (itemChoice > 0 && itemChoice <= (int)validIndices.size())
             {
                 int invIdx = validIndices[itemChoice - 1];
                 string newName = p.inventory[invIdx].name;
@@ -399,7 +513,7 @@ void showEquipmentMenu(Player &p)
 
 void showSkillsMenu(Player &p)
 {
-    updatePlayerSkills(p); // Pastikan status unlock terbaru
+    updatePlayerSkills(p);
     clearScreen();
     cout << string(50, '=') << endl;
     cout << "                   DAFTAR SKILL                   " << endl;
@@ -416,7 +530,6 @@ void showSkillsMenu(Player &p)
     {
         for (const auto &s : p.skills)
         {
-            // Header Skill
             if (s.isUnlocked)
             {
                 cout << " [ " << s.name << " ]" << endl;
@@ -426,7 +539,6 @@ void showSkillsMenu(Player &p)
                 cout << " [ ??? (Terkunci) ] - Req. Lvl " << s.requiredLevel << endl;
             }
 
-            // Detail Skill (Hanya tampil jika terbuka)
             if (s.isUnlocked)
             {
                 cout << "   > Biaya Mana : " << s.manaCost << " MP" << endl;
@@ -463,7 +575,7 @@ void showInventoryMenu(Player &p)
             if (!hasEquipment)
             {
                 cout << " [ EQUIPMENT ]" << endl;
-                cout << left << setw(23) << " Nama Item" << " | " << setw(12) << "Tipe" << " | Jumlah" << endl;
+                cout << left << setw(23) << " Nama Item" << "| " << setw(12) << "Tipe" << " | Jumlah" << endl;
                 cout << "--------------------------------------------------" << endl;
                 hasEquipment = true;
             }
@@ -481,7 +593,7 @@ void showInventoryMenu(Player &p)
             if (!hasConsumable)
             {
                 cout << " [ CONSUMABLE ]" << endl;
-                cout << left << setw(23) << " Nama Item" << " | " << setw(12) << "Tipe" << " | Jumlah" << endl;
+                cout << left << setw(23) << " Nama Item" << "| " << setw(12) << "Tipe" << " | Jumlah" << endl;
                 cout << "--------------------------------------------------" << endl;
                 hasConsumable = true;
             }
@@ -499,7 +611,7 @@ void showInventoryMenu(Player &p)
             if (!hasMaterial)
             {
                 cout << " [ MATERIAL ]" << endl;
-                cout << left << setw(23) << " Nama Item" << " | " << setw(12) << "Tipe" << " | Jumlah" << endl;
+                cout << left << setw(23) << " Nama Item" << "| " << setw(12) << "Tipe" << " | Jumlah" << endl;
                 cout << "--------------------------------------------------" << endl;
                 hasMaterial = true;
             }
@@ -519,30 +631,27 @@ int main()
     Player p1;
     p1.name = "Arthur";
     p1.job = "Knight";
-    p1.level = 100;
+    p1.level = 1;
     p1.exp = 0;
-    p1.statPoints = 500;
+    p1.statPoints = 5;
     p1.str = 10;
     p1.intel = 5;
     p1.agi = 10;
     p1.vit = 40;
 
-    // Setup Awal (Dipakai)
+    // Setup Awal
     p1.weapon = {"Calamity Breaker", "Weapon", 750, 0, 0};
-    p1.helmet = {"Marshall's Iron Face", "Helmet", 0, 1500, 8000};
-    p1.armor = {"God-King's Bastion", "Armor", 0, 3000, 15000};
-    p1.boots = {"Grand Marshall's Stride", "Boots", 0, 1500, 8000};
+    p1.helmet = {"Marshall's Iron Face", "Helmet", 0, 200, 8000};
+    p1.armor = {"God-King's Bastion", "Armor", 0, 400, 15000};
+    p1.boots = {"Marshall's Stride", "Boots", 0, 200, 8000};
     p1.accessory = {"Vitality Band", "Accessory", 0, 0, 0};
 
-    p1.skills.push_back({"Heavy Slash", "Menebas musuh dengan 150% ATK.", 1, true});
-    p1.skills.push_back({"Shield Bash", "Menyerang musuh dengan perisai (Stun).", 5, false});
-    p1.skills.push_back({"Calamity Strike", "Serangan pamungkas penghancur Void.", 50, false});
+    p1.skills.push_back({"Heavy Slash", "Menebas musuh dengan 150% ATK.", 1, 15, 1.5f, true});
+    p1.skills.push_back({"Shield Bash", "Menyerang musuh dengan perisai (Stun).", 5, 35, 3.0f, false});
+    p1.skills.push_back({"Calamity Strike", "Serangan pamungkas penghancur Void.", 50, 120, 25.0f, false});
 
-    // Isi Tas (Untuk Tes Swap/Pasang Equipment)
     p1.inventory.push_back({"Health Potion", "Consumable", 5});
     p1.inventory.push_back({"Heavy Ore", "Material", 12});
-
-    // --> DUMMY EQUIPMENT DI TAS
     p1.inventory.push_back({"Rusty Greatsword", "Weapon", 1});
     p1.inventory.push_back({"Void-Iron Cleaver", "Weapon", 1});
     p1.inventory.push_back({"Iron Pot Helm", "Helmet", 1});
@@ -559,26 +668,23 @@ int main()
         cout << "            M E N U   K A R A K T E R             " << endl;
         cout << string(50, '=') << endl;
 
-        // Info Karakter Utama (Dipindahkan ke sini)
         cout << left << "  " << setw(8) << "Nama" << " : " << setw(14) << p1.name
              << " | " << setw(7) << "Job" << " : " << p1.job << endl;
         cout << left << "  " << setw(8) << "Level" << " : " << setw(14) << p1.level
-             << " | " << setw(7) << "EXP" << " : " << p1.exp << "/100" << endl;
+             << " | " << setw(7) << "EXP" << " : " << p1.exp << "/" << p1.getNextLevelExp() << endl;
         cout << string(50, '-') << endl;
 
-        // --- GANTI BAGIAN OPSI MENU DENGAN KODE INI ---
         cout << endl;
-        // Baris pertama menu (Opsi 1 dan 2)
         cout << left << "  " << setw(26) << "1. Status & Alokasi" << "2. Cek Equipment" << endl;
         cout << endl;
-
-        // Baris kedua menu (Opsi 3 dan 4)
         cout << left << "  " << setw(26) << "3. Daftar Skill" << "4. Tas Inventory" << endl;
         cout << endl;
 
-        cout << string(50, '=') << endl;
-        cout << "  0. Kembali" << endl;
-        // ----------------------------------------------
+        cout << string(50, '=') << endl
+             << endl;
+
+        cout << left << "  " << setw(25) << "0. Kembali" << "99. Cheat Tambah EXP" << endl;
+
         cout << string(50, '-') << endl;
         cout << "\n Pilih menu: ";
 
@@ -603,6 +709,27 @@ int main()
         case 4:
             showInventoryMenu(p1);
             break;
+
+        // Logika Pemanggilan Fungsi Add EXP
+        case 99:
+        {
+            int expAmount;
+            cout << "\n [ CHEAT ] Masukkan jumlah EXP yang ingin ditambahkan: ";
+            if (!(cin >> expAmount) || expAmount <= 0)
+            {
+                cin.clear();
+                cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                cout << " Input tidak valid!" << endl;
+            }
+            else
+            {
+                p1.addExp(expAmount);
+                updatePlayerSkills(p1); // Cek skill baru setelah mendapat EXP
+            }
+            pauseMenu();
+            break;
+        }
+
         case 0:
             cout << "\n Kembali ke layar sebelumnya..." << endl;
             break;
