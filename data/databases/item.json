@@ -1,0 +1,1422 @@
+[
+  {
+    "item_id": "1",
+    "category_id": "7",
+    "name": "Iron Scrap",
+    "description": "Material Dasar Universal",
+    "buy_price": "100",
+    "sell_price": "40",
+    "required_class_id": null,
+    "tier_level": null
+  },
+  {
+    "item_id": "2",
+    "category_id": "7",
+    "name": "Heavy Ore",
+    "description": "Material Dasar Knight",
+    "buy_price": null,
+    "sell_price": "60",
+    "required_class_id": "1",
+    "tier_level": null
+  },
+  {
+    "item_id": "3",
+    "category_id": "7",
+    "name": "Refined Plate",
+    "description": "Material Olahan Knight",
+    "buy_price": null,
+    "sell_price": "450",
+    "required_class_id": "1",
+    "tier_level": null
+  },
+  {
+    "item_id": "4",
+    "category_id": "7",
+    "name": "Mana Shard",
+    "description": "Material Dasar Sorcerer",
+    "buy_price": null,
+    "sell_price": "60",
+    "required_class_id": "2",
+    "tier_level": null
+  },
+  {
+    "item_id": "5",
+    "category_id": "7",
+    "name": "Arcane Crystal",
+    "description": "Material Olahan Sorcerer",
+    "buy_price": null,
+    "sell_price": "450",
+    "required_class_id": "2",
+    "tier_level": null
+  },
+  {
+    "item_id": "6",
+    "category_id": "7",
+    "name": "Fine Fiber",
+    "description": "Material Dasar Wanderer",
+    "buy_price": null,
+    "sell_price": "60",
+    "required_class_id": "3",
+    "tier_level": null
+  },
+  {
+    "item_id": "7",
+    "category_id": "7",
+    "name": "Silent Thread",
+    "description": "Material Olahan Wanderer",
+    "buy_price": null,
+    "sell_price": "450",
+    "required_class_id": "3",
+    "tier_level": null
+  },
+  {
+    "item_id": "8",
+    "category_id": "7",
+    "name": "Void Essence",
+    "description": "Material Rare dari musuh Void",
+    "buy_price": null,
+    "sell_price": "1500",
+    "required_class_id": null,
+    "tier_level": null
+  },
+  {
+    "item_id": "1001",
+    "category_id": "1",
+    "name": "Healing Potion",
+    "description": "Memulihkan sejumlah HP (misal: 25% dari Max HP). Sangat penting untuk semua class.",
+    "buy_price": "200",
+    "sell_price": "100",
+    "required_class_id": null,
+    "tier_level": null
+  },
+  {
+    "item_id": "1002",
+    "category_id": "1",
+    "name": "Mana Elixir",
+    "description": "Memulihkan sejumlah Mana/MP (misal: 30% dari Max Mana). Sangat krusial untuk Archon agar bisa terus mengeluarkan sihir.",
+    "buy_price": "300",
+    "sell_price": "150",
+    "required_class_id": null,
+    "tier_level": null
+  },
+  {
+    "item_id": "1003",
+    "category_id": "1",
+    "name": "Soul Lantern",
+    "description": "Memberikan Auto-Revive satu kali kesempatan.",
+    "buy_price": "5000",
+    "sell_price": "2500",
+    "required_class_id": null,
+    "tier_level": null
+  },
+  {
+    "item_id": "1004",
+    "category_id": "1",
+    "name": "Infinity Sphere",
+    "description": "Mengurangi seluruh durasi cooldown skill yang sedang aktif sebanyak 1-2 turn secara instan.",
+    "buy_price": "3500",
+    "sell_price": "1800",
+    "required_class_id": null,
+    "tier_level": null
+  },
+  {
+    "item_id": "1101",
+    "category_id": "2",
+    "name": "Rusty Greatsword",
+    "description": "Pedang tua yang sudah berkarat.",
+    "buy_price": "500",
+    "sell_price": "250",
+    "required_class_id": "1",
+    "tier_level": "1"
+  },
+  {
+    "item_id": "1102",
+    "category_id": "2",
+    "name": "Iron Claymore",
+    "description": "Senjata standar prajurit kerajaan.",
+    "buy_price": null,
+    "sell_price": "600",
+    "required_class_id": "1",
+    "tier_level": "2"
+  },
+  {
+    "item_id": "1103",
+    "category_id": "2",
+    "name": "Steel Bastard Sword",
+    "description": "Lebih ringan namun sangat tajam.",
+    "buy_price": "2500",
+    "sell_price": "1500",
+    "required_class_id": "1",
+    "tier_level": "3"
+  },
+  {
+    "item_id": "1104",
+    "category_id": "2",
+    "name": "Knight’s Heavy Axe",
+    "description": "Kapak berat untuk menghancurkan zirah.",
+    "buy_price": null,
+    "sell_price": "3000",
+    "required_class_id": "1",
+    "tier_level": "4"
+  },
+  {
+    "item_id": "1105",
+    "category_id": "2",
+    "name": "Royal Vanguard Blade",
+    "description": "Pedang kehormatan penjaga istana.",
+    "buy_price": "10000",
+    "sell_price": "6000",
+    "required_class_id": "1",
+    "tier_level": "5"
+  },
+  {
+    "item_id": "1106",
+    "category_id": "2",
+    "name": "Ashen Smasher",
+    "description": "Dibuat dari lava beku Dungeon of Ember.",
+    "buy_price": null,
+    "sell_price": "12000",
+    "required_class_id": "1",
+    "tier_level": "6"
+  },
+  {
+    "item_id": "1107",
+    "category_id": "2",
+    "name": "Deep-Earth Maul",
+    "description": "Palu raksasa dari akar Dungeon of Thorns.",
+    "buy_price": null,
+    "sell_price": "25000",
+    "required_class_id": "1",
+    "tier_level": "7"
+  },
+  {
+    "item_id": "1108",
+    "category_id": "2",
+    "name": "Executioner’s Pride",
+    "description": "Senjata legendaris para algojo kerajaan.",
+    "buy_price": null,
+    "sell_price": "45000",
+    "required_class_id": "1",
+    "tier_level": "8"
+  },
+  {
+    "item_id": "1109",
+    "category_id": "2",
+    "name": "Void-Iron Cleaver",
+    "description": "Besi yang ditempa dengan energi The Void.",
+    "buy_price": null,
+    "sell_price": "80000",
+    "required_class_id": "1",
+    "tier_level": "9"
+  },
+  {
+    "item_id": "1110",
+    "category_id": "2",
+    "name": "Calamity Breaker",
+    "description": "Senjata pamungkas untuk sang Warlord.",
+    "buy_price": null,
+    "sell_price": "150000",
+    "required_class_id": "1",
+    "tier_level": "10"
+  },
+  {
+    "item_id": "1111",
+    "category_id": "3",
+    "name": "Leather Coif",
+    "description": "Helm kulit pelindung dasar.",
+    "buy_price": "400",
+    "sell_price": "200",
+    "required_class_id": "1",
+    "tier_level": "1"
+  },
+  {
+    "item_id": "1112",
+    "category_id": "3",
+    "name": "Iron Pot Helm",
+    "description": "Helm besi standar.",
+    "buy_price": null,
+    "sell_price": "450",
+    "required_class_id": "1",
+    "tier_level": "2"
+  },
+  {
+    "item_id": "1113",
+    "category_id": "3",
+    "name": "Steel Sallet",
+    "description": "Helm baja menutupi sebagian wajah.",
+    "buy_price": "2000",
+    "sell_price": "1000",
+    "required_class_id": "1",
+    "tier_level": "3"
+  },
+  {
+    "item_id": "1114",
+    "category_id": "3",
+    "name": "Guard’s Visor",
+    "description": "Helm dengan visor pelindung penuh.",
+    "buy_price": null,
+    "sell_price": "2200",
+    "required_class_id": "1",
+    "tier_level": "4"
+  },
+  {
+    "item_id": "1115",
+    "category_id": "3",
+    "name": "Commander’s Crest",
+    "description": "Helm berlambang komandan perang.",
+    "buy_price": "8500",
+    "sell_price": "4500",
+    "required_class_id": "1",
+    "tier_level": "5"
+  },
+  {
+    "item_id": "1116",
+    "category_id": "3",
+    "name": "Ember-Steel Mask",
+    "description": "Topeng baja bara api.",
+    "buy_price": null,
+    "sell_price": "9000",
+    "required_class_id": "1",
+    "tier_level": "6"
+  },
+  {
+    "item_id": "1117",
+    "category_id": "3",
+    "name": "Grave-Guardian Helm",
+    "description": "Helm penjaga makam kuno.",
+    "buy_price": null,
+    "sell_price": "18000",
+    "required_class_id": "1",
+    "tier_level": "7"
+  },
+  {
+    "item_id": "1118",
+    "category_id": "3",
+    "name": "Gladiator’s Crown",
+    "description": "Mahkota para gladiator tak terkalahkan.",
+    "buy_price": null,
+    "sell_price": "35000",
+    "required_class_id": "1",
+    "tier_level": "8"
+  },
+  {
+    "item_id": "1119",
+    "category_id": "3",
+    "name": "Abyssal Greathelm",
+    "description": "Helm besar yang ditempa di jurang kegelapan.",
+    "buy_price": null,
+    "sell_price": "60000",
+    "required_class_id": "1",
+    "tier_level": "9"
+  },
+  {
+    "item_id": "1120",
+    "category_id": "3",
+    "name": "Marshall’s Iron Face",
+    "description": "Wajah besi sang jenderal agung.",
+    "buy_price": null,
+    "sell_price": "120000",
+    "required_class_id": "1",
+    "tier_level": "10"
+  },
+  {
+    "item_id": "1121",
+    "category_id": "4",
+    "name": "Padded Tunic",
+    "description": "Tunik kain empuk pelindung dasar.",
+    "buy_price": "800",
+    "sell_price": "400",
+    "required_class_id": "1",
+    "tier_level": "1"
+  },
+  {
+    "item_id": "1122",
+    "category_id": "4",
+    "name": "Reinforced Leather",
+    "description": "Zirah kulit yang diperkuat.",
+    "buy_price": null,
+    "sell_price": "900",
+    "required_class_id": "1",
+    "tier_level": "2"
+  },
+  {
+    "item_id": "1123",
+    "category_id": "4",
+    "name": "Iron Chainmail",
+    "description": "Zirah rantai besi.",
+    "buy_price": "4000",
+    "sell_price": "2000",
+    "required_class_id": "1",
+    "tier_level": "3"
+  },
+  {
+    "item_id": "1124",
+    "category_id": "4",
+    "name": "Half-Plate Mail",
+    "description": "Zirah plat baja setengah badan.",
+    "buy_price": null,
+    "sell_price": "4500",
+    "required_class_id": "1",
+    "tier_level": "4"
+  },
+  {
+    "item_id": "1125",
+    "category_id": "4",
+    "name": "Knight’s Plate",
+    "description": "Zirah plat baja penuh standar kesatria.",
+    "buy_price": "15000",
+    "sell_price": "8500",
+    "required_class_id": "1",
+    "tier_level": "5"
+  },
+  {
+    "item_id": "1126",
+    "category_id": "4",
+    "name": "Volcanic Cuirass",
+    "description": "Pelindung dada dari batuan vulkanik.",
+    "buy_price": null,
+    "sell_price": "18000",
+    "required_class_id": "1",
+    "tier_level": "6"
+  },
+  {
+    "item_id": "1127",
+    "category_id": "4",
+    "name": "Ancient Oak Armor",
+    "description": "Zirah dari kayu oak kuno berkekuatan sihir.",
+    "buy_price": null,
+    "sell_price": "35000",
+    "required_class_id": "1",
+    "tier_level": "7"
+  },
+  {
+    "item_id": "1128",
+    "category_id": "4",
+    "name": "Dragonscale Hauberk",
+    "description": "Zirah yang terbuat dari sisik naga.",
+    "buy_price": null,
+    "sell_price": "65000",
+    "required_class_id": "1",
+    "tier_level": "8"
+  },
+  {
+    "item_id": "1129",
+    "category_id": "4",
+    "name": "Void-Reaper Plate",
+    "description": "Zirah dari sang malaikat maut hampa.",
+    "buy_price": null,
+    "sell_price": "110000",
+    "required_class_id": "1",
+    "tier_level": "9"
+  },
+  {
+    "item_id": "1130",
+    "category_id": "4",
+    "name": "God-King’s Bastion",
+    "description": "Benteng pelindung raja dewa.",
+    "buy_price": null,
+    "sell_price": "250000",
+    "required_class_id": "1",
+    "tier_level": "10"
+  },
+  {
+    "item_id": "1131",
+    "category_id": "5",
+    "name": "Traveler’s Boots",
+    "description": "Sepatu bot petualang.",
+    "buy_price": "300",
+    "sell_price": "150",
+    "required_class_id": "1",
+    "tier_level": "1"
+  },
+  {
+    "item_id": "1132",
+    "category_id": "5",
+    "name": "Hardened Soles",
+    "description": "Sepatu dengan sol yang dikeraskan.",
+    "buy_price": null,
+    "sell_price": "350",
+    "required_class_id": "1",
+    "tier_level": "2"
+  },
+  {
+    "item_id": "1133",
+    "category_id": "5",
+    "name": "Iron Greaves",
+    "description": "Pelindung kaki dari besi.",
+    "buy_price": "1500",
+    "sell_price": "750",
+    "required_class_id": "1",
+    "tier_level": "3"
+  },
+  {
+    "item_id": "1134",
+    "category_id": "5",
+    "name": "Plated Sabatons",
+    "description": "Sepatu bot dengan lapisan plat baja.",
+    "buy_price": null,
+    "sell_price": "1500",
+    "required_class_id": "1",
+    "tier_level": "4"
+  },
+  {
+    "item_id": "1135",
+    "category_id": "5",
+    "name": "Heavy War-Boots",
+    "description": "Sepatu bot perang kelas berat.",
+    "buy_price": "6000",
+    "sell_price": "3000",
+    "required_class_id": "1",
+    "tier_level": "5"
+  },
+  {
+    "item_id": "1136",
+    "category_id": "5",
+    "name": "Magma-Walkers",
+    "description": "Sepatu bot penahan panas magma.",
+    "buy_price": null,
+    "sell_price": "6500",
+    "required_class_id": "1",
+    "tier_level": "6"
+  },
+  {
+    "item_id": "1137",
+    "category_id": "5",
+    "name": "Ever-Root Greaves",
+    "description": "Sepatu akar yang mengikat ke bumi.",
+    "buy_price": null,
+    "sell_price": "12000",
+    "required_class_id": "1",
+    "tier_level": "7"
+  },
+  {
+    "item_id": "1138",
+    "category_id": "5",
+    "name": "Titan’s Footsteps",
+    "description": "Langkah kaki para Titan.",
+    "buy_price": null,
+    "sell_price": "22000",
+    "required_class_id": "1",
+    "tier_level": "8"
+  },
+  {
+    "item_id": "1139",
+    "category_id": "5",
+    "name": "Shadow-Step Sabatons",
+    "description": "Sepatu baja bayangan.",
+    "buy_price": null,
+    "sell_price": "45000",
+    "required_class_id": "1",
+    "tier_level": "9"
+  },
+  {
+    "item_id": "1140",
+    "category_id": "5",
+    "name": "Grand Marshall’s Stride",
+    "description": "Sepatu langkah keagungan.",
+    "buy_price": null,
+    "sell_price": "90000",
+    "required_class_id": "1",
+    "tier_level": "10"
+  },
+  {
+    "item_id": "1201",
+    "category_id": "2",
+    "name": "Apprentice Wand",
+    "description": "Tongkat kayu sederhana untuk pemula.",
+    "buy_price": "600",
+    "sell_price": "250",
+    "required_class_id": "2",
+    "tier_level": "1"
+  },
+  {
+    "item_id": "1202",
+    "category_id": "2",
+    "name": "Birch Staff",
+    "description": "Kayu birch yang telah diberkati mana.",
+    "buy_price": null,
+    "sell_price": "600",
+    "required_class_id": "2",
+    "tier_level": "2"
+  },
+  {
+    "item_id": "1203",
+    "category_id": "2",
+    "name": "Crystal Scepter",
+    "description": "Fokus kristal untuk mempertajam mantra.",
+    "buy_price": "3000",
+    "sell_price": "1500",
+    "required_class_id": "2",
+    "tier_level": "3"
+  },
+  {
+    "item_id": "1204",
+    "category_id": "2",
+    "name": "Scholar's Grimoire",
+    "description": "Buku mantra berisi teori sihir dasar.",
+    "buy_price": null,
+    "sell_price": "3000",
+    "required_class_id": "2",
+    "tier_level": "4"
+  },
+  {
+    "item_id": "1205",
+    "category_id": "2",
+    "name": "High Mage Rod",
+    "description": "Senjata standar para penyihir istana.",
+    "buy_price": "12000",
+    "sell_price": "6000",
+    "required_class_id": "2",
+    "tier_level": "5"
+  },
+  {
+    "item_id": "1206",
+    "category_id": "2",
+    "name": "Ignis Core Staff",
+    "description": "Inti api dari Dungeon of Ember.",
+    "buy_price": null,
+    "sell_price": "12000",
+    "required_class_id": "2",
+    "tier_level": "6"
+  },
+  {
+    "item_id": "1207",
+    "category_id": "2",
+    "name": "Tome of Eternity",
+    "description": "Buku kuno dari Dungeon of Wisdom.",
+    "buy_price": null,
+    "sell_price": "25000",
+    "required_class_id": "2",
+    "tier_level": "7"
+  },
+  {
+    "item_id": "1208",
+    "category_id": "2",
+    "name": "Celestial Spire",
+    "description": "Tongkat yang menyerap energi bintang.",
+    "buy_price": null,
+    "sell_price": "45000",
+    "required_class_id": "2",
+    "tier_level": "8"
+  },
+  {
+    "item_id": "1209",
+    "category_id": "2",
+    "name": "Abyssal Eye",
+    "description": "Orb yang menatap langsung ke kegelapan.",
+    "buy_price": null,
+    "sell_price": "80000",
+    "required_class_id": "2",
+    "tier_level": "9"
+  },
+  {
+    "item_id": "1210",
+    "category_id": "2",
+    "name": "Genesis Pillar",
+    "description": "Senjata pamungkas untuk sang Archon.",
+    "buy_price": null,
+    "sell_price": "150000",
+    "required_class_id": "2",
+    "tier_level": "10"
+  },
+  {
+    "item_id": "1211",
+    "category_id": "3",
+    "name": "Cotton Hood",
+    "description": "Penutup kepala kain pelindung ringan.",
+    "buy_price": "350",
+    "sell_price": "200",
+    "required_class_id": "2",
+    "tier_level": "1"
+  },
+  {
+    "item_id": "1212",
+    "category_id": "3",
+    "name": "Silk Circlet",
+    "description": "Lingkar kepala sutra penguat mana.",
+    "buy_price": null,
+    "sell_price": "450",
+    "required_class_id": "2",
+    "tier_level": "2"
+  },
+  {
+    "item_id": "1213",
+    "category_id": "3",
+    "name": "Mage’s Cowl",
+    "description": "Tudung kepala penyihir standar.",
+    "buy_price": "1800",
+    "sell_price": "1000",
+    "required_class_id": "2",
+    "tier_level": "3"
+  },
+  {
+    "item_id": "1214",
+    "category_id": "3",
+    "name": "Sage’s Veil",
+    "description": "Kerudung kebijaksanaan orang bijak.",
+    "buy_price": null,
+    "sell_price": "2200",
+    "required_class_id": "2",
+    "tier_level": "4"
+  },
+  {
+    "item_id": "1215",
+    "category_id": "3",
+    "name": "Wizard’s Tricorn",
+    "description": "Topi bersudut tiga khas penyihir agung.",
+    "buy_price": "7000",
+    "sell_price": "4500",
+    "required_class_id": "2",
+    "tier_level": "5"
+  },
+  {
+    "item_id": "1216",
+    "category_id": "3",
+    "name": "Cinder Hood",
+    "description": "Tudung bara api.",
+    "buy_price": null,
+    "sell_price": "9000",
+    "required_class_id": "2",
+    "tier_level": "6"
+  },
+  {
+    "item_id": "1217",
+    "category_id": "3",
+    "name": "Tiara of Insight",
+    "description": "Mahkota wawasan sihir tertinggi.",
+    "buy_price": null,
+    "sell_price": "18000",
+    "required_class_id": "2",
+    "tier_level": "7"
+  },
+  {
+    "item_id": "1218",
+    "category_id": "3",
+    "name": "Diadem of Stars",
+    "description": "Mahkota bertabur kekuatan bintang.",
+    "buy_price": null,
+    "sell_price": "35000",
+    "required_class_id": "2",
+    "tier_level": "8"
+  },
+  {
+    "item_id": "1219",
+    "category_id": "3",
+    "name": "Crown of the Void",
+    "description": "Mahkota kehampaan.",
+    "buy_price": null,
+    "sell_price": "60000",
+    "required_class_id": "2",
+    "tier_level": "9"
+  },
+  {
+    "item_id": "1220",
+    "category_id": "3",
+    "name": "Astral Halo",
+    "description": "Lingkaran cahaya astral dewa sihir.",
+    "buy_price": null,
+    "sell_price": "120000",
+    "required_class_id": "2",
+    "tier_level": "10"
+  },
+  {
+    "item_id": "1221",
+    "category_id": "4",
+    "name": "Novice Robe",
+    "description": "Jubah pemula sihir.",
+    "buy_price": "700",
+    "sell_price": "400",
+    "required_class_id": "2",
+    "tier_level": "1"
+  },
+  {
+    "item_id": "1222",
+    "category_id": "4",
+    "name": "Scholar’s Tunic",
+    "description": "Tunik para pelajar ilmu sihir.",
+    "buy_price": null,
+    "sell_price": "900",
+    "required_class_id": "2",
+    "tier_level": "2"
+  },
+  {
+    "item_id": "1223",
+    "category_id": "4",
+    "name": "Arcane Garb",
+    "description": "Pakaian misterius berlapis sihir.",
+    "buy_price": "3500",
+    "sell_price": "2000",
+    "required_class_id": "2",
+    "tier_level": "3"
+  },
+  {
+    "item_id": "1224",
+    "category_id": "4",
+    "name": "Mystic Vestment",
+    "description": "Jubah upacara mistis penyihir.",
+    "buy_price": null,
+    "sell_price": "4500",
+    "required_class_id": "2",
+    "tier_level": "4"
+  },
+  {
+    "item_id": "1225",
+    "category_id": "4",
+    "name": "Archmage’s Cloak",
+    "description": "Jubah kebesaran Archmage istana.",
+    "buy_price": "13000",
+    "sell_price": "8500",
+    "required_class_id": "2",
+    "tier_level": "5"
+  },
+  {
+    "item_id": "1226",
+    "category_id": "4",
+    "name": "Pyromancer’s Mantle",
+    "description": "Mantel pengendali api.",
+    "buy_price": null,
+    "sell_price": "18000",
+    "required_class_id": "2",
+    "tier_level": "6"
+  },
+  {
+    "item_id": "1227",
+    "category_id": "4",
+    "name": "Elder Root Robe",
+    "description": "Jubah dari akar pohon kebijaksanaan.",
+    "buy_price": null,
+    "sell_price": "35000",
+    "required_class_id": "2",
+    "tier_level": "7"
+  },
+  {
+    "item_id": "1228",
+    "category_id": "4",
+    "name": "Nebula Gown",
+    "description": "Gaun tenunan kosmos dan rasi bintang.",
+    "buy_price": null,
+    "sell_price": "65000",
+    "required_class_id": "2",
+    "tier_level": "8"
+  },
+  {
+    "item_id": "1229",
+    "category_id": "4",
+    "name": "Voidshaper Shroud",
+    "description": "Selubung pembentuk kehampaan.",
+    "buy_price": null,
+    "sell_price": "110000",
+    "required_class_id": "2",
+    "tier_level": "9"
+  },
+  {
+    "item_id": "1230",
+    "category_id": "4",
+    "name": "Eternity Raiment",
+    "description": "Pakaian keabadian sihir kosmik.",
+    "buy_price": null,
+    "sell_price": "250000",
+    "required_class_id": "2",
+    "tier_level": "10"
+  },
+  {
+    "item_id": "1231",
+    "category_id": "5",
+    "name": "Cloth Slippers",
+    "description": "Sandal kain ringan.",
+    "buy_price": "250",
+    "sell_price": "150",
+    "required_class_id": "2",
+    "tier_level": "1"
+  },
+  {
+    "item_id": "1232",
+    "category_id": "5",
+    "name": "Linen Shoes",
+    "description": "Sepatu linen untuk mobilitas.",
+    "buy_price": null,
+    "sell_price": "350",
+    "required_class_id": "2",
+    "tier_level": "2"
+  },
+  {
+    "item_id": "1233",
+    "category_id": "5",
+    "name": "Mage’s Sandals",
+    "description": "Sandal khusus para penyihir.",
+    "buy_price": "1200",
+    "sell_price": "750",
+    "required_class_id": "2",
+    "tier_level": "3"
+  },
+  {
+    "item_id": "1234",
+    "category_id": "5",
+    "name": "Enchanter’s Boots",
+    "description": "Sepatu bot para pemantra.",
+    "buy_price": null,
+    "sell_price": "1500",
+    "required_class_id": "2",
+    "tier_level": "4"
+  },
+  {
+    "item_id": "1235",
+    "category_id": "5",
+    "name": "Sorcerer’s Stride",
+    "description": "Sepatu bot langkah sorcerer.",
+    "buy_price": "5000",
+    "sell_price": "3000",
+    "required_class_id": "2",
+    "tier_level": "5"
+  },
+  {
+    "item_id": "1236",
+    "category_id": "5",
+    "name": "Flame-Walk Shoes",
+    "description": "Sepatu pijakan api.",
+    "buy_price": null,
+    "sell_price": "6500",
+    "required_class_id": "2",
+    "tier_level": "6"
+  },
+  {
+    "item_id": "1237",
+    "category_id": "5",
+    "name": "Ley-Line Greaves",
+    "description": "Pelindung kaki pengumpul energi leylines.",
+    "buy_price": null,
+    "sell_price": "12000",
+    "required_class_id": "2",
+    "tier_level": "7"
+  },
+  {
+    "item_id": "1238",
+    "category_id": "5",
+    "name": "Phase Boots",
+    "description": "Sepatu bergeser dimensi.",
+    "buy_price": null,
+    "sell_price": "22000",
+    "required_class_id": "2",
+    "tier_level": "8"
+  },
+  {
+    "item_id": "1239",
+    "category_id": "5",
+    "name": "Abyssal Walkers",
+    "description": "Langkah menyusuri jurang kegelapan.",
+    "buy_price": null,
+    "sell_price": "45000",
+    "required_class_id": "2",
+    "tier_level": "9"
+  },
+  {
+    "item_id": "1240",
+    "category_id": "5",
+    "name": "God-Stepper Soles",
+    "description": "Sol kaki penapak tingkat dewa.",
+    "buy_price": null,
+    "sell_price": "90000",
+    "required_class_id": "2",
+    "tier_level": "10"
+  },
+  {
+    "item_id": "1301",
+    "category_id": "2",
+    "name": "Short Bow",
+    "description": "Busur kayu ringan untuk berburu.",
+    "buy_price": "550",
+    "sell_price": "250",
+    "required_class_id": "3",
+    "tier_level": "1"
+  },
+  {
+    "item_id": "1302",
+    "category_id": "2",
+    "name": "Hunter's Crossbow",
+    "description": "Crossbow standar dengan daya tembus stabil.",
+    "buy_price": null,
+    "sell_price": "600",
+    "required_class_id": "3",
+    "tier_level": "2"
+  },
+  {
+    "item_id": "1303",
+    "category_id": "2",
+    "name": "Composite Bow",
+    "description": "Busur campuran kayu dan tulang.",
+    "buy_price": "2800",
+    "sell_price": "1500",
+    "required_class_id": "3",
+    "tier_level": "3"
+  },
+  {
+    "item_id": "1304",
+    "category_id": "2",
+    "name": "Heavy Arbalest",
+    "description": "Crossbow berat dengan mekanisme besi.",
+    "buy_price": null,
+    "sell_price": "3000",
+    "required_class_id": "3",
+    "tier_level": "4"
+  },
+  {
+    "item_id": "1305",
+    "category_id": "2",
+    "name": "Ranger's Longbow",
+    "description": "Busur panjang standar pasukan pengintai.",
+    "buy_price": "11000",
+    "sell_price": "6000",
+    "required_class_id": "3",
+    "tier_level": "5"
+  },
+  {
+    "item_id": "1306",
+    "category_id": "2",
+    "name": "Flamestrike Bow",
+    "description": "Busur yang talinya terbuat dari serat api.",
+    "buy_price": null,
+    "sell_price": "12000",
+    "required_class_id": "3",
+    "tier_level": "6"
+  },
+  {
+    "item_id": "1307",
+    "category_id": "2",
+    "name": "Verdant Crossbow",
+    "description": "Crossbow organik dari kayu Dungeon of Thorns.",
+    "buy_price": null,
+    "sell_price": "25000",
+    "required_class_id": "3",
+    "tier_level": "7"
+  },
+  {
+    "item_id": "1308",
+    "category_id": "2",
+    "name": "Eagle-Eye Piercer",
+    "description": "Busur legendaris dengan akurasi mutlak.",
+    "buy_price": null,
+    "sell_price": "45000",
+    "required_class_id": "3",
+    "tier_level": "8"
+  },
+  {
+    "item_id": "1309",
+    "category_id": "2",
+    "name": "Void-Stinger",
+    "description": "Crossbow yang menembakkan energi hampa.",
+    "buy_price": null,
+    "sell_price": "80000",
+    "required_class_id": "3",
+    "tier_level": "9"
+  },
+  {
+    "item_id": "1310",
+    "category_id": "2",
+    "name": "Final Nightfall",
+    "description": "Senjata pamungkas untuk sang Nightfall.",
+    "buy_price": null,
+    "sell_price": "150000",
+    "required_class_id": "3",
+    "tier_level": "10"
+  },
+  {
+    "item_id": "1311",
+    "category_id": "3",
+    "name": "Cloth Bandana",
+    "description": "Bandana kain ikat kepala.",
+    "buy_price": "380",
+    "sell_price": "200",
+    "required_class_id": "3",
+    "tier_level": "1"
+  },
+  {
+    "item_id": "1312",
+    "category_id": "3",
+    "name": "Leather Cap",
+    "description": "Topi kulit ringan.",
+    "buy_price": null,
+    "sell_price": "450",
+    "required_class_id": "3",
+    "tier_level": "2"
+  },
+  {
+    "item_id": "1313",
+    "category_id": "3",
+    "name": "Scout Hood",
+    "description": "Tudung pengintai.",
+    "buy_price": "1900",
+    "sell_price": "1000",
+    "required_class_id": "3",
+    "tier_level": "3"
+  },
+  {
+    "item_id": "1314",
+    "category_id": "3",
+    "name": "Reinforced Coif",
+    "description": "Tudung pelindung yang diperkuat.",
+    "buy_price": null,
+    "sell_price": "2200",
+    "required_class_id": "3",
+    "tier_level": "4"
+  },
+  {
+    "item_id": "1315",
+    "category_id": "3",
+    "name": "Tracker’s Mask",
+    "description": "Topeng penyamar pelacak tapak.",
+    "buy_price": "7500",
+    "sell_price": "4500",
+    "required_class_id": "3",
+    "tier_level": "5"
+  },
+  {
+    "item_id": "1316",
+    "category_id": "3",
+    "name": "Cinder Hood",
+    "description": "Tudung penjaga bayangan api.",
+    "buy_price": null,
+    "sell_price": "9000",
+    "required_class_id": "3",
+    "tier_level": "6"
+  },
+  {
+    "item_id": "1317",
+    "category_id": "3",
+    "name": "Silent Nightcap",
+    "description": "Tudung malam sunyi.",
+    "buy_price": null,
+    "sell_price": "18000",
+    "required_class_id": "3",
+    "tier_level": "7"
+  },
+  {
+    "item_id": "1318",
+    "category_id": "3",
+    "name": "Assassin’s Visage",
+    "description": "Topeng wajah sang pembunuh.",
+    "buy_price": null,
+    "sell_price": "35000",
+    "required_class_id": "3",
+    "tier_level": "8"
+  },
+  {
+    "item_id": "1319",
+    "category_id": "3",
+    "name": "Specter’s Gaze",
+    "description": "Tatapan sang hantu.",
+    "buy_price": null,
+    "sell_price": "60000",
+    "required_class_id": "3",
+    "tier_level": "9"
+  },
+  {
+    "item_id": "1320",
+    "category_id": "3",
+    "name": "Shroud of Nightfall",
+    "description": "Selubung pelindung jatuhnya malam.",
+    "buy_price": null,
+    "sell_price": "120000",
+    "required_class_id": "3",
+    "tier_level": "10"
+  },
+  {
+    "item_id": "1321",
+    "category_id": "4",
+    "name": "Rough Tunic",
+    "description": "Tunik kasar untuk bergerak lincah.",
+    "buy_price": "750",
+    "sell_price": "400",
+    "required_class_id": "3",
+    "tier_level": "1"
+  },
+  {
+    "item_id": "1322",
+    "category_id": "4",
+    "name": "Leather Jerkin",
+    "description": "Rompi kulit tanpa lengan.",
+    "buy_price": null,
+    "sell_price": "900",
+    "required_class_id": "3",
+    "tier_level": "2"
+  },
+  {
+    "item_id": "1323",
+    "category_id": "4",
+    "name": "Studded Vest",
+    "description": "Rompi bertatahkan logam pelindung.",
+    "buy_price": "3800",
+    "sell_price": "2000",
+    "required_class_id": "3",
+    "tier_level": "3"
+  },
+  {
+    "item_id": "1324",
+    "category_id": "4",
+    "name": "Ranger’s Garb",
+    "description": "Pakaian penjelajah alam liar.",
+    "buy_price": null,
+    "sell_price": "4500",
+    "required_class_id": "3",
+    "tier_level": "4"
+  },
+  {
+    "item_id": "1325",
+    "category_id": "4",
+    "name": "Duelist’s Leather",
+    "description": "Zirah kulit ringan khusus pertarungan.",
+    "buy_price": "14000",
+    "sell_price": "8500",
+    "required_class_id": "3",
+    "tier_level": "5"
+  },
+  {
+    "item_id": "1326",
+    "category_id": "4",
+    "name": "Salamander Hide",
+    "description": "Pakaian dari kulit salamander tahan panas.",
+    "buy_price": null,
+    "sell_price": "18000",
+    "required_class_id": "3",
+    "tier_level": "6"
+  },
+  {
+    "item_id": "1327",
+    "category_id": "4",
+    "name": "Nature’s Embrace",
+    "description": "Zirah pelukan alam terbuka.",
+    "buy_price": null,
+    "sell_price": "35000",
+    "required_class_id": "3",
+    "tier_level": "7"
+  },
+  {
+    "item_id": "1328",
+    "category_id": "4",
+    "name": "Mistwalker Tunic",
+    "description": "Tunik pejalan kabut putih.",
+    "buy_price": null,
+    "sell_price": "65000",
+    "required_class_id": "3",
+    "tier_level": "8"
+  },
+  {
+    "item_id": "1329",
+    "category_id": "4",
+    "name": "Abyssal Stealth-Suit",
+    "description": "Baju penyamaran stealth di jurang dalam.",
+    "buy_price": null,
+    "sell_price": "110000",
+    "required_class_id": "3",
+    "tier_level": "9"
+  },
+  {
+    "item_id": "1330",
+    "category_id": "4",
+    "name": "Eternal Night-Skin",
+    "description": "Kulit keabadian malam.",
+    "buy_price": null,
+    "sell_price": "250000",
+    "required_class_id": "3",
+    "tier_level": "10"
+  },
+  {
+    "item_id": "1331",
+    "category_id": "5",
+    "name": "Soft Sandals",
+    "description": "Sandal empuk untuk mengendap.",
+    "buy_price": "280",
+    "sell_price": "150",
+    "required_class_id": "3",
+    "tier_level": "1"
+  },
+  {
+    "item_id": "1332",
+    "category_id": "5",
+    "name": "Leather Boots",
+    "description": "Sepatu kulit dasar petualang.",
+    "buy_price": null,
+    "sell_price": "350",
+    "required_class_id": "3",
+    "tier_level": "2"
+  },
+  {
+    "item_id": "1333",
+    "category_id": "5",
+    "name": "Padded Shoes",
+    "description": "Sepatu tebal anti selip.",
+    "buy_price": "1300",
+    "sell_price": "750",
+    "required_class_id": "3",
+    "tier_level": "3"
+  },
+  {
+    "item_id": "1334",
+    "category_id": "5",
+    "name": "Scout Greaves",
+    "description": "Pelindung kaki ringan pengintai.",
+    "buy_price": null,
+    "sell_price": "1500",
+    "required_class_id": "3",
+    "tier_level": "4"
+  },
+  {
+    "item_id": "1335",
+    "category_id": "5",
+    "name": "Silent Striders",
+    "description": "Sepatu langkah tanpa suara.",
+    "buy_price": "5500",
+    "sell_price": "3000",
+    "required_class_id": "3",
+    "tier_level": "5"
+  },
+  {
+    "item_id": "1336",
+    "category_id": "5",
+    "name": "Magma-Step Boots",
+    "description": "Sepatu bot loncat magma.",
+    "buy_price": null,
+    "sell_price": "6500",
+    "required_class_id": "3",
+    "tier_level": "6"
+  },
+  {
+    "item_id": "1337",
+    "category_id": "5",
+    "name": "Wind-Runner Boots",
+    "description": "Sepatu lari penunggang angin.",
+    "buy_price": null,
+    "sell_price": "12000",
+    "required_class_id": "3",
+    "tier_level": "7"
+  },
+  {
+    "item_id": "1338",
+    "category_id": "5",
+    "name": "Shadow-Step Treads",
+    "description": "Alas kaki langkah bayangan.",
+    "buy_price": null,
+    "sell_price": "22000",
+    "required_class_id": "3",
+    "tier_level": "8"
+  },
+  {
+    "item_id": "1339",
+    "category_id": "5",
+    "name": "Ghost-Walkers",
+    "description": "Sepatu pejalan tembus rintangan.",
+    "buy_price": null,
+    "sell_price": "45000",
+    "required_class_id": "3",
+    "tier_level": "9"
+  },
+  {
+    "item_id": "1340",
+    "category_id": "5",
+    "name": "Nightfall’s Path",
+    "description": "Alas penyusur jalan sang Nightfall.",
+    "buy_price": null,
+    "sell_price": "90000",
+    "required_class_id": "3",
+    "tier_level": "10"
+  },
+  {
+    "item_id": "1401",
+    "category_id": "6",
+    "name": "Iron Ring",
+    "description": "Aksesoris penambah STR",
+    "buy_price": null,
+    "sell_price": "2000",
+    "required_class_id": null,
+    "tier_level": "1"
+  },
+  {
+    "item_id": "1402",
+    "category_id": "6",
+    "name": "Glass Monocle",
+    "description": "Aksesoris penambah INT",
+    "buy_price": null,
+    "sell_price": "2000",
+    "required_class_id": null,
+    "tier_level": "2"
+  },
+  {
+    "item_id": "1403",
+    "category_id": "6",
+    "name": "Feather Charm",
+    "description": "Aksesoris penambah AGI",
+    "buy_price": null,
+    "sell_price": "2000",
+    "required_class_id": null,
+    "tier_level": "3"
+  },
+  {
+    "item_id": "1404",
+    "category_id": "6",
+    "name": "Vitality Band",
+    "description": "Aksesoris penambah persentase HP",
+    "buy_price": null,
+    "sell_price": "4500",
+    "required_class_id": null,
+    "tier_level": "4"
+  },
+  {
+    "item_id": "1405",
+    "category_id": "6",
+    "name": "Mana Crystal",
+    "description": "Aksesoris penambah persentase MP",
+    "buy_price": null,
+    "sell_price": "5000",
+    "required_class_id": null,
+    "tier_level": "5"
+  },
+  {
+    "item_id": "1406",
+    "category_id": "6",
+    "name": "Warrior’s Emblem",
+    "description": "Aksesoris peningkatan Damage",
+    "buy_price": null,
+    "sell_price": "15000",
+    "required_class_id": null,
+    "tier_level": "6"
+  },
+  {
+    "item_id": "1407",
+    "category_id": "6",
+    "name": "Steel Gauntlet",
+    "description": "Aksesoris peningkatan Defense",
+    "buy_price": null,
+    "sell_price": "20000",
+    "required_class_id": null,
+    "tier_level": "7"
+  },
+  {
+    "item_id": "1408",
+    "category_id": "6",
+    "name": "Medallion of Life",
+    "description": "Aksesoris regenerasi HP",
+    "buy_price": null,
+    "sell_price": "35000",
+    "required_class_id": null,
+    "tier_level": "8"
+  },
+  {
+    "item_id": "1409",
+    "category_id": "6",
+    "name": "Silver Rosary",
+    "description": "Aksesoris peningkatan efek penyembuh",
+    "buy_price": null,
+    "sell_price": "35000",
+    "required_class_id": null,
+    "tier_level": "9"
+  },
+  {
+    "item_id": "1410",
+    "category_id": "6",
+    "name": "Void Pendulum",
+    "description": "Aksesoris manipulasi waktu (Cooldown)",
+    "buy_price": null,
+    "sell_price": "100000",
+    "required_class_id": null,
+    "tier_level": "10"
+  }
+]

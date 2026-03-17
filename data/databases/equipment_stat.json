@@ -1,0 +1,912 @@
+[
+  {
+    "item_id": "1101",
+    "atk_bonus": "10",
+    "hp_bonus": "0",
+    "def_bonus": "0",
+    "special_effect": null
+  },
+  {
+    "item_id": "1102",
+    "atk_bonus": "22",
+    "hp_bonus": "0",
+    "def_bonus": "0",
+    "special_effect": null
+  },
+  {
+    "item_id": "1103",
+    "atk_bonus": "35",
+    "hp_bonus": "0",
+    "def_bonus": "0",
+    "special_effect": null
+  },
+  {
+    "item_id": "1104",
+    "atk_bonus": "50",
+    "hp_bonus": "0",
+    "def_bonus": "0",
+    "special_effect": null
+  },
+  {
+    "item_id": "1105",
+    "atk_bonus": "70",
+    "hp_bonus": "0",
+    "def_bonus": "0",
+    "special_effect": null
+  },
+  {
+    "item_id": "1106",
+    "atk_bonus": "95",
+    "hp_bonus": "0",
+    "def_bonus": "0",
+    "special_effect": null
+  },
+  {
+    "item_id": "1107",
+    "atk_bonus": "125",
+    "hp_bonus": "0",
+    "def_bonus": "0",
+    "special_effect": null
+  },
+  {
+    "item_id": "1108",
+    "atk_bonus": "160",
+    "hp_bonus": "0",
+    "def_bonus": "0",
+    "special_effect": null
+  },
+  {
+    "item_id": "1109",
+    "atk_bonus": "210",
+    "hp_bonus": "0",
+    "def_bonus": "0",
+    "special_effect": null
+  },
+  {
+    "item_id": "1110",
+    "atk_bonus": "280",
+    "hp_bonus": "0",
+    "def_bonus": "0",
+    "special_effect": null
+  },
+  {
+    "item_id": "1111",
+    "atk_bonus": "0",
+    "hp_bonus": "20",
+    "def_bonus": "2",
+    "special_effect": null
+  },
+  {
+    "item_id": "1112",
+    "atk_bonus": "0",
+    "hp_bonus": "45",
+    "def_bonus": "5",
+    "special_effect": null
+  },
+  {
+    "item_id": "1113",
+    "atk_bonus": "0",
+    "hp_bonus": "80",
+    "def_bonus": "10",
+    "special_effect": null
+  },
+  {
+    "item_id": "1114",
+    "atk_bonus": "0",
+    "hp_bonus": "120",
+    "def_bonus": "18",
+    "special_effect": null
+  },
+  {
+    "item_id": "1115",
+    "atk_bonus": "0",
+    "hp_bonus": "180",
+    "def_bonus": "25",
+    "special_effect": null
+  },
+  {
+    "item_id": "1116",
+    "atk_bonus": "0",
+    "hp_bonus": "260",
+    "def_bonus": "38",
+    "special_effect": null
+  },
+  {
+    "item_id": "1117",
+    "atk_bonus": "0",
+    "hp_bonus": "350",
+    "def_bonus": "52",
+    "special_effect": null
+  },
+  {
+    "item_id": "1118",
+    "atk_bonus": "0",
+    "hp_bonus": "460",
+    "def_bonus": "70",
+    "special_effect": null
+  },
+  {
+    "item_id": "1119",
+    "atk_bonus": "0",
+    "hp_bonus": "600",
+    "def_bonus": "95",
+    "special_effect": null
+  },
+  {
+    "item_id": "1120",
+    "atk_bonus": "0",
+    "hp_bonus": "800",
+    "def_bonus": "130",
+    "special_effect": null
+  },
+  {
+    "item_id": "1121",
+    "atk_bonus": "0",
+    "hp_bonus": "50",
+    "def_bonus": "5",
+    "special_effect": null
+  },
+  {
+    "item_id": "1122",
+    "atk_bonus": "0",
+    "hp_bonus": "110",
+    "def_bonus": "12",
+    "special_effect": null
+  },
+  {
+    "item_id": "1123",
+    "atk_bonus": "0",
+    "hp_bonus": "200",
+    "def_bonus": "22",
+    "special_effect": null
+  },
+  {
+    "item_id": "1124",
+    "atk_bonus": "0",
+    "hp_bonus": "320",
+    "def_bonus": "35",
+    "special_effect": null
+  },
+  {
+    "item_id": "1125",
+    "atk_bonus": "0",
+    "hp_bonus": "480",
+    "def_bonus": "55",
+    "special_effect": null
+  },
+  {
+    "item_id": "1126",
+    "atk_bonus": "0",
+    "hp_bonus": "700",
+    "def_bonus": "85",
+    "special_effect": null
+  },
+  {
+    "item_id": "1127",
+    "atk_bonus": "0",
+    "hp_bonus": "1000",
+    "def_bonus": "120",
+    "special_effect": null
+  },
+  {
+    "item_id": "1128",
+    "atk_bonus": "0",
+    "hp_bonus": "1400",
+    "def_bonus": "170",
+    "special_effect": null
+  },
+  {
+    "item_id": "1129",
+    "atk_bonus": "0",
+    "hp_bonus": "1900",
+    "def_bonus": "230",
+    "special_effect": null
+  },
+  {
+    "item_id": "1130",
+    "atk_bonus": "0",
+    "hp_bonus": "2500",
+    "def_bonus": "310",
+    "special_effect": null
+  },
+  {
+    "item_id": "1131",
+    "atk_bonus": "0",
+    "hp_bonus": "15",
+    "def_bonus": "1",
+    "special_effect": null
+  },
+  {
+    "item_id": "1132",
+    "atk_bonus": "0",
+    "hp_bonus": "35",
+    "def_bonus": "3",
+    "special_effect": null
+  },
+  {
+    "item_id": "1133",
+    "atk_bonus": "0",
+    "hp_bonus": "65",
+    "def_bonus": "7",
+    "special_effect": null
+  },
+  {
+    "item_id": "1134",
+    "atk_bonus": "0",
+    "hp_bonus": "100",
+    "def_bonus": "12",
+    "special_effect": null
+  },
+  {
+    "item_id": "1135",
+    "atk_bonus": "0",
+    "hp_bonus": "150",
+    "def_bonus": "20",
+    "special_effect": null
+  },
+  {
+    "item_id": "1136",
+    "atk_bonus": "0",
+    "hp_bonus": "220",
+    "def_bonus": "32",
+    "special_effect": null
+  },
+  {
+    "item_id": "1137",
+    "atk_bonus": "0",
+    "hp_bonus": "310",
+    "def_bonus": "45",
+    "special_effect": null
+  },
+  {
+    "item_id": "1138",
+    "atk_bonus": "0",
+    "hp_bonus": "420",
+    "def_bonus": "62",
+    "special_effect": null
+  },
+  {
+    "item_id": "1139",
+    "atk_bonus": "0",
+    "hp_bonus": "560",
+    "def_bonus": "85",
+    "special_effect": null
+  },
+  {
+    "item_id": "1140",
+    "atk_bonus": "0",
+    "hp_bonus": "750",
+    "def_bonus": "115",
+    "special_effect": null
+  },
+  {
+    "item_id": "1201",
+    "atk_bonus": "15",
+    "hp_bonus": "0",
+    "def_bonus": "0",
+    "special_effect": null
+  },
+  {
+    "item_id": "1202",
+    "atk_bonus": "30",
+    "hp_bonus": "0",
+    "def_bonus": "0",
+    "special_effect": null
+  },
+  {
+    "item_id": "1203",
+    "atk_bonus": "48",
+    "hp_bonus": "0",
+    "def_bonus": "0",
+    "special_effect": null
+  },
+  {
+    "item_id": "1204",
+    "atk_bonus": "65",
+    "hp_bonus": "0",
+    "def_bonus": "0",
+    "special_effect": null
+  },
+  {
+    "item_id": "1205",
+    "atk_bonus": "90",
+    "hp_bonus": "0",
+    "def_bonus": "0",
+    "special_effect": null
+  },
+  {
+    "item_id": "1206",
+    "atk_bonus": "120",
+    "hp_bonus": "0",
+    "def_bonus": "0",
+    "special_effect": null
+  },
+  {
+    "item_id": "1207",
+    "atk_bonus": "160",
+    "hp_bonus": "0",
+    "def_bonus": "0",
+    "special_effect": null
+  },
+  {
+    "item_id": "1208",
+    "atk_bonus": "210",
+    "hp_bonus": "0",
+    "def_bonus": "0",
+    "special_effect": null
+  },
+  {
+    "item_id": "1209",
+    "atk_bonus": "280",
+    "hp_bonus": "0",
+    "def_bonus": "0",
+    "special_effect": null
+  },
+  {
+    "item_id": "1210",
+    "atk_bonus": "380",
+    "hp_bonus": "0",
+    "def_bonus": "0",
+    "special_effect": null
+  },
+  {
+    "item_id": "1211",
+    "atk_bonus": "0",
+    "hp_bonus": "12",
+    "def_bonus": "1",
+    "special_effect": null
+  },
+  {
+    "item_id": "1212",
+    "atk_bonus": "0",
+    "hp_bonus": "30",
+    "def_bonus": "3",
+    "special_effect": null
+  },
+  {
+    "item_id": "1213",
+    "atk_bonus": "0",
+    "hp_bonus": "55",
+    "def_bonus": "6",
+    "special_effect": null
+  },
+  {
+    "item_id": "1214",
+    "atk_bonus": "0",
+    "hp_bonus": "85",
+    "def_bonus": "10",
+    "special_effect": null
+  },
+  {
+    "item_id": "1215",
+    "atk_bonus": "0",
+    "hp_bonus": "130",
+    "def_bonus": "15",
+    "special_effect": null
+  },
+  {
+    "item_id": "1216",
+    "atk_bonus": "0",
+    "hp_bonus": "190",
+    "def_bonus": "22",
+    "special_effect": null
+  },
+  {
+    "item_id": "1217",
+    "atk_bonus": "0",
+    "hp_bonus": "260",
+    "def_bonus": "32",
+    "special_effect": null
+  },
+  {
+    "item_id": "1218",
+    "atk_bonus": "0",
+    "hp_bonus": "350",
+    "def_bonus": "45",
+    "special_effect": null
+  },
+  {
+    "item_id": "1219",
+    "atk_bonus": "0",
+    "hp_bonus": "480",
+    "def_bonus": "65",
+    "special_effect": null
+  },
+  {
+    "item_id": "1220",
+    "atk_bonus": "0",
+    "hp_bonus": "650",
+    "def_bonus": "90",
+    "special_effect": null
+  },
+  {
+    "item_id": "1221",
+    "atk_bonus": "0",
+    "hp_bonus": "30",
+    "def_bonus": "3",
+    "special_effect": null
+  },
+  {
+    "item_id": "1222",
+    "atk_bonus": "0",
+    "hp_bonus": "75",
+    "def_bonus": "7",
+    "special_effect": null
+  },
+  {
+    "item_id": "1223",
+    "atk_bonus": "0",
+    "hp_bonus": "140",
+    "def_bonus": "14",
+    "special_effect": null
+  },
+  {
+    "item_id": "1224",
+    "atk_bonus": "0",
+    "hp_bonus": "230",
+    "def_bonus": "22",
+    "special_effect": null
+  },
+  {
+    "item_id": "1225",
+    "atk_bonus": "0",
+    "hp_bonus": "350",
+    "def_bonus": "35",
+    "special_effect": null
+  },
+  {
+    "item_id": "1226",
+    "atk_bonus": "0",
+    "hp_bonus": "520",
+    "def_bonus": "55",
+    "special_effect": null
+  },
+  {
+    "item_id": "1227",
+    "atk_bonus": "0",
+    "hp_bonus": "750",
+    "def_bonus": "80",
+    "special_effect": null
+  },
+  {
+    "item_id": "1228",
+    "atk_bonus": "0",
+    "hp_bonus": "1050",
+    "def_bonus": "115",
+    "special_effect": null
+  },
+  {
+    "item_id": "1229",
+    "atk_bonus": "0",
+    "hp_bonus": "1450",
+    "def_bonus": "160",
+    "special_effect": null
+  },
+  {
+    "item_id": "1230",
+    "atk_bonus": "0",
+    "hp_bonus": "1950",
+    "def_bonus": "220",
+    "special_effect": null
+  },
+  {
+    "item_id": "1231",
+    "atk_bonus": "0",
+    "hp_bonus": "10",
+    "def_bonus": "1",
+    "special_effect": null
+  },
+  {
+    "item_id": "1232",
+    "atk_bonus": "0",
+    "hp_bonus": "25",
+    "def_bonus": "2",
+    "special_effect": null
+  },
+  {
+    "item_id": "1233",
+    "atk_bonus": "0",
+    "hp_bonus": "48",
+    "def_bonus": "5",
+    "special_effect": null
+  },
+  {
+    "item_id": "1234",
+    "atk_bonus": "0",
+    "hp_bonus": "75",
+    "def_bonus": "8",
+    "special_effect": null
+  },
+  {
+    "item_id": "1235",
+    "atk_bonus": "0",
+    "hp_bonus": "110",
+    "def_bonus": "13",
+    "special_effect": null
+  },
+  {
+    "item_id": "1236",
+    "atk_bonus": "0",
+    "hp_bonus": "165",
+    "def_bonus": "20",
+    "special_effect": null
+  },
+  {
+    "item_id": "1237",
+    "atk_bonus": "0",
+    "hp_bonus": "235",
+    "def_bonus": "30",
+    "special_effect": null
+  },
+  {
+    "item_id": "1238",
+    "atk_bonus": "0",
+    "hp_bonus": "330",
+    "def_bonus": "45",
+    "special_effect": null
+  },
+  {
+    "item_id": "1239",
+    "atk_bonus": "0",
+    "hp_bonus": "450",
+    "def_bonus": "65",
+    "special_effect": null
+  },
+  {
+    "item_id": "1240",
+    "atk_bonus": "0",
+    "hp_bonus": "620",
+    "def_bonus": "95",
+    "special_effect": null
+  },
+  {
+    "item_id": "1301",
+    "atk_bonus": "12",
+    "hp_bonus": "0",
+    "def_bonus": "0",
+    "special_effect": null
+  },
+  {
+    "item_id": "1302",
+    "atk_bonus": "25",
+    "hp_bonus": "0",
+    "def_bonus": "0",
+    "special_effect": null
+  },
+  {
+    "item_id": "1303",
+    "atk_bonus": "40",
+    "hp_bonus": "0",
+    "def_bonus": "0",
+    "special_effect": null
+  },
+  {
+    "item_id": "1304",
+    "atk_bonus": "58",
+    "hp_bonus": "0",
+    "def_bonus": "0",
+    "special_effect": null
+  },
+  {
+    "item_id": "1305",
+    "atk_bonus": "80",
+    "hp_bonus": "0",
+    "def_bonus": "0",
+    "special_effect": null
+  },
+  {
+    "item_id": "1306",
+    "atk_bonus": "105",
+    "hp_bonus": "0",
+    "def_bonus": "0",
+    "special_effect": null
+  },
+  {
+    "item_id": "1307",
+    "atk_bonus": "140",
+    "hp_bonus": "0",
+    "def_bonus": "0",
+    "special_effect": null
+  },
+  {
+    "item_id": "1308",
+    "atk_bonus": "185",
+    "hp_bonus": "0",
+    "def_bonus": "0",
+    "special_effect": null
+  },
+  {
+    "item_id": "1309",
+    "atk_bonus": "245",
+    "hp_bonus": "0",
+    "def_bonus": "0",
+    "special_effect": null
+  },
+  {
+    "item_id": "1310",
+    "atk_bonus": "330",
+    "hp_bonus": "0",
+    "def_bonus": "0",
+    "special_effect": null
+  },
+  {
+    "item_id": "1311",
+    "atk_bonus": "0",
+    "hp_bonus": "15",
+    "def_bonus": "1",
+    "special_effect": null
+  },
+  {
+    "item_id": "1312",
+    "atk_bonus": "0",
+    "hp_bonus": "38",
+    "def_bonus": "4",
+    "special_effect": null
+  },
+  {
+    "item_id": "1313",
+    "atk_bonus": "0",
+    "hp_bonus": "68",
+    "def_bonus": "8",
+    "special_effect": null
+  },
+  {
+    "item_id": "1314",
+    "atk_bonus": "0",
+    "hp_bonus": "100",
+    "def_bonus": "14",
+    "special_effect": null
+  },
+  {
+    "item_id": "1315",
+    "atk_bonus": "0",
+    "hp_bonus": "155",
+    "def_bonus": "20",
+    "special_effect": null
+  },
+  {
+    "item_id": "1316",
+    "atk_bonus": "0",
+    "hp_bonus": "225",
+    "def_bonus": "30",
+    "special_effect": null
+  },
+  {
+    "item_id": "1317",
+    "atk_bonus": "0",
+    "hp_bonus": "305",
+    "def_bonus": "42",
+    "special_effect": null
+  },
+  {
+    "item_id": "1318",
+    "atk_bonus": "0",
+    "hp_bonus": "405",
+    "def_bonus": "58",
+    "special_effect": null
+  },
+  {
+    "item_id": "1319",
+    "atk_bonus": "0",
+    "hp_bonus": "540",
+    "def_bonus": "80",
+    "special_effect": null
+  },
+  {
+    "item_id": "1320",
+    "atk_bonus": "0",
+    "hp_bonus": "720",
+    "def_bonus": "110",
+    "special_effect": null
+  },
+  {
+    "item_id": "1321",
+    "atk_bonus": "0",
+    "hp_bonus": "40",
+    "def_bonus": "4",
+    "special_effect": null
+  },
+  {
+    "item_id": "1322",
+    "atk_bonus": "0",
+    "hp_bonus": "95",
+    "def_bonus": "10",
+    "special_effect": null
+  },
+  {
+    "item_id": "1323",
+    "atk_bonus": "0",
+    "hp_bonus": "170",
+    "def_bonus": "18",
+    "special_effect": null
+  },
+  {
+    "item_id": "1324",
+    "atk_bonus": "0",
+    "hp_bonus": "275",
+    "def_bonus": "28",
+    "special_effect": null
+  },
+  {
+    "item_id": "1325",
+    "atk_bonus": "0",
+    "hp_bonus": "415",
+    "def_bonus": "45",
+    "special_effect": null
+  },
+  {
+    "item_id": "1326",
+    "atk_bonus": "0",
+    "hp_bonus": "610",
+    "def_bonus": "70",
+    "special_effect": null
+  },
+  {
+    "item_id": "1327",
+    "atk_bonus": "0",
+    "hp_bonus": "875",
+    "def_bonus": "100",
+    "special_effect": null
+  },
+  {
+    "item_id": "1328",
+    "atk_bonus": "0",
+    "hp_bonus": "1225",
+    "def_bonus": "140",
+    "special_effect": null
+  },
+  {
+    "item_id": "1329",
+    "atk_bonus": "0",
+    "hp_bonus": "1675",
+    "def_bonus": "195",
+    "special_effect": null
+  },
+  {
+    "item_id": "1330",
+    "atk_bonus": "0",
+    "hp_bonus": "2200",
+    "def_bonus": "265",
+    "special_effect": null
+  },
+  {
+    "item_id": "1331",
+    "atk_bonus": "0",
+    "hp_bonus": "12",
+    "def_bonus": "1",
+    "special_effect": null
+  },
+  {
+    "item_id": "1332",
+    "atk_bonus": "0",
+    "hp_bonus": "30",
+    "def_bonus": "2",
+    "special_effect": null
+  },
+  {
+    "item_id": "1333",
+    "atk_bonus": "0",
+    "hp_bonus": "55",
+    "def_bonus": "6",
+    "special_effect": null
+  },
+  {
+    "item_id": "1334",
+    "atk_bonus": "0",
+    "hp_bonus": "88",
+    "def_bonus": "10",
+    "special_effect": null
+  },
+  {
+    "item_id": "1335",
+    "atk_bonus": "0",
+    "hp_bonus": "130",
+    "def_bonus": "17",
+    "special_effect": null
+  },
+  {
+    "item_id": "1336",
+    "atk_bonus": "0",
+    "hp_bonus": "190",
+    "def_bonus": "26",
+    "special_effect": null
+  },
+  {
+    "item_id": "1337",
+    "atk_bonus": "0",
+    "hp_bonus": "275",
+    "def_bonus": "38",
+    "special_effect": null
+  },
+  {
+    "item_id": "1338",
+    "atk_bonus": "0",
+    "hp_bonus": "375",
+    "def_bonus": "55",
+    "special_effect": null
+  },
+  {
+    "item_id": "1339",
+    "atk_bonus": "0",
+    "hp_bonus": "505",
+    "def_bonus": "75",
+    "special_effect": null
+  },
+  {
+    "item_id": "1340",
+    "atk_bonus": "0",
+    "hp_bonus": "680",
+    "def_bonus": "105",
+    "special_effect": null
+  },
+  {
+    "item_id": "1401",
+    "atk_bonus": "0",
+    "hp_bonus": "0",
+    "def_bonus": "0",
+    "special_effect": "+10% STR. Bonus makin besar seiring naiknya level Knight."
+  },
+  {
+    "item_id": "1402",
+    "atk_bonus": "0",
+    "hp_bonus": "0",
+    "def_bonus": "0",
+    "special_effect": "+10% INT. Sangat kuat untuk menunjang damage Sorcerer."
+  },
+  {
+    "item_id": "1403",
+    "atk_bonus": "0",
+    "hp_bonus": "0",
+    "def_bonus": "0",
+    "special_effect": "+10% AGI. Karena tak ada Evasion, AGI kini menambah Damage Wanderer secara signifikan."
+  },
+  {
+    "item_id": "1404",
+    "atk_bonus": "0",
+    "hp_bonus": "0",
+    "def_bonus": "0",
+    "special_effect": "+15% Max HP. Meningkatkan daya tahan secara masif di Level 100."
+  },
+  {
+    "item_id": "1405",
+    "atk_bonus": "0",
+    "hp_bonus": "0",
+    "def_bonus": "0",
+    "special_effect": "+20% Max MP. Memastikan mana pool cukup untuk rotasi skill Tier 3."
+  },
+  {
+    "item_id": "1406",
+    "atk_bonus": "0",
+    "hp_bonus": "0",
+    "def_bonus": "0",
+    "special_effect": "+8% Total Damage. Pengali akhir untuk mempercepat clearance musuh."
+  },
+  {
+    "item_id": "1407",
+    "atk_bonus": "0",
+    "hp_bonus": "0",
+    "def_bonus": "0",
+    "special_effect": "+15% Total DEF. Sangat krusial untuk menahan serangan The Void."
+  },
+  {
+    "item_id": "1408",
+    "atk_bonus": "0",
+    "hp_bonus": "0",
+    "def_bonus": "0",
+    "special_effect": "HP Regen +5% / Turn. Membantu menghemat penggunaan Healing Potion."
+  },
+  {
+    "item_id": "1409",
+    "atk_bonus": "0",
+    "hp_bonus": "0",
+    "def_bonus": "0",
+    "special_effect": "+20% Potency Item. Healing Potion (25%) menjadi (45%) saat dipakai."
+  },
+  {
+    "item_id": "1410",
+    "atk_bonus": "0",
+    "hp_bonus": "0",
+    "def_bonus": "0",
+    "special_effect": "-1 Turn Cooldown. Item paling dicari untuk spamming skill."
+  }
+]

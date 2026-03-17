@@ -1,0 +1,38 @@
+[
+  {
+    "tier_id": "1",
+    "class_id": "1",
+    "tier_level": "2",
+    "tier_name": "Vanguard"
+  },
+  {
+    "tier_id": "2",
+    "class_id": "1",
+    "tier_level": "3",
+    "tier_name": "Warlord"
+  },
+  {
+    "tier_id": "3",
+    "class_id": "2",
+    "tier_level": "2",
+    "tier_name": "Archmage"
+  },
+  {
+    "tier_id": "4",
+    "class_id": "2",
+    "tier_level": "3",
+    "tier_name": "Archon"
+  },
+  {
+    "tier_id": "5",
+    "class_id": "3",
+    "tier_level": "2",
+    "tier_name": "Nightstalker"
+  },
+  {
+    "tier_id": "6",
+    "class_id": "3",
+    "tier_level": "3",
+    "tier_name": "Nightfall"
+  }
+]

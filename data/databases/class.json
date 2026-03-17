@@ -1,0 +1,20 @@
+[
+  {
+    "class_id": "1",
+    "class_name": "Knight",
+    "base_damage_formula": "(STR*2.5)+TotalEquipATK",
+    "primary_stat": "STR"
+  },
+  {
+    "class_id": "2",
+    "class_name": "Sorcerer",
+    "base_damage_formula": "(INT*3.0)+TotalEquipMATK",
+    "primary_stat": "INT"
+  },
+  {
+    "class_id": "3",
+    "class_name": "Wanderer",
+    "base_damage_formula": "(AGI*2.0)+TotalEquipATK",
+    "primary_stat": "AGI"
+  }
+]

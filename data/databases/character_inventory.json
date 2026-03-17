@@ -1,0 +1,802 @@
+[
+  {
+    "inventory_id": "201",
+    "character_id": "2",
+    "item_id": "1322",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "202",
+    "character_id": "14",
+    "item_id": "1103",
+    "quantity": "1",
+    "is_equipped": "1",
+    "equipped_slot": "Weapon"
+  },
+  {
+    "inventory_id": "203",
+    "character_id": "15",
+    "item_id": "1221",
+    "quantity": "1",
+    "is_equipped": "1",
+    "equipped_slot": "Armor"
+  },
+  {
+    "inventory_id": "204",
+    "character_id": "2",
+    "item_id": "1403",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "205",
+    "character_id": "13",
+    "item_id": "1126",
+    "quantity": "1",
+    "is_equipped": "1",
+    "equipped_slot": "Armor"
+  },
+  {
+    "inventory_id": "206",
+    "character_id": "9",
+    "item_id": "1340",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "207",
+    "character_id": "9",
+    "item_id": "1402",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "208",
+    "character_id": "3",
+    "item_id": "1321",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "209",
+    "character_id": "10",
+    "item_id": "1403",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "210",
+    "character_id": "7",
+    "item_id": "1139",
+    "quantity": "1",
+    "is_equipped": "1",
+    "equipped_slot": "Boots"
+  },
+  {
+    "inventory_id": "211",
+    "character_id": "14",
+    "item_id": "1101",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "212",
+    "character_id": "4",
+    "item_id": "1321",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "213",
+    "character_id": "3",
+    "item_id": "1125",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "214",
+    "character_id": "20",
+    "item_id": "1306",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "215",
+    "character_id": "3",
+    "item_id": "1306",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "216",
+    "character_id": "13",
+    "item_id": "1232",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "217",
+    "character_id": "9",
+    "item_id": "1203",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "218",
+    "character_id": "6",
+    "item_id": "1239",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "219",
+    "character_id": "17",
+    "item_id": "1227",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "220",
+    "character_id": "1",
+    "item_id": "1334",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "221",
+    "character_id": "15",
+    "item_id": "1136",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "222",
+    "character_id": "10",
+    "item_id": "1131",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "223",
+    "character_id": "10",
+    "item_id": "1107",
+    "quantity": "1",
+    "is_equipped": "1",
+    "equipped_slot": "Weapon"
+  },
+  {
+    "inventory_id": "224",
+    "character_id": "19",
+    "item_id": "1323",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "225",
+    "character_id": "9",
+    "item_id": "1001",
+    "quantity": "3",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "226",
+    "character_id": "9",
+    "item_id": "7",
+    "quantity": "8",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "227",
+    "character_id": "11",
+    "item_id": "1408",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "228",
+    "character_id": "3",
+    "item_id": "1107",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "229",
+    "character_id": "11",
+    "item_id": "3",
+    "quantity": "17",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "230",
+    "character_id": "12",
+    "item_id": "1403",
+    "quantity": "1",
+    "is_equipped": "1",
+    "equipped_slot": "Accessory"
+  },
+  {
+    "inventory_id": "231",
+    "character_id": "19",
+    "item_id": "1204",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "232",
+    "character_id": "13",
+    "item_id": "1318",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "233",
+    "character_id": "2",
+    "item_id": "1114",
+    "quantity": "1",
+    "is_equipped": "1",
+    "equipped_slot": "Helmet"
+  },
+  {
+    "inventory_id": "234",
+    "character_id": "20",
+    "item_id": "1405",
+    "quantity": "1",
+    "is_equipped": "1",
+    "equipped_slot": "Accessory"
+  },
+  {
+    "inventory_id": "235",
+    "character_id": "19",
+    "item_id": "1339",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "236",
+    "character_id": "14",
+    "item_id": "1216",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "237",
+    "character_id": "18",
+    "item_id": "1201",
+    "quantity": "1",
+    "is_equipped": "1",
+    "equipped_slot": "Weapon"
+  },
+  {
+    "inventory_id": "238",
+    "character_id": "20",
+    "item_id": "4",
+    "quantity": "18",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "239",
+    "character_id": "16",
+    "item_id": "1312",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "240",
+    "character_id": "4",
+    "item_id": "1225",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "241",
+    "character_id": "17",
+    "item_id": "1229",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "242",
+    "character_id": "17",
+    "item_id": "1220",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "243",
+    "character_id": "3",
+    "item_id": "1225",
+    "quantity": "1",
+    "is_equipped": "1",
+    "equipped_slot": "Armor"
+  },
+  {
+    "inventory_id": "244",
+    "character_id": "13",
+    "item_id": "1304",
+    "quantity": "1",
+    "is_equipped": "1",
+    "equipped_slot": "Weapon"
+  },
+  {
+    "inventory_id": "245",
+    "character_id": "14",
+    "item_id": "1223",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "246",
+    "character_id": "14",
+    "item_id": "1327",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "247",
+    "character_id": "7",
+    "item_id": "1306",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "248",
+    "character_id": "9",
+    "item_id": "1409",
+    "quantity": "1",
+    "is_equipped": "1",
+    "equipped_slot": "Accessory"
+  },
+  {
+    "inventory_id": "249",
+    "character_id": "6",
+    "item_id": "1202",
+    "quantity": "1",
+    "is_equipped": "1",
+    "equipped_slot": "Weapon"
+  },
+  {
+    "inventory_id": "250",
+    "character_id": "5",
+    "item_id": "1207",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "251",
+    "character_id": "10",
+    "item_id": "1202",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "252",
+    "character_id": "18",
+    "item_id": "1118",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "253",
+    "character_id": "7",
+    "item_id": "1124",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "254",
+    "character_id": "4",
+    "item_id": "1117",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "255",
+    "character_id": "7",
+    "item_id": "1301",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "256",
+    "character_id": "14",
+    "item_id": "1324",
+    "quantity": "1",
+    "is_equipped": "1",
+    "equipped_slot": "Armor"
+  },
+  {
+    "inventory_id": "257",
+    "character_id": "1",
+    "item_id": "1211",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "258",
+    "character_id": "20",
+    "item_id": "1212",
+    "quantity": "1",
+    "is_equipped": "1",
+    "equipped_slot": "Helmet"
+  },
+  {
+    "inventory_id": "259",
+    "character_id": "8",
+    "item_id": "1333",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "260",
+    "character_id": "20",
+    "item_id": "1308",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "261",
+    "character_id": "16",
+    "item_id": "1320",
+    "quantity": "1",
+    "is_equipped": "1",
+    "equipped_slot": "Helmet"
+  },
+  {
+    "inventory_id": "262",
+    "character_id": "20",
+    "item_id": "1211",
+    "quantity": "1",
+    "is_equipped": "1",
+    "equipped_slot": "Helmet"
+  },
+  {
+    "inventory_id": "263",
+    "character_id": "6",
+    "item_id": "1237",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "264",
+    "character_id": "15",
+    "item_id": "1312",
+    "quantity": "1",
+    "is_equipped": "1",
+    "equipped_slot": "Helmet"
+  },
+  {
+    "inventory_id": "265",
+    "character_id": "1",
+    "item_id": "1105",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "266",
+    "character_id": "3",
+    "item_id": "1128",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "267",
+    "character_id": "19",
+    "item_id": "1002",
+    "quantity": "8",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "268",
+    "character_id": "18",
+    "item_id": "1320",
+    "quantity": "1",
+    "is_equipped": "1",
+    "equipped_slot": "Helmet"
+  },
+  {
+    "inventory_id": "269",
+    "character_id": "18",
+    "item_id": "1223",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "270",
+    "character_id": "9",
+    "item_id": "1",
+    "quantity": "5",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "271",
+    "character_id": "2",
+    "item_id": "1207",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "272",
+    "character_id": "18",
+    "item_id": "1117",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "273",
+    "character_id": "2",
+    "item_id": "1304",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "274",
+    "character_id": "20",
+    "item_id": "1117",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "275",
+    "character_id": "19",
+    "item_id": "6",
+    "quantity": "12",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "276",
+    "character_id": "6",
+    "item_id": "1221",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "277",
+    "character_id": "19",
+    "item_id": "1129",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "278",
+    "character_id": "17",
+    "item_id": "1126",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "279",
+    "character_id": "12",
+    "item_id": "1225",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "280",
+    "character_id": "1",
+    "item_id": "1209",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "281",
+    "character_id": "7",
+    "item_id": "1133",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "282",
+    "character_id": "10",
+    "item_id": "1124",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "283",
+    "character_id": "16",
+    "item_id": "1333",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "284",
+    "character_id": "20",
+    "item_id": "1320",
+    "quantity": "1",
+    "is_equipped": "1",
+    "equipped_slot": "Helmet"
+  },
+  {
+    "inventory_id": "285",
+    "character_id": "6",
+    "item_id": "1232",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "286",
+    "character_id": "7",
+    "item_id": "1215",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "287",
+    "character_id": "6",
+    "item_id": "1337",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "288",
+    "character_id": "9",
+    "item_id": "1302",
+    "quantity": "1",
+    "is_equipped": "1",
+    "equipped_slot": "Weapon"
+  },
+  {
+    "inventory_id": "289",
+    "character_id": "20",
+    "item_id": "1130",
+    "quantity": "1",
+    "is_equipped": "1",
+    "equipped_slot": "Armor"
+  },
+  {
+    "inventory_id": "290",
+    "character_id": "12",
+    "item_id": "1226",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "291",
+    "character_id": "10",
+    "item_id": "1117",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "292",
+    "character_id": "5",
+    "item_id": "1234",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "293",
+    "character_id": "12",
+    "item_id": "8",
+    "quantity": "19",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "294",
+    "character_id": "4",
+    "item_id": "3",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "295",
+    "character_id": "17",
+    "item_id": "1003",
+    "quantity": "17",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "296",
+    "character_id": "13",
+    "item_id": "1219",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "297",
+    "character_id": "17",
+    "item_id": "1213",
+    "quantity": "1",
+    "is_equipped": "1",
+    "equipped_slot": "Helmet"
+  },
+  {
+    "inventory_id": "298",
+    "character_id": "7",
+    "item_id": "1323",
+    "quantity": "1",
+    "is_equipped": "1",
+    "equipped_slot": "Armor"
+  },
+  {
+    "inventory_id": "299",
+    "character_id": "12",
+    "item_id": "7",
+    "quantity": "7",
+    "is_equipped": "0",
+    "equipped_slot": null
+  },
+  {
+    "inventory_id": "300",
+    "character_id": "8",
+    "item_id": "1110",
+    "quantity": "1",
+    "is_equipped": "0",
+    "equipped_slot": null
+  }
+]

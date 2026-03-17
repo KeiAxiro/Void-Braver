@@ -1,0 +1,56 @@
+Consumables (Harga Jual)
+
+Nama Item	        Harga Jual (Gold)
+Healing Potion	    100
+Mana Elixir 	    150
+Soul Lantern	    2.500
+Infinity Sphere	    1.800
+
+====================================
+====================================
+
+Equipment Tier 1 - 10 (Harga Jual)
+
+Tier	Weapon	    Helmet	    Armor	    Boots
+1	    250	        200	        400	        150
+2	    600	        450     	900	        350
+3	    1.500	    1.000	    2.000	    750
+4	    3.000	    2.200	    4.500	    1.500
+5	    6.000	    4.500	    8.500	    3.000
+6	    12.000	    9.000	    18.000	    6.500
+7	    25.000	    18.000	    35.000	    12.000
+8	    45.000	    35.000	    65.000	    22.000
+9	    80.000	    60.000	    110.000	    45.000
+10	    150.000	    120.000	    250.000	    90.000
+
+====================================
+====================================
+
+Accessory (Harga Jual)
+
+No	Nama Accessory	    Harga Jual (Gold)	Alasan Harga
+1	Iron Ring	        2.000	            Stat dasar awal.
+2	Glass Monocle	    2.000	            Stat dasar awal.
+3	Feather Charm   	2.000	            Stat dasar awal.
+4	Vitality Band	    4.500	            Gabungan 3 material dasar.
+5	Mana Crystal	    5.000	            Menggunakan Void Essence awal.
+6	Warrior’s Emblem	15.000	            Crafting hybrid 3 class.
+7	Steel Gauntlet  	20.000	            Mitigasi damage krusial.
+8	Medallion of Life	35.000	            Utility sustain yang langka.
+9	Silver Rosary	    35.000	            Sinergi dengan item penyembuh.
+10	Void Pendulum	    100.000	            Item terkuat (Utility manipulasi waktu).
+
+====================================
+====================================
+
+Material (Harga Jual)
+
+Nama Material	    Harga Jual (Gold)
+Iron Scrap	        40
+Heavy Ore	        60
+Refined Plate	    450
+Mana Shard	        60
+Arcane Crystal	    450
+Fine Fiber	        60
+Silent Thread	    450
+Void Essence	    1.500

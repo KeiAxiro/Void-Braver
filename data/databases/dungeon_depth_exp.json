@@ -1,0 +1,122 @@
+[
+  {
+    "depth": "1",
+    "exp_gain": "50",
+    "min_level_range": "1",
+    "max_level_range": "5"
+  },
+  {
+    "depth": "2",
+    "exp_gain": "120",
+    "min_level_range": "6",
+    "max_level_range": "10"
+  },
+  {
+    "depth": "3",
+    "exp_gain": "250",
+    "min_level_range": "11",
+    "max_level_range": "15"
+  },
+  {
+    "depth": "4",
+    "exp_gain": "450",
+    "min_level_range": "16",
+    "max_level_range": "20"
+  },
+  {
+    "depth": "5",
+    "exp_gain": "700",
+    "min_level_range": "21",
+    "max_level_range": "25"
+  },
+  {
+    "depth": "6",
+    "exp_gain": "1050",
+    "min_level_range": "26",
+    "max_level_range": "30"
+  },
+  {
+    "depth": "7",
+    "exp_gain": "1500",
+    "min_level_range": "31",
+    "max_level_range": "35"
+  },
+  {
+    "depth": "8",
+    "exp_gain": "2100",
+    "min_level_range": "36",
+    "max_level_range": "40"
+  },
+  {
+    "depth": "9",
+    "exp_gain": "2800",
+    "min_level_range": "41",
+    "max_level_range": "45"
+  },
+  {
+    "depth": "10",
+    "exp_gain": "3700",
+    "min_level_range": "46",
+    "max_level_range": "50"
+  },
+  {
+    "depth": "11",
+    "exp_gain": "4800",
+    "min_level_range": "51",
+    "max_level_range": "55"
+  },
+  {
+    "depth": "12",
+    "exp_gain": "6100",
+    "min_level_range": "56",
+    "max_level_range": "60"
+  },
+  {
+    "depth": "13",
+    "exp_gain": "7600",
+    "min_level_range": "61",
+    "max_level_range": "65"
+  },
+  {
+    "depth": "14",
+    "exp_gain": "9400",
+    "min_level_range": "66",
+    "max_level_range": "70"
+  },
+  {
+    "depth": "15",
+    "exp_gain": "11500",
+    "min_level_range": "71",
+    "max_level_range": "75"
+  },
+  {
+    "depth": "16",
+    "exp_gain": "14000",
+    "min_level_range": "76",
+    "max_level_range": "80"
+  },
+  {
+    "depth": "17",
+    "exp_gain": "17000",
+    "min_level_range": "81",
+    "max_level_range": "85"
+  },
+  {
+    "depth": "18",
+    "exp_gain": "20500",
+    "min_level_range": "86",
+    "max_level_range": "90"
+  },
+  {
+    "depth": "19",
+    "exp_gain": "24500",
+    "min_level_range": "91",
+    "max_level_range": "95"
+  },
+  {
+    "depth": "20",
+    "exp_gain": "30000",
+    "min_level_range": "96",
+    "max_level_range": "100"
+  }
+]

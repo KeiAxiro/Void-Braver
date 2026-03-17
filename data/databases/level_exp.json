@@ -1,0 +1,402 @@
+[
+  {
+    "level": "1",
+    "exp_required": "100"
+  },
+  {
+    "level": "2",
+    "exp_required": "348"
+  },
+  {
+    "level": "3",
+    "exp_required": "722"
+  },
+  {
+    "level": "4",
+    "exp_required": "1212"
+  },
+  {
+    "level": "5",
+    "exp_required": "1811"
+  },
+  {
+    "level": "6",
+    "exp_required": "2514"
+  },
+  {
+    "level": "7",
+    "exp_required": "3315"
+  },
+  {
+    "level": "8",
+    "exp_required": "4211"
+  },
+  {
+    "level": "9",
+    "exp_required": "5197"
+  },
+  {
+    "level": "10",
+    "exp_required": "6309"
+  },
+  {
+    "level": "11",
+    "exp_required": "7458"
+  },
+  {
+    "level": "12",
+    "exp_required": "8711"
+  },
+  {
+    "level": "13",
+    "exp_required": "10050"
+  },
+  {
+    "level": "14",
+    "exp_required": "11470"
+  },
+  {
+    "level": "15",
+    "exp_required": "12970"
+  },
+  {
+    "level": "16",
+    "exp_required": "14560"
+  },
+  {
+    "level": "17",
+    "exp_required": "16230"
+  },
+  {
+    "level": "18",
+    "exp_required": "17980"
+  },
+  {
+    "level": "19",
+    "exp_required": "19800"
+  },
+  {
+    "level": "20",
+    "exp_required": "21700"
+  },
+  {
+    "level": "21",
+    "exp_required": "23680"
+  },
+  {
+    "level": "22",
+    "exp_required": "25740"
+  },
+  {
+    "level": "23",
+    "exp_required": "27880"
+  },
+  {
+    "level": "24",
+    "exp_required": "30100"
+  },
+  {
+    "level": "25",
+    "exp_required": "32300"
+  },
+  {
+    "level": "26",
+    "exp_required": "34700"
+  },
+  {
+    "level": "27",
+    "exp_required": "37100"
+  },
+  {
+    "level": "28",
+    "exp_required": "39600"
+  },
+  {
+    "level": "29",
+    "exp_required": "42100"
+  },
+  {
+    "level": "30",
+    "exp_required": "44800"
+  },
+  {
+    "level": "31",
+    "exp_required": "47700"
+  },
+  {
+    "level": "32",
+    "exp_required": "50800"
+  },
+  {
+    "level": "33",
+    "exp_required": "53900"
+  },
+  {
+    "level": "34",
+    "exp_required": "57100"
+  },
+  {
+    "level": "35",
+    "exp_required": "60500"
+  },
+  {
+    "level": "36",
+    "exp_required": "63600"
+  },
+  {
+    "level": "37",
+    "exp_required": "66800"
+  },
+  {
+    "level": "38",
+    "exp_required": "70000"
+  },
+  {
+    "level": "39",
+    "exp_required": "73400"
+  },
+  {
+    "level": "40",
+    "exp_required": "76800"
+  },
+  {
+    "level": "41",
+    "exp_required": "80200"
+  },
+  {
+    "level": "42",
+    "exp_required": "83700"
+  },
+  {
+    "level": "43",
+    "exp_required": "87300"
+  },
+  {
+    "level": "44",
+    "exp_required": "91000"
+  },
+  {
+    "level": "45",
+    "exp_required": "94700"
+  },
+  {
+    "level": "46",
+    "exp_required": "98400"
+  },
+  {
+    "level": "47",
+    "exp_required": "102300"
+  },
+  {
+    "level": "48",
+    "exp_required": "106100"
+  },
+  {
+    "level": "49",
+    "exp_required": "110100"
+  },
+  {
+    "level": "50",
+    "exp_required": "114100"
+  },
+  {
+    "level": "51",
+    "exp_required": "118200"
+  },
+  {
+    "level": "52",
+    "exp_required": "122300"
+  },
+  {
+    "level": "53",
+    "exp_required": "126500"
+  },
+  {
+    "level": "54",
+    "exp_required": "130800"
+  },
+  {
+    "level": "55",
+    "exp_required": "135100"
+  },
+  {
+    "level": "56",
+    "exp_required": "139500"
+  },
+  {
+    "level": "57",
+    "exp_required": "143900"
+  },
+  {
+    "level": "58",
+    "exp_required": "148400"
+  },
+  {
+    "level": "59",
+    "exp_required": "152900"
+  },
+  {
+    "level": "60",
+    "exp_required": "157500"
+  },
+  {
+    "level": "61",
+    "exp_required": "162200"
+  },
+  {
+    "level": "62",
+    "exp_required": "166900"
+  },
+  {
+    "level": "63",
+    "exp_required": "171600"
+  },
+  {
+    "level": "64",
+    "exp_required": "176500"
+  },
+  {
+    "level": "65",
+    "exp_required": "181300"
+  },
+  {
+    "level": "66",
+    "exp_required": "186300"
+  },
+  {
+    "level": "67",
+    "exp_required": "191300"
+  },
+  {
+    "level": "68",
+    "exp_required": "196400"
+  },
+  {
+    "level": "69",
+    "exp_required": "201700"
+  },
+  {
+    "level": "70",
+    "exp_required": "206900"
+  },
+  {
+    "level": "71",
+    "exp_required": "212100"
+  },
+  {
+    "level": "72",
+    "exp_required": "217400"
+  },
+  {
+    "level": "73",
+    "exp_required": "222800"
+  },
+  {
+    "level": "74",
+    "exp_required": "228200"
+  },
+  {
+    "level": "75",
+    "exp_required": "233700"
+  },
+  {
+    "level": "76",
+    "exp_required": "239300"
+  },
+  {
+    "level": "77",
+    "exp_required": "244900"
+  },
+  {
+    "level": "78",
+    "exp_required": "250500"
+  },
+  {
+    "level": "79",
+    "exp_required": "256300"
+  },
+  {
+    "level": "80",
+    "exp_required": "262000"
+  },
+  {
+    "level": "81",
+    "exp_required": "267900"
+  },
+  {
+    "level": "82",
+    "exp_required": "273700"
+  },
+  {
+    "level": "83",
+    "exp_required": "279700"
+  },
+  {
+    "level": "84",
+    "exp_required": "285700"
+  },
+  {
+    "level": "85",
+    "exp_required": "291700"
+  },
+  {
+    "level": "86",
+    "exp_required": "297800"
+  },
+  {
+    "level": "87",
+    "exp_required": "303900"
+  },
+  {
+    "level": "88",
+    "exp_required": "310100"
+  },
+  {
+    "level": "89",
+    "exp_required": "316300"
+  },
+  {
+    "level": "90",
+    "exp_required": "322600"
+  },
+  {
+    "level": "91",
+    "exp_required": "328900"
+  },
+  {
+    "level": "92",
+    "exp_required": "335300"
+  },
+  {
+    "level": "93",
+    "exp_required": "341700"
+  },
+  {
+    "level": "94",
+    "exp_required": "348100"
+  },
+  {
+    "level": "95",
+    "exp_required": "354700"
+  },
+  {
+    "level": "96",
+    "exp_required": "361200"
+  },
+  {
+    "level": "97",
+    "exp_required": "367900"
+  },
+  {
+    "level": "98",
+    "exp_required": "374500"
+  },
+  {
+    "level": "99",
+    "exp_required": "381200"
+  },
+  {
+    "level": "100",
+    "exp_required": "398100"
+  }
+]
