@@ -9,7 +9,7 @@
       "name": "CMake Build and Debug",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/build/Void-Braver.exe", // Ganti dengan path ke executable yang dihasilkan oleh CMake
+      "program": "${workspaceFolder}/build/VoidBraver.exe", // Ganti dengan path ke executable yang dihasilkan oleh CMake
       "args": [],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
