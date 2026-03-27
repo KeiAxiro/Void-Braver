@@ -1,16 +1,21 @@
 #pragma once
-#include "StateManager.h"
+#include "Core/StateManager.h"
 
-class Game {
-private:
-    bool isRunning{false};
-    StateManager stateManager;
+namespace Core {
+    class Game {
+    private:
+        StateManager stateManager;
+        bool isRunning;
 
-public:
-    Game();
-    ~Game() = default;
+        void ProcessInput();
+        void Update();
+        void Render();
 
-    void init();
-    void run(); 
-    void clean();
-};
+    public:
+        Game();
+        ~Game() = default;
+
+        void Init();
+        void Run();
+    };
+}

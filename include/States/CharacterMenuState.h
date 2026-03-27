@@ -1,21 +1,17 @@
 #pragma once
 #include "Core/State.h"
 #include "Core/GameContext.h"
-#include <string>
 
 namespace States {
-    class HubState : public Core::State {
+    class CharacterMenuState : public Core::State {
     private:
+        Core::GameContext& context;
+        int currentView; 
         int selectedOption;
-        std::string pName;
-        std::string pJob;
-        int pLevel;
-        int pExp;
-        int pMaxExp;
 
     public:
-        HubState(Core::GameContext& context);
-        ~HubState() override = default;
+        CharacterMenuState(Core::GameContext& ctx);
+        ~CharacterMenuState() override = default;
 
         void Init() override;
         void HandleInput(Core::StateManager& stateManager) override;

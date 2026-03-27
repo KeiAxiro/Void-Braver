@@ -1,38 +1,30 @@
 #pragma once
-#include <stack>
 #include <memory>
-#include <string>
-#include "States/GameState.h"
-#include "GameContext.h"
+#include <stack>
+#include "Core/State.h"
+#include "Core/GameContext.h"
 
-class StateManager
-{
-private:
-    std::stack<std::unique_ptr<GameState>> states;
-    std::unique_ptr<GameState> newState;
+namespace Core {
+    class StateManager {
+    private:
+        std::stack<std::unique_ptr<State>> states;
+        bool isRunning;
+        GameContext context;
 
-    bool isRemoving{false};
-    bool isAdding{false};
-    bool isReplacing{false};
+    public:
+        StateManager();
 
-    std::string systemMessage;
-    GameContext context;
+        void PushState(std::unique_ptr<State> state);
+        void PopState();
+        void ChangeState(std::unique_ptr<State> state);
 
-public:
-    StateManager() = default;
+        void HandleInput();
+        void Update();
+        void Render();
 
-    void pushState(std::unique_ptr<GameState> state, bool replace = false);
-    void popState();
-    void clearState();
-    void processStateChanges();
+        bool Running() const;
+        void Quit();
 
-    void update();
-    void render();
-
-    [[nodiscard]] bool hasStates() const;
-
-    GameContext &getContext() { return context; }
-    void setNotify(const std::string &msg) { systemMessage = msg; }
-    [[nodiscard]] std::string getNotify() const { return systemMessage; }
-    void clearNotify() { systemMessage.clear(); }
-};
+        GameContext& GetContext() { return context; }
+    };
+}

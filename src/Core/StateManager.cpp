@@ -1,63 +1,49 @@
 #include "Core/StateManager.h"
 
-void StateManager::pushState(std::unique_ptr<GameState> state, bool replace)
-{
-    isAdding = true;
-    isReplacing = replace;
-    newState = std::move(state);
-}
+namespace Core {
+    StateManager::StateManager() : isRunning(true) {}
 
-void StateManager::popState()
-{
-    isRemoving = true;
-}
-
-// void StateManager::clearState(){
-//     while (!states.empty()) {
-//         states.pop();
-//     }
-// }
-
-void StateManager::processStateChanges()
-{
-    if (isRemoving && !states.empty())
-    {
-        states.pop();
-        isRemoving = false;
+    void StateManager::PushState(std::unique_ptr<State> state) {
+        states.push(std::move(state));
+        states.top()->Init();
     }
 
-    if (isAdding && newState)
-    {
-        if (isReplacing && !states.empty())
-        {
+    void StateManager::PopState() {
+        if (!states.empty()) {
             states.pop();
         }
-
-        states.push(std::move(newState));
-        states.top()->init(*this); // Panggil init() saat state baru ditambahkan
-
-        isAdding = false;
-        isReplacing = false;
     }
-}
 
-void StateManager::update()
-{
-    if (!states.empty())
-    {
-        states.top()->update(*this);
+    void StateManager::ChangeState(std::unique_ptr<State> state) {
+        if (!states.empty()) {
+            states.pop();
+        }
+        PushState(std::move(state));
     }
-}
 
-void StateManager::render()
-{
-    if (!states.empty())
-    {
-        states.top()->render();
+    void StateManager::HandleInput() {
+        if (!states.empty()) {
+            states.top()->HandleInput(*this);
+        }
     }
-}
 
-bool StateManager::hasStates() const
-{
-    return !states.empty();
+    void StateManager::Update() {
+        if (!states.empty()) {
+            states.top()->Update(*this);
+        }
+    }
+
+    void StateManager::Render() {
+        if (!states.empty()) {
+            states.top()->Render();
+        }
+    }
+
+    bool StateManager::Running() const {
+        return isRunning && !states.empty();
+    }
+
+    void StateManager::Quit() {
+        isRunning = false;
+    }
 }

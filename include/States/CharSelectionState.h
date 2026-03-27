@@ -1,16 +1,18 @@
 #pragma once
-#include "GameState.h"
-#include "Core/StateManager.h"
-#include <vector>
-#include <string>
+#include "Core/State.h"
 
-class CharSelectionState : public GameState
-{
-private:
-    std::vector<std::string> characters; // Menyimpan daftar karakter dari database
+namespace States {
+    class CharSelectionState : public Core::State {
+    private:
+        int selectedClass;
 
-public:
-    void init(StateManager &stateManager) override;
-    void render() override;
-    void update(StateManager &stateManager) override;
-};
+    public:
+        CharSelectionState();
+        ~CharSelectionState() override = default;
+
+        void Init() override;
+        void HandleInput(Core::StateManager& stateManager) override;
+        void Update(Core::StateManager& stateManager) override;
+        void Render() override;
+    };
+}

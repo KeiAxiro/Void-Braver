@@ -1,9 +1,9 @@
 #include "Core/Game.h"
 
-int main()
-{
-    Game game;
-    game.run(); // Menjalankan seluruh siklus game
-
+int main() {
+    Core::Game game;
+    game.Init();
+    game.Run();
+    
     return 0;
 }

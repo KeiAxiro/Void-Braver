@@ -4,18 +4,18 @@
 #include <string>
 
 namespace States {
-    class HubState : public Core::State {
+
+    class DungeonState : public Core::State {
     private:
+        Core::GameContext& context;
+        int currentMenu; // 0: Select Depth, 1: Exploring
+        int selectedDepth;
         int selectedOption;
-        std::string pName;
-        std::string pJob;
-        int pLevel;
-        int pExp;
-        int pMaxExp;
+        std::string logMessage;
 
     public:
-        HubState(Core::GameContext& context);
-        ~HubState() override = default;
+        DungeonState(Core::GameContext& ctx);
+        ~DungeonState() override = default;
 
         void Init() override;
         void HandleInput(Core::StateManager& stateManager) override;

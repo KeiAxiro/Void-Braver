@@ -1,56 +1,87 @@
 #include "States/MainMenuState.h"
-#include "States/LoginState.h"
-#include "States/RegisterState.h"
-#include "Utils/ConsoleUI.h" 
+#include "Core/StateManager.h"
+#include "States/CharSelectionState.h"
 #include <iostream>
 #include <string>
 
-void MainMenuState::init(StateManager &stateManager)
+namespace States
 {
-    // Kosong untuk saat ini
-}
 
-void MainMenuState::render()
-{
-    // Menggunakan Raw String Literal R"( ... )" untuk ASCII Art judul Void Braver
-    std::cout << R"(
-================================================================
-__   __  ___   ___  ___       ___   ___    _   _   _  ___  ___ 
-\ \ / / / _ \ |_ _||   \     | _ ) | _ \  /_\ | | | || __|| _ \
- \ V / | (_) | | | | |) |    | _ \ |   / / _ \| |_| || _| |   /
-  \_/   \___/ |___||___/     |___/ |_|_\/_/ \_\\___/ |___||_|_\
-                                                                   
-================================================================
-)" << '\n';
+    MainMenuState::MainMenuState() : selectedOption(-1) {}
 
-    std::cout << "                        [ MAIN MENU ]\n\n";
-    std::cout << "                [1] Mulai Petualangan (Login)\n";
-    std::cout << "                [2] Buat Akun Baru (Register)\n";
-    std::cout << "                [3] Keluar dari Dunia (Exit)\n";
-    std::cout << "\n================================================================\n";
-    std::cout << "\nPilihanmu: ";
-}
+    void MainMenuState::Init()
+    {
+        // Initialization logic if needed when entering this state
+        std::cout << "\033[2J\033[1;1H";
 
-void MainMenuState::update(StateManager &stateManager)
-{
-    std::string input;
-    std::cin >> input;
+        std::cout << "========================================\n";
+        std::cout << "              VOID BRAVER               \n";
+        std::cout << "========================================\n";
+        std::cout << "1. New Game\n";
+        std::cout << "2. Load Game\n";
+        std::cout << "3. Exit\n";
+        std::cout << "========================================\n";
+    }
 
-    if (input == "1")
+    void MainMenuState::HandleInput(Core::StateManager &stateManager)
     {
-        stateManager.pushState(std::make_unique<LoginState>());
+        std::string input;
+        std::cout << "\nEnter your choice: ";
+        std::cin >> input;
+
+        if (input == "1")
+        {
+            selectedOption = 0;
+        }
+        else if (input == "2")
+        {
+            selectedOption = 1;
+        }
+        else if (input == "3")
+        {
+            selectedOption = 2;
+        }
+        else
+        {
+            selectedOption = -1; // Invalid input
+        }
     }
-    else if (input == "2")
+
+    void MainMenuState::Update(Core::StateManager &stateManager)
     {
-        stateManager.pushState(std::make_unique<RegisterState>());
+        if (selectedOption == 0)
+        {
+            std::cout << "Transitioning to Character Selection...\n";
+            stateManager.ChangeState(std::make_unique<CharSelectionState>());
+
+            selectedOption = -1; // Reset pending action
+        }
+        else if (selectedOption == 1)
+        {
+            std::cout << "Transitioning to Load Game...\n";
+            // Nanti kita uncomment baris di bawah ini setelah LoadState dibuat
+            // stateManager.ChangeState(std::make_unique<LoadState>());
+
+            selectedOption = -1;
+        }
+        else if (selectedOption == 2)
+        {
+            std::cout << "Exiting Void Braver. Goodbye!\n";
+            stateManager.Quit();
+        }
     }
-    else if (input == "3")
+
+    void MainMenuState::Render()
     {
-        stateManager.setNotify(ConsoleUI::Green("Sampai jumpa lagi, Pahlawan!"));
-        stateManager.popState();
+        std::cout << "\033[2J\033[1;1H";
+
+        std::cout << "========================================\n";
+        std::cout << "              VOID BRAVER               \n";
+        std::cout << "========================================\n";
+        std::cout << "1. New Game\n";
+        std::cout << "2. Load Game\n";
+        std::cout << "3. Exit\n";
+        std::cout << "========================================\n";
     }
-    else
-    {
-        stateManager.setNotify(ConsoleUI::Red("[Sistem]: Pilihan '" + input + "' tidak tersedia."));
-    }
+
 }

@@ -1,62 +1,70 @@
 #include "States/CharSelectionState.h"
 #include "States/HubState.h"
+#include "Core/StateManager.h"
 #include "Utils/ConsoleUI.h"
-#include "Core/Character.h" // PERBAIKAN: Menggunakan ../ untuk mundur ke folder src
 #include <iostream>
 #include <string>
 
-void CharSelectionState::init(StateManager &stateManager) 
-{
-    // Mengosongkan player saat masuk ke layar ini agar tidak ada data sisa
-    stateManager.getContext().player = nullptr;
-}
+namespace States {
 
-void CharSelectionState::render()
-{
-    ConsoleUI::printHeader("PILIH KARAKTER");
-    std::cout << "Pilih pahlawan yang akan kamu mainkan:\n\n";
-    std::cout << "1. Knight     -   Tangguh dan berdaya tahan tinggi\n";
-    std::cout << "2. Sorcerer   -   Ahli sihir dengan serangan kuat\n";
-    std::cout << "3. Wanderer   -   Serba bisa dan lincah\n";
-    std::cout << "\n------------------------------------\n";
-    std::cout << "X. Logout (Kembali ke Main Menu)\n";
-    std::cout << "\nPilihanmu: ";
-}
+    CharSelectionState::CharSelectionState() : selectedClass(-1) {}
 
-void CharSelectionState::update(StateManager &stateManager)
-{
-    std::string input;
-    std::cin >> input;
+    void CharSelectionState::Init() {}
 
-    if (input == "X" || input == "x")
-    {
-        stateManager.getContext().currentUsername = ""; 
-        stateManager.setNotify(ConsoleUI::Green("Logout berhasil."));
-        stateManager.popState(); 
-        return;
+    void CharSelectionState::HandleInput(Core::StateManager& stateManager) {
+        std::string input;
+        std::cout << "\nEnter your choice: ";
+        std::cin >> input;
+
+        if (input == "1") selectedClass = 1;
+        else if (input == "2") selectedClass = 2;
+        else if (input == "3") selectedClass = 3;
+        else selectedClass = -1;
     }
 
-    // Logika pemilihan 3 karakter sistem
-    if (input == "1") 
-    {
-        stateManager.getContext().player = std::make_unique<Character>("Knight", Gender::Male, JobClass::Knight);
-        stateManager.setNotify(ConsoleUI::Green("Kamu memilih Knight! Memasuki kota..."));
-        stateManager.pushState(std::make_unique<HubState>(), true);
+void CharSelectionState::Update(Core::StateManager& stateManager) {
+        if (selectedClass != -1) {
+            auto& p = stateManager.GetContext().player;
+            p.level = 1;
+            p.exp = 0;
+            p.statPoints = 5;
+
+            if (selectedClass == 1) {
+                p.name = "Thorne"; p.job = "Knight";
+                p.str = 10; p.intel = 5; p.agi = 10; p.vit = 40;
+                p.weapon = Entities::getEquipmentData("Rusty Greatsword");
+                p.armor = Entities::getEquipmentData("Knight's Plate");
+            } else if (selectedClass == 2) {
+                p.name = "Lara"; p.job = "Sorcerer";
+                p.str = 5; p.intel = 25; p.agi = 15; p.vit = 20;
+                p.weapon = Entities::getEquipmentData("Kosong"); 
+                p.armor = Entities::getEquipmentData("Leather Jerkin");
+            } else if (selectedClass == 3) {
+                p.name = "Vane"; p.job = "Wanderer";
+                p.str = 10; p.intel = 10; p.agi = 25; p.vit = 20;
+                p.weapon = Entities::getEquipmentData("Rusty Greatsword");
+                p.armor = Entities::getEquipmentData("Leather Jerkin");
+            }
+            
+            stateManager.GetContext().playerClassId = selectedClass;
+
+            std::cout << "\nYou have chosen " << p.name << "!\n";
+            std::cout << "Data saved to Game Context!\n";
+            Utils::ConsoleUI::Pause();
+
+            stateManager.ChangeState(std::make_unique<HubState>(stateManager.GetContext()));
+        }
     }
-    else if (input == "2") 
-    {
-        stateManager.getContext().player = std::make_unique<Character>("Sorcerer", Gender::Female, JobClass::Sorcerer);
-        stateManager.setNotify(ConsoleUI::Green("Kamu memilih Sorcerer! Memasuki kota..."));
-        stateManager.pushState(std::make_unique<HubState>(), true);
-    }
-    else if (input == "3") 
-    {
-        stateManager.getContext().player = std::make_unique<Character>("Wanderer", Gender::Male, JobClass::Wanderer);
-        stateManager.setNotify(ConsoleUI::Green("Kamu memilih Wanderer! Memasuki kota..."));
-        stateManager.pushState(std::make_unique<HubState>(), true);
-    }
-    else 
-    {
-        stateManager.setNotify(ConsoleUI::Red("[Sistem]: Pilihan tidak valid! Pilih 1, 2, atau 3."));
+
+    void CharSelectionState::Render() {
+        Utils::ConsoleUI::ClearScreen();
+
+        std::cout << "========================================\n";
+        std::cout << "           CHOOSE YOUR CLASS            \n";
+        std::cout << "========================================\n";
+        std::cout << "1. Thorne - Knight Type\n";
+        std::cout << "2. Lara - Sorcerer Type\n";
+        std::cout << "3. Vane - Wanderer Type\n";
+        std::cout << "========================================\n";
     }
 }

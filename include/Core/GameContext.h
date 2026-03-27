@@ -1,12 +1,11 @@
 #pragma once
-#include "AccountManager.h"
-#include "Character.h"
-#include <memory>
-#include <string>
+#include "Entities/Player.h"
 
-// Struct ini murni untuk menampung data global/sesi pemain
-struct GameContext {
-    AccountManager accountManager;
-    std::unique_ptr<Character> player = nullptr; 
-    std::string currentUsername = "";
-};
+namespace Core {
+    struct GameContext {
+        int playerClassId;
+        Entities::Player player;
+
+        GameContext() : playerClassId(-1) {}
+    };
+}
