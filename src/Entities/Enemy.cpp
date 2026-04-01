@@ -74,14 +74,47 @@ namespace Entities {
         };
     }
 
-    std::vector<EnemyTemplate> getEnemiesByDepth(int depth) {
+    std::vector<EnemyTemplate> getEnemiesByDungeonAndDepth(int dungeonId, int depth) {
         std::vector<EnemyTemplate> allEnemies = getAllEnemyTemplates();
         std::vector<EnemyTemplate> validEnemies;
-        for (const auto& enemy : allEnemies) {
-            if (depth >= enemy.spawnDepthStart && depth <= enemy.spawnDepthEnd) {
-                validEnemies.push_back(enemy);
+
+        // Boss logic at depth 20
+        if (depth == 20) {
+            int bossId = 50 + dungeonId;
+            for (const auto& enemy : allEnemies) {
+                if (enemy.enemyId == bossId) {
+                    validEnemies.push_back(enemy);
+                    return validEnemies;
+                }
             }
         }
+
+        // Minion logic filtering by dungeon type
+        for (const auto& enemy : allEnemies) {
+            if (!enemy.isBoss && depth >= enemy.spawnDepthStart && depth <= enemy.spawnDepthEnd) {
+                bool match = false;
+                
+                if (dungeonId == 1 && enemy.type == "Demon") match = true;
+                else if (dungeonId == 2 && enemy.type == "Spirit") match = true;
+                else if (dungeonId == 3 && enemy.type == "Beast") match = true;
+                else if (dungeonId == 4 && enemy.type == "Elemental") match = true;
+                else if (dungeonId == 5 && enemy.type == "Mercenary") match = true;
+
+                if (match) {
+                    validEnemies.push_back(enemy);
+                }
+            }
+        }
+
+        // Fallback if no enemies match the exact level/depth criteria
+        if (validEnemies.empty()) {
+            for (const auto& enemy : allEnemies) {
+                if (!enemy.isBoss && depth >= enemy.spawnDepthStart && depth <= enemy.spawnDepthEnd) {
+                    validEnemies.push_back(enemy);
+                }
+            }
+        }
+
         return validEnemies;
     }
 

@@ -9,12 +9,12 @@
 
 namespace States {
 
-    BattleState::BattleState(Core::GameContext& ctx, int depth)
-        : context(ctx), dungeonDepth(depth), battlePhase(0), currentMenu(0), selectedOption(-1),
+    BattleState::BattleState(Core::GameContext& ctx, int dungeonId, int depth)
+        : context(ctx), currentDungeonId(dungeonId), dungeonDepth(depth), battlePhase(0), currentMenu(0), selectedOption(-1),
           playerShielding(false), enemyShielding(false) {}
 
     void BattleState::spawnEnemy() {
-        auto validEnemies = Entities::getEnemiesByDepth(dungeonDepth);
+        auto validEnemies = Entities::getEnemiesByDungeonAndDepth(currentDungeonId, dungeonDepth);
         if (validEnemies.empty()) {
             validEnemies = Entities::getAllEnemyTemplates(); 
         }
@@ -128,6 +128,25 @@ namespace States {
         battleLog += "Gained " + std::to_string(gainedExp) + " EXP.\n";
         context.player.addExp(gainedExp);
 
+        // Boss specific guaranteed drops
+        if (currentEnemy.id == 51) {
+            context.player.addItemToInventory("Crimson Orb", Entities::getCategoryName(6));
+            battleLog += "Obtained Boss Reward: Crimson Orb\n";
+        } else if (currentEnemy.id == 52) {
+            context.player.addItemToInventory("Azure Orb", Entities::getCategoryName(6));
+            battleLog += "Obtained Boss Reward: Azure Orb\n";
+        } else if (currentEnemy.id == 53) {
+            context.player.addItemToInventory("Obsidian Orb", Entities::getCategoryName(6));
+            battleLog += "Obtained Boss Reward: Obsidian Orb\n";
+        } else if (currentEnemy.id == 54) {
+            context.player.addItemToInventory("Emerald Orb", Entities::getCategoryName(6));
+            battleLog += "Obtained Boss Reward: Emerald Orb\n";
+        } else if (currentEnemy.id == 55) {
+            context.player.addItemToInventory("Radiant Orb", Entities::getCategoryName(6));
+            battleLog += "Obtained Boss Reward: Radiant Orb\n";
+        }
+
+        // Random drops for normal enemies
         auto drops = Entities::getEnemyDrops(currentEnemy.id);
         for (const auto& drop : drops) {
             std::uniform_real_distribution<> distChance(0.0, 1.0);
@@ -139,7 +158,7 @@ namespace States {
         }
     }
 
-void BattleState::Update(Core::StateManager& stateManager) {
+    void BattleState::Update(Core::StateManager& stateManager) {
         if (battlePhase == 2) {
             processEnemyTurn();
         } else if (battlePhase == 1) { 

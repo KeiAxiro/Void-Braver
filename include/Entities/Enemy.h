@@ -30,6 +30,7 @@ namespace Entities {
 
     std::vector<EnemyTemplate> getAllEnemyTemplates();
     std::vector<EnemyTemplate> getEnemiesByDepth(int depth);
+    std::vector<EnemyTemplate> getEnemiesByDungeonAndDepth(int dungeonId, int depth);
     std::vector<EnemyDrop> getEnemyDrops(int enemyId);
     DungeonExp getDungeonDepthExp(int depth);
 

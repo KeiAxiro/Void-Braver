@@ -44,6 +44,7 @@ struct Skill {
         Equipment weapon, helmet, armor, boots, accessory;
         std::vector<Skill> skills;
         std::vector<Item> inventory;
+        std::vector<int> unlockedDepths = {1, 1, 1, 1, 1, 1};
 
         Player();
 

@@ -11,6 +11,7 @@ namespace States {
         Core::GameContext& context;
         Entities::Enemy currentEnemy;
         
+        int currentDungeonId;
         int dungeonDepth;
         int battlePhase; 
         int currentMenu; 
@@ -26,7 +27,7 @@ namespace States {
         void calculateRewards();
 
     public:
-        BattleState(Core::GameContext& ctx, int depth);
+        BattleState(Core::GameContext& ctx, int dungeonId, int depth);
         ~BattleState() override = default;
 
         void Init() override;

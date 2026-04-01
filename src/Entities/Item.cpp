@@ -165,7 +165,15 @@ namespace Entities {
             {1407, 6, "Steel Gauntlet", "Aksesoris peningkatan Defense", 0, 20000, 0, 7, 0, 0, 0, "DEF_+15%"},
             {1408, 6, "Medallion of Life", "Aksesoris regenerasi HP", 0, 35000, 0, 8, 0, 0, 0, "HPREGEN_5%"},
             {1409, 6, "Silver Rosary", "Aksesoris peningkatan efek penyembuh", 0, 35000, 0, 9, 0, 0, 0, "POTION_+20%"},
-            {1410, 6, "Void Pendulum", "Aksesoris manipulasi waktu (Cooldown)", 0, 100000, 0, 10, 0, 0, 0, "CD_-1"}
+            {1410, 6, "Void Pendulum", "Aksesoris manipulasi waktu (Cooldown)", 0, 100000, 0, 10, 0, 0, 0, "CD_-1"},
+
+            // ================= BOSS REWARD ORBS (ID: 1411-1415) =================
+            {1411, 6, "Crimson Orb", "Simbol keberanian dan kekuatan fisik dari The Ashen Warlord.", 0, 150000, 1, 10, 1500, 0, 0, "STR_+20%"},
+            {1412, 6, "Azure Orb", "Simbol kecerdasan dan mana tak terbatas dari The Grand Archivist.", 0, 150000, 2, 10, 0, 0, 0, "MAXMP_+50%"},
+            {1413, 6, "Obsidian Orb", "Simbol kelincahan dan misteri dari The Phantom Stalker.", 0, 150000, 3, 10, 500, 0, 0, "AGI_+20%"},
+            {1414, 6, "Emerald Orb", "Simbol ketahanan dan keabadian alam dari The Rotting Behemoth.", 0, 150000, 0, 10, 0, 8000, 800, "MAXHP_+30%"},
+            {1415, 6, "Radiant Orb", "Simbol takdir dan kesatuan jiwa dari The Oracle of Ruin.", 0, 250000, 0, 10, 1000, 2000, 200, "CD_-1"}
+
         };
     }
 
