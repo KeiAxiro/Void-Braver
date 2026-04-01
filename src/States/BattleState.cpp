@@ -7,6 +7,7 @@
 #include <iomanip>
 #include <random>
 
+using namespace std;
 namespace States {
 
     BattleState::BattleState(Core::GameContext& ctx, int dungeonId, int depth)
@@ -19,14 +20,14 @@ namespace States {
             validEnemies = Entities::getAllEnemyTemplates(); 
         }
 
-        std::random_device rd;
-        std::mt19937 gen(rd());
-        std::uniform_int_distribution<> dist(0, validEnemies.size() - 1);
+        random_device rd;
+        mt19937 gen(rd());
+        uniform_int_distribution<> dist(0, validEnemies.size() - 1);
         
         Entities::EnemyTemplate selectedTmpl = validEnemies[dist(gen)];
         currentEnemy.loadFromTemplate(selectedTmpl, context.player.level);
         
-        battleLog = "A wild " + currentEnemy.name + " (Lv." + std::to_string(currentEnemy.level) + ") appeared!";
+        battleLog = "A wild " + currentEnemy.name + " (Lv." + to_string(currentEnemy.level) + ") appeared!";
     }
 
     void BattleState::Init() {
@@ -43,18 +44,18 @@ namespace States {
 
     void BattleState::HandleInput(Core::StateManager& stateManager) {
         if (battlePhase == 1) { 
-            std::string input;
-            if (currentMenu == 0) std::cout << "\n Choose action: ";
-            else if (currentMenu == 1) std::cout << "\n Select Skill (0 to Cancel): ";
-            else if (currentMenu == 2) std::cout << "\n Select Item (0 to Cancel): ";
-            std::cin >> input;
+            string input;
+            if (currentMenu == 0) cout << "\n Choose action: ";
+            else if (currentMenu == 1) cout << "\n Select Skill (0 to Cancel): ";
+            else if (currentMenu == 2) cout << "\n Select Item (0 to Cancel): ";
+            cin >> input;
             
-            try { selectedOption = std::stoi(input); } 
+            try { selectedOption = stoi(input); } 
             catch (...) { selectedOption = -1; }
         } else if (battlePhase == 3) {
-            std::string input;
-            std::cout << "\n Press 0 to return to Hub: ";
-            std::cin >> input;
+            string input;
+            cout << "\n Press 0 to return to Hub: ";
+            cin >> input;
             if (input == "0") selectedOption = 0;
             else selectedOption = -1;
         } else if (battlePhase == 2) {
@@ -65,9 +66,9 @@ namespace States {
     void BattleState::processEnemyTurn() {
         enemyShielding = false;
         
-        std::random_device rd;
-        std::mt19937 gen(rd());
-        std::uniform_int_distribution<> dist(1, 20);
+        random_device rd;
+        mt19937 gen(rd());
+        uniform_int_distribution<> dist(1, 20);
         int rng = dist(gen);
 
         int aiDecision = 1; 
@@ -95,10 +96,10 @@ namespace States {
 
         if (aiDecision == 1) {
             int pDef = playerShielding ? context.player.getDefense() * 2 : context.player.getDefense();
-            int dmg = std::max(1, currentEnemy.atk - pDef);
+            int dmg = max(1, currentEnemy.atk - pDef);
             context.player.hp -= dmg;
             if (context.player.hp < 0) context.player.hp = 0;
-            battleLog = currentEnemy.name + " attacks! " + context.player.name + " takes " + std::to_string(dmg) + " damage.";
+            battleLog = currentEnemy.name + " attacks! " + context.player.name + " takes " + to_string(dmg) + " damage.";
         } else if (aiDecision == 2) {
             enemyShielding = true;
             battleLog = currentEnemy.name + " takes a defensive stance (Shielding).";
@@ -120,12 +121,12 @@ namespace States {
         battleLog = currentEnemy.name + " defeated!\n";
         
         Entities::DungeonExp expData = Entities::getDungeonDepthExp(dungeonDepth);
-        std::random_device rd;
-        std::mt19937 gen(rd());
-        std::uniform_int_distribution<> distExp(expData.minExp, expData.maxExp);
+        random_device rd;
+        mt19937 gen(rd());
+        uniform_int_distribution<> distExp(expData.minExp, expData.maxExp);
         int gainedExp = distExp(gen);
         
-        battleLog += "Gained " + std::to_string(gainedExp) + " EXP.\n";
+        battleLog += "Gained " + to_string(gainedExp) + " EXP.\n";
         context.player.addExp(gainedExp);
 
         // Boss specific guaranteed drops
@@ -149,7 +150,7 @@ namespace States {
         // Random drops for normal enemies
         auto drops = Entities::getEnemyDrops(currentEnemy.id);
         for (const auto& drop : drops) {
-            std::uniform_real_distribution<> distChance(0.0, 1.0);
+            uniform_real_distribution<> distChance(0.0, 1.0);
             if (distChance(gen) <= 0.3f) { 
                 Entities::ItemTemplate item = Entities::getItemTemplate(drop.itemId);
                 context.player.addItemToInventory(item.name, Entities::getCategoryName(item.categoryId));
@@ -166,11 +167,11 @@ namespace States {
                 if (selectedOption == 1) { 
                     playerShielding = false;
                     int eDef = enemyShielding ? currentEnemy.def * 2 : currentEnemy.def;
-                    int dmg = std::max(1, context.player.getAtkPower() - eDef);
+                    int dmg = max(1, context.player.getAtkPower() - eDef);
                     
-                    std::random_device rd;
-                    std::mt19937 gen(rd());
-                    std::uniform_real_distribution<> dist(0.0, 1.0);
+                    random_device rd;
+                    mt19937 gen(rd());
+                    uniform_real_distribution<> dist(0.0, 1.0);
                     if (dist(gen) <= context.player.getCritRate()) {
                         dmg = static_cast<int>(dmg * 1.5f);
                         battleLog = "CRITICAL HIT! ";
@@ -179,7 +180,7 @@ namespace States {
                     }
 
                     currentEnemy.takeDamage(dmg);
-                    battleLog += context.player.name + " attacks for " + std::to_string(dmg) + " damage.";
+                    battleLog += context.player.name + " attacks for " + to_string(dmg) + " damage.";
                     
                     selectedOption = -1;
 
@@ -210,9 +211,9 @@ namespace States {
                     currentMenu = 2; 
                     selectedOption = -1;
                 } else if (selectedOption == 5) { 
-                    std::random_device rd;
-                    std::mt19937 gen(rd());
-                    std::uniform_int_distribution<> dist(1, 100);
+                    random_device rd;
+                    mt19937 gen(rd());
+                    uniform_int_distribution<> dist(1, 100);
                     if (dist(gen) <= 40) { 
                         battleLog = "Successfully fled the battle.";
                         battlePhase = 3;
@@ -237,14 +238,14 @@ namespace States {
                         
                         if (skill.damageMultiplier < 0) {
                             int healAmt = static_cast<int>(-skill.damageMultiplier * context.player.getAtkPower());
-                            context.player.hp = std::min(context.player.hp + healAmt, context.player.getMaxHp());
-                            battleLog = context.player.name + " uses " + skill.name + " and heals " + std::to_string(healAmt) + " HP.";
+                            context.player.hp = min(context.player.hp + healAmt, context.player.getMaxHp());
+                            battleLog = context.player.name + " uses " + skill.name + " and heals " + to_string(healAmt) + " HP.";
                         } else {
                             int baseDmg = static_cast<int>(skill.damageMultiplier * context.player.getAtkPower());
                             int eDef = enemyShielding ? currentEnemy.def * 2 : currentEnemy.def;
-                            int dmg = std::max(1, baseDmg - eDef);
+                            int dmg = max(1, baseDmg - eDef);
                             currentEnemy.takeDamage(dmg);
-                            battleLog = context.player.name + " uses " + skill.name + " for " + std::to_string(dmg) + " damage.";
+                            battleLog = context.player.name + " uses " + skill.name + " for " + to_string(dmg) + " damage.";
                         }
 
                         for (auto& sk : context.player.skills) {
@@ -283,12 +284,12 @@ namespace States {
                         auto& item = context.player.inventory[targetIdx];
                         if (item.name == "Healing Potion") {
                             int heal = context.player.getMaxHp() * 0.3f;
-                            context.player.hp = std::min(context.player.hp + heal, context.player.getMaxHp());
-                            battleLog = "Used Healing Potion. Recovered " + std::to_string(heal) + " HP.";
+                            context.player.hp = min(context.player.hp + heal, context.player.getMaxHp());
+                            battleLog = "Used Healing Potion. Recovered " + to_string(heal) + " HP.";
                         } else if (item.name == "Mana Elixir") {
                             int healMp = context.player.getMaxMp() * 0.3f;
-                            context.player.mp = std::min(context.player.mp + healMp, context.player.getMaxMp());
-                            battleLog = "Used Mana Elixir. Recovered " + std::to_string(healMp) + " MP.";
+                            context.player.mp = min(context.player.mp + healMp, context.player.getMaxMp());
+                            battleLog = "Used Mana Elixir. Recovered " + to_string(healMp) + " MP.";
                         }
                         
                         item.quantity--;
@@ -315,62 +316,62 @@ namespace States {
 
     void BattleState::Render() {
         Utils::ConsoleUI::ClearScreen();
-        std::cout << std::string(60, '=') << "\n";
-        std::cout << "                   D U N G E O N   D E P T H : " << dungeonDepth << "\n";
-        std::cout << std::string(60, '=') << "\n\n";
+        cout << string(60, '=') << "\n";
+        cout << "                   D U N G E O N   D E P T H : " << dungeonDepth << "\n";
+        cout << string(60, '=') << "\n\n";
 
-        std::cout << "  [ENEMY] " << currentEnemy.name << " (Lv." << currentEnemy.level << ")" << (currentEnemy.isBoss ? " [BOSS]" : "") << "\n";
-        std::cout << "  HP : " << currentEnemy.hp << " / " << currentEnemy.maxHp << "\n";
-        if (enemyShielding) std::cout << "  (Status: Guarding)\n";
-        std::cout << "\n";
+        cout << "  [ENEMY] " << currentEnemy.name << " (Lv." << currentEnemy.level << ")" << (currentEnemy.isBoss ? " [BOSS]" : "") << "\n";
+        cout << "  HP : " << currentEnemy.hp << " / " << currentEnemy.maxHp << "\n";
+        if (enemyShielding) cout << "  (Status: Guarding)\n";
+        cout << "\n";
 
-        std::cout << "  [PLAYER] " << context.player.name << " (Lv." << context.player.level << ")\n";
-        std::cout << "  HP : " << context.player.hp << " / " << context.player.getMaxHp() << "\n";
-        std::cout << "  MP : " << context.player.mp << " / " << context.player.getMaxMp() << "\n";
-        if (playerShielding) std::cout << "  (Status: Guarding)\n";
-        std::cout << std::string(60, '-') << "\n";
+        cout << "  [PLAYER] " << context.player.name << " (Lv." << context.player.level << ")\n";
+        cout << "  HP : " << context.player.hp << " / " << context.player.getMaxHp() << "\n";
+        cout << "  MP : " << context.player.mp << " / " << context.player.getMaxMp() << "\n";
+        if (playerShielding) cout << "  (Status: Guarding)\n";
+        cout << string(60, '-') << "\n";
 
-        std::cout << "  > " << battleLog << "\n";
-        std::cout << std::string(60, '-') << "\n";
+        cout << "  > " << battleLog << "\n";
+        cout << string(60, '-') << "\n";
 
         if (battlePhase == 1) {
             if (currentMenu == 0) {
-                std::cout << "  [1] Attack    [2] Defend\n";
-                std::cout << "  [3] Skill     [4] Item\n";
-                std::cout << "  [5] Flee\n";
+                cout << "  [1] Attack    [2] Defend\n";
+                cout << "  [3] Skill     [4] Item\n";
+                cout << "  [5] Flee\n";
             } else if (currentMenu == 1) {
-                std::cout << "  --- SKILLS ---\n";
+                cout << "  --- SKILLS ---\n";
                 if (context.player.skills.empty()) {
-                    std::cout << "  (No skills available)\n";
+                    cout << "  (No skills available)\n";
                 } else {
                     for (size_t i = 0; i < context.player.skills.size(); ++i) {
                         const auto& sk = context.player.skills[i];
-                        std::cout << "  [" << (i+1) << "] " << sk.name << " (MP: " << sk.manaCost << ")";
-                        if (!sk.isUnlocked) std::cout << " [LOCKED]";
-                        else if (sk.currentCd > 0) std::cout << " [CD: " << sk.currentCd << "]";
-                        std::cout << "\n";
+                        cout << "  [" << (i+1) << "] " << sk.name << " (MP: " << sk.manaCost << ")";
+                        if (!sk.isUnlocked) cout << " [LOCKED]";
+                        else if (sk.currentCd > 0) cout << " [CD: " << sk.currentCd << "]";
+                        cout << "\n";
                     }
                 }
-                std::cout << "  [0] Back\n";
+                cout << "  [0] Back\n";
             } else if (currentMenu == 2) {
-                std::cout << "  --- CONSUMABLES ---\n";
+                cout << "  --- CONSUMABLES ---\n";
                 int displayIdx = 1;
                 bool hasItem = false;
                 for (const auto& item : context.player.inventory) {
                     if (item.type == "Consumable") {
-                        std::cout << "  [" << displayIdx << "] " << item.name << " (x" << item.quantity << ")\n";
+                        cout << "  [" << displayIdx << "] " << item.name << " (x" << item.quantity << ")\n";
                         displayIdx++;
                         hasItem = true;
                     }
                 }
-                if (!hasItem) std::cout << "  (Inventory is empty)\n";
-                std::cout << "  [0] Back\n";
+                if (!hasItem) cout << "  (Inventory is empty)\n";
+                cout << "  [0] Back\n";
             }
         } else if (battlePhase == 2) {
-            std::cout << "\n  [Press Enter to continue...]\n";
+            cout << "\n  [Press Enter to continue...]\n";
         } else if (battlePhase == 3) {
-            std::cout << "\n  Battle Concluded. Press 0 to return.\n";
+            cout << "\n  Battle Concluded. Press 0 to return.\n";
         }
-        std::cout << std::string(60, '=') << "\n";
+        cout << string(60, '=') << "\n";
     }
 }

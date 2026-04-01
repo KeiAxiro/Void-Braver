@@ -1,8 +1,9 @@
 #include "Entities/Crafting.h"
 
+using namespace std;
 namespace Entities {
 
-    std::vector<Recipe> getAllRecipes() {
+    vector<Recipe> getAllRecipes() {
         return {
             // Craftable Materials
             {3, {{2, 5}}},

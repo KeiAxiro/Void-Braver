@@ -5,14 +5,15 @@
 #include <algorithm>
 #include <iomanip>
 
+using namespace std;
 namespace Entities {
 
-    Equipment getEquipmentData(const std::string& name) {
+    Equipment getEquipmentData(const string& name) {
         if (name == "empty" || name == "Kosong") return {"empty", "None", 0, 0, 0};
         
         ItemTemplate item = getItemTemplateByName(name);
         if (item.name != "Kosong") {
-            std::string slotName = getCategoryName(item.categoryId);
+            string slotName = getCategoryName(item.categoryId);
             return {item.name, slotName, item.atkBonus, item.defBonus, item.hpBonus};
         }
         
@@ -41,7 +42,7 @@ namespace Entities {
     int Player::getSynergizedWeaponAtk() const { return static_cast<int>(getTotalEquipAtkBase() * getWeaponEfficiency()); }
 
     int Player::getMaxHp() const { 
-        int baseHpGrowth = static_cast<int>(std::pow(level, 2) * 2.5f);
+        int baseHpGrowth = static_cast<int>(pow(level, 2) * 2.5f);
         int vitGrowth = static_cast<int>(vit * level * 2.0f);
         return 100 + baseHpGrowth + vitGrowth + getTotalEquipHp(); 
     }
@@ -71,14 +72,14 @@ namespace Entities {
             multiplier = 1.5f + (level * 0.04f);
             strWeight = 0.2f; intWeight = 1.0f; agiWeight = 0.3f;
             int intCap = 260;
-            effectiveInt = std::min(intel, intCap);
-            excessInt = std::max(0, intel - intCap);
+            effectiveInt = min(intel, intCap);
+            excessInt = max(0, intel - intCap);
         } else if (job == "Wanderer") {
             multiplier = 1.0f + (level * 0.03f);
             strWeight = 0.4f; intWeight = 0.2f; agiWeight = 1.0f;
             int agiCap = 260;
-            effectiveAgi = std::min(agi, agiCap);
-            excessAgi = std::max(0, agi - agiCap);
+            effectiveAgi = min(agi, agiCap);
+            excessAgi = max(0, agi - agiCap);
         }
         
         float totalStatValue = (str * strWeight) + (effectiveInt * intWeight) + (effectiveAgi * agiWeight);
@@ -89,10 +90,10 @@ namespace Entities {
 
     float Player::getCritRate() const {
         float rate = static_cast<float>(agi) / (agi + 60.0f) * 0.8f;
-        return std::min(0.65f, rate); 
+        return min(0.65f, rate); 
     }
 
-    void Player::addItemToInventory(const std::string& itemName, const std::string& itemType) {
+    void Player::addItemToInventory(const string& itemName, const string& itemType) {
         if (itemName == "empty") return;
         for (auto& item : inventory) {
             if (item.name == itemName) {
@@ -135,23 +136,23 @@ namespace Entities {
 
         int levelsGained = level - initialLevel;
 
-        std::cout << "\n " << std::string(52, '=') << "\n";
-        std::cout << " [ SYSTEM ] Memperoleh " << amount << " EXP!\n";
-        std::cout << " " << std::string(52, '-') << "\n";
+        cout << "\n " << string(52, '=') << "\n";
+        cout << " [ SYSTEM ] Memperoleh " << amount << " EXP!\n";
+        cout << " " << string(52, '-') << "\n";
         
         if (levelsGained > 0) {
-            std::cout << " LEVEL UP! Karakter naik " << levelsGained << " Level.\n";
-            std::cout << " Stat Points     : +" << (levelsGained * 5) << " (Total: " << statPoints << ")\n";
+            cout << " LEVEL UP! Karakter naik " << levelsGained << " Level.\n";
+            cout << " Stat Points     : +" << (levelsGained * 5) << " (Total: " << statPoints << ")\n";
         }
         
-        std::cout << " Level Saat Ini  : " << level << " (Maks. 100)\n";
-        std::cout << " Progress EXP    : " << exp << " / " << getNextLevelExp() << "\n";
-        std::cout << " Kapasitas HP    : " << getMaxHp() << " HP\n";
+        cout << " Level Saat Ini  : " << level << " (Maks. 100)\n";
+        cout << " Progress EXP    : " << exp << " / " << getNextLevelExp() << "\n";
+        cout << " Kapasitas HP    : " << getMaxHp() << " HP\n";
         
         if(job == "Knight") {
-            std::cout << " Multiplier ATK  : " << std::fixed << std::setprecision(2) << (2.0f + (level * 0.05f)) << "x\n";
+            cout << " Multiplier ATK  : " << fixed << setprecision(2) << (2.0f + (level * 0.05f)) << "x\n";
         }
-        std::cout << " " << std::string(52, '=') << "\n";
+        cout << " " << string(52, '=') << "\n";
     }
 
     void Player::updateSkills() {

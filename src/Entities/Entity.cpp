@@ -1,19 +1,20 @@
 #include "Entities/Entity.h"
 #include <algorithm>
 
+using namespace std;
 namespace Entities {
-    Entity::Entity(const std::string& name, const Core::Stats& stats)
+    Entity::Entity(const string& name, const Core::Stats& stats)
         : name(name), stats(stats) {}
 
     void Entity::TakeDamage(int damage) {
-        stats.hp = std::max(0, stats.hp - damage);
+        stats.hp = max(0, stats.hp - damage);
     }
 
     bool Entity::IsDead() const {
         return stats.hp <= 0;
     }
 
-    const std::string& Entity::GetName() const {
+    const string& Entity::GetName() const {
         return name;
     }
 

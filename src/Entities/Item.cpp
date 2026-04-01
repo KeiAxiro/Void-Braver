@@ -1,9 +1,10 @@
 #include "Entities/Item.h"
 #include <algorithm>
 
+using namespace std;
 namespace Entities {
 
-    std::vector<ItemTemplate> getAllItemTemplates() {
+    vector<ItemTemplate> getAllItemTemplates() {
         return {
             // ================= MATERIAL & CONSUMABLE (ID: 1-1004) =================
             {1, 7, "Iron Scrap", "Material Dasar Universal", 100, 40, 0, 0, 0, 0, 0, ""},
@@ -185,7 +186,7 @@ namespace Entities {
         return {0, 0, "Kosong", "Tidak ada item", 0, 0, 0, 0, 0, 0, 0, ""};
     }
 
-    ItemTemplate getItemTemplateByName(const std::string& name) {
+    ItemTemplate getItemTemplateByName(const string& name) {
         auto items = getAllItemTemplates();
         for (const auto& item : items) {
             if (item.name == name) return item;
@@ -193,7 +194,7 @@ namespace Entities {
         return {0, 0, "Kosong", "Tidak ada item", 0, 0, 0, 0, 0, 0, 0, ""};
     }
 
-    std::string getCategoryName(int categoryId) {
+    string getCategoryName(int categoryId) {
         switch(categoryId) {
             case 1: return "Consumable";
             case 2: return "Weapon";

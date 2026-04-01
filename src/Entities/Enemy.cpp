@@ -2,9 +2,10 @@
 #include <algorithm>
 #include <utility>
 
+using namespace std;
 namespace Entities {
 
-    std::vector<EnemyTemplate> getAllEnemyTemplates() {
+    vector<EnemyTemplate> getAllEnemyTemplates() {
         return {
             {1, "Lesser Imp", "Demon", 1, 10, 15, 45, 110, 380, 5, 15, 4, 40, 0.04f, 1, 2, false},
             {2, "Shadow Lurker", "Demon", 11, 20, 50, 85, 420, 900, 18, 35, 44, 80, 0.06f, 3, 4, false},
@@ -74,9 +75,9 @@ namespace Entities {
         };
     }
 
-    std::vector<EnemyTemplate> getEnemiesByDungeonAndDepth(int dungeonId, int depth) {
-        std::vector<EnemyTemplate> allEnemies = getAllEnemyTemplates();
-        std::vector<EnemyTemplate> validEnemies;
+    vector<EnemyTemplate> getEnemiesByDungeonAndDepth(int dungeonId, int depth) {
+        vector<EnemyTemplate> allEnemies = getAllEnemyTemplates();
+        vector<EnemyTemplate> validEnemies;
 
         // Boss logic at depth 20
         if (depth == 20) {
@@ -118,8 +119,8 @@ namespace Entities {
         return validEnemies;
     }
 
-    std::vector<EnemyDrop> getEnemyDrops(int enemyId) {
-        static const std::vector<std::pair<int, int>> dropMap = {
+    vector<EnemyDrop> getEnemyDrops(int enemyId) {
+        static const vector<pair<int, int>> dropMap = {
             {1,2},{1,1},{1,4}, {2,4},{2,2},{2,6}, {3,2},{3,6},{3,1}, {4,6},{4,4},{4,2},
             {5,1},{5,2},{5,4}, {6,2},{6,4},{6,6}, {7,4},{7,6},{7,2}, {8,6},{8,2},{8,4},
             {9,2},{9,4},{9,6}, {10,2},{10,6},{10,4}, {11,4},{11,1},{11,6}, {12,4},{12,2},{12,1},
@@ -137,7 +138,7 @@ namespace Entities {
             {57,8},{57,4},{57,1}, {58,8},{58,6},{58,1}, {59,8},{59,2},{59,4}, {60,8},{60,1},{60,2},{60,4},{60,6}
         };
         
-        std::vector<EnemyDrop> results;
+        vector<EnemyDrop> results;
         for (const auto& pair : dropMap) {
             if (pair.first == enemyId) {
                 results.push_back({pair.first, pair.second});
@@ -147,7 +148,7 @@ namespace Entities {
     }
 
     DungeonExp getDungeonDepthExp(int depth) {
-        static const std::vector<DungeonExp> depthExpMap = {
+        static const vector<DungeonExp> depthExpMap = {
             {0, 0},
             {48, 52},       {114, 126},     {238, 262},     {428, 472},     {665, 735},
             {998, 1102},    {1425, 1575},   {1995, 2205},   {2660, 2940},   {3515, 3885},
@@ -169,7 +170,7 @@ namespace Entities {
         isBoss = tmpl.isBoss;
         critRate = tmpl.critRate;
         
-        level = std::max(tmpl.minLevel, std::min(targetLevel, tmpl.maxLevel));
+        level = max(tmpl.minLevel, min(targetLevel, tmpl.maxLevel));
 
         float scale = 0.0f;
         if (tmpl.maxLevel > tmpl.minLevel) {
