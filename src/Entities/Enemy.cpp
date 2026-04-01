@@ -5,6 +5,7 @@
 using namespace std;
 namespace Entities {
 
+    // Berfungsi sebagai in-memory database statis yang mereturn blueprint dari seluruh musuh di dalam game.
     vector<EnemyTemplate> getAllEnemyTemplates() {
         return {
             {1, "Lesser Imp", "Demon", 1, 10, 15, 45, 110, 380, 5, 15, 4, 40, 0.04f, 1, 2, false},
@@ -79,7 +80,7 @@ namespace Entities {
         vector<EnemyTemplate> allEnemies = getAllEnemyTemplates();
         vector<EnemyTemplate> validEnemies;
 
-        // Boss logic at depth 20
+        // Hardcode intercept khusus boss: Bypass filter dan langsung return entitas boss di lantai 20
         if (depth == 20) {
             int bossId = 50 + dungeonId;
             for (const auto& enemy : allEnemies) {
@@ -90,7 +91,7 @@ namespace Entities {
             }
         }
 
-        // Minion logic filtering by dungeon type
+        // Filtering linear untuk menyortir minion berdasarkan tipe monster sesuai dungeonId dan batas span depth
         for (const auto& enemy : allEnemies) {
             if (!enemy.isBoss && depth >= enemy.spawnDepthStart && depth <= enemy.spawnDepthEnd) {
                 bool match = false;
@@ -107,7 +108,7 @@ namespace Entities {
             }
         }
 
-        // Fallback if no enemies match the exact level/depth criteria
+        // Fallback safety: Mengambil semua enemy dalam range depth tersebut jika filter spesifik dungeon di atas gagal / menghasilkan array kosong
         if (validEnemies.empty()) {
             for (const auto& enemy : allEnemies) {
                 if (!enemy.isBoss && depth >= enemy.spawnDepthStart && depth <= enemy.spawnDepthEnd) {
@@ -120,6 +121,8 @@ namespace Entities {
     }
 
     vector<EnemyDrop> getEnemyDrops(int enemyId) {
+        // Deklarasi static const memicu inisialisasi drop table hanya satu kali saat runtime,
+        // mencegah overhead relokasi memori berulang setiap kali fungsi loot dipanggil.
         static const vector<pair<int, int>> dropMap = {
             {1,2},{1,1},{1,4}, {2,4},{2,2},{2,6}, {3,2},{3,6},{3,1}, {4,6},{4,4},{4,2},
             {5,1},{5,2},{5,4}, {6,2},{6,4},{6,6}, {7,4},{7,6},{7,2}, {8,6},{8,2},{8,4},
@@ -148,6 +151,7 @@ namespace Entities {
     }
 
     DungeonExp getDungeonDepthExp(int depth) {
+        // Menggunakan array lookup O(1) yang statis untuk performa pengambilan batas minimum dan maksimum EXP dungeon
         static const vector<DungeonExp> depthExpMap = {
             {0, 0},
             {48, 52},       {114, 126},     {238, 262},     {428, 472},     {665, 735},
@@ -156,6 +160,7 @@ namespace Entities {
             {13300, 14700}, {16150, 17850}, {19475, 21525}, {23275, 25725}, {28500, 31500}
         };
         
+        // Clamping (batasan) index aman untuk mencegah index out of bounds error (segfault)
         if (depth < 1) return depthExpMap[1];
         if (depth > 20) return depthExpMap[20];
         return depthExpMap[depth];
@@ -170,13 +175,17 @@ namespace Entities {
         isBoss = tmpl.isBoss;
         critRate = tmpl.critRate;
         
+        // Membatasi perolehan scaling level agar tidak exceed nilai template batas min dan batas max
         level = max(tmpl.minLevel, min(targetLevel, tmpl.maxLevel));
 
+        // Implementasi algoritma Linear Interpolation (Lerp) untuk dynamic stat scaling monster.
+        // Menentukan desimal posisi level diantara minLevel dan maxLevel sebagai faktor pengali (multiplier) pertumbuhan atribut stat.
         float scale = 0.0f;
         if (tmpl.maxLevel > tmpl.minLevel) {
             scale = static_cast<float>(level - tmpl.minLevel) / (tmpl.maxLevel - tmpl.minLevel);
         }
 
+        // Terapkan scale terhadap jarak antara base stat dan peak stat
         maxHp = tmpl.minHp + static_cast<int>((tmpl.maxHp - tmpl.minHp) * scale);
         hp = maxHp;
         
@@ -189,6 +198,7 @@ namespace Entities {
 
     void Enemy::takeDamage(int amount) {
         hp -= amount;
+        // Pencegahan underflow HP
         if (hp < 0) hp = 0;
     }
 

@@ -3,6 +3,8 @@
 using namespace std;
 namespace Entities {
 
+    // Berfungsi sebagai in-memory database statis yang mereturn vektor kumpulan struct Recipe.
+    // Menyimpan blueprint resep berupa mapping ID item target dan vektor pasangan {ID material, jumlah material}.
     vector<Recipe> getAllRecipes() {
         return {
             // Craftable Materials
@@ -123,14 +125,17 @@ namespace Entities {
         };
     }
 
+    // Melakukan Linear Search O(N) ke database resep untuk mengambil objek Recipe secara utuh
     Recipe getRecipe(int targetItemId) {
         auto recipes = getAllRecipes();
         for (const auto& r : recipes) {
             if (r.targetItemId == targetItemId) return r;
         }
+        // Fallback safety (null object pattern) jika resep tidak ada di memori
         return {0, {}};
     }
 
+    // Fungsi helper boolean untuk memvalidasi absensi suatu resep di database 
     bool hasRecipe(int targetItemId) {
         auto recipes = getAllRecipes();
         for (const auto& r : recipes) {
