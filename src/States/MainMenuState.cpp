@@ -8,11 +8,12 @@ using namespace std;
 namespace States
 {
 
+    // Konstruktor inisialisasi default index pilihan
     MainMenuState::MainMenuState() : selectedOption(-1) {}
 
     void MainMenuState::Init()
     {
-        // Initialization logic if needed when entering this state
+        // Menggunakan ANSI escape sequence (\033[2J\033[1;1H) untuk membersihkan buffer terminal dan mereset kursor ke koordinat (1,1)
         cout << "\033[2J\033[1;1H";
 
         cout << "========================================\n";
@@ -28,8 +29,10 @@ namespace States
     {
         string input;
         cout << "\nEnter your choice: ";
+        // Menerima input sebagai tipe data string untuk menghindari buffer flag error pada std::cin jika user memasukkan karakter non-numerik
         cin >> input;
 
+        // Mapping logika murni dari string input ke integer identifier lokal
         if (input == "1")
         {
             selectedOption = 0;
@@ -44,7 +47,7 @@ namespace States
         }
         else
         {
-            selectedOption = -1; // Invalid input
+            selectedOption = -1; 
         }
     }
 
@@ -53,9 +56,10 @@ namespace States
         if (selectedOption == 0)
         {
             cout << "Transitioning to Character Selection...\n";
+            // Melakukan transisi state: Mendealokasi state saat ini dan menginjeksi CharSelectionState ke memori menggunakan smart pointer
             stateManager.ChangeState(make_unique<CharSelectionState>());
 
-            selectedOption = -1; // Reset pending action
+            selectedOption = -1; 
         }
         else if (selectedOption == 1)
         {
@@ -68,6 +72,7 @@ namespace States
         else if (selectedOption == 2)
         {
             cout << "Exiting Void Braver. Goodbye!\n";
+            // Memanggil metode Quit untuk memberikan sinyal terminasi (break) pada game loop utama di Core
             stateManager.Quit();
         }
     }

@@ -9,6 +9,7 @@
 using namespace std;
 namespace States {
 
+    // Konstruktor inisialisasi context dan default state variable
     CharacterMenuState::CharacterMenuState(Core::GameContext& ctx)
         : context(ctx), currentView(0), selectedOption(-1) {}
 
@@ -19,6 +20,7 @@ namespace States {
         if (currentView == 0) {
             cout << "\n Pilih menu: ";
             cin >> input;
+            // Sanitasi input manual dari string ke integer state untuk mencegah infinite loop tipe data
             if (input == "1") selectedOption = 1;
             else if (input == "2") selectedOption = 2;
             else if (input == "3") selectedOption = 3;
@@ -48,12 +50,14 @@ namespace States {
 
     void CharacterMenuState::Update(Core::StateManager& stateManager) {
         if (currentView == 0) {
+            // State machine controller untuk routing sub-menu
             switch (selectedOption) {
                 case 1: currentView = 1; selectedOption = -1; break;
                 case 2: currentView = 2; selectedOption = -1; break;
                 case 3: currentView = 3; selectedOption = -1; break;
                 case 4: currentView = 4; selectedOption = -1; break;
                 case 99: 
+                    // Debug trigger untuk inject EXP dan sync skill secara instan
                     context.player.addExp(500); 
                     context.player.updateSkills(); 
                     Utils::ConsoleUI::Pause(); 
@@ -66,6 +70,7 @@ namespace States {
             if (selectedOption == 2) {
                 currentView = 0; selectedOption = -1;
             } else if (selectedOption == 1) {
+                // Blok logika validasi dan mutasi alokasi atribut base status
                 if (context.player.statPoints > 0) {
                     int statChoice, pts;
                     cout << " Pilih stat (1.STR | 2.INT | 3.AGI | 4.VIT | 0.Batal): ";
@@ -98,6 +103,7 @@ namespace States {
                 cin >> slotChoice;
 
                 if (slotChoice >= 1 && slotChoice <= 5) {
+                    // Mapping string tipe target dan pointer memory slot spesifik untuk memanipulasi data tanpa hardcode berulang
                     string targetType = (slotChoice == 1) ? "Weapon" : (slotChoice == 2) ? "Helmet" : 
                                              (slotChoice == 3) ? "Armor" : (slotChoice == 4) ? "Boots" : "Accessory";
                     Entities::Equipment* targetSlot = (slotChoice == 1) ? &context.player.weapon : 
@@ -109,6 +115,7 @@ namespace States {
                     cout << " [ ISI TAS : " << targetType << " ]\n";
                     cout << " 0. Lepas (Kosongkan Slot)\n";
                     
+                    // Menyimpan index asli dari vector inventory untuk sinkronisasi elemen yang difilter saat dirender
                     vector<int> validIndices;
                     int dIdx = 1;
                     for (int i = 0; i < static_cast<int>(context.player.inventory.size()); i++) {
@@ -125,21 +132,31 @@ namespace States {
                     cout << " Pilih: ";
                     cin >> itemChoice;
 
+                    // Logika Swap/Unequip Data
                     if (itemChoice == 0 && targetSlot->name != "Kosong") {
+                        // Push item yang terpasang kembali ke vector inventory
                         context.player.addItemToInventory(targetSlot->name, targetType);
+                        // Reset pointer reference ke template Kosong
                         *targetSlot = Entities::getEquipmentData("Kosong");
                         cout << "\n Berhasil melepas equipment!\n";
                         Utils::ConsoleUI::Pause();
                     } else if (itemChoice > 0 && itemChoice <= static_cast<int>(validIndices.size())) {
+                        // Resolusi index tampilan ke index memory vector inventory sebenarnya
                         int invIdx = validIndices[itemChoice - 1];
                         string newName = context.player.inventory[invIdx].name;
+                        
+                        // Push item yang sedang dipakai (jika ada) kembali ke inventory sebelum swap
                         if (targetSlot->name != "Kosong") {
                             context.player.addItemToInventory(targetSlot->name, targetType);
                         }
+                        
+                        // Mutasi quantity item baru dan pop elemen dari vector jika quantity menyentuh angka 0
                         context.player.inventory[invIdx].quantity--;
                         if (context.player.inventory[invIdx].quantity <= 0) {
                             context.player.inventory.erase(context.player.inventory.begin() + invIdx);
                         }
+                        
+                        // Timpa memori pada target slot dengan objek data equipment baru
                         *targetSlot = Entities::getEquipmentData(newName);
                         cout << "\n Berhasil memasang " << newName << "!\n";
                         Utils::ConsoleUI::Pause();
@@ -199,12 +216,13 @@ namespace States {
             cout << "==================================================\n";
         } else if (currentView == 2) {
             cout << string(60, '=') << "\n";
-            cout << "                     EQUIPMENT SAAT INI\n";
+            cout << "                    EQUIPMENT SAAT INI\n";
             cout << string(60, '=') << "\n";
             
             cout << left << "  " << setw(11) << "SLOT" << " | " << setw(25) << "NAMA ITEM" << " | BONUS\n";
             cout << string(60, '-') << "\n";
             
+            // Penggunaan lambda function lokal untuk reusability code saat merender baris equipment
             auto printRow = [](const string& slot, const Entities::Equipment& e) {
                 cout << left << "  " << setw(11) << slot << " | " << setw(25) << e.name << " | ";
                 if (e.atkBonus > 0) cout << "ATK +" << e.atkBonus;
@@ -247,7 +265,7 @@ namespace States {
             cout << string(50, '=') << "\n";
         } else if (currentView == 4) {
             cout << string(50, '=') << "\n";
-            cout << "                 TAS INVENTORY                    \n";
+            cout << "                TAS INVENTORY                    \n";
             cout << string(50, '=') << "\n";
 
             if (p.inventory.empty()) {

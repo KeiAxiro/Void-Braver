@@ -11,6 +11,7 @@ using namespace std;
 
 namespace States {
 
+    // Konstruktor: Inisialisasi nilai awal member variable sebagai local cache yang mengambil referensi dari GameContext
     HubState::HubState(Core::GameContext& context) 
         : selectedOption(-1), 
           pName(context.player.name), 
@@ -24,6 +25,7 @@ namespace States {
     void HubState::HandleInput(Core::StateManager& stateManager) {
         string input;
         cout << "\n Pilih menu: ";
+        // Menggunakan tipe data string untuk input demi mencegah buffer error pada cin jika user memasukkan karakter non-numerik
         cin >> input;
 
         if (input == "1") selectedOption = 1;
@@ -36,6 +38,7 @@ namespace States {
     }
 
     void HubState::Update(Core::StateManager& stateManager) {
+        // Sinkronisasi ulang local cache dengan global data dari GameContext pada setiap frame update
         pName = stateManager.GetContext().player.name;
         pJob = stateManager.GetContext().player.job;
         pLevel = stateManager.GetContext().player.level;
@@ -44,6 +47,7 @@ namespace States {
 
         switch (selectedOption) {
             case 1:
+                // PushState digunakan untuk menumpuk state baru di atas stack tanpa mendealokasi HubState dari memori
                 stateManager.PushState(make_unique<CharacterMenuState>(stateManager.GetContext()));
                 selectedOption = -1;
                 break;
@@ -67,6 +71,7 @@ namespace States {
                 selectedOption = -1;
                 break;
             case 0:
+                // ChangeState digunakan untuk menghancurkan state saat ini (HubState) dan menggantinya secara penuh dengan MainMenuState
                 stateManager.ChangeState(make_unique<MainMenuState>());
                 break;
             default:

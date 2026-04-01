@@ -9,6 +9,7 @@
 using namespace std;
 namespace States {
 
+    // Konstruktor: Inisialisasi state awal dan mempopulasi vector dungeonList dengan metadata statis
     DungeonState::DungeonState(Core::GameContext& ctx) 
         : context(ctx), currentMenu(0), selectedDungeonID(0), selectedDepth(1), selectedOption(-1), explorationProgress(0), logMessage("Prepare for the expedition.") {
         
@@ -26,6 +27,7 @@ namespace States {
 
     void DungeonState::HandleInput(Core::StateManager& stateManager) {
         string input;
+        // Sanitasi input menggunakan try-catch string-to-int (stoi) untuk mencegah infinite loop/crash jika input bukan angka
         if (currentMenu == 0) {
             cout << "\n Enter Destination ID or 0 to Cancel: ";
             cin >> input;
@@ -45,13 +47,14 @@ namespace States {
     }
 
     void DungeonState::Update(Core::StateManager& stateManager) {
+        // Penanganan kondisi Player mati: Setel HP ke 10% dari Max HP dan pop DungeonState dari stack
         if (context.player.hp <= 0) {
             context.player.hp = static_cast<int>(context.player.getMaxHp() * 0.1f);
             stateManager.PopState(); 
             return;
         }
 
-        // Fungsi pengecekan 5 Orb di inventory
+        // Lambda function dengan capture by reference [&] untuk memvalidasi kelengkapan 5 item Orb di dalam vector inventory
         auto checkAllOrbs = [&]() {
             int count = 0;
             for (const auto& item : context.player.inventory) {
@@ -75,6 +78,7 @@ namespace States {
                 logMessage = "Target: " + dungeonList[selectedDungeonID - 1].name;
                 selectedOption = -1;
             } else if (selectedOption == 6) {
+                // Logika pembatasan akses dungeon rahasia berdasarkan evaluasi flag hasAllOrbs
                 if (hasAllOrbs) {
                     selectedDungeonID = selectedOption;
                     currentMenu = 1;
@@ -93,6 +97,7 @@ namespace States {
                 logMessage = "Prepare for the expedition.";
                 selectedOption = -1;
             } else if (selectedOption >= 1 && selectedOption <= 20) {
+                // Validasi indeks array unlockedDepths untuk memastikan player tidak melompati depth yang belum diselesaikan
                 if (selectedOption <= context.player.unlockedDepths[selectedDungeonID - 1]) {
                     selectedDepth = selectedOption;
                     currentMenu = 2;
@@ -111,18 +116,22 @@ namespace States {
                 stateManager.PopState(); 
             } else if (selectedOption == 1) {
                 
+                // Override hardcode progress khusus depth Boss (Depth 20)
                 if (selectedDepth == 20) {
                     explorationProgress = 100; 
                 } else {
                     explorationProgress += 20; 
                 }
 
+                // Handler ketika target progress tercapai
                 if (explorationProgress >= 100) {
                     if (selectedDepth == 20) {
                         logMessage = "An overwhelming presence blocks your path... The Boss awaits!";
+                        // Inject BattleState ke puncak stack StateManager
                         stateManager.PushState(make_unique<BattleState>(context, selectedDungeonID, selectedDepth));
                     } else {
                         logMessage = "Depth " + to_string(selectedDepth) + " cleared! You found a safe spot.";
+                        // Membuka kuncian depth selanjutnya di dalam array jika depth yang diselesaikan adalah depth tertinggi saat ini
                         if (selectedDepth == context.player.unlockedDepths[selectedDungeonID - 1] && selectedDepth < 20) {
                             context.player.unlockedDepths[selectedDungeonID - 1]++;
                         }
@@ -130,6 +139,7 @@ namespace States {
                     currentMenu = 1; 
                     selectedOption = -1;
                 } else {
+                    // C++ Mersenne Twister RNG generator untuk mengacak event (Encounter/Safe/Trap)
                     random_device rd;
                     mt19937 gen(rd());
                     uniform_int_distribution<> dist(1, 100);
@@ -141,6 +151,7 @@ namespace States {
                     } else if (eventRoll <= 85) { 
                         logMessage = "You moved forward safely. Nothing but dust.";
                     } else { 
+                        // Logika kalkulasi damage persentase berbasis Max HP untuk Trap
                         int trapDmg = static_cast<int>(context.player.getMaxHp() * 0.1f);
                         context.player.hp -= trapDmg;
                         if (context.player.hp < 1) context.player.hp = 1; 
@@ -165,7 +176,7 @@ namespace States {
         cout << "  > " << logMessage << "\n";
         cout << string(75, '-') << "\n";
 
-        // Pengecekan ulang untuk kebutuhan UI
+        // Deklarasi ulang lambda checkAllOrbs lokal untuk evaluasi render visibilitas UI
         auto checkAllOrbs = [&]() {
             int count = 0;
             for (const auto& item : context.player.inventory) {
