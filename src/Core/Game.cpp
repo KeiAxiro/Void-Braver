@@ -1,5 +1,6 @@
 #include "Core/Game.h"
 #include "States/MainMenuState.h"
+using namespace std;
 
 namespace Core {
     Game::Game() : isRunning(false) {}
@@ -7,7 +8,7 @@ namespace Core {
     void Game::Init() {
         isRunning = true;
         
-        stateManager.PushState(std::make_unique<States::MainMenuState>());
+        stateManager.PushState(make_unique<States::MainMenuState>());
     }
 
     void Game::Run() {

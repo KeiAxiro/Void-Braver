@@ -4,6 +4,7 @@
 #include "Utils/ConsoleUI.h"
 #include <iostream>
 #include <string>
+using namespace std;
 
 namespace States {
 
@@ -12,9 +13,9 @@ namespace States {
     void CharSelectionState::Init() {}
 
     void CharSelectionState::HandleInput(Core::StateManager& stateManager) {
-        std::string input;
-        std::cout << "\nEnter your choice: ";
-        std::cin >> input;
+        string input;
+        cout << "\nEnter your choice: ";
+        cin >> input;
 
         if (input == "1") selectedClass = 1;
         else if (input == "2") selectedClass = 2;
@@ -48,23 +49,23 @@ void CharSelectionState::Update(Core::StateManager& stateManager) {
             
             stateManager.GetContext().playerClassId = selectedClass;
 
-            std::cout << "\nYou have chosen " << p.name << "!\n";
-            std::cout << "Data saved to Game Context!\n";
+            cout << "\nYou have chosen " << p.name << "!\n";
+            cout << "Data saved to Game Context!\n";
             Utils::ConsoleUI::Pause();
 
-            stateManager.ChangeState(std::make_unique<HubState>(stateManager.GetContext()));
+            stateManager.ChangeState(make_unique<HubState>(stateManager.GetContext()));
         }
     }
 
     void CharSelectionState::Render() {
         Utils::ConsoleUI::ClearScreen();
 
-        std::cout << "========================================\n";
-        std::cout << "           CHOOSE YOUR CLASS            \n";
-        std::cout << "========================================\n";
-        std::cout << "1. Thorne - Knight Type\n";
-        std::cout << "2. Lara - Sorcerer Type\n";
-        std::cout << "3. Vane - Wanderer Type\n";
-        std::cout << "========================================\n";
+        cout << "========================================\n";
+        cout << "           CHOOSE YOUR CLASS            \n";
+        cout << "========================================\n";
+        cout << "1. Thorne - Knight Type\n";
+        cout << "2. Lara - Sorcerer Type\n";
+        cout << "3. Vane - Wanderer Type\n";
+        cout << "========================================\n";
     }
 }

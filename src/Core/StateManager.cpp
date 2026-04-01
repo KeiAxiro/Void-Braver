@@ -1,10 +1,11 @@
 #include "Core/StateManager.h"
+using namespace std;
 
 namespace Core {
     StateManager::StateManager() : isRunning(true) {}
 
-    void StateManager::PushState(std::unique_ptr<State> state) {
-        states.push(std::move(state));
+    void StateManager::PushState(unique_ptr<State> state) {
+        states.push(move(state));
         states.top()->Init();
     }
 
@@ -14,11 +15,11 @@ namespace Core {
         }
     }
 
-    void StateManager::ChangeState(std::unique_ptr<State> state) {
+    void StateManager::ChangeState(unique_ptr<State> state) {
         if (!states.empty()) {
             states.pop();
         }
-        PushState(std::move(state));
+        PushState(move(state));
     }
 
     void StateManager::HandleInput() {

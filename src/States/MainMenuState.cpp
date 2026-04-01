@@ -3,6 +3,7 @@
 #include "States/CharSelectionState.h"
 #include <iostream>
 #include <string>
+using namespace std;
 
 namespace States
 {
@@ -12,22 +13,22 @@ namespace States
     void MainMenuState::Init()
     {
         // Initialization logic if needed when entering this state
-        std::cout << "\033[2J\033[1;1H";
+        cout << "\033[2J\033[1;1H";
 
-        std::cout << "========================================\n";
-        std::cout << "              VOID BRAVER               \n";
-        std::cout << "========================================\n";
-        std::cout << "1. New Game\n";
-        std::cout << "2. Load Game\n";
-        std::cout << "3. Exit\n";
-        std::cout << "========================================\n";
+        cout << "========================================\n";
+        cout << "              VOID BRAVER               \n";
+        cout << "========================================\n";
+        cout << "1. New Game\n";
+        cout << "2. Load Game\n";
+        cout << "3. Exit\n";
+        cout << "========================================\n";
     }
 
     void MainMenuState::HandleInput(Core::StateManager &stateManager)
     {
-        std::string input;
-        std::cout << "\nEnter your choice: ";
-        std::cin >> input;
+        string input;
+        cout << "\nEnter your choice: ";
+        cin >> input;
 
         if (input == "1")
         {
@@ -51,37 +52,37 @@ namespace States
     {
         if (selectedOption == 0)
         {
-            std::cout << "Transitioning to Character Selection...\n";
-            stateManager.ChangeState(std::make_unique<CharSelectionState>());
+            cout << "Transitioning to Character Selection...\n";
+            stateManager.ChangeState(make_unique<CharSelectionState>());
 
             selectedOption = -1; // Reset pending action
         }
         else if (selectedOption == 1)
         {
-            std::cout << "Transitioning to Load Game...\n";
+            cout << "Transitioning to Load Game...\n";
             // Nanti kita uncomment baris di bawah ini setelah LoadState dibuat
-            // stateManager.ChangeState(std::make_unique<LoadState>());
+            // stateManager.ChangeState(make_unique<LoadState>());
 
             selectedOption = -1;
         }
         else if (selectedOption == 2)
         {
-            std::cout << "Exiting Void Braver. Goodbye!\n";
+            cout << "Exiting Void Braver. Goodbye!\n";
             stateManager.Quit();
         }
     }
 
     void MainMenuState::Render()
     {
-        std::cout << "\033[2J\033[1;1H";
+        cout << "\033[2J\033[1;1H";
 
-        std::cout << "========================================\n";
-        std::cout << "              VOID BRAVER               \n";
-        std::cout << "========================================\n";
-        std::cout << "1. New Game\n";
-        std::cout << "2. Load Game\n";
-        std::cout << "3. Exit\n";
-        std::cout << "========================================\n";
+        cout << "========================================\n";
+        cout << "              VOID BRAVER               \n";
+        cout << "========================================\n";
+        cout << "1. New Game\n";
+        cout << "2. Load Game\n";
+        cout << "3. Exit\n";
+        cout << "========================================\n";
     }
 
 }

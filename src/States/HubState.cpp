@@ -7,6 +7,7 @@
 #include <iostream>
 #include <iomanip>
 #include <string>
+using namespace std;
 
 namespace States {
 
@@ -21,9 +22,9 @@ namespace States {
     void HubState::Init() {}
 
     void HubState::HandleInput(Core::StateManager& stateManager) {
-        std::string input;
-        std::cout << "\n Pilih menu: ";
-        std::cin >> input;
+        string input;
+        cout << "\n Pilih menu: ";
+        cin >> input;
 
         if (input == "1") selectedOption = 1;
         else if (input == "2") selectedOption = 2;
@@ -43,30 +44,30 @@ namespace States {
 
         switch (selectedOption) {
             case 1:
-                stateManager.PushState(std::make_unique<CharacterMenuState>(stateManager.GetContext()));
+                stateManager.PushState(make_unique<CharacterMenuState>(stateManager.GetContext()));
                 selectedOption = -1;
                 break;
             case 2:
-                stateManager.PushState(std::make_unique<DungeonState>(stateManager.GetContext()));
+                stateManager.PushState(make_unique<DungeonState>(stateManager.GetContext()));
                 selectedOption = -1;
                 break;
             case 3:
-                std::cout << "\nEntering Library...\n";
+                cout << "\nEntering Library...\n";
                 Utils::ConsoleUI::Pause();
                 selectedOption = -1;
                 break;
             case 4:
-                std::cout << "\nOpening Crafting Menu...\n";
+                cout << "\nOpening Crafting Menu...\n";
                 Utils::ConsoleUI::Pause();
                 selectedOption = -1;
                 break;
             case 5:
-                std::cout << "\nGoing to Shop...\n";
+                cout << "\nGoing to Shop...\n";
                 Utils::ConsoleUI::Pause();
                 selectedOption = -1;
                 break;
             case 0:
-                stateManager.ChangeState(std::make_unique<MainMenuState>());
+                stateManager.ChangeState(make_unique<MainMenuState>());
                 break;
             default:
                 break;
@@ -76,20 +77,20 @@ namespace States {
     void HubState::Render() {
         Utils::ConsoleUI::ClearScreen();
 
-        std::cout << std::string(50, '=') << "\n";
-        std::cout << "              V O I D   B R A V E R            \n";
-        std::cout << std::string(50, '=') << "\n";
+        cout << string(50, '=') << "\n";
+        cout << "              V O I D   B R A V E R            \n";
+        cout << string(50, '=') << "\n";
 
-        std::cout << std::left << "  " << std::setw(8) << "Nama" << " : " << std::setw(14) << pName 
-                  << " | " << std::setw(5) << "Class" << " : " << pJob << "\n";
-        std::cout << std::left << "  " << std::setw(8) << "Level" << " : " << std::setw(14) << pLevel 
-                  << " | " << std::setw(5) << "EXP" << " : " << pExp << "/" << pMaxExp << "\n";
-        std::cout << std::string(50, '-') << "\n\n";
+        cout << left << "  " << setw(8) << "Nama" << " : " << setw(14) << pName 
+                  << " | " << setw(5) << "Class" << " : " << pJob << "\n";
+        cout << left << "  " << setw(8) << "Level" << " : " << setw(14) << pLevel 
+                  << " | " << setw(5) << "EXP" << " : " << pExp << "/" << pMaxExp << "\n";
+        cout << string(50, '-') << "\n\n";
 
-        std::cout << std::left << "  " << std::setw(26) << "1. Character Menu" << "2. Enter Dungeon\n\n";
-        std::cout << std::left << "  " << std::setw(26) << "3. Library" << "4. Crafting\n\n";
-        std::cout << std::left << "  " << std::setw(26) << "5. Shop" << "0. Main Menu\n\n";
+        cout << left << "  " << setw(26) << "1. Character Menu" << "2. Enter Dungeon\n\n";
+        cout << left << "  " << setw(26) << "3. Library" << "4. Crafting\n\n";
+        cout << left << "  " << setw(26) << "5. Shop" << "0. Main Menu\n\n";
         
-        std::cout << std::string(50, '=') << "\n";
+        cout << string(50, '=') << "\n";
     }
 }
