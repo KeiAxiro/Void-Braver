@@ -1,0 +1,400 @@
+{
+  "characters": [
+    {
+      "class_id": "knight",
+      "cooldowns": [
+        {
+          "remaining_turns": 0,
+          "skill_id": "pommel_strike"
+        }
+      ],
+      "current_exp": 3152,
+      "gold": 1264,
+      "hp": 522,
+      "id": "i",
+      "inventory": [
+        {
+          "equipped": false,
+          "item_id": "mana_elixir",
+          "quantity": 1
+        },
+        {
+          "equipped": true,
+          "item_id": "rusty_greatsword",
+          "quantity": 1,
+          "slot": "Weapon"
+        },
+        {
+          "equipped": true,
+          "item_id": "leather_cap",
+          "quantity": 1,
+          "slot": "Helmet"
+        },
+        {
+          "equipped": false,
+          "item_id": "rough_tunic",
+          "quantity": 1
+        },
+        {
+          "equipped": true,
+          "item_id": "traveler_s_boots",
+          "quantity": 1,
+          "slot": "Boots"
+        },
+        {
+          "equipped": false,
+          "item_id": "fine_fiber",
+          "quantity": 17
+        },
+        {
+          "equipped": false,
+          "item_id": "iron_scrap",
+          "quantity": 15
+        },
+        {
+          "equipped": false,
+          "item_id": "heavy_ore",
+          "quantity": 5
+        },
+        {
+          "equipped": false,
+          "item_id": "mana_shard",
+          "quantity": 20
+        },
+        {
+          "equipped": true,
+          "item_id": "reinforced_leather",
+          "quantity": 1,
+          "slot": "Armor"
+        }
+      ],
+      "level": 7,
+      "max_hp": 532,
+      "max_mp": 99,
+      "mp": 94,
+      "name": "i",
+      "progress": {
+        "current_depth": 3,
+        "current_dungeon": "dungeon_of_echoes_and_destiny",
+        "dungeon_progress": {
+          "dungeon_of_echoes_and_destiny": {
+            "completed": false,
+            "highest_cleared_depth": 2,
+            "unlocked_depth": 3
+          },
+          "dungeon_of_knowledge_and_wisdom": {
+            "completed": false,
+            "highest_cleared_depth": 2,
+            "unlocked_depth": 3
+          },
+          "dungeon_of_thorns_and_resilience": {
+            "completed": false,
+            "highest_cleared_depth": 2,
+            "unlocked_depth": 3
+          },
+          "dungeon_of_valor_and_ember": {
+            "completed": false,
+            "highest_cleared_depth": 0,
+            "unlocked_depth": 1
+          },
+          "dungeon_of_whispers_and_shadows": {
+            "completed": false,
+            "highest_cleared_depth": 1,
+            "unlocked_depth": 2
+          },
+          "tahta_kehampaan": {
+            "completed": false,
+            "highest_cleared_depth": 0,
+            "unlocked_depth": 1
+          }
+        },
+        "max_depth_unlocked": 3
+      },
+      "stat_points": 0,
+      "stats": {
+        "agi": 10,
+        "int": 10,
+        "str": 45,
+        "vit": 15
+      }
+    },
+    {
+      "class_id": "knight",
+      "cooldowns": [
+        {
+          "remaining_turns": 0,
+          "skill_id": "pommel_strike"
+        },
+        {
+          "remaining_turns": 0,
+          "skill_id": "challenger_s_roar"
+        }
+      ],
+      "current_exp": 166,
+      "gold": 0,
+      "hp": 73,
+      "id": "kontol",
+      "inventory": [
+        {
+          "equipped": false,
+          "item_id": "mana_elixir",
+          "quantity": 1
+        },
+        {
+          "equipped": true,
+          "item_id": "rusty_greatsword",
+          "quantity": 1,
+          "slot": "Weapon"
+        },
+        {
+          "equipped": true,
+          "item_id": "leather_cap",
+          "quantity": 1,
+          "slot": "Helmet"
+        },
+        {
+          "equipped": true,
+          "item_id": "rough_tunic",
+          "quantity": 1,
+          "slot": "Armor"
+        },
+        {
+          "equipped": false,
+          "item_id": "heavy_ore",
+          "quantity": 3
+        },
+        {
+          "equipped": false,
+          "item_id": "iron_scrap",
+          "quantity": 3
+        },
+        {
+          "equipped": false,
+          "item_id": "mana_shard",
+          "quantity": 3
+        },
+        {
+          "equipped": false,
+          "item_id": "traveler_s_boots",
+          "quantity": 1
+        },
+        {
+          "equipped": false,
+          "item_id": "healing_potion",
+          "quantity": 2
+        }
+      ],
+      "level": 1,
+      "max_hp": 147,
+      "max_mp": 70,
+      "mp": 35,
+      "name": "kontol",
+      "progress": {
+        "current_depth": 1,
+        "current_dungeon": "dungeon_of_echoes_and_destiny",
+        "dungeon_progress": {
+          "dungeon_of_echoes_and_destiny": {
+            "completed": false,
+            "highest_cleared_depth": 1,
+            "unlocked_depth": 2
+          },
+          "dungeon_of_knowledge_and_wisdom": {
+            "completed": false,
+            "highest_cleared_depth": 0,
+            "unlocked_depth": 1
+          },
+          "dungeon_of_thorns_and_resilience": {
+            "completed": false,
+            "highest_cleared_depth": 0,
+            "unlocked_depth": 1
+          },
+          "dungeon_of_valor_and_ember": {
+            "completed": false,
+            "highest_cleared_depth": 0,
+            "unlocked_depth": 1
+          },
+          "dungeon_of_whispers_and_shadows": {
+            "completed": false,
+            "highest_cleared_depth": 0,
+            "unlocked_depth": 1
+          },
+          "tahta_kehampaan": {
+            "completed": false,
+            "highest_cleared_depth": 0,
+            "unlocked_depth": 1
+          }
+        },
+        "max_depth_unlocked": 2
+      },
+      "stat_points": 0,
+      "stats": {
+        "agi": 10,
+        "int": 10,
+        "str": 20,
+        "vit": 10
+      }
+    },
+    {
+      "class_id": "sorcerer",
+      "cooldowns": [],
+      "current_exp": 0,
+      "gold": 500,
+      "hp": 105,
+      "id": "2",
+      "inventory": [
+        {
+          "equipped": false,
+          "item_id": "healing_potion",
+          "quantity": 3
+        },
+        {
+          "equipped": false,
+          "item_id": "mana_elixir",
+          "quantity": 2
+        },
+        {
+          "equipped": true,
+          "item_id": "apprentice_wand",
+          "quantity": 1,
+          "slot": "Weapon"
+        },
+        {
+          "equipped": true,
+          "item_id": "novice_robe",
+          "quantity": 1,
+          "slot": "Armor"
+        }
+      ],
+      "level": 1,
+      "max_hp": 123,
+      "max_mp": 85,
+      "mp": 85,
+      "name": "2",
+      "progress": {
+        "current_depth": 1,
+        "current_dungeon": null,
+        "max_depth_unlocked": 0
+      },
+      "stat_points": 5,
+      "stats": {
+        "agi": 10,
+        "int": 15,
+        "str": 10,
+        "vit": 10
+      }
+    },
+    {
+      "class_id": "knight",
+      "cooldowns": [],
+      "current_exp": 42,
+      "gold": 510,
+      "hp": 38,
+      "id": "kei",
+      "inventory": [
+        {
+          "equipped": false,
+          "item_id": "healing_potion",
+          "quantity": 3
+        },
+        {
+          "equipped": false,
+          "item_id": "mana_elixir",
+          "quantity": 2
+        },
+        {
+          "equipped": true,
+          "item_id": "leather_coif",
+          "quantity": 1,
+          "slot": "Helmet"
+        },
+        {
+          "equipped": true,
+          "item_id": "padded_tunic",
+          "quantity": 1,
+          "slot": "Armor"
+        },
+        {
+          "equipped": true,
+          "item_id": "rusty_greatsword",
+          "quantity": 1,
+          "slot": "Weapon"
+        },
+        {
+          "equipped": true,
+          "item_id": "traveler_s_boots",
+          "quantity": 1,
+          "slot": "Boots"
+        },
+        {
+          "equipped": false,
+          "item_id": "iron_scrap",
+          "quantity": 15
+        },
+        {
+          "equipped": false,
+          "item_id": "heavy_ore",
+          "quantity": 50
+        },
+        {
+          "equipped": false,
+          "item_id": "fine_fiber",
+          "quantity": 1
+        },
+        {
+          "equipped": false,
+          "item_id": "mana_shard",
+          "quantity": 1
+        }
+      ],
+      "level": 1,
+      "max_hp": 158,
+      "max_mp": 75,
+      "mp": 70,
+      "name": "Kei",
+      "progress": {
+        "current_depth": 1,
+        "current_dungeon": "dungeon_of_echoes_and_destiny",
+        "dungeon_progress": {
+          "dungeon_of_echoes_and_destiny": {
+            "completed": false,
+            "highest_cleared_depth": 0,
+            "unlocked_depth": 1
+          },
+          "dungeon_of_knowledge_and_wisdom": {
+            "completed": false,
+            "highest_cleared_depth": 0,
+            "unlocked_depth": 1
+          },
+          "dungeon_of_thorns_and_resilience": {
+            "completed": false,
+            "highest_cleared_depth": 0,
+            "unlocked_depth": 1
+          },
+          "dungeon_of_valor_and_ember": {
+            "completed": false,
+            "highest_cleared_depth": 0,
+            "unlocked_depth": 1
+          },
+          "dungeon_of_whispers_and_shadows": {
+            "completed": false,
+            "highest_cleared_depth": 0,
+            "unlocked_depth": 1
+          },
+          "tahta_kehampaan": {
+            "completed": false,
+            "highest_cleared_depth": 0,
+            "unlocked_depth": 1
+          }
+        },
+        "max_depth_unlocked": 1
+      },
+      "stat_points": 5,
+      "stats": {
+        "agi": 10,
+        "int": 10,
+        "str": 15,
+        "vit": 10
+      }
+    }
+  ]
+}
