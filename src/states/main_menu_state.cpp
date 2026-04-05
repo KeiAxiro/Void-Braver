@@ -1,6 +1,7 @@
 #include "states.h"
 #include "database.h"
-#include "state_helpers.h"
+#include "states/input_helpers.h"
+#include "states/player_stats_helpers.h"
 #include "utils/console_ui.h"
 
 using namespace std;

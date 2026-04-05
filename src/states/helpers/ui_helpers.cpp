@@ -1,5 +1,8 @@
-#include "state_helpers.h"
+#include "states/ui_helpers.h"
+
 #include "database.h"
+#include "states/inventory_helpers.h"
+#include "states/player_stats_helpers.h"
 #include "utils/console_ui.h"
 
 #include <iostream>

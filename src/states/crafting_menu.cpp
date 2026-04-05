@@ -1,13 +1,15 @@
-#include "states.h"
+#include "states/crafting_features.h"
+
 #include "database.h"
-#include "state_helpers.h"
+#include "states/dungeon_features.h"
+#include "states/input_helpers.h"
+#include "states/inventory_helpers.h"
+#include "states/player_stats_helpers.h"
+#include "states/ui_helpers.h"
 #include "utils/console_ui.h"
 
 #include <algorithm>
-#include <cctype>
-#include <cmath>
 #include <iostream>
-#include <random>
 #include <string>
 #include <vector>
 
@@ -117,7 +119,7 @@ namespace state_helpers
                      << " | Page: " << page << "/" << totalPages << '\n';
                 cout << "\n";
                 if (totalItems == 0)
-                    cout << colorText("(Tidak ada recipe pada kategori ini)", Color::Yellow, true) << '\n';
+                    cout << "(Tidak ada recipe pada kategori ini)\n";
 
                 for (int i = start; i < end; ++i)
                 {
@@ -125,9 +127,9 @@ namespace state_helpers
                     cout << (i - start + 1) << ". " << item.value("name", std::string())
                          << " | Tier " << item.value("tier_level", 0);
                     if (canCraftItem(ctx, item))
-                        cout << colorText(" [Craftable]", Color::Green, true);
+                        cout << " [Craftable]";
                     if (item.value("required_class_id", std::string()) != ctx.player.class_id)
-                        cout << colorText(" [Class mismatch]", Color::Red, true);
+                        cout << " [Class mismatch]";
                     cout << '\n';
                 }
 

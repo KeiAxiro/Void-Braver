@@ -1,13 +1,14 @@
-#include "states.h"
+#include "states/shop_features.h"
+
 #include "database.h"
-#include "state_helpers.h"
+#include "states/dungeon_features.h"
+#include "states/input_helpers.h"
+#include "states/inventory_helpers.h"
+#include "states/ui_helpers.h"
 #include "utils/console_ui.h"
 
 #include <algorithm>
-#include <cctype>
-#include <cmath>
 #include <iostream>
-#include <random>
 #include <string>
 #include <vector>
 

@@ -1,6 +1,12 @@
 #include "states.h"
 #include "database.h"
-#include "state_helpers.h"
+#include "states/character_features.h"
+#include "states/crafting_features.h"
+#include "states/dungeon_features.h"
+#include "states/input_helpers.h"
+#include "states/player_stats_helpers.h"
+#include "states/shop_features.h"
+#include "states/ui_helpers.h"
 #include "utils/console_ui.h"
 
 using namespace std;

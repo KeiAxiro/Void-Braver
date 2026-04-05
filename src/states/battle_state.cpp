@@ -1,7 +1,12 @@
 #include "states.h"
 #include "database.h"
-#include "state_helpers.h"
+#include "states/battle_features.h"
+#include "states/dungeon_features.h"
+#include "states/input_helpers.h"
+#include "states/player_stats_helpers.h"
+#include "states/ui_helpers.h"
 #include "utils/console_ui.h"
+#include "config/game_rules.h"
 
 #include <algorithm>
 #include <vector>
@@ -12,8 +17,8 @@ using namespace state_helpers;
 
 // Flow dungeon:
 // 1. pilih aksi di depth aktif
-// 2. jika move forward, pemain menempuh 5 langkah
-// 3. di dalam 5 langkah itu bisa muncul 1-3 encounter acak
+// 2. jika move forward, pemain menempuh beberapa langkah tetap
+// 3. di dalam langkah itu bisa muncul encounter acak
 // 4. jika seluruh langkah selesai, depth dianggap clear
 void runBattle(GameContext &ctx)
 {
@@ -60,7 +65,7 @@ void runBattle(GameContext &ctx)
         printDungeonLore(*depthData);
         cout << "\n";
         printLine('=');
-        cout << colorText("1. Move Forward (5 langkah)", Color::Green) << '\n';
+        cout << colorText("1. Move Forward (" + to_string(game_rules::kMoveStepsPerDepth) + " langkah)", Color::Green) << '\n';
         cout << colorText("2. Ganti Dungeon / Depth", Color::Cyan) << '\n';
         cout << colorText("3. Kembali ke Hub", Color::Magenta) << '\n';
         printLine('=');
@@ -87,13 +92,13 @@ void runBattle(GameContext &ctx)
         const vector<int> encounterSteps = buildEncounterStepsForMove();
         bool journeyCancelled = false;
 
-        for (int step = 1; step <= 5; ++step)
+        for (int step = 1; step <= game_rules::kMoveStepsPerDepth; ++step)
         {
             clearScreen();
             printStateHeader(ctx, "MENYUSURI KORIDOR");
             cout << colorText(dungeon->value("name", string()), Color::Yellow, true)
                  << " | Depth " << ctx.player.progress.current_depth << "\n\n";
-            cout << colorText("Langkah", Color::Cyan, true) << " : " << step << "/5\n";
+            cout << colorText("Langkah", Color::Cyan, true) << " : " << step << "/" << game_rules::kMoveStepsPerDepth << "\n";
             cout << colorText("Encounter dalam perjalanan ini", Color::Cyan, true)
                  << " : " << encounterSteps.size() << "\n";
             printLine('-');
@@ -102,7 +107,7 @@ void runBattle(GameContext &ctx)
             if (!encounterNow)
             {
                 cout << colorText("Lorong masih sepi, tapi hawa dungeon terasa berat.", Color::Blue) << '\n';
-                if (step < 5)
+                if (step < game_rules::kMoveStepsPerDepth)
                     waitForEnter();
                 continue;
             }
@@ -126,12 +131,12 @@ void runBattle(GameContext &ctx)
                 break;
             }
 
-            if (step < 5)
+            if (step < game_rules::kMoveStepsPerDepth)
             {
                 clearScreen();
                 printStateHeader(ctx, "LANJUT MENYUSURI DEPTH");
                 cout << colorText("Kamu menang dan kembali melangkah ke depan.", Color::Green) << '\n';
-                cout << "Sisa langkah: " << (5 - step) << '\n';
+                cout << "Sisa langkah: " << (game_rules::kMoveStepsPerDepth - step) << '\n';
                 waitForEnter();
             }
         }
@@ -141,7 +146,7 @@ void runBattle(GameContext &ctx)
 
         clearScreen();
         printStateHeader(ctx, "UJUNG DEPTH TERCAPAI");
-        cout << colorText("Kamu berhasil menyelesaikan perjalanan 5 langkah di depth ini.", Color::Green, true) << '\n';
+        cout << colorText("Kamu berhasil menyelesaikan perjalanan depth ini.", Color::Green, true) << '\n';
         applyDepthCompletionRewards(ctx, *dungeon, *depthData);
         waitForEnter();
     }

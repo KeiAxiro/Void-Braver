@@ -1,7 +1,8 @@
-#include "../include/database.h"
+// Legacy aggregator:
+// file ini dipertahankan agar command build manual lama masih bisa dipakai.
+// CMake modern proyek ini tidak lagi mengandalkan file ini sebagai sumber utama.
 
-// File ini sengaja jadi penghubung agar build tetap sederhana.
-// Semua logic database dipindah ke file yang lebih kecil dan fokus.
+#include "database.h"
 
 #include "database/json_and_paths.cpp"
 #include "database/player_serialization.cpp"

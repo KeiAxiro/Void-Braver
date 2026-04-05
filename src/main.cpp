@@ -1,6 +1,6 @@
-#include "../include/globals.h"
-#include "../include/database.h"
-#include "../include/states.h"
+#include "globals.h"
+#include "database.h"
+#include "states.h"
 
 #include <iostream>
 
