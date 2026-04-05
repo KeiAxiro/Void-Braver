@@ -58,7 +58,8 @@ namespace state_helpers
     {
         BattleState battle;
 
-        auto showBattlePanel = [&](const string &title, bool showActions) {
+        auto showBattlePanel = [&](const string &title, bool showActions)
+        {
             clearScreen();
             printStateHeader(ctx, title);
             cout << colorText("Dungeon", Color::Yellow, true) << " : " << dungeon.value("name", string()) << '\n';
@@ -92,7 +93,8 @@ namespace state_helpers
             printLine('-');
         };
 
-        auto enemyTurn = [&](bool openingAttack = false) {
+        auto enemyTurn = [&](bool openingAttack = false)
+        {
             if (battle.enemyStunTurns > 0 && !openingAttack)
             {
                 cout << enemy.name << " terkena stun dan gagal bergerak.\n";
@@ -244,7 +246,7 @@ namespace state_helpers
         {
             ctx.player.hp = max(1, ctx.player.max_hp / 2);
             ctx.player.mp = max(1, ctx.player.max_mp / 2);
-            cout << "Kamu kalah. HP dan MP dipulihkan ke setengah maksimum.\n";
+            cout << colorText("Kamu kalah. HP dan MP dipulihkan ke setengah maksimum.", Color::Red, true) << '\n';
             saveGame(ctx);
             waitForEnter();
             return EncounterResult::Defeat;
@@ -310,7 +312,7 @@ namespace state_helpers
     {
         int defense = enemy.def;
         if (battle.enemyDefDebuffTurns > 0)
-            defense = static_cast<int>(defense * 0.70);
+            defense = static_cast<int>(defense * 0.30);
         return std::max(0, defense);
     }
 
@@ -426,12 +428,12 @@ namespace state_helpers
 
         if (skillId == "pommel_strike")
         {
-            damage = static_cast<int>(baseAttack * 1.20) - calculateEnemyDefense(enemy, battle);
+            damage = static_cast<int>(baseAttack * 1.50) - calculateEnemyDefense(enemy, battle);
             battle.enemyStunTurns = 1;
         }
         else if (skillId == "iron_cleave" || skillId == "mana_bolt")
         {
-            damage = static_cast<int>(baseAttack * 1.45) - calculateEnemyDefense(enemy, battle);
+            damage = static_cast<int>(baseAttack * 1.75) - calculateEnemyDefense(enemy, battle);
         }
         else if (skillId == "challenger_s_roar")
         {

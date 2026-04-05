@@ -16,6 +16,11 @@ using namespace consoleui;
 
 namespace state_helpers
 {
+    /// @brief
+    /// @param ctx
+    /// @param dungeon
+    /// @param depth
+    /// @return
     EnemyInstance spawnEnemyForDepth(const GameContext &ctx, const json &dungeon, int depth)
     {
         std::vector<const json *> pool;
