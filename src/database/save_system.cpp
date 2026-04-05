@@ -1,10 +1,13 @@
 #include "database.h"
+#include "database/database_detail.h"
+#include "config/player_balance.h"
 
 #include <filesystem>
 #include <fstream>
 #include <iostream>
 
 using namespace std;
+using namespace database_detail;
 
 bool loadGameData(GameContext &ctx)
 {
@@ -152,13 +155,13 @@ void createNewGame(GameContext &ctx, const string &playerName, const string &cla
 
     const string primary = classPrimaryStat(ctx, ctx.player.class_id);
     if (primary == "INT")
-        ctx.player.stats.intl += 5;
+        ctx.player.stats.intl += player_balance::kPrimaryStatBonusOnNewGame;
     else if (primary == "AGI")
-        ctx.player.stats.agi += 5;
+        ctx.player.stats.agi += player_balance::kPrimaryStatBonusOnNewGame;
     else if (primary == "VIT")
-        ctx.player.stats.vit += 5;
+        ctx.player.stats.vit += player_balance::kPrimaryStatBonusOnNewGame;
     else
-        ctx.player.stats.str += 5;
+        ctx.player.stats.str += player_balance::kPrimaryStatBonusOnNewGame;
 
     ctx.player.max_hp = baseMaxHp(ctx.player);
     ctx.player.max_mp = baseMaxMp(ctx.player);

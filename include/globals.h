@@ -4,6 +4,8 @@
 #include <string>
 #include <vector>
 
+#include "config/game_paths.h"
+#include "config/game_rules.h"
 #include "../lib/nlohmann/json.hpp"
 
 using json = nlohmann::json;
@@ -79,19 +81,21 @@ struct GameContext
     std::vector<Player> characters;
     int activeCharacterIndex = -1;
     std::vector<GameState> stateStack{GameState::MainMenu};
-    std::string gameDataPath = "data/game_data.json";
-    std::string savePath = "data/save.json";
+    std::string gameDataPath = game_paths::kGameDataPath;
+    std::string savePath = game_paths::kSaveFilePath;
     bool running = true;
 };
 
-inline constexpr int STARTING_GOLD = 650;
-inline constexpr int STARTING_HP = 100;
-inline constexpr int STARTING_MP = 50;
-inline constexpr int STARTING_STAT_POINTS = 5;
-inline constexpr int STAT_POINTS_PER_LEVEL = 5;
-inline constexpr int PAGE_SIZE = 5;
-inline constexpr const char *MENU_SEPARATOR = "-------------------------------------------------------";
-inline constexpr const char *TITLE_SEPARATOR = "========================================";
+// Alias lama tetap dipertahankan supaya fitur lama tidak rusak,
+// tetapi sumber angka utamanya sekarang ada di folder include/config/.
+inline constexpr int STARTING_GOLD = game_rules::kStartingGold;
+inline constexpr int STARTING_HP = game_rules::kStartingHp;
+inline constexpr int STARTING_MP = game_rules::kStartingMp;
+inline constexpr int STARTING_STAT_POINTS = game_rules::kStartingStatPoints;
+inline constexpr int STAT_POINTS_PER_LEVEL = game_rules::kStatPointsPerLevel;
+inline constexpr int PAGE_SIZE = game_rules::kDefaultPageSize;
+inline constexpr const char *MENU_SEPARATOR = game_rules::kMenuSeparator;
+inline constexpr const char *TITLE_SEPARATOR = game_rules::kTitleSeparator;
 
 inline int clampInt(int value, int low, int high)
 {

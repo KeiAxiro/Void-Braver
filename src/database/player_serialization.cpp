@@ -1,8 +1,10 @@
 #include "database.h"
+#include "database/database_detail.h"
 
 using namespace std;
+using namespace database_detail;
 
-namespace
+namespace database_detail
 {
     json playerToJson(const Player &player)
     {
@@ -160,4 +162,4 @@ namespace
         }
         characters.push_back(player);
     }
-} // namespace
+} // namespace database_detail

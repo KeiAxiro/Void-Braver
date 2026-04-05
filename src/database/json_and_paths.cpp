@@ -1,4 +1,6 @@
 #include "database.h"
+#include "database/database_detail.h"
+#include "config/game_paths.h"
 
 #include <cctype>
 #include <fstream>
@@ -6,9 +8,9 @@
 
 using namespace std;
 
-namespace
+namespace database_detail
 {
-    int asInt(const json &j, int fallback = 0)
+    int asInt(const json &j, int fallback)
     {
         if (j.is_number_integer())
             return j.get<int>();
@@ -30,7 +32,7 @@ namespace
         return fallback;
     }
 
-    string asString(const json &j, const string &fallback = "")
+    string asString(const json &j, const string &fallback)
     {
         if (j.is_string())
             return j.get<string>();
@@ -57,14 +59,14 @@ namespace
     {
         if (!ctx.gameDataPath.empty())
             return ctx.gameDataPath;
-        return "data/game_data.json";
+        return game_paths::kGameDataPath;
     }
 
     string resolveSavePath(const GameContext &ctx)
     {
         if (!ctx.savePath.empty())
             return ctx.savePath;
-        return "data/save.json";
+        return game_paths::kSaveFilePath;
     }
 
     string sanitizeIdPart(const string &value)
@@ -172,4 +174,4 @@ namespace
             giveIfExists("rough_tunic", 1, true);
         }
     }
-} // namespace
+} // namespace database_detail
