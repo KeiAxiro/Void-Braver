@@ -88,14 +88,24 @@ namespace state_helpers
                     std::cout << colorText(std::to_string(i - start + 1) + ". " + item.value("name", std::string()), Color::White, true)
                               << " | Price " << item.value("buy_price", 0)
                               << " | Tier " << item.value("tier_level", 0);
-                    // jika class mismatch, tampilkan [Class mismatch] jika null atau tidak ada field required_class_id, anggap cocok dengan semua class
-                    if (item.contains("required_class_id") && !item["required_class_id"].is_null())
-                    {
-                        if (item.value("required_class_id", std::string()) != ctx.player.class_id)
-                            std::cout << colorText(" [Class mismatch]", Color::Red, true);
-                    }
+                    // jika class mismatch, tampilkan [Class mismatch] jika null (string) atau tidak ada field required_class_id, anggap cocok dengan semua class
+                    // if (item.contains("required_class_id") && !item.value("required_class_id", std::string()).empty())
+                    // {
+                    //     if (item.value("required_class_id", std::string()) != ctx.player.class_id )
+                    //         std::cout << colorText(" [Class mismatch]", Color::Red, true);
+                    // }
+
                     // if (item.value("required_class_id", std::string()) != ctx.player.class_id)
                     //     std::cout << " [Class mismatch]";
+
+                    // print merah jika missmatch class, tampilkan kuning jika null
+                    if (item.contains("required_class_id"))
+                    {
+                        if (item.value("required_class_id", std::string()) == "null")
+                            std::cout << colorText(" [All classes]", Color::Yellow, true);
+                        else if (item.value("required_class_id", std::string()) != ctx.player.class_id)
+                            std::cout << colorText(" [Class mismatch]", Color::Red, true);
+                    }
                     std::cout << '\n';
                 }
                 std::cout << "\nInput nomor item, q prev, e next, c kembali: ";
