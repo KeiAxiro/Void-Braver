@@ -24,3 +24,4 @@ baris ke 23 lorem ipsum dolor sit amet
 baris ke 24 lorem ipsum dolor sit amet
 baris ke 25 lorem ipsum dolor sit amet
 baris ke 26 lorem ipsum dolor sit amet
+baris ke 27 lorem ipsum dolor sit amet
