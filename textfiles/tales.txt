@@ -1,4 +1,4 @@
-    1. DUNGEON OF VALOR AND EMBER
+1. DUNGEON OF VALOR AND EMBER
 
 Bab 1: Memasuki Reruntuhan (Depth 1-5)
 Fokus pada pengenalan benteng dan sisa-sisa pertempuran awal.
@@ -8,6 +8,8 @@ Fokus pada pengenalan benteng dan sisa-sisa pertempuran awal.
     Depth 4: "Raungan dari Kawah Bawah" (The Chronicler menjelaskan asal-usul monster buas yang kini menghuni tempat ini).
     Depth 5: "Abu yang Tak Pernah Padam" (Menyadari bahwa api di benteng ini menolak untuk mati, menahan kutukan).
 
+====================================
+
 Bab 2: Invasi Kegelapan (Depth 6-10)
 Fokus pada masuknya pengaruh The Void dan perlawanan putus asa para prajurit.
     Depth 6: "Senjata Patah di Lautan Magma" (Kisah tentang para Blacksmith yang bekerja siang malam membuat senjata penangkal bayangan).
@@ -15,6 +17,8 @@ Fokus pada masuknya pengaruh The Void dan perlawanan putus asa para prajurit.
     Depth 8: "Ketika Langit Menjadi Gelap" (Deskripsi mengerikan dari The Chronicler saat The Void mulai menelan langit benteng).
     Depth 9: "Keputusasaan di Ruang Barikade" (Jeritan dan ketakutan prajurit biasa yang menghadapi entitas tanpa wujud).
     Depth 10: "Kejatuhan Sang Jenderal" (Kekalahan sang Jenderal yang heroik namun tragis di tengah jembatan lava).
+
+====================================
 
 Bab 3: Korupsi Api (Depth 11-15)
 Fokus pada bagaimana lingkungan dan sisa-sisa prajurit berubah menjadi monster setelah dikalahkan The Void.
@@ -24,6 +28,8 @@ Fokus pada bagaimana lingkungan dan sisa-sisa prajurit berubah menjadi monster s
     Depth 14: "Kebangkitan Pasukan Abu" (Prajurit yang telah mati dihidupkan kembali sebagai boneka The Void).
     Depth 15: "Lorong Keputusasaan" (Jalan turun menuju inti gunung yang kini dipenuhi aura kematian pekat).
 
+====================================
+
 Bab 4: Pusat Kawah & Sang Penjaga (Depth 16-20)
 Fokus pada inti gunung, kegilaan sang bos, dan penemuan Orb.
     Depth 16: "Jantung Gunung Berapi" (Penjelasan tentang ruang magma tempat esensi kerajaan dulu disimpan).
@@ -32,6 +38,7 @@ Fokus pada inti gunung, kegilaan sang bos, dan penemuan Orb.
     Depth 19: "Percikan Harapan Terakhir" (Kesadaran The Ashen Warlord yang meronta-ronta di dalam kendali The Void, menunggu untuk dibebaskan).
     Depth 20: "Lahirnya Crimson Orb" (Cerita penutup dari The Chronicler tentang pengorbanan jiwa sang Warlord yang mengkristal menjadi Crimson Orb setelah player mengalahkannya).
 
+====================================
 ====================================
 
 2. DUNGEON OF KNOWLEDGE AND WISDOM
@@ -44,6 +51,8 @@ Fokus pada masa kejayaan perpustakaan dan munculnya anomali pertama.
     Depth 4: "Goresan Tinta yang Bergetar" (Anomali pertama: buku-buku kuno mulai menulis halamannya sendiri dengan bahasa yang tak dikenali).
     Depth 5: "Ramalan dari Celah Bintang" (Penemuan sebuah perkamen rahasia yang meramalkan kedatangan entitas tanpa wujud: The Void).
 
+====================================
+
 Bab 2: Rasa Ingin Tahu yang Mematikan (Depth 6-10)
 Fokus pada kepanikan para cendekiawan dan eksperimen sihir terlarang.
     Depth 6: "Bisikan di Balik Halaman" (Suara-suara aneh mulai merasuki pikiran para pembaca, membuat mereka terjaga berhari-hari).
@@ -51,6 +60,8 @@ Fokus pada kepanikan para cendekiawan dan eksperimen sihir terlarang.
     Depth 8: "Pecahnya Kaca Realita" (Kegagalan eksperimen yang menyebabkan ruang dan waktu di dalam perpustakaan mulai terdistorsi).
     Depth 9: "Debat Berdarah" (Kewarasan yang hilang; para cendekiawan mulai saling membunuh karena paranoia).
     Depth 10: "Pemberontakan Golem Penjaga" (Golem-golem magis yang diciptakan untuk melindungi buku, kini diretas oleh The Void dan membantai penciptanya).
+
+====================================
 
 Bab 3: Labirin Ilusi dan Distorsi (Depth 11-15)
 Fokus pada kondisi perpustakaan yang kini menjadi labirin mengerikan di mana hukum fisika tidak lagi berlaku.
@@ -60,6 +71,8 @@ Fokus pada kondisi perpustakaan yang kini menjadi labirin mengerikan di mana huk
     Depth 14: "Bayangan Masa Lalu" (Teror ilusi di mana The Void menampilkan ketakutan terbesar dari pikiran sang Hero).
     Depth 15: "Tangisan di Menara Lonceng" (Jeritan jiwa-jiwa cendekiawan yang terjebak di antara dimensi, tidak hidup namun tidak bisa mati).
 
+====================================
+
 Bab 4: Inti Menara & Sang Pustakawan (Depth 16-20)
 Fokus pada klimaks di puncak menara, kegilaan bos, dan penyatuan pengetahuan.
     Depth 16: "Ruang Baca Sang Pemimpin" (Memasuki tempat suci milik penyihir terkuat di kerajaan, sang kepala perpustakaan).
@@ -68,6 +81,7 @@ Fokus pada klimaks di puncak menara, kegilaan bos, dan penyatuan pengetahuan.
     Depth 19: "Mata yang Melihat Segalanya" (Wujud mutasi The Grand Archivist yang kini menyatu dengan perpustakaan itu sendiri, mengawasi setiap langkah player).
     Depth 20: "Lahirnya Azure Orb" (Setelah sang Archivist dikalahkan, jiwanya yang telah disucikan kembali bersama intisari seluruh pengetahuan kerajaan mengkristal menjadi Azure Orb).
 
+====================================
 ====================================
 
 3. DUNGEON OF WHISPERS AND SHADOWS
@@ -80,6 +94,8 @@ Fokus pada kenangan indah hutan suci dan kemunculan kabut mematikan pertama.
     Depth 4: "Kabut yang Mengaburkan Arah" (Awal mula The Void merasuk, mengubah embun pagi menjadi kabut hitam pekat yang membuat para pemburu tersesat di rumah mereka sendiri).
     Depth 5: "Mata di Balik Rimbunan Gelap" (Perasaan terus-menerus diawasi; satwa liar yang tersisa mulai bermutasi menjadi monster buas dengan mata menyala).
 
+====================================
+
 Bab 2: Paranoia dan Pengkhianatan (Depth 6-10)
 Fokus pada runtuhnya kewarasan para assassin akibat racun dan bisikan gaib.
     Depth 6: "Racun di Ujung Belati" (Para pemburu mulai menggunakan racun terlarang dan ilmu hitam untuk melawan anomali hutan).
@@ -88,6 +104,8 @@ Fokus pada runtuhnya kewarasan para assassin akibat racun dan bisikan gaib.
     Depth 9: "Pohon Ek Tempat Menggantung Dosa" (Penemuan mengerikan di mana para pelindung bayangan saling mengeksekusi saudara mereka sendiri karena paranoia).
     Depth 10: "Putusnya Tali Persaudaraan" (Pertumpahan darah terakhir di antara kewarasan yang tersisa, mengubah hutan pelindung menjadi kuburan massal).
 
+====================================
+
 Bab 3: Turun ke Jurang Keputusasaan (Depth 11-15)
 Fokus pada area bawah tanah hutan (Abyss) di mana mayat-mayat dihidupkan kembali sebagai roh penasaran.
     Depth 11: "Jurang Tanpa Dasar" (Jalan setapak sempit menuju celah bumi yang gelap; satu langkah salah berarti mati).
@@ -95,6 +113,8 @@ Fokus pada area bawah tanah hutan (Abyss) di mana mayat-mayat dihidupkan kembali
     Depth 13: "Gema Tangisan di Bawah Tanah" (Roh-roh pelindung bayangan yang terjebak; tidak bisa menuju akhirat karena jiwa mereka diikat oleh The Void).
     Depth 14: "Bunga Kematian yang Mekar" (Flora mematikan yang menyemburkan gas pelumpuh saraf, menguji seberapa tinggi stat AGI sang Hero untuk menghindarinya).
     Depth 15: "Jembatan Akar Rapuh" (Sebuah ujian keseimbangan di atas jurang gelap, di mana makhluk bayangan siap menarik siapa saja yang lengah).
+
+====================================
 
 Bab 4: Sarang Sang Pengintai (Depth 16-20)
 Fokus pada inti kedelapan, kecepatan mutlak, dan tragedi sang pemimpin assassin.
@@ -105,8 +125,11 @@ Fokus pada inti kedelapan, kecepatan mutlak, dan tragedi sang pemimpin assassin.
     Depth 20: "Kelahiran Obsidian Orb" (Setelah mengalahkan The Phantom Stalker, jiwa sang pemimpin akhirnya bebas, meninggalkan esensi kelincahan dan bayangan yang memadat menjadi Obsidian Orb).
 
 ====================================
+====================================
 
 4. DUNGEON OF THORNS AND RESILIENCE
+
+====================================
 
 Bab 1: Suaka yang Membusuk (Depth 1-5)
 Fokus pada masa lalu rawa sebagai tempat penyembuhan dan awal mula pencemaran.
@@ -116,6 +139,8 @@ Fokus pada masa lalu rawa sebagai tempat penyembuhan dan awal mula pencemaran.
     Depth 4: "Air yang Mengubah Wujud" (Mata air jernih mulai berubah menjadi lumpur hitam kental yang membakar kulit).
     Depth 5: "Duri Penolakan Alam" (Flora di rawa ini mencoba melawan kutukan dengan menumbuhkan duri-duri raksasa, namun akhirnya ikut terkorupsi).
 
+====================================
+
 Bab 2: Bertahan di Tengah Kelayuan (Depth 6-10)
 Fokus pada penduduk asli rawa dan makhluk raksasa yang mencoba bertahan dari racun.
     Depth 6: "Lumpur dan Besi" (Para petarung rawa yang menutupi tubuh mereka dengan lumpur ajaib dan zirah berat untuk menahan gigitan mutan).
@@ -123,6 +148,8 @@ Fokus pada penduduk asli rawa dan makhluk raksasa yang mencoba bertahan dari rac
     Depth 8: "Tenggelamnya Kuil Penawar" (Kuil penyembuhan terakhir yang akhirnya tertelan oleh rawa hisap hidup).
     Depth 9: "Paru-Paru Penuh Abu Beracun" (Penderitaan para penyintas yang perlahan mati lemas karena udara menjadi terlalu pekat untuk dihirup).
     Depth 10: "Sang Penjaga yang Membatu" (Treant (manusia pohon) raksasa yang mengorbankan dirinya menjadi batu untuk menutup jalan masuk racun ke desa, meski akhirnya gagal).
+
+====================================
 
 Bab 3: Inti Bumi yang Berdarah (Depth 11-15)
 Fokus pada kedalaman bawah tanah di mana akar, daging, dan lumpur menyatu menjadi horor biologis.
@@ -132,6 +159,8 @@ Fokus pada kedalaman bawah tanah di mana akar, daging, dan lumpur menyatu menjad
     Depth 14: "Sungai Asam Pelebur Tulang" (Lingkungan di depth ini sangat ekstrem hingga uapnya saja bisa melelehkan perlengkapan besi).
     Depth 15: "Detak Jantung di Dalam Lumpur" (Mendengar suara detak jantung yang sangat lambat namun menggetarkan dinding gua; pertanda bos semakin dekat).
 
+====================================
+
 Bab 4: Penjaga Terakhir Alam (Depth 16-20)
 Fokus pada tragedi sang pelindung rawa, daya tahannya yang tak terbatas, dan penemuan Orb.
     Depth 16: "Rahim Kebusukan" (Memasuki pusat rawa di mana The Void memusatkan seluruh energi racunnya).
@@ -140,6 +169,7 @@ Fokus pada tragedi sang pelindung rawa, daya tahannya yang tak terbatas, dan pen
     Depth 19: "Kekuatan yang Menolak Mati" (Kengerian wujud The Rotting Behemoth yang dagingnya terus-menerus membusuk namun beregenerasi kembali secara instan).
     Depth 20: "Kelahiran Emerald Orb" (Setelah player berhasil membebaskan The Behemoth dari penderitaan abadinya, esensi kehidupan alam yang murni tersisa dan mengkristal menjadi Emerald Orb).
 
+====================================
 ====================================
 
 5. DUNGEON OF ECHOES AND Destiny
@@ -152,6 +182,8 @@ Fokus pada keindahan masa lalu kuil suci dan retakan pertama pada realita.
     Depth 4: "Lonceng Kematian Masa Depan" (Mendengar suara lonceng kuil berdentang sendiri; peringatan dari masa depan tentang kedatangan The Void).
     Depth 5: "Pantulan yang Berkhianat" (Momen mengerikan saat bayangan para pendeta di cermin mulai bergerak sendiri dan menarik mereka ke dalam kaca).
 
+====================================
+
 Bab 2: Distorsi Realita (Depth 6-10)
 Fokus pada hukum fisika yang hancur dan gema dari tragedi di tempat lain.
     Depth 6: "Gema dari Kemarin" (Kuil ini mulai memutar ulang suara jeritan para prajurit dari benteng dan penyihir dari perpustakaan secara terus-menerus).
@@ -159,6 +191,8 @@ Fokus pada hukum fisika yang hancur dan gema dari tragedi di tempat lain.
     Depth 8: "Air Mata Para Nabi" (Keputusasaan para peramal yang dipaksa melihat jutaan kemungkinan masa depan di mana kerajaan selalu hancur).
     Depth 9: "Takdir yang Ditulis Ulang" (Permadani sejarah kerajaan yang benangnya perlahan terurai dan terbakar menjadi abu hitam).
     Depth 10: "Prajurit Tanpa Wajah" (Menghadapi monster-monster yang bentuknya berubah-ubah, campuran antara kenangan masa lalu dan teror masa depan).
+
+====================================
 
 Bab 3: Labirin Pecahan Dimensi (Depth 11-15)
 Fokus pada area kehampaan di mana kuil telah hancur dan pecahannya melayang di udara.
@@ -168,6 +202,8 @@ Fokus pada area kehampaan di mana kuil telah hancur dan pecahannya melayang di u
     Depth 14: "Kepingan Jiwa yang Hilang" (Kutukan kuil yang perlahan membuat siapapun yang memasukinya melupakan nama dan jati dirinya sendiri).
     Depth 15: "Penjaga Gerbang Paradoks" (Entitas penjaga yang terbuat dari murni energi cahaya dan kegelapan, tidak terikat oleh waktu).
 
+====================================
+
 Bab 4: Pusat Badai Waktu (Depth 16-20)
 Fokus pada sang Oracle, takdir yang tak bisa dihindari, dan kepingan terakhir.
     Depth 16: "Mata Pusaran Takdir" (Memasuki altar utama di mana waktu benar-benar berhenti bergerak).
@@ -176,6 +212,7 @@ Fokus pada sang Oracle, takdir yang tak bisa dihindari, dan kepingan terakhir.
     Depth 19: "Kesedihan The Oracle of Ruin" (Menghadapi wujud sang Oracle yang kini dikendalikan The Void, mampu memprediksi setiap gerakan yang akan player lakukan).
     Depth 20: "Lahirnya Radiant Orb" (Setelah Oracle dibebaskan dari penderitaannya, aliran waktu kembali stabil untuk sesaat, dan sisa esensi takdir yang murni mengkristal menjadi Radiant Orb).
 
+====================================
 ====================================
 
 6. Bab Final: Tahta Kehampaan
