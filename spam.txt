@@ -1,1 +1,2 @@
-echo mulai > spam.txt
+for /l %i in (1,1,50) do echo ini baris ke %i >> spam.txt && git add . && git commit -m "update ke %i"
+echo lorem ipsum dolor sit amet consectetur adipiscing elit >> spam.txt
