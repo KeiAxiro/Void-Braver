@@ -1,3 +1,0 @@
-echo ini file pertama > test.txt
-echo tambah baris kedua >> test.txt
-echo baris ketiga >> test.txt
