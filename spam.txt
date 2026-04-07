@@ -20,3 +20,4 @@ baris ke 19 lorem ipsum dolor sit amet
 baris ke 20 lorem ipsum dolor sit amet
 baris ke 21 lorem ipsum dolor sit amet
 baris ke 22 lorem ipsum dolor sit amet
+baris ke 23 lorem ipsum dolor sit amet
