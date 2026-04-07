@@ -15,3 +15,4 @@ baris ke 14 lorem ipsum dolor sit amet
 baris ke 15 lorem ipsum dolor sit amet
 baris ke 16 lorem ipsum dolor sit amet
 baris ke 17 lorem ipsum dolor sit amet
+baris ke 18 lorem ipsum dolor sit amet
