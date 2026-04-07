@@ -1,1 +1,1 @@
-echo mulai > spam.txt
+echo mulai > spam.txtbaris ke 1 lorem ipsum dolor sit amet
