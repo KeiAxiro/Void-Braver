@@ -1,7 +1,6 @@
 #pragma once
 
 #include <string>
-#include <vector>
 
 #include "globals.h"
 
@@ -33,4 +32,22 @@ int baseMaxHp(const Player& player);
 int baseMaxMp(const Player& player);
 int effectiveMaxHp(const GameContext& ctx, const Player& player);
 int effectiveMaxMp(const GameContext& ctx, const Player& player);
+void syncPlayerClassTier(const GameContext& ctx, Player& player);
 void normalizePlayerResources(GameContext& ctx);
+
+namespace database_detail
+{
+    int asInt(const json &value, int fallback = 0);
+    std::string asString(const json &value, const std::string &fallback = "");
+    bool fileExists(const std::string &path);
+    std::string resolveGameDataPath(const GameContext &ctx);
+    std::string resolveSavePath(const GameContext &ctx);
+    std::string sanitizeIdPart(const std::string &value);
+    int equippedItemBonus(const GameContext &ctx, const Player &player, const std::string &statKey);
+    void addStarterItem(Player &player, const std::string &itemId, int quantity, bool equipped, const std::string &slot);
+    void giveStarterKit(GameContext &ctx);
+    json playerToJson(const Player &player);
+    Player playerFromJson(const json &source);
+    Player playerFromLegacyJson(const json &root);
+    void upsertCharacter(PlayerList &characters, const Player &player);
+}

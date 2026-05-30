@@ -1,5 +1,6 @@
 #pragma once
 
+#include <algorithm>
 #include <cstdlib>
 #include <iostream>
 #include <string>
@@ -46,6 +47,11 @@ namespace consoleui
         }
     }
 
+    inline const char *resetCode()
+    {
+        return "\033[0m";
+    }
+
     inline void initializeConsole()
     {
 #ifdef _WIN32
@@ -73,7 +79,7 @@ namespace consoleui
         if (bold)
             prefix += "\033[1m";
         prefix += colorCode(color);
-        return prefix + text + "\033[0m";
+        return prefix + text + resetCode();
     }
 
     inline void clearScreen()
@@ -96,23 +102,31 @@ namespace consoleui
         FillConsoleOutputCharacterA(outputHandle, ' ', cellCount, home, &written);
         FillConsoleOutputAttribute(outputHandle, bufferInfo.wAttributes, cellCount, home, &written);
         SetConsoleCursorPosition(outputHandle, home);
+        std::cout << resetCode();
 #else
-        std::cout << "\033[2J\033[H";
+        std::cout << resetCode() << "\033[2J\033[H";
 #endif
     }
 
     inline void printLine(char ch = '=', int width = 40)
     {
-        for (int i = 0; i < width; ++i)
-            std::cout << ch;
-        std::cout << '\n';
+        std::cout << std::string(std::max(1, width), ch) << resetCode() << '\n';
     }
 
     inline void printTitleBox(const std::string &title)
     {
-        printLine('=');
-        std::cout << colorText(title, Color::Cyan, true) << '\n';
-        printLine('=');
+        const int boxWidth = std::max(40, static_cast<int>(title.size()) + 4);
+        const int innerWidth = boxWidth - 4;
+        const std::string top = "+" + std::string(boxWidth - 2, '=') + "+";
+        const std::string shownTitle = title.size() > static_cast<std::size_t>(innerWidth)
+                                           ? title.substr(0, static_cast<std::size_t>(innerWidth))
+                                           : title;
+        const int padding = innerWidth - static_cast<int>(shownTitle.size());
+
+        std::cout << colorText(top, Color::Blue, true) << '\n';
+        std::cout << "| " << colorText(shownTitle, Color::Cyan, true)
+                  << std::string(std::max(0, padding), ' ') << " |" << resetCode() << '\n';
+        std::cout << colorText(top, Color::Blue, true) << '\n';
     }
 
     inline void waitForEnter(const std::string &message = "Tekan Enter untuk melanjutkan...")
