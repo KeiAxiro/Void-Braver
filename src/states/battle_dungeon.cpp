@@ -259,16 +259,16 @@ namespace state_helpers
         }
 
         enemy.level = randInt(levelMin, levelMax);
-        enemy.max_hp = interpolateStat(enemy.level, levelMin, enemyLevelMax,
+        enemy.max_hp = interpolateStat(enemy.level, enemyLevelMin, enemyLevelMax,
                                        templateEnemy["stats_range"]["hp"].value("min", 10),
                                        templateEnemy["stats_range"]["hp"].value("max", 20));
-        enemy.max_mp = interpolateStat(enemy.level, levelMin, enemyLevelMax,
+        enemy.max_mp = interpolateStat(enemy.level, enemyLevelMin, enemyLevelMax,
                                        templateEnemy["stats_range"]["mp"].value("min", 0),
                                        templateEnemy["stats_range"]["mp"].value("max", 0));
-        enemy.atk = interpolateStat(enemy.level, levelMin, enemyLevelMax,
+        enemy.atk = interpolateStat(enemy.level, enemyLevelMin, enemyLevelMax,
                                     templateEnemy["stats_range"]["atk"].value("min", 1),
                                     templateEnemy["stats_range"]["atk"].value("max", 2));
-        enemy.def = interpolateStat(enemy.level, levelMin, enemyLevelMax,
+        enemy.def = interpolateStat(enemy.level, enemyLevelMin, enemyLevelMax,
                                     templateEnemy["stats_range"]["def"].value("min", 0),
                                     templateEnemy["stats_range"]["def"].value("max", 1));
 
