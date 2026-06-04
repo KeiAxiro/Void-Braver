@@ -17,7 +17,7 @@ namespace Config
         inline constexpr int STARTING_HP = 250;                  
         inline constexpr int STARTING_MP = 50;
         inline constexpr int STARTING_STAT_POINTS = 15;          
-        inline constexpr int STAT_POINTS_PER_LEVEL = 7;          
+        inline constexpr int STAT_POINTS_PER_LEVEL = 10;          
 
         inline constexpr int DEFAULT_PAGE_SIZE = 5;
         inline constexpr int MOVE_STEPS_PER_DEPTH = 5;
@@ -31,7 +31,7 @@ namespace Config
     namespace Player
     {
         inline constexpr int BASE_HP_START = 200;                
-        inline constexpr int BASE_HP_PER_LEVEL = 45;             
+        inline constexpr int BASE_HP_PER_LEVEL = 70;             
         inline constexpr int BASE_HP_PER_VIT = 12;               
         inline constexpr int BASE_HP_PER_STR = 4;                
 
@@ -46,8 +46,8 @@ namespace Config
         inline constexpr int ATTACK_PRIMARY_DIVISOR = 2;         
         inline constexpr int ATTACK_STR_DIVISOR = 2;             
         inline constexpr int ATTACK_AGI_DIVISOR = 4;             
-        inline constexpr double ATTACK_EQUIPMENT_MULTIPLIER = 1.25; 
-        inline constexpr double ATTACK_BUFF_MULTIPLIER = 1.50;   
+        inline constexpr double ATTACK_EQUIPMENT_MULTIPLIER = 1.35; 
+        inline constexpr double ATTACK_BUFF_MULTIPLIER = 1.65;   
         inline constexpr int ATTACK_JITTER_MIN = -1;             
         inline constexpr int ATTACK_JITTER_MAX = 5;
 
