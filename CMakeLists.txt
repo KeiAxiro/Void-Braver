@@ -38,6 +38,7 @@ set(VOID_BRAVER_STATE_SOURCES
     src/states/battle_effects.cpp
     src/states/battle_skills.cpp
     src/states/battle_state.cpp
+    src/states/quest_menu.cpp
 )
 
 set(VOID_BRAVER_HEADER_FILES

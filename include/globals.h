@@ -53,6 +53,24 @@ struct Progress
     json dungeon_progress = json::object();
 };
 
+struct Quest
+{
+    std::string id;
+    std::string target_enemy_id;
+    std::string target_enemy_name;
+    int target_amount = 0;
+    int current_amount = 0;
+    int reward_exp = 0;
+    int reward_gold = 0;
+};
+
+struct QuestsState
+{
+    std::vector<Quest> board_quests;
+    bool has_active_quest = false;
+    Quest active_quest;
+};
+
 // Data character aktif.
 struct Player
 {
@@ -71,6 +89,7 @@ struct Player
     std::vector<InventoryEntry> inventory;
     std::vector<CooldownEntry> cooldowns;
     Progress progress;
+    QuestsState quests;
 };
 
 // Context utama game yang dibawa ke semua state.

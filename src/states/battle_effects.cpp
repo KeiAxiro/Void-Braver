@@ -125,6 +125,23 @@ namespace state_helpers
         cout << "Reward: +" << expReward << " EXP, +" << goldReward << " Gold\n";
 
         grantEnemyDrops(ctx, enemy);
+
+        // Update progres misi aktif jika musuh ini adalah target
+        if (ctx.player.quests.has_active_quest)
+        {
+            Quest &aq = ctx.player.quests.active_quest;
+            if (!enemy.id.empty() && aq.target_enemy_id == enemy.id &&
+                aq.current_amount < aq.target_amount)
+            {
+                aq.current_amount++;
+                cout << colorText("[MISI] ", Color::Yellow, true)
+                     << "Progres: " << aq.current_amount << "/" << aq.target_amount
+                     << " " << aq.target_enemy_name << " dikalahkan.\n";
+                if (aq.current_amount >= aq.target_amount)
+                    cout << colorText("[MISI] Misi selesai! Kembali ke Quest Board untuk klaim hadiah.", Color::Green, true) << '\n';
+            }
+        }
+
         levelUpIfNeeded(ctx);
         saveGame(ctx);
     }

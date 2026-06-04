@@ -26,8 +26,9 @@ void runHub(GameContext &ctx)
     cout << colorText("3. Enter Dungeon", Color::Yellow) << '\n';
     cout << colorText("4. Crafting", Color::Blue) << '\n';
     cout << colorText("5. Shop", Color::Magenta) << '\n';
-    cout << "6. Save\n";
-    cout << "7. Kembali ke Main Menu\n";
+    cout << colorText("6. Quest Board", Color::Yellow) << '\n';
+    cout << "7. Save\n";
+    cout << "8. Kembali ke Main Menu\n";
     cout << "Choose: ";
 
     string choice = readLine();
@@ -58,12 +59,17 @@ void runHub(GameContext &ctx)
     }
     if (choice == "6")
     {
+        questMenu(ctx);
+        return;
+    }
+    if (choice == "7")
+    {
         if (saveGame(ctx))
             cout << "Game berhasil disimpan.\n";
         waitForEnter();
         return;
     }
-    if (choice == "7")
+    if (choice == "8")
     {
         saveGame(ctx);
         ctx.stateStack.clear();

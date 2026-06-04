@@ -51,6 +51,35 @@ namespace database_detail
         out["progress"]["max_depth_unlocked"] = player.progress.max_depth_unlocked;
         if (!player.progress.dungeon_progress.empty())
             out["progress"]["dungeon_progress"] = player.progress.dungeon_progress;
+
+        out["quests"] = json::object();
+        out["quests"]["has_active_quest"] = player.quests.has_active_quest;
+        if (player.quests.has_active_quest)
+        {
+            out["quests"]["active_quest"] = {
+                {"id", player.quests.active_quest.id},
+                {"target_enemy_id", player.quests.active_quest.target_enemy_id},
+                {"target_enemy_name", player.quests.active_quest.target_enemy_name},
+                {"target_amount", player.quests.active_quest.target_amount},
+                {"current_amount", player.quests.active_quest.current_amount},
+                {"reward_exp", player.quests.active_quest.reward_exp},
+                {"reward_gold", player.quests.active_quest.reward_gold}
+            };
+        }
+        out["quests"]["board_quests"] = json::array();
+        for (const auto &q : player.quests.board_quests)
+        {
+            out["quests"]["board_quests"].push_back({
+                {"id", q.id},
+                {"target_enemy_id", q.target_enemy_id},
+                {"target_enemy_name", q.target_enemy_name},
+                {"target_amount", q.target_amount},
+                {"current_amount", q.current_amount},
+                {"reward_exp", q.reward_exp},
+                {"reward_gold", q.reward_gold}
+            });
+        }
+
         return out;
     }
 
@@ -129,6 +158,44 @@ namespace database_detail
             player.progress.dungeon_progress = json::object();
     }
 
+    void fillQuests(Player &player, const json &source)
+    {
+        player.quests = QuestsState{};
+        if (!source.contains("quests") || !source["quests"].is_object())
+            return;
+
+        const auto &quests = source["quests"];
+        player.quests.has_active_quest = quests.value("has_active_quest", false);
+        
+        if (player.quests.has_active_quest && quests.contains("active_quest") && quests["active_quest"].is_object())
+        {
+            const auto &aq = quests["active_quest"];
+            player.quests.active_quest.id = asString(aq.value("id", json("")));
+            player.quests.active_quest.target_enemy_id = asString(aq.value("target_enemy_id", json("")));
+            player.quests.active_quest.target_enemy_name = asString(aq.value("target_enemy_name", json("")));
+            player.quests.active_quest.target_amount = asInt(aq.value("target_amount", json(0)), 0);
+            player.quests.active_quest.current_amount = asInt(aq.value("current_amount", json(0)), 0);
+            player.quests.active_quest.reward_exp = asInt(aq.value("reward_exp", json(0)), 0);
+            player.quests.active_quest.reward_gold = asInt(aq.value("reward_gold", json(0)), 0);
+        }
+
+        if (quests.contains("board_quests") && quests["board_quests"].is_array())
+        {
+            for (const auto &row : quests["board_quests"])
+            {
+                Quest q;
+                q.id = asString(row.value("id", json("")));
+                q.target_enemy_id = asString(row.value("target_enemy_id", json("")));
+                q.target_enemy_name = asString(row.value("target_enemy_name", json("")));
+                q.target_amount = asInt(row.value("target_amount", json(0)), 0);
+                q.current_amount = asInt(row.value("current_amount", json(0)), 0);
+                q.reward_exp = asInt(row.value("reward_exp", json(0)), 0);
+                q.reward_gold = asInt(row.value("reward_gold", json(0)), 0);
+                player.quests.board_quests.push_back(q);
+            }
+        }
+    }
+
     Player playerFromJson(const json &source)
     {
         Player player;
@@ -136,6 +203,7 @@ namespace database_detail
         fillInventory(player, source);
         fillCooldowns(player, source);
         fillProgress(player, source);
+        fillQuests(player, source);
         return player;
     }
 
@@ -147,6 +215,7 @@ namespace database_detail
         fillInventory(player, root);
         fillCooldowns(player, root);
         fillProgress(player, root);
+        fillQuests(player, root);
         return player;
     }
 

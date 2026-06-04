@@ -85,6 +85,302 @@
         },
         "max_depth_unlocked": 1
       },
+      "quests": {
+        "board_quests": [],
+        "has_active_quest": false
+      },
+      "stat_points": 5,
+      "stats": {
+        "agi": 10,
+        "int": 10,
+        "str": 15,
+        "vit": 10
+      }
+    },
+    {
+      "class_id": "knight",
+      "cooldowns": [
+        {
+          "remaining_turns": 0,
+          "skill_id": "blood_and_iron"
+        },
+        {
+          "remaining_turns": 0,
+          "skill_id": "calamity_end"
+        },
+        {
+          "remaining_turns": 0,
+          "skill_id": "shattering_onslaught"
+        }
+      ],
+      "current_exp": 470,
+      "gold": 518,
+      "hp": 85,
+      "id": "dafa",
+      "inventory": [
+        {
+          "equipped": false,
+          "item_id": "healing_potion",
+          "quantity": 2
+        },
+        {
+          "equipped": false,
+          "item_id": "mana_elixir",
+          "quantity": 2
+        },
+        {
+          "equipped": true,
+          "item_id": "leather_coif",
+          "quantity": 1,
+          "slot": "Helmet"
+        },
+        {
+          "equipped": true,
+          "item_id": "padded_tunic",
+          "quantity": 1,
+          "slot": "Armor"
+        },
+        {
+          "equipped": true,
+          "item_id": "rusty_greatsword",
+          "quantity": 1,
+          "slot": "Weapon"
+        },
+        {
+          "equipped": true,
+          "item_id": "traveler_s_boots",
+          "quantity": 1,
+          "slot": "Boots"
+        },
+        {
+          "equipped": false,
+          "item_id": "traveler_s_boots",
+          "quantity": 1
+        },
+        {
+          "equipped": false,
+          "item_id": "fine_fiber",
+          "quantity": 3
+        },
+        {
+          "equipped": false,
+          "item_id": "iron_scrap",
+          "quantity": 3
+        },
+        {
+          "equipped": false,
+          "item_id": "heavy_ore",
+          "quantity": 1
+        },
+        {
+          "equipped": false,
+          "item_id": "mana_shard",
+          "quantity": 2
+        }
+      ],
+      "level": 2,
+      "max_hp": 170,
+      "max_mp": 79,
+      "mp": 39,
+      "name": "dafa",
+      "progress": {
+        "current_depth": 3,
+        "current_dungeon": "dungeon_of_whispers_and_shadows",
+        "dungeon_progress": {
+          "dungeon_of_echoes_and_destiny": {
+            "completed": false,
+            "highest_cleared_depth": 0,
+            "unlocked_depth": 1
+          },
+          "dungeon_of_knowledge_and_wisdom": {
+            "completed": false,
+            "highest_cleared_depth": 0,
+            "unlocked_depth": 1
+          },
+          "dungeon_of_thorns_and_resilience": {
+            "completed": false,
+            "highest_cleared_depth": 0,
+            "unlocked_depth": 1
+          },
+          "dungeon_of_valor_and_ember": {
+            "completed": false,
+            "highest_cleared_depth": 0,
+            "unlocked_depth": 1
+          },
+          "dungeon_of_whispers_and_shadows": {
+            "completed": false,
+            "highest_cleared_depth": 2,
+            "unlocked_depth": 3
+          },
+          "tahta_kehampaan": {
+            "completed": false,
+            "highest_cleared_depth": 0,
+            "unlocked_depth": 1
+          }
+        },
+        "max_depth_unlocked": 3
+      },
+      "quests": {
+        "active_quest": {
+          "current_amount": 0,
+          "id": "quest_6234",
+          "reward_exp": 2790,
+          "reward_gold": 1860,
+          "target_amount": 6,
+          "target_enemy_id": "spectral_monk",
+          "target_enemy_name": "Spectral Monk"
+        },
+        "board_quests": [
+          {
+            "current_amount": 0,
+            "id": "quest_8003",
+            "reward_exp": 5460,
+            "reward_gold": 3640,
+            "target_amount": 4,
+            "target_enemy_id": "eternal_phantasm",
+            "target_enemy_name": "Eternal Phantasm"
+          },
+          {
+            "current_amount": 0,
+            "id": "quest_1841",
+            "reward_exp": 3075,
+            "reward_gold": 2050,
+            "target_amount": 5,
+            "target_enemy_id": "gorgon_guard",
+            "target_enemy_name": "Gorgon Guard"
+          },
+          {
+            "current_amount": 0,
+            "id": "quest_7933",
+            "reward_exp": 3075,
+            "reward_gold": 2050,
+            "target_amount": 5,
+            "target_enemy_id": "phantom_assassin",
+            "target_enemy_name": "Phantom Assassin"
+          },
+          {
+            "current_amount": 0,
+            "id": "quest_5997",
+            "reward_exp": 9720,
+            "reward_gold": 6480,
+            "target_amount": 8,
+            "target_enemy_id": "elite_sellsword",
+            "target_enemy_name": "Elite Sellsword"
+          }
+        ],
+        "has_active_quest": true
+      },
+      "stat_points": 5,
+      "stats": {
+        "agi": 10,
+        "int": 10,
+        "str": 20,
+        "vit": 10
+      }
+    },
+    {
+      "class_id": "knight",
+      "cooldowns": [],
+      "current_exp": 0,
+      "gold": 650,
+      "hp": 120,
+      "id": "dafa_2",
+      "inventory": [
+        {
+          "equipped": false,
+          "item_id": "healing_potion",
+          "quantity": 3
+        },
+        {
+          "equipped": false,
+          "item_id": "mana_elixir",
+          "quantity": 2
+        },
+        {
+          "equipped": true,
+          "item_id": "leather_coif",
+          "quantity": 1,
+          "slot": "Helmet"
+        },
+        {
+          "equipped": true,
+          "item_id": "padded_tunic",
+          "quantity": 1,
+          "slot": "Armor"
+        },
+        {
+          "equipped": true,
+          "item_id": "rusty_greatsword",
+          "quantity": 1,
+          "slot": "Weapon"
+        },
+        {
+          "equipped": true,
+          "item_id": "traveler_s_boots",
+          "quantity": 1,
+          "slot": "Boots"
+        }
+      ],
+      "level": 1,
+      "max_hp": 158,
+      "max_mp": 75,
+      "mp": 75,
+      "name": "dafa",
+      "progress": {
+        "current_depth": 1,
+        "current_dungeon": null,
+        "max_depth_unlocked": 0
+      },
+      "quests": {
+        "board_quests": [
+          {
+            "current_amount": 0,
+            "id": "quest_6610",
+            "reward_exp": 5490,
+            "reward_gold": 3660,
+            "target_amount": 6,
+            "target_enemy_id": "ancestral_wraith",
+            "target_enemy_name": "Ancestral Wraith"
+          },
+          {
+            "current_amount": 0,
+            "id": "quest_5138",
+            "reward_exp": 990,
+            "reward_gold": 660,
+            "target_amount": 6,
+            "target_enemy_id": "shadow_lurker",
+            "target_enemy_name": "Shadow Lurker"
+          },
+          {
+            "current_amount": 0,
+            "id": "quest_4770",
+            "reward_exp": 3690,
+            "reward_gold": 2460,
+            "target_amount": 6,
+            "target_enemy_id": "phantom_assassin",
+            "target_enemy_name": "Phantom Assassin"
+          },
+          {
+            "current_amount": 0,
+            "id": "quest_1449",
+            "reward_exp": 105,
+            "reward_gold": 70,
+            "target_amount": 7,
+            "target_enemy_id": "lesser_imp",
+            "target_enemy_name": "Lesser Imp"
+          },
+          {
+            "current_amount": 0,
+            "id": "quest_2649",
+            "reward_exp": 3255,
+            "reward_gold": 2170,
+            "target_amount": 7,
+            "target_enemy_id": "crystal_shardling",
+            "target_enemy_name": "Crystal Shardling"
+          }
+        ],
+        "has_active_quest": false
+      },
       "stat_points": 5,
       "stats": {
         "agi": 10,
