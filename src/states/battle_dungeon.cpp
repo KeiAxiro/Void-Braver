@@ -19,7 +19,7 @@ namespace state_helpers
     double normalizedRatio(int value, int minValue, int maxValue)
     {
         if (maxValue <= minValue)
-            return Config::Math::ZERO_RATIO;
+            return 0.0;
 
         return static_cast<double>(value - minValue) /
                static_cast<double>(maxValue - minValue);
@@ -29,7 +29,7 @@ namespace state_helpers
     {
         const double ratio = normalizedRatio(level, levelMin, levelMax);
         const double value = statMin + (statMax - statMin) * ratio;
-        return std::max(Config::Math::MIN_INTERPOLATED_STAT, static_cast<int>(std::round(value)));
+        return std::max(1, static_cast<int>(std::round(value)));
     }
 } // namespace state_helpers
 
@@ -106,14 +106,14 @@ namespace state_helpers
             printStateHeader(ctx, dungeon.value("name", std::string()));
             cout << "Pilih depth 1 sampai " << unlockedDepth << ".\n\n";
 
-            for (int depth = Config::Progress::START_DEPTH; depth <= unlockedDepth && depth <= maxDepth; ++depth)
+            for (int depth = 1; depth <= unlockedDepth && depth <= maxDepth; ++depth)
             {
                 const json *depthRow = findDungeonDepth(dungeon, depth);
                 if (!depthRow)
                     continue;
 
-                const int minLevel = (*depthRow)["level_range"].value("min", Config::Progress::LEVEL_RANGE_MIN_FALLBACK);
-                const int maxLevelRow = (*depthRow)["level_range"].value("max", Config::Progress::LEVEL_RANGE_MAX_FALLBACK);
+                const int minLevel = (*depthRow)["level_range"].value("min", 1);
+                const int maxLevelRow = (*depthRow)["level_range"].value("max", 999);
 
                 cout << colorText(to_string(depth) + ". Depth " + to_string(depth), Color::Cyan, true)
                      << " | Recommended Lv " << minLevel << "-" << maxLevelRow;
@@ -131,7 +131,7 @@ namespace state_helpers
                 continue;
 
             int depthChoice = 0;
-            if (!tryParseInt(depthInput, depthChoice) || depthChoice < Config::Progress::START_DEPTH || depthChoice > unlockedDepth || depthChoice > maxDepth)
+            if (!tryParseInt(depthInput, depthChoice) || depthChoice < 1 || depthChoice > unlockedDepth || depthChoice > maxDepth)
             {
                 cout << "Depth tidak valid.\n";
                 continue;
@@ -182,7 +182,7 @@ namespace state_helpers
         if (!depthRow.contains("level_range") || !depthRow["level_range"].is_object())
             return true;
 
-        const int minLevel = depthRow["level_range"].value("min", Config::Progress::LEVEL_RANGE_MIN_FALLBACK);
+        const int minLevel = depthRow["level_range"].value("min", 1);
         return level >= minLevel;
     }
 
@@ -198,8 +198,8 @@ namespace state_helpers
                 if (!enemy.contains("spawn_depth") || !enemy["spawn_depth"].is_object())
                     continue;
 
-                const int start = enemy["spawn_depth"].value("start", Config::Progress::START_DEPTH);
-                const int end = enemy["spawn_depth"].value("end", Config::Progress::START_DEPTH);
+                const int start = enemy["spawn_depth"].value("start", 1);
+                const int end = enemy["spawn_depth"].value("end", 1);
                 const bool matchesDepth = depth >= start && depth <= end;
                 const bool isBoss = enemy.value("is_boss", false);
 
@@ -214,8 +214,8 @@ namespace state_helpers
                     if (!enemy.contains("spawn_depth") || !enemy["spawn_depth"].is_object())
                         continue;
 
-                    const int start = enemy["spawn_depth"].value("start", Config::Progress::START_DEPTH);
-                    const int end = enemy["spawn_depth"].value("end", Config::Progress::START_DEPTH);
+                    const int start = enemy["spawn_depth"].value("start", 1);
+                    const int end = enemy["spawn_depth"].value("end", 1);
                     if (depth >= start && depth <= end)
                         pool.push_back(&enemy);
                 }
@@ -233,7 +233,7 @@ namespace state_helpers
             fallback.max_mp = fallback.mp = enemy_balance::kFallbackMpBase + depth * enemy_balance::kFallbackMpPerDepth;
             fallback.atk = enemy_balance::kFallbackAtkBase + depth * enemy_balance::kFallbackAtkPerDepth;
             fallback.def = enemy_balance::kFallbackDefBase + depth * enemy_balance::kFallbackDefPerDepth;
-            fallback.crit_rate = enemy_balance::kFallbackCritRate;
+            fallback.crit_rate = 0.05;
             fallback.is_boss = wantsBoss;
             fallback.exp_drop = enemy_balance::kFallbackExpBase + depth * enemy_balance::kFallbackExpPerDepth;
             return fallback;
@@ -246,7 +246,7 @@ namespace state_helpers
         enemy.type = templateEnemy.value("type", string("Unknown"));
         enemy.is_boss = wantsBoss || templateEnemy.value("is_boss", false);
 
-        const int enemyLevelMin = templateEnemy["level_range"].value("min", Config::Progress::LEVEL_RANGE_MIN_FALLBACK);
+        const int enemyLevelMin = templateEnemy["level_range"].value("min", 1);
         const int enemyLevelMax = templateEnemy["level_range"].value("max", enemyLevelMin);
 
         int levelMin = enemyLevelMin;
@@ -263,17 +263,17 @@ namespace state_helpers
 
         enemy.level = randInt(levelMin, levelMax);
         enemy.max_hp = interpolateStat(enemy.level, enemyLevelMin, enemyLevelMax,
-                                       templateEnemy["stats_range"]["hp"].value("min", enemy_balance::kTemplateHpMinFallback),
-                                       templateEnemy["stats_range"]["hp"].value("max", enemy_balance::kTemplateHpMaxFallback));
+                                       templateEnemy["stats_range"]["hp"].value("min", 10),
+                                       templateEnemy["stats_range"]["hp"].value("max", 20));
         enemy.max_mp = interpolateStat(enemy.level, enemyLevelMin, enemyLevelMax,
-                                       templateEnemy["stats_range"]["mp"].value("min", enemy_balance::kTemplateMpMinFallback),
-                                       templateEnemy["stats_range"]["mp"].value("max", enemy_balance::kTemplateMpMaxFallback));
+                                       templateEnemy["stats_range"]["mp"].value("min", 0),
+                                       templateEnemy["stats_range"]["mp"].value("max", 0));
         enemy.atk = interpolateStat(enemy.level, enemyLevelMin, enemyLevelMax,
-                                    templateEnemy["stats_range"]["atk"].value("min", enemy_balance::kTemplateAtkMinFallback),
-                                    templateEnemy["stats_range"]["atk"].value("max", enemy_balance::kTemplateAtkMaxFallback));
+                                    templateEnemy["stats_range"]["atk"].value("min", 1),
+                                    templateEnemy["stats_range"]["atk"].value("max", 2));
         enemy.def = interpolateStat(enemy.level, enemyLevelMin, enemyLevelMax,
-                                    templateEnemy["stats_range"]["def"].value("min", enemy_balance::kTemplateDefMinFallback),
-                                    templateEnemy["stats_range"]["def"].value("max", enemy_balance::kTemplateDefMaxFallback));
+                                    templateEnemy["stats_range"]["def"].value("min", 0),
+                                    templateEnemy["stats_range"]["def"].value("max", 1));
 
         if (wantsBoss)
         {
@@ -281,11 +281,11 @@ namespace state_helpers
             enemy.max_hp = static_cast<int>(enemy.max_hp * enemy_balance::kBossHpMultiplier);
             enemy.atk = static_cast<int>(enemy.atk * enemy_balance::kBossAtkMultiplier);
             enemy.def = static_cast<int>(enemy.def * enemy_balance::kBossDefMultiplier);
-            enemy.crit_rate = max(templateEnemy.value("crit_rate", enemy_balance::kTemplateCritRateFallback), enemy_balance::kBossMinimumCritRate);
+            enemy.crit_rate = max(templateEnemy.value("crit_rate", 0.05), enemy_balance::kBossMinimumCritRate);
         }
         else
         {
-            enemy.crit_rate = templateEnemy.value("crit_rate", enemy_balance::kTemplateCritRateFallback);
+            enemy.crit_rate = templateEnemy.value("crit_rate", 0.05);
         }
 
         enemy.hp = enemy.max_hp;
@@ -297,7 +297,7 @@ namespace state_helpers
         if (templateEnemy.contains("drops") && templateEnemy["drops"].is_array())
         {
             for (const auto &drop : templateEnemy["drops"])
-                enemy.drops.push_back({drop.value("item_id", string()), drop.value("drop_rate", enemy_balance::kDefaultDropRate)});
+                enemy.drops.push_back({drop.value("item_id", string()), drop.value("drop_rate", 100)});
         }
 
         return enemy;
@@ -315,7 +315,7 @@ namespace state_helpers
 {
     int calculateEnemySpeed(const EnemyInstance &enemy)
     {
-        return max(enemy_balance::kMinDamage, enemy.level * enemy_balance::kEnemySpeedPerLevel +
+        return max(1, enemy.level * enemy_balance::kEnemySpeedPerLevel +
                           (enemy.atk / enemy_balance::kEnemySpeedAttackDivisor));
     }
 
@@ -332,12 +332,12 @@ namespace state_helpers
     {
         EncounterQueue steps;
         const int encounterCount = randInt(game_rules::kMinEncountersPerMove, game_rules::kMaxEncountersPerMove);
-        bool selectedSteps[Config::Rules::MOVE_STEPS_PER_DEPTH + Config::Math::INDEX_OFFSET] = {};
-        int selectedCount = Config::Math::ZERO;
+        bool selectedSteps[Config::Rules::MOVE_STEPS_PER_DEPTH + 1] = {};
+        int selectedCount = 0;
 
         while (selectedCount < encounterCount)
         {
-            const int step = randInt(Config::Math::ONE, game_rules::kMoveStepsPerDepth);
+            const int step = randInt(1, game_rules::kMoveStepsPerDepth);
             if (!selectedSteps[step])
             {
                 selectedSteps[step] = true;
@@ -345,7 +345,7 @@ namespace state_helpers
             }
         }
 
-        for (int step = Config::Math::ONE; step <= game_rules::kMoveStepsPerDepth; ++step)
+        for (int step = 1; step <= game_rules::kMoveStepsPerDepth; ++step)
         {
             if (selectedSteps[step])
                 steps.enqueue(step);
@@ -366,7 +366,7 @@ namespace state_helpers
 
     struct DungeonMapNode
     {
-        int depth = Config::DungeonMap::ROOT_DEPTH;
+        int depth = 0;
         bool isFinalNode = false;
         DungeonMapEncounterType encounterType = DungeonMapEncounterType::Empty;
         bool encounterResolved = false;
@@ -379,14 +379,15 @@ namespace state_helpers
         auto *node = new DungeonMapNode();
         node->depth = depth;
 
-        if (depth >= Config::DungeonMap::MAX_BRANCH_DEPTH)
+        if (depth >= 14)
             return node;
 
-        if (depth >= Config::DungeonMap::LATE_BRANCH_START_DEPTH)
+        if (depth >= 9)
         {
-            DungeonMapNode *nextNode = buildDungeonMapNode(depth + Config::DungeonMap::NORMAL_STEP, nodePool);
+            const int key = (depth + 1) * 1000 + randInt(0, 999);
+            DungeonMapNode *nextNode = buildDungeonMapNode(depth + 1, nodePool);
             
-            const bool shareNode = randInt(Config::Math::PERCENT_ROLL_MIN, Config::Math::PERCENT_ROLL_MAX) <= Config::DungeonMap::LATE_SHARE_NODE_CHANCE;
+            const bool shareNode = randInt(1, 100) <= 40;
             if (shareNode)
             {
                 node->left = nextNode;
@@ -395,46 +396,45 @@ namespace state_helpers
             else
             {
                 node->left = nextNode;
-                node->right = buildDungeonMapNode(depth + Config::DungeonMap::NORMAL_STEP, nodePool);
+                node->right = buildDungeonMapNode(depth + 1, nodePool);
             }
             return node;
         }
 
-        if (depth == Config::DungeonMap::MID_SPLIT_DEPTH)
+        if (depth == 8)
         {
-            const bool splitEarly = randInt(Config::Math::PERCENT_ROLL_MIN, Config::Math::PERCENT_ROLL_MAX) <= Config::DungeonMap::MID_SPLIT_CHANCE;
+            const bool splitEarly = randInt(1, 100) <= 50;
             if (splitEarly)
             {
-                node->left = buildDungeonMapNode(depth + Config::DungeonMap::NORMAL_STEP, nodePool);
-                node->right = buildDungeonMapNode(depth + Config::DungeonMap::NORMAL_STEP, nodePool);
+                node->left = buildDungeonMapNode(depth + 1, nodePool);
+                node->right = buildDungeonMapNode(depth + 1, nodePool);
             }
             else
             {
-                node->left = buildDungeonMapNode(depth + Config::DungeonMap::NORMAL_STEP, nodePool);
+                node->left = buildDungeonMapNode(depth + 1, nodePool);
             }
             return node;
         }
 
-        const bool skipBranch = depth <= Config::DungeonMap::EARLY_SKIP_MAX_DEPTH &&
-                                randInt(Config::DungeonMap::SKIP_ROLL_MIN, Config::DungeonMap::SKIP_ROLL_MAX) == Config::DungeonMap::SKIP_ROLL_SUCCESS;
+        const bool skipBranch = depth <= 4 && randInt(1, 4) == 1;
         if (skipBranch)
         {
-            const bool skipLeft = randInt(Config::Math::COIN_FLIP_MIN, Config::Math::COIN_FLIP_MAX) == Config::Math::COIN_FLIP_LEFT_VALUE;
+            const bool skipLeft = randInt(0, 1) == 0;
             if (skipLeft)
             {
-                node->right = buildDungeonMapNode(depth + Config::DungeonMap::NORMAL_STEP, nodePool);
-                node->left = buildDungeonMapNode(depth + Config::DungeonMap::SKIP_STEP, nodePool);
+                node->right = buildDungeonMapNode(depth + 1, nodePool);
+                node->left = buildDungeonMapNode(depth + 2, nodePool);
             }
             else
             {
-                node->left = buildDungeonMapNode(depth + Config::DungeonMap::NORMAL_STEP, nodePool);
-                node->right = buildDungeonMapNode(depth + Config::DungeonMap::SKIP_STEP, nodePool);
+                node->left = buildDungeonMapNode(depth + 1, nodePool);
+                node->right = buildDungeonMapNode(depth + 2, nodePool);
             }
         }
         else
         {
-            node->left = buildDungeonMapNode(depth + Config::DungeonMap::NORMAL_STEP, nodePool);
-            node->right = buildDungeonMapNode(depth + Config::DungeonMap::NORMAL_STEP, nodePool);
+            node->left = buildDungeonMapNode(depth + 1, nodePool);
+            node->right = buildDungeonMapNode(depth + 1, nodePool);
         }
 
         return node;
@@ -469,14 +469,14 @@ namespace state_helpers
 
     DungeonMapEncounterType chooseDungeonMapEncounterType(const json &depthData)
     {
-        const int roll = randInt(Config::Math::PERCENT_ROLL_MIN, Config::Math::PERCENT_ROLL_MAX);
-        if (roll <= Config::DungeonMap::VISIBLE_ENCOUNTER_THRESHOLD)
+        const int roll = randInt(1, 100);
+        if (roll <= 30)
             return DungeonMapEncounterType::VisibleEncounter;
-        if (roll <= Config::DungeonMap::HIDDEN_ENCOUNTER_THRESHOLD)
+        if (roll <= 35)
             return DungeonMapEncounterType::HiddenEncounter;
-        if (roll <= Config::DungeonMap::CAMPFIRE_THRESHOLD)
+        if (roll <= 40)
             return DungeonMapEncounterType::Campfire;
-        if (roll <= Config::DungeonMap::TRAP_THRESHOLD)
+        if (roll <= 50)
             return DungeonMapEncounterType::Trap;
         return DungeonMapEncounterType::Empty;
     }
@@ -484,13 +484,13 @@ namespace state_helpers
     DungeonMapNode *buildDungeonMap(const json &depthData)
     {
         std::unordered_map<int, DungeonMapNode *> nodePool;
-        DungeonMapNode *root = buildDungeonMapNode(Config::DungeonMap::ROOT_DEPTH, nodePool);
+        DungeonMapNode *root = buildDungeonMapNode(0, nodePool);
         std::vector<DungeonMapNode *> leaves;
         std::unordered_set<DungeonMapNode *> visited;
         collectDungeonMapLeaves(root, leaves, visited);
 
         auto *finalNode = new DungeonMapNode();
-        finalNode->depth = Config::DungeonMap::FINAL_NODE_DEPTH;
+        finalNode->depth = 15;
         finalNode->isFinalNode = true;
         finalNode->encounterType = DungeonMapEncounterType::GuaranteedEncounter;
 
@@ -512,20 +512,20 @@ namespace state_helpers
                 node->encounterType = chooseDungeonMapEncounterType(depthData);
         }
 
-        for (size_t i = 0; i + Config::Math::INDEX_OFFSET < leaves.size(); i += Config::DungeonMap::LEAF_PAIR_SIZE)
+        for (size_t i = 0; i + 1 < leaves.size(); i += 2)
         {
             DungeonMapNode *first = leaves[i];
-            DungeonMapNode *second = leaves[i + Config::Math::INDEX_OFFSET];
+            DungeonMapNode *second = leaves[i + 1];
             if (first->encounterType != DungeonMapEncounterType::GuaranteedEncounter &&
                 second->encounterType != DungeonMapEncounterType::GuaranteedEncounter)
             {
-                if (randInt(Config::Math::COIN_FLIP_MIN, Config::Math::COIN_FLIP_MAX) == Config::Math::COIN_FLIP_LEFT_VALUE)
+                if (randInt(0, 1) == 0)
                     first->encounterType = DungeonMapEncounterType::Campfire;
                 else
                     second->encounterType = DungeonMapEncounterType::Campfire;
             }
         }
-        if (leaves.size() % Config::DungeonMap::LEAF_PAIR_SIZE == Config::DungeonMap::ODD_LEAF_REMAINDER)
+        if (leaves.size() % 2 == 1)
         {
             DungeonMapNode *lastLeaf = leaves.back();
             if (lastLeaf->encounterType == DungeonMapEncounterType::Empty)
@@ -638,10 +638,8 @@ namespace state_helpers
 
         if (node->encounterType == DungeonMapEncounterType::Campfire)
         {
-            const int healAmount = Config::DungeonMap::CAMPFIRE_HP_BASE_HEAL +
-                                   static_cast<int>(Config::DungeonMap::CAMPFIRE_HP_DEPTH_RATIO * ctx.player.progress.current_depth * ctx.player.max_hp);
-            const int mana_healAmount = Config::DungeonMap::CAMPFIRE_MP_BASE_HEAL +
-                                        static_cast<int>(Config::DungeonMap::CAMPFIRE_MP_DEPTH_RATIO * ctx.player.progress.current_depth * ctx.player.max_mp);
+            const int healAmount = 30 + static_cast<int>(0.01 * ctx.player.progress.current_depth * ctx.player.max_hp);
+            const int mana_healAmount = 20 + static_cast<int>(0.01 * ctx.player.progress.current_depth * ctx.player.max_mp);
             ctx.player.hp = min(ctx.player.max_hp, ctx.player.hp + healAmount);
             ctx.player.mp = min(ctx.player.max_mp, ctx.player.mp + mana_healAmount);
             node->encounterResolved = true;
@@ -656,11 +654,9 @@ namespace state_helpers
         }
         if (node->encounterType == DungeonMapEncounterType::Trap)
         {
-            const double damageBonus = static_cast<double>(randInt(Config::DungeonMap::TRAP_RANDOM_BONUS_MIN,
-                                                                   Config::DungeonMap::TRAP_RANDOM_BONUS_MAX)) /
-                                       Config::DungeonMap::TRAP_PERCENT_DIVISOR;
-            const int trapDamage = static_cast<int>((Config::DungeonMap::TRAP_BASE_DAMAGE_RATIO + damageBonus) * ctx.player.max_hp);
-            ctx.player.hp = max(player_balance::kResourceFloor, ctx.player.hp - trapDamage);
+            const float DamageTambahan = randInt(1, 10) / 100;
+            const int trapDamage = static_cast<int>((0.05 + DamageTambahan) * ctx.player.max_hp);
+            ctx.player.hp = max(0, ctx.player.hp - trapDamage);
             node->encounterResolved = true;
 
             clearScreen();
@@ -721,13 +717,32 @@ namespace state_helpers
         auto enemyTurn = [&](bool openingAttack = false) {
             if (battle.enemyStunTurns > 0 && !openingAttack)
             {
+
                 cout << enemy.name << " terkena stun dan gagal bergerak.\n";
                 return;
             }
 
-            int enemyDamage = calculateEnemyDamage(enemy, battle) - calculatePlayerDefense(ctx, &battle);
-            enemyDamage = max(enemy_balance::kMinDamage, enemyDamage + randInt(enemy_balance::kEnemyDamageJitterMin,
-                                                                               enemy_balance::kEnemyDamageJitterMax));
+            int playerEffectiveDef = [&]() {
+                int defense = calculatePlayerDefense(ctx, &battle);
+                defense = max(player_balance::kMinDefense, defense);
+
+                // Hanya terapkan mapping jika DEF benar-benar tinggi.
+                // Hindari perubahan perilaku saat awal game (agar damage tidak jadi “always 1”).
+                if (defense >= player_balance::kMaxEffectiveDefenseForEnemyDamage)
+                {
+                    // Mapping sederhana: potong ke cap, tanpa denominator untuk menjaga skala asli.
+                    defense = player_balance::kMaxEffectiveDefenseForEnemyDamage;
+                }
+
+
+                return max(0, defense);
+            }();
+
+
+            int enemyDamage = calculateEnemyDamage(enemy, battle) - playerEffectiveDef;
+            enemyDamage = max(1, enemyDamage + randInt(enemy_balance::kEnemyDamageJitterMin,
+                                                       enemy_balance::kEnemyDamageJitterMax));
+
 
             bool criticalHit = randUnit() <= enemy.crit_rate;
             if (criticalHit)
@@ -754,7 +769,7 @@ namespace state_helpers
 
             if (enemyDamage > 0)
             {
-                ctx.player.hp = max(player_balance::kResourceFloor, ctx.player.hp - enemyDamage);
+                ctx.player.hp = max(0, ctx.player.hp - enemyDamage);
                 if (openingAttack)
                     cout << colorText("Musuh bergerak lebih dulu!", Color::Red, true) << '\n';
                 cout << colorText(enemy.name, Color::Red, true)
@@ -789,14 +804,14 @@ namespace state_helpers
                 showBattlePanel("ACTION RESULT", false);
 
                 int damage = calculatePlayerAttack(ctx, &battle) - calculateEnemyDefense(enemy, battle);
-                damage = max(player_balance::kMinDamage, damage + randInt(player_balance::kAttackJitterMin,
-                                                                          player_balance::kAttackJitterMax));
+                damage = max(1, damage + randInt(player_balance::kAttackJitterMin,
+                                                 player_balance::kAttackJitterMax));
 
                 bool criticalHit = randUnit() <= calculatePlayerCritRate(ctx, &battle);
                 if (criticalHit)
                     damage = static_cast<int>(damage * skill_balance::kPlayerCriticalDamageMultiplier);
 
-                enemy.hp = max(player_balance::kResourceFloor, enemy.hp - damage);
+                enemy.hp = max(0, enemy.hp - damage);
                 cout << "Kamu menyerang " << enemy.name << " dan memberi " << damage << " damage";
                 if (criticalHit)
                     cout << " [Critical]";
@@ -888,8 +903,8 @@ namespace state_helpers
 
         if (ctx.player.hp <= 0)
         {
-            ctx.player.hp = max(player_balance::kMinRecoveryResource, ctx.player.max_hp / player_balance::kDefeatRecoveryDivisor);
-            ctx.player.mp = max(player_balance::kMinRecoveryResource, ctx.player.max_mp / player_balance::kDefeatRecoveryDivisor);
+            ctx.player.hp = max(1, ctx.player.max_hp / player_balance::kDefeatRecoveryDivisor);
+            ctx.player.mp = max(1, ctx.player.max_mp / player_balance::kDefeatRecoveryDivisor);
             cout << "Kamu kalah. HP dan MP dipulihkan ke sebagian maksimum.\n";
             saveGame(ctx);
             waitForEnter();
@@ -912,7 +927,10 @@ using namespace consoleui;
 
 namespace state_helpers
 {
+
+
     void grantEnemyDrops(GameContext &ctx, const EnemyInstance &enemy)
+
     {
         if (enemy.drops.empty())
             return;
@@ -920,9 +938,9 @@ namespace state_helpers
         cout << "Drop:\n";
         for (const auto &drop : enemy.drops)
         {
-            if (randInt(Config::Math::PERCENT_ROLL_MIN, Config::Math::PERCENT_ROLL_MAX) <= drop.drop_rate)
+            if (randInt(1, 100) <= drop.drop_rate)
             {
-                addItem(ctx.player, drop.item_id, enemy_balance::kDropQuantity, false, "");
+                addItem(ctx.player, drop.item_id, 1, false, "");
                 cout << " - " << itemDisplayName(ctx, drop.item_id) << '\n';
             }
         }
@@ -942,7 +960,7 @@ namespace state_helpers
         }
         else
         {
-            progress.unlocked_depth = max(progress.unlocked_depth, clearedDepth + Config::Progress::DEPTH_UNLOCK_STEP);
+            progress.unlocked_depth = max(progress.unlocked_depth, clearedDepth + 1);
         }
 
         ctx.player.progress.current_dungeon = dungeon.value("id", std::string());
@@ -959,22 +977,47 @@ namespace state_helpers
             attack = static_cast<int>(attack * enemy_balance::kEnemyAttackDebuffMultiplier);
         if (enemy.is_boss)
             attack = static_cast<int>(attack * enemy_balance::kBossEnemyAttackMultiplier);
-        return max(enemy_balance::kMinDamage, attack);
+        return max(1, attack);
     }
 
-    int calculateEnemyDefense(const EnemyInstance &enemy, const BattleState &battle)
+    int calculatePlayerEffectiveDefenseForEnemyDamage(const GameContext &ctx, const BattleState &battle)
     {
+        // Defense yang dipakai musuh untuk menghitung damage ke player.
+        // Ini sengaja “dipangkas” agar saat DEF player sangat tinggi, rumus damage tidak jatuh ke floor (1).
+        int defense = calculatePlayerDefense(ctx, &battle);
+        defense = max(player_balance::kMinDefense, defense);
+
+        if (defense > player_balance::kMaxEffectiveDefenseForEnemyDamage)
+        {
+            // Mapping: defense terlalu tinggi dipangkas, tapi tetap ada kontrol “kemiripan rumus” via denominator.
+            const int capped = player_balance::kMaxEffectiveDefenseForEnemyDamage;
+            const int excess = defense - capped;
+            defense = capped + excess / player_balance::kDefenseReducedPlayerDamageFloorDenominator;
+        }
+
+        return max(0, defense);
+    }
+
+
+    // Defense efektif yang dipakai musuh saat menghitung damage ke player.
+
+
+    int calculateEnemyDefense(const EnemyInstance &enemy, const BattleState &battle)
+
+    {
+
         int defense = enemy.def;
+
         if (battle.enemyDefDebuffTurns > 0)
             defense = static_cast<int>(defense * enemy_balance::kEnemyDefenseDebuffMultiplier);
-        return max(enemy_balance::kMinDefense, defense);
+        return max(0, defense);
     }
 
     void tickBattleEffects(GameContext &ctx, EnemyInstance &enemy, BattleState &battle)
     {
         if (battle.enemyDotTurns > 0)
         {
-            enemy.hp = max(player_balance::kResourceFloor, enemy.hp - battle.enemyDotDamage);
+            enemy.hp = max(0, enemy.hp - battle.enemyDotDamage);
             cout << enemy.name << " terkena " << battle.enemyDotLabel
                  << " dan kehilangan " << battle.enemyDotDamage << " HP.\n";
             --battle.enemyDotTurns;
@@ -1025,7 +1068,7 @@ namespace state_helpers
 
     void applyDepthCompletionRewards(GameContext &ctx, const json &dungeon, const json &depthRow)
     {
-        const int baseDepthExp = depthRow.value("exp_gain", Config::Math::ZERO);
+        const int baseDepthExp = depthRow.value("exp_gain", 0);
         const int clearExpReward = max(enemy_balance::kDepthClearExpMinimum,
                                        (baseDepthExp * enemy_balance::kDepthClearExpNumerator) /
                                            enemy_balance::kDepthClearExpDenominator);
@@ -1040,7 +1083,7 @@ namespace state_helpers
         cout << colorText("DEPTH CLEAR", Color::Green, true) << '\n';
         cout << "Bonus clear: +" << clearExpReward << " EXP, +" << clearGoldReward << " Gold\n";
 
-        advanceDungeonProgress(ctx, dungeon, depthRow.value("depth", Config::Progress::START_DEPTH));
+        advanceDungeonProgress(ctx, dungeon, depthRow.value("depth", 1));
         levelUpIfNeeded(ctx);
         saveGame(ctx);
     }
@@ -1130,7 +1173,7 @@ namespace state_helpers
 
         const int baseAttack = calculatePlayerAttack(ctx, &battle);
         const int primaryStat = getPrimaryStatValue(ctx.player, classPrimaryStat(ctx, ctx.player.class_id));
-        int damage = max(skill_balance::kMinDamage, baseAttack - calculateEnemyDefense(enemy, battle) / skill_balance::kDefaultDefenseDivisor);
+        int damage = max(1, baseAttack - calculateEnemyDefense(enemy, battle) / 2);
         bool ignoreDefense = false;
 
         if (skillId == "pommel_strike")
@@ -1148,7 +1191,7 @@ namespace state_helpers
         else if (skillId == "challenger_s_roar")
         {
             battle.playerDefBuffTurns = skill_balance::kChallengerRoarDefenseBuffTurns;
-            damage = skill_balance::kNoDamage;
+            damage = 0;
         }
         else if (skillId == "impact_crater")
         {
@@ -1156,11 +1199,11 @@ namespace state_helpers
         }
         else if (skillId == "blood_and_iron")
         {
-            const int sacrifice = max(player_balance::kMinRecoveryResource, static_cast<int>(ctx.player.max_hp * skill_balance::kBloodAndIronSelfDamageRatio));
-            ctx.player.hp = max(player_balance::kMinRecoveryResource, ctx.player.hp - sacrifice);
+            const int sacrifice = max(1, static_cast<int>(ctx.player.max_hp * skill_balance::kBloodAndIronSelfDamageRatio));
+            ctx.player.hp = max(1, ctx.player.hp - sacrifice);
             battle.playerAtkBuffTurns = skill_balance::kBloodAndIronAttackBuffTurns;
             battle.playerDefBuffTurns = skill_balance::kBloodAndIronDefenseBuffTurns;
-            damage = skill_balance::kNoDamage;
+            damage = 0;
         }
         else if (skillId == "shattering_onslaught")
         {
@@ -1178,36 +1221,36 @@ namespace state_helpers
         {
             battle.playerDefBuffTurns = skill_balance::kDominionAuraDefenseBuffTurns;
             battle.enemyAtkDebuffTurns = skill_balance::kDominionAuraEnemyAttackDebuffTurns;
-            damage = skill_balance::kNoDamage;
+            damage = 0;
         }
         else if (skillId == "undying_juggernaut")
         {
             battle.playerInvincibleTurns = skill_balance::kUndyingJuggernautInvincibleTurns;
             battle.playerAtkBuffTurns = skill_balance::kUndyingJuggernautAttackBuffTurns;
-            damage = skill_balance::kNoDamage;
+            damage = 0;
         }
         else if (skillId == "ignite")
         {
             damage = static_cast<int>(primaryStat * skill_balance::kIgnitePrimaryMultiplier) +
-                     itemBonusFromEquipped(ctx, ctx.player, "atk") - calculateEnemyDefense(enemy, battle) / skill_balance::kDefaultDefenseDivisor;
+                     itemBonusFromEquipped(ctx, ctx.player, "atk") - calculateEnemyDefense(enemy, battle) / 2;
             battle.enemyDotTurns = skill_balance::kIgniteDotTurns;
-            battle.enemyDotDamage = max(skill_balance::kMinDamage, static_cast<int>(primaryStat * skill_balance::kIgniteDotMultiplier));
+            battle.enemyDotDamage = max(1, static_cast<int>(primaryStat * skill_balance::kIgniteDotMultiplier));
             battle.enemyDotLabel = "Burn";
         }
         else if (skillId == "arcane_shield")
         {
             battle.playerShield += max(skill_balance::kArcaneShieldMinimum,
                                        static_cast<int>(primaryStat * skill_balance::kArcaneShieldPrimaryMultiplier));
-            damage = skill_balance::kNoDamage;
+            damage = 0;
         }
         else if (skillId == "chain_lightning")
         {
-            damage = static_cast<int>(baseAttack * skill_balance::kChainLightningMultiplier) - calculateEnemyDefense(enemy, battle) / skill_balance::kDefaultDefenseDivisor;
+            damage = static_cast<int>(baseAttack * skill_balance::kChainLightningMultiplier) - calculateEnemyDefense(enemy, battle) / 2;
             battle.enemySilenceTurns = skill_balance::kChainLightningSilenceTurns;
         }
         else if (skillId == "frost_nova")
         {
-            damage = static_cast<int>(baseAttack * skill_balance::kFrostNovaMultiplier) - calculateEnemyDefense(enemy, battle) / skill_balance::kDefaultDefenseDivisor;
+            damage = static_cast<int>(baseAttack * skill_balance::kFrostNovaMultiplier) - calculateEnemyDefense(enemy, battle) / 2;
             battle.enemyStunTurns = skill_balance::kFrostNovaStunTurns;
         }
         else if (skillId == "meteor_fall")
@@ -1216,7 +1259,7 @@ namespace state_helpers
         }
         else if (skillId == "abyssal_singularity")
         {
-            damage = static_cast<int>(baseAttack * skill_balance::kAbyssalSingularityMultiplier) - calculateEnemyDefense(enemy, battle) / skill_balance::kDefaultDefenseDivisor;
+            damage = static_cast<int>(baseAttack * skill_balance::kAbyssalSingularityMultiplier) - calculateEnemyDefense(enemy, battle) / 2;
             const int drain = max(skill_balance::kAbyssalSingularityMinimumDrain,
                                   damage / skill_balance::kAbyssalSingularityDrainDivisor);
             ctx.player.hp = min(ctx.player.max_hp, ctx.player.hp + drain);
@@ -1227,7 +1270,7 @@ namespace state_helpers
                                 ctx.player.mp + max(skill_balance::kAstralRebirthMinimumManaRestore,
                                                     ctx.player.max_mp / skill_balance::kAstralRebirthManaRestoreDivisor));
             battle.playerAtkBuffTurns = skill_balance::kAstralRebirthAttackBuffTurns;
-            damage = skill_balance::kNoDamage;
+            damage = 0;
         }
         else if (skillId == "void_apocalypse")
         {
@@ -1236,54 +1279,54 @@ namespace state_helpers
         }
         else if (skillId == "quick_draw")
         {
-            damage = static_cast<int>(baseAttack * skill_balance::kQuickDrawMultiplier) - calculateEnemyDefense(enemy, battle) / skill_balance::kDefaultDefenseDivisor;
+            damage = static_cast<int>(baseAttack * skill_balance::kQuickDrawMultiplier) - calculateEnemyDefense(enemy, battle) / 2;
         }
         else if (skillId == "toxic_arrow")
         {
-            damage = static_cast<int>(baseAttack * skill_balance::kToxicArrowMultiplier) - calculateEnemyDefense(enemy, battle) / skill_balance::kDefaultDefenseDivisor;
+            damage = static_cast<int>(baseAttack * skill_balance::kToxicArrowMultiplier) - calculateEnemyDefense(enemy, battle) / 2;
             battle.enemyDotTurns = skill_balance::kToxicArrowDotTurns;
-            battle.enemyDotDamage = max(skill_balance::kMinDamage, static_cast<int>(ctx.player.stats.agi * skill_balance::kToxicArrowDotAgiMultiplier));
+            battle.enemyDotDamage = max(1, static_cast<int>(ctx.player.stats.agi * skill_balance::kToxicArrowDotAgiMultiplier));
             battle.enemyDotLabel = "Poison";
         }
         else if (skillId == "agility_boost")
         {
             battle.playerAgiBuffTurns = skill_balance::kAgilityBoostTurns;
-            damage = skill_balance::kNoDamage;
+            damage = 0;
         }
         else if (skillId == "shadow_strike")
         {
             battle.nextAttackGuaranteedCrit = true;
-            damage = static_cast<int>(baseAttack * skill_balance::kShadowStrikeMultiplier) - calculateEnemyDefense(enemy, battle) / skill_balance::kDefaultDefenseDivisor;
+            damage = static_cast<int>(baseAttack * skill_balance::kShadowStrikeMultiplier) - calculateEnemyDefense(enemy, battle) / 2;
         }
         else if (skillId == "phantom_veil")
         {
             battle.playerEvadeTurns = skill_balance::kPhantomVeilEvadeTurns;
-            damage = skill_balance::kNoDamage;
+            damage = 0;
         }
         else if (skillId == "blade_dance")
         {
             int hits = randInt(skill_balance::kBladeDanceMinHits, skill_balance::kBladeDanceMaxHits);
-            damage = skill_balance::kNoDamage;
+            damage = 0;
             for (int i = 0; i < hits; ++i)
-                damage += max(skill_balance::kMinDamage, static_cast<int>(baseAttack * skill_balance::kBladeDanceHitMultiplier) - calculateEnemyDefense(enemy, battle) / skill_balance::kBladeDanceDefenseDivisor);
+                damage += max(1, static_cast<int>(baseAttack * skill_balance::kBladeDanceHitMultiplier) - calculateEnemyDefense(enemy, battle) / 3);
         }
         else if (skillId == "oblivion_edge")
         {
-            if (!enemy.is_boss && randInt(Config::Math::PERCENT_ROLL_MIN, Config::Math::PERCENT_ROLL_MAX) <= skill_balance::kOblivionEdgeExecuteChance)
+            if (!enemy.is_boss && randInt(1, 100) <= skill_balance::kOblivionEdgeExecuteChance)
                 damage = enemy.hp;
             else
-                damage = static_cast<int>(baseAttack * skill_balance::kOblivionEdgeMultiplier) - calculateEnemyDefense(enemy, battle) / skill_balance::kDefaultDefenseDivisor;
+                damage = static_cast<int>(baseAttack * skill_balance::kOblivionEdgeMultiplier) - calculateEnemyDefense(enemy, battle) / 2;
         }
         else if (skillId == "eternal_silence")
         {
-            damage = static_cast<int>(baseAttack * skill_balance::kEternalSilenceMultiplier) - calculateEnemyDefense(enemy, battle) / skill_balance::kDefaultDefenseDivisor;
+            damage = static_cast<int>(baseAttack * skill_balance::kEternalSilenceMultiplier) - calculateEnemyDefense(enemy, battle) / 2;
             battle.enemySilenceTurns = skill_balance::kEternalSilenceTurns;
         }
         else if (skillId == "shadow_meld")
         {
             battle.playerEvadeTurns = skill_balance::kShadowMeldEvadeTurns;
             battle.nextAttackGuaranteedCrit = true;
-            damage = skill_balance::kNoDamage;
+            damage = 0;
         }
 
         if (damage > 0)
@@ -1292,8 +1335,8 @@ namespace state_helpers
             if (critical)
                 damage = static_cast<int>(damage * skill_balance::kSkillCriticalDamageMultiplier);
             if (!ignoreDefense)
-                damage = max(skill_balance::kMinDamage, damage);
-            enemy.hp = max(player_balance::kResourceFloor, enemy.hp - damage);
+                damage = max(1, damage);
+            enemy.hp = max(0, enemy.hp - damage);
             cout << "Kamu menggunakan " << skillName << " dan memberi " << damage << " damage";
             if (critical)
                 cout << " [Critical]";
@@ -1374,8 +1417,8 @@ void runBattle(GameContext &ctx)
         cout << colorText(dungeon->value("name", string()), Color::Yellow, true) << '\n';
         cout << colorText("Depth Aktif", Color::Cyan, true) << " : " << ctx.player.progress.current_depth << '\n';
         cout << colorText("Level Range", Color::Cyan, true) << " : "
-             << (*depthData)["level_range"].value("min", Config::Progress::LEVEL_RANGE_MIN_FALLBACK)
-             << "-" << (*depthData)["level_range"].value("max", Config::Progress::LEVEL_RANGE_MAX_FALLBACK) << '\n';
+             << (*depthData)["level_range"].value("min", 1)
+             << "-" << (*depthData)["level_range"].value("max", 999) << '\n';
         cout << colorText("ATK / DEF", Color::Cyan, true) << "   : "
              << calculatePlayerAttack(ctx) << " / " << calculatePlayerDefense(ctx) << '\n';
         cout << colorText("HP / MP", Color::Cyan, true) << "     : "
