@@ -10,9 +10,9 @@
           "skill_id": "challenger_s_roar"
         }
       ],
-      "current_exp": 0,
-      "gold": 650,
-      "hp": 64,
+      "current_exp": 98,
+      "gold": 691,
+      "hp": 1957,
       "id": "kei",
       "inventory": [
         {
@@ -48,12 +48,27 @@
           "item_id": "traveler_s_boots",
           "quantity": 1,
           "slot": "Boots"
+        },
+        {
+          "equipped": false,
+          "item_id": "iron_scrap",
+          "quantity": 1
+        },
+        {
+          "equipped": false,
+          "item_id": "fine_fiber",
+          "quantity": 1
+        },
+        {
+          "equipped": false,
+          "item_id": "mana_shard",
+          "quantity": 1
         }
       ],
       "level": 50,
-      "max_hp": 2690,
+      "max_hp": 3915,
       "max_mp": 237,
-      "mp": 17,
+      "mp": 118,
       "name": "Kei",
       "progress": {
         "current_depth": 1,
@@ -62,35 +77,35 @@
           "dungeon_of_echoes_and_destiny": {
             "completed": false,
             "highest_cleared_depth": 0,
-            "unlocked_depth": 1
+            "unlocked_depth": 10
           },
           "dungeon_of_knowledge_and_wisdom": {
             "completed": false,
             "highest_cleared_depth": 0,
-            "unlocked_depth": 1
+            "unlocked_depth": 10
           },
           "dungeon_of_thorns_and_resilience": {
             "completed": false,
             "highest_cleared_depth": 0,
-            "unlocked_depth": 1
+            "unlocked_depth": 10
           },
           "dungeon_of_valor_and_ember": {
             "completed": false,
             "highest_cleared_depth": 0,
-            "unlocked_depth": 1
+            "unlocked_depth": 10
           },
           "dungeon_of_whispers_and_shadows": {
             "completed": false,
             "highest_cleared_depth": 0,
-            "unlocked_depth": 1
+            "unlocked_depth": 10
           },
           "tahta_kehampaan": {
             "completed": false,
             "highest_cleared_depth": 0,
-            "unlocked_depth": 1
+            "unlocked_depth": 5
           }
         },
-        "max_depth_unlocked": 1
+        "max_depth_unlocked": 10
       },
       "stat_points": 0,
       "stats": {
@@ -680,8 +695,8 @@
     },
     {
       "class_id": "wanderer",
-      "class_tier_id": "nightstalker",
-      "class_tier_name": "Nightstalker",
+      "class_tier_id": "wanderer",
+      "class_tier_name": "Wanderer",
       "cooldowns": [
         {
           "remaining_turns": 1,
@@ -1015,6 +1030,241 @@
         "agi": 10,
         "int": 18,
         "str": 10,
+        "vit": 10
+      }
+    },
+    {
+      "class_id": "knight",
+      "class_tier_id": "knight",
+      "class_tier_name": "Knight",
+      "cooldowns": [
+        {
+          "remaining_turns": 0,
+          "skill_id": "pommel_strike"
+        }
+      ],
+      "current_exp": 1221,
+      "gold": 1716,
+      "hp": 683,
+      "id": "kei12",
+      "inventory": [
+        {
+          "equipped": false,
+          "item_id": "healing_potion",
+          "quantity": 3
+        },
+        {
+          "equipped": false,
+          "item_id": "mana_elixir",
+          "quantity": 2
+        },
+        {
+          "equipped": true,
+          "item_id": "leather_coif",
+          "quantity": 1,
+          "slot": "Helmet"
+        },
+        {
+          "equipped": true,
+          "item_id": "padded_tunic",
+          "quantity": 1,
+          "slot": "Armor"
+        },
+        {
+          "equipped": true,
+          "item_id": "rusty_greatsword",
+          "quantity": 1,
+          "slot": "Weapon"
+        },
+        {
+          "equipped": true,
+          "item_id": "traveler_s_boots",
+          "quantity": 1,
+          "slot": "Boots"
+        },
+        {
+          "equipped": false,
+          "item_id": "fine_fiber",
+          "quantity": 10
+        },
+        {
+          "equipped": false,
+          "item_id": "iron_scrap",
+          "quantity": 13
+        },
+        {
+          "equipped": false,
+          "item_id": "heavy_ore",
+          "quantity": 9
+        },
+        {
+          "equipped": false,
+          "item_id": "mana_shard",
+          "quantity": 7
+        }
+      ],
+      "level": 4,
+      "max_hp": 687,
+      "max_mp": 99,
+      "mp": 99,
+      "name": "Kei12",
+      "progress": {
+        "current_depth": 1,
+        "current_dungeon": "dungeon_of_echoes_and_destiny",
+        "dungeon_progress": {
+          "dungeon_of_echoes_and_destiny": {
+            "completed": false,
+            "highest_cleared_depth": 1,
+            "unlocked_depth": 2
+          },
+          "dungeon_of_knowledge_and_wisdom": {
+            "completed": false,
+            "highest_cleared_depth": 0,
+            "unlocked_depth": 1
+          },
+          "dungeon_of_thorns_and_resilience": {
+            "completed": false,
+            "highest_cleared_depth": 0,
+            "unlocked_depth": 1
+          },
+          "dungeon_of_valor_and_ember": {
+            "completed": false,
+            "highest_cleared_depth": 0,
+            "unlocked_depth": 1
+          },
+          "dungeon_of_whispers_and_shadows": {
+            "completed": false,
+            "highest_cleared_depth": 0,
+            "unlocked_depth": 1
+          },
+          "tahta_kehampaan": {
+            "completed": false,
+            "highest_cleared_depth": 0,
+            "unlocked_depth": 1
+          }
+        },
+        "max_depth_unlocked": 2
+      },
+      "stat_points": 45,
+      "stats": {
+        "agi": 10,
+        "int": 10,
+        "str": 18,
+        "vit": 10
+      }
+    },
+    {
+      "class_id": "knight",
+      "class_tier_id": "knight",
+      "class_tier_name": "Knight",
+      "cooldowns": [],
+      "current_exp": 823,
+      "gold": 1568,
+      "hp": 561,
+      "id": "oo",
+      "inventory": [
+        {
+          "equipped": false,
+          "item_id": "healing_potion",
+          "quantity": 3
+        },
+        {
+          "equipped": false,
+          "item_id": "mana_elixir",
+          "quantity": 2
+        },
+        {
+          "equipped": true,
+          "item_id": "leather_coif",
+          "quantity": 1,
+          "slot": "Helmet"
+        },
+        {
+          "equipped": true,
+          "item_id": "padded_tunic",
+          "quantity": 1,
+          "slot": "Armor"
+        },
+        {
+          "equipped": true,
+          "item_id": "rusty_greatsword",
+          "quantity": 1,
+          "slot": "Weapon"
+        },
+        {
+          "equipped": true,
+          "item_id": "traveler_s_boots",
+          "quantity": 1,
+          "slot": "Boots"
+        },
+        {
+          "equipped": false,
+          "item_id": "iron_scrap",
+          "quantity": 10
+        },
+        {
+          "equipped": false,
+          "item_id": "fine_fiber",
+          "quantity": 7
+        },
+        {
+          "equipped": false,
+          "item_id": "mana_shard",
+          "quantity": 9
+        },
+        {
+          "equipped": false,
+          "item_id": "heavy_ore",
+          "quantity": 4
+        }
+      ],
+      "level": 3,
+      "max_hp": 617,
+      "max_mp": 96,
+      "mp": 96,
+      "name": "oo",
+      "progress": {
+        "current_depth": 1,
+        "current_dungeon": "dungeon_of_echoes_and_destiny",
+        "dungeon_progress": {
+          "dungeon_of_echoes_and_destiny": {
+            "completed": false,
+            "highest_cleared_depth": 1,
+            "unlocked_depth": 2
+          },
+          "dungeon_of_knowledge_and_wisdom": {
+            "completed": false,
+            "highest_cleared_depth": 0,
+            "unlocked_depth": 1
+          },
+          "dungeon_of_thorns_and_resilience": {
+            "completed": false,
+            "highest_cleared_depth": 0,
+            "unlocked_depth": 1
+          },
+          "dungeon_of_valor_and_ember": {
+            "completed": false,
+            "highest_cleared_depth": 0,
+            "unlocked_depth": 1
+          },
+          "dungeon_of_whispers_and_shadows": {
+            "completed": false,
+            "highest_cleared_depth": 0,
+            "unlocked_depth": 1
+          },
+          "tahta_kehampaan": {
+            "completed": false,
+            "highest_cleared_depth": 0,
+            "unlocked_depth": 1
+          }
+        },
+        "max_depth_unlocked": 2
+      },
+      "stat_points": 35,
+      "stats": {
+        "agi": 10,
+        "int": 10,
+        "str": 18,
         "vit": 10
       }
     }
