@@ -100,12 +100,12 @@
       "tiers": [
         {
           "id": "archmage",
-          "level": 2,
+          "level": 20,
           "name": "Archmage"
         },
         {
           "id": "archon",
-          "level": 3,
+          "level": 50,
           "name": "Archon"
         }
       ],
@@ -192,12 +192,12 @@
       "tiers": [
         {
           "id": "nightstalker",
-          "level": 2,
+          "level": 20,
           "name": "Nightstalker"
         },
         {
           "id": "nightfall",
-          "level": 3,
+          "level": 50,
           "name": "Nightfall"
         }
       ],
@@ -484,7 +484,7 @@
     {
       "id": "archmage_s_cloak",
       "category": "armor",
-      "name": "Archmage’s Cloak",
+      "name": "Archmage's Cloak",
       "description": "Jubah kebesaran Archmage istana.",
       "buy_price": 13000,
       "sell_price": 8500,
@@ -530,7 +530,7 @@
     {
       "id": "assassin_s_visage",
       "category": "helmet",
-      "name": "Assassin’s Visage",
+      "name": "Assassin's Visage",
       "description": "Topeng wajah sang pembunuh.",
       "buy_price": 0,
       "sell_price": 35000,
@@ -767,7 +767,7 @@
     {
       "id": "commander_s_crest",
       "category": "helmet",
-      "name": "Commander’s Crest",
+      "name": "Commander's Crest",
       "description": "Helm berlambang komandan perang.",
       "buy_price": 8500,
       "sell_price": 4500,
@@ -951,7 +951,7 @@
     {
       "id": "duelist_s_leather",
       "category": "armor",
-      "name": "Duelist’s Leather",
+      "name": "Duelist's Leather",
       "description": "Zirah kulit ringan khusus pertarungan.",
       "buy_price": 14000,
       "sell_price": 8500,
@@ -1055,7 +1055,7 @@
     {
       "id": "enchanter_s_boots",
       "category": "boots",
-      "name": "Enchanter’s Boots",
+      "name": "Enchanter's Boots",
       "description": "Sepatu bot para pemantra.",
       "buy_price": 0,
       "sell_price": 1500,
@@ -1171,7 +1171,7 @@
     {
       "id": "executioner_s_pride",
       "category": "weapon",
-      "name": "Executioner’s Pride",
+      "name": "Executioner's Pride",
       "description": "Senjata legendaris para algojo kerajaan.",
       "buy_price": 0,
       "sell_price": 45000,
@@ -1390,7 +1390,7 @@
     {
       "id": "gladiator_s_crown",
       "category": "helmet",
-      "name": "Gladiator’s Crown",
+      "name": "Gladiator's Crown",
       "description": "Mahkota para gladiator tak terkalahkan.",
       "buy_price": 0,
       "sell_price": 35000,
@@ -1448,7 +1448,7 @@
     {
       "id": "god_king_s_bastion",
       "category": "armor",
-      "name": "God-King’s Bastion",
+      "name": "God-King's Bastion",
       "description": "Benteng pelindung raja dewa.",
       "buy_price": 0,
       "sell_price": 250000,
@@ -1506,7 +1506,7 @@
     {
       "id": "grand_marshall_s_stride",
       "category": "boots",
-      "name": "Grand Marshall’s Stride",
+      "name": "Grand Marshall's Stride",
       "description": "Sepatu langkah keagungan.",
       "buy_price": 0,
       "sell_price": 90000,
@@ -1564,7 +1564,7 @@
     {
       "id": "guard_s_visor",
       "category": "helmet",
-      "name": "Guard’s Visor",
+      "name": "Guard's Visor",
       "description": "Helm dengan visor pelindung penuh.",
       "buy_price": 0,
       "sell_price": 2200,
@@ -1957,7 +1957,7 @@
     {
       "id": "knight_s_heavy_axe",
       "category": "weapon",
-      "name": "Knight’s Heavy Axe",
+      "name": "Knight's Heavy Axe",
       "description": "Kapak berat untuk menghancurkan zirah.",
       "buy_price": 0,
       "sell_price": 3000,
@@ -1986,7 +1986,7 @@
     {
       "id": "knight_s_plate",
       "category": "armor",
-      "name": "Knight’s Plate",
+      "name": "Knight's Plate",
       "description": "Zirah plat baja penuh standar kesatria.",
       "buy_price": 15000,
       "sell_price": 8500,
@@ -2165,7 +2165,7 @@
     {
       "id": "mage_s_cowl",
       "category": "helmet",
-      "name": "Mage’s Cowl",
+      "name": "Mage's Cowl",
       "description": "Tudung kepala penyihir standar.",
       "buy_price": 1800,
       "sell_price": 1000,
@@ -2182,7 +2182,7 @@
     {
       "id": "mage_s_sandals",
       "category": "boots",
-      "name": "Mage’s Sandals",
+      "name": "Mage's Sandals",
       "description": "Sandal khusus para penyihir.",
       "buy_price": 1200,
       "sell_price": 750,
@@ -2318,7 +2318,7 @@
     {
       "id": "marshall_s_iron_face",
       "category": "helmet",
-      "name": "Marshall’s Iron Face",
+      "name": "Marshall's Iron Face",
       "description": "Wajah besi sang jenderal agung.",
       "buy_price": 0,
       "sell_price": 120000,
@@ -2434,7 +2434,7 @@
     {
       "id": "nature_s_embrace",
       "category": "armor",
-      "name": "Nature’s Embrace",
+      "name": "Nature's Embrace",
       "description": "Zirah pelukan alam terbuka.",
       "buy_price": 0,
       "sell_price": 35000,
@@ -2492,7 +2492,7 @@
     {
       "id": "nightfall_s_path",
       "category": "boots",
-      "name": "Nightfall’s Path",
+      "name": "Nightfall's Path",
       "description": "Alas penyusur jalan sang Nightfall.",
       "buy_price": 0,
       "sell_price": 90000,
@@ -2630,7 +2630,7 @@
     {
       "id": "pyromancer_s_mantle",
       "category": "armor",
-      "name": "Pyromancer’s Mantle",
+      "name": "Pyromancer's Mantle",
       "description": "Mantel pengendali api.",
       "buy_price": 0,
       "sell_price": 18000,
@@ -2659,7 +2659,7 @@
     {
       "id": "ranger_s_garb",
       "category": "armor",
-      "name": "Ranger’s Garb",
+      "name": "Ranger's Garb",
       "description": "Pakaian penjelajah alam liar.",
       "buy_price": 0,
       "sell_price": 4500,
@@ -2838,7 +2838,7 @@
     {
       "id": "sage_s_veil",
       "category": "helmet",
-      "name": "Sage’s Veil",
+      "name": "Sage's Veil",
       "description": "Kerudung kebijaksanaan orang bijak.",
       "buy_price": 0,
       "sell_price": 2200,
@@ -2925,7 +2925,7 @@
     {
       "id": "scholar_s_tunic",
       "category": "armor",
-      "name": "Scholar’s Tunic",
+      "name": "Scholar's Tunic",
       "description": "Tunik para pelajar ilmu sihir.",
       "buy_price": 0,
       "sell_price": 900,
@@ -3249,7 +3249,7 @@
     {
       "id": "sorcerer_s_stride",
       "category": "boots",
-      "name": "Sorcerer’s Stride",
+      "name": "Sorcerer's Stride",
       "description": "Sepatu bot langkah sorcerer.",
       "buy_price": 5000,
       "sell_price": 3000,
@@ -3282,7 +3282,7 @@
     {
       "id": "specter_s_gaze",
       "category": "helmet",
-      "name": "Specter’s Gaze",
+      "name": "Specter's Gaze",
       "description": "Tatapan sang hantu.",
       "buy_price": 0,
       "sell_price": 60000,
@@ -3420,7 +3420,7 @@
     {
       "id": "titan_s_footsteps",
       "category": "boots",
-      "name": "Titan’s Footsteps",
+      "name": "Titan's Footsteps",
       "description": "Langkah kaki para Titan.",
       "buy_price": 0,
       "sell_price": 22000,
@@ -3478,7 +3478,7 @@
     {
       "id": "tracker_s_mask",
       "category": "helmet",
-      "name": "Tracker’s Mask",
+      "name": "Tracker's Mask",
       "description": "Topeng penyamar pelacak tapak.",
       "buy_price": 7500,
       "sell_price": 4500,
@@ -3495,7 +3495,7 @@
     {
       "id": "traveler_s_boots",
       "category": "boots",
-      "name": "Traveler’s Boots",
+      "name": "Traveler's Boots",
       "description": "Sepatu bot petualang.",
       "buy_price": 300,
       "sell_price": 150,
@@ -3772,7 +3772,7 @@
     {
       "id": "warrior_s_emblem",
       "category": "accessory",
-      "name": "Warrior’s Emblem",
+      "name": "Warrior's Emblem",
       "description": "Aksesoris peningkatan Damage",
       "buy_price": 0,
       "sell_price": 15000,
@@ -3834,7 +3834,7 @@
     {
       "id": "wizard_s_tricorn",
       "category": "helmet",
-      "name": "Wizard’s Tricorn",
+      "name": "Wizard's Tricorn",
       "description": "Topi bersudut tiga khas penyihir agung.",
       "buy_price": 7000,
       "sell_price": 4500,
@@ -3869,28 +3869,6 @@
             "chapter_name": "Bab 1: Kuil di Ujung Waktu",
             "depth_title": "Lantai Cermin Perak",
             "lore_content": "The Chronicler mengenang kuil megah di mana pantulan menunjukkan versi dirimu yang sempurna."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Pintu batu raksasa bergetar saat kamu melangkah masuk. Udara dingin menyapu wajahmu."
-              },
-              {
-                "speaker": "Hero",
-                "text": "Tempat ini... terasa familiar, seperti mimpi yang sudah lama kulupakan."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Cahaya redup di ujung lorong memberi tanda — depth ini telah kamu taklukkan."
-              },
-              {
-                "speaker": "Hero",
-                "text": "Baru permulaan. Kedalaman berikutnya menanti."
-              }
-            ]
           }
         },
         {
@@ -3904,20 +3882,6 @@
             "chapter_name": "Bab 1: Kuil di Ujung Waktu",
             "depth_title": "Nyanyian Bintang Jatuh",
             "lore_content": "Ritual para pendeta yang membaca takdir kerajaan melalui pergerakan rasi bintang."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Lantai cermin retak di bawah setiap langkahmu. Bayangan-bayangan diam mengintai dari kejauhan."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Bayangan-bayangan itu mundur. Entah karena takut, atau menunggu momennya sendiri."
-              }
-            ]
           }
         },
         {
@@ -3931,24 +3895,6 @@
             "chapter_name": "Bab 1: Kuil di Ujung Waktu",
             "depth_title": "Retakan Pertama pada Takdir",
             "lore_content": "Hari di mana cermin suci tiba-tiba retak, dan ramalan bintang berubah kosong."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Suara gemuruh memenuhi ruangan. Di sini, setiap musuh lebih kuat dari yang sebelumnya."
-              },
-              {
-                "speaker": "Hero",
-                "text": "Aku sudah sejauh ini. Tidak ada jalan kembali."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dinding bergetar seolah mengakui kekuatanmu. Jalan menuju depth berikutnya terbuka."
-              }
-            ]
           }
         },
         {
@@ -3962,20 +3908,6 @@
             "chapter_name": "Bab 1: Kuil di Ujung Waktu",
             "depth_title": "Lonceng Kematian Masa Depan",
             "lore_content": "Lonceng berdentang sendiri; peringatan dari masa depan tentang kedatangan The Void."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 4 di Dungeon of Echoes and Destiny."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 4 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -3989,20 +3921,6 @@
             "chapter_name": "Bab 1: Kuil di Ujung Waktu",
             "depth_title": "Pantulan yang Berkhianat",
             "lore_content": "Bayangan para pendeta di cermin mulai bergerak sendiri dan menarik mereka ke dalam kaca."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 5 di Dungeon of Echoes and Destiny."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 5 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -4016,20 +3934,6 @@
             "chapter_name": "Bab 2: Distorsi Realita",
             "depth_title": "Gema dari Kemarin",
             "lore_content": "Kuil mulai memutar ulang suara jeritan para prajurit dari peperangan masa lalu."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 6 di Dungeon of Echoes and Destiny."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 6 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -4043,20 +3947,6 @@
             "chapter_name": "Bab 2: Distorsi Realita",
             "depth_title": "Lorong yang Berjalan Mundur",
             "lore_content": "Tata ruang kuil melawan akal sehat; berjalan maju membawamu kembali ke tempat semula."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 7 di Dungeon of Echoes and Destiny."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 7 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -4070,20 +3960,6 @@
             "chapter_name": "Bab 2: Distorsi Realita",
             "depth_title": "Air Mata Para Nabi",
             "lore_content": "Keputusasaan peramal yang melihat jutaan kemungkinan di mana kerajaan selalu hancur."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 8 di Dungeon of Echoes and Destiny."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 8 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -4097,20 +3973,6 @@
             "chapter_name": "Bab 2: Distorsi Realita",
             "depth_title": "Takdir yang Ditulis Ulang",
             "lore_content": "Permadani sejarah kerajaan yang benangnya perlahan terurai dan terbakar menjadi abu."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 9 di Dungeon of Echoes and Destiny."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 9 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -4124,20 +3986,6 @@
             "chapter_name": "Bab 2: Distorsi Realita",
             "depth_title": "Prajurit Tanpa Wajah",
             "lore_content": "Monster campuran antara kenangan masa lalu dan teror masa depan."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 10 di Dungeon of Echoes and Destiny."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 10 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -4151,20 +3999,6 @@
             "chapter_name": "Bab 3: Labirin Pecahan Dimensi",
             "depth_title": "Kehampaan yang Berkilau",
             "lore_content": "Berjalan di atas pecahan kaca yang melayang di ruang hampa tanpa gravitasi."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 11 di Dungeon of Echoes and Destiny."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 11 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -4178,20 +4012,6 @@
             "chapter_name": "Bab 3: Labirin Pecahan Dimensi",
             "depth_title": "Tragedi yang Terulang",
             "lore_content": "Terjebak dalam putaran waktu, melihat detik-detik kematian kerajaan berulang kali."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 12 di Dungeon of Echoes and Destiny."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 12 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -4205,20 +4025,6 @@
             "chapter_name": "Bab 3: Labirin Pecahan Dimensi",
             "depth_title": "Suara dari Garis Waktu yang Mati",
             "lore_content": "Bisikan para pahlawan dari dimensi lain yang telah gagal mengalahkan The Void."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 13 di Dungeon of Echoes and Destiny."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 13 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -4232,20 +4038,6 @@
             "chapter_name": "Bab 3: Labirin Pecahan Dimensi",
             "depth_title": "Kepingan Jiwa yang Hilang",
             "lore_content": "Kutukan kuil yang membuat siapapun yang memasukinya melupakan namanya sendiri."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 14 di Dungeon of Echoes and Destiny."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 14 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -4259,20 +4051,6 @@
             "chapter_name": "Bab 3: Labirin Pecahan Dimensi",
             "depth_title": "Penjaga Gerbang Paradoks",
             "lore_content": "Entitas penjaga murni energi cahaya dan kegelapan, tidak terikat oleh waktu."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 15 di Dungeon of Echoes and Destiny."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 15 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -4286,20 +4064,6 @@
             "chapter_name": "Bab 4: Pusat Badai Waktu",
             "depth_title": "Mata Pusaran Takdir",
             "lore_content": "Memasuki altar utama di mana waktu benar-benar berhenti bergerak."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 16 di Dungeon of Echoes and Destiny."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 16 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -4313,20 +4077,6 @@
             "chapter_name": "Bab 4: Pusat Badai Waktu",
             "depth_title": "Pandangan yang Membutakan",
             "lore_content": "Menyadari bahwa The Void bukanlah sekadar monster, melainkan Akhir itu sendiri."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 17 di Dungeon of Echoes and Destiny."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 17 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -4340,20 +4090,6 @@
             "chapter_name": "Bab 4: Pusat Badai Waktu",
             "depth_title": "Kutukan Sang Peramal",
             "lore_content": "Sang Oracle mencoba menyerap energi masa depan untuk mencegah kiamat, namun pikirannya hancur."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 18 di Dungeon of Echoes and Destiny."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 18 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -4367,20 +4103,6 @@
             "chapter_name": "Bab 4: Pusat Badai Waktu",
             "depth_title": "Kesedihan The Oracle of Ruin",
             "lore_content": "Menghadapi Oracle yang dikendalikan The Void, mampu memprediksi gerakan player."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 19 di Dungeon of Echoes and Destiny."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 19 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -4394,20 +4116,6 @@
             "chapter_name": "Bab 4: Pusat Badai Waktu",
             "depth_title": "Lahirnya Radiant Orb",
             "lore_content": "Aliran waktu kembali stabil sesaat, esensi takdir murni mengkristal menjadi Radiant Orb."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 20 di Dungeon of Echoes and Destiny."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 20 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         }
       ]
@@ -4431,20 +4139,6 @@
             "chapter_name": "Bab 1: Era Keemasan",
             "depth_title": "Gerbang Pengetahuan Abadi",
             "lore_content": "The Chronicler mengenang masa ketika cendekiawan dari seluruh penjuru dunia berkumpul di tempat ini."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 1 di Dungeon of Knowledge and Wisdom."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 1 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -4458,20 +4152,6 @@
             "chapter_name": "Bab 1: Era Keemasan",
             "depth_title": "Rak Buku Setinggi Bintang",
             "lore_content": "Deskripsi tentang Menara Astral, tempat pengetahuan dari bumi dan langit disimpan."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 2 di Dungeon of Knowledge and Wisdom."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 2 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -4485,20 +4165,6 @@
             "chapter_name": "Bab 1: Era Keemasan",
             "depth_title": "Simfoni Tinta dan Kertas",
             "lore_content": "Kehidupan damai para penyihir yang mendedikasikan hidupnya murni untuk penelitian."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 3 di Dungeon of Knowledge and Wisdom."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 3 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -4512,20 +4178,6 @@
             "chapter_name": "Bab 1: Era Keemasan",
             "depth_title": "Goresan Tinta yang Bergetar",
             "lore_content": "Anomali pertama: buku-buku kuno mulai menulis halamannya sendiri dengan bahasa yang tak dikenali."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 4 di Dungeon of Knowledge and Wisdom."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 4 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -4539,20 +4191,6 @@
             "chapter_name": "Bab 1: Era Keemasan",
             "depth_title": "Ramalan dari Celah Bintang",
             "lore_content": "Penemuan sebuah perkamen rahasia yang meramalkan kedatangan entitas tanpa wujud: The Void."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 5 di Dungeon of Knowledge and Wisdom."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 5 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -4566,20 +4204,6 @@
             "chapter_name": "Bab 2: Rasa Ingin Tahu yang Mematikan",
             "depth_title": "Bisikan di Balik Halaman",
             "lore_content": "Suara-suara aneh mulai merasuki pikiran para pembaca, membuat mereka terjaga berhari-hari."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 6 di Dungeon of Knowledge and Wisdom."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 6 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -4593,20 +4217,6 @@
             "chapter_name": "Bab 2: Rasa Ingin Tahu yang Mematikan",
             "depth_title": "Eksperimen Sang Alkemis Gila",
             "lore_content": "Usaha putus asa para penyihir menggunakan sihir hitam untuk menciptakan perisai pelindung."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 7 di Dungeon of Knowledge and Wisdom."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 7 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -4620,20 +4230,6 @@
             "chapter_name": "Bab 2: Rasa Ingin Tahu yang Mematikan",
             "depth_title": "Pecahnya Kaca Realita",
             "lore_content": "Kegagalan eksperimen yang menyebabkan ruang dan waktu di dalam perpustakaan mulai terdistorsi."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 8 di Dungeon of Knowledge and Wisdom."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 8 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -4647,20 +4243,6 @@
             "chapter_name": "Bab 2: Rasa Ingin Tahu yang Mematikan",
             "depth_title": "Debat Berdarah",
             "lore_content": "Kewarasan yang hilang; para cendekiawan mulai saling membunuh karena paranoia."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 9 di Dungeon of Knowledge and Wisdom."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 9 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -4674,20 +4256,6 @@
             "chapter_name": "Bab 2: Rasa Ingin Tahu yang Mematikan",
             "depth_title": "Pemberontakan Golem Penjaga",
             "lore_content": "Golem magis yang diciptakan untuk melindungi buku, kini diretas oleh The Void dan membantai penciptanya."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 10 di Dungeon of Knowledge and Wisdom."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 10 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -4701,20 +4269,6 @@
             "chapter_name": "Bab 3: Labirin Ilusi dan Distorsi",
             "depth_title": "Koridor Tanpa Ujung",
             "lore_content": "Lorong perpustakaan melipat dirinya sendiri menjadi labirin yang tak bisa diselesaikan."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 11 di Dungeon of Knowledge and Wisdom."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 11 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -4728,20 +4282,6 @@
             "chapter_name": "Bab 3: Labirin Ilusi dan Distorsi",
             "depth_title": "Gravitasi yang Runtuh",
             "lore_content": "Puing-puing bangunan, buku, dan mayat penyihir yang melayang di udara melawan gravitasi."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 12 di Dungeon of Knowledge and Wisdom."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 12 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -4755,20 +4295,6 @@
             "chapter_name": "Bab 3: Labirin Ilusi dan Distorsi",
             "depth_title": "Buku Berkulit Dosa",
             "lore_content": "Penemuan grimoire terkutuk yang akan menyerap jiwa siapapun yang berani membacanya."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 13 di Dungeon of Knowledge and Wisdom."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 13 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -4782,20 +4308,6 @@
             "chapter_name": "Bab 3: Labirin Ilusi dan Distorsi",
             "depth_title": "Bayangan Masa Lalu",
             "lore_content": "Teror ilusi di mana The Void menampilkan ketakutan terbesar dari pikiran sang Hero."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 14 di Dungeon of Knowledge and Wisdom."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 14 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -4809,20 +4321,6 @@
             "chapter_name": "Bab 3: Labirin Ilusi dan Distorsi",
             "depth_title": "Tangisan di Menara Lonceng",
             "lore_content": "Jeritan jiwa-jiwa cendekiawan yang terjebak di antara dimensi, tidak hidup namun tidak bisa mati."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 15 di Dungeon of Knowledge and Wisdom."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 15 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -4836,20 +4334,6 @@
             "chapter_name": "Bab 4: Inti Menara & Sang Pustakawan",
             "depth_title": "Ruang Baca Sang Pemimpin",
             "lore_content": "Memasuki tempat suci milik penyihir terkuat di kerajaan, sang kepala perpustakaan."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 16 di Dungeon of Knowledge and Wisdom."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 16 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -4863,20 +4347,6 @@
             "chapter_name": "Bab 4: Inti Menara & Sang Pustakawan",
             "depth_title": "Tinta Menjadi Darah",
             "lore_content": "Seluruh pengetahuan dan tulisan di ruangan ini telah terkontaminasi penuh oleh energi hitam The Void."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 17 di Dungeon of Knowledge and Wisdom."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 17 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -4890,20 +4360,6 @@
             "chapter_name": "Bab 4: Inti Menara & Sang Pustakawan",
             "depth_title": "Obsesi The Grand Archivist",
             "lore_content": "Sang kepala perpustakaan rela menjual jiwanya pada The Void demi mengawetkan seluruh buku."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 18 di Dungeon of Knowledge and Wisdom."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 18 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -4917,20 +4373,6 @@
             "chapter_name": "Bab 4: Inti Menara & Sang Pustakawan",
             "depth_title": "Mata yang Melihat Segalanya",
             "lore_content": "Wujud mutasi The Grand Archivist yang kini menyatu dengan perpustakaan itu sendiri."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 19 di Dungeon of Knowledge and Wisdom."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 19 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -4944,20 +4386,6 @@
             "chapter_name": "Bab 4: Inti Menara & Sang Pustakawan",
             "depth_title": "Lahirnya Azure Orb",
             "lore_content": "Jiwanya disucikan kembali bersama intisari pengetahuan kerajaan mengkristal menjadi Azure Orb."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 20 di Dungeon of Knowledge and Wisdom."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 20 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         }
       ]
@@ -4981,20 +4409,6 @@
             "chapter_name": "Bab 1: Suaka yang Membusuk",
             "depth_title": "Mata Air Kehidupan",
             "lore_content": "The Chronicler mengenang masa ketika air rawa ini bisa menyembuhkan luka separah apa pun."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 1 di Dungeon of Thorns and Resilience."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 1 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -5008,20 +4422,6 @@
             "chapter_name": "Bab 1: Suaka yang Membusuk",
             "depth_title": "Akar Penyangga Bumi",
             "lore_content": "Kisah tentang pohon-pohon raksasa yang akarnya menembus hingga ke inti dunia."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 2 di Dungeon of Thorns and Resilience."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 2 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -5035,20 +4435,6 @@
             "chapter_name": "Bab 1: Suaka yang Membusuk",
             "depth_title": "Spora Ungu Pertama",
             "lore_content": "Awal mula jatuhnya kutukan The Void yang turun seperti salju beracun dari langit."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 3 di Dungeon of Thorns and Resilience."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 3 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -5062,20 +4448,6 @@
             "chapter_name": "Bab 1: Suaka yang Membusuk",
             "depth_title": "Air yang Mengubah Wujud",
             "lore_content": "Mata air jernih mulai berubah menjadi lumpur hitam kental yang membakar kulit."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 4 di Dungeon of Thorns and Resilience."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 4 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -5089,20 +4461,6 @@
             "chapter_name": "Bab 1: Suaka yang Membusuk",
             "depth_title": "Duri Penolakan Alam",
             "lore_content": "Flora di rawa mencoba melawan kutukan dengan menumbuhkan duri-duri raksasa."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 5 di Dungeon of Thorns and Resilience."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 5 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -5116,20 +4474,6 @@
             "chapter_name": "Bab 2: Bertahan di Tengah Kelayuan",
             "depth_title": "Lumpur dan Besi",
             "lore_content": "Para petarung rawa menutupi tubuh dengan lumpur ajaib untuk menahan gigitan mutan."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 6 di Dungeon of Thorns and Resilience."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 6 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -5143,20 +4487,6 @@
             "chapter_name": "Bab 2: Bertahan di Tengah Kelayuan",
             "depth_title": "Pawai Para Raksasa",
             "lore_content": "Hewan purba masif mulai kehilangan akal sehat karena terus menghirup miasma."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 7 di Dungeon of Thorns and Resilience."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 7 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -5170,20 +4500,6 @@
             "chapter_name": "Bab 2: Bertahan di Tengah Kelayuan",
             "depth_title": "Tenggelamnya Kuil Penawar",
             "lore_content": "Kuil penyembuhan terakhir yang akhirnya tertelan oleh rawa hisap hidup."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 8 di Dungeon of Thorns and Resilience."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 8 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -5197,20 +4513,6 @@
             "chapter_name": "Bab 2: Bertahan di Tengah Kelayuan",
             "depth_title": "Paru-Paru Penuh Abu Beracun",
             "lore_content": "Penderitaan para penyintas yang perlahan mati lemas karena udara terlalu pekat."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 9 di Dungeon of Thorns and Resilience."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 9 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -5224,20 +4526,6 @@
             "chapter_name": "Bab 2: Bertahan di Tengah Kelayuan",
             "depth_title": "Sang Penjaga yang Membatu",
             "lore_content": "Treant raksasa mengorbankan diri menjadi batu untuk menutup jalan masuk racun."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 10 di Dungeon of Thorns and Resilience."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 10 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -5251,20 +4539,6 @@
             "chapter_name": "Bab 3: Inti Bumi yang Berdarah",
             "depth_title": "Urat Nadi Dunia yang Menghitam",
             "lore_content": "Turun ke sistem akar raksasa yang kini memompa getah beracun berwarna hitam pekat."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 11 di Dungeon of Thorns and Resilience."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 11 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -5278,20 +4552,6 @@
             "chapter_name": "Bab 3: Inti Bumi yang Berdarah",
             "depth_title": "Asimilasi Daging dan Kayu",
             "lore_content": "Pemandangan mengerikan di mana jasad petarung rawa menyatu dengan akar pohon yang hidup."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 12 di Dungeon of Thorns and Resilience."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 12 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -5305,20 +4565,6 @@
             "chapter_name": "Bab 3: Inti Bumi yang Berdarah",
             "depth_title": "Cangkang yang Tak Tembus Pedang",
             "lore_content": "Evolusi monster dengan zirah kulit kayu sekeras baja, kebal serangan ringan."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 13 di Dungeon of Thorns and Resilience."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 13 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -5332,20 +4578,6 @@
             "chapter_name": "Bab 3: Inti Bumi yang Berdarah",
             "depth_title": "Sungai Asam Pelebur Tulang",
             "lore_content": "Lingkungan ekstrem di mana uapnya saja bisa melelehkan perlengkapan besi."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 14 di Dungeon of Thorns and Resilience."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 14 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -5359,20 +4591,6 @@
             "chapter_name": "Bab 3: Inti Bumi yang Berdarah",
             "depth_title": "Detak Jantung di Dalam Lumpur",
             "lore_content": "Mendengar suara detak jantung lambat yang menggetarkan dinding gua; Bos semakin dekat."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 15 di Dungeon of Thorns and Resilience."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 15 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -5386,20 +4604,6 @@
             "chapter_name": "Bab 4: Penjaga Terakhir Alam",
             "depth_title": "Rahim Kebusukan",
             "lore_content": "Memasuki pusat rawa di mana The Void memusatkan seluruh energi racunnya."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 16 di Dungeon of Thorns and Resilience."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 16 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -5413,20 +4617,6 @@
             "chapter_name": "Bab 4: Penjaga Terakhir Alam",
             "depth_title": "Rintihan Sang Titan",
             "lore_content": "Mendengar penderitaan makhluk purba penjaga rawa yang telah disiksa ratusan tahun."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 17 di Dungeon of Thorns and Resilience."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 17 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -5440,20 +4630,6 @@
             "chapter_name": "Bab 4: Penjaga Terakhir Alam",
             "depth_title": "Beban The Rotting Behemoth",
             "lore_content": "Sang penjaga menyerap seluruh racun ke tubuhnya untuk menyelamatkan kerajaan."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 18 di Dungeon of Thorns and Resilience."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 18 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -5467,20 +4643,6 @@
             "chapter_name": "Bab 4: Penjaga Terakhir Alam",
             "depth_title": "Kekuatan yang Menolak Mati",
             "lore_content": "Kengerian wujud Behemoth yang dagingnya membusuk namun beregenerasi secara instan."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 19 di Dungeon of Thorns and Resilience."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 19 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -5494,20 +4656,6 @@
             "chapter_name": "Bab 4: Penjaga Terakhir Alam",
             "depth_title": "Kelahiran Emerald Orb",
             "lore_content": "Esensi kehidupan alam yang murni tersisa dan mengkristal menjadi Emerald Orb."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 20 di Dungeon of Thorns and Resilience."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 20 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         }
       ]
@@ -5531,20 +4679,6 @@
             "chapter_name": "Bab 1: Memasuki Reruntuhan",
             "depth_title": "Bara Api yang Memanggil",
             "lore_content": "The Chronicler menceritakan masa lalu benteng ini sebelum hancur."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 1 di Dungeon of Valor and Ember."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 1 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -5558,20 +4692,6 @@
             "chapter_name": "Bab 1: Memasuki Reruntuhan",
             "depth_title": "Jejak Pasukan Penjaga",
             "lore_content": "Ditemukannya sisa-sisa zirah para prajurit kerajaan."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 2 di Dungeon of Valor and Ember."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 2 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -5585,20 +4705,6 @@
             "chapter_name": "Bab 1: Memasuki Reruntuhan",
             "depth_title": "Runtuhnya Tembok Obsidian",
             "lore_content": "Kisah hari pertama benteng ini diserang oleh sesuatu yang tak kasat mata."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 3 di Dungeon of Valor and Ember."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 3 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -5612,20 +4718,6 @@
             "chapter_name": "Bab 1: Memasuki Reruntuhan",
             "depth_title": "Raungan dari Kawah Bawah",
             "lore_content": "The Chronicler menjelaskan asal-usul monster buas yang kini menghuni tempat ini."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 4 di Dungeon of Valor and Ember."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 4 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -5639,20 +4731,6 @@
             "chapter_name": "Bab 1: Memasuki Reruntuhan",
             "depth_title": "Abu yang Tak Pernah Padam",
             "lore_content": "Menyadari bahwa api di benteng ini menolak untuk mati, menahan kutukan."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 5 di Dungeon of Valor and Ember."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 5 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -5666,20 +4744,6 @@
             "chapter_name": "Bab 2: Invasi Kegelapan",
             "depth_title": "Senjata Patah di Lautan Magma",
             "lore_content": "Kisah tentang para Blacksmith yang bekerja siang malam membuat senjata penangkal bayangan."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 6 di Dungeon of Valor and Ember."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 6 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -5693,20 +4757,6 @@
             "chapter_name": "Bab 2: Invasi Kegelapan",
             "depth_title": "Sumpah Sang Kesatria Merah",
             "lore_content": "Memperkenalkan sosok Jenderal yang memimpin pertahanan."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 7 di Dungeon of Valor and Ember."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 7 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -5720,20 +4770,6 @@
             "chapter_name": "Bab 2: Invasi Kegelapan",
             "depth_title": "Ketika Langit Menjadi Gelap",
             "lore_content": "Deskripsi mengerikan dari The Chronicler saat The Void mulai menelan langit benteng."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 8 di Dungeon of Valor and Ember."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 8 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -5747,20 +4783,6 @@
             "chapter_name": "Bab 2: Invasi Kegelapan",
             "depth_title": "Keputusasaan di Ruang Barikade",
             "lore_content": "Jeritan dan ketakutan prajurit biasa yang menghadapi entitas tanpa wujud."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 9 di Dungeon of Valor and Ember."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 9 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -5774,20 +4796,6 @@
             "chapter_name": "Bab 2: Invasi Kegelapan",
             "depth_title": "Kejatuhan Sang Jenderal",
             "lore_content": "Kekalahan sang Jenderal yang heroik namun tragis di tengah jembatan lava."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 10 di Dungeon of Valor and Ember."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 10 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -5801,20 +4809,6 @@
             "chapter_name": "Bab 3: Korupsi Api",
             "depth_title": "Api yang Berubah Hitam",
             "lore_content": "The Chronicler menjelaskan bagaimana The Void mencemari elemen api di gunung tersebut."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 11 di Dungeon of Valor and Ember."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 11 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -5828,20 +4822,6 @@
             "chapter_name": "Bab 3: Korupsi Api",
             "depth_title": "Monster yang Lahir dari Kepanikan",
             "lore_content": "Mutasi para prajurit menjadi monster beast karena energi gelap."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 12 di Dungeon of Valor and Ember."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 12 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -5855,20 +4835,6 @@
             "chapter_name": "Bab 3: Korupsi Api",
             "depth_title": "Pesan Terakhir di Dinding Hangus",
             "lore_content": "Sebuah catatan darah dari prajurit yang meminta maaf pada keluarganya."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 13 di Dungeon of Valor and Ember."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 13 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -5882,20 +4848,6 @@
             "chapter_name": "Bab 3: Korupsi Api",
             "depth_title": "Kebangkitan Pasukan Abu",
             "lore_content": "Prajurit yang telah mati dihidupkan kembali sebagai boneka The Void."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 14 di Dungeon of Valor and Ember."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 14 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -5909,20 +4861,6 @@
             "chapter_name": "Bab 3: Korupsi Api",
             "depth_title": "Lorong Keputusasaan",
             "lore_content": "Jalan turun menuju inti gunung yang kini dipenuhi aura kematian pekat."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 15 di Dungeon of Valor and Ember."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 15 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -5936,20 +4874,6 @@
             "chapter_name": "Bab 4: Pusat Kawah & Sang Penjaga",
             "depth_title": "Jantung Gunung Berapi",
             "lore_content": "Penjelasan tentang ruang magma tempat esensi kerajaan dulu disimpan."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 16 di Dungeon of Valor and Ember."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 16 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -5963,20 +4887,6 @@
             "chapter_name": "Bab 4: Pusat Kawah & Sang Penjaga",
             "depth_title": "Gema Peperangan yang Terlupakan",
             "lore_content": "Mendengar ilusi suara peperangan masa lalu yang terjebak dalam ruang waktu."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 17 di Dungeon of Valor and Ember."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 17 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -5990,20 +4900,6 @@
             "chapter_name": "Bab 4: Pusat Kawah & Sang Penjaga",
             "depth_title": "Kegilaan The Ashen Warlord",
             "lore_content": "Sang Jenderal dari Depth 7 yang kini dibangkitkan oleh The Void menjadi Bos penjaga."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 18 di Dungeon of Valor and Ember."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 18 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -6017,20 +4913,6 @@
             "chapter_name": "Bab 4: Pusat Kawah & Sang Penjaga",
             "depth_title": "Percikan Harapan Terakhir",
             "lore_content": "Kesadaran The Ashen Warlord yang meronta-ronta di dalam kendali The Void, menunggu untuk dibebaskan."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 19 di Dungeon of Valor and Ember."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 19 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -6044,20 +4926,6 @@
             "chapter_name": "Bab 4: Pusat Kawah & Sang Penjaga",
             "depth_title": "Lahirnya Crimson Orb",
             "lore_content": "Cerita penutup dari pengorbanan jiwa sang Warlord yang mengkristal menjadi Crimson Orb setelah dikalahkan."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 20 di Dungeon of Valor and Ember."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 20 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         }
       ]
@@ -6081,20 +4949,6 @@
             "chapter_name": "Bab 1: Hutan yang Terlupakan",
             "depth_title": "Kanopi Zamrud yang Memudar",
             "lore_content": "Masa ketika daun-daun di hutan ini bersinar di bawah sinar bulan, sebelum kabut menelan segalanya."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 1 di Dungeon of Whispers and Shadows."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 1 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -6108,20 +4962,6 @@
             "chapter_name": "Bab 1: Hutan yang Terlupakan",
             "depth_title": "Jejak Kaki Tanpa Suara",
             "lore_content": "Pengenalan tentang ordo pelindung bayangan kerajaan; prajurit elit yang bergerak tanpa suara."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 2 di Dungeon of Whispers and Shadows."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 2 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -6135,20 +4975,6 @@
             "chapter_name": "Bab 1: Hutan yang Terlupakan",
             "depth_title": "Nyanyian Burung Hantu yang Terdiam",
             "lore_content": "Kisah sedih saat hewan-hewan dan roh penjaga hutan mulai mati satu per satu."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 3 di Dungeon of Whispers and Shadows."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 3 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -6162,20 +4988,6 @@
             "chapter_name": "Bab 1: Hutan yang Terlupakan",
             "depth_title": "Kabut yang Mengaburkan Arah",
             "lore_content": "The Void mengubah embun pagi menjadi kabut hitam yang membuat pemburu tersesat di rumah sendiri."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 4 di Dungeon of Whispers and Shadows."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 4 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -6189,20 +5001,6 @@
             "chapter_name": "Bab 1: Hutan yang Terlupakan",
             "depth_title": "Mata di Balik Rimbunan Gelap",
             "lore_content": "Satwa liar mulai bermutasi menjadi monster buas dengan mata menyala."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 5 di Dungeon of Whispers and Shadows."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 5 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -6216,20 +5014,6 @@
             "chapter_name": "Bab 2: Paranoia dan Pengkhianatan",
             "depth_title": "Racun di Ujung Belati",
             "lore_content": "Para pemburu mulai menggunakan racun terlarang dan ilmu hitam untuk melawan anomali hutan."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 6 di Dungeon of Whispers and Shadows."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 6 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -6243,20 +5027,6 @@
             "chapter_name": "Bab 2: Paranoia dan Pengkhianatan",
             "depth_title": "Bisikan yang Membelah Pikiran",
             "lore_content": "The Void mulai membisikkan kebohongan, memicu benih kecurigaan di antara para assassin."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 7 di Dungeon of Whispers and Shadows."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 7 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -6270,20 +5040,6 @@
             "chapter_name": "Bab 2: Paranoia dan Pengkhianatan",
             "depth_title": "Ilusi Tarian Daun Gugur",
             "lore_content": "Halusinasi massal akibat spora beracun; kawan terlihat seperti monster."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 8 di Dungeon of Whispers and Shadows."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 8 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -6297,20 +5053,6 @@
             "chapter_name": "Bab 2: Paranoia dan Pengkhianatan",
             "depth_title": "Pohon Ek Tempat Menggantung Dosa",
             "lore_content": "Penemuan pelindung bayangan yang saling mengeksekusi saudara sendiri karena paranoia."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 9 di Dungeon of Whispers and Shadows."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 9 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -6324,20 +5066,6 @@
             "chapter_name": "Bab 2: Paranoia dan Pengkhianatan",
             "depth_title": "Putusnya Tali Persaudaraan",
             "lore_content": "Pertumpahan darah terakhir mengubah hutan pelindung menjadi kuburan massal."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 10 di Dungeon of Whispers and Shadows."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 10 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -6351,20 +5079,6 @@
             "chapter_name": "Bab 3: Turun ke Jurang Keputusasaan",
             "depth_title": "Jurang Tanpa Dasar",
             "lore_content": "Jalan setapak sempit menuju celah bumi yang gelap; satu langkah salah berarti mati."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 11 di Dungeon of Whispers and Shadows."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 11 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -6378,20 +5092,6 @@
             "chapter_name": "Bab 3: Turun ke Jurang Keputusasaan",
             "depth_title": "Akar Berdarah yang Menjalar",
             "lore_content": "Akar-akar pohon raksasa yang kini hidup dan menghisap darah dari mayat."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 12 di Dungeon of Whispers and Shadows."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 12 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -6405,20 +5105,6 @@
             "chapter_name": "Bab 3: Turun ke Jurang Keputusasaan",
             "depth_title": "Gema Tangisan di Bawah Tanah",
             "lore_content": "Roh pelindung bayangan terjebak; jiwa mereka diikat oleh The Void."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 13 di Dungeon of Whispers and Shadows."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 13 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -6432,20 +5118,6 @@
             "chapter_name": "Bab 3: Turun ke Jurang Keputusasaan",
             "depth_title": "Bunga Kematian yang Mekar",
             "lore_content": "Flora mematikan yang menyemburkan gas pelumpuh saraf."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 14 di Dungeon of Whispers and Shadows."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 14 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -6459,20 +5131,6 @@
             "chapter_name": "Bab 3: Turun ke Jurang Keputusasaan",
             "depth_title": "Jembatan Akar Rapuh",
             "lore_content": "Ujian keseimbangan di atas jurang gelap, makhluk bayangan siap menarik siapa saja yang lengah."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 15 di Dungeon of Whispers and Shadows."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 15 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -6486,20 +5144,6 @@
             "chapter_name": "Bab 4: Sarang Sang Pengintai",
             "depth_title": "Sarang Sang Laba-laba Bayangan",
             "lore_content": "Memasuki pusat episentrum kabut, tempat di mana cahaya sama sekali tidak bisa masuk."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 16 di Dungeon of Whispers and Shadows."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 16 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -6513,20 +5157,6 @@
             "chapter_name": "Bab 4: Sarang Sang Pengintai",
             "depth_title": "Siluet yang Menari dalam Gelap",
             "lore_content": "Menghadapi serangan beruntun dari entitas super cepat yang sulit ditangkap mata."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 17 di Dungeon of Whispers and Shadows."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 17 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -6540,20 +5170,6 @@
             "chapter_name": "Bab 4: Sarang Sang Pengintai",
             "depth_title": "Kekosongan Hati The Phantom Stalker",
             "lore_content": "Pemimpin assassin menyerahkan jiwanya pada The Void agar anak buahnya diampuni, namun ia ditipu."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 18 di Dungeon of Whispers and Shadows."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 18 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -6567,20 +5183,6 @@
             "chapter_name": "Bab 4: Sarang Sang Pengintai",
             "depth_title": "Tatapan Kosong Sang Pembunuh",
             "lore_content": "Wujud mutasi The Phantom Stalker yang kini hanya memiliki satu insting dasar: membunuh."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 19 di Dungeon of Whispers and Shadows."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 19 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -6594,20 +5196,6 @@
             "chapter_name": "Bab 4: Sarang Sang Pengintai",
             "depth_title": "Kelahiran Obsidian Orb",
             "lore_content": "Jiwa sang pemimpin bebas, meninggalkan esensi kelincahan yang memadat menjadi Obsidian Orb."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 20 di Dungeon of Whispers and Shadows."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 20 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         }
       ]
@@ -6631,20 +5219,6 @@
             "chapter_name": "Bab Final",
             "depth_title": "Panglima Gerhana",
             "lore_content": "Langkah pertama Hero menembus dimensi The Void melawan Eclipse Vanguard."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 1 di Tahta Kehampaan."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 1 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -6658,20 +5232,6 @@
             "chapter_name": "Bab Final",
             "depth_title": "Tangan Kanan Kehancuran",
             "lore_content": "Menghadapi Architect of Ruin yang memanipulasi gravitasi dan pikiran."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 2 di Tahta Kehampaan."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 2 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -6685,20 +5245,6 @@
             "chapter_name": "Bab Final",
             "depth_title": "Wujud Pertama: Lahirnya Sang Kehampaan",
             "lore_content": "The Void menampakkan wujud pusaran badai anomali tanpa bentuk yang melahap cahaya."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 3 di Tahta Kehampaan."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 3 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -6712,20 +5258,6 @@
             "chapter_name": "Bab Final",
             "depth_title": "Wujud Kedua: Penelan Realita",
             "lore_content": "The Void berevolusi menjadi monster raksasa berlengan banyak pemegang senjata realita retak."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 4 di Tahta Kehampaan."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 4 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         },
         {
@@ -6739,20 +5271,6 @@
             "chapter_name": "Bab Final",
             "depth_title": "Wujud Sempurna: Akhir dari Segalanya",
             "lore_content": "Entri terakhir The Chronicler: apakah akan berakhir dengan cahaya, atau ketiadaan abadi."
-          },
-          "dialog": {
-            "on_enter": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Kamu memasuki Depth 5 di Tahta Kehampaan."
-              }
-            ],
-            "on_clear": [
-              {
-                "speaker": "Narrator",
-                "text": "Dummy dialog: Depth 5 telah berhasil kamu taklukkan. Lanjutkan perjalanannya."
-              }
-            ]
           }
         }
       ]
