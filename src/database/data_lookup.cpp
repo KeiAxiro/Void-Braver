@@ -155,7 +155,7 @@ int expRequiredForNextLevel(const GameContext &ctx, int nextLevel)
 
     for (const auto &row : ctx.gameData["balance"]["level_exp"])
     {
-        if (asInt(row.value("level", json(-1)), -1) == nextLevel)
+        if (asInt(row.value("level", json(Config::Progress::MISSING_LEVEL)), Config::Progress::MISSING_LEVEL) == nextLevel)
         {
             const int fallbackExp = nextLevel * player_balance::kExpFallbackLinearMultiplier;
             const int baseExp = asInt(row.value("exp_required", json(fallbackExp)), fallbackExp);

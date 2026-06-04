@@ -75,6 +75,7 @@ namespace Config
         inline constexpr int DEPTH_UNLOCK_STEP = 1;            // Tambahan depth yang terbuka setelah clear.
         inline constexpr int LEVEL_RANGE_MIN_FALLBACK = 1;     // Min level fallback jika data depth kosong.
         inline constexpr int LEVEL_RANGE_MAX_FALLBACK = 999;   // Max level fallback jika data depth kosong.
+        inline constexpr int MISSING_LEVEL = -1;                // Sentinel level saat data balance tidak ditemukan.
         inline constexpr const char *FINAL_DUNGEON_ID = "tahta_kehampaan"; // ID dungeon final yang dikunci oleh progress.
         inline constexpr int GRAPH_MAX_NODES = 16;             // Kapasitas node graph dungeon.
         inline constexpr int ROUTE_INFINITY = 1000000;         // Nilai jarak tak hingga untuk Dijkstra.
@@ -83,6 +84,9 @@ namespace Config
 
     namespace StarterKit
     {
+        inline constexpr const char *KNIGHT_CLASS_ID = "knight";                // ID class Knight untuk starter kit.
+        inline constexpr const char *SORCERER_CLASS_ID = "sorcerer";            // ID class Sorcerer untuk starter kit.
+        inline constexpr const char *WANDERER_CLASS_ID = "wanderer";            // ID class Wanderer untuk starter kit.
         inline constexpr const char *HEALING_POTION_ID = "healing_potion";       // ID potion HP awal.
         inline constexpr int HEALING_POTION_QTY = 3;                             // Jumlah potion HP awal.
         inline constexpr const char *MANA_ELIXIR_ID = "mana_elixir";             // ID potion MP awal.
@@ -123,7 +127,7 @@ namespace Config
         inline constexpr int DEFENSE_STR_DIVISOR = 12;               // Pembagi STR untuk DEF.
         inline constexpr double DEFENSE_EQUIPMENT_MULTIPLIER = 0.65; // Pengali bonus DEF dari equipment.
         inline constexpr double DEFENSE_BUFF_MULTIPLIER = 1.25;      // Pengali DEF saat buff aktif.
-inline constexpr int SPEED_BASE_PER_LEVEL = 2;               // Kontribusi level ke speed.
+        inline constexpr int SPEED_BASE_PER_LEVEL = 2;                // Kontribusi level ke speed.
         inline constexpr int SPEED_PER_AGI = 2;                      // Tambahan speed setiap 1 AGI.
         inline constexpr double SPEED_BUFF_MULTIPLIER = 1.25;        // Pengali speed saat buff AGI aktif.
         inline constexpr double CRIT_BASE_RATE = 0.12;               // Peluang critical dasar player.
@@ -133,8 +137,8 @@ inline constexpr int SPEED_BASE_PER_LEVEL = 2;               // Kontribusi level
         inline constexpr int DEFEAT_RECOVERY_DIVISOR = 2;            // Pembagi max HP/MP untuk recovery setelah kalah.
         inline constexpr int MIN_ATTACK = 1;                         // ATK minimum setelah kalkulasi.
         inline constexpr int MIN_DEFENSE = 0;                        // DEF minimum setelah kalkulasi.
-        inline constexpr int MAX_EFFECTIVE_DEFENSE_FOR_DAMAGE = 500; // Batas DEF efektif agar damage output tidak jadi 1 saat DEF terlalu tinggi.
-        inline constexpr int DEFENSE_REDUCED_DAMAGE_FLOOR_DENOMINATOR = 2; // denominator agar mapping tetap mirip rumus semula.
+        inline constexpr int MAX_EFFECTIVE_DEFENSE_FOR_DAMAGE = 500;  // Batas DEF efektif agar damage tidak selalu jatuh ke minimum.
+        inline constexpr int DEFENSE_REDUCED_DAMAGE_FLOOR_DENOMINATOR = 2; // Pembagi sisa DEF di atas cap agar scaling tetap terkendali.
 
         // Kap untuk damage yang diterima pemain dari serangan musuh.
         // Masalah yang dilaporkan: saat DEF target (player) terlalu tinggi, rumus damage enemy - player menjadi turun ke nilai floor (1).

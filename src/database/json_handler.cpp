@@ -123,7 +123,7 @@ namespace database_detail
             if (!item || !item->contains("stats") || !(*item)["stats"].is_object())
                 continue;
 
-            total += asInt((*item)["stats"].value(bonusKey, json(0)), 0);
+            total += asInt((*item)["stats"].value(bonusKey, json(Config::Math::ZERO)), Config::Math::ZERO);
         }
         return total;
     }
@@ -159,19 +159,19 @@ namespace database_detail
         giveIfExists(Config::StarterKit::HEALING_POTION_ID, Config::StarterKit::HEALING_POTION_QTY, false);
         giveIfExists(Config::StarterKit::MANA_ELIXIR_ID, Config::StarterKit::MANA_ELIXIR_QTY, false);
 
-        if (ctx.player.class_id == "knight")
+        if (ctx.player.class_id == Config::StarterKit::KNIGHT_CLASS_ID)
         {
             giveIfExists(Config::StarterKit::KNIGHT_HELMET_ID, Config::StarterKit::EQUIPMENT_QTY, true);
             giveIfExists(Config::StarterKit::KNIGHT_ARMOR_ID, Config::StarterKit::EQUIPMENT_QTY, true);
             giveIfExists(Config::StarterKit::KNIGHT_WEAPON_ID, Config::StarterKit::EQUIPMENT_QTY, true);
             giveIfExists(Config::StarterKit::KNIGHT_BOOTS_ID, Config::StarterKit::EQUIPMENT_QTY, true);
         }
-        else if (ctx.player.class_id == "sorcerer")
+        else if (ctx.player.class_id == Config::StarterKit::SORCERER_CLASS_ID)
         {
             giveIfExists(Config::StarterKit::SORCERER_WEAPON_ID, Config::StarterKit::EQUIPMENT_QTY, true);
             giveIfExists(Config::StarterKit::SORCERER_ARMOR_ID, Config::StarterKit::EQUIPMENT_QTY, true);
         }
-        else if (ctx.player.class_id == "wanderer")
+        else if (ctx.player.class_id == Config::StarterKit::WANDERER_CLASS_ID)
         {
             giveIfExists(Config::StarterKit::WANDERER_WEAPON_ID, Config::StarterKit::EQUIPMENT_QTY, true);
             giveIfExists(Config::StarterKit::WANDERER_HELMET_ID, Config::StarterKit::EQUIPMENT_QTY, true);
