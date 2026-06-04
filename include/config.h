@@ -123,7 +123,7 @@ namespace Config
         inline constexpr int DEFENSE_STR_DIVISOR = 12;               // Pembagi STR untuk DEF.
         inline constexpr double DEFENSE_EQUIPMENT_MULTIPLIER = 0.65; // Pengali bonus DEF dari equipment.
         inline constexpr double DEFENSE_BUFF_MULTIPLIER = 1.25;      // Pengali DEF saat buff aktif.
-        inline constexpr int SPEED_BASE_PER_LEVEL = 1;               // Kontribusi level ke speed.
+inline constexpr int SPEED_BASE_PER_LEVEL = 2;               // Kontribusi level ke speed.
         inline constexpr int SPEED_PER_AGI = 2;                      // Tambahan speed setiap 1 AGI.
         inline constexpr double SPEED_BUFF_MULTIPLIER = 1.25;        // Pengali speed saat buff AGI aktif.
         inline constexpr double CRIT_BASE_RATE = 0.12;               // Peluang critical dasar player.
@@ -133,6 +133,21 @@ namespace Config
         inline constexpr int DEFEAT_RECOVERY_DIVISOR = 2;            // Pembagi max HP/MP untuk recovery setelah kalah.
         inline constexpr int MIN_ATTACK = 1;                         // ATK minimum setelah kalkulasi.
         inline constexpr int MIN_DEFENSE = 0;                        // DEF minimum setelah kalkulasi.
+        inline constexpr int MAX_EFFECTIVE_DEFENSE_FOR_DAMAGE = 500; // Batas DEF efektif agar damage output tidak jadi 1 saat DEF terlalu tinggi.
+        inline constexpr int DEFENSE_REDUCED_DAMAGE_FLOOR_DENOMINATOR = 2; // denominator agar mapping tetap mirip rumus semula.
+
+        // Kap untuk damage yang diterima pemain dari serangan musuh.
+        // Masalah yang dilaporkan: saat DEF target (player) terlalu tinggi, rumus damage enemy - player menjadi turun ke nilai floor (1).
+        // Dengan memotong DEF efektif, damage tidak “menghancur” jadi 1.
+        inline constexpr int MAX_EFFECTIVE_PLAYER_DEFENSE_FOR_ENEMY_DAMAGE = MAX_EFFECTIVE_DEFENSE_FOR_DAMAGE;
+        inline constexpr int DEFENSE_REDUCED_PLAYER_DAMAGE_FLOOR_DENOMINATOR = DEFENSE_REDUCED_DAMAGE_FLOOR_DENOMINATOR;
+
+
+
+
+
+
+
         inline constexpr int MIN_SPEED = 1;                          // Speed minimum setelah kalkulasi.
         inline constexpr int MIN_DAMAGE = 1;                         // Damage minimum saat serangan berhasil mengenai target.
         inline constexpr int RESOURCE_FLOOR = 0;                     // Nilai bawah HP/MP saat dikurangi.
@@ -350,6 +365,12 @@ namespace game_rules {
     inline constexpr const char *kTitleSeparator = Config::Rules::TITLE_SEPARATOR;
 }
 namespace player_balance {
+    inline constexpr int kMaxEffectiveDefenseForDamage = Config::Player::MAX_EFFECTIVE_DEFENSE_FOR_DAMAGE;
+    inline constexpr int kMaxEffectiveDefenseForEnemyDamage = Config::Player::MAX_EFFECTIVE_PLAYER_DEFENSE_FOR_ENEMY_DAMAGE;
+    inline constexpr int kDefenseReducedPlayerDamageFloorDenominator = Config::Player::DEFENSE_REDUCED_PLAYER_DAMAGE_FLOOR_DENOMINATOR;
+
+
+
     inline constexpr int kBaseHpStart = Config::Player::BASE_HP_START;
     inline constexpr int kBaseHpPerLevel = Config::Player::BASE_HP_PER_LEVEL;
     inline constexpr int kBaseHpPerVit = Config::Player::BASE_HP_PER_VIT;
