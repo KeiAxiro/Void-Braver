@@ -159,6 +159,7 @@ namespace state_helpers
         Defeat
     };
 
+    void clsScreen();
     int randInt(int minValue, int maxValue);
     double randUnit();
     std::string trim(const std::string &value);

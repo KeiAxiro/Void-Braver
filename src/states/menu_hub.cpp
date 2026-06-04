@@ -16,6 +16,10 @@ using namespace std;
 
 namespace state_helpers
 {
+    void clsScreen(){
+        system("cls||clear");
+    }
+    
     mt19937 &rng()
     {
         static mt19937 gen{random_device{}()};

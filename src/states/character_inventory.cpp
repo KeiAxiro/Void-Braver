@@ -117,9 +117,45 @@ namespace state_helpers
 
     int skillUnlockLevelForIndex(int listIndex)
     {
-        if (listIndex <= 1)
-            return 1;
-        return 1 + (listIndex - 1) * 2;
+        int unlockSkillLevel = 1;
+        switch (listIndex){
+        case 1:{
+            break;
+            }
+        case 2:{
+            unlockSkillLevel = 3;
+            break;
+            }
+        case 3:{
+            unlockSkillLevel = 6;
+            break;
+            }
+        case 4:{
+            unlockSkillLevel = 20;
+            break;
+            }
+        case 5:{
+            unlockSkillLevel = 25;
+            break;
+            }
+        case 6:{
+            unlockSkillLevel = 31;
+            break;
+            }
+        case 7:{
+            unlockSkillLevel = 50;
+            break;
+            }
+        case 8:{
+            unlockSkillLevel = 58;
+            break;
+            }
+        case 9:{
+            unlockSkillLevel = 67;
+            break;
+            }
+        }
+        return unlockSkillLevel;
     }
 
     bool isSkillUnlockedByLevel(const Player &player, int listIndex)

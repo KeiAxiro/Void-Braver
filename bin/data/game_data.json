@@ -100,12 +100,12 @@
       "tiers": [
         {
           "id": "archmage",
-          "level": 2,
+          "level": 20,
           "name": "Archmage"
         },
         {
           "id": "archon",
-          "level": 3,
+          "level": 50,
           "name": "Archon"
         }
       ],
@@ -192,12 +192,12 @@
       "tiers": [
         {
           "id": "nightstalker",
-          "level": 2,
+          "level": 20,
           "name": "Nightstalker"
         },
         {
           "id": "nightfall",
-          "level": 3,
+          "level": 50,
           "name": "Nightfall"
         }
       ],
@@ -484,7 +484,7 @@
     {
       "id": "archmage_s_cloak",
       "category": "armor",
-      "name": "Archmage’s Cloak",
+      "name": "Archmage's Cloak",
       "description": "Jubah kebesaran Archmage istana.",
       "buy_price": 13000,
       "sell_price": 8500,
@@ -530,7 +530,7 @@
     {
       "id": "assassin_s_visage",
       "category": "helmet",
-      "name": "Assassin’s Visage",
+      "name": "Assassin's Visage",
       "description": "Topeng wajah sang pembunuh.",
       "buy_price": 0,
       "sell_price": 35000,
@@ -767,7 +767,7 @@
     {
       "id": "commander_s_crest",
       "category": "helmet",
-      "name": "Commander’s Crest",
+      "name": "Commander's Crest",
       "description": "Helm berlambang komandan perang.",
       "buy_price": 8500,
       "sell_price": 4500,
@@ -951,7 +951,7 @@
     {
       "id": "duelist_s_leather",
       "category": "armor",
-      "name": "Duelist’s Leather",
+      "name": "Duelist's Leather",
       "description": "Zirah kulit ringan khusus pertarungan.",
       "buy_price": 14000,
       "sell_price": 8500,
@@ -1055,7 +1055,7 @@
     {
       "id": "enchanter_s_boots",
       "category": "boots",
-      "name": "Enchanter’s Boots",
+      "name": "Enchanter's Boots",
       "description": "Sepatu bot para pemantra.",
       "buy_price": 0,
       "sell_price": 1500,
@@ -1171,7 +1171,7 @@
     {
       "id": "executioner_s_pride",
       "category": "weapon",
-      "name": "Executioner’s Pride",
+      "name": "Executioner's Pride",
       "description": "Senjata legendaris para algojo kerajaan.",
       "buy_price": 0,
       "sell_price": 45000,
@@ -1390,7 +1390,7 @@
     {
       "id": "gladiator_s_crown",
       "category": "helmet",
-      "name": "Gladiator’s Crown",
+      "name": "Gladiator's Crown",
       "description": "Mahkota para gladiator tak terkalahkan.",
       "buy_price": 0,
       "sell_price": 35000,
@@ -1448,7 +1448,7 @@
     {
       "id": "god_king_s_bastion",
       "category": "armor",
-      "name": "God-King’s Bastion",
+      "name": "God-King's Bastion",
       "description": "Benteng pelindung raja dewa.",
       "buy_price": 0,
       "sell_price": 250000,
@@ -1506,7 +1506,7 @@
     {
       "id": "grand_marshall_s_stride",
       "category": "boots",
-      "name": "Grand Marshall’s Stride",
+      "name": "Grand Marshall's Stride",
       "description": "Sepatu langkah keagungan.",
       "buy_price": 0,
       "sell_price": 90000,
@@ -1564,7 +1564,7 @@
     {
       "id": "guard_s_visor",
       "category": "helmet",
-      "name": "Guard’s Visor",
+      "name": "Guard's Visor",
       "description": "Helm dengan visor pelindung penuh.",
       "buy_price": 0,
       "sell_price": 2200,
@@ -1957,7 +1957,7 @@
     {
       "id": "knight_s_heavy_axe",
       "category": "weapon",
-      "name": "Knight’s Heavy Axe",
+      "name": "Knight's Heavy Axe",
       "description": "Kapak berat untuk menghancurkan zirah.",
       "buy_price": 0,
       "sell_price": 3000,
@@ -1986,7 +1986,7 @@
     {
       "id": "knight_s_plate",
       "category": "armor",
-      "name": "Knight’s Plate",
+      "name": "Knight's Plate",
       "description": "Zirah plat baja penuh standar kesatria.",
       "buy_price": 15000,
       "sell_price": 8500,
@@ -2165,7 +2165,7 @@
     {
       "id": "mage_s_cowl",
       "category": "helmet",
-      "name": "Mage’s Cowl",
+      "name": "Mage's Cowl",
       "description": "Tudung kepala penyihir standar.",
       "buy_price": 1800,
       "sell_price": 1000,
@@ -2182,7 +2182,7 @@
     {
       "id": "mage_s_sandals",
       "category": "boots",
-      "name": "Mage’s Sandals",
+      "name": "Mage's Sandals",
       "description": "Sandal khusus para penyihir.",
       "buy_price": 1200,
       "sell_price": 750,
@@ -2318,7 +2318,7 @@
     {
       "id": "marshall_s_iron_face",
       "category": "helmet",
-      "name": "Marshall’s Iron Face",
+      "name": "Marshall's Iron Face",
       "description": "Wajah besi sang jenderal agung.",
       "buy_price": 0,
       "sell_price": 120000,
@@ -2434,7 +2434,7 @@
     {
       "id": "nature_s_embrace",
       "category": "armor",
-      "name": "Nature’s Embrace",
+      "name": "Nature's Embrace",
       "description": "Zirah pelukan alam terbuka.",
       "buy_price": 0,
       "sell_price": 35000,
@@ -2492,7 +2492,7 @@
     {
       "id": "nightfall_s_path",
       "category": "boots",
-      "name": "Nightfall’s Path",
+      "name": "Nightfall's Path",
       "description": "Alas penyusur jalan sang Nightfall.",
       "buy_price": 0,
       "sell_price": 90000,
@@ -2630,7 +2630,7 @@
     {
       "id": "pyromancer_s_mantle",
       "category": "armor",
-      "name": "Pyromancer’s Mantle",
+      "name": "Pyromancer's Mantle",
       "description": "Mantel pengendali api.",
       "buy_price": 0,
       "sell_price": 18000,
@@ -2659,7 +2659,7 @@
     {
       "id": "ranger_s_garb",
       "category": "armor",
-      "name": "Ranger’s Garb",
+      "name": "Ranger's Garb",
       "description": "Pakaian penjelajah alam liar.",
       "buy_price": 0,
       "sell_price": 4500,
@@ -2838,7 +2838,7 @@
     {
       "id": "sage_s_veil",
       "category": "helmet",
-      "name": "Sage’s Veil",
+      "name": "Sage's Veil",
       "description": "Kerudung kebijaksanaan orang bijak.",
       "buy_price": 0,
       "sell_price": 2200,
@@ -2925,7 +2925,7 @@
     {
       "id": "scholar_s_tunic",
       "category": "armor",
-      "name": "Scholar’s Tunic",
+      "name": "Scholar's Tunic",
       "description": "Tunik para pelajar ilmu sihir.",
       "buy_price": 0,
       "sell_price": 900,
@@ -3249,7 +3249,7 @@
     {
       "id": "sorcerer_s_stride",
       "category": "boots",
-      "name": "Sorcerer’s Stride",
+      "name": "Sorcerer's Stride",
       "description": "Sepatu bot langkah sorcerer.",
       "buy_price": 5000,
       "sell_price": 3000,
@@ -3282,7 +3282,7 @@
     {
       "id": "specter_s_gaze",
       "category": "helmet",
-      "name": "Specter’s Gaze",
+      "name": "Specter's Gaze",
       "description": "Tatapan sang hantu.",
       "buy_price": 0,
       "sell_price": 60000,
@@ -3420,7 +3420,7 @@
     {
       "id": "titan_s_footsteps",
       "category": "boots",
-      "name": "Titan’s Footsteps",
+      "name": "Titan's Footsteps",
       "description": "Langkah kaki para Titan.",
       "buy_price": 0,
       "sell_price": 22000,
@@ -3478,7 +3478,7 @@
     {
       "id": "tracker_s_mask",
       "category": "helmet",
-      "name": "Tracker’s Mask",
+      "name": "Tracker's Mask",
       "description": "Topeng penyamar pelacak tapak.",
       "buy_price": 7500,
       "sell_price": 4500,
@@ -3495,7 +3495,7 @@
     {
       "id": "traveler_s_boots",
       "category": "boots",
-      "name": "Traveler’s Boots",
+      "name": "Traveler's Boots",
       "description": "Sepatu bot petualang.",
       "buy_price": 300,
       "sell_price": 150,
@@ -3772,7 +3772,7 @@
     {
       "id": "warrior_s_emblem",
       "category": "accessory",
-      "name": "Warrior’s Emblem",
+      "name": "Warrior's Emblem",
       "description": "Aksesoris peningkatan Damage",
       "buy_price": 0,
       "sell_price": 15000,
@@ -3834,7 +3834,7 @@
     {
       "id": "wizard_s_tricorn",
       "category": "helmet",
-      "name": "Wizard’s Tricorn",
+      "name": "Wizard's Tricorn",
       "description": "Topi bersudut tiga khas penyihir agung.",
       "buy_price": 7000,
       "sell_price": 4500,
