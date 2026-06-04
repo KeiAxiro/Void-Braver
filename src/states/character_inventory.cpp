@@ -117,45 +117,14 @@ namespace state_helpers
 
     int skillUnlockLevelForIndex(int listIndex)
     {
-        int unlockSkillLevel = 1;
-        switch (listIndex){
-        case 1:{
-            break;
-            }
-        case 2:{
-            unlockSkillLevel = 3;
-            break;
-            }
-        case 3:{
-            unlockSkillLevel = 6;
-            break;
-            }
-        case 4:{
-            unlockSkillLevel = 20;
-            break;
-            }
-        case 5:{
-            unlockSkillLevel = 25;
-            break;
-            }
-        case 6:{
-            unlockSkillLevel = 31;
-            break;
-            }
-        case 7:{
-            unlockSkillLevel = 50;
-            break;
-            }
-        case 8:{
-            unlockSkillLevel = 58;
-            break;
-            }
-        case 9:{
-            unlockSkillLevel = 67;
-            break;
-            }
-        }
-        return unlockSkillLevel;
+        if (listIndex < skill_balance::kFirstSkillIndex)
+            return Config::Defaults::PLAYER_LEVEL;
+
+        const int unlockIndex = listIndex - skill_balance::kFirstSkillIndex;
+        if (unlockIndex >= skill_balance::kUnlockLevelCount)
+            return Config::Defaults::PLAYER_LEVEL;
+
+        return skill_balance::kUnlockLevels[unlockIndex];
     }
 
     bool isSkillUnlockedByLevel(const Player &player, int listIndex)
@@ -168,9 +137,9 @@ namespace state_helpers
         if (!skills.is_array() || leftIndex > rightIndex)
             return nullptr;
 
-        const int mid = (leftIndex + rightIndex) / 2;
+        const int mid = (leftIndex + rightIndex) / skill_balance::kSkillTreeSplitDivisor;
         SkillTreeNode *node = new SkillTreeNode;
-        node->skill = &skills[static_cast<std::size_t>(mid - 1)];
+        node->skill = &skills[static_cast<std::size_t>(mid - Config::Math::INDEX_OFFSET)];
         node->list_index = mid;
         node->unlock_level = skillUnlockLevelForIndex(mid);
         node->left = buildSkillTree(skills, leftIndex, mid - 1);
@@ -284,10 +253,10 @@ namespace state_helpers
             }
         }
 
-        if (ctx.player.inventory[index].quantity > 1)
+        if (ctx.player.inventory[index].quantity > Config::Item::EQUIPMENT_SPLIT_THRESHOLD)
         {
-            ctx.player.inventory[index].quantity -= 1;
-            addItem(ctx.player, selected.item_id, 1, true, slot);
+            ctx.player.inventory[index].quantity -= Config::Item::EQUIPMENT_TRANSFER_QUANTITY;
+            addItem(ctx.player, selected.item_id, Config::Item::EQUIPMENT_TRANSFER_QUANTITY, true, slot);
         }
         else
         {
@@ -308,10 +277,10 @@ namespace state_helpers
         if (!ctx.player.inventory[index].equipped)
             return false;
 
-        if (ctx.player.inventory[index].quantity > 1)
+        if (ctx.player.inventory[index].quantity > Config::Item::EQUIPMENT_SPLIT_THRESHOLD)
         {
-            ctx.player.inventory[index].quantity -= 1;
-            addItem(ctx.player, ctx.player.inventory[index].item_id, 1, false, "");
+            ctx.player.inventory[index].quantity -= Config::Item::EQUIPMENT_TRANSFER_QUANTITY;
+            addItem(ctx.player, ctx.player.inventory[index].item_id, Config::Item::EQUIPMENT_TRANSFER_QUANTITY, false, "");
         }
         else
         {
@@ -343,13 +312,13 @@ namespace state_helpers
         int healHp = 0;
         int healMp = 0;
         if (nameLower.find("mana") != string::npos)
-            healMp = max(20, ctx.player.max_mp / 4);
+            healMp = max(Config::Item::CONSUMABLE_MP_MIN_HEAL, ctx.player.max_mp / Config::Item::CONSUMABLE_HEAL_DIVISOR);
         else
-            healHp = max(30, ctx.player.max_hp / 4);
+            healHp = max(Config::Item::CONSUMABLE_HP_MIN_HEAL, ctx.player.max_hp / Config::Item::CONSUMABLE_HEAL_DIVISOR);
 
         ctx.player.hp = min(ctx.player.max_hp, ctx.player.hp + healHp);
         ctx.player.mp = min(ctx.player.max_mp, ctx.player.mp + healMp);
-        removeItem(ctx.player, ctx.player.inventory[index].item_id, 1);
+        removeItem(ctx.player, ctx.player.inventory[index].item_id, Config::Item::CONSUMABLE_USE_QUANTITY);
         cout << item->value("name", string()) << " digunakan. ";
         if (healHp > 0)
             cout << "HP +" << healHp;
@@ -801,7 +770,7 @@ namespace state_helpers
                     for (const auto &ingredient : selectedItem["crafting"]["ingredients"])
                         removeItem(ctx.player, ingredient.value("item_id", std::string()), ingredient.value("quantity", 0));
 
-                    addItem(ctx.player, selectedItem.value("id", std::string()), 1, false, "");
+                    addItem(ctx.player, selectedItem.value("id", std::string()), Config::Item::CRAFT_RESULT_QUANTITY, false, "");
                     cout << "Berhasil crafting " << selectedItem.value("name", std::string()) << ".\n";
                     refreshPlayerResources(ctx);
                     saveGame(ctx);

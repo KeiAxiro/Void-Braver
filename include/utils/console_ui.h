@@ -5,6 +5,8 @@
 #include <iostream>
 #include <string>
 
+#include "config.h"
+
 #ifdef _WIN32
 #include <windows.h>
 #endif
@@ -108,16 +110,16 @@ namespace consoleui
 #endif
     }
 
-    inline void printLine(char ch = '=', int width = 40)
+    inline void printLine(char ch = '=', int width = Config::Ui::DEFAULT_LINE_WIDTH)
     {
-        std::cout << std::string(std::max(1, width), ch) << resetCode() << '\n';
+        std::cout << std::string(std::max(Config::Math::ONE, width), ch) << resetCode() << '\n';
     }
 
     inline void printTitleBox(const std::string &title)
     {
-        const int boxWidth = std::max(40, static_cast<int>(title.size()) + 4);
-        const int innerWidth = boxWidth - 4;
-        const std::string top = "+" + std::string(boxWidth - 2, '=') + "+";
+        const int boxWidth = std::max(Config::Ui::MIN_TITLE_BOX_WIDTH, static_cast<int>(title.size()) + Config::Ui::TITLE_BOX_PADDING);
+        const int innerWidth = boxWidth - Config::Ui::TITLE_BOX_PADDING;
+        const std::string top = "+" + std::string(boxWidth - Config::Ui::TITLE_BOX_BORDER_WIDTH, '=') + "+";
         const std::string shownTitle = title.size() > static_cast<std::size_t>(innerWidth)
                                            ? title.substr(0, static_cast<std::size_t>(innerWidth))
                                            : title;
@@ -125,7 +127,7 @@ namespace consoleui
 
         std::cout << colorText(top, Color::Blue, true) << '\n';
         std::cout << "| " << colorText(shownTitle, Color::Cyan, true)
-                  << std::string(std::max(0, padding), ' ') << " |" << resetCode() << '\n';
+                  << std::string(std::max(Config::Math::ZERO, padding), ' ') << " |" << resetCode() << '\n';
         std::cout << colorText(top, Color::Blue, true) << '\n';
     }
 
@@ -155,13 +157,13 @@ namespace consoleui
             if (text.empty())
                 continue;
 
-            printLine('-', 55);
+            printLine('-', Config::Ui::DIALOG_LINE_WIDTH);
             if (!speaker.empty())
                 std::cout << colorText(speaker, Color::Cyan, true) << ": ";
             std::cout << text << '\n';
             waitForEnter();
         }
-        printLine('-', 55);
+        printLine('-', Config::Ui::DIALOG_LINE_WIDTH);
     }
 
 } // namespace consoleui

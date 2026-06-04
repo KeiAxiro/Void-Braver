@@ -36,7 +36,7 @@ namespace state_helpers
 
     double randUnit()
     {
-        uniform_real_distribution<double> dist(0.0, 1.0);
+        uniform_real_distribution<double> dist(Config::Math::UNIT_ROLL_MIN, Config::Math::UNIT_ROLL_MAX);
         return dist(rng());
     }
 
@@ -255,14 +255,14 @@ namespace state_helpers
 
         DungeonProgressEntry entry;
         entry.dungeon_id = dungeonId;
-        entry.unlocked_depth = 1;
-        entry.highest_cleared_depth = 0;
+        entry.unlocked_depth = Config::Progress::START_DEPTH;
+        entry.highest_cleared_depth = Config::Progress::NO_DEPTH_CLEARED;
         entry.completed = false;
 
-        if (player.progress.current_dungeon == dungeonId && player.progress.max_depth_unlocked > 0)
+        if (player.progress.current_dungeon == dungeonId && player.progress.max_depth_unlocked > Config::Progress::NO_DEPTH_UNLOCKED)
         {
-            entry.unlocked_depth = max(1, player.progress.max_depth_unlocked);
-            entry.highest_cleared_depth = max(0, entry.unlocked_depth - 1);
+            entry.unlocked_depth = max(Config::Progress::START_DEPTH, player.progress.max_depth_unlocked);
+            entry.highest_cleared_depth = max(Config::Progress::NO_DEPTH_CLEARED, entry.unlocked_depth - Config::Progress::DEPTH_UNLOCK_STEP);
         }
 
         player.progress.dungeon_progress.push_back(entry);
@@ -273,19 +273,19 @@ namespace state_helpers
     {
         DungeonProgressEntry &progress = ensureDungeonProgress(player, dungeon);
         const string dungeonId = dungeon.value("id", string());
-        int maxDepth = 1;
-        int levelUnlockedDepth = 1;
+        int maxDepth = Config::Progress::START_DEPTH;
+        int levelUnlockedDepth = Config::Progress::START_DEPTH;
 
         if (dungeon.contains("depths") && dungeon["depths"].is_array())
         {
-            maxDepth = max(1, static_cast<int>(dungeon["depths"].size()));
-            int fallbackDepth = 1;
+            maxDepth = max(Config::Progress::START_DEPTH, static_cast<int>(dungeon["depths"].size()));
+            int fallbackDepth = Config::Progress::START_DEPTH;
             for (const auto &depthRow : dungeon["depths"])
             {
                 const int depth = depthRow.value("depth", fallbackDepth);
-                int minLevel = 1;
+                int minLevel = Config::Progress::LEVEL_RANGE_MIN_FALLBACK;
                 if (depthRow.contains("level_range") && depthRow["level_range"].is_object())
-                    minLevel = depthRow["level_range"].value("min", 1);
+                    minLevel = depthRow["level_range"].value("min", Config::Progress::LEVEL_RANGE_MIN_FALLBACK);
 
                 if (player.level >= minLevel)
                     levelUnlockedDepth = max(levelUnlockedDepth, depth);
@@ -293,8 +293,8 @@ namespace state_helpers
             }
         }
 
-        progress.unlocked_depth = clampInt(max(progress.unlocked_depth, levelUnlockedDepth), 1, maxDepth);
-        progress.highest_cleared_depth = clampInt(progress.highest_cleared_depth, 0, maxDepth);
+        progress.unlocked_depth = clampInt(max(progress.unlocked_depth, levelUnlockedDepth), Config::Progress::START_DEPTH, maxDepth);
+        progress.highest_cleared_depth = clampInt(progress.highest_cleared_depth, Config::Progress::NO_DEPTH_CLEARED, maxDepth);
         if (progress.highest_cleared_depth >= maxDepth)
             progress.completed = true;
 
@@ -313,7 +313,7 @@ namespace state_helpers
     int dungeonMaxDepth(const json &dungeon)
     {
         if (!dungeon.contains("depths") || !dungeon["depths"].is_array())
-            return 1;
+            return Config::Progress::START_DEPTH;
         return static_cast<int>(dungeon["depths"].size());
     }
 
@@ -404,7 +404,7 @@ namespace state_helpers
 
     struct DungeonGraphMatrix
     {
-        static constexpr int MAX_NODES = 16;
+        static constexpr int MAX_NODES = Config::Progress::GRAPH_MAX_NODES;
         std::string ids[MAX_NODES];
         int weights[MAX_NODES][MAX_NODES] = {};
         int count = 0;
@@ -436,14 +436,14 @@ namespace state_helpers
         if (from < 0 || to < 0)
             return;
 
-        matrix.weights[from][to] = max(1, weight);
+        matrix.weights[from][to] = max(Config::Progress::MIN_ROUTE_WEIGHT, weight);
         if (!directed)
-            matrix.weights[to][from] = max(1, weight);
+            matrix.weights[to][from] = max(Config::Progress::MIN_ROUTE_WEIGHT, weight);
     }
 
     void buildDungeonGraphMatrix(GameContext &ctx, DungeonGraphMatrix &matrix)
     {
-        const string finalId = "tahta_kehampaan";
+        const string finalId = Config::Progress::FINAL_DUNGEON_ID;
         for (const auto &row : ctx.gameData["dungeons"])
             addDungeonMatrixVertex(matrix, row.value("id", string()));
 
@@ -460,7 +460,7 @@ namespace state_helpers
 
     int dijkstraDungeonRoute(const DungeonGraphMatrix &matrix, const string &startId, const string &targetId)
     {
-        constexpr int INF = 1000000;
+        constexpr int INF = Config::Progress::ROUTE_INFINITY;
         int distance[DungeonGraphMatrix::MAX_NODES];
         bool visited[DungeonGraphMatrix::MAX_NODES] = {};
 
@@ -562,7 +562,7 @@ namespace state_helpers
 
     bool isFinalDungeonLocked(GameContext &ctx, const json &dungeon)
     {
-        if (dungeon.value("id", string()) != "tahta_kehampaan")
+        if (dungeon.value("id", string()) != Config::Progress::FINAL_DUNGEON_ID)
             return false;
         if (!ctx.gameData.contains("dungeons") || !ctx.gameData["dungeons"].is_array())
             return false;
@@ -570,7 +570,7 @@ namespace state_helpers
             return false;
 
         DungeonGraphVertex *graph = nullptr;
-        const string finalId = "tahta_kehampaan";
+        const string finalId = Config::Progress::FINAL_DUNGEON_ID;
 
         for (const auto &row : ctx.gameData["dungeons"])
             getDungeonUnlockedDepth(ctx.player, row);
@@ -629,7 +629,7 @@ namespace state_helpers
 
         if (battle && battle->playerAtkBuffTurns > 0)
             attack = static_cast<int>(attack * player_balance::kAttackBuffMultiplier);
-        return max(1, attack);
+        return max(player_balance::kMinAttack, attack);
     }
 
     int calculatePlayerDefense(const GameContext &ctx, const BattleState *battle)
@@ -641,7 +641,7 @@ namespace state_helpers
 
         if (battle && battle->playerDefBuffTurns > 0)
             defense = static_cast<int>(defense * player_balance::kDefenseBuffMultiplier);
-        return max(0, defense);
+        return max(player_balance::kMinDefense, defense);
     }
 
     int calculatePlayerSpeed(const GameContext &ctx, const BattleState *battle)
@@ -650,15 +650,15 @@ namespace state_helpers
                     ctx.player.stats.agi * player_balance::kSpeedPerAgi;
         if (battle && battle->playerAgiBuffTurns > 0)
             speed = static_cast<int>(speed * player_balance::kSpeedBuffMultiplier);
-        return max(1, speed);
+        return max(player_balance::kMinSpeed, speed);
     }
 
     double calculatePlayerCritRate(const GameContext &ctx, const BattleState *battle)
     {
         double rate = player_balance::kCritBaseRate + (ctx.player.stats.agi * player_balance::kCritPerAgi);
         if (battle && battle->nextAttackGuaranteedCrit)
-            rate = 1.0;
-        return min(1.0, rate);
+            rate = player_balance::kCritCap;
+        return min(player_balance::kCritCap, rate);
     }
 
     void refreshPlayerResources(GameContext &ctx)
@@ -705,7 +705,7 @@ namespace state_helpers
     void printHubHeader(const GameContext &ctx)
     {
         const string tierName = unlockedTierName(ctx);
-        printLine('=', 64);
+        printLine('=', Config::Ui::HUB_HEADER_WIDTH);
         cout << colorText("Character", Color::Yellow, true) << ": " << ctx.player.name
              << " | Class: " << ctx.player.class_id
              << " | Tier: " << tierName
@@ -721,7 +721,7 @@ namespace state_helpers
         cout << "ATK: " << calculatePlayerAttack(ctx)
              << " | DEF: " << calculatePlayerDefense(ctx)
              << " | Speed: " << calculatePlayerSpeed(ctx) << "\033[0m\n";
-        printLine('=', 64);
+        printLine('=', Config::Ui::HUB_HEADER_WIDTH);
     }
 
     void printStateHeader(const GameContext &ctx, const string &title)
@@ -859,7 +859,7 @@ void runMainMenu(GameContext &ctx)
         cout << "Masukkan nama character: ";
         string name = readLine();
         if (name.empty())
-            name = "Hero";
+            name = Config::Defaults::PLAYER_NAME;
 
         cout << MENU_SEPARATOR << '\n';
         cout << "Pilih class:\n";
@@ -872,14 +872,14 @@ void runMainMenu(GameContext &ctx)
         cout << "Nomor class: ";
 
         string classChoice = readLine();
-        int classIndex = 0;
+        int classIndex = Config::Math::ZERO;
         if (!tryParseInt(classChoice, classIndex) || classIndex < 1 || classIndex > static_cast<int>(ctx.gameData["classes"].size()))
         {
             cout << "Class tidak valid. Default ke Knight.\n";
-            classIndex = 1;
+            classIndex = Config::Math::ONE;
         }
 
-        string classId = ctx.gameData["classes"][static_cast<size_t>(classIndex - 1)].value("id", string("knight"));
+        string classId = ctx.gameData["classes"][static_cast<size_t>(classIndex - Config::Math::INDEX_OFFSET)].value("id", string(Config::Defaults::CLASS_ID));
         createNewGame(ctx, name, classId);
         refreshPlayerResources(ctx);
 
