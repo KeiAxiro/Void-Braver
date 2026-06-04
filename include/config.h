@@ -1,7 +1,7 @@
 #pragma once
 
 // Pusat konfigurasi Void Braver.
-// Namespace Config adalah sumber utama; namespace lama di bawah dipertahankan
+// Namespace Config adalah sumber utama; namespace lama di bawah dipertahaman
 // sebagai jembatan agar refactor Fase 2 tidak mengubah logika gameplay.
 namespace Config
 {
@@ -13,11 +13,11 @@ namespace Config
 
     namespace Rules
     {
-        inline constexpr int STARTING_GOLD = 650;
-        inline constexpr int STARTING_HP = 100;
+        inline constexpr int STARTING_GOLD = 1200;               
+        inline constexpr int STARTING_HP = 250;                  
         inline constexpr int STARTING_MP = 50;
-        inline constexpr int STARTING_STAT_POINTS = 5;
-        inline constexpr int STAT_POINTS_PER_LEVEL = 5;
+        inline constexpr int STARTING_STAT_POINTS = 15;          
+        inline constexpr int STAT_POINTS_PER_LEVEL = 7;          
 
         inline constexpr int DEFAULT_PAGE_SIZE = 5;
         inline constexpr int MOVE_STEPS_PER_DEPTH = 5;
@@ -30,38 +30,41 @@ namespace Config
 
     namespace Player
     {
-        inline constexpr int BASE_HP_START = 65;
-        inline constexpr int BASE_HP_PER_LEVEL = 7;
-        inline constexpr int BASE_HP_PER_VIT = 4;
-        inline constexpr int BASE_HP_PER_STR = 1;
+        inline constexpr int BASE_HP_START = 200;                
+        inline constexpr int BASE_HP_PER_LEVEL = 45;             
+        inline constexpr int BASE_HP_PER_VIT = 12;               
+        inline constexpr int BASE_HP_PER_STR = 4;                
 
-        inline constexpr int BASE_MP_START = 40;
-        inline constexpr int BASE_MP_PER_LEVEL = 4;
-        inline constexpr int BASE_MP_PER_INT = 3;
+        inline constexpr int BASE_MP_START = 45;
+        // --- DI-TWEAK: PERTUMBUHAN MP YANG TERKONTROL ---
+        inline constexpr int BASE_MP_PER_LEVEL = 3;              // DIUBAH: Naik sedikit (+3) per level agar tidak over-inflasi di end-game
+        inline constexpr int BASE_MP_PER_INT = 4;                // Tetap +4 per INT agar build Mage tetap terasa perbedaannya
         inline constexpr int BASE_MP_PER_TWO_AGI = 1;
 
-        inline constexpr int ATTACK_BASE_PER_LEVEL = 1;
-        inline constexpr int ATTACK_PRIMARY_DIVISOR = 3;
-        inline constexpr int ATTACK_STR_DIVISOR = 5;
-        inline constexpr int ATTACK_AGI_DIVISOR = 8;
-        inline constexpr double ATTACK_EQUIPMENT_MULTIPLIER = 0.75;
-        inline constexpr double ATTACK_BUFF_MULTIPLIER = 1.30;
-        inline constexpr int ATTACK_JITTER_MIN = -2;
-        inline constexpr int ATTACK_JITTER_MAX = 4;
+        // --- DAMAGE OUTPUT PLAYER (BUFFED FROM PREVIOUS) ---
+        inline constexpr int ATTACK_BASE_PER_LEVEL = 6;          
+        inline constexpr int ATTACK_PRIMARY_DIVISOR = 2;         
+        inline constexpr int ATTACK_STR_DIVISOR = 2;             
+        inline constexpr int ATTACK_AGI_DIVISOR = 4;             
+        inline constexpr double ATTACK_EQUIPMENT_MULTIPLIER = 1.25; 
+        inline constexpr double ATTACK_BUFF_MULTIPLIER = 1.50;   
+        inline constexpr int ATTACK_JITTER_MIN = -1;             
+        inline constexpr int ATTACK_JITTER_MAX = 5;
 
-        inline constexpr int DEFENSE_BASE_PER_LEVEL = 1;
-        inline constexpr int DEFENSE_VIT_DIVISOR = 4;
+        // --- DEFENSE BALANCING ---
+        inline constexpr int DEFENSE_BASE_PER_LEVEL = 1;         
+        inline constexpr int DEFENSE_VIT_DIVISOR = 6;            
         inline constexpr int DEFENSE_STR_DIVISOR = 12;
-        inline constexpr double DEFENSE_EQUIPMENT_MULTIPLIER = 0.55;
-        inline constexpr double DEFENSE_BUFF_MULTIPLIER = 1.30;
+        inline constexpr double DEFENSE_EQUIPMENT_MULTIPLIER = 0.65; 
+        inline constexpr double DEFENSE_BUFF_MULTIPLIER = 1.25;
 
         inline constexpr int SPEED_BASE_PER_LEVEL = 1;
         inline constexpr int SPEED_PER_AGI = 2;
         inline constexpr double SPEED_BUFF_MULTIPLIER = 1.25;
 
-        inline constexpr double CRIT_BASE_RATE = 0.05;
-        inline constexpr double CRIT_PER_AGI = 0.002;
-        inline constexpr int PRIMARY_STAT_BONUS_ON_NEW_GAME = 5;
+        inline constexpr double CRIT_BASE_RATE = 0.12;           
+        inline constexpr double CRIT_PER_AGI = 0.006;            
+        inline constexpr int PRIMARY_STAT_BONUS_ON_NEW_GAME = 8;
         inline constexpr int DEFEAT_RECOVERY_DIVISOR = 2;
 
         inline constexpr double LEVEL_UP_EARLY_MULTIPLIER = 0.95;
@@ -73,43 +76,45 @@ namespace Config
 
     namespace Enemy
     {
-        inline constexpr int FALLBACK_HP_BASE = 40;
-        inline constexpr int FALLBACK_HP_PER_DEPTH = 20;
+        inline constexpr int FALLBACK_HP_BASE = 50;
+        inline constexpr int FALLBACK_HP_PER_DEPTH = 15;
         inline constexpr int FALLBACK_MP_BASE = 20;
-        inline constexpr int FALLBACK_MP_PER_DEPTH = 5;
-        inline constexpr int FALLBACK_ATK_BASE = 10;
-        inline constexpr int FALLBACK_ATK_PER_DEPTH = 5;
-        inline constexpr int FALLBACK_DEF_BASE = 5;
-        inline constexpr int FALLBACK_DEF_PER_DEPTH = 3;
+        inline constexpr int FALLBACK_MP_PER_DEPTH = 4;
+        
+        inline constexpr int FALLBACK_ATK_BASE = 6;              
+        inline constexpr int FALLBACK_ATK_PER_DEPTH = 2;         
+        
+        inline constexpr int FALLBACK_DEF_BASE = 1;              
+        inline constexpr int FALLBACK_DEF_PER_DEPTH = 1;         
         inline constexpr int FALLBACK_EXP_BASE = 40;
         inline constexpr int FALLBACK_EXP_PER_DEPTH = 30;
 
-        inline constexpr double REGULAR_ENEMY_ATTACK_MULTIPLIER = 0.92;
-        inline constexpr double BOSS_ENEMY_ATTACK_MULTIPLIER = 1.10;
-        inline constexpr double ENEMY_ATTACK_DEBUFF_MULTIPLIER = 0.85;
-        inline constexpr double ENEMY_DEFENSE_DEBUFF_MULTIPLIER = 0.70;
+        inline constexpr double REGULAR_ENEMY_ATTACK_MULTIPLIER = 0.75; 
+        inline constexpr double BOSS_ENEMY_ATTACK_MULTIPLIER = 1.00;
+        inline constexpr double ENEMY_ATTACK_DEBUFF_MULTIPLIER = 0.80;
+        inline constexpr double ENEMY_DEFENSE_DEBUFF_MULTIPLIER = 0.60;
         inline constexpr int ENEMY_SPEED_PER_LEVEL = 2;
         inline constexpr int ENEMY_SPEED_ATTACK_DIVISOR = 6;
-        inline constexpr int ENEMY_DAMAGE_JITTER_MIN = -3;
+        inline constexpr int ENEMY_DAMAGE_JITTER_MIN = -2;
         inline constexpr int ENEMY_DAMAGE_JITTER_MAX = 2;
-        inline constexpr double ENEMY_CRITICAL_DAMAGE_MULTIPLIER = 1.50;
-        inline constexpr int ENEMY_OPENING_AMBUSH_SPEED_BONUS = 8;
+        inline constexpr double ENEMY_CRITICAL_DAMAGE_MULTIPLIER = 1.30;
+        inline constexpr int ENEMY_OPENING_AMBUSH_SPEED_BONUS = 5;
 
-        inline constexpr double BOSS_HP_MULTIPLIER = 1.35;
-        inline constexpr double BOSS_ATK_MULTIPLIER = 1.20;
-        inline constexpr double BOSS_DEF_MULTIPLIER = 1.20;
-        inline constexpr double BOSS_MINIMUM_CRIT_RATE = 0.10;
+        inline constexpr double BOSS_HP_MULTIPLIER = 1.40;
+        inline constexpr double BOSS_ATK_MULTIPLIER = 1.10;
+        inline constexpr double BOSS_DEF_MULTIPLIER = 1.05;      
+        inline constexpr double BOSS_MINIMUM_CRIT_RATE = 0.08;
 
-        inline constexpr int EXP_DROP_PER_ENEMY_LEVEL = 24;
-        inline constexpr int EXP_DROP_PER_DEPTH = 18;
-        inline constexpr int BOSS_EXP_BONUS = 220;
+        inline constexpr int EXP_DROP_PER_ENEMY_LEVEL = 26;       
+        inline constexpr int EXP_DROP_PER_DEPTH = 20;
+        inline constexpr int BOSS_EXP_BONUS = 250;
 
-        inline constexpr int BATTLE_GOLD_MINIMUM = 18;
-        inline constexpr int BATTLE_GOLD_PER_ENEMY_LEVEL = 8;
+        inline constexpr int BATTLE_GOLD_MINIMUM = 22;           
+        inline constexpr int BATTLE_GOLD_PER_ENEMY_LEVEL = 10;
         inline constexpr int BATTLE_GOLD_ATK_DIVISOR = 2;
 
-        inline constexpr int DEPTH_CLEAR_GOLD_MINIMUM = 14;
-        inline constexpr int DEPTH_CLEAR_EXP_MINIMUM = 20;
+        inline constexpr int DEPTH_CLEAR_GOLD_MINIMUM = 20;
+        inline constexpr int DEPTH_CLEAR_EXP_MINIMUM = 25;
         inline constexpr int DEPTH_CLEAR_EXP_NUMERATOR = 2;
         inline constexpr int DEPTH_CLEAR_EXP_DENOMINATOR = 5;
         inline constexpr int DEPTH_CLEAR_GOLD_DIVISOR = 5;
@@ -117,23 +122,23 @@ namespace Config
 
     namespace Skill
     {
-        inline constexpr double POMMEL_STRIKE_MULTIPLIER = 1.20;
+        inline constexpr double POMMEL_STRIKE_MULTIPLIER = 1.60;   
         inline constexpr int POMMEL_STRIKE_STUN_TURNS = 1;
 
-        inline constexpr double IRON_CLEAVE_MULTIPLIER = 1.45;
-        inline constexpr double MANA_BOLT_MULTIPLIER = 1.45;
+        inline constexpr double IRON_CLEAVE_MULTIPLIER = 2.40;     
+        inline constexpr double MANA_BOLT_MULTIPLIER = 2.20;       
         inline constexpr int CHALLENGER_ROAR_DEFENSE_BUFF_TURNS = 2;
-        inline constexpr double IMPACT_CRATER_MULTIPLIER = 1.90;
+        inline constexpr double IMPACT_CRATER_MULTIPLIER = 2.70;   
 
         inline constexpr double BLOOD_AND_IRON_SELF_DAMAGE_RATIO = 0.05;
         inline constexpr int BLOOD_AND_IRON_ATTACK_BUFF_TURNS = 3;
         inline constexpr int BLOOD_AND_IRON_DEFENSE_BUFF_TURNS = 3;
 
-        inline constexpr double SHATTERING_ONSLAUGHT_MULTIPLIER = 1.35;
+        inline constexpr double SHATTERING_ONSLAUGHT_MULTIPLIER = 1.90; 
         inline constexpr int SHATTERING_ONSLAUGHT_DEFENSE_DEBUFF_TURNS = 3;
 
-        inline constexpr double CALAMITY_END_MULTIPLIER = 2.60;
-        inline constexpr double CALAMITY_END_EXECUTE_THRESHOLD = 0.20;
+        inline constexpr double CALAMITY_END_MULTIPLIER = 3.20;    
+        inline constexpr double CALAMITY_END_EXECUTE_THRESHOLD = 0.30; 
 
         inline constexpr int DOMINION_AURA_DEFENSE_BUFF_TURNS = 3;
         inline constexpr int DOMINION_AURA_ENEMY_ATTACK_DEBUFF_TURNS = 3;
@@ -141,64 +146,64 @@ namespace Config
         inline constexpr int UNDYING_JUGGERNAUT_INVINCIBLE_TURNS = 1;
         inline constexpr int UNDYING_JUGGERNAUT_ATTACK_BUFF_TURNS = 2;
 
-        inline constexpr double IGNITE_PRIMARY_MULTIPLIER = 0.80;
-        inline constexpr double IGNITE_DOT_MULTIPLIER = 0.40;
+        inline constexpr double IGNITE_PRIMARY_MULTIPLIER = 1.20;  
+        inline constexpr double IGNITE_DOT_MULTIPLIER = 0.60;      
         inline constexpr int IGNITE_DOT_TURNS = 3;
 
-        inline constexpr int ARCANE_SHIELD_MINIMUM = 30;
-        inline constexpr double ARCANE_SHIELD_PRIMARY_MULTIPLIER = 2.5;
+        inline constexpr int ARCANE_SHIELD_MINIMUM = 45;
+        inline constexpr double ARCANE_SHIELD_PRIMARY_MULTIPLIER = 3.0;
 
-        inline constexpr double CHAIN_LIGHTNING_MULTIPLIER = 1.55;
+        inline constexpr double CHAIN_LIGHTNING_MULTIPLIER = 2.20; 
         inline constexpr int CHAIN_LIGHTNING_SILENCE_TURNS = 1;
 
-        inline constexpr double FROST_NOVA_MULTIPLIER = 1.35;
+        inline constexpr double FROST_NOVA_MULTIPLIER = 1.80;     
         inline constexpr int FROST_NOVA_STUN_TURNS = 1;
 
-        inline constexpr double METEOR_FALL_MULTIPLIER = 2.80;
+        inline constexpr double METEOR_FALL_MULTIPLIER = 3.60;     
 
-        inline constexpr double ABYSSAL_SINGULARITY_MULTIPLIER = 2.10;
-        inline constexpr int ABYSSAL_SINGULARITY_MINIMUM_DRAIN = 10;
+        inline constexpr double ABYSSAL_SINGULARITY_MULTIPLIER = 2.60;
+        inline constexpr int ABYSSAL_SINGULARITY_MINIMUM_DRAIN = 15;
         inline constexpr int ABYSSAL_SINGULARITY_DRAIN_DIVISOR = 4;
 
-        inline constexpr int ASTRAL_REBIRTH_MINIMUM_MANA_RESTORE = 25;
+        inline constexpr int ASTRAL_REBIRTH_MINIMUM_MANA_RESTORE = 30;
         inline constexpr int ASTRAL_REBIRTH_MANA_RESTORE_DIVISOR = 2;
         inline constexpr int ASTRAL_REBIRTH_ATTACK_BUFF_TURNS = 2;
 
-        inline constexpr double VOID_APOCALYPSE_MULTIPLIER = 3.50;
-        inline constexpr double QUICK_DRAW_MULTIPLIER = 1.25;
+        inline constexpr double VOID_APOCALYPSE_MULTIPLIER = 4.20; 
+        inline constexpr double QUICK_DRAW_MULTIPLIER = 1.65;
 
-        inline constexpr double TOXIC_ARROW_MULTIPLIER = 1.10;
-        inline constexpr double TOXIC_ARROW_DOT_AGI_MULTIPLIER = 0.50;
+        inline constexpr double TOXIC_ARROW_MULTIPLIER = 1.45;
+        inline constexpr double TOXIC_ARROW_DOT_AGI_MULTIPLIER = 0.70;
         inline constexpr int TOXIC_ARROW_DOT_TURNS = 3;
 
         inline constexpr int AGILITY_BOOST_TURNS = 3;
-        inline constexpr double SHADOW_STRIKE_MULTIPLIER = 1.75;
+        inline constexpr double SHADOW_STRIKE_MULTIPLIER = 2.30;
         inline constexpr int PHANTOM_VEIL_EVADE_TURNS = 1;
 
         inline constexpr int BLADE_DANCE_MIN_HITS = 3;
-        inline constexpr int BLADE_DANCE_MAX_HITS = 5;
-        inline constexpr double BLADE_DANCE_HIT_MULTIPLIER = 0.45;
+        inline constexpr int BLADE_DANCE_MAX_HITS = 6;            
+        inline constexpr double BLADE_DANCE_HIT_MULTIPLIER = 0.65;
 
-        inline constexpr int OBLIVION_EDGE_EXECUTE_CHANCE = 10;
-        inline constexpr double OBLIVION_EDGE_MULTIPLIER = 2.30;
+        inline constexpr int OBLIVION_EDGE_EXECUTE_CHANCE = 20;    
+        inline constexpr double OBLIVION_EDGE_MULTIPLIER = 2.80;
 
-        inline constexpr double ETERNAL_SILENCE_MULTIPLIER = 1.70;
+        inline constexpr double ETERNAL_SILENCE_MULTIPLIER = 2.10;
         inline constexpr int ETERNAL_SILENCE_TURNS = 2;
 
         inline constexpr int SHADOW_MELD_EVADE_TURNS = 1;
-        inline constexpr double PLAYER_CRITICAL_DAMAGE_MULTIPLIER = 1.50;
-        inline constexpr double SKILL_CRITICAL_DAMAGE_MULTIPLIER = 1.60;
+        inline constexpr double PLAYER_CRITICAL_DAMAGE_MULTIPLIER = 1.80; 
+        inline constexpr double SKILL_CRITICAL_DAMAGE_MULTIPLIER = 2.00;  
     }
 }
 
-namespace game_paths
-{
+// ============================================================================
+// JEMBATAN NAMESPACE LAMA
+// ============================================================================
+namespace game_paths {
     inline constexpr const char *kGameDataPath = Config::Paths::GAME_DATA;
     inline constexpr const char *kSaveFilePath = Config::Paths::SAVE_FILE;
 }
-
-namespace game_rules
-{
+namespace game_rules {
     inline constexpr int kStartingGold = Config::Rules::STARTING_GOLD;
     inline constexpr int kStartingHp = Config::Rules::STARTING_HP;
     inline constexpr int kStartingMp = Config::Rules::STARTING_MP;
@@ -211,9 +216,7 @@ namespace game_rules
     inline constexpr const char *kMenuSeparator = Config::Rules::MENU_SEPARATOR;
     inline constexpr const char *kTitleSeparator = Config::Rules::TITLE_SEPARATOR;
 }
-
-namespace player_balance
-{
+namespace player_balance {
     inline constexpr int kBaseHpStart = Config::Player::BASE_HP_START;
     inline constexpr int kBaseHpPerLevel = Config::Player::BASE_HP_PER_LEVEL;
     inline constexpr int kBaseHpPerVit = Config::Player::BASE_HP_PER_VIT;
@@ -248,9 +251,7 @@ namespace player_balance
     inline constexpr double kLevelUpEndgameMultiplier = Config::Player::LEVEL_UP_ENDGAME_MULTIPLIER;
     inline constexpr int kMinimumExpRequirement = Config::Player::MINIMUM_EXP_REQUIREMENT;
 }
-
-namespace enemy_balance
-{
+namespace enemy_balance {
     inline constexpr int kFallbackHpBase = Config::Enemy::FALLBACK_HP_BASE;
     inline constexpr int kFallbackHpPerDepth = Config::Enemy::FALLBACK_HP_PER_DEPTH;
     inline constexpr int kFallbackMpBase = Config::Enemy::FALLBACK_MP_BASE;
@@ -287,9 +288,7 @@ namespace enemy_balance
     inline constexpr int kDepthClearExpDenominator = Config::Enemy::DEPTH_CLEAR_EXP_DENOMINATOR;
     inline constexpr int kDepthClearGoldDivisor = Config::Enemy::DEPTH_CLEAR_GOLD_DIVISOR;
 }
-
-namespace skill_balance
-{
+namespace skill_balance {
     inline constexpr double kPommelStrikeMultiplier = Config::Skill::POMMEL_STRIKE_MULTIPLIER;
     inline constexpr int kPommelStrikeStunTurns = Config::Skill::POMMEL_STRIKE_STUN_TURNS;
     inline constexpr double kIronCleaveMultiplier = Config::Skill::IRON_CLEAVE_MULTIPLIER;
