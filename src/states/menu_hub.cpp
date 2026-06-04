@@ -8,18 +8,17 @@
 #include <random>
 #include <string>
 
-
 // ---- merged from src/states/helpers/input_helpers.cpp
-
 
 using namespace std;
 
 namespace state_helpers
 {
-    void clsScreen(){
+    void clsScreen()
+    {
         system("cls||clear");
     }
-    
+
     mt19937 &rng()
     {
         static mt19937 gen{random_device{}()};
@@ -95,8 +94,6 @@ namespace state_helpers
 } // namespace state_helpers
 
 // ---- merged from src/states/helpers/inventory_helpers.cpp
-
-
 
 using namespace std;
 
@@ -238,7 +235,6 @@ namespace state_helpers
 } // namespace state_helpers
 
 // ---- merged from src/states/helpers/progress_helpers.cpp
-
 
 using namespace std;
 
@@ -610,8 +606,6 @@ namespace state_helpers
 
 // ---- merged from src/states/helpers/player_stats_helpers.cpp
 
-
-
 using namespace std;
 
 namespace state_helpers
@@ -650,7 +644,6 @@ namespace state_helpers
 
         return defense;
     }
-
 
     int calculatePlayerSpeed(const GameContext &ctx, const BattleState *battle)
     {
@@ -702,8 +695,6 @@ namespace state_helpers
 } // namespace state_helpers
 
 // ---- merged from src/states/helpers/ui_helpers.cpp
-
-
 
 using namespace std;
 using namespace consoleui;
@@ -1030,5 +1021,3 @@ void runHub(GameContext &ctx)
     cout << "Pilihan tidak valid.\n";
     waitForEnter();
 }
-
-
