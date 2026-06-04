@@ -1,0 +1,3574 @@
+{
+  "items": [
+    {
+      "id": "abyssal_eye",
+      "category": "weapon",
+      "name": "Abyssal Eye",
+      "description": "Orb yang menatap langsung ke kegelapan.",
+      "buy_price": 0,
+      "sell_price": 80000,
+      "required_class_id": "sorcerer",
+      "tier_level": 9,
+      "stats": {
+        "atk_bonus": 840,
+        "hp_bonus": 0,
+        "def_bonus": 0,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "arcane_crystal",
+            "quantity": 35
+          },
+          {
+            "item_id": "mana_shard",
+            "quantity": 50
+          }
+        ]
+      }
+    },
+    {
+      "id": "abyssal_greathelm",
+      "category": "helmet",
+      "name": "Abyssal Greathelm",
+      "description": "Helm besar yang ditempa di jurang kegelapan.",
+      "buy_price": 0,
+      "sell_price": 60000,
+      "required_class_id": "knight",
+      "tier_level": 9,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 1800,
+        "def_bonus": 95,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "refined_plate",
+            "quantity": 25
+          },
+          {
+            "item_id": "heavy_ore",
+            "quantity": 40
+          }
+        ]
+      }
+    },
+    {
+      "id": "abyssal_stealth_suit",
+      "category": "armor",
+      "name": "Abyssal Stealth-Suit",
+      "description": "Baju penyamaran stealth di jurang dalam.",
+      "buy_price": 0,
+      "sell_price": 110000,
+      "required_class_id": "wanderer",
+      "tier_level": 9,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 5025,
+        "def_bonus": 195,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "silent_thread",
+            "quantity": 40
+          },
+          {
+            "item_id": "fine_fiber",
+            "quantity": 60
+          }
+        ]
+      }
+    },
+    {
+      "id": "abyssal_walkers",
+      "category": "boots",
+      "name": "Abyssal Walkers",
+      "description": "Langkah menyusuri jurang kegelapan.",
+      "buy_price": 0,
+      "sell_price": 45000,
+      "required_class_id": "sorcerer",
+      "tier_level": 9,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 1350,
+        "def_bonus": 65,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "arcane_crystal",
+            "quantity": 20
+          },
+          {
+            "item_id": "mana_shard",
+            "quantity": 30
+          }
+        ]
+      }
+    },
+    {
+      "id": "ancient_oak_armor",
+      "category": "armor",
+      "name": "Ancient Oak Armor",
+      "description": "Zirah dari kayu oak kuno berkekuatan sihir.",
+      "buy_price": 0,
+      "sell_price": 35000,
+      "required_class_id": "knight",
+      "tier_level": 7,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 3000,
+        "def_bonus": 120,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "refined_plate",
+            "quantity": 15
+          },
+          {
+            "item_id": "heavy_ore",
+            "quantity": 30
+          }
+        ]
+      }
+    },
+    {
+      "id": "apprentice_wand",
+      "category": "weapon",
+      "name": "Apprentice Wand",
+      "description": "Tongkat kayu sederhana untuk pemula.",
+      "buy_price": 480,
+      "sell_price": 250,
+      "required_class_id": "sorcerer",
+      "tier_level": 1,
+      "stats": {
+        "atk_bonus": 45,
+        "hp_bonus": 0,
+        "def_bonus": 0,
+        "special_effect": "null"
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "arcane_crystal",
+      "category": "material",
+      "name": "Arcane Crystal",
+      "description": "Material Olahan Sorcerer",
+      "buy_price": 0,
+      "sell_price": 450,
+      "required_class_id": "sorcerer",
+      "tier_level": 1,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 0,
+        "def_bonus": 0
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "mana_shard",
+            "quantity": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "arcane_garb",
+      "category": "armor",
+      "name": "Arcane Garb",
+      "description": "Pakaian misterius berlapis sihir.",
+      "buy_price": 3500,
+      "sell_price": 2000,
+      "required_class_id": "sorcerer",
+      "tier_level": 3,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 420,
+        "def_bonus": 14,
+        "special_effect": "null"
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "archmage_s_cloak",
+      "category": "armor",
+      "name": "Archmage's Cloak",
+      "description": "Jubah kebesaran Archmage istana.",
+      "buy_price": 13000,
+      "sell_price": 8500,
+      "required_class_id": "sorcerer",
+      "tier_level": 5,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 1050,
+        "def_bonus": 35,
+        "special_effect": "null"
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "ashen_smasher",
+      "category": "weapon",
+      "name": "Ashen Smasher",
+      "description": "Dibuat dari lava beku Dungeon of Ember.",
+      "buy_price": 0,
+      "sell_price": 12000,
+      "required_class_id": "knight",
+      "tier_level": 6,
+      "stats": {
+        "atk_bonus": 285,
+        "hp_bonus": 0,
+        "def_bonus": 0,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "heavy_ore",
+            "quantity": 30
+          },
+          {
+            "item_id": "refined_plate",
+            "quantity": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "assassin_s_visage",
+      "category": "helmet",
+      "name": "Assassin's Visage",
+      "description": "Topeng wajah sang pembunuh.",
+      "buy_price": 0,
+      "sell_price": 35000,
+      "required_class_id": "wanderer",
+      "tier_level": 8,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 1215,
+        "def_bonus": 58,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "silent_thread",
+            "quantity": 15
+          },
+          {
+            "item_id": "fine_fiber",
+            "quantity": 25
+          }
+        ]
+      }
+    },
+    {
+      "id": "astral_halo",
+      "category": "helmet",
+      "name": "Astral Halo",
+      "description": "Lingkaran cahaya astral dewa sihir.",
+      "buy_price": 0,
+      "sell_price": 120000,
+      "required_class_id": "sorcerer",
+      "tier_level": 10,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 1950,
+        "def_bonus": 90,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "void_essence",
+            "quantity": 25
+          },
+          {
+            "item_id": "arcane_crystal",
+            "quantity": 15
+          }
+        ]
+      }
+    },
+    {
+      "id": "birch_staff",
+      "category": "weapon",
+      "name": "Birch Staff",
+      "description": "Kayu birch yang telah diberkati mana.",
+      "buy_price": 0,
+      "sell_price": 600,
+      "required_class_id": "sorcerer",
+      "tier_level": 2,
+      "stats": {
+        "atk_bonus": 90,
+        "hp_bonus": 0,
+        "def_bonus": 0,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "iron_scrap",
+            "quantity": 10
+          },
+          {
+            "item_id": "mana_shard",
+            "quantity": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "calamity_breaker",
+      "category": "weapon",
+      "name": "Calamity Breaker",
+      "description": "Senjata pamungkas untuk sang Warlord.",
+      "buy_price": 0,
+      "sell_price": 150000,
+      "required_class_id": "knight",
+      "tier_level": 10,
+      "stats": {
+        "atk_bonus": 840,
+        "hp_bonus": 0,
+        "def_bonus": 0,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "void_essence",
+            "quantity": 40
+          },
+          {
+            "item_id": "refined_plate",
+            "quantity": 20
+          }
+        ]
+      }
+    },
+    {
+      "id": "celestial_spire",
+      "category": "weapon",
+      "name": "Celestial Spire",
+      "description": "Tongkat yang menyerap energi bintang.",
+      "buy_price": 0,
+      "sell_price": 45000,
+      "required_class_id": "sorcerer",
+      "tier_level": 8,
+      "stats": {
+        "atk_bonus": 630,
+        "hp_bonus": 0,
+        "def_bonus": 0,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "arcane_crystal",
+            "quantity": 20
+          },
+          {
+            "item_id": "mana_shard",
+            "quantity": 30
+          }
+        ]
+      }
+    },
+    {
+      "id": "cinder_hood",
+      "category": "helmet",
+      "name": "Cinder Hood",
+      "description": "Tudung bara api.",
+      "buy_price": 0,
+      "sell_price": 9000,
+      "required_class_id": "sorcerer",
+      "tier_level": 6,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 570,
+        "def_bonus": 22,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "mana_shard",
+            "quantity": 25
+          },
+          {
+            "item_id": "arcane_crystal",
+            "quantity": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "cinder_hood_1316",
+      "category": "helmet",
+      "name": "Cinder Hood",
+      "description": "Tudung penjaga bayangan api.",
+      "buy_price": 0,
+      "sell_price": 9000,
+      "required_class_id": "wanderer",
+      "tier_level": 6,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 675,
+        "def_bonus": 30,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "fine_fiber",
+            "quantity": 25
+          },
+          {
+            "item_id": "silent_thread",
+            "quantity": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "cloth_bandana",
+      "category": "helmet",
+      "name": "Cloth Bandana",
+      "description": "Bandana kain ikat kepala.",
+      "buy_price": 380,
+      "sell_price": 200,
+      "required_class_id": "wanderer",
+      "tier_level": 1,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 45,
+        "def_bonus": 1,
+        "special_effect": "null"
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "cloth_slippers",
+      "category": "boots",
+      "name": "Cloth Slippers",
+      "description": "Sandal kain ringan.",
+      "buy_price": 250,
+      "sell_price": 150,
+      "required_class_id": "sorcerer",
+      "tier_level": 1,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 30,
+        "def_bonus": 1,
+        "special_effect": "null"
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "commander_s_crest",
+      "category": "helmet",
+      "name": "Commander's Crest",
+      "description": "Helm berlambang komandan perang.",
+      "buy_price": 8500,
+      "sell_price": 4500,
+      "required_class_id": "knight",
+      "tier_level": 5,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 540,
+        "def_bonus": 25,
+        "special_effect": "null"
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "composite_bow",
+      "category": "weapon",
+      "name": "Composite Bow",
+      "description": "Busur campuran kayu dan tulang.",
+      "buy_price": 2800,
+      "sell_price": 1500,
+      "required_class_id": "wanderer",
+      "tier_level": 3,
+      "stats": {
+        "atk_bonus": 120,
+        "hp_bonus": 0,
+        "def_bonus": 0,
+        "special_effect": "null"
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "cotton_hood",
+      "category": "helmet",
+      "name": "Cotton Hood",
+      "description": "Penutup kepala kain pelindung ringan.",
+      "buy_price": 350,
+      "sell_price": 200,
+      "required_class_id": "sorcerer",
+      "tier_level": 1,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 36,
+        "def_bonus": 1,
+        "special_effect": "null"
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "crown_of_the_void",
+      "category": "helmet",
+      "name": "Crown of the Void",
+      "description": "Mahkota kehampaan.",
+      "buy_price": 0,
+      "sell_price": 60000,
+      "required_class_id": "sorcerer",
+      "tier_level": 9,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 1440,
+        "def_bonus": 65,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "arcane_crystal",
+            "quantity": 25
+          },
+          {
+            "item_id": "mana_shard",
+            "quantity": 40
+          }
+        ]
+      }
+    },
+    {
+      "id": "crystal_scepter",
+      "category": "weapon",
+      "name": "Crystal Scepter",
+      "description": "Fokus kristal untuk mempertajam mantra.",
+      "buy_price": 3000,
+      "sell_price": 1500,
+      "required_class_id": "sorcerer",
+      "tier_level": 3,
+      "stats": {
+        "atk_bonus": 144,
+        "hp_bonus": 0,
+        "def_bonus": 0,
+        "special_effect": "null"
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "deep_earth_maul",
+      "category": "weapon",
+      "name": "Deep-Earth Maul",
+      "description": "Palu raksasa dari akar Dungeon of Thorns.",
+      "buy_price": 0,
+      "sell_price": 25000,
+      "required_class_id": "knight",
+      "tier_level": 7,
+      "stats": {
+        "atk_bonus": 375,
+        "hp_bonus": 0,
+        "def_bonus": 0,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "refined_plate",
+            "quantity": 10
+          },
+          {
+            "item_id": "heavy_ore",
+            "quantity": 15
+          }
+        ]
+      }
+    },
+    {
+      "id": "diadem_of_stars",
+      "category": "helmet",
+      "name": "Diadem of Stars",
+      "description": "Mahkota bertabur kekuatan bintang.",
+      "buy_price": 0,
+      "sell_price": 35000,
+      "required_class_id": "sorcerer",
+      "tier_level": 8,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 1050,
+        "def_bonus": 45,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "arcane_crystal",
+            "quantity": 15
+          },
+          {
+            "item_id": "mana_shard",
+            "quantity": 25
+          }
+        ]
+      }
+    },
+    {
+      "id": "dragonscale_hauberk",
+      "category": "armor",
+      "name": "Dragonscale Hauberk",
+      "description": "Zirah yang terbuat dari sisik naga.",
+      "buy_price": 0,
+      "sell_price": 65000,
+      "required_class_id": "knight",
+      "tier_level": 8,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 4200,
+        "def_bonus": 170,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "refined_plate",
+            "quantity": 25
+          },
+          {
+            "item_id": "heavy_ore",
+            "quantity": 45
+          }
+        ]
+      }
+    },
+    {
+      "id": "duelist_s_leather",
+      "category": "armor",
+      "name": "Duelist's Leather",
+      "description": "Zirah kulit ringan khusus pertarungan.",
+      "buy_price": 14000,
+      "sell_price": 8500,
+      "required_class_id": "wanderer",
+      "tier_level": 5,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 1245,
+        "def_bonus": 45,
+        "special_effect": "null"
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "eagle_eye_piercer",
+      "category": "weapon",
+      "name": "Eagle-Eye Piercer",
+      "description": "Busur legendaris dengan akurasi mutlak.",
+      "buy_price": 0,
+      "sell_price": 45000,
+      "required_class_id": "wanderer",
+      "tier_level": 8,
+      "stats": {
+        "atk_bonus": 555,
+        "hp_bonus": 0,
+        "def_bonus": 0,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "silent_thread",
+            "quantity": 20
+          },
+          {
+            "item_id": "fine_fiber",
+            "quantity": 30
+          }
+        ]
+      }
+    },
+    {
+      "id": "elder_root_robe",
+      "category": "armor",
+      "name": "Elder Root Robe",
+      "description": "Jubah dari akar pohon kebijaksanaan.",
+      "buy_price": 0,
+      "sell_price": 35000,
+      "required_class_id": "sorcerer",
+      "tier_level": 7,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 2250,
+        "def_bonus": 80,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "arcane_crystal",
+            "quantity": 15
+          },
+          {
+            "item_id": "mana_shard",
+            "quantity": 30
+          }
+        ]
+      }
+    },
+    {
+      "id": "ember_steel_mask",
+      "category": "helmet",
+      "name": "Ember-Steel Mask",
+      "description": "Topeng baja bara api.",
+      "buy_price": 0,
+      "sell_price": 9000,
+      "required_class_id": "knight",
+      "tier_level": 6,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 780,
+        "def_bonus": 38,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "heavy_ore",
+            "quantity": 25
+          },
+          {
+            "item_id": "refined_plate",
+            "quantity": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "enchanter_s_boots",
+      "category": "boots",
+      "name": "Enchanter's Boots",
+      "description": "Sepatu bot para pemantra.",
+      "buy_price": 0,
+      "sell_price": 1500,
+      "required_class_id": "sorcerer",
+      "tier_level": 4,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 225,
+        "def_bonus": 8,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "mana_shard",
+            "quantity": 15
+          },
+          {
+            "item_id": "iron_scrap",
+            "quantity": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "eternal_night_skin",
+      "category": "armor",
+      "name": "Eternal Night-Skin",
+      "description": "Kulit keabadian malam.",
+      "buy_price": 0,
+      "sell_price": 250000,
+      "required_class_id": "wanderer",
+      "tier_level": 10,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 6600,
+        "def_bonus": 265,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "void_essence",
+            "quantity": 50
+          },
+          {
+            "item_id": "silent_thread",
+            "quantity": 25
+          }
+        ]
+      }
+    },
+    {
+      "id": "eternity_raiment",
+      "category": "armor",
+      "name": "Eternity Raiment",
+      "description": "Pakaian keabadian sihir kosmik.",
+      "buy_price": 0,
+      "sell_price": 250000,
+      "required_class_id": "sorcerer",
+      "tier_level": 10,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 5850,
+        "def_bonus": 220,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "void_essence",
+            "quantity": 50
+          },
+          {
+            "item_id": "arcane_crystal",
+            "quantity": 25
+          }
+        ]
+      }
+    },
+    {
+      "id": "ever_root_greaves",
+      "category": "boots",
+      "name": "Ever-Root Greaves",
+      "description": "Sepatu akar yang mengikat ke bumi.",
+      "buy_price": 0,
+      "sell_price": 12000,
+      "required_class_id": "knight",
+      "tier_level": 7,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 930,
+        "def_bonus": 45,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "refined_plate",
+            "quantity": 8
+          },
+          {
+            "item_id": "heavy_ore",
+            "quantity": 15
+          }
+        ]
+      }
+    },
+    {
+      "id": "executioner_s_pride",
+      "category": "weapon",
+      "name": "Executioner's Pride",
+      "description": "Senjata legendaris para algojo kerajaan.",
+      "buy_price": 0,
+      "sell_price": 45000,
+      "required_class_id": "knight",
+      "tier_level": 8,
+      "stats": {
+        "atk_bonus": 480,
+        "hp_bonus": 0,
+        "def_bonus": 0,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "refined_plate",
+            "quantity": 20
+          },
+          {
+            "item_id": "heavy_ore",
+            "quantity": 30
+          }
+        ]
+      }
+    },
+    {
+      "id": "feather_charm",
+      "category": "accessory",
+      "name": "Feather Charm",
+      "description": "Aksesoris penambah AGI",
+      "buy_price": 0,
+      "sell_price": 2000,
+      "required_class_id": "null",
+      "tier_level": 3,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 0,
+        "def_bonus": 0,
+        "special_effect": "AGI_+10%"
+      },
+      "special_effect": "AGI_+10%",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "fine_fiber",
+            "quantity": 20
+          },
+          {
+            "item_id": "iron_scrap",
+            "quantity": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": "final_nightfall",
+      "category": "weapon",
+      "name": "Final Nightfall",
+      "description": "Senjata pamungkas untuk sang Nightfall.",
+      "buy_price": 0,
+      "sell_price": 150000,
+      "required_class_id": "wanderer",
+      "tier_level": 10,
+      "stats": {
+        "atk_bonus": 990,
+        "hp_bonus": 0,
+        "def_bonus": 0,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "void_essence",
+            "quantity": 40
+          },
+          {
+            "item_id": "silent_thread",
+            "quantity": 20
+          }
+        ]
+      }
+    },
+    {
+      "id": "fine_fiber",
+      "category": "material",
+      "name": "Fine Fiber",
+      "description": "Material Dasar Wanderer",
+      "buy_price": 0,
+      "sell_price": 60,
+      "required_class_id": "wanderer",
+      "tier_level": 1,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 0,
+        "def_bonus": 0
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "flame_walk_shoes",
+      "category": "boots",
+      "name": "Flame-Walk Shoes",
+      "description": "Sepatu pijakan api.",
+      "buy_price": 0,
+      "sell_price": 6500,
+      "required_class_id": "sorcerer",
+      "tier_level": 6,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 495,
+        "def_bonus": 20,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "mana_shard",
+            "quantity": 25
+          },
+          {
+            "item_id": "arcane_crystal",
+            "quantity": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "flamestrike_bow",
+      "category": "weapon",
+      "name": "Flamestrike Bow",
+      "description": "Busur yang talinya terbuat dari serat api.",
+      "buy_price": 0,
+      "sell_price": 12000,
+      "required_class_id": "wanderer",
+      "tier_level": 6,
+      "stats": {
+        "atk_bonus": 315,
+        "hp_bonus": 0,
+        "def_bonus": 0,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "fine_fiber",
+            "quantity": 30
+          },
+          {
+            "item_id": "silent_thread",
+            "quantity": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "genesis_pillar",
+      "category": "weapon",
+      "name": "Genesis Pillar",
+      "description": "Senjata pamungkas untuk sang Archon.",
+      "buy_price": 0,
+      "sell_price": 150000,
+      "required_class_id": "sorcerer",
+      "tier_level": 10,
+      "stats": {
+        "atk_bonus": 1140,
+        "hp_bonus": 0,
+        "def_bonus": 0,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "void_essence",
+            "quantity": 40
+          },
+          {
+            "item_id": "arcane_crystal",
+            "quantity": 20
+          }
+        ]
+      }
+    },
+    {
+      "id": "ghost_walkers",
+      "category": "boots",
+      "name": "Ghost-Walkers",
+      "description": "Sepatu pejalan tembus rintangan.",
+      "buy_price": 0,
+      "sell_price": 45000,
+      "required_class_id": "wanderer",
+      "tier_level": 9,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 1515,
+        "def_bonus": 75,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "silent_thread",
+            "quantity": 20
+          },
+          {
+            "item_id": "fine_fiber",
+            "quantity": 30
+          }
+        ]
+      }
+    },
+    {
+      "id": "gladiator_s_crown",
+      "category": "helmet",
+      "name": "Gladiator's Crown",
+      "description": "Mahkota para gladiator tak terkalahkan.",
+      "buy_price": 0,
+      "sell_price": 35000,
+      "required_class_id": "knight",
+      "tier_level": 8,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 1380,
+        "def_bonus": 70,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "refined_plate",
+            "quantity": 15
+          },
+          {
+            "item_id": "heavy_ore",
+            "quantity": 25
+          }
+        ]
+      }
+    },
+    {
+      "id": "glass_monocle",
+      "category": "accessory",
+      "name": "Glass Monocle",
+      "description": "Aksesoris penambah INT",
+      "buy_price": 0,
+      "sell_price": 2000,
+      "required_class_id": "null",
+      "tier_level": 2,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 0,
+        "def_bonus": 0,
+        "special_effect": "INT_+10%"
+      },
+      "special_effect": "INT_+10%",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "mana_shard",
+            "quantity": 20
+          },
+          {
+            "item_id": "iron_scrap",
+            "quantity": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": "god_king_s_bastion",
+      "category": "armor",
+      "name": "God-King's Bastion",
+      "description": "Benteng pelindung raja dewa.",
+      "buy_price": 0,
+      "sell_price": 250000,
+      "required_class_id": "knight",
+      "tier_level": 10,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 7500,
+        "def_bonus": 310,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "void_essence",
+            "quantity": 50
+          },
+          {
+            "item_id": "refined_plate",
+            "quantity": 25
+          }
+        ]
+      }
+    },
+    {
+      "id": "god_stepper_soles",
+      "category": "boots",
+      "name": "God-Stepper Soles",
+      "description": "Sol kaki penapak tingkat dewa.",
+      "buy_price": 0,
+      "sell_price": 90000,
+      "required_class_id": "sorcerer",
+      "tier_level": 10,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 1860,
+        "def_bonus": 95,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "void_essence",
+            "quantity": 20
+          },
+          {
+            "item_id": "arcane_crystal",
+            "quantity": 12
+          }
+        ]
+      }
+    },
+    {
+      "id": "grand_marshall_s_stride",
+      "category": "boots",
+      "name": "Grand Marshall's Stride",
+      "description": "Sepatu langkah keagungan.",
+      "buy_price": 0,
+      "sell_price": 90000,
+      "required_class_id": "knight",
+      "tier_level": 10,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 2250,
+        "def_bonus": 115,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "void_essence",
+            "quantity": 20
+          },
+          {
+            "item_id": "refined_plate",
+            "quantity": 12
+          }
+        ]
+      }
+    },
+    {
+      "id": "grave_guardian_helm",
+      "category": "helmet",
+      "name": "Grave-Guardian Helm",
+      "description": "Helm penjaga makam kuno.",
+      "buy_price": 0,
+      "sell_price": 18000,
+      "required_class_id": "knight",
+      "tier_level": 7,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 1050,
+        "def_bonus": 52,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "refined_plate",
+            "quantity": 8
+          },
+          {
+            "item_id": "heavy_ore",
+            "quantity": 15
+          }
+        ]
+      }
+    },
+    {
+      "id": "guard_s_visor",
+      "category": "helmet",
+      "name": "Guard's Visor",
+      "description": "Helm dengan visor pelindung penuh.",
+      "buy_price": 0,
+      "sell_price": 2200,
+      "required_class_id": "knight",
+      "tier_level": 4,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 360,
+        "def_bonus": 18,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "heavy_ore",
+            "quantity": 15
+          },
+          {
+            "item_id": "iron_scrap",
+            "quantity": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "half_plate_mail",
+      "category": "armor",
+      "name": "Half-Plate Mail",
+      "description": "Zirah plat baja setengah badan.",
+      "buy_price": 0,
+      "sell_price": 4500,
+      "required_class_id": "knight",
+      "tier_level": 4,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 960,
+        "def_bonus": 35,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "heavy_ore",
+            "quantity": 25
+          },
+          {
+            "item_id": "refined_plate",
+            "quantity": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "hardened_soles",
+      "category": "boots",
+      "name": "Hardened Soles",
+      "description": "Sepatu dengan sol yang dikeraskan.",
+      "buy_price": 0,
+      "sell_price": 350,
+      "required_class_id": "knight",
+      "tier_level": 2,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 105,
+        "def_bonus": 3,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "iron_scrap",
+            "quantity": 5
+          },
+          {
+            "item_id": "heavy_ore",
+            "quantity": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "healing_potion",
+      "category": "consumable",
+      "name": "Healing Potion",
+      "description": "Memulihkan sejumlah HP (misal: 25% dari Max HP). Sangat penting untuk semua class.",
+      "buy_price": 180,
+      "sell_price": 100,
+      "required_class_id": "null",
+      "tier_level": 1,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 0,
+        "def_bonus": 0
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "heavy_arbalest",
+      "category": "weapon",
+      "name": "Heavy Arbalest",
+      "description": "Crossbow berat dengan mekanisme besi.",
+      "buy_price": 0,
+      "sell_price": 3000,
+      "required_class_id": "wanderer",
+      "tier_level": 4,
+      "stats": {
+        "atk_bonus": 174,
+        "hp_bonus": 0,
+        "def_bonus": 0,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "fine_fiber",
+            "quantity": 15
+          },
+          {
+            "item_id": "iron_scrap",
+            "quantity": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "heavy_ore",
+      "category": "material",
+      "name": "Heavy Ore",
+      "description": "Material Dasar Knight",
+      "buy_price": 0,
+      "sell_price": 60,
+      "required_class_id": "knight",
+      "tier_level": 1,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 0,
+        "def_bonus": 0
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "heavy_war_boots",
+      "category": "boots",
+      "name": "Heavy War-Boots",
+      "description": "Sepatu bot perang kelas berat.",
+      "buy_price": 6000,
+      "sell_price": 3000,
+      "required_class_id": "knight",
+      "tier_level": 5,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 450,
+        "def_bonus": 20,
+        "special_effect": "null"
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "high_mage_rod",
+      "category": "weapon",
+      "name": "High Mage Rod",
+      "description": "Senjata standar para penyihir istana.",
+      "buy_price": 12000,
+      "sell_price": 6000,
+      "required_class_id": "sorcerer",
+      "tier_level": 5,
+      "stats": {
+        "atk_bonus": 270,
+        "hp_bonus": 0,
+        "def_bonus": 0,
+        "special_effect": "null"
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "hunter_s_crossbow",
+      "category": "weapon",
+      "name": "Hunter's Crossbow",
+      "description": "Crossbow standar dengan daya tembus stabil.",
+      "buy_price": 0,
+      "sell_price": 600,
+      "required_class_id": "wanderer",
+      "tier_level": 2,
+      "stats": {
+        "atk_bonus": 75,
+        "hp_bonus": 0,
+        "def_bonus": 0,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "iron_scrap",
+            "quantity": 10
+          },
+          {
+            "item_id": "fine_fiber",
+            "quantity": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "ignis_core_staff",
+      "category": "weapon",
+      "name": "Ignis Core Staff",
+      "description": "Inti api dari Dungeon of Ember.",
+      "buy_price": 0,
+      "sell_price": 12000,
+      "required_class_id": "sorcerer",
+      "tier_level": 6,
+      "stats": {
+        "atk_bonus": 360,
+        "hp_bonus": 0,
+        "def_bonus": 0,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "mana_shard",
+            "quantity": 30
+          },
+          {
+            "item_id": "arcane_crystal",
+            "quantity": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "infinity_sphere",
+      "category": "consumable",
+      "name": "Infinity Sphere",
+      "description": "Mengurangi seluruh durasi cooldown skill yang sedang aktif sebanyak 1-2 turn secara instan.",
+      "buy_price": 3500,
+      "sell_price": 1800,
+      "required_class_id": "null",
+      "tier_level": 1,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 0,
+        "def_bonus": 0
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "iron_chainmail",
+      "category": "armor",
+      "name": "Iron Chainmail",
+      "description": "Zirah rantai besi.",
+      "buy_price": 4000,
+      "sell_price": 2000,
+      "required_class_id": "knight",
+      "tier_level": 3,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 600,
+        "def_bonus": 22,
+        "special_effect": "null"
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "iron_claymore",
+      "category": "weapon",
+      "name": "Iron Claymore",
+      "description": "Senjata standar prajurit kerajaan.",
+      "buy_price": 0,
+      "sell_price": 600,
+      "required_class_id": "knight",
+      "tier_level": 2,
+      "stats": {
+        "atk_bonus": 66,
+        "hp_bonus": 0,
+        "def_bonus": 0,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "iron_scrap",
+            "quantity": 10
+          },
+          {
+            "item_id": "heavy_ore",
+            "quantity": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "iron_greaves",
+      "category": "boots",
+      "name": "Iron Greaves",
+      "description": "Pelindung kaki dari besi.",
+      "buy_price": 1500,
+      "sell_price": 750,
+      "required_class_id": "knight",
+      "tier_level": 3,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 195,
+        "def_bonus": 7,
+        "special_effect": "null"
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "iron_pot_helm",
+      "category": "helmet",
+      "name": "Iron Pot Helm",
+      "description": "Helm besi standar.",
+      "buy_price": 0,
+      "sell_price": 450,
+      "required_class_id": "knight",
+      "tier_level": 2,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 135,
+        "def_bonus": 5,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "iron_scrap",
+            "quantity": 6
+          },
+          {
+            "item_id": "heavy_ore",
+            "quantity": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "iron_ring",
+      "category": "accessory",
+      "name": "Iron Ring",
+      "description": "Aksesoris penambah STR",
+      "buy_price": 0,
+      "sell_price": 2000,
+      "required_class_id": "null",
+      "tier_level": 1,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 0,
+        "def_bonus": 0,
+        "special_effect": "STR_+10%"
+      },
+      "special_effect": "STR_+10%",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "heavy_ore",
+            "quantity": 20
+          },
+          {
+            "item_id": "iron_scrap",
+            "quantity": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": "iron_scrap",
+      "category": "material",
+      "name": "Iron Scrap",
+      "description": "Material Dasar Universal",
+      "buy_price": 100,
+      "sell_price": 40,
+      "required_class_id": "null",
+      "tier_level": 1,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 0,
+        "def_bonus": 0
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "knight_s_heavy_axe",
+      "category": "weapon",
+      "name": "Knight's Heavy Axe",
+      "description": "Kapak berat untuk menghancurkan zirah.",
+      "buy_price": 0,
+      "sell_price": 3000,
+      "required_class_id": "knight",
+      "tier_level": 4,
+      "stats": {
+        "atk_bonus": 150,
+        "hp_bonus": 0,
+        "def_bonus": 0,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "heavy_ore",
+            "quantity": 15
+          },
+          {
+            "item_id": "iron_scrap",
+            "quantity": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "knight_s_plate",
+      "category": "armor",
+      "name": "Knight's Plate",
+      "description": "Zirah plat baja penuh standar kesatria.",
+      "buy_price": 15000,
+      "sell_price": 8500,
+      "required_class_id": "knight",
+      "tier_level": 5,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 1440,
+        "def_bonus": 55,
+        "special_effect": "null"
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "leather_boots",
+      "category": "boots",
+      "name": "Leather Boots",
+      "description": "Sepatu kulit dasar petualang.",
+      "buy_price": 0,
+      "sell_price": 350,
+      "required_class_id": "wanderer",
+      "tier_level": 2,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 90,
+        "def_bonus": 2,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "iron_scrap",
+            "quantity": 5
+          },
+          {
+            "item_id": "fine_fiber",
+            "quantity": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "leather_cap",
+      "category": "helmet",
+      "name": "Leather Cap",
+      "description": "Topi kulit ringan.",
+      "buy_price": 0,
+      "sell_price": 450,
+      "required_class_id": "wanderer",
+      "tier_level": 2,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 114,
+        "def_bonus": 4,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "iron_scrap",
+            "quantity": 6
+          },
+          {
+            "item_id": "fine_fiber",
+            "quantity": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "leather_coif",
+      "category": "helmet",
+      "name": "Leather Coif",
+      "description": "Helm kulit pelindung dasar.",
+      "buy_price": 400,
+      "sell_price": 200,
+      "required_class_id": "knight",
+      "tier_level": 1,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 60,
+        "def_bonus": 2,
+        "special_effect": "null"
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "leather_jerkin",
+      "category": "armor",
+      "name": "Leather Jerkin",
+      "description": "Rompi kulit tanpa lengan.",
+      "buy_price": 0,
+      "sell_price": 900,
+      "required_class_id": "wanderer",
+      "tier_level": 2,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 285,
+        "def_bonus": 10,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "iron_scrap",
+            "quantity": 10
+          },
+          {
+            "item_id": "fine_fiber",
+            "quantity": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": "ley_line_greaves",
+      "category": "boots",
+      "name": "Ley-Line Greaves",
+      "description": "Pelindung kaki pengumpul energi leylines.",
+      "buy_price": 0,
+      "sell_price": 12000,
+      "required_class_id": "sorcerer",
+      "tier_level": 7,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 705,
+        "def_bonus": 30,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "arcane_crystal",
+            "quantity": 8
+          },
+          {
+            "item_id": "mana_shard",
+            "quantity": 15
+          }
+        ]
+      }
+    },
+    {
+      "id": "linen_shoes",
+      "category": "boots",
+      "name": "Linen Shoes",
+      "description": "Sepatu linen untuk mobilitas.",
+      "buy_price": 0,
+      "sell_price": 350,
+      "required_class_id": "sorcerer",
+      "tier_level": 2,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 75,
+        "def_bonus": 2,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "iron_scrap",
+            "quantity": 5
+          },
+          {
+            "item_id": "mana_shard",
+            "quantity": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "mage_s_cowl",
+      "category": "helmet",
+      "name": "Mage's Cowl",
+      "description": "Tudung kepala penyihir standar.",
+      "buy_price": 1800,
+      "sell_price": 1000,
+      "required_class_id": "sorcerer",
+      "tier_level": 3,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 165,
+        "def_bonus": 6,
+        "special_effect": "null"
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "mage_s_sandals",
+      "category": "boots",
+      "name": "Mage's Sandals",
+      "description": "Sandal khusus para penyihir.",
+      "buy_price": 1200,
+      "sell_price": 750,
+      "required_class_id": "sorcerer",
+      "tier_level": 3,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 144,
+        "def_bonus": 5,
+        "special_effect": "null"
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "magma_step_boots",
+      "category": "boots",
+      "name": "Magma-Step Boots",
+      "description": "Sepatu bot loncat magma.",
+      "buy_price": 0,
+      "sell_price": 6500,
+      "required_class_id": "wanderer",
+      "tier_level": 6,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 570,
+        "def_bonus": 26,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "fine_fiber",
+            "quantity": 25
+          },
+          {
+            "item_id": "silent_thread",
+            "quantity": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "magma_walkers",
+      "category": "boots",
+      "name": "Magma-Walkers",
+      "description": "Sepatu bot penahan panas magma.",
+      "buy_price": 0,
+      "sell_price": 6500,
+      "required_class_id": "knight",
+      "tier_level": 6,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 660,
+        "def_bonus": 32,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "heavy_ore",
+            "quantity": 25
+          },
+          {
+            "item_id": "refined_plate",
+            "quantity": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "mana_crystal",
+      "category": "accessory",
+      "name": "Mana Crystal",
+      "description": "Aksesoris penambah persentase MP",
+      "buy_price": 0,
+      "sell_price": 5000,
+      "required_class_id": "null",
+      "tier_level": 5,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 0,
+        "def_bonus": 0,
+        "special_effect": "MAXMP_+20%"
+      },
+      "special_effect": "MAXMP_+20%",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "mana_shard",
+            "quantity": 40
+          },
+          {
+            "item_id": "arcane_crystal",
+            "quantity": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": "mana_elixir",
+      "category": "consumable",
+      "name": "Mana Elixir",
+      "description": "Memulihkan sejumlah Mana/MP (misal: 30% dari Max Mana). Sangat krusial untuk Archon agar bisa terus mengeluarkan sihir.",
+      "buy_price": 260,
+      "sell_price": 150,
+      "required_class_id": "null",
+      "tier_level": 1,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 0,
+        "def_bonus": 0
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "mana_shard",
+      "category": "material",
+      "name": "Mana Shard",
+      "description": "Material Dasar Sorcerer",
+      "buy_price": 0,
+      "sell_price": 60,
+      "required_class_id": "sorcerer",
+      "tier_level": 1,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 0,
+        "def_bonus": 0
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "marshall_s_iron_face",
+      "category": "helmet",
+      "name": "Marshall's Iron Face",
+      "description": "Wajah besi sang jenderal agung.",
+      "buy_price": 0,
+      "sell_price": 120000,
+      "required_class_id": "knight",
+      "tier_level": 10,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 2400,
+        "def_bonus": 130,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "void_essence",
+            "quantity": 25
+          },
+          {
+            "item_id": "refined_plate",
+            "quantity": 15
+          }
+        ]
+      }
+    },
+    {
+      "id": "medallion_of_life",
+      "category": "accessory",
+      "name": "Medallion of Life",
+      "description": "Aksesoris regenerasi HP",
+      "buy_price": 0,
+      "sell_price": 35000,
+      "required_class_id": "null",
+      "tier_level": 8,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 0,
+        "def_bonus": 0,
+        "special_effect": "HPREGEN_5%"
+      },
+      "special_effect": "HPREGEN_5%",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "arcane_crystal",
+            "quantity": 25
+          },
+          {
+            "item_id": "mana_shard",
+            "quantity": 30
+          }
+        ]
+      }
+    },
+    {
+      "id": "mistwalker_tunic",
+      "category": "armor",
+      "name": "Mistwalker Tunic",
+      "description": "Tunik pejalan kabut putih.",
+      "buy_price": 0,
+      "sell_price": 65000,
+      "required_class_id": "wanderer",
+      "tier_level": 8,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 3675,
+        "def_bonus": 140,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "silent_thread",
+            "quantity": 25
+          },
+          {
+            "item_id": "fine_fiber",
+            "quantity": 45
+          }
+        ]
+      }
+    },
+    {
+      "id": "mystic_vestment",
+      "category": "armor",
+      "name": "Mystic Vestment",
+      "description": "Jubah upacara mistis penyihir.",
+      "buy_price": 0,
+      "sell_price": 4500,
+      "required_class_id": "sorcerer",
+      "tier_level": 4,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 690,
+        "def_bonus": 22,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "mana_shard",
+            "quantity": 25
+          },
+          {
+            "item_id": "arcane_crystal",
+            "quantity": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "nature_s_embrace",
+      "category": "armor",
+      "name": "Nature's Embrace",
+      "description": "Zirah pelukan alam terbuka.",
+      "buy_price": 0,
+      "sell_price": 35000,
+      "required_class_id": "wanderer",
+      "tier_level": 7,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 2625,
+        "def_bonus": 100,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "silent_thread",
+            "quantity": 15
+          },
+          {
+            "item_id": "fine_fiber",
+            "quantity": 30
+          }
+        ]
+      }
+    },
+    {
+      "id": "nebula_gown",
+      "category": "armor",
+      "name": "Nebula Gown",
+      "description": "Gaun tenunan kosmos dan rasi bintang.",
+      "buy_price": 0,
+      "sell_price": 65000,
+      "required_class_id": "sorcerer",
+      "tier_level": 8,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 3150,
+        "def_bonus": 115,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "arcane_crystal",
+            "quantity": 25
+          },
+          {
+            "item_id": "mana_shard",
+            "quantity": 45
+          }
+        ]
+      }
+    },
+    {
+      "id": "nightfall_s_path",
+      "category": "boots",
+      "name": "Nightfall's Path",
+      "description": "Alas penyusur jalan sang Nightfall.",
+      "buy_price": 0,
+      "sell_price": 90000,
+      "required_class_id": "wanderer",
+      "tier_level": 10,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 2040,
+        "def_bonus": 105,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "void_essence",
+            "quantity": 20
+          },
+          {
+            "item_id": "silent_thread",
+            "quantity": 12
+          }
+        ]
+      }
+    },
+    {
+      "id": "novice_robe",
+      "category": "armor",
+      "name": "Novice Robe",
+      "description": "Jubah pemula sihir.",
+      "buy_price": 700,
+      "sell_price": 400,
+      "required_class_id": "sorcerer",
+      "tier_level": 1,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 90,
+        "def_bonus": 3,
+        "special_effect": "null"
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "padded_shoes",
+      "category": "boots",
+      "name": "Padded Shoes",
+      "description": "Sepatu tebal anti selip.",
+      "buy_price": 1300,
+      "sell_price": 750,
+      "required_class_id": "wanderer",
+      "tier_level": 3,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 165,
+        "def_bonus": 6,
+        "special_effect": "null"
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "padded_tunic",
+      "category": "armor",
+      "name": "Padded Tunic",
+      "description": "Tunik kain empuk pelindung dasar.",
+      "buy_price": 800,
+      "sell_price": 400,
+      "required_class_id": "knight",
+      "tier_level": 1,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 150,
+        "def_bonus": 5,
+        "special_effect": "null"
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "phase_boots",
+      "category": "boots",
+      "name": "Phase Boots",
+      "description": "Sepatu bergeser dimensi.",
+      "buy_price": 0,
+      "sell_price": 22000,
+      "required_class_id": "sorcerer",
+      "tier_level": 8,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 990,
+        "def_bonus": 45,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "arcane_crystal",
+            "quantity": 12
+          },
+          {
+            "item_id": "mana_shard",
+            "quantity": 20
+          }
+        ]
+      }
+    },
+    {
+      "id": "plated_sabatons",
+      "category": "boots",
+      "name": "Plated Sabatons",
+      "description": "Sepatu bot dengan lapisan plat baja.",
+      "buy_price": 0,
+      "sell_price": 1500,
+      "required_class_id": "knight",
+      "tier_level": 4,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 300,
+        "def_bonus": 12,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "heavy_ore",
+            "quantity": 15
+          },
+          {
+            "item_id": "iron_scrap",
+            "quantity": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "pyromancer_s_mantle",
+      "category": "armor",
+      "name": "Pyromancer's Mantle",
+      "description": "Mantel pengendali api.",
+      "buy_price": 0,
+      "sell_price": 18000,
+      "required_class_id": "sorcerer",
+      "tier_level": 6,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 1560,
+        "def_bonus": 55,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "mana_shard",
+            "quantity": 40
+          },
+          {
+            "item_id": "arcane_crystal",
+            "quantity": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "ranger_s_garb",
+      "category": "armor",
+      "name": "Ranger's Garb",
+      "description": "Pakaian penjelajah alam liar.",
+      "buy_price": 0,
+      "sell_price": 4500,
+      "required_class_id": "wanderer",
+      "tier_level": 4,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 825,
+        "def_bonus": 28,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "fine_fiber",
+            "quantity": 25
+          },
+          {
+            "item_id": "silent_thread",
+            "quantity": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "ranger_s_longbow",
+      "category": "weapon",
+      "name": "Ranger's Longbow",
+      "description": "Busur panjang standar pasukan pengintai.",
+      "buy_price": 11000,
+      "sell_price": 6000,
+      "required_class_id": "wanderer",
+      "tier_level": 5,
+      "stats": {
+        "atk_bonus": 240,
+        "hp_bonus": 0,
+        "def_bonus": 0,
+        "special_effect": "null"
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "refined_plate",
+      "category": "material",
+      "name": "Refined Plate",
+      "description": "Material Olahan Knight",
+      "buy_price": 0,
+      "sell_price": 450,
+      "required_class_id": "knight",
+      "tier_level": 1,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 0,
+        "def_bonus": 0
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "heavy_ore",
+            "quantity": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "reinforced_coif",
+      "category": "helmet",
+      "name": "Reinforced Coif",
+      "description": "Tudung pelindung yang diperkuat.",
+      "buy_price": 0,
+      "sell_price": 2200,
+      "required_class_id": "wanderer",
+      "tier_level": 4,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 300,
+        "def_bonus": 14,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "fine_fiber",
+            "quantity": 15
+          },
+          {
+            "item_id": "iron_scrap",
+            "quantity": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "reinforced_leather",
+      "category": "armor",
+      "name": "Reinforced Leather",
+      "description": "Zirah kulit yang diperkuat.",
+      "buy_price": 0,
+      "sell_price": 900,
+      "required_class_id": "knight",
+      "tier_level": 2,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 330,
+        "def_bonus": 12,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "iron_scrap",
+            "quantity": 10
+          },
+          {
+            "item_id": "heavy_ore",
+            "quantity": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": "rough_tunic",
+      "category": "armor",
+      "name": "Rough Tunic",
+      "description": "Tunik kasar untuk bergerak lincah.",
+      "buy_price": 750,
+      "sell_price": 400,
+      "required_class_id": "wanderer",
+      "tier_level": 1,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 120,
+        "def_bonus": 4,
+        "special_effect": "null"
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "royal_vanguard_blade",
+      "category": "weapon",
+      "name": "Royal Vanguard Blade",
+      "description": "Pedang kehormatan penjaga istana.",
+      "buy_price": 10000,
+      "sell_price": 6000,
+      "required_class_id": "knight",
+      "tier_level": 5,
+      "stats": {
+        "atk_bonus": 210,
+        "hp_bonus": 0,
+        "def_bonus": 0,
+        "special_effect": "null"
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "rusty_greatsword",
+      "category": "weapon",
+      "name": "Rusty Greatsword",
+      "description": "Pedang tua yang sudah berkarat.",
+      "buy_price": 450,
+      "sell_price": 250,
+      "required_class_id": "knight",
+      "tier_level": 1,
+      "stats": {
+        "atk_bonus": 30,
+        "hp_bonus": 0,
+        "def_bonus": 0,
+        "special_effect": "null"
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "sage_s_veil",
+      "category": "helmet",
+      "name": "Sage's Veil",
+      "description": "Kerudung kebijaksanaan orang bijak.",
+      "buy_price": 0,
+      "sell_price": 2200,
+      "required_class_id": "sorcerer",
+      "tier_level": 4,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 255,
+        "def_bonus": 10,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "mana_shard",
+            "quantity": 15
+          },
+          {
+            "item_id": "iron_scrap",
+            "quantity": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "salamander_hide",
+      "category": "armor",
+      "name": "Salamander Hide",
+      "description": "Pakaian dari kulit salamander tahan panas.",
+      "buy_price": 0,
+      "sell_price": 18000,
+      "required_class_id": "wanderer",
+      "tier_level": 6,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 1830,
+        "def_bonus": 70,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "fine_fiber",
+            "quantity": 40
+          },
+          {
+            "item_id": "silent_thread",
+            "quantity": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "scholar_s_grimoire",
+      "category": "weapon",
+      "name": "Scholar's Grimoire",
+      "description": "Buku mantra berisi teori sihir dasar.",
+      "buy_price": 0,
+      "sell_price": 3000,
+      "required_class_id": "sorcerer",
+      "tier_level": 4,
+      "stats": {
+        "atk_bonus": 195,
+        "hp_bonus": 0,
+        "def_bonus": 0,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "mana_shard",
+            "quantity": 15
+          },
+          {
+            "item_id": "iron_scrap",
+            "quantity": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "scholar_s_tunic",
+      "category": "armor",
+      "name": "Scholar's Tunic",
+      "description": "Tunik para pelajar ilmu sihir.",
+      "buy_price": 0,
+      "sell_price": 900,
+      "required_class_id": "sorcerer",
+      "tier_level": 2,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 225,
+        "def_bonus": 7,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "iron_scrap",
+            "quantity": 10
+          },
+          {
+            "item_id": "mana_shard",
+            "quantity": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": "scout_greaves",
+      "category": "boots",
+      "name": "Scout Greaves",
+      "description": "Pelindung kaki ringan pengintai.",
+      "buy_price": 0,
+      "sell_price": 1500,
+      "required_class_id": "wanderer",
+      "tier_level": 4,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 264,
+        "def_bonus": 10,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "fine_fiber",
+            "quantity": 15
+          },
+          {
+            "item_id": "iron_scrap",
+            "quantity": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "scout_hood",
+      "category": "helmet",
+      "name": "Scout Hood",
+      "description": "Tudung pengintai.",
+      "buy_price": 1900,
+      "sell_price": 1000,
+      "required_class_id": "wanderer",
+      "tier_level": 3,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 204,
+        "def_bonus": 8,
+        "special_effect": "null"
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "shadow_step_sabatons",
+      "category": "boots",
+      "name": "Shadow-Step Sabatons",
+      "description": "Sepatu baja bayangan.",
+      "buy_price": 0,
+      "sell_price": 45000,
+      "required_class_id": "knight",
+      "tier_level": 9,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 1680,
+        "def_bonus": 85,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "refined_plate",
+            "quantity": 20
+          },
+          {
+            "item_id": "heavy_ore",
+            "quantity": 30
+          }
+        ]
+      }
+    },
+    {
+      "id": "shadow_step_treads",
+      "category": "boots",
+      "name": "Shadow-Step Treads",
+      "description": "Alas kaki langkah bayangan.",
+      "buy_price": 0,
+      "sell_price": 22000,
+      "required_class_id": "wanderer",
+      "tier_level": 8,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 1125,
+        "def_bonus": 55,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "silent_thread",
+            "quantity": 12
+          },
+          {
+            "item_id": "fine_fiber",
+            "quantity": 20
+          }
+        ]
+      }
+    },
+    {
+      "id": "short_bow",
+      "category": "weapon",
+      "name": "Short Bow",
+      "description": "Busur kayu ringan untuk berburu.",
+      "buy_price": 450,
+      "sell_price": 250,
+      "required_class_id": "wanderer",
+      "tier_level": 1,
+      "stats": {
+        "atk_bonus": 36,
+        "hp_bonus": 0,
+        "def_bonus": 0,
+        "special_effect": "null"
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "shroud_of_nightfall",
+      "category": "helmet",
+      "name": "Shroud of Nightfall",
+      "description": "Selubung pelindung jatuhnya malam.",
+      "buy_price": 0,
+      "sell_price": 120000,
+      "required_class_id": "wanderer",
+      "tier_level": 10,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 2160,
+        "def_bonus": 110,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "void_essence",
+            "quantity": 25
+          },
+          {
+            "item_id": "silent_thread",
+            "quantity": 15
+          }
+        ]
+      }
+    },
+    {
+      "id": "silent_nightcap",
+      "category": "helmet",
+      "name": "Silent Nightcap",
+      "description": "Tudung malam sunyi.",
+      "buy_price": 0,
+      "sell_price": 18000,
+      "required_class_id": "wanderer",
+      "tier_level": 7,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 915,
+        "def_bonus": 42,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "silent_thread",
+            "quantity": 8
+          },
+          {
+            "item_id": "fine_fiber",
+            "quantity": 15
+          }
+        ]
+      }
+    },
+    {
+      "id": "silent_striders",
+      "category": "boots",
+      "name": "Silent Striders",
+      "description": "Sepatu langkah tanpa suara.",
+      "buy_price": 5500,
+      "sell_price": 3000,
+      "required_class_id": "wanderer",
+      "tier_level": 5,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 390,
+        "def_bonus": 17,
+        "special_effect": "null"
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "silent_thread",
+      "category": "material",
+      "name": "Silent Thread",
+      "description": "Material Olahan Wanderer",
+      "buy_price": 0,
+      "sell_price": 450,
+      "required_class_id": "wanderer",
+      "tier_level": 1,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 0,
+        "def_bonus": 0
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "fine_fiber",
+            "quantity": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "silk_circlet",
+      "category": "helmet",
+      "name": "Silk Circlet",
+      "description": "Lingkar kepala sutra penguat mana.",
+      "buy_price": 0,
+      "sell_price": 450,
+      "required_class_id": "sorcerer",
+      "tier_level": 2,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 90,
+        "def_bonus": 3,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "iron_scrap",
+            "quantity": 6
+          },
+          {
+            "item_id": "mana_shard",
+            "quantity": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "silver_rosary",
+      "category": "accessory",
+      "name": "Silver Rosary",
+      "description": "Aksesoris peningkatan efek penyembuh",
+      "buy_price": 0,
+      "sell_price": 35000,
+      "required_class_id": "null",
+      "tier_level": 9,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 0,
+        "def_bonus": 0,
+        "special_effect": "POTION_+20%"
+      },
+      "special_effect": "POTION_+20%",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "silent_thread",
+            "quantity": 25
+          },
+          {
+            "item_id": "fine_fiber",
+            "quantity": 30
+          }
+        ]
+      }
+    },
+    {
+      "id": "soft_sandals",
+      "category": "boots",
+      "name": "Soft Sandals",
+      "description": "Sandal empuk untuk mengendap.",
+      "buy_price": 280,
+      "sell_price": 150,
+      "required_class_id": "wanderer",
+      "tier_level": 1,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 36,
+        "def_bonus": 1,
+        "special_effect": "null"
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "sorcerer_s_stride",
+      "category": "boots",
+      "name": "Sorcerer's Stride",
+      "description": "Sepatu bot langkah sorcerer.",
+      "buy_price": 5000,
+      "sell_price": 3000,
+      "required_class_id": "sorcerer",
+      "tier_level": 5,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 330,
+        "def_bonus": 13,
+        "special_effect": "null"
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "soul_lantern",
+      "category": "consumable",
+      "name": "Soul Lantern",
+      "description": "Memberikan Auto-Revive satu kali kesempatan.",
+      "buy_price": 5000,
+      "sell_price": 2500,
+      "required_class_id": "null",
+      "tier_level": 1,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 0,
+        "def_bonus": 0
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "specter_s_gaze",
+      "category": "helmet",
+      "name": "Specter's Gaze",
+      "description": "Tatapan sang hantu.",
+      "buy_price": 0,
+      "sell_price": 60000,
+      "required_class_id": "wanderer",
+      "tier_level": 9,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 1620,
+        "def_bonus": 80,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "silent_thread",
+            "quantity": 25
+          },
+          {
+            "item_id": "fine_fiber",
+            "quantity": 40
+          }
+        ]
+      }
+    },
+    {
+      "id": "steel_bastard_sword",
+      "category": "weapon",
+      "name": "Steel Bastard Sword",
+      "description": "Lebih ringan namun sangat tajam.",
+      "buy_price": 2500,
+      "sell_price": 1500,
+      "required_class_id": "knight",
+      "tier_level": 3,
+      "stats": {
+        "atk_bonus": 105,
+        "hp_bonus": 0,
+        "def_bonus": 0,
+        "special_effect": "null"
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "steel_gauntlet",
+      "category": "accessory",
+      "name": "Steel Gauntlet",
+      "description": "Aksesoris peningkatan Defense",
+      "buy_price": 0,
+      "sell_price": 20000,
+      "required_class_id": "null",
+      "tier_level": 7,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 0,
+        "def_bonus": 0,
+        "special_effect": "DEF_+15%"
+      },
+      "special_effect": "DEF_+15%",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "refined_plate",
+            "quantity": 25
+          },
+          {
+            "item_id": "heavy_ore",
+            "quantity": 30
+          }
+        ]
+      }
+    },
+    {
+      "id": "steel_sallet",
+      "category": "helmet",
+      "name": "Steel Sallet",
+      "description": "Helm baja menutupi sebagian wajah.",
+      "buy_price": 2000,
+      "sell_price": 1000,
+      "required_class_id": "knight",
+      "tier_level": 3,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 240,
+        "def_bonus": 10,
+        "special_effect": "null"
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "studded_vest",
+      "category": "armor",
+      "name": "Studded Vest",
+      "description": "Rompi bertatahkan logam pelindung.",
+      "buy_price": 3800,
+      "sell_price": 2000,
+      "required_class_id": "wanderer",
+      "tier_level": 3,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 510,
+        "def_bonus": 18,
+        "special_effect": "null"
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "tiara_of_insight",
+      "category": "helmet",
+      "name": "Tiara of Insight",
+      "description": "Mahkota wawasan sihir tertinggi.",
+      "buy_price": 0,
+      "sell_price": 18000,
+      "required_class_id": "sorcerer",
+      "tier_level": 7,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 780,
+        "def_bonus": 32,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "arcane_crystal",
+            "quantity": 8
+          },
+          {
+            "item_id": "mana_shard",
+            "quantity": 15
+          }
+        ]
+      }
+    },
+    {
+      "id": "titan_s_footsteps",
+      "category": "boots",
+      "name": "Titan's Footsteps",
+      "description": "Langkah kaki para Titan.",
+      "buy_price": 0,
+      "sell_price": 22000,
+      "required_class_id": "knight",
+      "tier_level": 8,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 1260,
+        "def_bonus": 62,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "refined_plate",
+            "quantity": 12
+          },
+          {
+            "item_id": "heavy_ore",
+            "quantity": 20
+          }
+        ]
+      }
+    },
+    {
+      "id": "tome_of_eternity",
+      "category": "weapon",
+      "name": "Tome of Eternity",
+      "description": "Buku kuno dari Dungeon of Wisdom.",
+      "buy_price": 0,
+      "sell_price": 25000,
+      "required_class_id": "sorcerer",
+      "tier_level": 7,
+      "stats": {
+        "atk_bonus": 480,
+        "hp_bonus": 0,
+        "def_bonus": 0,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "arcane_crystal",
+            "quantity": 10
+          },
+          {
+            "item_id": "mana_shard",
+            "quantity": 15
+          }
+        ]
+      }
+    },
+    {
+      "id": "tracker_s_mask",
+      "category": "helmet",
+      "name": "Tracker's Mask",
+      "description": "Topeng penyamar pelacak tapak.",
+      "buy_price": 7500,
+      "sell_price": 4500,
+      "required_class_id": "wanderer",
+      "tier_level": 5,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 465,
+        "def_bonus": 20,
+        "special_effect": "null"
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "traveler_s_boots",
+      "category": "boots",
+      "name": "Traveler's Boots",
+      "description": "Sepatu bot petualang.",
+      "buy_price": 300,
+      "sell_price": 150,
+      "required_class_id": "knight",
+      "tier_level": 1,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 45,
+        "def_bonus": 1,
+        "special_effect": "null"
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "verdant_crossbow",
+      "category": "weapon",
+      "name": "Verdant Crossbow",
+      "description": "Crossbow organik dari kayu Dungeon of Thorns.",
+      "buy_price": 0,
+      "sell_price": 25000,
+      "required_class_id": "wanderer",
+      "tier_level": 7,
+      "stats": {
+        "atk_bonus": 420,
+        "hp_bonus": 0,
+        "def_bonus": 0,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "silent_thread",
+            "quantity": 10
+          },
+          {
+            "item_id": "fine_fiber",
+            "quantity": 15
+          }
+        ]
+      }
+    },
+    {
+      "id": "vitality_band",
+      "category": "accessory",
+      "name": "Vitality Band",
+      "description": "Aksesoris penambah persentase HP",
+      "buy_price": 0,
+      "sell_price": 4500,
+      "required_class_id": "null",
+      "tier_level": 4,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 0,
+        "def_bonus": 0,
+        "special_effect": "MAXHP_+15%"
+      },
+      "special_effect": "MAXHP_+15%",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "heavy_ore",
+            "quantity": 15
+          },
+          {
+            "item_id": "mana_shard",
+            "quantity": 15
+          },
+          {
+            "item_id": "fine_fiber",
+            "quantity": 15
+          }
+        ]
+      }
+    },
+    {
+      "id": "void_essence",
+      "category": "material",
+      "name": "Void Essence",
+      "description": "Material Rare dari musuh Void",
+      "buy_price": 0,
+      "sell_price": 1500,
+      "required_class_id": "null",
+      "tier_level": 1,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 0,
+        "def_bonus": 0
+      },
+      "special_effect": "null"
+    },
+    {
+      "id": "void_iron_cleaver",
+      "category": "weapon",
+      "name": "Void-Iron Cleaver",
+      "description": "Besi yang ditempa dengan energi The Void.",
+      "buy_price": 0,
+      "sell_price": 80000,
+      "required_class_id": "knight",
+      "tier_level": 9,
+      "stats": {
+        "atk_bonus": 630,
+        "hp_bonus": 0,
+        "def_bonus": 0,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "refined_plate",
+            "quantity": 35
+          },
+          {
+            "item_id": "heavy_ore",
+            "quantity": 50
+          }
+        ]
+      }
+    },
+    {
+      "id": "void_pendulum",
+      "category": "accessory",
+      "name": "Void Pendulum",
+      "description": "Aksesoris manipulasi waktu (Cooldown)",
+      "buy_price": 0,
+      "sell_price": 100000,
+      "required_class_id": "null",
+      "tier_level": 10,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 0,
+        "def_bonus": 0,
+        "special_effect": "CD_-1"
+      },
+      "special_effect": "CD_-1",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "void_essence",
+            "quantity": 30
+          },
+          {
+            "item_id": "refined_plate",
+            "quantity": 5
+          },
+          {
+            "item_id": "arcane_crystal",
+            "quantity": 5
+          },
+          {
+            "item_id": "silent_thread",
+            "quantity": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "void_reaper_plate",
+      "category": "armor",
+      "name": "Void-Reaper Plate",
+      "description": "Zirah dari sang malaikat maut hampa.",
+      "buy_price": 0,
+      "sell_price": 110000,
+      "required_class_id": "knight",
+      "tier_level": 9,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 5700,
+        "def_bonus": 230,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "refined_plate",
+            "quantity": 40
+          },
+          {
+            "item_id": "heavy_ore",
+            "quantity": 60
+          }
+        ]
+      }
+    },
+    {
+      "id": "void_stinger",
+      "category": "weapon",
+      "name": "Void-Stinger",
+      "description": "Crossbow yang menembakkan energi hampa.",
+      "buy_price": 0,
+      "sell_price": 80000,
+      "required_class_id": "wanderer",
+      "tier_level": 9,
+      "stats": {
+        "atk_bonus": 735,
+        "hp_bonus": 0,
+        "def_bonus": 0,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "silent_thread",
+            "quantity": 35
+          },
+          {
+            "item_id": "fine_fiber",
+            "quantity": 50
+          }
+        ]
+      }
+    },
+    {
+      "id": "voidshaper_shroud",
+      "category": "armor",
+      "name": "Voidshaper Shroud",
+      "description": "Selubung pembentuk kehampaan.",
+      "buy_price": 0,
+      "sell_price": 110000,
+      "required_class_id": "sorcerer",
+      "tier_level": 9,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 4350,
+        "def_bonus": 160,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "arcane_crystal",
+            "quantity": 40
+          },
+          {
+            "item_id": "mana_shard",
+            "quantity": 60
+          }
+        ]
+      }
+    },
+    {
+      "id": "volcanic_cuirass",
+      "category": "armor",
+      "name": "Volcanic Cuirass",
+      "description": "Pelindung dada dari batuan vulkanik.",
+      "buy_price": 0,
+      "sell_price": 18000,
+      "required_class_id": "knight",
+      "tier_level": 6,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 2100,
+        "def_bonus": 85,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "heavy_ore",
+            "quantity": 40
+          },
+          {
+            "item_id": "refined_plate",
+            "quantity": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "warrior_s_emblem",
+      "category": "accessory",
+      "name": "Warrior's Emblem",
+      "description": "Aksesoris peningkatan Damage",
+      "buy_price": 0,
+      "sell_price": 15000,
+      "required_class_id": "null",
+      "tier_level": 6,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 0,
+        "def_bonus": 0,
+        "special_effect": "DMG_+8%"
+      },
+      "special_effect": "DMG_+8%",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "refined_plate",
+            "quantity": 10
+          },
+          {
+            "item_id": "arcane_crystal",
+            "quantity": 10
+          },
+          {
+            "item_id": "silent_thread",
+            "quantity": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": "wind_runner_boots",
+      "category": "boots",
+      "name": "Wind-Runner Boots",
+      "description": "Sepatu lari penunggang angin.",
+      "buy_price": 0,
+      "sell_price": 12000,
+      "required_class_id": "wanderer",
+      "tier_level": 7,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 825,
+        "def_bonus": 38,
+        "special_effect": "null"
+      },
+      "special_effect": "null",
+      "crafting": {
+        "ingredients": [
+          {
+            "item_id": "silent_thread",
+            "quantity": 8
+          },
+          {
+            "item_id": "fine_fiber",
+            "quantity": 15
+          }
+        ]
+      }
+    },
+    {
+      "id": "wizard_s_tricorn",
+      "category": "helmet",
+      "name": "Wizard's Tricorn",
+      "description": "Topi bersudut tiga khas penyihir agung.",
+      "buy_price": 7000,
+      "sell_price": 4500,
+      "required_class_id": "sorcerer",
+      "tier_level": 5,
+      "stats": {
+        "atk_bonus": 0,
+        "hp_bonus": 390,
+        "def_bonus": 15,
+        "special_effect": "null"
+      },
+      "special_effect": "null"
+    }
+  ]
+}

@@ -66,7 +66,7 @@
         }
       ],
       "level": 50,
-      "max_hp": 3915,
+      "max_hp": 4085,
       "max_mp": 237,
       "mp": 118,
       "name": "Kei",
@@ -1158,9 +1158,9 @@
       "class_tier_id": "knight",
       "class_tier_name": "Knight",
       "cooldowns": [],
-      "current_exp": 823,
-      "gold": 1568,
-      "hp": 561,
+      "current_exp": 1358,
+      "gold": 1813,
+      "hp": 857,
       "id": "oo",
       "inventory": [
         {
@@ -1200,31 +1200,31 @@
         {
           "equipped": false,
           "item_id": "iron_scrap",
-          "quantity": 10
+          "quantity": 16
         },
         {
           "equipped": false,
           "item_id": "fine_fiber",
-          "quantity": 7
+          "quantity": 10
         },
         {
           "equipped": false,
           "item_id": "mana_shard",
-          "quantity": 9
+          "quantity": 15
         },
         {
           "equipped": false,
           "item_id": "heavy_ore",
-          "quantity": 4
+          "quantity": 7
         }
       ],
-      "level": 3,
-      "max_hp": 617,
-      "max_mp": 96,
-      "mp": 96,
+      "level": 4,
+      "max_hp": 857,
+      "max_mp": 99,
+      "mp": 99,
       "name": "oo",
       "progress": {
-        "current_depth": 1,
+        "current_depth": 2,
         "current_dungeon": "dungeon_of_echoes_and_destiny",
         "dungeon_progress": {
           "dungeon_of_echoes_and_destiny": {
@@ -1260,7 +1260,7 @@
         },
         "max_depth_unlocked": 2
       },
-      "stat_points": 35,
+      "stat_points": 45,
       "stats": {
         "agi": 10,
         "int": 10,

@@ -9,7 +9,6 @@
 
 // ---- merged from src/database/json_and_paths.cpp
 
-
 using namespace std;
 
 namespace database_detail
@@ -372,9 +371,77 @@ namespace database_detail
 
 // ---- merged from src/database/save_system.cpp
 
-
 using namespace std;
 using namespace database_detail;
+
+namespace
+{
+    bool mergeGameDataModule(json &target, const json &moduleData, const string &modulePath)
+    {
+        if (!moduleData.is_object())
+        {
+            cerr << "Game data module must be an object: " << modulePath << '\n';
+            return false;
+        }
+
+        for (auto it = moduleData.begin(); it != moduleData.end(); ++it)
+        {
+            if (target.contains(it.key()))
+            {
+                cerr << "Duplicate game data key '" << it.key() << "' in module: " << modulePath << '\n';
+                return false;
+            }
+            target[it.key()] = it.value();
+        }
+
+        return true;
+    }
+
+    bool loadGameDataManifest(const json &manifest, const string &manifestPath, json &out)
+    {
+        if (!manifest.contains("modules") || !manifest["modules"].is_array())
+        {
+            out = manifest;
+            return true;
+        }
+
+        out = json::object();
+        const filesystem::path baseDir = filesystem::path(manifestPath).parent_path();
+
+        for (const auto &entry : manifest["modules"])
+        {
+            string moduleName;
+            if (entry.is_string())
+                moduleName = entry.get<string>();
+            else if (entry.is_object())
+                moduleName = asString(entry.value("file", json("")));
+
+            if (moduleName.empty())
+            {
+                cerr << "Invalid game data module entry in: " << manifestPath << '\n';
+                return false;
+            }
+
+            filesystem::path modulePath(moduleName);
+            if (modulePath.is_relative())
+                modulePath = baseDir / modulePath;
+
+            ifstream moduleFile(modulePath);
+            if (!moduleFile.is_open())
+            {
+                cerr << "Failed to open game data module: " << modulePath.string() << '\n';
+                return false;
+            }
+
+            json moduleData;
+            moduleFile >> moduleData;
+            if (!mergeGameDataModule(out, moduleData, modulePath.string()))
+                return false;
+        }
+
+        return true;
+    }
+}
 
 bool loadGameData(GameContext &ctx)
 {
@@ -388,7 +455,10 @@ bool loadGameData(GameContext &ctx)
 
     try
     {
-        file >> ctx.gameData;
+        json root;
+        file >> root;
+        if (!loadGameDataManifest(root, path, ctx.gameData))
+            return false;
         ctx.gameDataPath = path;
         return true;
     }
@@ -547,5 +617,3 @@ void createNewGame(GameContext &ctx, const string &playerName, const string &cla
     giveStarterKit(ctx);
     ctx.activeCharacterIndex = Config::Defaults::ACTIVE_CHARACTER_NONE;
 }
-
-
