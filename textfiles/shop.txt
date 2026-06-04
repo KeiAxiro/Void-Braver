@@ -1,0 +1,62 @@
+Consumables & Materials
+
+Nama Item	        Fungsi	                            Harga (Gold)
+Healing Potion	    Memulihkan 25% Max HP	            200
+Mana Elixir	        Memulihkan 30% Max Mana	            300
+Soul Lantern	    Auto-Revive (1 kali kesempatan)	    5.000
+Infinity Sphere	    Mengurangi Cooldown 1-2 Turn	    3.500
+Iron Scrap	        Material Dasar Crafting	            100
+
+====================================
+====================================
+
+Equipment Shop - Knight
+
+Weapon	    Rusty Greatsword	    +10 ATK	            500G
+	        Steel Bastard Sword	    +35 ATK	            2.500G
+	        Royal Vanguard Blade	+70 ATK	            10.000G
+Helmet	    Leather Coif	        +20 HP, +2 DEF	    400G
+	        Steel Sallet	        +80 HP, +10 DEF	    2.000G
+	        Commander’s Crest	    +180 HP, +25 DEF	8.500G
+Armor	    Padded Tunic	        +50 HP, +5 DEF	    800G
+	        Iron Chainmail	        +200 HP, +22 DEF	4.000G
+	        Knight’s Plate	        +480 HP, +55 DEF	15.000G
+Boots	    Traveler’s Boots	    +15 HP, +1 DEF	    300G
+	        Iron Greaves	        +65 HP, +7 DEF	    1.500G
+	        Heavy War-Boots	        +150 HP, +20 DEF	6.000G
+
+====================================
+====================================
+
+Equipment Shop - Sorcerer
+
+Weapon	    Apprentice Wand	        +15 ATK	            600G
+	        Crystal Scepter	        +48 ATK	            3.000G
+	        High Mage Rod	        +90 ATK	            12.000G
+Helmet	    Cotton Hood	            +12 HP, +1 DEF	    350G
+	        Mage’s Cowl	            +55 HP, +6 DEF	    1.800G
+	        Wizard’s Tricorn	    +130 HP, +15 DEF	7.000G
+Armor	    Novice Robe	            +30 HP, +3 DEF	    700G
+	        Arcane Garb	            +140 HP, +14 DEF	3.500G
+	        Archmage’s Cloak	    +350 HP, +35 DEF	13.000G
+Boots	    Cloth Slippers	        +10 HP, +1 DEF	    250G
+	        Mage’s Sandals	        +48 HP, +5 DEF	    1.200G
+	        Sorcerer’s Stride	    +110 HP, +13 DEF	5.000G
+
+====================================
+====================================
+
+Equipment Shop - Wanderer
+
+Weapon	    Short Bow	            +12 ATK	            550G
+	        Composite Bow	        +40 ATK	            2.800G
+	        Ranger's Longbow	    +80 ATK	            11.000G
+Helmet	    Cloth Bandana	        +15 HP, +1 DEF	    380G
+	        Scout Hood	            +68 HP, +8 DEF	    1.900G
+	        Tracker’s Mask	        +155 HP, +20 DEF	7.500G
+Armor	    Rough Tunic	            +40 HP, +4 DEF	    750G
+	        Studded Vest	        +170 HP, +18 DEF	3.800G
+	        Duelist’s Leather	    +415 HP, +45 DEF	14.000G
+Boots	    Soft Sandals	        +12 HP, +1 DEF	    280G
+	        Padded Shoes	        +55 HP, +6 DEF	    1.300G
+	        Silent Striders	        +130 HP, +17 DEF	5.500G

@@ -1,0 +1,105 @@
+Daftar Enemy: Tipe Demon
+
+Nama Enemy	        Range Level	    Atk	            HP	                Def	            Spawn Depth	        Drop Items
+Lesser Imp	        1 - 10	        15 - 45	        110 - 380	        5 - 15	        Depth 1 - 2	        Heavy Ore, Iron Scrap, Mana Shard
+Shadow Lurker	    11 - 20	        50 - 85	        420 - 900	        18 - 35	        Depth 3 - 4	        Mana Shard, Heavy Ore, Fine Fiber
+Horned Ravager	    21 - 30	        90 - 145	    950 - 1.700	        40 - 65	        Depth 5 - 6	        Heavy Ore, Fine Fiber, Iron Scrap
+Hellbound Hound	    31 - 40	        155 - 220	    1.900 - 3.400	    70 - 100	    Depth 7 - 8	        Fine Fiber, Mana Shard, Heavy Ore
+Gorgon Guard	    41 - 50	        230 - 315	    3.800 - 6.000	    115 - 160	    Depth 9 - 10	    Iron Scrap, Heavy Ore, Mana Shard
+Abyssal Brute	    51 - 60	        330 - 430	    6.500 - 10.500	    170 - 220	    Depth 11 - 12	    Heavy Ore, Mana Shard, Fine Fiber
+Chaos Weaver	    61 - 70	        450 - 580	    11.000 - 16.500	    230 - 300	    Depth 13 - 14	    Mana Shard, Fine Fiber, Heavy Ore
+Demon Commander	    71 - 80	        600 - 750	    18.000 - 26.000	    320 - 410	    Depth 15 - 16	    Fine Fiber, Heavy Ore, Mana Shard
+Dread Overlord	    81 - 90	        780 - 1000	    28.000 - 43.000	    420 - 580	    Depth 17 - 19	    Heavy Ore, Mana Shard, Fine Fiber
+Harbinger of Doom	91 - 100	    1050 - 1400	    48.000 - 70.000	    600 - 850	    Depth 20	        Heavy Ore, Fine Fiber, Mana Shard
+
+====================================
+====================================
+
+Daftar Enemy: Tipe Spirit
+
+Nama Enemy	        Range Level	    Atk	            HP	                Def	            Spawn Depth	        Drop Items
+Lost Soul	        1 - 10	        20 - 50	        80 - 300	        3 - 10	        Depth 1 - 2	        Mana Shard, Iron Scrap, Fine Fiber
+Wailing Echo	    11 - 20	        55 - 95	        350 - 750	        12 - 25	        Depth 3 - 4     	Mana Shard, Heavy Ore, Iron Scrap
+Vengeful Mist	    21 - 30	        100 - 155	    800 - 1.400	        30 - 50	        Depth 5 - 6     	Fine Fiber, Mana Shard, Heavy Ore
+Spectral Monk	    31 - 40	        165 - 230	    1.600 - 2.800	    55 - 80	        Depth 7 - 8	        Heavy Ore, Fine Fiber, Mana Shard
+Phantom Assassin	41 - 50	        250 - 330	    3.000 - 4.800	    90 - 120	    Depth 9 - 10	    Fine Fiber, Mana Shard, Iron Scrap
+Cursed Revenant	    51 - 60	        350 - 450	    5.200 - 8.200	    130 - 170	    Depth 11 - 12	    Heavy Ore, Mana Shard, Fine Fiber
+Ancestral Wraith	61 - 70	        470 - 600	    8.800 - 13.000	    180 - 230	    Depth 13 - 14	    Mana Shard, Fine Fiber, Heavy Ore
+Banshee Queen	    71 - 80	        630 - 780	    14.000 - 21.000	    250 - 320	    Depth 15 - 16	    Fine Fiber, Heavy Ore, Mana Shard
+Soul Eater	        81 - 90	        820 - 1.050	    23.000 - 35.000	    350 - 480	    Depth 17 - 19	    Heavy Ore, Mana Shard, Fine Fiber
+Eternal Phantasm	91 - 100	    1100 - 1450	    40.000 - 58.000	    520 - 750	    Depth 20	        Mana Shard, Fine Fiber, Heavy Ore
+
+====================================
+====================================
+
+Daftar Enemy: Tipe Beast
+
+Nama Enemy	        Range Level	    Atk	            HP	                Def	            Spawn Depth	        Drop Items
+Wild Fang	        1 - 10	        10 - 35	        150 - 450	        2 - 8	        Depth 1 - 2	        Fine Fiber, Iron Scrap, Heavy Ore
+Cave Crawler	    11 - 20	        40 - 75	        550 - 1.100	        8 - 20	        Depth 3 - 4	        Heavy Ore, Fine Fiber, Iron Scrap
+Giant Rock-Boar	    21 - 30	        80 - 130	    1.200 - 2.200	    25 - 45	        Depth 5 - 6	        Heavy Ore, Mana Shard, Fine Fiber
+Thornback Bear	    31 - 40	        140 - 200	    2.500 - 4.500	    40 - 70	        Depth 7 - 8	        Fine Fiber, Mana Shard, Heavy Ore
+Savage Direwolf	    41 - 50	        210 - 280	    5.000 - 7.500	    75 - 100	    Depth 9 - 10	    Fine Fiber, Iron Scrap, Mana Shard
+Elder Basilisk	    51 - 60	        300 - 390	    8.500 - 13.000	    110 - 150	    Depth 11 - 12	    Mana Shard, Heavy Ore, Fine Fiber
+Iron-Claw Raptor	61 - 70	        410 - 520	    14.500 - 21.000	    160 - 210	    Depth 13 - 14	    Heavy Ore, Fine Fiber, Mana Shard
+Thunder Mammoth	    71 - 80	        550 - 700	    23.000 - 35.000	    220 - 290	    Depth 15 - 16	    Mana Shard, Heavy Ore, Fine Fiber
+Ancient Behemoth	81 - 90	        730 - 920	    38.000 - 55.000	    310 - 420	    Depth 17 - 19	    Heavy Ore, Mana Shard, Fine Fiber
+Apex Predator	    91 - 100	    950 - 1250	    60.000 - 85.000	    450 - 650	    Depth 20	        Fine Fiber, Heavy Ore, Mana Shard
+
+====================================
+====================================
+
+Daftar Enemy: Tipe Elemental
+
+Nama Enemy	        Range Level	    Atk	            HP	                Def	            Spawn Depth         Drop Items
+Living Pebble	    1 - 10	        12 - 40	        80 - 250	        10 - 25	        Depth 1 - 2	        Heavy Ore, Iron Scrap, Mana Shard
+Flame Sprite	    11 - 20	        45 - 80	        300 - 650	        20 - 45	        Depth 3 - 4	        Mana Shard, Fine Fiber, Iron Scrap
+Mud Golem	        21 - 30	        85 - 135	    700 - 1.200	        50 - 85	        Depth 5 - 6	        Heavy Ore, Mana Shard, Fine Fiber
+Crystal Shardling	31 - 40	        145 - 205	    1.400 - 2.400	    90 - 130	    Depth 7 - 8	        Mana Shard, Iron Scrap, Fine Fiber
+Static Cloud	    41 - 50	        215 - 290	    2.600 - 4.200	    120 - 170	    Depth 9 - 10	    Fine Fiber, Mana Shard, Heavy Ore
+Molten Core	        51 - 60	        310 - 400	    4.500 - 7.000	    180 - 250	    Depth 11 - 12	    Heavy Ore, Mana Shard, Iron Scrap
+Glacier Sentinel	61 - 70	        420 - 530	    7.500 - 11.500	    270 - 360	    Depth 13 - 14	    Heavy Ore, Fine Fiber, Mana Shard
+Zephyr Spirit	    71 - 80	        560 - 710	    12.500 - 18.000	    350 - 450	    Depth 15 - 16	    Fine Fiber, Mana Shard, Heavy Ore
+Magma Colossus	    81 - 90	        740 - 940	    20.000 - 30.000	    500 - 680	    Depth 17 - 19	    Heavy Ore, Mana Shard, Fine Fiber
+Ancient Monolith	91 - 100	    1000 - 1300 	35.000 - 50.000	    750 - 1000	    Depth 20	        Heavy Ore, Mana Shard, Fine Fiber
+
+====================================
+====================================
+
+Daftar Enemy: Tipe Mercenary
+
+Nama Enemy	        Range Level	    Atk	            HP	                Def	            Spawn Depth	        Drop Items
+Novice Thief	    1 - 10	        18 - 42	        120 - 380	        4 - 12	        Depth 1 - 2 	    Iron Scrap, Fine Fiber, Mana Shard
+Exiled Slinger	    11 - 20	        48 - 82	        450 - 900	        15 - 30	        Depth 3 - 4     	Fine Fiber, Iron Scrap, Heavy Ore
+Rogue Guard	        21 - 30	        85 - 135	    1.000 - 1.800	    35 - 60	        Depth 5 - 6     	Heavy Ore, Iron Scrap, Mana Shard
+Desert Marauder	    31 - 40	        155 - 220	    2.000 - 3.500	    65 - 95	        Depth 7 - 8     	Iron Scrap, Fine Fiber, Heavy Ore
+Fallen Paladin	    41 - 50	        230 - 310	    3.800 - 6.000	    100 - 140	    Depth 9 - 10    	Heavy Ore, Mana Shard, Fine Fiber
+Arcane Assassin	    51 - 60	        330 - 430	    6.500 - 10.000  	150 - 190	    Depth 11 - 12	    Mana Shard, Fine Fiber, Iron Scrap
+Veteran Gladiator	61 - 70	        450 - 580	    11.000 - 17.000 	200 - 260	    Depth 13 - 14	    Heavy Ore, Iron Scrap, Fine Fiber
+Void Cultist	    71 - 80	        600 - 750	    18.000 - 28.000 	280 - 360	    Depth 15 - 16	    Mana Shard, Heavy Ore, Fine Fiber
+Elite Sellsword	    81 - 90	        780 - 1000	    30.000 - 45.000 	380 - 520	    Depth 17 - 19	    Iron Scrap, Fine Fiber, Heavy Ore
+Grand Mercenary	    91 - 100	    1050 - 1400	    50.000 - 72.000 	550 - 800	    Depth 20	        Heavy Ore, Mana Shard, Fine Fiber
+
+====================================
+====================================
+
+Daftar Enemy: Boss
+
+Nama Boss	            Range Level	    Atk	                HP	                    Def	                Type	        Drop Items
+The Ashen Warlord	    91 - 100	    2.500 - 3.200	    250.000 - 350.000	    1.500 - 1.800	    Demon	        Heavy Ore, Iron Scrap, Fine Fiber
+The Grand Archivist 	91 - 100	    3.500 - 4.200	    180.000 - 240.000	    1.200 - 1.400	    Mercenary	    Mana Shard, Iron Scrap, Heavy Ore
+The Phantom Stalker 	91 - 100	    3.800 - 4.500	    150.000 - 200.000	    900 - 1.100	        Spirit	        Fine Fiber, Mana Shard, Iron Scrap
+The Rotting Behemoth	91 - 100	    2.200 - 2.800	    450.000 - 600.000	    1.300 - 1.600	    Beast	        Heavy Ore, Fine Fiber, Mana Shard
+The Oracle of Ruin	    91 - 100	    3.200 - 4.000	    220.000 - 300.000	    2.000 - 2.500	    Elemental	    Mana Shard, Heavy Ore, Fine Fiber
+
+====================================
+====================================
+
+Daftar Enemy: Void
+
+Nama Enemy	                Range Level	    Atk	                HP	                        Def	Type	        Drop            Items
+The Eclipse Vanguard	    91 - 100	    4.500 - 5.200	    380.000 - 450.000	        2.000 - 2.300	    Demon	        Void Essence, Heavy Ore, Iron Scrap
+Architect of Ruin	        91 - 100	    5.000 - 5.800	    420.000 - 500.000	        2.400 - 2.600	    Spirit	        Void Essence, Mana Shard, Iron Scrap
+The Void (Form 1)	        91 - 100	    5.800 - 6.500	    550.000 - 650.000	        2.800 - 3.200	    Elemental	    Void Essence, Fine Fiber, Iron Scrap
+The Void (Form 2)	        91 - 100	    6.500 - 7.500	    750.000 - 900.000	        3.500 - 4.200	    Beast	        Void Essence, Heavy Ore, Mana Shard
+The Void (Final Form)	    91 - 100	    8.500 - 10.000	    1.200.000 - 1.500.000	    5.000 - 6.000	    Demon	        Void Essence, All Material Types

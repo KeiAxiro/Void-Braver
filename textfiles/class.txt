@@ -1,0 +1,16 @@
+CLass [Knight]
+Tier 2: Vanguard
+Tier 3: Warlord
+Base Damage Knight ​= (STR×2.5)+TotalEquipATK
+
+Class [Sorcerer]
+Tier 2: Archmage
+Tier 3: Archon
+Base Damage Sorcerer ​= (INT×3.0)+TotalEquipMATK
+
+Class [Wanderer]
+Tier 2: Nightstalker
+Tier 3: Nightfall
+Base Damage Wanderer​ = (AGI×2.0)+TotalEquipATK
+
+Final Damage = Total Raw Damage × (100/(100+Enemy DEF)​) × RNG(0.9 to 1.1)
