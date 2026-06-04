@@ -288,7 +288,7 @@
       "required_class_id": "sorcerer",
       "tier_level": 9,
       "stats": {
-        "atk_bonus": 280,
+        "atk_bonus": 840,
         "hp_bonus": 0,
         "def_bonus": 0,
         "special_effect": "null"
@@ -318,7 +318,7 @@
       "tier_level": 9,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 600,
+        "hp_bonus": 1800,
         "def_bonus": 95,
         "special_effect": "null"
       },
@@ -347,7 +347,7 @@
       "tier_level": 9,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 1675,
+        "hp_bonus": 5025,
         "def_bonus": 195,
         "special_effect": "null"
       },
@@ -376,7 +376,7 @@
       "tier_level": 9,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 450,
+        "hp_bonus": 1350,
         "def_bonus": 65,
         "special_effect": "null"
       },
@@ -405,7 +405,7 @@
       "tier_level": 7,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 1000,
+        "hp_bonus": 3000,
         "def_bonus": 120,
         "special_effect": "null"
       },
@@ -433,7 +433,7 @@
       "required_class_id": "sorcerer",
       "tier_level": 1,
       "stats": {
-        "atk_bonus": 15,
+        "atk_bonus": 45,
         "hp_bonus": 0,
         "def_bonus": 0,
         "special_effect": "null"
@@ -475,7 +475,7 @@
       "tier_level": 3,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 140,
+        "hp_bonus": 420,
         "def_bonus": 14,
         "special_effect": "null"
       },
@@ -492,7 +492,7 @@
       "tier_level": 5,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 350,
+        "hp_bonus": 1050,
         "def_bonus": 35,
         "special_effect": "null"
       },
@@ -508,7 +508,7 @@
       "required_class_id": "knight",
       "tier_level": 6,
       "stats": {
-        "atk_bonus": 95,
+        "atk_bonus": 285,
         "hp_bonus": 0,
         "def_bonus": 0,
         "special_effect": "null"
@@ -538,7 +538,7 @@
       "tier_level": 8,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 405,
+        "hp_bonus": 1215,
         "def_bonus": 58,
         "special_effect": "null"
       },
@@ -567,7 +567,7 @@
       "tier_level": 10,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 650,
+        "hp_bonus": 1950,
         "def_bonus": 90,
         "special_effect": "null"
       },
@@ -595,7 +595,7 @@
       "required_class_id": "sorcerer",
       "tier_level": 2,
       "stats": {
-        "atk_bonus": 30,
+        "atk_bonus": 90,
         "hp_bonus": 0,
         "def_bonus": 0,
         "special_effect": "null"
@@ -624,7 +624,7 @@
       "required_class_id": "knight",
       "tier_level": 10,
       "stats": {
-        "atk_bonus": 280,
+        "atk_bonus": 840,
         "hp_bonus": 0,
         "def_bonus": 0,
         "special_effect": "null"
@@ -653,7 +653,7 @@
       "required_class_id": "sorcerer",
       "tier_level": 8,
       "stats": {
-        "atk_bonus": 210,
+        "atk_bonus": 630,
         "hp_bonus": 0,
         "def_bonus": 0,
         "special_effect": "null"
@@ -683,7 +683,7 @@
       "tier_level": 6,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 190,
+        "hp_bonus": 570,
         "def_bonus": 22,
         "special_effect": "null"
       },
@@ -712,7 +712,7 @@
       "tier_level": 6,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 225,
+        "hp_bonus": 675,
         "def_bonus": 30,
         "special_effect": "null"
       },
@@ -741,7 +741,7 @@
       "tier_level": 1,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 15,
+        "hp_bonus": 45,
         "def_bonus": 1,
         "special_effect": "null"
       },
@@ -758,7 +758,7 @@
       "tier_level": 1,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 10,
+        "hp_bonus": 30,
         "def_bonus": 1,
         "special_effect": "null"
       },
@@ -775,7 +775,7 @@
       "tier_level": 5,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 180,
+        "hp_bonus": 540,
         "def_bonus": 25,
         "special_effect": "null"
       },
@@ -791,7 +791,7 @@
       "required_class_id": "wanderer",
       "tier_level": 3,
       "stats": {
-        "atk_bonus": 40,
+        "atk_bonus": 120,
         "hp_bonus": 0,
         "def_bonus": 0,
         "special_effect": "null"
@@ -809,7 +809,7 @@
       "tier_level": 1,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 12,
+        "hp_bonus": 36,
         "def_bonus": 1,
         "special_effect": "null"
       },
@@ -826,7 +826,7 @@
       "tier_level": 9,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 480,
+        "hp_bonus": 1440,
         "def_bonus": 65,
         "special_effect": "null"
       },
@@ -854,7 +854,7 @@
       "required_class_id": "sorcerer",
       "tier_level": 3,
       "stats": {
-        "atk_bonus": 48,
+        "atk_bonus": 144,
         "hp_bonus": 0,
         "def_bonus": 0,
         "special_effect": "null"
@@ -871,7 +871,7 @@
       "required_class_id": "knight",
       "tier_level": 7,
       "stats": {
-        "atk_bonus": 125,
+        "atk_bonus": 375,
         "hp_bonus": 0,
         "def_bonus": 0,
         "special_effect": "null"
@@ -901,7 +901,7 @@
       "tier_level": 8,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 350,
+        "hp_bonus": 1050,
         "def_bonus": 45,
         "special_effect": "null"
       },
@@ -930,7 +930,7 @@
       "tier_level": 8,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 1400,
+        "hp_bonus": 4200,
         "def_bonus": 170,
         "special_effect": "null"
       },
@@ -959,7 +959,7 @@
       "tier_level": 5,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 415,
+        "hp_bonus": 1245,
         "def_bonus": 45,
         "special_effect": "null"
       },
@@ -975,7 +975,7 @@
       "required_class_id": "wanderer",
       "tier_level": 8,
       "stats": {
-        "atk_bonus": 185,
+        "atk_bonus": 555,
         "hp_bonus": 0,
         "def_bonus": 0,
         "special_effect": "null"
@@ -1005,7 +1005,7 @@
       "tier_level": 7,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 750,
+        "hp_bonus": 2250,
         "def_bonus": 80,
         "special_effect": "null"
       },
@@ -1034,7 +1034,7 @@
       "tier_level": 6,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 260,
+        "hp_bonus": 780,
         "def_bonus": 38,
         "special_effect": "null"
       },
@@ -1063,7 +1063,7 @@
       "tier_level": 4,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 75,
+        "hp_bonus": 225,
         "def_bonus": 8,
         "special_effect": "null"
       },
@@ -1092,7 +1092,7 @@
       "tier_level": 10,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 2200,
+        "hp_bonus": 6600,
         "def_bonus": 265,
         "special_effect": "null"
       },
@@ -1121,7 +1121,7 @@
       "tier_level": 10,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 1950,
+        "hp_bonus": 5850,
         "def_bonus": 220,
         "special_effect": "null"
       },
@@ -1150,7 +1150,7 @@
       "tier_level": 7,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 310,
+        "hp_bonus": 930,
         "def_bonus": 45,
         "special_effect": "null"
       },
@@ -1178,7 +1178,7 @@
       "required_class_id": "knight",
       "tier_level": 8,
       "stats": {
-        "atk_bonus": 160,
+        "atk_bonus": 480,
         "hp_bonus": 0,
         "def_bonus": 0,
         "special_effect": "null"
@@ -1236,7 +1236,7 @@
       "required_class_id": "wanderer",
       "tier_level": 10,
       "stats": {
-        "atk_bonus": 330,
+        "atk_bonus": 990,
         "hp_bonus": 0,
         "def_bonus": 0,
         "special_effect": "null"
@@ -1282,7 +1282,7 @@
       "tier_level": 6,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 165,
+        "hp_bonus": 495,
         "def_bonus": 20,
         "special_effect": "null"
       },
@@ -1310,7 +1310,7 @@
       "required_class_id": "wanderer",
       "tier_level": 6,
       "stats": {
-        "atk_bonus": 105,
+        "atk_bonus": 315,
         "hp_bonus": 0,
         "def_bonus": 0,
         "special_effect": "null"
@@ -1339,7 +1339,7 @@
       "required_class_id": "sorcerer",
       "tier_level": 10,
       "stats": {
-        "atk_bonus": 380,
+        "atk_bonus": 1140,
         "hp_bonus": 0,
         "def_bonus": 0,
         "special_effect": "null"
@@ -1369,7 +1369,7 @@
       "tier_level": 9,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 505,
+        "hp_bonus": 1515,
         "def_bonus": 75,
         "special_effect": "null"
       },
@@ -1398,7 +1398,7 @@
       "tier_level": 8,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 460,
+        "hp_bonus": 1380,
         "def_bonus": 70,
         "special_effect": "null"
       },
@@ -1456,7 +1456,7 @@
       "tier_level": 10,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 2500,
+        "hp_bonus": 7500,
         "def_bonus": 310,
         "special_effect": "null"
       },
@@ -1485,7 +1485,7 @@
       "tier_level": 10,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 620,
+        "hp_bonus": 1860,
         "def_bonus": 95,
         "special_effect": "null"
       },
@@ -1514,7 +1514,7 @@
       "tier_level": 10,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 750,
+        "hp_bonus": 2250,
         "def_bonus": 115,
         "special_effect": "null"
       },
@@ -1543,7 +1543,7 @@
       "tier_level": 7,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 350,
+        "hp_bonus": 1050,
         "def_bonus": 52,
         "special_effect": "null"
       },
@@ -1572,7 +1572,7 @@
       "tier_level": 4,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 120,
+        "hp_bonus": 360,
         "def_bonus": 18,
         "special_effect": "null"
       },
@@ -1601,7 +1601,7 @@
       "tier_level": 4,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 320,
+        "hp_bonus": 960,
         "def_bonus": 35,
         "special_effect": "null"
       },
@@ -1630,7 +1630,7 @@
       "tier_level": 2,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 35,
+        "hp_bonus": 105,
         "def_bonus": 3,
         "special_effect": "null"
       },
@@ -1674,7 +1674,7 @@
       "required_class_id": "wanderer",
       "tier_level": 4,
       "stats": {
-        "atk_bonus": 58,
+        "atk_bonus": 174,
         "hp_bonus": 0,
         "def_bonus": 0,
         "special_effect": "null"
@@ -1720,7 +1720,7 @@
       "tier_level": 5,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 150,
+        "hp_bonus": 450,
         "def_bonus": 20,
         "special_effect": "null"
       },
@@ -1736,7 +1736,7 @@
       "required_class_id": "sorcerer",
       "tier_level": 5,
       "stats": {
-        "atk_bonus": 90,
+        "atk_bonus": 270,
         "hp_bonus": 0,
         "def_bonus": 0,
         "special_effect": "null"
@@ -1753,7 +1753,7 @@
       "required_class_id": "wanderer",
       "tier_level": 2,
       "stats": {
-        "atk_bonus": 25,
+        "atk_bonus": 75,
         "hp_bonus": 0,
         "def_bonus": 0,
         "special_effect": "null"
@@ -1782,7 +1782,7 @@
       "required_class_id": "sorcerer",
       "tier_level": 6,
       "stats": {
-        "atk_bonus": 120,
+        "atk_bonus": 360,
         "hp_bonus": 0,
         "def_bonus": 0,
         "special_effect": "null"
@@ -1828,7 +1828,7 @@
       "tier_level": 3,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 200,
+        "hp_bonus": 600,
         "def_bonus": 22,
         "special_effect": "null"
       },
@@ -1844,7 +1844,7 @@
       "required_class_id": "knight",
       "tier_level": 2,
       "stats": {
-        "atk_bonus": 22,
+        "atk_bonus": 66,
         "hp_bonus": 0,
         "def_bonus": 0,
         "special_effect": "null"
@@ -1874,7 +1874,7 @@
       "tier_level": 3,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 65,
+        "hp_bonus": 195,
         "def_bonus": 7,
         "special_effect": "null"
       },
@@ -1891,7 +1891,7 @@
       "tier_level": 2,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 45,
+        "hp_bonus": 135,
         "def_bonus": 5,
         "special_effect": "null"
       },
@@ -1964,7 +1964,7 @@
       "required_class_id": "knight",
       "tier_level": 4,
       "stats": {
-        "atk_bonus": 50,
+        "atk_bonus": 150,
         "hp_bonus": 0,
         "def_bonus": 0,
         "special_effect": "null"
@@ -1994,7 +1994,7 @@
       "tier_level": 5,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 480,
+        "hp_bonus": 1440,
         "def_bonus": 55,
         "special_effect": "null"
       },
@@ -2011,7 +2011,7 @@
       "tier_level": 2,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 30,
+        "hp_bonus": 90,
         "def_bonus": 2,
         "special_effect": "null"
       },
@@ -2040,7 +2040,7 @@
       "tier_level": 2,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 38,
+        "hp_bonus": 114,
         "def_bonus": 4,
         "special_effect": "null"
       },
@@ -2069,7 +2069,7 @@
       "tier_level": 1,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 20,
+        "hp_bonus": 60,
         "def_bonus": 2,
         "special_effect": "null"
       },
@@ -2086,7 +2086,7 @@
       "tier_level": 2,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 95,
+        "hp_bonus": 285,
         "def_bonus": 10,
         "special_effect": "null"
       },
@@ -2115,7 +2115,7 @@
       "tier_level": 7,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 235,
+        "hp_bonus": 705,
         "def_bonus": 30,
         "special_effect": "null"
       },
@@ -2144,7 +2144,7 @@
       "tier_level": 2,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 25,
+        "hp_bonus": 75,
         "def_bonus": 2,
         "special_effect": "null"
       },
@@ -2173,7 +2173,7 @@
       "tier_level": 3,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 55,
+        "hp_bonus": 165,
         "def_bonus": 6,
         "special_effect": "null"
       },
@@ -2190,7 +2190,7 @@
       "tier_level": 3,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 48,
+        "hp_bonus": 144,
         "def_bonus": 5,
         "special_effect": "null"
       },
@@ -2207,7 +2207,7 @@
       "tier_level": 6,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 190,
+        "hp_bonus": 570,
         "def_bonus": 26,
         "special_effect": "null"
       },
@@ -2236,7 +2236,7 @@
       "tier_level": 6,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 220,
+        "hp_bonus": 660,
         "def_bonus": 32,
         "special_effect": "null"
       },
@@ -2326,7 +2326,7 @@
       "tier_level": 10,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 800,
+        "hp_bonus": 2400,
         "def_bonus": 130,
         "special_effect": "null"
       },
@@ -2384,7 +2384,7 @@
       "tier_level": 8,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 1225,
+        "hp_bonus": 3675,
         "def_bonus": 140,
         "special_effect": "null"
       },
@@ -2413,7 +2413,7 @@
       "tier_level": 4,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 230,
+        "hp_bonus": 690,
         "def_bonus": 22,
         "special_effect": "null"
       },
@@ -2442,7 +2442,7 @@
       "tier_level": 7,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 875,
+        "hp_bonus": 2625,
         "def_bonus": 100,
         "special_effect": "null"
       },
@@ -2471,7 +2471,7 @@
       "tier_level": 8,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 1050,
+        "hp_bonus": 3150,
         "def_bonus": 115,
         "special_effect": "null"
       },
@@ -2500,7 +2500,7 @@
       "tier_level": 10,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 680,
+        "hp_bonus": 2040,
         "def_bonus": 105,
         "special_effect": "null"
       },
@@ -2529,7 +2529,7 @@
       "tier_level": 1,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 30,
+        "hp_bonus": 90,
         "def_bonus": 3,
         "special_effect": "null"
       },
@@ -2546,7 +2546,7 @@
       "tier_level": 3,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 55,
+        "hp_bonus": 165,
         "def_bonus": 6,
         "special_effect": "null"
       },
@@ -2563,7 +2563,7 @@
       "tier_level": 1,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 50,
+        "hp_bonus": 150,
         "def_bonus": 5,
         "special_effect": "null"
       },
@@ -2580,7 +2580,7 @@
       "tier_level": 8,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 330,
+        "hp_bonus": 990,
         "def_bonus": 45,
         "special_effect": "null"
       },
@@ -2609,7 +2609,7 @@
       "tier_level": 4,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 100,
+        "hp_bonus": 300,
         "def_bonus": 12,
         "special_effect": "null"
       },
@@ -2638,7 +2638,7 @@
       "tier_level": 6,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 520,
+        "hp_bonus": 1560,
         "def_bonus": 55,
         "special_effect": "null"
       },
@@ -2667,7 +2667,7 @@
       "tier_level": 4,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 275,
+        "hp_bonus": 825,
         "def_bonus": 28,
         "special_effect": "null"
       },
@@ -2695,7 +2695,7 @@
       "required_class_id": "wanderer",
       "tier_level": 5,
       "stats": {
-        "atk_bonus": 80,
+        "atk_bonus": 240,
         "hp_bonus": 0,
         "def_bonus": 0,
         "special_effect": "null"
@@ -2737,7 +2737,7 @@
       "tier_level": 4,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 100,
+        "hp_bonus": 300,
         "def_bonus": 14,
         "special_effect": "null"
       },
@@ -2766,7 +2766,7 @@
       "tier_level": 2,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 110,
+        "hp_bonus": 330,
         "def_bonus": 12,
         "special_effect": "null"
       },
@@ -2795,7 +2795,7 @@
       "tier_level": 1,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 40,
+        "hp_bonus": 120,
         "def_bonus": 4,
         "special_effect": "null"
       },
@@ -2811,7 +2811,7 @@
       "required_class_id": "knight",
       "tier_level": 5,
       "stats": {
-        "atk_bonus": 70,
+        "atk_bonus": 210,
         "hp_bonus": 0,
         "def_bonus": 0,
         "special_effect": "null"
@@ -2828,7 +2828,7 @@
       "required_class_id": "knight",
       "tier_level": 1,
       "stats": {
-        "atk_bonus": 10,
+        "atk_bonus": 30,
         "hp_bonus": 0,
         "def_bonus": 0,
         "special_effect": "null"
@@ -2846,7 +2846,7 @@
       "tier_level": 4,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 85,
+        "hp_bonus": 255,
         "def_bonus": 10,
         "special_effect": "null"
       },
@@ -2875,7 +2875,7 @@
       "tier_level": 6,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 610,
+        "hp_bonus": 1830,
         "def_bonus": 70,
         "special_effect": "null"
       },
@@ -2903,7 +2903,7 @@
       "required_class_id": "sorcerer",
       "tier_level": 4,
       "stats": {
-        "atk_bonus": 65,
+        "atk_bonus": 195,
         "hp_bonus": 0,
         "def_bonus": 0,
         "special_effect": "null"
@@ -2933,7 +2933,7 @@
       "tier_level": 2,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 75,
+        "hp_bonus": 225,
         "def_bonus": 7,
         "special_effect": "null"
       },
@@ -2962,7 +2962,7 @@
       "tier_level": 4,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 88,
+        "hp_bonus": 264,
         "def_bonus": 10,
         "special_effect": "null"
       },
@@ -2991,7 +2991,7 @@
       "tier_level": 3,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 68,
+        "hp_bonus": 204,
         "def_bonus": 8,
         "special_effect": "null"
       },
@@ -3008,7 +3008,7 @@
       "tier_level": 9,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 560,
+        "hp_bonus": 1680,
         "def_bonus": 85,
         "special_effect": "null"
       },
@@ -3037,7 +3037,7 @@
       "tier_level": 8,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 375,
+        "hp_bonus": 1125,
         "def_bonus": 55,
         "special_effect": "null"
       },
@@ -3065,7 +3065,7 @@
       "required_class_id": "wanderer",
       "tier_level": 1,
       "stats": {
-        "atk_bonus": 12,
+        "atk_bonus": 36,
         "hp_bonus": 0,
         "def_bonus": 0,
         "special_effect": "null"
@@ -3083,7 +3083,7 @@
       "tier_level": 10,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 720,
+        "hp_bonus": 2160,
         "def_bonus": 110,
         "special_effect": "null"
       },
@@ -3112,7 +3112,7 @@
       "tier_level": 7,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 305,
+        "hp_bonus": 915,
         "def_bonus": 42,
         "special_effect": "null"
       },
@@ -3141,7 +3141,7 @@
       "tier_level": 5,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 130,
+        "hp_bonus": 390,
         "def_bonus": 17,
         "special_effect": "null"
       },
@@ -3182,7 +3182,7 @@
       "tier_level": 2,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 30,
+        "hp_bonus": 90,
         "def_bonus": 3,
         "special_effect": "null"
       },
@@ -3240,7 +3240,7 @@
       "tier_level": 1,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 12,
+        "hp_bonus": 36,
         "def_bonus": 1,
         "special_effect": "null"
       },
@@ -3257,7 +3257,7 @@
       "tier_level": 5,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 110,
+        "hp_bonus": 330,
         "def_bonus": 13,
         "special_effect": "null"
       },
@@ -3290,7 +3290,7 @@
       "tier_level": 9,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 540,
+        "hp_bonus": 1620,
         "def_bonus": 80,
         "special_effect": "null"
       },
@@ -3318,7 +3318,7 @@
       "required_class_id": "knight",
       "tier_level": 3,
       "stats": {
-        "atk_bonus": 35,
+        "atk_bonus": 105,
         "hp_bonus": 0,
         "def_bonus": 0,
         "special_effect": "null"
@@ -3365,7 +3365,7 @@
       "tier_level": 3,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 80,
+        "hp_bonus": 240,
         "def_bonus": 10,
         "special_effect": "null"
       },
@@ -3382,7 +3382,7 @@
       "tier_level": 3,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 170,
+        "hp_bonus": 510,
         "def_bonus": 18,
         "special_effect": "null"
       },
@@ -3399,7 +3399,7 @@
       "tier_level": 7,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 260,
+        "hp_bonus": 780,
         "def_bonus": 32,
         "special_effect": "null"
       },
@@ -3428,7 +3428,7 @@
       "tier_level": 8,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 420,
+        "hp_bonus": 1260,
         "def_bonus": 62,
         "special_effect": "null"
       },
@@ -3456,7 +3456,7 @@
       "required_class_id": "sorcerer",
       "tier_level": 7,
       "stats": {
-        "atk_bonus": 160,
+        "atk_bonus": 480,
         "hp_bonus": 0,
         "def_bonus": 0,
         "special_effect": "null"
@@ -3486,7 +3486,7 @@
       "tier_level": 5,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 155,
+        "hp_bonus": 465,
         "def_bonus": 20,
         "special_effect": "null"
       },
@@ -3503,7 +3503,7 @@
       "tier_level": 1,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 15,
+        "hp_bonus": 45,
         "def_bonus": 1,
         "special_effect": "null"
       },
@@ -3519,7 +3519,7 @@
       "required_class_id": "wanderer",
       "tier_level": 7,
       "stats": {
-        "atk_bonus": 140,
+        "atk_bonus": 420,
         "hp_bonus": 0,
         "def_bonus": 0,
         "special_effect": "null"
@@ -3597,7 +3597,7 @@
       "required_class_id": "knight",
       "tier_level": 9,
       "stats": {
-        "atk_bonus": 210,
+        "atk_bonus": 630,
         "hp_bonus": 0,
         "def_bonus": 0,
         "special_effect": "null"
@@ -3664,7 +3664,7 @@
       "tier_level": 9,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 1900,
+        "hp_bonus": 5700,
         "def_bonus": 230,
         "special_effect": "null"
       },
@@ -3692,7 +3692,7 @@
       "required_class_id": "wanderer",
       "tier_level": 9,
       "stats": {
-        "atk_bonus": 245,
+        "atk_bonus": 735,
         "hp_bonus": 0,
         "def_bonus": 0,
         "special_effect": "null"
@@ -3722,7 +3722,7 @@
       "tier_level": 9,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 1450,
+        "hp_bonus": 4350,
         "def_bonus": 160,
         "special_effect": "null"
       },
@@ -3751,7 +3751,7 @@
       "tier_level": 6,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 700,
+        "hp_bonus": 2100,
         "def_bonus": 85,
         "special_effect": "null"
       },
@@ -3813,7 +3813,7 @@
       "tier_level": 7,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 275,
+        "hp_bonus": 825,
         "def_bonus": 38,
         "special_effect": "null"
       },
@@ -3842,7 +3842,7 @@
       "tier_level": 5,
       "stats": {
         "atk_bonus": 0,
-        "hp_bonus": 130,
+        "hp_bonus": 390,
         "def_bonus": 15,
         "special_effect": "null"
       },
@@ -3884,7 +3884,7 @@
             "on_clear": [
               {
                 "speaker": "Narrator",
-                "text": "Cahaya redup di ujung lorong memberi tanda - depth ini telah kamu taklukkan."
+                "text": "Cahaya redup di ujung lorong memberi tanda — depth ini telah kamu taklukkan."
               },
               {
                 "speaker": "Hero",
