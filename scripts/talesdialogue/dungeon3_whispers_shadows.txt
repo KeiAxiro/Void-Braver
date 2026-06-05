@@ -1,0 +1,194 @@
+=== DUNGEON OF WHISPERS AND SHADOWS ===
+
+[Bab 1: Hutan yang Terlupakan (Depth 1-5)]
+
+- Depth 1: "Kanopi Zamrud yang Memudar"
+  Pre:
+    The Chronicler: "hoot... Dahulu, daun-daun di hutan suci ini bersinar seindah zamrud di bawah cahaya bulan. Kini... semuanya tertutup kabut hitam."
+    Hero: "Shadows... bayangan di tempat ini terasa jauh lebih pekat dan seolah bergerak sendiri."
+    The Chronicler: "Hutan ini adalah rumah bagi Ordo Pelindung Bayangan. Berhati-hatilah, Kesatria. Tempat ini telah melupakan tamunya."
+  Post:
+    Hero: "Tanaman merambat di sini mencoba melilit kakiku. Rasanya seperti mereka memiliki rasa benci."
+    The Chronicler: "Alam telah terkorupsi. Hutan yang dulunya melindungi, kini berbalik memburu."
+
+- Depth 2: "Jejak Kaki Tanpa Suara"
+  Pre:
+    The Chronicler: "Lihat goresan tipis di batang pohon ini. Teknik menyelinap tingkat tinggi. Para pelindung bayangan pernah berlatih di sini."
+    Hero: "Tidak ada jejak kaki di tanah, tapi aku bisa merasakan keberadaan mereka di atas dahan."
+    The Chronicler: "Mereka bergerak tanpa suara, seperti angin malam. Bersiaplah untuk serangan dari kegelapan."
+  Post:
+    Hero: "Mereka menyerang dari balik bayangan pohon. Gerakan mereka sangat cepat."
+    The Chronicler: "Untungnya refleksmu lebih cepat, Kesatria. Tapi ingat, ini baru gerbang luar wilayah mereka."
+
+- Depth 3: "Nyanyian Burung Hantu yang Terdiam"
+  Pre:
+    The Chronicler: "(Tertunduk lesu, bulu emasnya sedikit merapat) Sunyi sekali... Tidak ada suara kepakan sayap burung hantu penjaga ataupun nyanyian roh hutan."
+    Hero: "Mereka semua telah mati, Chronicler?"
+    The Chronicler: "Ya. Kegelapan ini tidak menyisakan ruang bagi kehidupan yang murni. Mari kita tuntaskan ini."
+  Post:
+    Hero: "Aku berhasil membersihkan sisa-sisa makhluk terinfeksi di dahan atas."
+    The Chronicler: "Terima kasih, Kesatria. Setidaknya kesunyian di hutan ini sekarang terasa lebih damai."
+
+- Depth 4: "Kabut yang Mengaburkan Arah"
+  Pre:
+    Hero: "Kabut ini... terlalu tebal. Aku bahkan tidak bisa melihat ujung pedangku sendiri."
+    The Chronicler: "(Mata bulatnya bersinar keemasan, memancarkan cahaya hangat) Tetap di dekatku, Kesatria. Ikuti pancaran mataku. Kabut ini dirancang untuk membuatmu tersesat selamanya."
+    Hero: "Hawa kabut ini terasa dingin dan membuat kepalaku sedikit pusing."
+  Post:
+    Hero: "Kita berhasil menembus zona kabut tebal tanpa terpisah."
+    The Chronicler: "Ikatan kita jauh lebih kuat daripada sihir ilusi apa pun di hutan ini. Tapi lihat ke depan... ada sesuatu yang mengawasi."
+
+- Depth 5: "Mata di Balik Rimbunan Gelap"
+  Pre:
+    Hero: "Banyak sekali mata merah menyala di balik semak-semak itu."
+    The Chronicler: "Satwa liar yang tersisa telah bermutasi menjadi monster buas. Mereka tidak lagi mengenal rasa takut ataupun kenyang."
+    Hero: "Maka mereka hanya mengenal kematian. Majulah!"
+  Post:
+    The Chronicler: "Pertarungan yang bersih, Kesatria. Kau bergerak secepat angin."
+    Hero: "Aku harus cepat. Jika aku ragu sedetik saja, taring mereka sudah merobek leherku."
+
+
+[Bab 2: Paranoia dan Pengkhianatan (Depth 6-10)]
+
+- Depth 6: "Racun di Ujung Belati"
+  Pre:
+    The Chronicler: "Perhatikan botol-botol kaca yang pecah di tanah ini. Itu adalah racun terlarang milik para assassin."
+    Hero: "Mereka menggunakan racun terhadap musuh mereka?"
+    The Chronicler: "Bukan, Kesatria. Saat keputusasaan melanda, mereka mulai mengoleskan racun itu pada belati mereka sendiri untuk saling membantai."
+  Post:
+    Hero: "Zirahku terkena cipratan racun dari perangkap belati tadi. Untungnya tidak menembus kulit."
+    The Chronicler: "Sangat berbahaya. Satu goresan kecil saja bisa melumpuhkan jantungmu. Kita harus lebih waspada."
+
+- Depth 7: "Bisikan yang Membelah Pikiran"
+  Pre:
+    Suara Berbisik: "Temanmu itu... dia akan meninggalkanmu... burung hantu itu menyembunyikan sesuatu..."
+    Hero: "Berisik! Suara-suara ini tidak mau berhenti berbisik di telingaku!"
+    The Chronicler: "hoot! Jangan dengarkan mereka, Kesatria! Itu adalah bisikan The Void yang memicu benih kecurigaan di antara kita."
+  Post:
+    Hero: "(Menghela napas panjang, menatap The Chronicler) Aku tahu kau tidak akan pernah mengkhianatiku, pemanduku."
+    The Chronicler: "Dan aku tahu tekadmu tidak akan pernah goyah oleh kebohongan murahan mereka. Hubungan kita melampaui kegelapan ini."
+
+- Depth 8: "Ilusi Tarian Daun Gugur"
+  Pre:
+    Hero: "Tunggu... kenapa daun-daun yang gugur ini berubah wujud menjadi prajurit yang siap menyerangku?"
+    The Chronicler: "Spora beracun dari jamur bawah tanah mulai memengaruhi matamu. Kawan terlihat seperti monster, dan monster terlihat seperti kawan!"
+    Hero: "Aku akan memejamkan mata dan mengandalkan indra pendengaranku."
+  Post:
+    Hero: "Pedangku berhasil menebas monster asli di balik ilusi daun gugur tadi."
+    The Chronicler: "Luar biasa, Kesatria. Mengandalkan insting di tengah kebutaan adalah tanda seorang petarung sejati."
+
+- Depth 9: "Pohon Ek Tempat Menggantung Dosa"
+  Pre:
+    Hero: "Pohon ek raksasa di depan kita... apa yang tergantung di dahan-dahannya?"
+    The Chronicler: "Jasad para pelindung bayangan. Mereka saling mengeksekusi saudara mereka sendiri karena dituduh berkhianat."
+    Hero: "Tragis sekali. Mereka menghancurkan diri mereka sendiri sebelum musuh sempat menyerang."
+  Post:
+    Hero: "Aku telah memotong tali-tali gantungan itu dan memakamkan jasad mereka dengan layak."
+    The Chronicler: "Kau membawa kehormatan kembali ke tempat yang penuh dosa ini. Semoga jiwa mereka kini tenang."
+
+- Depth 10: "Putusnya Tali Persaudaraan"
+  Pre:
+    The Chronicler: "Di area lapang ini, pertumpahan darah terakhir di antara sesama assassin terjadi. Tidak ada yang selamat."
+    Hero: "Hutan pelindung ini berubah menjadi kuburan massal karena paranoia."
+    The Chronicler: "And energi benci dari kematian mereka mengundang sesuatu yang merayap dari bawah tanah. Bersiaplah, Kesatria!"
+  Post:
+    Hero: "Roh-roh amarah yang bangkit dari tanah lapang ini akhirnya kembali tertidur."
+    The Chronicler: "Kita telah menyelesaikan kekacauan di permukaan hutan. Sekarang, kita harus turun ke jurang di bawah akar pohon raksasa."
+
+
+[Bab 3: Turun ke Jurang Keputusasaan (Depth 11-15)]
+
+- Depth 11: "Jurang Tanpa Dasar"
+  Pre:
+    Hero: "Jalan setapak ini sangat sempit, dan di bawahnya... hanya ada kegelapan mutlak."
+    The Chronicler: "Ini adalah Abyss, jurang terdalam di bawah akar hutan. Satu langkah yang salah, dan kau akan jatuh selamanya."
+    Hero: "Aku akan merayap di dinding batu. Tetaplah terbang dekat denganku."
+  Post:
+    Hero: "Kakiku akhirnya menyentuh dasar jurang. Udaranya sangat lembap dan berbau darah."
+    The Chronicler: "Kita telah sampai di sistem akar terdalam. Hati-hati, tanah di bawah kita terasa basah."
+
+- Depth 12: "Akar Berdarah yang Menjalar"
+  Pre:
+    Hero: "Akar-akar pohon raksasa ini... mereka berdenyut? Dan ada cairan merah yang menetes."
+    The Chronicler: "Akar-akar ini menghisap sisa darah dari mayat-mayat para assassin yang jatuh dari atas. Mereka telah berubah menjadi parasit haus darah."
+    Hero: "Aku akan memotong setiap akar yang mencoba mendekati kita."
+  Post:
+    Hero: "Akar-akar itu menjerit kesakitan saat kupotong dan mengeluarkan asap hitam."
+    The Chronicler: "Korupsi telah menyebar hingga ke pembuluh darah alam di tempat ini. Kita harus segera mencari sumbernya."
+
+- Depth 13: "Gema Tangisan di Bawah Tanah"
+  Pre:
+    Hero: "Suara tangisan ini... menggema dari setiap celah akar batu."
+    The Chronicler: "Itu adalah jiwa-jiwa para assassin yang terjebak. Jiwa mereka diikat oleh kekuatan The Void agar tidak bisa menuju akhirat."
+    Hero: "Aku tidak bisa membiarkan mereka menderita seperti ini. Tunjukkan ke mana arah mereka."
+  Post:
+    Hero: "Kekuatan kegelapan yang mengikat jiwa mereka telah kuhancurkan dengan pedangku."
+    The Chronicler: "Gema tangisan itu kini berubah menjadi embusan angin kebebasan. Pekerjaan yang mulia, Kesatria."
+
+- Depth 14: "Bunga Kematian yang Mekar"
+  Pre:
+    The Chronicler: "Awas, Kesatria! Jangan menghirup gas dari bunga ungu di depanmu. Itu adalah flora mematikan yang menyemburkan gas pelumpuh saraf."
+    Hero: "Mereka mekar dengan sangat cepat di sekeliling kita! Aku harus bergerak lincah menghindari semburannya."
+    The Chronicler: "Gunakan kelincahanmu! Tebas tangkainya sebelum kelopak bunganya terbuka penuh!"
+  Post:
+    Hero: "pant... pant... Gerakan cepat tadi benar-benar menguras tenagaku."
+    The Chronicler: "Tapi refleks dan kecepatanmu luar biasa, Kesatria. Tidak ada satu pun spora beracun yang berhasil menyentuh kulitmu."
+
+- Depth 15: "Jembatan Akar Rapuh"
+  Pre:
+    Hero: "Satu-satunya jalan menyeberangi jurang ini adalah jembatan dari jalinan akar yang mulai membusuk."
+    The Chronicler: "And di bawah sana, makhluk-makhluk bayangan sudah bersiap untuk menarik kakimu jika kau kehilangan keseimbangan."
+    Hero: "Fokus pada langkah kaki... aku akan menyeberang dengan cepat."
+  Post:
+    Hero: "Jembatannya runtuh tepat setelah aku melompat ke sisi seberang!"
+    The Chronicler: "hoot! Itu sangat dekat. Tapi kita berhasil lolos dari jebakan maut mereka. Di depan adalah sarang utama."
+
+
+[Bab 4: Sarang Sang Pengintai (Depth 16-20)]
+
+- Depth 16: "Sarang Sang Laba-laba Bayangan"
+  Pre:
+    Hero: "Gelap sekali... Cahaya lilin pun seolah-olah ditelan oleh kegelapan di ruangan ini."
+    The Chronicler: "Kita telah sampai di pusat episentrum kabut paranoia. Tempat di mana cahaya matahari tidak pernah diizinkan masuk."
+    Hero: "Aku bisa merasakan jaring-jaring halus menempel di wajahku. Sesuatu sedang merayap di atas kita."
+  Post:
+    Hero: "Laba-laba bayangan itu mati, namun jaring mereka membuat gerakanku sedikit lambat."
+    The Chronicler: "Gunakan kehangatan energi pedangmu untuk membakar sisa jaringnya. Kita harus tetap bergerak cepat."
+
+- Depth 17: "Siluet yang Menari dalam Gelap"
+  Pre:
+    The Chronicler: "Awas, Kesatria! Ada serangan beruntun dari arah samping!"
+    Hero: "Aku tidak bisa melihat wujud mereka... hanya ada siluet hitam yang bergerak sangat cepat!"
+    The Chronicler: "Andalkan insting dan pendengaranmu. Kecepatan mereka luar biasa, jangan biarkan matamu menipu gerakanmu!"
+  Post:
+    Hero: "Aku berhasil menebas siluet itu tepat saat mereka mencoba menyerang leherku."
+    The Chronicler: "Refleksmu telah melampaui batas manusia biasa, Kesatria. Kau menari bersama bayangan mereka dan menang."
+
+- Depth 18: "Kekosongan Hati The Phantom Stalker"
+  Pre:
+    The Chronicler: "Sosok di depan altar batu itu... dia adalah pemimpin para assassin. The Phantom Stalker."
+    The Phantom Stalker: "Aku... menyerahkan jiwaku... agar anak buahku diampuni... tapi kegelapan ini... menipuku..."
+    Hero: "Dia mengorbankan dirinya demi menyelamatkan ordonya, namun kegelapan justru membuat mereka saling membantai."
+  Post:
+    The Phantom Stalker: "Rasa bersalah ini... terus mencabik-cabik dadaku... arghhh!"
+    The Chronicler: "Pikiran dan jiwanya telah dihancurkan oleh penyesalan yang mendalam. Kegelapan memanfaatkan celah itu untuk mengendalikannya."
+
+- Depth 19: "Tatapan Kosong Sang Pembunuh"
+  Pre:
+    The Phantom Stalker: "Tidak ada lagi persaudaraan... tidak ada lagi pelindung... yang tersisa hanyalah... pembantaian!"
+    Hero: "Wujudnya berubah menjadi monster bayangan berkaki banyak dengan belati hitam di setiap tangannya!"
+    The Chronicler: "Dia bergerak dengan kecepatan mutlak! Jangan biarkan dia berada di belakangmu, Kesatria!"
+  Post:
+    The Phantom Stalker: "Kecepatanmu... sungguh... luar biasa... ksatria..."
+    Hero: "Dia terluka parah, tapi dia masih mencoba menyerang dengan insting pembunuhnya."
+    The Chronicler: "Satu tebasan terakhir untuk membebaskan jiwa sang pemimpin dari penderitaan ini!"
+
+- Depth 20: "Kelahiran Obsidian Orb"
+  Pre:
+    The Chronicler: "Akhiri ini, Kesatria. Berikan dia kematian yang layak bagi seorang pelindung sejati."
+    The Phantom Stalker: "Bebaskan aku... dari bayang-bayang kegagalan ini..."
+    Hero: "Istirahatlah dengan damai, Phantom Stalker. Bebanmu telah selesai."
+  Post:
+    The Phantom Stalker: "Hutan ini... akhirnya... tenang kembali..."
+    The Chronicler: "Sosoknya meluruh menjadi kabut kelabu yang perlahan menguap ke udara. Di tengah sisa-sisa debunya, sebuah kristal hitam pekat terbentuk."
+    Hero: "(Mengambil batu kristal hitam yang melayang jatuh) Obsidian Orb... rasanya sangat dingin, ringan, dan seolah-olah menyerap cahaya di sekelilingnya."

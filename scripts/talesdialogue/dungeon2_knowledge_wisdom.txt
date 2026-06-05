@@ -1,0 +1,193 @@
+=== DUNGEON OF KNOWLEDGE AND WISDOM ===
+
+[Bab 1: Era Keemasan (Depth 1-5)]
+
+- Depth 1: "Gerbang Pengetahuan Abadi"
+  Pre:
+    The Chronicler: "Buka matamu, Kesatria. Di depan kita adalah perpustakaan terbesar yang pernah dibangun peradaban manusia. Sayang... keheningan di sini terlalu pekat."
+    Hero: "Tempat sebesar ini... sunyi sekali. Bahkan bau kertas lamanya tertutup oleh hawa dingin yang kukenal."
+    The Chronicler: "Hati-hati. Di tempat para cendekiawan mengumpulkan kebijaksanaan, kegelapan juga suka bersembunyi."
+  Post:
+    Hero: "Sihir pelindung di gerbang ini langsung menyerangku. Mereka mengira aku penyusup."
+    The Chronicler: "Sistem keamanannya telah rusak dan terkorupsi. Setidaknya jalan masuk menuju Menara Astral kini terbuka."
+
+- Depth 2: "Rak Buku Setinggi Bintang"
+  Pre:
+    The Chronicler: "hoot... Menakjubkan, bukan? Rak-rak buku ini menjulang tinggi hingga menembus atap kaca, seolah-olah ingin menyentuh rasi bintang."
+    Hero: "Aku belum pernah melihat buku sebanyak ini seumur hidupku. Tapi... kenapa buku-buku itu melayang?"
+    The Chronicler: "Sihir pelindung gravitasi mereka mulai kacau. Tetap di dekatku, Kesatria."
+  Post:
+    Hero: "Buku-buku liar tadi menyerang dengan sudut-sudut kertas yang tajam. Seperti pisau."
+    The Chronicler: "Pengetahuan yang terdistorsi bisa menjadi senjata mematikan. Langkah kita masih panjang, mari naik lebih tinggi."
+
+- Depth 3: "Simfoni Tinta dan Kertas"
+  Pre:
+    Hero: "Ada aroma aneh di sini... seperti tinta basah, tapi rasanya manis."
+    The Chronicler: "Itu aroma tinta sihir murni. Dahulu, para penyihir menuliskan mantra mereka di sini dengan damai, tanpa tahu badai akan datang."
+    Hero: "Kedamaian yang indah... sebelum semuanya direnggut."
+  Post:
+    Hero: "Bayangan-bayangan penyihir tadi... mereka terus menulis meskipun jasadnya sudah tiada."
+    The Chronicler: "Jiwa mereka terikat pada obsesi penelitian terakhir mereka. Pedangmu baru saja membebaskan mereka dari siklus tanpa akhir."
+
+- Depth 4: "Goresan Tinta yang Bergetar"
+  Pre:
+    Hero: "Tunggu, Chronicler. Buku di atas meja ini menulis halamannya sendiri. Huruf-hurufnya... bergerak seperti cacing."
+    The Chronicler: "Jangan menatap tulisan itu terlalu lama! Itu bahasa kuno yang belum pernah diterjemahkan. Bahasa dari luar realita kita."
+    Hero: "Kepalaku mendadak terasa sangat pusing hanya dengan sekilas melihatnya..."
+  Post:
+    Hero: "pant... pant... monster yang keluar dari halaman buku itu hampir saja menjeratku."
+    The Chronicler: "Bahasa itu adalah pembawa korupsi. Keberadaannya membuktikan bahwa perpustakaan ini sudah mulai 'membaca' The Void."
+
+- Depth 5: "Ramalan dari Celah Bintang"
+  Pre:
+    The Chronicler: "Lihat perkamen rahasia di atas meja bundar ini. Ini adalah ruang ramalan bintang."
+    Hero: "Ada gambar pusaran hitam besar yang memakan gugusan bintang..."
+    The Chronicler: "Mereka sudah meramalkan kedatangan The Void ratusan tahun lalu, Kesatria. Namun, mengetahui takdir dan menghentikannya adalah dua hal yang berbeda."
+  Post:
+    Hero: "Jika mereka tahu kegelapan ini akan datang, mengapa mereka tidak melarikan diri?"
+    The Chronicler: "Cendekiawan terlalu mencintai buku mereka, Kesatria. Mereka memilih mati bersama sejarah mereka. Mari, kita harus turun ke area eksperimen."
+
+
+[Bab 2: Rasa Ingin Tahu yang Mematikan (Depth 6-10)]
+
+- Depth 6: "Bisikan di Balik Halaman"
+  Pre:
+    Hero: "Bisikan-bisikan ini... mereka menyebut namaku. Mereka menyuruhku meletakkan pedangku."
+    The Chronicler: "(Mengepakkan sayap emasnya di depan wajah Hero) Jangan dengarkan, Kesatria! Tutup telingamu. Itu suara keputusasaan dari masa lalu yang mencoba meracunimu."
+    Hero: "Suara rekan-rekanku yang gugur... rasanya nyata sekali."
+  Post:
+    Hero: "Terima kasih, Chronicler. Jika kau tidak mengepakkan sayapmu tadi, aku mungkin sudah menyerah."
+    The Chronicler: "Aku di sini sebagai pemandumu, Kesatria. Jiwamu terlalu berharga untuk hilang di tempat sunyi ini."
+
+- Depth 7: "Eksperimen Sang Alkemis Gila"
+  Pre:
+    The Chronicler: "Ruangan ini... baunya seperti belerang dan darah kering. Di sinilah mereka mencoba memadukan sihir hitam untuk menolak kegelapan."
+    Hero: "Mencoba melawan kegelapan dengan kegelapan? Keputusan yang bodoh."
+    The Chronicler: "Ketakutan sering kali membuat orang bijak kehilangan akal sehatnya."
+  Post:
+    Hero: "Makhluk-makhluk cairan asam ini... mereka adalah hasil eksperimen yang gagal?"
+    The Chronicler: "Ya. Alih-alih menciptakan perisai, mereka justru membuka pintu gerbang bagi musuh untuk masuk lebih cepat."
+
+- Depth 8: "Pecahnya Kaca Realita"
+  Pre:
+    Hero: "Udara di depan kita... retak? Seperti cermin yang pecah."
+    The Chronicler: "Ruang dan waktu di sini sudah tidak stabil. Eksperimen terlarang itu merusak fondasi realita perpustakaan ini."
+    Hero: "Aku merasa mual setiap kali melangkah mendekati retakan itu."
+  Post:
+    The Chronicler: "Kau berhasil melewati distorsi ruang itu dengan selamat. Bagaimana perasaanmu?"
+    Hero: "Kepalaku berputar, tapi pedangku masih bisa kupegang dengan mantap. Mari terus maju."
+
+- Depth 9: "Debat Berdarah"
+  Pre:
+    Gema Cendekiawan: "Sihir ini akan menyelamatkan kita! / Tidak, itu akan mengutuk kita semua! Kau pembunuh!"
+    Hero: "Mereka saling menyerang... para cendekiawan ini saling membunuh?"
+    The Chronicler: "Saat ketakutan menguasai pikiran, argumen berubah menjadi belati. Kegelapan menang tanpa perlu bertarung."
+  Post:
+    Hero: "Menghentikan gema pertengkaran mereka rasanya sangat melelahkan jiwa."
+    The Chronicler: "Paranoia adalah racun yang paling cepat menyebar, Kesatria. Dan kau baru saja membersihkan sisa racun itu."
+
+- Depth 10: "Pemberontakan Golem Penjaga"
+  Pre:
+    The Chronicler: "hoot! Awas, Kesatria! Golem pelindung di depanmu... matanya menyala merah, bukan biru."
+    Hero: "Mereka raksasa batu yang sangat besar. Zirahku tidak akan sanggup menahan hantaman itu."
+    The Chronicler: "Mereka diciptakan untuk menjaga buku, tapi kegelapan telah meretas inti sihir mereka. Cari celah di persendian batu mereka!"
+  Post:
+    Hero: "pant... pant... golem itu akhirnya hancur menjadi tumpukan batu biasa."
+    The Chronicler: "Pertarungan yang luar biasa, Kesatria. Namun hancurnya para penjaga ini berarti tidak ada lagi yang melindungi menara atas dari kekacauan."
+
+
+[Bab 3: Labirin Ilusi dan Distorsi (Depth 11-15)]
+
+- Depth 11: "Koridor Tanpa Ujung"
+  Pre:
+    Hero: "Kita sudah melewati patung singa ini tiga kali, Chronicler. Apakah kita berputar-putar?"
+    The Chronicler: "Koridor ini melipat dirinya sendiri. Ini adalah labirin spasial yang dirancang untuk menjebak pencuri pengetahuan."
+    Hero: "Bagaimana kita bisa keluar jika mata fisikku tidak bisa dipercaya?"
+  Post:
+    The Chronicler: "(Mengepakkan sayap emasku dan menunjuk ke arah langit-langit yang melengkung) Ikuti aliran debu emas pertunjukanku, Kesatria. Ruang di depan mulai melurus kembali."
+    Hero: "Pemandu yang hebat. Aku tidak akan bisa keluar dari sini tanpamu."
+
+- Depth 12: "Gravitasi yang Runtuh"
+  Pre:
+    Hero: "Buku, meja, bahkan mayat para penyihir... semuanya melayang bebas di udara."
+    The Chronicler: "Gravitasi di tingkat ini telah runtuh sepenuhnya. Kau harus melompat dari satu puing ke puing lainnya."
+    Hero: "Satu lompatan salah... dan aku akan jatuh ke dalam kehampaan tanpa batas di bawah."
+  Post:
+    Hero: "Kakiku akhirnya menyentuh lantai yang solid lagi. Sungguh menegangkan."
+    The Chronicler: "Keberanianmu tidak pernah gagal membuatku takjub, Kesatria. Tapi bersiaplah, hawa di depan terasa sangat busuk."
+
+- Depth 13: "Buku Berkulit Dosa"
+  Pre:
+    The Chronicler: "Jangan sentuh buku di atas altar itu! Itu Grimoire terkutuk yang dilapisi kulit manusia."
+    Hero: "Buku itu... berdetak seperti jantung manusia. Dan ada mata yang berkedip di sampulnya."
+    The Chronicler: "Ia mencoba menarik jiwamu dengan rasa ingin tahu. Hancurkan altar itu sebelum ia membuka matanya sepenuhnya!"
+  Post:
+    Hero: "Saat pedangku menebas buku itu, ia menjerit seperti anak kecil yang kesakitan."
+    The Chronicler: "Itu adalah jeritan jiwa-jiwa yang telah dihisap oleh buku tersebut. Kau baru saja membebaskan mereka."
+
+- Depth 14: "Bayangan Masa Lalu"
+  Pre:
+    Gema Rekan Prajurit: "Kenapa kau selamat, Kesatria? Kenapa kau membiarkan kami mati di medan perang?!"
+    Hero: "Tidak... aku sudah mencoba menyelamatkan kalian! Aku... aku tidak bisa..."
+    The Chronicler: "Kesatria! Lihat aku! Itu bukan teman-temanmu. Itu adalah ilusi dari pikiranmu sendiri yang diperalat oleh The Void!"
+  Post:
+    Hero: "(Menyeka air mata dari pipinya sambil menghela napas panjang) Aku harus menusuk bayangan temanku sendiri untuk melenyapkannya."
+    The Chronicler: "Kesedihanmu adalah makanan bagi mereka. Tapi ketahuilah, teman-temanmu yang asli gugur dengan bangga karena tahu kau terus berjuang."
+
+- Depth 15: "Tangisan di Menara Lonceng"
+  Pre:
+    Hero: "Suara lonceng ini... rasanya seperti menusuk gendang telingaku."
+    The Chronicler: "Itu adalah lonceng duka. Jiwa para cendekiawan yang terjebak di antara dimensi berteriak setiap kali lonceng itu berdentang."
+    Hero: "Aku akan naik dan menghentikan dentangan lonceng sialan itu."
+  Post:
+    Hero: "Loncengnya sudah retak dan tidak berbunyi lagi. Suasana kembali sunyi."
+    The Chronicler: "And tangisan mereka berubah menjadi embusan angin yang tenang. Kita sudah sangat dekat dengan puncak menara."
+
+
+[Bab 4: Inti Menara & Sang Pustakawan (Depth 16-20)]
+
+- Depth 16: "Ruang Baca Sang Pemimpin"
+  Pre:
+    Hero: "Ini pasti ruang kerja sang Kepala Perpustakaan. Tempatnya sangat mewah, namun tertutup debu tebal."
+    The Chronicler: "Ruang suci The Grand Archivist. Di sinilah keputusan-keputusan besar yang memengaruhi sejarah dunia pernah ditulis."
+  Post:
+    Hero: "Tidak ada tanda-tanda kehidupan di sini, hanya keheningan yang menyesakkan."
+    The Chronicler: "Kesunyian sebelum badai, Kesatria. Bersiaplah untuk menghadapi apa yang tersisa dari sang pemimpin."
+
+- Depth 17: "Tinta Menjadi Darah"
+  Pre:
+    Hero: "Tinta-tinta hitam mulai merembes keluar dari celah lantai... baunya amis seperti darah."
+    The Chronicler: "Energi hitam The Void telah mencemari seluruh sisa pengetahuan di ruangan ini, mengubah tinta berharga menjadi darah kutukan."
+    Hero: "Cairan hitam ini mulai membentuk monster-monster tanpa wajah!"
+  Post:
+    Hero: "Pedangku berlumuran cairan hitam kental ini. Sangat sulit dibersihkan."
+    The Chronicler: "Cairan itu akan menguap seiring hancurnya sumber kutukannya. Tetaplah fokus pada tujuan kita."
+
+- Depth 18: "Obsesi The Grand Archivist"
+  Pre:
+    The Chronicler: "Dia di sana, Kesatria. Sosok tua yang melayang di tengah lingkaran buku-buku terbang."
+    The Grand Archivist: "Buku-buku ini... tidak boleh hancur... sejarah dunia... harus tetap abadi... meski aku harus menyerahkan jiwaku..."
+    Hero: "Dia rela menjual jiwanya pada kegelapan hanya demi menyelamatkan tumpukan kertas?"
+  Post:
+    The Grand Archivist: "Argh! Cahaya apa ini?! Jangan sentuh buku-bukuku!"
+    The Chronicler: "Pikiran dan tubuhnya telah menyatu dengan menara ini. Dia tidak bisa lagi membedakan antara melindungi sejarah atau menghancurkannya."
+
+- Depth 19: "Mata yang Melihat Segalanya"
+  Pre:
+    The Grand Archivist: "Aku melihatmu... ksatria dari kerajaan yang runtuh... aku melihat ketakutanmu... aku melihat akhir dari dunia ini!"
+    Hero: "Wujudnya berubah! Banyak sekali mata besar yang tumbuh di sekeliling buku-bukunya."
+    The Chronicler: "Dia telah bermutasi sepenuhnya menjadi penjaga kutukan. Tebas matanya, Kesatria! Jangan biarkan pandangannya mengunci gerakanmu!"
+  Post:
+    The Grand Archivist: "Mataku... pengetahuanku... semuanya menjadi gelap..."
+    Hero: "Dia melemah, tapi sisa-sisa buku di sekitarnya mulai terbakar oleh api hitam."
+    The Chronicler: "Satu serangan terakhir untuk mengakhiri penderitaan sang Archivist!"
+
+- Depth 20: "Lahirnya Azure Orb"
+  Pre:
+    The Chronicler: "Berikan dia kedamaian yang sesungguhnya. Selamatkan pengetahuannya dari korupsi The Void."
+    The Grand Archivist: "Bebaskan aku... biarkan aku melupakan... semua kepedihan ini..."
+    Hero: "Istirahatlah bersama pengetahuanmu yang berharga, Archivist. Tugasmu sudah selesai."
+  Post:
+    The Grand Archivist: "Akhirnya... keheningan yang murni..."
+    The Chronicler: "Lihatlah, lembaran-lembaran buku yang terbakar tadi berubah menjadi partikel cahaya biru yang indah. Jiwanya yang telah disucikan kini mengkristal."
+    Hero: "(Mengambil batu kristal biru jernih yang melayang jatuh) Azure Orb... rasanya sangat dingin, namun menenangkan pikiran."

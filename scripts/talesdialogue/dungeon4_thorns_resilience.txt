@@ -1,0 +1,193 @@
+=== DUNGEON OF THORNS AND RESILIENCE ===
+
+[Bab 1: Suaka yang Membusuk (Depth 1-5)]
+
+- Depth 1: "Mata Air Kehidupan"
+  Pre:
+    The Chronicler: "Hati-hati dengan langkahmu, Kesatria. Air rawa di depan kita... dahulu adalah mata air suci yang bisa menyembuhkan luka separah apa pun."
+    Hero: "Tapi sekarang... baunya sangat busuk. Kulitku terasa gatal hanya karena terkena uapnya."
+    The Chronicler: "hoot... Korupsi telah mengubah suaka penyembuhan ini menjadi kuburan beracun."
+  Post:
+    Hero: "Lumpurnya sangat tebal dan lengket, membuat setiap langkah terasa sepuluh kali lebih berat."
+    The Chronicler: "Rawa ini mencoba menahanmu agar tenggelam, Kesatria. Tetap kuatkan kakimu."
+
+- Depth 2: "Akar Penyangga Bumi"
+  Pre:
+    The Chronicler: "Lihat akar-akar raksasa ini. Mereka menembus hingga ke inti dunia, mengalirkan kehidupan ke seluruh rawa."
+    Hero: "Tapi sekarang akar-akar ini dipenuhi oleh lendir hitam kental."
+    The Chronicler: "Jika penyangga bumi ini hancur, seluruh tempat ini akan runtuh. Kita harus membersihkan parasit yang mengeratnya."
+  Post:
+    Hero: "Parasit raksasa tadi akhirnya mati. Tapi lendir hitamnya merusak lapisan zirahku."
+    The Chronicler: "Zirah besi bisa diganti, Kesatria. Yang terpenting adalah tubuhmu tetap tegak berdiri."
+
+- Depth 3: "Spora Ungu Pertama"
+  Pre:
+    Hero: "Indah sekali... bintik-bintik ungu ini turun dari langit seperti salju."
+    The Chronicler: "Jangan menyentuhnya! Itu adalah spora beracun The Void. Keindahan yang menipu untuk mematikan paru-parumu."
+    Hero: "(Segera menutup hidung dengan jubah) Hampir saja..."
+  Post:
+    Hero: "cough... cough... sedikit spora tadi sempat terhirup. Dadaku terasa terbakar."
+    The Chronicler: "(Mengepakkan sayap emasku di atas dada Hero, memancarkan cahaya hijau penawar) Bertahanlah, Kesatria. Racunnya sudah kukurangi, tapi efeknya akan membuatmu lelah."
+
+- Depth 4: "Air yang Mengubah Wujud"
+  Pre:
+    Hero: "Genangan air di depan kita... lumpurnya mendidih dan meletup-letup."
+    The Chronicler: "Itu adalah lumpur korupsi aktif. Hewan apa pun yang meminum air ini akan berubah menjadi mutan mengerikan."
+    Hero: "And mereka sekarang sedang merayap keluar dari dalam genangan itu..."
+  Post:
+    Hero: "Mutan-mutan itu tidak memiliki rasa sakit. Mereka terus menyerang meski tubuh mereka sudah terbelah."
+    The Chronicler: "Sebab tubuh mereka sepenuhnya digerakkan oleh parasit hitam. Kekuatan fisikmu benar-benar diuji di sini."
+
+- Depth 5: "Duri Penolakan Alam"
+  Pre:
+    Hero: "Duri-duri kayu raksasa menghalangi jalan kita. Tajam sekali, seperti barisan tombak."
+    The Chronicler: "Alam di rawa ini mencoba melawan kutukan dengan menumbuhkan duri-duri ini, namun akhirnya mereka sendiri ikut terkorupsi dan menyerang siapa saja."
+    Hero: "Aku akan menebas duri-duri ini. Bersiaplah untuk terbang rendah."
+  Post:
+    Hero: "pant... pant... menebas kayu sekeras besi ini benar-benar melelahkan."
+    The Chronicler: "Kau berhasil membuka jalan, Kesatria. Kita telah melewati lapisan luar rawa. Di depan, jalurnya akan semakin ekstrem."
+
+
+[Bab 2: Bertahan di Tengah Kelayuan (Depth 6-10)]
+
+- Depth 6: "Lumpur dan Besi"
+  Pre:
+    The Chronicler: "Lihat jasad-jasad di dalam lumpur itu. Mereka adalah para petarung rawa purba."
+    Hero: "Zirah mereka sangat tebal, dan tubuh mereka dilapisi lumpur kering."
+    The Chronicler: "Mereka menggunakan lumpur ajaib untuk menahan racun. Namun pertahanan terkuat pun memiliki batasnya."
+  Post:
+    Hero: "Jasad zirah berat tadi bangkit menyerangku. Pukulan mereka sangat lambat, tapi sangat kuat."
+    The Chronicler: "Mereka adalah sisa ketangguhan masa lalu yang kini berjalan tanpa arah. Kau telah mengistirahatkan mereka."
+
+- Depth 7: "Pawai Para Raksasa"
+  Pre:
+    The Chronicler: "Dengarkan getaran tanah ini, Kesatria. Hewan-hewan purba berukuran masif sedang bergerak di dekat kita."
+    Hero: "Miasma beracun ini telah membuat mereka kehilangan akal sehat."
+    The Chronicler: "Jangan menantang mereka secara langsung jika tidak perlu. Kulit mereka setebal batu karang."
+  Post:
+    Hero: "Salah satu raksasa itu menyerang kita, terpaksa kuhancurkan kaki tumpuannya."
+    The Chronicler: "Pertarungan yang brutal. Ketahanan fisikmu adalah satu-satunya alasan kita bisa selamat dari injakan raksasa tadi."
+
+- Depth 8: "Tenggelamnya Kuil Penawar"
+  Pre:
+    Hero: "Sebuah kuil tua di depan kita... perlahan tenggelam ke dalam rawa hisap."
+    The Chronicler: "Kuil Penyembuhan terakhir. Di dalam sana dulu disimpan penawar racun murni."
+    Hero: "Aku harus masuk sebelum seluruh bangunannya tertelan lumpur!"
+  Post:
+    Hero: "Hampir saja aku terjebak di dalam lumpur hisap tadi. Tapi aku berhasil mengambil sisa penawar ini."
+    The Chronicler: "Ini akan membantu paru-parumu bertahan dari miasma yang lebih pekat di kedalaman bawah tanah rawa."
+
+- Depth 9: "Paru-Paru Penuh Abu Beracun"
+  Pre:
+    Hero: "cough... cough... udaranya... terlalu pekat. Pandanganku mulai mengabur."
+    The Chronicler: "(Hinggap di bahu Hero, menyelimutinya dengan sayap emasku yang bersinar hangat) Tarik napasmu perlahan, Kesatria. Gunakan penawar dari kuil tadi. Aku akan menyaring udara di sekitarmu."
+    Hero: "Terima kasih... dadaku mulai terasa sedikit lebih lega."
+  Post:
+    Hero: "Musuh-musuh di tempat berkabut ini menyerang dari segala arah."
+    The Chronicler: "Mereka memanfaatkan kelemahan fisikmu. Tapi tekadmu menolak untuk menyerah pada rasa sakit."
+
+- Depth 10: "Sang Penjaga yang Membatu"
+  Pre:
+    The Chronicler: "Lihat pohon besar berbentuk manusia di depan kita. Itu adalah Treant raksasa."
+    Hero: "Dia telah mengeras seperti batu."
+    The Chronicler: "Dia mengorbankan dirinya menjadi batu untuk menyumbat celah racun agar tidak merusak desa di luar rawa. Tapi sekarang... dia telah terkorupsi."
+  Post:
+    Hero: "Menghancurkan tubuh batunya terasa seperti menebas gunung."
+    The Chronicler: "Setidaknya pengorbanannya tidak lagi dinodai oleh kegelapan. Mari turun ke dalam urat nadi bumi."
+
+
+[Bab 3: Inti Bumi yang Berdarah (Depth 11-15)]
+
+- Depth 11: "Urat Nadi Dunia yang Menghitam"
+  Pre:
+    Hero: "Kita berada di bawah tanah sekarang. Akar-akar di sini memompa getah hitam kental."
+    The Chronicler: "Korupsi telah mencapai urat nadi dunia. Rawa ini mengalirkan racun langsung dari jantungnya."
+    Hero: "Maka kita harus memotong pembuluh darah yang membusuk ini."
+  Post:
+    Hero: "Sabetan pedangku memicu semburan getah asam yang membakar pelindung tanganku."
+    The Chronicler: "Tahan rasa sakitnya, Kesatria. Kulitmu mulai melepuh, tapi kita tidak boleh berhenti di sini."
+
+- Depth 12: "Asimilasi Daging dan Kayu"
+  Pre:
+    Hero: "Pemandangan ini... sungguh mengerikan. Mayat-mayat prajurit menyatu dengan akar pohon hidup."
+    The Chronicler: "Kutukan rawa ini menolak membiarkan kematian menjadi akhir. Jasad mereka diasimilasi menjadi bagian dari ekosistem yang membusuk."
+    Hero: "Mereka bergerak... mereka memohon padaku untuk mengakhiri hidup mereka."
+  Post:
+    Hero: "Menebas jasad-jasad yang menyatu dengan pohon itu... rasanya sangat mengiris hati."
+    The Chronicler: "Kau memberikan kematian yang murni pada mereka, Kesatria. Itu adalah belas kasihan terbesar."
+
+- Depth 13: "Cangkang yang Tak Tembus Pedang"
+  Pre:
+    Hero: "Kulit monster di depan kita... terlihat seperti kombinasi besi dan kulit kayu tebal."
+    The Chronicler: "Evolusi pertahanan ekstrim The Void. Serangan ringan tidak akan mempan. Kau harus menggunakan seluruh kekuatan fisikmu untuk menghancurkan cangkang itu!"
+    Hero: "Aku akan memusatkan seluruh tenagaku pada satu titik pukulan."
+  Post:
+    Hero: "pant... pant... cangkangnya hancur, tapi tanganku bergetar hebat menahan benturan."
+    The Chronicler: "Tulangmu masih utuh, Kesatria. Daya tahan tubuhmu benar-benar luar biasa."
+
+- Depth 14: "Sungai Asam Pelebur Tulang"
+  Pre:
+    Hero: "Sungai di depan kita... uap kuningnya saja bisa membuat besi zirahku meleleh perlahan."
+    The Chronicler: "Sungai asam murni. Jangan sampai kakimu menyentuh cairan itu, Kesatria. Kita harus melompati pilar-pilar batu yang rapuh ini."
+    Hero: "Setiap pilar terlihat sangat licin dan terkikis asam..."
+  Post:
+    Hero: "Hampir saja kehilangan keseimbangan. Uap asam ini membuat tenggorokanku sangat perih."
+    The Chronicler: "Gunakan penawar terakhirmu, Kesatria. Kita sudah berada di dasar terdalam."
+
+- Depth 15: "Detak Jantung di Dalam Lumpur"
+  Pre:
+    Hero: "Dengar... ada suara detak jantung yang sangat lambat tapi menggetarkan dinding gua ini."
+    The Chronicler: "Thump... Thump... Itu adalah detak jantung sang penjaga rawa. Keberadaannya sudah sangat dekat."
+    Hero: "Hawa di sekitar sini terasa sangat berat, seperti ada beban berton-ton menindih pundakku."
+  Post:
+    Hero: "Dinding gua ini mulai retak seiring getaran detak jantung itu."
+    The Chronicler: "Gerbang menuju pusat rawa telah terbuka. Bersiaplah untuk pertempuran ketahanan yang sesungguhnya."
+
+
+[Bab 4: Penjaga Terakhir Alam (Depth 16-20)]
+
+- Depth 16: "Rahim Kebusukan"
+  Pre:
+    Hero: "Ini adalah pusatnya... lautan lumpur hitam beracun tempat semua aliran asam bermuara."
+    The Chronicler: "Rahim Kebusukan. Di sinilah energi racun dipusatkan untuk merusak seluruh negeri ini."
+    Hero: "Aku bisa merasakan seluruh racun di rawa ini bereaksi terhadap kehadiranku."
+  Post:
+    Hero: "Setiap luka di tubuhku mulai terasa sangat perih akibat udara asam di sini."
+    The Chronicler: "Aku akan menyalurkan sisa sihir emasku untuk melindungimu, Kesatria. Kita harus bertahan bersama!"
+
+- Depth 17: "Rintihan Sang Titan"
+  Pre:
+    Hero: "Suara rintihan ini... terdengar sangat menyakitkan. Seperti suara makhluk purba yang disiksa tiada henti."
+    The Chronicler: "Itu adalah rintihan sang pelindung rawa. Dia telah menahan siksaan kutukan ini selama ratusan tahun."
+    Hero: "Penderitaan yang sangat panjang... aku akan mengakhirinya hari ini."
+  Post:
+    Hero: "Monster-monster yang menjaga jalannya sangat agresif, seolah-olah diperintahkan untuk melindungi rasa sakit sang Titan."
+    The Chronicler: "Sebab rasa sakit sang Titan adalah sumber energi utama The Void di rawa ini. Mari terus maju."
+
+- Depth 18: "Beban The Rotting Behemoth"
+  Pre:
+    The Chronicler: "Di depan kita... raksasa purba yang tertutup duri dan daging membusuk. The Rotting Behemoth."
+    The Rotting Behemoth: "Aku... menahan racunnya... agar tidak... menyebar ke kerajaan... tapi aku... sudah tidak sanggup..."
+    Hero: "Dia sengaja menyerap seluruh racun ke dalam tubuhnya untuk melindungi tanah ini? Sungguh pengorbanan yang agung."
+  Post:
+    The Rotting Behemoth: "Arghhh! Hancurkan... cangkangku... biarkan aku... mati...!"
+    The Chronicler: "Tubuhnya menolak untuk mati karena energi kutukan terus meregenerasi dagingnya yang membusuk. Kita harus memutus siklus regenerasi ini!"
+
+- Depth 19: "Kekuatan yang Menolak Mati"
+  Pre:
+    The Rotting Behemoth: "Rasakan... kemarahan alam... yang telah terluka!"
+    Hero: "Dagingnya terus membusuk dan tumbuh kembali dalam sekejap! Bagaimana cara menghentikannya?!"
+    The Chronicler: "Serang bagian inti di dadanya saat dia beregenerasi! Di situlah sumber kutukannya terikat!"
+  Post:
+    Hero: "pant... pant... aku berhasil menusuk dadanya. Tapi serangannya tadi hampir membuat tulang rusukku patah."
+    The Chronicler: "Kau bertahan dari hantaman mematikan itu, Kesatria! Dia mulai melemah, satu tebasan terakhir!"
+
+- Depth 20: "Kelahiran Emerald Orb"
+  Pre:
+    The Chronicler: "Bebaskan sang pelindung alam dari penderitaan abadinya, Kesatria."
+    The Rotting Behemoth: "Terima kasih... akhirnya... tanah ini... bisa bernapas kembali..."
+    Hero: "Tugasmu menjaga alam ini telah selesai, Behemoth. Istirahatlah dengan tenang."
+  Post:
+    The Rotting Behemoth: "Semoga... alam... selalu bersamamu..."
+    The Chronicler: "Tubuh raksasanya meluruh menjadi tanah subur dan ditumbuhi tanaman hijau yang segar dalam sekejap. Di tengah hamparan rumput baru itu, sebuah batu hijau berkilau terbentuk."
+    Hero: "(Mengambil batu kristal hijau murni yang melayang jatuh) Emerald Orb... rasanya hangat, penuh dengan energi kehidupan alam yang sangat murni."
