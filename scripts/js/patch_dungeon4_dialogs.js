@@ -1,7 +1,7 @@
-const fs = require('fs');
+const fs = require("fs");
 
-const targetPath = 'bin/data/game_data/dungeons.json';
-const srcPath = 'talesdialogue/dungeon4_thorns_resilience.txt';
+const targetPath = "bin/data/game_data/dungeons.json";
+const srcPath = "scripts/talesdialogue/dungeon4_thorns_resilience.txt";
 
 function parseTxt(txt) {
   // Returns map: depthNumber -> { pre: [{speaker,text}], post: [{speaker,text}] }
@@ -21,7 +21,8 @@ function parseTxt(txt) {
     const mDepth = line.match(depthRe);
     if (mDepth) {
       currentDepth = parseInt(mDepth[1], 10);
-      if (!result.has(currentDepth)) result.set(currentDepth, { pre: [], post: [] });
+      if (!result.has(currentDepth))
+        result.set(currentDepth, { pre: [], post: [] });
       currentSection = null;
       continue;
     }
@@ -35,7 +36,7 @@ function parseTxt(txt) {
     const mSpeaker = line.match(speakerLineRe);
     if (mSpeaker && currentDepth != null && currentSection) {
       const speaker = mSpeaker[1].trim();
-      const text = mSpeaker[2].replace(/\\n/g, '\\n').replace(/\\r/g, '\\r');
+      const text = mSpeaker[2].replace(/\\n/g, "\\n").replace(/\\r/g, "\\r");
       result.get(currentDepth)[currentSection].push({ speaker, text });
     }
   }
@@ -43,12 +44,12 @@ function parseTxt(txt) {
   return result;
 }
 
-const target = JSON.parse(fs.readFileSync(targetPath, 'utf8'));
-const txt = fs.readFileSync(srcPath, 'utf8');
+const target = JSON.parse(fs.readFileSync(targetPath, "utf8"));
+const txt = fs.readFileSync(srcPath, "utf8");
 const parsed = parseTxt(txt);
 
-const dungeonId = 'dungeon_of_thorns_and_resilience';
-const dungeon = target.dungeons.find(d => d.id === dungeonId);
+const dungeonId = "dungeon_of_thorns_and_resilience";
+const dungeon = target.dungeons.find((d) => d.id === dungeonId);
 if (!dungeon) throw new Error(`Dungeon not found: ${dungeonId}`);
 
 let updatedDepths = 0;
@@ -68,6 +69,11 @@ for (const depthRow of dungeon.depths) {
   updatedDepths++;
 }
 
-fs.writeFileSync(targetPath, JSON.stringify(target, null, 2) + '\n', 'utf8');
-console.log('Patched', { srcPath, targetPath, dungeonId, updatedDepths, skippedDepths });
-
+fs.writeFileSync(targetPath, JSON.stringify(target, null, 2) + "\n", "utf8");
+console.log("Patched", {
+  srcPath,
+  targetPath,
+  dungeonId,
+  updatedDepths,
+  skippedDepths,
+});
