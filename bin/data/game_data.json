@@ -4,6 +4,7 @@
     "game_data/items.json",
     "game_data/dungeons.json",
     "game_data/enemies.json",
-    "game_data/item_categories.json"
+    "game_data/item_categories.json",
+    "game_data/balance.json"
   ]
 }
