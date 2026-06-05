@@ -210,6 +210,117 @@ using namespace consoleui;
 
 namespace state_helpers
 {
+    string itemClassRequirement(const json &item)
+    {
+        if (!item.contains("required_class_id") || item["required_class_id"].is_null())
+            return "";
+
+        string requiredClass;
+        if (item["required_class_id"].is_string())
+            requiredClass = item["required_class_id"].get<string>();
+        else
+            requiredClass = item.value("required_class_id", string());
+
+        requiredClass = trim(requiredClass);
+        if (toLower(requiredClass) == "null")
+            return "";
+        return requiredClass;
+    }
+
+    bool isItemClassCompatible(const GameContext &ctx, const json &item)
+    {
+        const string requiredClass = itemClassRequirement(item);
+        return requiredClass.empty() || requiredClass == ctx.player.class_id;
+    }
+
+    void printClassAvailabilityTag(const GameContext &ctx, const json &item)
+    {
+        const string requiredClass = itemClassRequirement(item);
+        if (requiredClass.empty())
+            cout << colorText(" [All classes]", Color::Yellow, true);
+        else if (requiredClass != ctx.player.class_id)
+            cout << colorText(" [Class mismatch]", Color::Red, true);
+    }
+
+    StringList collectInventoryCategories(const GameContext &ctx)
+    {
+        StringList categories;
+        if (!ctx.gameData.contains("item_category") || !ctx.gameData["item_category"].is_array())
+            return categories;
+
+        for (const auto &category : ctx.gameData["item_category"])
+        {
+            const string categoryName = category.get<string>();
+            bool exists = false;
+
+            for (const auto &entry : ctx.player.inventory)
+            {
+                const auto *item = getItemById(ctx, entry.item_id);
+                if (item && item->value("category", string()) == categoryName)
+                {
+                    exists = true;
+                    break;
+                }
+            }
+
+            if (exists)
+                categories.push_back(categoryName);
+        }
+
+        return categories;
+    }
+
+    IndexList collectInventoryIndexes(const GameContext &ctx, const string &selectedCategory)
+    {
+        IndexList inventoryIndexes;
+        for (size_t i = 0; i < ctx.player.inventory.size(); ++i)
+        {
+            const auto *item = getItemById(ctx, ctx.player.inventory[i].item_id);
+            if (!item)
+                continue;
+            if (item->value("category", string()) != selectedCategory)
+                continue;
+            inventoryIndexes.push_back(i);
+        }
+
+        manualSort(inventoryIndexes, [&](size_t leftIndex, size_t rightIndex)
+                   {
+            const auto &left = ctx.player.inventory[leftIndex];
+            const auto &right = ctx.player.inventory[rightIndex];
+            if (left.equipped != right.equipped)
+                return left.equipped > right.equipped;
+            return leftIndex < rightIndex; });
+
+        return inventoryIndexes;
+    }
+
+    bool removeInventoryEntryQuantity(Player &player, size_t index, int quantity)
+    {
+        if (quantity <= 0 || index >= player.inventory.size())
+            return false;
+        if (player.inventory[index].quantity < quantity)
+            return false;
+
+        size_t currentIndex = 0;
+        for (auto it = player.inventory.begin(); it != player.inventory.end();)
+        {
+            if (currentIndex != index)
+            {
+                ++it;
+                ++currentIndex;
+                continue;
+            }
+
+            it->quantity -= quantity;
+            if (it->quantity <= 0)
+                player.inventory.erase(it);
+            break;
+        }
+
+        mergeInventory(player);
+        return true;
+    }
+
     bool equipInventoryEntry(GameContext &ctx, size_t index)
     {
         if (index >= ctx.player.inventory.size())
@@ -227,8 +338,7 @@ namespace state_helpers
             return false;
         }
 
-        const string requiredClass = item->value("required_class_id", string());
-        if (!requiredClass.empty() && requiredClass != ctx.player.class_id)
+        if (!isItemClassCompatible(ctx, *item))
         {
             cout << "Class kamu tidak cocok untuk item ini.\n";
             return false;
@@ -364,117 +474,180 @@ namespace state_helpers
 
     void inventoryMenu(GameContext &ctx)
     {
-        int page = 1;
         while (true)
         {
             clearScreen();
             mergeInventory(ctx.player);
             refreshPlayerResources(ctx);
 
-            const int totalItems = static_cast<int>(ctx.player.inventory.size());
-            const int totalPages = max(1, (totalItems + PAGE_SIZE - 1) / PAGE_SIZE);
-            page = clampInt(page, 1, totalPages);
+            const auto categories = collectInventoryCategories(ctx);
 
-            const int start = (page - 1) * PAGE_SIZE;
-            const int end = min(totalItems, start + PAGE_SIZE);
-
-            printStateHeader(ctx, "INVENTORY");
-            cout << colorText("Page", Color::Cyan, true) << ": " << page << "/" << totalPages << '\n';
+            printStateHeader(ctx, "INVENTORY CATEGORY");
             cout << colorText("Gold", Color::Yellow, true) << ": " << ctx.player.gold << "\n\n";
-            if (totalItems == 0)
-                cout << "(Kosong)\n";
+            if (categories.empty())
+                cout << "(Inventory kosong)\n";
+            for (size_t i = 0; i < categories.size(); ++i)
+                cout << colorText(to_string(i + 1) + ". " + categories[i], Color::Yellow, true) << '\n';
 
-            for (int i = start; i < end; ++i)
-            {
-                const auto &entry = ctx.player.inventory[static_cast<size_t>(i)];
-                const auto *item = getItemById(ctx, entry.item_id);
-                const string name = item ? item->value("name", entry.item_id) : entry.item_id;
-                const string category = item ? item->value("category", string()) : "-";
-
-                cout << (i - start + 1) << ". " << name << " x" << entry.quantity
-                     << " [" << category << "]";
-                if (entry.equipped)
-                    cout << " [Equipped:" << entry.slot << "]";
-                cout << '\n';
-            }
-
-            cout << "Input nomor item, q prev, e next, c kembali: ";
-            const string input = toLower(readLine());
-            if (input == "c")
+            cout << "Pilih kategori, s shop, r crafting, c kembali: ";
+            const string categoryInput = toLower(readLine());
+            if (categoryInput == "c")
                 return;
-            if (input == "q")
+            if (categoryInput == "s")
             {
-                page = max(1, page - 1);
+                shopMenu(ctx);
                 continue;
             }
-            if (input == "e")
+            if (categoryInput == "r")
             {
-                page = min(totalPages, page + 1);
+                craftingMenu(ctx);
                 continue;
             }
 
-            int number = 0;
-            if (!tryParseInt(input, number))
+            int categoryIndex = 0;
+            if (!tryParseInt(categoryInput, categoryIndex) || categoryIndex < 1 || categoryIndex > static_cast<int>(categories.size()))
             {
-                cout << "Input tidak valid.\n";
+                cout << "Kategori tidak valid.\n";
                 waitForEnter();
                 continue;
             }
 
-            if (number >= 1 && number <= (end - start))
+            const string selectedCategory = categories[static_cast<size_t>(categoryIndex - 1)];
+            int page = 1;
+
+            while (true)
             {
-                const size_t selectedIndex = static_cast<size_t>(start + number - 1);
-                const auto *item = getItemById(ctx, ctx.player.inventory[selectedIndex].item_id);
-                if (!item)
+                clearScreen();
+                mergeInventory(ctx.player);
+                refreshPlayerResources(ctx);
+
+                IndexList inventoryIndexes = collectInventoryIndexes(ctx, selectedCategory);
+                const int totalItems = static_cast<int>(inventoryIndexes.size());
+                const int totalPages = max(1, (totalItems + PAGE_SIZE - 1) / PAGE_SIZE);
+                page = clampInt(page, 1, totalPages);
+                const int start = (page - 1) * PAGE_SIZE;
+                const int end = min(totalItems, start + PAGE_SIZE);
+
+                printStateHeader(ctx, "INVENTORY");
+                cout << colorText("Category", Color::Cyan, true) << ": " << selectedCategory
+                     << " | Page: " << page << "/" << totalPages;
+                cout << '\n';
+                cout << colorText("Gold", Color::Yellow, true) << ": " << ctx.player.gold << "\n\n";
+
+                if (totalItems == 0)
+                    cout << "(Tidak ada item pada kategori ini)\n";
+
+                for (int i = start; i < end; ++i)
                 {
-                    cout << "Data item tidak ditemukan.\n";
+                    const size_t inventoryIndex = inventoryIndexes[static_cast<size_t>(i)];
+                    const auto &entry = ctx.player.inventory[inventoryIndex];
+                    const auto *item = getItemById(ctx, entry.item_id);
+                    if (!item)
+                        continue;
+
+                    cout << colorText(to_string(i - start + 1) + ". " + item->value("name", entry.item_id), Color::White, true)
+                         << " x" << entry.quantity
+                         << " | Tier " << item->value("tier_level", 0);
+                    if (entry.equipped)
+                        cout << colorText(" [Equipped:" + entry.slot + "]", Color::Green, true);
+                    printClassAvailabilityTag(ctx, *item);
+                    cout << '\n';
+                }
+
+                cout << "\nInput nomor item, q prev, e next, s shop, r crafting, c kategori";
+                if (totalPages > 1)
+                    cout << ", atau nomor page";
+                cout << ": ";
+
+                const string input = toLower(readLine());
+                if (input == "c")
+                    break;
+                if (input == "s")
+                {
+                    shopMenu(ctx);
+                    page = 1;
+                    continue;
+                }
+                if (input == "r")
+                {
+                    craftingMenu(ctx);
+                    page = 1;
+                    continue;
+                }
+                if (input == "q")
+                {
+                    page = max(1, page - 1);
+                    continue;
+                }
+                if (input == "e")
+                {
+                    page = min(totalPages, page + 1);
+                    continue;
+                }
+
+                int number = 0;
+                if (!tryParseInt(input, number))
+                {
+                    cout << "Input tidak valid.\n";
                     waitForEnter();
                     continue;
                 }
 
-                clearScreen();
-                printStateHeader(ctx, item->value("name", string()));
-
-                int equippedCount = 0;
-                for (const auto &entry : ctx.player.inventory)
+                if (number >= 1 && number <= (end - start))
                 {
-                    if (entry.item_id == ctx.player.inventory[selectedIndex].item_id && entry.equipped)
-                        equippedCount += entry.quantity;
+                    const size_t selectedIndex = inventoryIndexes[static_cast<size_t>(start + number - 1)];
+                    const auto *item = getItemById(ctx, ctx.player.inventory[selectedIndex].item_id);
+                    if (!item)
+                    {
+                        cout << "Data item tidak ditemukan.\n";
+                        waitForEnter();
+                        continue;
+                    }
+
+                    clearScreen();
+                    printStateHeader(ctx, item->value("name", string()));
+
+                    int equippedCount = 0;
+                    for (const auto &entry : ctx.player.inventory)
+                    {
+                        if (entry.item_id == ctx.player.inventory[selectedIndex].item_id && entry.equipped)
+                            equippedCount += entry.quantity;
+                    }
+
+                    showItemDetails(ctx, *item, inventoryCount(ctx.player, ctx.player.inventory[selectedIndex].item_id), equippedCount);
+
+                    cout << colorText("1. Equip/Unequip", Color::Green) << '\n';
+                    cout << colorText("2. Use Consumable", Color::Yellow) << '\n';
+                    cout << colorText("3. Back", Color::Magenta) << '\n';
+                    cout << "Choose: ";
+                    const string action = readLine();
+
+                    if (action == "1")
+                    {
+                        if (ctx.player.inventory[selectedIndex].equipped)
+                            unequipInventoryEntry(ctx, selectedIndex);
+                        else
+                            equipInventoryEntry(ctx, selectedIndex);
+                        waitForEnter();
+                    }
+                    else if (action == "2")
+                    {
+                        useConsumable(ctx, selectedIndex);
+                        waitForEnter();
+                    }
+
+                    continue;
                 }
 
-                showItemDetails(ctx, *item, inventoryCount(ctx.player, ctx.player.inventory[selectedIndex].item_id), equippedCount);
-
-                cout << "1. Equip/Unequip\n";
-                cout << "2. Use Consumable\n";
-                cout << "3. Back\n";
-                cout << "Choose: ";
-                const string action = readLine();
-
-                if (action == "1")
+                if (number >= 1 && number <= totalPages)
                 {
-                    if (ctx.player.inventory[selectedIndex].equipped)
-                        unequipInventoryEntry(ctx, selectedIndex);
-                    else
-                        equipInventoryEntry(ctx, selectedIndex);
-                    waitForEnter();
-                }
-                else if (action == "2")
-                {
-                    useConsumable(ctx, selectedIndex);
-                    waitForEnter();
+                    page = number;
+                    continue;
                 }
 
-                continue;
+                cout << "Nomor tidak valid.\n";
+                waitForEnter();
             }
-
-            if (number >= 1 && number <= totalPages)
-            {
-                page = number;
-                continue;
-            }
-
-            cout << "Nomor tidak valid.\n";
-            waitForEnter();
         }
     }
 } // namespace state_helpers
@@ -673,24 +846,23 @@ namespace state_helpers
                            {
                     const bool leftCanCraft = canCraftItem(ctx, *left);
                     const bool rightCanCraft = canCraftItem(ctx, *right);
-                    const bool leftClass = left->value("required_class_id", std::string()) == ctx.player.class_id;
-                    const bool rightClass = right->value("required_class_id", std::string()) == ctx.player.class_id;
+                    const bool leftClass = isItemClassCompatible(ctx, *left);
+                    const bool rightClass = isItemClassCompatible(ctx, *right);
                     const int leftOwned = ownedIngredientCount(ctx, *left);
                     const int rightOwned = ownedIngredientCount(ctx, *right);
                     const int leftNeed = totalIngredientNeed(*left);
                     const int rightNeed = totalIngredientNeed(*right);
 
+                    if (leftClass != rightClass)
+                        return leftClass > rightClass;
+
                     if (mode == "craft")
                     {
                         if (leftCanCraft != rightCanCraft)
                             return leftCanCraft > rightCanCraft;
-                        if (leftClass != rightClass)
-                            return leftClass > rightClass;
                     }
                     else
                     {
-                        if (leftClass != rightClass)
-                            return leftClass > rightClass;
                         if (leftOwned != rightOwned)
                             return leftOwned > rightOwned;
                     }
@@ -720,7 +892,8 @@ namespace state_helpers
                 printStateHeader(ctx, "CRAFTING");
                 cout << colorText("Category", Color::Cyan, true) << ": " << selectedCategory
                      << " | Mode: " << (mode == "craft" ? "Craft" : "Recipe")
-                     << " | Page: " << page << "/" << totalPages << '\n';
+                     << " | Page: " << page << "/" << totalPages;
+                cout << '\n';
                 cout << "\n";
                 if (totalItems == 0)
                     cout << "(Tidak ada recipe pada kategori ini)\n";
@@ -732,8 +905,7 @@ namespace state_helpers
                          << " | Tier " << item.value("tier_level", 0);
                     if (canCraftItem(ctx, item))
                         cout << " [Craftable]";
-                    if (item.value("required_class_id", std::string()) != ctx.player.class_id)
-                        cout << " [Class mismatch]";
+                    printClassAvailabilityTag(ctx, item);
                     cout << '\n';
                 }
 
@@ -874,8 +1046,8 @@ namespace state_helpers
 
                 manualSort(items, [&](const json *left, const json *right)
                            {
-                    const bool leftClass = left->value("required_class_id", std::string()) == ctx.player.class_id;
-                    const bool rightClass = right->value("required_class_id", std::string()) == ctx.player.class_id;
+                    const bool leftClass = isItemClassCompatible(ctx, *left);
+                    const bool rightClass = isItemClassCompatible(ctx, *right);
                     if (leftClass != rightClass)
                         return leftClass > rightClass;
                     if (left->value("tier_level", 0) != right->value("tier_level", 0))
@@ -890,35 +1062,24 @@ namespace state_helpers
 
                 printStateHeader(ctx, "SHOP BUY");
                 std::cout << colorText("Category", Color::Cyan, true) << ": " << selectedCategory
-                          << " | Page: " << page << "/" << totalPages << '\n';
+                          << " | Page: " << page << "/" << totalPages;
+                std::cout << '\n';
                 std::cout << "\n";
+                if (totalItems == 0)
+                    std::cout << "(Tidak ada item pada kategori ini)\n";
                 for (int i = start; i < end; ++i)
                 {
                     const json &item = *items[static_cast<std::size_t>(i)];
                     std::cout << colorText(std::to_string(i - start + 1) + ". " + item.value("name", std::string()), Color::White, true)
                               << " | Price " << item.value("buy_price", 0)
                               << " | Tier " << item.value("tier_level", 0);
-                    // jika class mismatch, tampilkan [Class mismatch] jika null (string) atau tidak ada field required_class_id, anggap cocok dengan semua class
-                    // if (item.contains("required_class_id") && !item.value("required_class_id", std::string()).empty())
-                    // {
-                    //     if (item.value("required_class_id", std::string()) != ctx.player.class_id )
-                    //         std::cout << colorText(" [Class mismatch]", Color::Red, true);
-                    // }
-
-                    // if (item.value("required_class_id", std::string()) != ctx.player.class_id)
-                    //     std::cout << " [Class mismatch]";
-
-                    // print merah jika missmatch class, tampilkan kuning jika null
-                    if (item.contains("required_class_id"))
-                    {
-                        if (item.value("required_class_id", std::string()) == "null")
-                            std::cout << colorText(" [All classes]", Color::Yellow, true);
-                        else if (item.value("required_class_id", std::string()) != ctx.player.class_id)
-                            std::cout << colorText(" [Class mismatch]", Color::Red, true);
-                    }
+                    printClassAvailabilityTag(ctx, item);
                     std::cout << '\n';
                 }
-                std::cout << "\nInput nomor item, q prev, e next, c kembali: ";
+                std::cout << "\nInput nomor item, q prev, e next, c kembali";
+                if (totalPages > 1)
+                    std::cout << ", atau nomor page";
+                std::cout << ": ";
 
                 const std::string shopInput = toLower(readLine());
                 if (shopInput == "c")
@@ -996,16 +1157,16 @@ namespace state_helpers
 
     void shopSellMenu(GameContext &ctx)
     {
-        const auto categories = categoriesForShopMode(ctx, "sell");
-        if (categories.empty())
-        {
-            std::cout << "Tidak ada item yang bisa dijual.\n";
-            waitForEnter();
-            return;
-        }
-
         while (true)
         {
+            const auto categories = categoriesForShopMode(ctx, "sell");
+            if (categories.empty())
+            {
+                std::cout << "Tidak ada item yang bisa dijual.\n";
+                waitForEnter();
+                return;
+            }
+
             clearScreen();
             printStateHeader(ctx, "SHOP SELL CATEGORY");
             for (std::size_t i = 0; i < categories.size(); ++i)
@@ -1025,100 +1186,161 @@ namespace state_helpers
             }
 
             const std::string selectedCategory = categories[static_cast<std::size_t>(categoryIndex - 1)];
-            IndexList inventoryIndexes;
-            for (std::size_t i = 0; i < ctx.player.inventory.size(); ++i)
+            int page = 1;
+
+            while (true)
             {
-                const auto *item = getItemById(ctx, ctx.player.inventory[i].item_id);
-                if (!item)
+                clearScreen();
+                IndexList inventoryIndexes;
+                for (std::size_t i = 0; i < ctx.player.inventory.size(); ++i)
+                {
+                    const auto *item = getItemById(ctx, ctx.player.inventory[i].item_id);
+                    if (!item)
+                        continue;
+                    if (item->value("category", std::string()) != selectedCategory)
+                        continue;
+                    if (item->value("sell_price", 0) <= 0)
+                        continue;
+                    inventoryIndexes.push_back(i);
+                }
+
+                manualSort(inventoryIndexes, [&](std::size_t leftIndex, std::size_t rightIndex)
+                           {
+                    const auto *leftItem = getItemById(ctx, ctx.player.inventory[leftIndex].item_id);
+                    const auto *rightItem = getItemById(ctx, ctx.player.inventory[rightIndex].item_id);
+                    const bool leftClass = leftItem && isItemClassCompatible(ctx, *leftItem);
+                    const bool rightClass = rightItem && isItemClassCompatible(ctx, *rightItem);
+                    if (leftClass != rightClass)
+                        return leftClass > rightClass;
+                    if (ctx.player.inventory[leftIndex].equipped != ctx.player.inventory[rightIndex].equipped)
+                        return ctx.player.inventory[leftIndex].equipped > ctx.player.inventory[rightIndex].equipped;
+                    return leftIndex < rightIndex; });
+
+                const int totalItems = static_cast<int>(inventoryIndexes.size());
+                const int totalPages = std::max(1, (totalItems + PAGE_SIZE - 1) / PAGE_SIZE);
+                page = clampInt(page, 1, totalPages);
+                const int start = (page - 1) * PAGE_SIZE;
+                const int end = std::min(totalItems, start + PAGE_SIZE);
+
+                printStateHeader(ctx, "SHOP SELL");
+                std::cout << colorText("Category", Color::Cyan, true) << ": " << selectedCategory
+                          << " | Page: " << page << "/" << totalPages;
+                std::cout << "\n\n";
+
+                if (totalItems == 0)
+                    std::cout << "(Tidak ada item pada kategori ini)\n";
+
+                for (int i = start; i < end; ++i)
+                {
+                    const std::size_t inventoryIndex = inventoryIndexes[static_cast<std::size_t>(i)];
+                    const auto &entry = ctx.player.inventory[inventoryIndex];
+                    const auto *item = getItemById(ctx, entry.item_id);
+                    if (!item)
+                        continue;
+
+                    std::cout << colorText(std::to_string(i - start + 1) + ". " + item->value("name", entry.item_id), Color::White, true)
+                              << " x" << entry.quantity
+                              << " | Sell " << item->value("sell_price", 0)
+                              << " | Tier " << item->value("tier_level", 0);
+                    if (entry.equipped)
+                        std::cout << colorText(" [Equipped:" + entry.slot + "]", Color::Green, true);
+                    printClassAvailabilityTag(ctx, *item);
+                    std::cout << '\n';
+                }
+
+                std::cout << "\nInput nomor item, q prev, e next, c kembali";
+                if (totalPages > 1)
+                    std::cout << ", atau nomor page";
+                std::cout << ": ";
+
+                const std::string sellInput = toLower(readLine());
+                if (sellInput == "c")
+                    break;
+                if (sellInput == "q")
+                {
+                    page = std::max(1, page - 1);
                     continue;
-                if (item->value("category", std::string()) != selectedCategory)
+                }
+                if (sellInput == "e")
+                {
+                    page = std::min(totalPages, page + 1);
                     continue;
-                if (item->value("sell_price", 0) <= 0)
+                }
+
+                int selected = 0;
+                if (!tryParseInt(sellInput, selected))
+                {
+                    std::cout << "Input tidak valid.\n";
+                    waitForEnter();
                     continue;
-                inventoryIndexes.push_back(i);
-            }
+                }
 
-            if (inventoryIndexes.empty())
-            {
-                std::cout << "Tidak ada item kategori ini yang bisa dijual.\n";
+                if (selected >= 1 && selected <= (end - start))
+                {
+                    const std::size_t inventoryIndex = inventoryIndexes[static_cast<std::size_t>(start + selected - 1)];
+                    const auto *item = getItemById(ctx, ctx.player.inventory[inventoryIndex].item_id);
+                    if (!item)
+                        continue;
+
+                    clearScreen();
+                    printStateHeader(ctx, "ITEM DETAIL");
+
+                    int equippedCount = 0;
+                    for (const auto &entry : ctx.player.inventory)
+                    {
+                        if (entry.item_id == ctx.player.inventory[inventoryIndex].item_id && entry.equipped)
+                            equippedCount += entry.quantity;
+                    }
+
+                    showItemDetails(ctx, *item, inventoryCount(ctx.player, ctx.player.inventory[inventoryIndex].item_id), equippedCount);
+                    std::cout << colorText("1. Sell Item", Color::Yellow) << '\n';
+                    std::cout << colorText("2. Back", Color::Magenta) << '\n';
+                    std::cout << "Choose: ";
+
+                    const std::string action = readLine();
+                    if (action != "1")
+                        continue;
+
+                    std::cout << "Jumlah jual: ";
+                    const std::string quantityInput = readLine();
+                    int quantity = 0;
+                    if (!tryParseInt(quantityInput, quantity) || quantity <= 0)
+                    {
+                        std::cout << "Jumlah tidak valid.\n";
+                        waitForEnter();
+                        continue;
+                    }
+                    if (quantity > ctx.player.inventory[inventoryIndex].quantity)
+                    {
+                        std::cout << "Jumlah melebihi item yang kamu punya.\n";
+                        waitForEnter();
+                        continue;
+                    }
+
+                    if (!removeInventoryEntryQuantity(ctx.player, inventoryIndex, quantity))
+                    {
+                        std::cout << "Item gagal dijual.\n";
+                        waitForEnter();
+                        continue;
+                    }
+
+                    ctx.player.gold += quantity * item->value("sell_price", 0);
+                    refreshPlayerResources(ctx);
+                    std::cout << "Item berhasil dijual.\n";
+                    saveGame(ctx);
+                    waitForEnter();
+                    continue;
+                }
+
+                if (selected >= 1 && selected <= totalPages)
+                {
+                    page = selected;
+                    continue;
+                }
+
+                std::cout << "Nomor tidak valid.\n";
                 waitForEnter();
-                continue;
             }
-
-            clearScreen();
-            printStateHeader(ctx, "SHOP SELL");
-            std::cout << colorText("Category", Color::Cyan, true) << ": " << selectedCategory << '\n';
-            std::cout << "\n";
-            for (std::size_t i = 0; i < inventoryIndexes.size(); ++i)
-            {
-                const auto &entry = ctx.player.inventory[inventoryIndexes[i]];
-                const auto *item = getItemById(ctx, entry.item_id);
-                std::cout << colorText(std::to_string(i + 1) + ". " + item->value("name", entry.item_id), Color::White, true)
-                          << " x" << entry.quantity
-                          << " | Sell " << item->value("sell_price", 0);
-                if (entry.equipped)
-                    std::cout << " [Equipped]";
-                std::cout << '\n';
-            }
-            std::cout << "Pilih nomor item atau c untuk kembali: ";
-
-            const std::string sellInput = toLower(readLine());
-            if (sellInput == "c")
-                continue;
-
-            int selected = 0;
-            if (!tryParseInt(sellInput, selected) || selected < 1 || selected > static_cast<int>(inventoryIndexes.size()))
-            {
-                std::cout << "Pilihan tidak valid.\n";
-                waitForEnter();
-                continue;
-            }
-
-            const std::size_t inventoryIndex = inventoryIndexes[static_cast<std::size_t>(selected - 1)];
-            const auto *item = getItemById(ctx, ctx.player.inventory[inventoryIndex].item_id);
-            if (!item)
-                continue;
-
-            clearScreen();
-            printStateHeader(ctx, "ITEM DETAIL");
-
-            int equippedCount = 0;
-            for (const auto &entry : ctx.player.inventory)
-            {
-                if (entry.item_id == ctx.player.inventory[inventoryIndex].item_id && entry.equipped)
-                    equippedCount += entry.quantity;
-            }
-
-            showItemDetails(ctx, *item, inventoryCount(ctx.player, ctx.player.inventory[inventoryIndex].item_id), equippedCount);
-            std::cout << colorText("1. Sell Item", Color::Yellow) << '\n';
-            std::cout << colorText("2. Back", Color::Magenta) << '\n';
-            std::cout << "Choose: ";
-
-            const std::string action = readLine();
-            if (action != "1")
-                continue;
-
-            std::cout << "Jumlah jual: ";
-            const std::string quantityInput = readLine();
-            int quantity = 0;
-            if (!tryParseInt(quantityInput, quantity) || quantity <= 0)
-            {
-                std::cout << "Jumlah tidak valid.\n";
-                waitForEnter();
-                continue;
-            }
-            if (quantity > ctx.player.inventory[inventoryIndex].quantity)
-            {
-                std::cout << "Jumlah melebihi item yang kamu punya.\n";
-                waitForEnter();
-                continue;
-            }
-
-            ctx.player.gold += quantity * item->value("sell_price", 0);
-            removeItem(ctx.player, ctx.player.inventory[inventoryIndex].item_id, quantity);
-            std::cout << "Item berhasil dijual.\n";
-            saveGame(ctx);
-            waitForEnter();
         }
     }
 
