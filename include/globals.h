@@ -279,17 +279,17 @@ public:
 // Stat dasar character.
 struct Stats
 {
-    int str = 10;
-    int intl = 10;
-    int agi = 10;
-    int vit = 10;
+    int str = Config::Defaults::PLAYER_STAT_STR;
+    int intl = Config::Defaults::PLAYER_STAT_INT;
+    int agi = Config::Defaults::PLAYER_STAT_AGI;
+    int vit = Config::Defaults::PLAYER_STAT_VIT;
 };
 
 // Satu baris inventory.
 struct InventoryEntry
 {
     std::string item_id;
-    int quantity = 1;
+    int quantity = Config::Defaults::INVENTORY_QUANTITY;
     bool equipped = false;
     std::string slot;
 };
@@ -298,14 +298,14 @@ struct InventoryEntry
 struct CooldownEntry
 {
     std::string skill_id;
-    int remaining_turns = 0;
+    int remaining_turns = Config::Defaults::COOLDOWN_TURNS;
 };
 
 struct DungeonProgressEntry
 {
     std::string dungeon_id;
-    int unlocked_depth = 1;
-    int highest_cleared_depth = 0;
+    int unlocked_depth = Config::Progress::START_DEPTH;
+    int highest_cleared_depth = Config::Progress::NO_DEPTH_CLEARED;
     bool completed = false;
 };
 
@@ -313,8 +313,8 @@ struct DungeonProgressEntry
 struct Progress
 {
     std::string current_dungeon;
-    int current_depth = 1;
-    int max_depth_unlocked = 0;
+    int current_depth = Config::Progress::START_DEPTH;
+    int max_depth_unlocked = Config::Progress::NO_DEPTH_UNLOCKED;
     ManualList<DungeonProgressEntry> dungeon_progress;
 };
 
@@ -326,15 +326,15 @@ struct Player
     std::string class_id;
     std::string class_tier_id;
     std::string class_tier_name;
-    int level = 1;
-    int current_exp = 0;
-    int gold = 500;
+    int level = Config::Defaults::PLAYER_LEVEL;
+    int current_exp = Config::Defaults::PLAYER_EXP;
+    int gold = Config::Defaults::PLAYER_GOLD;
     Stats stats;
-    int hp = 100;
-    int max_hp = 100;
-    int mp = 50;
-    int max_mp = 50;
-    int stat_points = 0;
+    int hp = Config::Defaults::PLAYER_HP;
+    int max_hp = Config::Defaults::PLAYER_HP;
+    int mp = Config::Defaults::PLAYER_MP;
+    int max_mp = Config::Defaults::PLAYER_MP;
+    int stat_points = Config::Defaults::PLAYER_STAT_POINTS;
     ManualList<InventoryEntry> inventory;
     ManualList<CooldownEntry> cooldowns;
     Progress progress;
@@ -351,7 +351,7 @@ struct GameContext
     json gameData;
     Player player;
     PlayerList characters;
-    int activeCharacterIndex = -1;
+    int activeCharacterIndex = Config::Defaults::ACTIVE_CHARACTER_NONE;
     StateStack stateStack;
     std::string gameDataPath = game_paths::kGameDataPath;
     std::string savePath = game_paths::kSaveFilePath;

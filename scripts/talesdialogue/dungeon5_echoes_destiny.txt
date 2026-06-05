@@ -1,0 +1,193 @@
+=== DUNGEON OF ECHOES AND DESTINY ===
+
+[Bab 1: Kuil di Ujung Waktu (Depth 1-5)]
+
+- Depth 1: "Lantai Cermin Perak"
+  Pre:
+    The Chronicler: "Kita telah sampai di batas cakrawala, Kesatria. Kuil Cermin Perak. Tempat ini dulu digunakan untuk membaca takdir kerajaan."
+    Hero: "Lantai kuil ini... memantulkan bayanganku dengan sangat jernih. Tapi anehnya, bayanganku di lantai terlihat mengenakan zirah utuh tanpa luka."
+    The Chronicler: "Cermin ini tidak memantulkan fisikmu yang sekarang, melainkan versi dirimu yang paling sempurna. Jangan terlalu lama menatapnya."
+  Post:
+    Hero: "Bayangan di lantai sempat mencoba meraih pergelangan kakiku."
+    The Chronicler: "Mereka merindukan realita, Kesatria. Tetaplah melangkah dan jangan biarkan kakimu terpaku di satu tempat."
+
+- Depth 2: "Nyanyian Bintang Jatuh"
+  Pre:
+    The Chronicler: "Dengarkan harmoni di ruangan ini. Ini adalah nyanyian rasi bintang kuno yang mengiringi takdir dunia."
+    Hero: "Tapi bintang-bintang di langit-langit kuil ini... mereka mulai berjatuhan sebagai serpihan batu tajam."
+    The Chronicler: "Takdir telah rusak. Bintang-bintang itu jatuh karena langit di masa depan telah runtuh."
+  Post:
+    Hero: "Menghindari pecahan bintang yang jatuh sambil bertarung benar-benar menguji fokusku."
+    The Chronicler: "hoot... Kau bergerak dengan sangat anggun, Kesatria. Mari, retakan takdir yang sesungguhnya ada di depan."
+
+- Depth 3: "Retakan Pertama pada Takdir"
+  Pre:
+    Hero: "Cermin suci raksasa di tengah kuil ini... tiba-tiba retak berkeping-keping tanpa disentuh."
+    The Chronicler: "Hari ini adalah hari di mana ramalan masa depan kerajaan di kuil ini mendadak berubah menjadi kosong."
+    Hero: "And monster-monster kristal mulai merangkak keluar dari dalam retakan kaca itu."
+  Post:
+    Hero: "Setiap monster kristal yang kuhancurkan mengeluarkan suara seperti tangisan kaca."
+    The Chronicler: "Itu adalah jeritan takdir yang patah. Kita harus merangkai kembali sisa-sisa realita ini."
+
+- Depth 4: "Lonceng Kematian Masa Depan"
+  Pre:
+    The Chronicler: "Dengar dentangan lonceng kuil itu, Kesatria. Lonceng itu berdentang sendiri tanpa ada yang menarik talinya."
+    Hero: "Dentangannya terasa sangat memekakkan telinga dan membawa rasa cemas yang mendalam."
+    The Chronicler: "Itu adalah peringatan dari masa depan. Lonceng itu berdentang untuk memberi tahu kita bahwa The Void sedang menelan garis waktu di depan."
+  Post:
+    Hero: "Aku berhasil menghancurkan bandul lonceng kuno itu. Suasana akhirnya kembali sunyi."
+    The Chronicler: "Kau baru saja membungkam ramalan kematian itu. Tapi kita masih harus menghadapi distorsi spasial di depan."
+
+- Depth 5: "Pantulan yang Berkhianat"
+  Pre:
+    Hero: "Tunggu... bayanganku di cermin besar depan kita... dia tidak mengikuti gerakanku. Dia justru tersenyum licik."
+    The Chronicler: "Awas, Kesatria! Bayangan itu keluar dari dalam kaca! Ia mencoba menarikmu masuk untuk menggantikan posisinya!"
+    Hero: "Melawan diriku sendiri... ini akan menjadi pertarungan yang aneh."
+  Post:
+    Hero: "Menikam bayanganku sendiri rasanya seperti menusuk jiwaku sendiri."
+    The Chronicler: "Itu adalah serpihan dari keraguanmu yang diperalat oleh kuil ini. Kau telah membuktikan bahwa tekadmu yang asli jauh lebih kuat."
+
+
+[Bab 2: Distorsi Realita (Depth 6-10)]
+
+- Depth 6: "Gema dari Kemarin"
+  Pre:
+    Hero: "Suara-suara ini... aku mendengar jeritan prajurit benteng api, dan tangisan para penyihir perpustakaan."
+    The Chronicler: "Kuil ini mulai memutar ulang gema penderitaan dari tempat-tempat lain yang telah hancur. Waktu di sini telah melipat dirinya sendiri."
+    Hero: "Mereka seolah-olah berteriak menuntut keadilan padaku."
+  Post:
+    Hero: "Suara-suara itu akhirnya mereda setelah aku membersihkan sisa energi di area ini."
+    The Chronicler: "Kau tidak bisa mengubah apa yang terjadi kemarin, Kesatria. Tapi kau bisa menghentikan tragedi itu agar tidak terulang esok hari."
+
+- Depth 7: "Lorong yang Berjalan Mundur"
+  Pre:
+    Hero: "Aku sudah berlari maju selama beberapa menit, tapi kenapa kita justru kembali ke gerbang masuk tadi?"
+    The Chronicler: "Hukum fisika telah terbalik di koridor ini. Berjalan maju justru akan membawamu kembali ke masa lalu."
+    Hero: "Lalu bagaimana cara kita melewatinya?"
+  Post:
+    The Chronicler: "hoot... Berbaliklah, Kesatria. Berjalanlah mundur dengan membelakangi lorong. Percayalah pada tuntunanku."
+    Hero: "(Berjalan mundur perlahan hingga akhirnya menembus dinding ilusi) Menakjubkan. Kita berhasil melewatinya."
+
+- Depth 8: "Air Mata Para Nabi"
+  Pre:
+    Hero: "Ada genangan air jernih di lantai... tapi kenapa rasanya sangat asin?"
+    The Chronicler: "Itu adalah kumpulan air mata para nabi dan peramal terdahulu. Mereka dipaksa melihat jutaan kemungkinan masa depan, dan di semua masa depan itu... kerajaan selalu hancur."
+    Hero: "Keputusasaan mereka mengkristal menjadi genangan air mata ini."
+  Post:
+    Hero: "Makhluk air mata tadi mencoba menenggelamkanku dalam kesedihan mereka."
+    The Chronicler: "Rasa sedih adalah beban yang berat, Kesatria. Tapi kau memiliki punggung yang kuat untuk memikulnya."
+
+- Depth 9: "Takdir yang Ditulis Ulang"
+  Pre:
+    Hero: "Permadani raksasa di dinding kuil ini... gambar sejarah kerajaanku perlahan terurai dan terbakar menjadi abu hitam."
+    The Chronicler: "Sejarah sedang ditulis ulang oleh kekuatan The Void. Mereka mencoba menghapus ingatan tentang keberadaan kerajaanmu dari dunia ini."
+    Hero: "Aku tidak akan membiarkan mereka menghapus sisa-sisa kehormatan kami!"
+  Post:
+    Hero: "Aku berhasil menghentikan proses pembakaran permadani itu, meskipun sebagian gambarnya telah hilang."
+    The Chronicler: "Selama kau masih hidup dan mengingatnya, sejarah kerajaanmu tidak akan pernah benar-benar musnah, Kesatria."
+
+- Depth 10: "Prajurit Tanpa Wajah"
+  Pre:
+    Hero: "Prajurit-prajurit di depan kita... mereka tidak memiliki wajah. Bentuk tubuh mereka terus berubah-ubah."
+    The Chronicler: "Mereka adalah entitas paradoks. Campuran antara kenangan prajurit masa lalu yang gugur dan ketakutan masa depan yang belum terjadi."
+    Hero: "Wujud mereka yang tidak menentu membuat seranganku sulit diprediksi."
+  Post:
+    Hero: "Saat mereka mati, mereka sempat berubah wujud menjadi rekan-rekan prajuritku."
+    The Chronicler: "Itu adalah taktik terakhir mereka untuk menggoyahkan mentalmu. Tetaplah tegap, Kesatria. Kita harus turun ke pecahan dimensi."
+
+
+[Bab 3: Labirin Pecahan Dimensi (Depth 11-15)]
+
+- Depth 11: "Kehampaan yang Berkilau"
+  Pre:
+    Hero: "Tidak ada lantai di sini... hanya ada pecahan kaca cermin raksasa yang melayang di ruang hampa tanpa gravitasi."
+    The Chronicler: "Kehampaan yang Berkilau. Kita berada di luar batas waktu konvensional sekarang. Lompatlah dengan hati-hati, Kesatria."
+    Hero: "Sensasi melayang ini membuatku merasa seperti tidak memiliki tubuh."
+  Post:
+    Hero: "Melompat dari satu pecahan cermin ke pecahan lain di tengah ruang hampa benar-benar menegangkan."
+    The Chronicler: "Kau mengendalikan tubuhmu dengan sangat baik, Kesatria. Namun fluktuasi waktu di depan semakin kacau."
+
+- Depth 12: "Tragedi yang Terulang"
+  Pre:
+    Hero: "Tunggu... pemandangan ini... ini adalah detik-detik saat benteng pertahanan terakhir kerajaanku hancur! Aku melihat diriku sendiri berteriak di sana!"
+    The Chronicler: "Tenang, Kesatria! Itu adalah lingkaran waktu (time loop). Kuil ini menjebakmu dalam kenangan paling traumatis agar jiwamu menyerah."
+    Hero: "Melihat mereka gugur berulang kali... ini adalah siksaan yang kejam!"
+  Post:
+    Hero: "(Sambil terengah-engah, pedangnya menancap di lantai pecahan) Aku harus menghancurkan jangkar waktu di tengah ruangan untuk menghentikan loop itu."
+    The Chronicler: "Kau berhasil memutus siklus kepedihan itu. Tarik napasmu, tenangkan pikiranmu."
+
+- Depth 13: "Suara dari Garis Waktu yang Mati"
+  Pre:
+    Hero: "Aku mendengar bisikan-bisikan asing... mereka menyebut diri mereka sebagai 'pahlawan' yang telah gagal."
+    The Chronicler: "Mereka adalah jiwa para ksatria dari garis waktu lain yang telah gagal mengalahkan The Void. Garis waktu mereka telah dihapus."
+    Hero: "Mereka memperingatkanku bahwa aku juga akan gagal seperti mereka."
+  Post:
+    Hero: "Aku tidak akan menjadi salah satu dari gema kegagalan mereka."
+    The Chronicler: "Itulah mengapa takdir mempertemukan kita, Kesatria. Karena tekadmu melampaui jutaan kegagalan di garis waktu lain."
+
+- Depth 14: "Kepingan Jiwa yang Hilang"
+  Pre:
+    Hero: "Siapa... aku? Kenapa aku memegang pedang ini? Namaku... aku tidak bisa mengingatnya..."
+    The Chronicler: "hoot! Kesatria! Dengarkan suaraku! Kutukan tingkat ini perlahan menghapus jati dirimu agar kau menjadi jasad kosong!"
+    Hero: "Aku... aku adalah prajurit terakhir... aku harus... mengalahkan kegelapan..."
+  Post:
+    Hero: "Sakit sekali kepalaku saat mencoba mengingat kembali semuanya."
+    The Chronicler: "Ingatanmu telah kembali sepenuhnya sekarang. Pegang erat pedangmu, jati dirimu adalah senjata terkuatmu."
+
+- Depth 15: "Penjaga Gerbang Paradoks"
+  Pre:
+    The Chronicler: "Awas, Kesatria! Makhluk di depan kita terbuat dari murni energi cahaya dan kegelapan yang bertabrakan."
+    Hero: "Dia tidak memiliki wujud tetap, gerakannya seolah-olah berada di dua tempat sekaligus."
+    The Chronicler: "Penjaga Gerbang Paradoks. Dia tidak terikat oleh aturan waktu. Kau harus menyerangnya tepat saat kedua energinya sejajar!"
+  Post:
+    Hero: "Pertarungan yang sangat membingungkan, tapi akhirnya dia hancur menjadi partikel cahaya."
+    The Chronicler: "Gerbang menuju altar peramal telah terbuka. Di balik sana adalah badai waktu yang sesungguhnya."
+
+
+[Bab 4: Pusat Badai Waktu (Depth 16-20)]
+
+- Depth 16: "Mata Pusaran Takdir"
+  Pre:
+    Hero: "Kita berada di tengah badai pecahan kaca. Di tengah sana... ada altar yang dikelilingi jarum jam raksasa yang membeku."
+    The Chronicler: "Mata Pusaran Takdir. Di sinilah aliran waktu untuk seluruh negeri ini diatur."
+    Hero: "Angin di sekitar sini sangat kencang, membawa serpihan memori yang tajam."
+  Post:
+    Hero: "Setiap serpihan memori yang menggores kulitku membawa kilasan masa lalu yang menyakitkan."
+    The Chronicler: "Tetaplah fokus pada altar di depan, Kesatria. Kita sudah berada di ambang batas akhir."
+
+- Depth 17: "Pandangan yang Membutakan"
+  Pre:
+    The Chronicler: "Lihat ke atas, Kesatria. Pusaran hitam di atas altar... itu bukanlah sekadar monster biasa."
+    Hero: "Aku bisa melihatnya... The Void... itu adalah akhir dari segala hal yang mutlak."
+    The Chronicler: "Banyak orang menjadi gila setelah melihat wujud aslinya. Tutup sebagian pandanganmu jika matamu mulai terasa perih."
+  Post:
+    Hero: "Meskipun akhir itu terlihat mutlak, aku menolak untuk membiarkan duniaku lenyap begitu saja."
+    The Chronicler: "Keberanianmu melampaui ketakutan kosmis, Kesatria. Altar peramal sudah di depan mata."
+
+- Depth 18: "Kutukan Sang Peramal"
+  Pre:
+    The Chronicler: "Wanita yang melayang di atas altar dengan mata tertutup perban... dia adalah sang Oracle."
+    The Oracle: "Aku mencoba melihat... masa depan yang indah... tapi yang tersisa... hanya kehampaan yang sunyi..."
+    Hero: "Dia mencoba menyerap seluruh energi masa depan untuk mencegah kiamat, namun pikirannya justru hancur oleh beban itu."
+  Post:
+    The Oracle: "Kenapa kau masih berjuang...? Takdir telah memutuskan... kita semua akan binasa..."
+    The Chronicler: "Pikiran sang Oracle telah dikendalikan sepenuhnya oleh keputusasaan The Void. Kita harus membebaskan jiwanya!"
+
+- Depth 19: "Kesedihan The Oracle of Ruin"
+  Pre:
+    The Oracle: "Aku bisa melihat setiap gerakan pedangmu... sebelum kau memikirkannya!"
+    Hero: "Dia bisa memprediksi setiap seranganku sebelum kulakukan! Bagaimana cara melawannya?!"
+    The Chronicler: "Bertarunglah tanpa rencana, Kesatria! Biarkan insting murnimu yang menggerakkan pedangmu! Buat gerakan yang menentang takdir!"
+  Post:
+    The Oracle: "Bagaimana mungkin... aku tidak bisa melihat... serangan terakhirmu..."
+    Hero: "Sebab masa depan belum ditulis, Oracle. Dan aku yang akan menentukannya."
+
+- Depth 20: "Lahirnya Radiant Orb"
+  Pre:
+    The Chronicler: "Berikan dia pembebasan yang sesungguhnya. Biarkan sang Oracle beristirahat dari tugas beratnya membaca takdir dunia."
+    The Oracle: "Bawa... cahaya ini... bersamamu... ksatria terakhir..."
+    Hero: "Terima kasih atas bimbinganmu, Oracle. Tidurlah dengan tenang."
+  Post:
+    The Oracle: "Waktu... akhirnya kembali berjalan..."
+    The Chronicler: "Sosoknya meluruh menjadi ribuan partikel cahaya keemasan yang berkilau indah. Aliran waktu di sekitar kuil kembali stabil untuk sesaat, dan di atas altar, sebuah kristal bercahaya murni terbentuk."
+    Hero: "(Mengambil kristal emas yang melayang jatuh) Radiant Orb... rasanya sangat hangat, memancarkan cahaya murni yang bisa mengusir kegelapan terdalam."

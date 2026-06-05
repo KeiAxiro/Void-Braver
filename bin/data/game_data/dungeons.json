@@ -1,0 +1,4207 @@
+{
+  "dungeons": [
+    {
+      "id": "dungeon_of_echoes_and_destiny",
+      "name": "Dungeon of Echoes and Destiny",
+      "theme": "Dimensi pecahan cermin dan kuil suci yang terbengkalai. Dungeon tersulit tanpa kelemahan elemen spesifik.",
+      "recommended_class_id": "null",
+      "boss_name": "The Oracle of Ruin",
+      "reward_orb": "Radiant Orb",
+      "depths": [
+        {
+          "depth": 1,
+          "exp_gain": 50,
+          "level_range": {
+            "min": 1,
+            "max": 5
+          },
+          "tale": {
+            "chapter_name": "Bab 1: Kuil di Ujung Waktu",
+            "depth_title": "Lantai Cermin Perak",
+            "lore_content": "The Chronicler mengenang kuil megah di mana pantulan menunjukkan versi dirimu yang sempurna."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Kita telah sampai di batas cakrawala, Kesatria. Kuil Cermin Perak. Tempat ini dulu digunakan untuk membaca takdir kerajaan."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Lantai kuil ini... memantulkan bayanganku dengan sangat jernih. Tapi anehnya, bayanganku di lantai terlihat mengenakan zirah utuh tanpa luka."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Cermin ini tidak memantulkan fisikmu yang sekarang, melainkan versi dirimu yang paling sempurna. Jangan terlalu lama menatapnya."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Bayangan di lantai sempat mencoba meraih pergelangan kakiku."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Mereka merindukan realita, Kesatria. Tetaplah melangkah dan jangan biarkan kakimu terpaku di satu tempat."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 2,
+          "exp_gain": 120,
+          "level_range": {
+            "min": 6,
+            "max": 10
+          },
+          "tale": {
+            "chapter_name": "Bab 1: Kuil di Ujung Waktu",
+            "depth_title": "Nyanyian Bintang Jatuh",
+            "lore_content": "Ritual para pendeta yang membaca takdir kerajaan melalui pergerakan rasi bintang."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Dengarkan harmoni di ruangan ini. Ini adalah nyanyian rasi bintang kuno yang mengiringi takdir dunia."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Tapi bintang-bintang di langit-langit kuil ini... mereka mulai berjatuhan sebagai serpihan batu tajam."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Takdir telah rusak. Bintang-bintang itu jatuh karena langit di masa depan telah runtuh."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Menghindari pecahan bintang yang jatuh sambil bertarung benar-benar menguji fokusku."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "hoot... Kau bergerak dengan sangat anggun, Kesatria. Mari, retakan takdir yang sesungguhnya ada di depan."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 3,
+          "exp_gain": 250,
+          "level_range": {
+            "min": 11,
+            "max": 15
+          },
+          "tale": {
+            "chapter_name": "Bab 1: Kuil di Ujung Waktu",
+            "depth_title": "Retakan Pertama pada Takdir",
+            "lore_content": "Hari di mana cermin suci tiba-tiba retak, dan ramalan bintang berubah kosong."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Cermin suci raksasa di tengah kuil ini... tiba-tiba retak berkeping-keping tanpa disentuh."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Hari ini adalah hari di mana ramalan masa depan kerajaan di kuil ini mendadak berubah menjadi kosong."
+              },
+              {
+                "speaker": "Hero",
+                "text": "And monster-monster kristal mulai merangkak keluar dari dalam retakan kaca itu."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Setiap monster kristal yang kuhancurkan mengeluarkan suara seperti tangisan kaca."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Itu adalah jeritan takdir yang patah. Kita harus merangkai kembali sisa-sisa realita ini."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 4,
+          "exp_gain": 450,
+          "level_range": {
+            "min": 16,
+            "max": 20
+          },
+          "tale": {
+            "chapter_name": "Bab 1: Kuil di Ujung Waktu",
+            "depth_title": "Lonceng Kematian Masa Depan",
+            "lore_content": "Lonceng berdentang sendiri; peringatan dari masa depan tentang kedatangan The Void."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Dengar dentangan lonceng kuil itu, Kesatria. Lonceng itu berdentang sendiri tanpa ada yang menarik talinya."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Dentangannya terasa sangat memekakkan telinga dan membawa rasa cemas yang mendalam."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Itu adalah peringatan dari masa depan. Lonceng itu berdentang untuk memberi tahu kita bahwa The Void sedang menelan garis waktu di depan."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Aku berhasil menghancurkan bandul lonceng kuno itu. Suasana akhirnya kembali sunyi."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Kau baru saja membungkam ramalan kematian itu. Tapi kita masih harus menghadapi distorsi spasial di depan."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 5,
+          "exp_gain": 700,
+          "level_range": {
+            "min": 21,
+            "max": 25
+          },
+          "tale": {
+            "chapter_name": "Bab 1: Kuil di Ujung Waktu",
+            "depth_title": "Pantulan yang Berkhianat",
+            "lore_content": "Bayangan para pendeta di cermin mulai bergerak sendiri dan menarik mereka ke dalam kaca."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Tunggu... bayanganku di cermin besar depan kita... dia tidak mengikuti gerakanku. Dia justru tersenyum licik."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Awas, Kesatria! Bayangan itu keluar dari dalam kaca! Ia mencoba menarikmu masuk untuk menggantikan posisinya!"
+              },
+              {
+                "speaker": "Hero",
+                "text": "Melawan diriku sendiri... ini akan menjadi pertarungan yang aneh."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Menikam bayanganku sendiri rasanya seperti menusuk jiwaku sendiri."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Itu adalah serpihan dari keraguanmu yang diperalat oleh kuil ini. Kau telah membuktikan bahwa tekadmu yang asli jauh lebih kuat."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 6,
+          "exp_gain": 1050,
+          "level_range": {
+            "min": 26,
+            "max": 30
+          },
+          "tale": {
+            "chapter_name": "Bab 2: Distorsi Realita",
+            "depth_title": "Gema dari Kemarin",
+            "lore_content": "Kuil mulai memutar ulang suara jeritan para prajurit dari peperangan masa lalu."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Suara-suara ini... aku mendengar jeritan prajurit benteng api, dan tangisan para penyihir perpustakaan."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Kuil ini mulai memutar ulang gema penderitaan dari tempat-tempat lain yang telah hancur. Waktu di sini telah melipat dirinya sendiri."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Mereka seolah-olah berteriak menuntut keadilan padaku."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Suara-suara itu akhirnya mereda setelah aku membersihkan sisa energi di area ini."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Kau tidak bisa mengubah apa yang terjadi kemarin, Kesatria. Tapi kau bisa menghentikan tragedi itu agar tidak terulang esok hari."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 7,
+          "exp_gain": 1500,
+          "level_range": {
+            "min": 31,
+            "max": 35
+          },
+          "tale": {
+            "chapter_name": "Bab 2: Distorsi Realita",
+            "depth_title": "Lorong yang Berjalan Mundur",
+            "lore_content": "Tata ruang kuil melawan akal sehat; berjalan maju membawamu kembali ke tempat semula."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Aku sudah berlari maju selama beberapa menit, tapi kenapa kita justru kembali ke gerbang masuk tadi?"
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Hukum fisika telah terbalik di koridor ini. Berjalan maju justru akan membawamu kembali ke masa lalu."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Lalu bagaimana cara kita melewatinya?"
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "The Chronicler",
+                "text": "hoot... Berbaliklah, Kesatria. Berjalanlah mundur dengan membelakangi lorong. Percayalah pada tuntunanku."
+              },
+              {
+                "speaker": "Hero",
+                "text": "(Berjalan mundur perlahan hingga akhirnya menembus dinding ilusi) Menakjubkan. Kita berhasil melewatinya."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 8,
+          "exp_gain": 2100,
+          "level_range": {
+            "min": 36,
+            "max": 40
+          },
+          "tale": {
+            "chapter_name": "Bab 2: Distorsi Realita",
+            "depth_title": "Air Mata Para Nabi",
+            "lore_content": "Keputusasaan peramal yang melihat jutaan kemungkinan di mana kerajaan selalu hancur."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Ada genangan air jernih di lantai... tapi kenapa rasanya sangat asin?"
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Itu adalah kumpulan air mata para nabi dan peramal terdahulu. Mereka dipaksa melihat jutaan kemungkinan masa depan, dan di semua masa depan itu... kerajaan selalu hancur."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Keputusasaan mereka mengkristal menjadi genangan air mata ini."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Makhluk air mata tadi mencoba menenggelamkanku dalam kesedihan mereka."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Rasa sedih adalah beban yang berat, Kesatria. Tapi kau memiliki punggung yang kuat untuk memikulnya."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 9,
+          "exp_gain": 2800,
+          "level_range": {
+            "min": 41,
+            "max": 45
+          },
+          "tale": {
+            "chapter_name": "Bab 2: Distorsi Realita",
+            "depth_title": "Takdir yang Ditulis Ulang",
+            "lore_content": "Permadani sejarah kerajaan yang benangnya perlahan terurai dan terbakar menjadi abu."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Permadani raksasa di dinding kuil ini... gambar sejarah kerajaanku perlahan terurai dan terbakar menjadi abu hitam."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Sejarah sedang ditulis ulang oleh kekuatan The Void. Mereka mencoba menghapus ingatan tentang keberadaan kerajaanmu dari dunia ini."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Aku tidak akan membiarkan mereka menghapus sisa-sisa kehormatan kami!"
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Aku berhasil menghentikan proses pembakaran permadani itu, meskipun sebagian gambarnya telah hilang."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Selama kau masih hidup dan mengingatnya, sejarah kerajaanmu tidak akan pernah benar-benar musnah, Kesatria."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 10,
+          "exp_gain": 3700,
+          "level_range": {
+            "min": 46,
+            "max": 50
+          },
+          "tale": {
+            "chapter_name": "Bab 2: Distorsi Realita",
+            "depth_title": "Prajurit Tanpa Wajah",
+            "lore_content": "Monster campuran antara kenangan masa lalu dan teror masa depan."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Prajurit-prajurit di depan kita... mereka tidak memiliki wajah. Bentuk tubuh mereka terus berubah-ubah."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Mereka adalah entitas paradoks. Campuran antara kenangan prajurit masa lalu yang gugur dan ketakutan masa depan yang belum terjadi."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Wujud mereka yang tidak menentu membuat seranganku sulit diprediksi."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Saat mereka mati, mereka sempat berubah wujud menjadi rekan-rekan prajuritku."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Itu adalah taktik terakhir mereka untuk menggoyahkan mentalmu. Tetaplah tegap, Kesatria. Kita harus turun ke pecahan dimensi."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 11,
+          "exp_gain": 4800,
+          "level_range": {
+            "min": 51,
+            "max": 55
+          },
+          "tale": {
+            "chapter_name": "Bab 3: Labirin Pecahan Dimensi",
+            "depth_title": "Kehampaan yang Berkilau",
+            "lore_content": "Berjalan di atas pecahan kaca yang melayang di ruang hampa tanpa gravitasi."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Tidak ada lantai di sini... hanya ada pecahan kaca cermin raksasa yang melayang di ruang hampa tanpa gravitasi."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Kehampaan yang Berkilau. Kita berada di luar batas waktu konvensional sekarang. Lompatlah dengan hati-hati, Kesatria."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Sensasi melayang ini membuatku merasa seperti tidak memiliki tubuh."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Melompat dari satu pecahan cermin ke pecahan lain di tengah ruang hampa benar-benar menegangkan."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Kau mengendalikan tubuhmu dengan sangat baik, Kesatria. Namun fluktuasi waktu di depan semakin kacau."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 12,
+          "exp_gain": 6100,
+          "level_range": {
+            "min": 56,
+            "max": 60
+          },
+          "tale": {
+            "chapter_name": "Bab 3: Labirin Pecahan Dimensi",
+            "depth_title": "Tragedi yang Terulang",
+            "lore_content": "Terjebak dalam putaran waktu, melihat detik-detik kematian kerajaan berulang kali."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Tunggu... pemandangan ini... ini adalah detik-detik saat benteng pertahanan terakhir kerajaanku hancur! Aku melihat diriku sendiri berteriak di sana!"
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Tenang, Kesatria! Itu adalah lingkaran waktu (time loop). Kuil ini menjebakmu dalam kenangan paling traumatis agar jiwamu menyerah."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Melihat mereka gugur berulang kali... ini adalah siksaan yang kejam!"
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "(Sambil terengah-engah, pedangnya menancap di lantai pecahan) Aku harus menghancurkan jangkar waktu di tengah ruangan untuk menghentikan loop itu."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Kau berhasil memutus siklus kepedihan itu. Tarik napasmu, tenangkan pikiranmu."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 13,
+          "exp_gain": 7600,
+          "level_range": {
+            "min": 61,
+            "max": 65
+          },
+          "tale": {
+            "chapter_name": "Bab 3: Labirin Pecahan Dimensi",
+            "depth_title": "Suara dari Garis Waktu yang Mati",
+            "lore_content": "Bisikan para pahlawan dari dimensi lain yang telah gagal mengalahkan The Void."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Aku mendengar bisikan-bisikan asing... mereka menyebut diri mereka sebagai 'pahlawan' yang telah gagal."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Mereka adalah jiwa para ksatria dari garis waktu lain yang telah gagal mengalahkan The Void. Garis waktu mereka telah dihapus."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Mereka memperingatkanku bahwa aku juga akan gagal seperti mereka."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Aku tidak akan menjadi salah satu dari gema kegagalan mereka."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Itulah mengapa takdir mempertemukan kita, Kesatria. Karena tekadmu melampaui jutaan kegagalan di garis waktu lain."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 14,
+          "exp_gain": 9400,
+          "level_range": {
+            "min": 66,
+            "max": 70
+          },
+          "tale": {
+            "chapter_name": "Bab 3: Labirin Pecahan Dimensi",
+            "depth_title": "Kepingan Jiwa yang Hilang",
+            "lore_content": "Kutukan kuil yang membuat siapapun yang memasukinya melupakan namanya sendiri."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Siapa... aku? Kenapa aku memegang pedang ini? Namaku... aku tidak bisa mengingatnya..."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "hoot! Kesatria! Dengarkan suaraku! Kutukan tingkat ini perlahan menghapus jati dirimu agar kau menjadi jasad kosong!"
+              },
+              {
+                "speaker": "Hero",
+                "text": "Aku... aku adalah prajurit terakhir... aku harus... mengalahkan kegelapan..."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Sakit sekali kepalaku saat mencoba mengingat kembali semuanya."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Ingatanmu telah kembali sepenuhnya sekarang. Pegang erat pedangmu, jati dirimu adalah senjata terkuatmu."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 15,
+          "exp_gain": 11500,
+          "level_range": {
+            "min": 71,
+            "max": 75
+          },
+          "tale": {
+            "chapter_name": "Bab 3: Labirin Pecahan Dimensi",
+            "depth_title": "Penjaga Gerbang Paradoks",
+            "lore_content": "Entitas penjaga murni energi cahaya dan kegelapan, tidak terikat oleh waktu."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Awas, Kesatria! Makhluk di depan kita terbuat dari murni energi cahaya dan kegelapan yang bertabrakan."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Dia tidak memiliki wujud tetap, gerakannya seolah-olah berada di dua tempat sekaligus."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Penjaga Gerbang Paradoks. Dia tidak terikat oleh aturan waktu. Kau harus menyerangnya tepat saat kedua energinya sejajar!"
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Pertarungan yang sangat membingungkan, tapi akhirnya dia hancur menjadi partikel cahaya."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Gerbang menuju altar peramal telah terbuka. Di balik sana adalah badai waktu yang sesungguhnya."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 16,
+          "exp_gain": 14000,
+          "level_range": {
+            "min": 76,
+            "max": 80
+          },
+          "tale": {
+            "chapter_name": "Bab 4: Pusat Badai Waktu",
+            "depth_title": "Mata Pusaran Takdir",
+            "lore_content": "Memasuki altar utama di mana waktu benar-benar berhenti bergerak."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Kita berada di tengah badai pecahan kaca. Di tengah sana... ada altar yang dikelilingi jarum jam raksasa yang membeku."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Mata Pusaran Takdir. Di sinilah aliran waktu untuk seluruh negeri ini diatur."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Angin di sekitar sini sangat kencang, membawa serpihan memori yang tajam."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Setiap serpihan memori yang menggores kulitku membawa kilasan masa lalu yang menyakitkan."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Tetaplah fokus pada altar di depan, Kesatria. Kita sudah berada di ambang batas akhir."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 17,
+          "exp_gain": 17000,
+          "level_range": {
+            "min": 81,
+            "max": 85
+          },
+          "tale": {
+            "chapter_name": "Bab 4: Pusat Badai Waktu",
+            "depth_title": "Pandangan yang Membutakan",
+            "lore_content": "Menyadari bahwa The Void bukanlah sekadar monster, melainkan Akhir itu sendiri."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Lihat ke atas, Kesatria. Pusaran hitam di atas altar... itu bukanlah sekadar monster biasa."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Aku bisa melihatnya... The Void... itu adalah akhir dari segala hal yang mutlak."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Banyak orang menjadi gila setelah melihat wujud aslinya. Tutup sebagian pandanganmu jika matamu mulai terasa perih."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Meskipun akhir itu terlihat mutlak, aku menolak untuk membiarkan duniaku lenyap begitu saja."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Keberanianmu melampaui ketakutan kosmis, Kesatria. Altar peramal sudah di depan mata."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 18,
+          "exp_gain": 20500,
+          "level_range": {
+            "min": 86,
+            "max": 90
+          },
+          "tale": {
+            "chapter_name": "Bab 4: Pusat Badai Waktu",
+            "depth_title": "Kutukan Sang Peramal",
+            "lore_content": "Sang Oracle mencoba menyerap energi masa depan untuk mencegah kiamat, namun pikirannya hancur."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Wanita yang melayang di atas altar dengan mata tertutup perban... dia adalah sang Oracle."
+              },
+              {
+                "speaker": "The Oracle",
+                "text": "Aku mencoba melihat... masa depan yang indah... tapi yang tersisa... hanya kehampaan yang sunyi..."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Dia mencoba menyerap seluruh energi masa depan untuk mencegah kiamat, namun pikirannya justru hancur oleh beban itu."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "The Oracle",
+                "text": "Kenapa kau masih berjuang...? Takdir telah memutuskan... kita semua akan binasa..."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Pikiran sang Oracle telah dikendalikan sepenuhnya oleh keputusasaan The Void. Kita harus membebaskan jiwanya!"
+              }
+            ]
+          }
+        },
+        {
+          "depth": 19,
+          "exp_gain": 24500,
+          "level_range": {
+            "min": 91,
+            "max": 95
+          },
+          "tale": {
+            "chapter_name": "Bab 4: Pusat Badai Waktu",
+            "depth_title": "Kesedihan The Oracle of Ruin",
+            "lore_content": "Menghadapi Oracle yang dikendalikan The Void, mampu memprediksi gerakan player."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Oracle",
+                "text": "Aku bisa melihat setiap gerakan pedangmu... sebelum kau memikirkannya!"
+              },
+              {
+                "speaker": "Hero",
+                "text": "Dia bisa memprediksi setiap seranganku sebelum kulakukan! Bagaimana cara melawannya?!"
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Bertarunglah tanpa rencana, Kesatria! Biarkan insting murnimu yang menggerakkan pedangmu! Buat gerakan yang menentang takdir!"
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "The Oracle",
+                "text": "Bagaimana mungkin... aku tidak bisa melihat... serangan terakhirmu..."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Sebab masa depan belum ditulis, Oracle. Dan aku yang akan menentukannya."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 20,
+          "exp_gain": 30000,
+          "level_range": {
+            "min": 96,
+            "max": 100
+          },
+          "tale": {
+            "chapter_name": "Bab 4: Pusat Badai Waktu",
+            "depth_title": "Lahirnya Radiant Orb",
+            "lore_content": "Aliran waktu kembali stabil sesaat, esensi takdir murni mengkristal menjadi Radiant Orb."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Berikan dia pembebasan yang sesungguhnya. Biarkan sang Oracle beristirahat dari tugas beratnya membaca takdir dunia."
+              },
+              {
+                "speaker": "The Oracle",
+                "text": "Bawa... cahaya ini... bersamamu... ksatria terakhir..."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Terima kasih atas bimbinganmu, Oracle. Tidurlah dengan tenang."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "The Oracle",
+                "text": "Waktu... akhirnya kembali berjalan..."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Sosoknya meluruh menjadi ribuan partikel cahaya keemasan yang berkilau indah. Aliran waktu di sekitar kuil kembali stabil untuk sesaat, dan di atas altar, sebuah kristal bercahaya murni terbentuk."
+              },
+              {
+                "speaker": "Hero",
+                "text": "(Mengambil kristal emas yang melayang jatuh) Radiant Orb... rasanya sangat hangat, memancarkan cahaya murni yang bisa mengusir kegelapan terdalam."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dungeon_of_knowledge_and_wisdom",
+      "name": "Dungeon of Knowledge and Wisdom",
+      "theme": "Perpustakaan kuno yang terdistorsi oleh sihir dan menara astral. Musuh didominasi oleh golem magis, penyihir gila, dan teka-teki ilusi.",
+      "recommended_class_id": "sorcerer",
+      "boss_name": "The Grand Archivist",
+      "reward_orb": "Azure Orb",
+      "depths": [
+        {
+          "depth": 1,
+          "exp_gain": 50,
+          "level_range": {
+            "min": 1,
+            "max": 5
+          },
+          "tale": {
+            "chapter_name": "Bab 1: Era Keemasan",
+            "depth_title": "Gerbang Pengetahuan Abadi",
+            "lore_content": "The Chronicler mengenang masa ketika cendekiawan dari seluruh penjuru dunia berkumpul di tempat ini."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Buka matamu, Kesatria. Di depan kita adalah perpustakaan terbesar yang pernah dibangun peradaban manusia. Sayang... keheningan di sini terlalu pekat."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Tempat sebesar ini... sunyi sekali. Bahkan bau kertas lamanya tertutup oleh hawa dingin yang kukenal."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Hati-hati. Di tempat para cendekiawan mengumpulkan kebijaksanaan, kegelapan juga suka bersembunyi."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Sihir pelindung di gerbang ini langsung menyerangku. Mereka mengira aku penyusup."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Sistem keamanannya telah rusak dan terkorupsi. Setidaknya jalan masuk menuju Menara Astral kini terbuka."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 2,
+          "exp_gain": 120,
+          "level_range": {
+            "min": 6,
+            "max": 10
+          },
+          "tale": {
+            "chapter_name": "Bab 1: Era Keemasan",
+            "depth_title": "Rak Buku Setinggi Bintang",
+            "lore_content": "Deskripsi tentang Menara Astral, tempat pengetahuan dari bumi dan langit disimpan."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "hoot... Menakjubkan, bukan? Rak-rak buku ini menjulang tinggi hingga menembus atap kaca, seolah-olah ingin menyentuh rasi bintang."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Aku belum pernah melihat buku sebanyak ini seumur hidupku. Tapi... kenapa buku-buku itu melayang?"
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Sihir pelindung gravitasi mereka mulai kacau. Tetap di dekatku, Kesatria."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Buku-buku liar tadi menyerang dengan sudut-sudut kertas yang tajam. Seperti pisau."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Pengetahuan yang terdistorsi bisa menjadi senjata mematikan. Langkah kita masih panjang, mari naik lebih tinggi."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 3,
+          "exp_gain": 250,
+          "level_range": {
+            "min": 11,
+            "max": 15
+          },
+          "tale": {
+            "chapter_name": "Bab 1: Era Keemasan",
+            "depth_title": "Simfoni Tinta dan Kertas",
+            "lore_content": "Kehidupan damai para penyihir yang mendedikasikan hidupnya murni untuk penelitian."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Ada aroma aneh di sini... seperti tinta basah, tapi rasanya manis."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Itu aroma tinta sihir murni. Dahulu, para penyihir menuliskan mantra mereka di sini dengan damai, tanpa tahu badai akan datang."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Kedamaian yang indah... sebelum semuanya direnggut."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Bayangan-bayangan penyihir tadi... mereka terus menulis meskipun jasadnya sudah tiada."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Jiwa mereka terikat pada obsesi penelitian terakhir mereka. Pedangmu baru saja membebaskan mereka dari siklus tanpa akhir."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 4,
+          "exp_gain": 450,
+          "level_range": {
+            "min": 16,
+            "max": 20
+          },
+          "tale": {
+            "chapter_name": "Bab 1: Era Keemasan",
+            "depth_title": "Goresan Tinta yang Bergetar",
+            "lore_content": "Anomali pertama: buku-buku kuno mulai menulis halamannya sendiri dengan bahasa yang tak dikenali."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Tunggu, Chronicler. Buku di atas meja ini menulis halamannya sendiri. Huruf-hurufnya... bergerak seperti cacing."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Jangan menatap tulisan itu terlalu lama! Itu bahasa kuno yang belum pernah diterjemahkan. Bahasa dari luar realita kita."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Kepalaku mendadak terasa sangat pusing hanya dengan sekilas melihatnya..."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "pant... pant... monster yang keluar dari halaman buku itu hampir saja menjeratku."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Bahasa itu adalah pembawa korupsi. Keberadaannya membuktikan bahwa perpustakaan ini sudah mulai 'membaca' The Void."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 5,
+          "exp_gain": 700,
+          "level_range": {
+            "min": 21,
+            "max": 25
+          },
+          "tale": {
+            "chapter_name": "Bab 1: Era Keemasan",
+            "depth_title": "Ramalan dari Celah Bintang",
+            "lore_content": "Penemuan sebuah perkamen rahasia yang meramalkan kedatangan entitas tanpa wujud: The Void."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Lihat perkamen rahasia di atas meja bundar ini. Ini adalah ruang ramalan bintang."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Ada gambar pusaran hitam besar yang memakan gugusan bintang..."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Mereka sudah meramalkan kedatangan The Void ratusan tahun lalu, Kesatria. Namun, mengetahui takdir dan menghentikannya adalah dua hal yang berbeda."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Jika mereka tahu kegelapan ini akan datang, mengapa mereka tidak melarikan diri?"
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Cendekiawan terlalu mencintai buku mereka, Kesatria. Mereka memilih mati bersama sejarah mereka. Mari, kita harus turun ke area eksperimen."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 6,
+          "exp_gain": 1050,
+          "level_range": {
+            "min": 26,
+            "max": 30
+          },
+          "tale": {
+            "chapter_name": "Bab 2: Rasa Ingin Tahu yang Mematikan",
+            "depth_title": "Bisikan di Balik Halaman",
+            "lore_content": "Suara-suara aneh mulai merasuki pikiran para pembaca, membuat mereka terjaga berhari-hari."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Bisikan-bisikan ini... mereka menyebut namaku. Mereka menyuruhku meletakkan pedangku."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "(Mengepakkan sayap emasnya di depan wajah Hero) Jangan dengarkan, Kesatria! Tutup telingamu. Itu suara keputusasaan dari masa lalu yang mencoba meracunimu."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Suara rekan-rekanku yang gugur... rasanya nyata sekali."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Terima kasih, Chronicler. Jika kau tidak mengepakkan sayapmu tadi, aku mungkin sudah menyerah."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Aku di sini sebagai pemandumu, Kesatria. Jiwamu terlalu berharga untuk hilang di tempat sunyi ini."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 7,
+          "exp_gain": 1500,
+          "level_range": {
+            "min": 31,
+            "max": 35
+          },
+          "tale": {
+            "chapter_name": "Bab 2: Rasa Ingin Tahu yang Mematikan",
+            "depth_title": "Eksperimen Sang Alkemis Gila",
+            "lore_content": "Usaha putus asa para penyihir menggunakan sihir hitam untuk menciptakan perisai pelindung."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Ruangan ini... baunya seperti belerang dan darah kering. Di sinilah mereka mencoba memadukan sihir hitam untuk menolak kegelapan."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Mencoba melawan kegelapan dengan kegelapan? Keputusan yang bodoh."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Ketakutan sering kali membuat orang bijak kehilangan akal sehatnya."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Makhluk-makhluk cairan asam ini... mereka adalah hasil eksperimen yang gagal?"
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Ya. Alih-alih menciptakan perisai, mereka justru membuka pintu gerbang bagi musuh untuk masuk lebih cepat."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 8,
+          "exp_gain": 2100,
+          "level_range": {
+            "min": 36,
+            "max": 40
+          },
+          "tale": {
+            "chapter_name": "Bab 2: Rasa Ingin Tahu yang Mematikan",
+            "depth_title": "Pecahnya Kaca Realita",
+            "lore_content": "Kegagalan eksperimen yang menyebabkan ruang dan waktu di dalam perpustakaan mulai terdistorsi."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Udara di depan kita... retak? Seperti cermin yang pecah."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Ruang dan waktu di sini sudah tidak stabil. Eksperimen terlarang itu merusak fondasi realita perpustakaan ini."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Aku merasa mual setiap kali melangkah mendekati retakan itu."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Kau berhasil melewati distorsi ruang itu dengan selamat. Bagaimana perasaanmu?"
+              },
+              {
+                "speaker": "Hero",
+                "text": "Kepalaku berputar, tapi pedangku masih bisa kupegang dengan mantap. Mari terus maju."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 9,
+          "exp_gain": 2800,
+          "level_range": {
+            "min": 41,
+            "max": 45
+          },
+          "tale": {
+            "chapter_name": "Bab 2: Rasa Ingin Tahu yang Mematikan",
+            "depth_title": "Debat Berdarah",
+            "lore_content": "Kewarasan yang hilang; para cendekiawan mulai saling membunuh karena paranoia."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Gema Cendekiawan",
+                "text": "Sihir ini akan menyelamatkan kita! / Tidak, itu akan mengutuk kita semua! Kau pembunuh!"
+              },
+              {
+                "speaker": "Hero",
+                "text": "Mereka saling menyerang... para cendekiawan ini saling membunuh?"
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Saat ketakutan menguasai pikiran, argumen berubah menjadi belati. Kegelapan menang tanpa perlu bertarung."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Menghentikan gema pertengkaran mereka rasanya sangat melelahkan jiwa."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Paranoia adalah racun yang paling cepat menyebar, Kesatria. Dan kau baru saja membersihkan sisa racun itu."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 10,
+          "exp_gain": 3700,
+          "level_range": {
+            "min": 46,
+            "max": 50
+          },
+          "tale": {
+            "chapter_name": "Bab 2: Rasa Ingin Tahu yang Mematikan",
+            "depth_title": "Pemberontakan Golem Penjaga",
+            "lore_content": "Golem magis yang diciptakan untuk melindungi buku, kini diretas oleh The Void dan membantai penciptanya."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "hoot! Awas, Kesatria! Golem pelindung di depanmu... matanya menyala merah, bukan biru."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Mereka raksasa batu yang sangat besar. Zirahku tidak akan sanggup menahan hantaman itu."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Mereka diciptakan untuk menjaga buku, tapi kegelapan telah meretas inti sihir mereka. Cari celah di persendian batu mereka!"
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "pant... pant... golem itu akhirnya hancur menjadi tumpukan batu biasa."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Pertarungan yang luar biasa, Kesatria. Namun hancurnya para penjaga ini berarti tidak ada lagi yang melindungi menara atas dari kekacauan."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 11,
+          "exp_gain": 4800,
+          "level_range": {
+            "min": 51,
+            "max": 55
+          },
+          "tale": {
+            "chapter_name": "Bab 3: Labirin Ilusi dan Distorsi",
+            "depth_title": "Koridor Tanpa Ujung",
+            "lore_content": "Lorong perpustakaan melipat dirinya sendiri menjadi labirin yang tak bisa diselesaikan."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Kita sudah melewati patung singa ini tiga kali, Chronicler. Apakah kita berputar-putar?"
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Koridor ini melipat dirinya sendiri. Ini adalah labirin spasial yang dirancang untuk menjebak pencuri pengetahuan."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Bagaimana kita bisa keluar jika mata fisikku tidak bisa dipercaya?"
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "The Chronicler",
+                "text": "(Mengepakkan sayap emasku dan menunjuk ke arah langit-langit yang melengkung) Ikuti aliran debu emas pertunjukanku, Kesatria. Ruang di depan mulai melurus kembali."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Pemandu yang hebat. Aku tidak akan bisa keluar dari sini tanpamu."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 12,
+          "exp_gain": 6100,
+          "level_range": {
+            "min": 56,
+            "max": 60
+          },
+          "tale": {
+            "chapter_name": "Bab 3: Labirin Ilusi dan Distorsi",
+            "depth_title": "Gravitasi yang Runtuh",
+            "lore_content": "Puing-puing bangunan, buku, dan mayat penyihir yang melayang di udara melawan gravitasi."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Buku, meja, bahkan mayat para penyihir... semuanya melayang bebas di udara."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Gravitasi di tingkat ini telah runtuh sepenuhnya. Kau harus melompat dari satu puing ke puing lainnya."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Satu lompatan salah... dan aku akan jatuh ke dalam kehampaan tanpa batas di bawah."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Kakiku akhirnya menyentuh lantai yang solid lagi. Sungguh menegangkan."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Keberanianmu tidak pernah gagal membuatku takjub, Kesatria. Tapi bersiaplah, hawa di depan terasa sangat busuk."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 13,
+          "exp_gain": 7600,
+          "level_range": {
+            "min": 61,
+            "max": 65
+          },
+          "tale": {
+            "chapter_name": "Bab 3: Labirin Ilusi dan Distorsi",
+            "depth_title": "Buku Berkulit Dosa",
+            "lore_content": "Penemuan grimoire terkutuk yang akan menyerap jiwa siapapun yang berani membacanya."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Jangan sentuh buku di atas altar itu! Itu Grimoire terkutuk yang dilapisi kulit manusia."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Buku itu... berdetak seperti jantung manusia. Dan ada mata yang berkedip di sampulnya."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Ia mencoba menarik jiwamu dengan rasa ingin tahu. Hancurkan altar itu sebelum ia membuka matanya sepenuhnya!"
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Saat pedangku menebas buku itu, ia menjerit seperti anak kecil yang kesakitan."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Itu adalah jeritan jiwa-jiwa yang telah dihisap oleh buku tersebut. Kau baru saja membebaskan mereka."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 14,
+          "exp_gain": 9400,
+          "level_range": {
+            "min": 66,
+            "max": 70
+          },
+          "tale": {
+            "chapter_name": "Bab 3: Labirin Ilusi dan Distorsi",
+            "depth_title": "Bayangan Masa Lalu",
+            "lore_content": "Teror ilusi di mana The Void menampilkan ketakutan terbesar dari pikiran sang Hero."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Gema Rekan Prajurit",
+                "text": "Kenapa kau selamat, Kesatria? Kenapa kau membiarkan kami mati di medan perang?!"
+              },
+              {
+                "speaker": "Hero",
+                "text": "Tidak... aku sudah mencoba menyelamatkan kalian! Aku... aku tidak bisa..."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Kesatria! Lihat aku! Itu bukan teman-temanmu. Itu adalah ilusi dari pikiranmu sendiri yang diperalat oleh The Void!"
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "(Menyeka air mata dari pipinya sambil menghela napas panjang) Aku harus menusuk bayangan temanku sendiri untuk melenyapkannya."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Kesedihanmu adalah makanan bagi mereka. Tapi ketahuilah, teman-temanmu yang asli gugur dengan bangga karena tahu kau terus berjuang."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 15,
+          "exp_gain": 11500,
+          "level_range": {
+            "min": 71,
+            "max": 75
+          },
+          "tale": {
+            "chapter_name": "Bab 3: Labirin Ilusi dan Distorsi",
+            "depth_title": "Tangisan di Menara Lonceng",
+            "lore_content": "Jeritan jiwa-jiwa cendekiawan yang terjebak di antara dimensi, tidak hidup namun tidak bisa mati."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Suara lonceng ini... rasanya seperti menusuk gendang telingaku."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Itu adalah lonceng duka. Jiwa para cendekiawan yang terjebak di antara dimensi berteriak setiap kali lonceng itu berdentang."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Aku akan naik dan menghentikan dentangan lonceng sialan itu."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Loncengnya sudah retak dan tidak berbunyi lagi. Suasana kembali sunyi."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "And tangisan mereka berubah menjadi embusan angin yang tenang. Kita sudah sangat dekat dengan puncak menara."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 16,
+          "exp_gain": 14000,
+          "level_range": {
+            "min": 76,
+            "max": 80
+          },
+          "tale": {
+            "chapter_name": "Bab 4: Inti Menara & Sang Pustakawan",
+            "depth_title": "Ruang Baca Sang Pemimpin",
+            "lore_content": "Memasuki tempat suci milik penyihir terkuat di kerajaan, sang kepala perpustakaan."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Ini pasti ruang kerja sang Kepala Perpustakaan. Tempatnya sangat mewah, namun tertutup debu tebal."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Ruang suci The Grand Archivist. Di sinilah keputusan-keputusan besar yang memengaruhi sejarah dunia pernah ditulis."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Tidak ada tanda-tanda kehidupan di sini, hanya keheningan yang menyesakkan."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Kesunyian sebelum badai, Kesatria. Bersiaplah untuk menghadapi apa yang tersisa dari sang pemimpin."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 17,
+          "exp_gain": 17000,
+          "level_range": {
+            "min": 81,
+            "max": 85
+          },
+          "tale": {
+            "chapter_name": "Bab 4: Inti Menara & Sang Pustakawan",
+            "depth_title": "Tinta Menjadi Darah",
+            "lore_content": "Seluruh pengetahuan dan tulisan di ruangan ini telah terkontaminasi penuh oleh energi hitam The Void."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Tinta-tinta hitam mulai merembes keluar dari celah lantai... baunya amis seperti darah."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Energi hitam The Void telah mencemari seluruh sisa pengetahuan di ruangan ini, mengubah tinta berharga menjadi darah kutukan."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Cairan hitam ini mulai membentuk monster-monster tanpa wajah!"
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Pedangku berlumuran cairan hitam kental ini. Sangat sulit dibersihkan."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Cairan itu akan menguap seiring hancurnya sumber kutukannya. Tetaplah fokus pada tujuan kita."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 18,
+          "exp_gain": 20500,
+          "level_range": {
+            "min": 86,
+            "max": 90
+          },
+          "tale": {
+            "chapter_name": "Bab 4: Inti Menara & Sang Pustakawan",
+            "depth_title": "Obsesi The Grand Archivist",
+            "lore_content": "Sang kepala perpustakaan rela menjual jiwanya pada The Void demi mengawetkan seluruh buku."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Dia di sana, Kesatria. Sosok tua yang melayang di tengah lingkaran buku-buku terbang."
+              },
+              {
+                "speaker": "The Grand Archivist",
+                "text": "Buku-buku ini... tidak boleh hancur... sejarah dunia... harus tetap abadi... meski aku harus menyerahkan jiwaku..."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Dia rela menjual jiwanya pada kegelapan hanya demi menyelamatkan tumpukan kertas?"
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "The Grand Archivist",
+                "text": "Argh! Cahaya apa ini?! Jangan sentuh buku-bukuku!"
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Pikiran dan tubuhnya telah menyatu dengan menara ini. Dia tidak bisa lagi membedakan antara melindungi sejarah atau menghancurkannya."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 19,
+          "exp_gain": 24500,
+          "level_range": {
+            "min": 91,
+            "max": 95
+          },
+          "tale": {
+            "chapter_name": "Bab 4: Inti Menara & Sang Pustakawan",
+            "depth_title": "Mata yang Melihat Segalanya",
+            "lore_content": "Wujud mutasi The Grand Archivist yang kini menyatu dengan perpustakaan itu sendiri."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Grand Archivist",
+                "text": "Aku melihatmu... ksatria dari kerajaan yang runtuh... aku melihat ketakutanmu... aku melihat akhir dari dunia ini!"
+              },
+              {
+                "speaker": "Hero",
+                "text": "Wujudnya berubah! Banyak sekali mata besar yang tumbuh di sekeliling buku-bukunya."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Dia telah bermutasi sepenuhnya menjadi penjaga kutukan. Tebas matanya, Kesatria! Jangan biarkan pandangannya mengunci gerakanmu!"
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "The Grand Archivist",
+                "text": "Mataku... pengetahuanku... semuanya menjadi gelap..."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Dia melemah, tapi sisa-sisa buku di sekitarnya mulai terbakar oleh api hitam."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Satu serangan terakhir untuk mengakhiri penderitaan sang Archivist!"
+              }
+            ]
+          }
+        },
+        {
+          "depth": 20,
+          "exp_gain": 30000,
+          "level_range": {
+            "min": 96,
+            "max": 100
+          },
+          "tale": {
+            "chapter_name": "Bab 4: Inti Menara & Sang Pustakawan",
+            "depth_title": "Lahirnya Azure Orb",
+            "lore_content": "Jiwanya disucikan kembali bersama intisari pengetahuan kerajaan mengkristal menjadi Azure Orb."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Berikan dia kedamaian yang sesungguhnya. Selamatkan pengetahuannya dari korupsi The Void."
+              },
+              {
+                "speaker": "The Grand Archivist",
+                "text": "Bebaskan aku... biarkan aku melupakan... semua kepedihan ini..."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Istirahatlah bersama pengetahuanmu yang berharga, Archivist. Tugasmu sudah selesai."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "The Grand Archivist",
+                "text": "Akhirnya... keheningan yang murni..."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Lihatlah, lembaran-lembaran buku yang terbakar tadi berubah menjadi partikel cahaya biru yang indah. Jiwanya yang telah disucikan kini mengkristal."
+              },
+              {
+                "speaker": "Hero",
+                "text": "(Mengambil batu kristal biru jernih yang melayang jatuh) Azure Orb... rasanya sangat dingin, namun menenangkan pikiran."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dungeon_of_thorns_and_resilience",
+      "name": "Dungeon of Thorns and Resilience",
+      "theme": "Rawa beracun dan labirin akar raksasa di bawah bumi. Musuh memiliki HP tebal dan memberikan damage over time. Menguji tingginya VIT.",
+      "recommended_class_id": "null",
+      "boss_name": "The Rotting Behemoth",
+      "reward_orb": "Emerald Orb",
+      "depths": [
+        {
+          "depth": 1,
+          "exp_gain": 50,
+          "level_range": {
+            "min": 1,
+            "max": 5
+          },
+          "tale": {
+            "chapter_name": "Bab 1: Suaka yang Membusuk",
+            "depth_title": "Mata Air Kehidupan",
+            "lore_content": "The Chronicler mengenang masa ketika air rawa ini bisa menyembuhkan luka separah apa pun."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Hati-hati dengan langkahmu, Kesatria. Air rawa di depan kita... dahulu adalah mata air suci yang bisa menyembuhkan luka separah apa pun."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Tapi sekarang... baunya sangat busuk. Kulitku terasa gatal hanya karena terkena uapnya."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "hoot... Korupsi telah mengubah suaka penyembuhan ini menjadi kuburan beracun."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Lumpurnya sangat tebal dan lengket, membuat setiap langkah terasa sepuluh kali lebih berat."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Rawa ini mencoba menahanmu agar tenggelam, Kesatria. Tetap kuatkan kakimu."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 2,
+          "exp_gain": 120,
+          "level_range": {
+            "min": 6,
+            "max": 10
+          },
+          "tale": {
+            "chapter_name": "Bab 1: Suaka yang Membusuk",
+            "depth_title": "Akar Penyangga Bumi",
+            "lore_content": "Kisah tentang pohon-pohon raksasa yang akarnya menembus hingga ke inti dunia."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Lihat akar-akar raksasa ini. Mereka menembus hingga ke inti dunia, mengalirkan kehidupan ke seluruh rawa."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Tapi sekarang akar-akar ini dipenuhi oleh lendir hitam kental."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Jika penyangga bumi ini hancur, seluruh tempat ini akan runtuh. Kita harus membersihkan parasit yang mengeratnya."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Parasit raksasa tadi akhirnya mati. Tapi lendir hitamnya merusak lapisan zirahku."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Zirah besi bisa diganti, Kesatria. Yang terpenting adalah tubuhmu tetap tegak berdiri."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 3,
+          "exp_gain": 250,
+          "level_range": {
+            "min": 11,
+            "max": 15
+          },
+          "tale": {
+            "chapter_name": "Bab 1: Suaka yang Membusuk",
+            "depth_title": "Spora Ungu Pertama",
+            "lore_content": "Awal mula jatuhnya kutukan The Void yang turun seperti salju beracun dari langit."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Indah sekali... bintik-bintik ungu ini turun dari langit seperti salju."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Jangan menyentuhnya! Itu adalah spora beracun The Void. Keindahan yang menipu untuk mematikan paru-parumu."
+              },
+              {
+                "speaker": "Hero",
+                "text": "(Segera menutup hidung dengan jubah) Hampir saja..."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "cough... cough... sedikit spora tadi sempat terhirup. Dadaku terasa terbakar."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "(Mengepakkan sayap emasku di atas dada Hero, memancarkan cahaya hijau penawar) Bertahanlah, Kesatria. Racunnya sudah kukurangi, tapi efeknya akan membuatmu lelah."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 4,
+          "exp_gain": 450,
+          "level_range": {
+            "min": 16,
+            "max": 20
+          },
+          "tale": {
+            "chapter_name": "Bab 1: Suaka yang Membusuk",
+            "depth_title": "Air yang Mengubah Wujud",
+            "lore_content": "Mata air jernih mulai berubah menjadi lumpur hitam kental yang membakar kulit."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Genangan air di depan kita... lumpurnya mendidih dan meletup-letup."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Itu adalah lumpur korupsi aktif. Hewan apa pun yang meminum air ini akan berubah menjadi mutan mengerikan."
+              },
+              {
+                "speaker": "Hero",
+                "text": "And mereka sekarang sedang merayap keluar dari dalam genangan itu..."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Mutan-mutan itu tidak memiliki rasa sakit. Mereka terus menyerang meski tubuh mereka sudah terbelah."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Sebab tubuh mereka sepenuhnya digerakkan oleh parasit hitam. Kekuatan fisikmu benar-benar diuji di sini."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 5,
+          "exp_gain": 700,
+          "level_range": {
+            "min": 21,
+            "max": 25
+          },
+          "tale": {
+            "chapter_name": "Bab 1: Suaka yang Membusuk",
+            "depth_title": "Duri Penolakan Alam",
+            "lore_content": "Flora di rawa mencoba melawan kutukan dengan menumbuhkan duri-duri raksasa."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Duri-duri kayu raksasa menghalangi jalan kita. Tajam sekali, seperti barisan tombak."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Alam di rawa ini mencoba melawan kutukan dengan menumbuhkan duri-duri ini, namun akhirnya mereka sendiri ikut terkorupsi dan menyerang siapa saja."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Aku akan menebas duri-duri ini. Bersiaplah untuk terbang rendah."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "pant... pant... menebas kayu sekeras besi ini benar-benar melelahkan."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Kau berhasil membuka jalan, Kesatria. Kita telah melewati lapisan luar rawa. Di depan, jalurnya akan semakin ekstrem."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 6,
+          "exp_gain": 1050,
+          "level_range": {
+            "min": 26,
+            "max": 30
+          },
+          "tale": {
+            "chapter_name": "Bab 2: Bertahan di Tengah Kelayuan",
+            "depth_title": "Lumpur dan Besi",
+            "lore_content": "Para petarung rawa menutupi tubuh dengan lumpur ajaib untuk menahan gigitan mutan."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Lihat jasad-jasad di dalam lumpur itu. Mereka adalah para petarung rawa purba."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Zirah mereka sangat tebal, dan tubuh mereka dilapisi lumpur kering."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Mereka menggunakan lumpur ajaib untuk menahan racun. Namun pertahanan terkuat pun memiliki batasnya."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Jasad zirah berat tadi bangkit menyerangku. Pukulan mereka sangat lambat, tapi sangat kuat."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Mereka adalah sisa ketangguhan masa lalu yang kini berjalan tanpa arah. Kau telah mengistirahatkan mereka."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 7,
+          "exp_gain": 1500,
+          "level_range": {
+            "min": 31,
+            "max": 35
+          },
+          "tale": {
+            "chapter_name": "Bab 2: Bertahan di Tengah Kelayuan",
+            "depth_title": "Pawai Para Raksasa",
+            "lore_content": "Hewan purba masif mulai kehilangan akal sehat karena terus menghirup miasma."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Dengarkan getaran tanah ini, Kesatria. Hewan-hewan purba berukuran masif sedang bergerak di dekat kita."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Miasma beracun ini telah membuat mereka kehilangan akal sehat."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Jangan menantang mereka secara langsung jika tidak perlu. Kulit mereka setebal batu karang."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Salah satu raksasa itu menyerang kita, terpaksa kuhancurkan kaki tumpuannya."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Pertarungan yang brutal. Ketahanan fisikmu adalah satu-satunya alasan kita bisa selamat dari injakan raksasa tadi."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 8,
+          "exp_gain": 2100,
+          "level_range": {
+            "min": 36,
+            "max": 40
+          },
+          "tale": {
+            "chapter_name": "Bab 2: Bertahan di Tengah Kelayuan",
+            "depth_title": "Tenggelamnya Kuil Penawar",
+            "lore_content": "Kuil penyembuhan terakhir yang akhirnya tertelan oleh rawa hisap hidup."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Sebuah kuil tua di depan kita... perlahan tenggelam ke dalam rawa hisap."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Kuil Penyembuhan terakhir. Di dalam sana dulu disimpan penawar racun murni."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Aku harus masuk sebelum seluruh bangunannya tertelan lumpur!"
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Hampir saja aku terjebak di dalam lumpur hisap tadi. Tapi aku berhasil mengambil sisa penawar ini."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Ini akan membantu paru-parumu bertahan dari miasma yang lebih pekat di kedalaman bawah tanah rawa."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 9,
+          "exp_gain": 2800,
+          "level_range": {
+            "min": 41,
+            "max": 45
+          },
+          "tale": {
+            "chapter_name": "Bab 2: Bertahan di Tengah Kelayuan",
+            "depth_title": "Paru-Paru Penuh Abu Beracun",
+            "lore_content": "Penderitaan para penyintas yang perlahan mati lemas karena udara terlalu pekat."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "cough... cough... udaranya... terlalu pekat. Pandanganku mulai mengabur."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "(Hinggap di bahu Hero, menyelimutinya dengan sayap emasku yang bersinar hangat) Tarik napasmu perlahan, Kesatria. Gunakan penawar dari kuil tadi. Aku akan menyaring udara di sekitarmu."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Terima kasih... dadaku mulai terasa sedikit lebih lega."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Musuh-musuh di tempat berkabut ini menyerang dari segala arah."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Mereka memanfaatkan kelemahan fisikmu. Tapi tekadmu menolak untuk menyerah pada rasa sakit."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 10,
+          "exp_gain": 3700,
+          "level_range": {
+            "min": 46,
+            "max": 50
+          },
+          "tale": {
+            "chapter_name": "Bab 2: Bertahan di Tengah Kelayuan",
+            "depth_title": "Sang Penjaga yang Membatu",
+            "lore_content": "Treant raksasa mengorbankan diri menjadi batu untuk menutup jalan masuk racun."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Lihat pohon besar berbentuk manusia di depan kita. Itu adalah Treant raksasa."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Dia telah mengeras seperti batu."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Dia mengorbankan dirinya menjadi batu untuk menyumbat celah racun agar tidak merusak desa di luar rawa. Tapi sekarang... dia telah terkorupsi."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Menghancurkan tubuh batunya terasa seperti menebas gunung."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Setidaknya pengorbanannya tidak lagi dinodai oleh kegelapan. Mari turun ke dalam urat nadi bumi."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 11,
+          "exp_gain": 4800,
+          "level_range": {
+            "min": 51,
+            "max": 55
+          },
+          "tale": {
+            "chapter_name": "Bab 3: Inti Bumi yang Berdarah",
+            "depth_title": "Urat Nadi Dunia yang Menghitam",
+            "lore_content": "Turun ke sistem akar raksasa yang kini memompa getah beracun berwarna hitam pekat."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Kita berada di bawah tanah sekarang. Akar-akar di sini memompa getah hitam kental."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Korupsi telah mencapai urat nadi dunia. Rawa ini mengalirkan racun langsung dari jantungnya."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Maka kita harus memotong pembuluh darah yang membusuk ini."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Sabetan pedangku memicu semburan getah asam yang membakar pelindung tanganku."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Tahan rasa sakitnya, Kesatria. Kulitmu mulai melepuh, tapi kita tidak boleh berhenti di sini."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 12,
+          "exp_gain": 6100,
+          "level_range": {
+            "min": 56,
+            "max": 60
+          },
+          "tale": {
+            "chapter_name": "Bab 3: Inti Bumi yang Berdarah",
+            "depth_title": "Asimilasi Daging dan Kayu",
+            "lore_content": "Pemandangan mengerikan di mana jasad petarung rawa menyatu dengan akar pohon yang hidup."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Pemandangan ini... sungguh mengerikan. Mayat-mayat prajurit menyatu dengan akar pohon hidup."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Kutukan rawa ini menolak membiarkan kematian menjadi akhir. Jasad mereka diasimilasi menjadi bagian dari ekosistem yang membusuk."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Mereka bergerak... mereka memohon padaku untuk mengakhiri hidup mereka."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Menebas jasad-jasad yang menyatu dengan pohon itu... rasanya sangat mengiris hati."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Kau memberikan kematian yang murni pada mereka, Kesatria. Itu adalah belas kasihan terbesar."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 13,
+          "exp_gain": 7600,
+          "level_range": {
+            "min": 61,
+            "max": 65
+          },
+          "tale": {
+            "chapter_name": "Bab 3: Inti Bumi yang Berdarah",
+            "depth_title": "Cangkang yang Tak Tembus Pedang",
+            "lore_content": "Evolusi monster dengan zirah kulit kayu sekeras baja, kebal serangan ringan."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Kulit monster di depan kita... terlihat seperti kombinasi besi dan kulit kayu tebal."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Evolusi pertahanan ekstrim The Void. Serangan ringan tidak akan mempan. Kau harus menggunakan seluruh kekuatan fisikmu untuk menghancurkan cangkang itu!"
+              },
+              {
+                "speaker": "Hero",
+                "text": "Aku akan memusatkan seluruh tenagaku pada satu titik pukulan."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "pant... pant... cangkangnya hancur, tapi tanganku bergetar hebat menahan benturan."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Tulangmu masih utuh, Kesatria. Daya tahan tubuhmu benar-benar luar biasa."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 14,
+          "exp_gain": 9400,
+          "level_range": {
+            "min": 66,
+            "max": 70
+          },
+          "tale": {
+            "chapter_name": "Bab 3: Inti Bumi yang Berdarah",
+            "depth_title": "Sungai Asam Pelebur Tulang",
+            "lore_content": "Lingkungan ekstrem di mana uapnya saja bisa melelehkan perlengkapan besi."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Sungai di depan kita... uap kuningnya saja bisa membuat besi zirahku meleleh perlahan."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Sungai asam murni. Jangan sampai kakimu menyentuh cairan itu, Kesatria. Kita harus melompati pilar-pilar batu yang rapuh ini."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Setiap pilar terlihat sangat licin dan terkikis asam..."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Hampir saja kehilangan keseimbangan. Uap asam ini membuat tenggorokanku sangat perih."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Gunakan penawar terakhirmu, Kesatria. Kita sudah berada di dasar terdalam."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 15,
+          "exp_gain": 11500,
+          "level_range": {
+            "min": 71,
+            "max": 75
+          },
+          "tale": {
+            "chapter_name": "Bab 3: Inti Bumi yang Berdarah",
+            "depth_title": "Detak Jantung di Dalam Lumpur",
+            "lore_content": "Mendengar suara detak jantung lambat yang menggetarkan dinding gua; Bos semakin dekat."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Dengar... ada suara detak jantung yang sangat lambat tapi menggetarkan dinding gua ini."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Thump... Thump... Itu adalah detak jantung sang penjaga rawa. Keberadaannya sudah sangat dekat."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Hawa di sekitar sini terasa sangat berat, seperti ada beban berton-ton menindih pundakku."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Dinding gua ini mulai retak seiring getaran detak jantung itu."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Gerbang menuju pusat rawa telah terbuka. Bersiaplah untuk pertempuran ketahanan yang sesungguhnya."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 16,
+          "exp_gain": 14000,
+          "level_range": {
+            "min": 76,
+            "max": 80
+          },
+          "tale": {
+            "chapter_name": "Bab 4: Penjaga Terakhir Alam",
+            "depth_title": "Rahim Kebusukan",
+            "lore_content": "Memasuki pusat rawa di mana The Void memusatkan seluruh energi racunnya."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Ini adalah pusatnya... lautan lumpur hitam beracun tempat semua aliran asam bermuara."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Rahim Kebusukan. Di sinilah energi racun dipusatkan untuk merusak seluruh negeri ini."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Aku bisa merasakan seluruh racun di rawa ini bereaksi terhadap kehadiranku."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Setiap luka di tubuhku mulai terasa sangat perih akibat udara asam di sini."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Aku akan menyalurkan sisa sihir emasku untuk melindungimu, Kesatria. Kita harus bertahan bersama!"
+              }
+            ]
+          }
+        },
+        {
+          "depth": 17,
+          "exp_gain": 17000,
+          "level_range": {
+            "min": 81,
+            "max": 85
+          },
+          "tale": {
+            "chapter_name": "Bab 4: Penjaga Terakhir Alam",
+            "depth_title": "Rintihan Sang Titan",
+            "lore_content": "Mendengar penderitaan makhluk purba penjaga rawa yang telah disiksa ratusan tahun."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Suara rintihan ini... terdengar sangat menyakitkan. Seperti suara makhluk purba yang disiksa tiada henti."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Itu adalah rintihan sang pelindung rawa. Dia telah menahan siksaan kutukan ini selama ratusan tahun."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Penderitaan yang sangat panjang... aku akan mengakhirinya hari ini."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Monster-monster yang menjaga jalannya sangat agresif, seolah-olah diperintahkan untuk melindungi rasa sakit sang Titan."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Sebab rasa sakit sang Titan adalah sumber energi utama The Void di rawa ini. Mari terus maju."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 18,
+          "exp_gain": 20500,
+          "level_range": {
+            "min": 86,
+            "max": 90
+          },
+          "tale": {
+            "chapter_name": "Bab 4: Penjaga Terakhir Alam",
+            "depth_title": "Beban The Rotting Behemoth",
+            "lore_content": "Sang penjaga menyerap seluruh racun ke tubuhnya untuk menyelamatkan kerajaan."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Di depan kita... raksasa purba yang tertutup duri dan daging membusuk. The Rotting Behemoth."
+              },
+              {
+                "speaker": "The Rotting Behemoth",
+                "text": "Aku... menahan racunnya... agar tidak... menyebar ke kerajaan... tapi aku... sudah tidak sanggup..."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Dia sengaja menyerap seluruh racun ke dalam tubuhnya untuk melindungi tanah ini? Sungguh pengorbanan yang agung."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "The Rotting Behemoth",
+                "text": "Arghhh! Hancurkan... cangkangku... biarkan aku... mati...!"
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Tubuhnya menolak untuk mati karena energi kutukan terus meregenerasi dagingnya yang membusuk. Kita harus memutus siklus regenerasi ini!"
+              }
+            ]
+          }
+        },
+        {
+          "depth": 19,
+          "exp_gain": 24500,
+          "level_range": {
+            "min": 91,
+            "max": 95
+          },
+          "tale": {
+            "chapter_name": "Bab 4: Penjaga Terakhir Alam",
+            "depth_title": "Kekuatan yang Menolak Mati",
+            "lore_content": "Kengerian wujud Behemoth yang dagingnya membusuk namun beregenerasi secara instan."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Rotting Behemoth",
+                "text": "Rasakan... kemarahan alam... yang telah terluka!"
+              },
+              {
+                "speaker": "Hero",
+                "text": "Dagingnya terus membusuk dan tumbuh kembali dalam sekejap! Bagaimana cara menghentikannya?!"
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Serang bagian inti di dadanya saat dia beregenerasi! Di situlah sumber kutukannya terikat!"
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "pant... pant... aku berhasil menusuk dadanya. Tapi serangannya tadi hampir membuat tulang rusukku patah."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Kau bertahan dari hantaman mematikan itu, Kesatria! Dia mulai melemah, satu tebasan terakhir!"
+              }
+            ]
+          }
+        },
+        {
+          "depth": 20,
+          "exp_gain": 30000,
+          "level_range": {
+            "min": 96,
+            "max": 100
+          },
+          "tale": {
+            "chapter_name": "Bab 4: Penjaga Terakhir Alam",
+            "depth_title": "Kelahiran Emerald Orb",
+            "lore_content": "Esensi kehidupan alam yang murni tersisa dan mengkristal menjadi Emerald Orb."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Bebaskan sang pelindung alam dari penderitaan abadinya, Kesatria."
+              },
+              {
+                "speaker": "The Rotting Behemoth",
+                "text": "Terima kasih... akhirnya... tanah ini... bisa bernapas kembali..."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Tugasmu menjaga alam ini telah selesai, Behemoth. Istirahatlah dengan tenang."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "The Rotting Behemoth",
+                "text": "Semoga... alam... selalu bersamamu..."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Tubuh raksasanya meluruh menjadi tanah subur dan ditumbuhi tanaman hijau yang segar dalam sekejap. Di tengah hamparan rumput baru itu, sebuah batu hijau berkilau terbentuk."
+              },
+              {
+                "speaker": "Hero",
+                "text": "(Mengambil batu kristal hijau murni yang melayang jatuh) Emerald Orb... rasanya hangat, penuh dengan energi kehidupan alam yang sangat murni."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dungeon_of_valor_and_ember",
+      "name": "Dungeon of Valor and Ember",
+      "theme": "Gua vulkanik dan reruntuhan benteng kuno. Penuh dengan monster tipe beast dan prajurit api yang menguji raw power dan pertahanan fisik.",
+      "recommended_class_id": "knight",
+      "boss_name": "The Ashen Warlord",
+      "reward_orb": "Crimson Orb",
+      "depths": [
+        {
+          "depth": 1,
+          "exp_gain": 50,
+          "level_range": {
+            "min": 1,
+            "max": 5
+          },
+          "tale": {
+            "chapter_name": "Bab 1: Memasuki Reruntuhan",
+            "depth_title": "Bara Api yang Memanggil",
+            "lore_content": "The Chronicler menceritakan masa lalu benteng ini sebelum hancur."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Kastil Obsidian. Dahulu, kepak sayap naga pun takkan sanggup menggetarkan dindingnya. Kini... lihatlah. Hanya abu."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Panasnya tidak biasa. Rasanya seperti ada sesuatu yang sengaja menungguku di dalam."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Bara apinya belum sepenuhnya mati. Tempat ini tahu kau datang."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Mereka menyerang seakan tidak kenal rasa sakit."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Sisa kemarahan yang tertinggal di tanah ini memang menolak padam. Melangkahlah, abu di bawah kakimu masih hangat."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 2,
+          "exp_gain": 120,
+          "level_range": {
+            "min": 6,
+            "max": 10
+          },
+          "tale": {
+            "chapter_name": "Bab 1: Memasuki Reruntuhan",
+            "depth_title": "Jejak Pasukan Penjaga",
+            "lore_content": "Ditemukannya sisa-sisa zirah para prajurit kerajaan."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Gema Prajurit",
+                "text": "Tahan posisimu! Demi mahkota... jangan mundur!"
+              },
+              {
+                "speaker": "Hero",
+                "text": "Suara-suara itu... sangat jelas. Di mana mereka?"
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Tidak ada siapa-siapa di sini. Hanya zirah-zirah tua yang merindukan tuannya."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Zirah-zirah itu langsung hancur menjadi debu saat kusentuh."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Jiwa mereka terikat pada kewajiban masa lalu. Setidaknya, pedangmu baru saja mengakhiri tugas panjang mereka."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 3,
+          "exp_gain": 250,
+          "level_range": {
+            "min": 11,
+            "max": 15
+          },
+          "tale": {
+            "chapter_name": "Bab 1: Memasuki Reruntuhan",
+            "depth_title": "Runtuhnya Tembok Obsidian",
+            "lore_content": "Kisah hari pertama benteng ini diserang oleh sesuatu yang tak kasat mata."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Tembok sekokoh ini hancur berantakan dari dalam. Ironis, bukan?"
+              },
+              {
+                "speaker": "Hero",
+                "text": "Pengkhianatan? Atau mereka kehilangan akal sehat?"
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Kegelapan tidak melulu mendobrak pintu depan. Terkadang, ia hanya membisikkan keputusasaan ke telinga yang rapuh."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Suhu di sekitar reruntuhan ini mendadak turun. Menyeramkan."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Itulah tanda kedatangan The Void. Dingin, hampa, dan tidak meninggalkan apa pun."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 4,
+          "exp_gain": 450,
+          "level_range": {
+            "min": 16,
+            "max": 20
+          },
+          "tale": {
+            "chapter_name": "Bab 1: Memasuki Reruntuhan",
+            "depth_title": "Raungan dari Kawah Bawah",
+            "lore_content": "The Chronicler menjelaskan asal-usul monster buas yang kini menghuni tempat ini."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Udaranya mulai membakar tenggorokan... cough... ada bau belerang yang sangat menyengat."
+              },
+              {
+                "speaker": "Raungan Monster",
+                "text": "Gggrrr... ROOOAAAR!"
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Binatang kawah telah mencium aroma darah segar. Mereka lapar."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Kulitnya sekeras batu lava, tapi akhirnya jatuh juga."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Itu baru permulaan. Raungan kematiannya pasti terdengar hingga ke dasar terdalam."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 5,
+          "exp_gain": 700,
+          "level_range": {
+            "min": 21,
+            "max": 25
+          },
+          "tale": {
+            "chapter_name": "Bab 1: Memasuki Reruntuhan",
+            "depth_title": "Abu yang Tak Pernah Padam",
+            "lore_content": "Menyadari bahwa api di benteng ini menolak untuk mati, menahan kutukan."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Magma di bawah sana... warnanya kebiruan? Ini tidak masuk akal."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Itu api yang memakan jiwamu, bukan jasadmu. Kutukan di tempat ini menolak mati."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Aku tidak punya pilihan selain melewatinya."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Kau selamat dari kawah atas. Napasmu terdengar sangat terengah-engah."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Aku baik-baik saja. Tapi jalan ke bawah... terlihat seperti mulut monster yang terbuka lebar."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Tetaplah waspada, kita memasuki wilayah terdalam."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 6,
+          "exp_gain": 1050,
+          "level_range": {
+            "min": 26,
+            "max": 30
+          },
+          "tale": {
+            "chapter_name": "Bab 2: Invasi Kegelapan",
+            "depth_title": "Senjata Patah di Lautan Magma",
+            "lore_content": "Kisah tentang para Blacksmith yang bekerja siang malam membuat senjata penangkal bayangan."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Selamat datang di ruang tempa terakhir kastil ini. Di tempat ini, para pandai besi terbaik mati lemas oleh asap mereka sendiri."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Mereka bertarung dengan waktu?"
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Menempa siang dan malam, berharap bisa menciptakan zirah yang kebal terhadap bayangan. Tapi semua usaha mereka sia-sia."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Semua pedang di rak ini patah. Logamnya meleleh seperti lilin."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Karena tidak ada logam di dunia ini yang sanggup menahan rasa takut, Kesatria."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 7,
+          "exp_gain": 1500,
+          "level_range": {
+            "min": 31,
+            "max": 35
+          },
+          "tale": {
+            "chapter_name": "Bab 2: Invasi Kegelapan",
+            "depth_title": "Sumpah Sang Kesatria Merah",
+            "lore_content": "Memperkenalkan sosok Jenderal yang memimpin pertahanan."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Gema Jenderal Merah",
+                "text": "Selama jantungku masih berdetak, jembatan ini tidak akan pernah jatuh!"
+              },
+              {
+                "speaker": "Hero",
+                "text": "Suara ini... begitu berat, penuh dengan amarah."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Itulah Jenderal Merah. Pria yang berdiri di garis depan saat semua orang memilih untuk lari. Aku mengingat keberaniannya."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Aku bisa merasakan getaran tekadnya. Udara di jembatan ini masih terasa hangat."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Puing-puing emosi yang kuat memang sulit terhapus oleh waktu, Kesatria."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 8,
+          "exp_gain": 2100,
+          "level_range": {
+            "min": 36,
+            "max": 40
+          },
+          "tale": {
+            "chapter_name": "Bab 2: Invasi Kegelapan",
+            "depth_title": "Ketika Langit Menjadi Gelap",
+            "lore_content": "Deskripsi mengerikan dari The Chronicler saat The Void mulai menelan langit benteng."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Tunggu... kenapa semua suara gemuruh magma mendadak hilang?"
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Saat kegelapan itu datang, ia tidak membawa gemuruh. Hanya keheningan absolut yang mencekik langit."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Rasanya seperti ada tangan tak kasat mata yang meremas jantungku."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Kau berhasil bertahan, Kesatria. Tarik napasmu dalam-dalam."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Aku sempat berpikir... duniaku akan lenyap di sini, lagi."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Itulah ilusi kehampaan. Jangan biarkan ia merayap lebih jauh ke dalam pikiranmu."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 9,
+          "exp_gain": 2800,
+          "level_range": {
+            "min": 41,
+            "max": 45
+          },
+          "tale": {
+            "chapter_name": "Bab 2: Invasi Kegelapan",
+            "depth_title": "Keputusasaan di Ruang Barikade",
+            "lore_content": "Jeritan dan ketakutan prajurit biasa yang menghadapi entitas tanpa wujud."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Banyak bekas kuku di pintu besi ini. Mereka mencoba mendobraknya?"
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Bukan dari luar, Kesatria. Para prajurit mengunci diri di dalam, lalu saling menyerang karena paranoia."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Mengerikan... terjebak bersama ketakutanmu sendiri."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Mereka yang menghalangi jalan tadi... wujudnya sudah bukan manusia lagi."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Mereka hanya cangkang kosong yang digerakkan oleh rasa benci. Kau telah mengakhirinya."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 10,
+          "exp_gain": 3700,
+          "level_range": {
+            "min": 46,
+            "max": 50
+          },
+          "tale": {
+            "chapter_name": "Bab 2: Invasi Kegelapan",
+            "depth_title": "Kejatuhan Sang Jenderal",
+            "lore_content": "Kekalahan sang Jenderal yang heroik namun tragis di tengah jembatan lava."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Di ujung jembatan ini, sang Jenderal akhirnya berlutut. Tubuhnya ditarik ke dalam aliran magma hitam."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Dia berjuang sendirian sampai akhir?"
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Ya. Dan tempat dia terjatuh kini menjadi sarang dari sesuatu yang menolak mati."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Jembatan ini bergetar hebat. Lava di bawah mulai meluap!"
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Kita harus segera pergi, Kesatria. Pemilik tempat ini tahu ada penyusup yang melintasi wilayahnya."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 11,
+          "exp_gain": 4800,
+          "level_range": {
+            "min": 51,
+            "max": 55
+          },
+          "tale": {
+            "chapter_name": "Bab 3: Korupsi Api",
+            "depth_title": "Api yang Berubah Hitam",
+            "lore_content": "The Chronicler menjelaskan bagaimana The Void mencemari elemen api di gunung tersebut."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Magmanya... benar-benar hitam sekarang. Dan baunya seperti pembusukan."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Korupsi di tempat ini telah mencapai puncaknya. Elemen murni gunung ini telah tunduk sepenuhnya pada The Void."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Dingin sekali... aneh rasanya menggigil di dekat aliran lava."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Itulah dingin yang meracuni jiwa, Kesatria. Jangan biarkan kehangatan tubuhmu memudar."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 12,
+          "exp_gain": 6100,
+          "level_range": {
+            "min": 56,
+            "max": 60
+          },
+          "tale": {
+            "chapter_name": "Bab 3: Korupsi Api",
+            "depth_title": "Monster yang Lahir dari Kepanikan",
+            "lore_content": "Mutasi para prajurit menjadi monster beast karena energi gelap."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Suara Berbisik",
+                "text": "Tolong... di mana kepalaku...? Dingin..."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Siapa di sana?! Tunjukkan dirimu!"
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Jangan dengarkan, Kesatria. Itu bukan manusia lagi. Hanya sisa-sisa kepanikan yang mewujud menjadi monster."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Mereka menangis saat aku menebasnya..."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Pedangmu adalah belas kasihan terbaik yang bisa mereka terima hari ini."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 13,
+          "exp_gain": 7600,
+          "level_range": {
+            "min": 61,
+            "max": 65
+          },
+          "tale": {
+            "chapter_name": "Bab 3: Korupsi Api",
+            "depth_title": "Pesan Terakhir di Dinding Hangus",
+            "lore_content": "Sebuah catatan darah dari prajurit yang meminta maaf pada keluarganya."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Ada coretan di batu ini... 'Maaf, ayah tidak bisa pulang.'"
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Pesan yang ditulis dengan jemari yang terbakar. Dia tahu dia tidak akan pernah melihat putrinya lagi."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Setidaknya aku akan memastikan kematiannya tidak berakhir sia-sia."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Kata-kata yang berani, Kesatria. Kuharap tekadmu bertahan hingga ke ujung kawah."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Aku tidak akan membiarkan tempat ini merenggut sisa hidupku."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 14,
+          "exp_gain": 9400,
+          "level_range": {
+            "min": 66,
+            "max": 70
+          },
+          "tale": {
+            "chapter_name": "Bab 3: Korupsi Api",
+            "depth_title": "Kebangkitan Pasukan Abu",
+            "lore_content": "Prajurit yang telah mati dihidupkan kembali sebagai boneka The Void."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Tumpukan abu itu... bergerak sendiri. Seperti ada yang mengaduknya dari dalam."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Mereka kembali bangkit. Jasad-jasad hangus yang menolak dilupakan, digerakkan oleh benang tak terlihat."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Bahkan kematian pun tidak memberi mereka ketenangan."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Mereka hancur menjadi debu lagi."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Dan debu itu tidak akan bangkit lagi. Kau telah memutus benang yang mengikat mereka, Kesatria."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 15,
+          "exp_gain": 11500,
+          "level_range": {
+            "min": 71,
+            "max": 75
+          },
+          "tale": {
+            "chapter_name": "Bab 3: Korupsi Api",
+            "depth_title": "Lorong Keputusasaan",
+            "lore_content": "Jalan turun menuju inti gunung yang kini dipenuhi aura kematian pekat."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Satu jalan terakhir menuju inti gunung. Lorong ini dikenal sebagai jalan tanpa kepulangan."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Aku bisa merasakan tekanan yang luar biasa di kepalaku."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Kematian begitu dekat di sini, Kesatria. Tetap fokus, atau pikiranmu akan hancur sebelum sempat bertarung."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Aku berhasil lolos... tapi napas dan dadaku rasanya sesak sekali."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Kita sudah di gerbang kuil terdalam. Di balik pintu besar itu, takdirmu menanti."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 16,
+          "exp_gain": 14000,
+          "level_range": {
+            "min": 76,
+            "max": 80
+          },
+          "tale": {
+            "chapter_name": "Bab 4: Pusat Kawah & Sang Penjaga",
+            "depth_title": "Jantung Gunung Berapi",
+            "lore_content": "Penjelasan tentang ruang magma tempat esensi kerajaan dulu disimpan."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Kuil ini... melayang di atas magma. Bagaimana mungkin?"
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Sihir kuno kerajaan. Tempat ini dulu menyimpan esensi kehidupan sebelum dikotori oleh kegelapan."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Udaranya begitu pekat... sulit bahkan untuk sekadar berdiri tegak."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Istirahatlah sejenak, Kesatria. Lawanmu berikutnya tidak akan memberimu waktu untuk menarik napas."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 17,
+          "exp_gain": 17000,
+          "level_range": {
+            "min": 81,
+            "max": 85
+          },
+          "tale": {
+            "chapter_name": "Bab 4: Pusat Kawah & Sang Penjaga",
+            "depth_title": "Gema Peperangan yang Terlupakan",
+            "lore_content": "Mendengar ilusi suara peperangan masa lalu yang terjebak dalam ruang waktu."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Suara Berisik",
+                "text": "*Teriakan perang, benturan baja, tangisan ketakutan yang bersahut-sahutan*"
+              },
+              {
+                "speaker": "Hero",
+                "text": "Suara ini... rasanya seperti berada langsung di tengah medan pertempuran!"
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Waktu telah kehilangan maknanya di sini. Peperangan ratusan tahun lalu masih berlangsung di dalam ruang hampa ini."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Keheningan ini... hampir terasa menyakitkan setelah semua teriakan bising tadi."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Karena kau baru saja membungkam paksa sisa peperangan itu dengan langkah kakimu, Kesatria."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 18,
+          "exp_gain": 20500,
+          "level_range": {
+            "min": 86,
+            "max": 90
+          },
+          "tale": {
+            "chapter_name": "Bab 4: Pusat Kawah & Sang Penjaga",
+            "depth_title": "Kegilaan The Ashen Warlord",
+            "lore_content": "Sang Jenderal dari Depth 7 yang kini dibangkitkan oleh The Void menjadi Bos penjaga."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Dia di sana, Kesatria. Berdiri di atas altar hangus."
+              },
+              {
+                "speaker": "The Ashen Warlord",
+                "text": "...Langkah... siapa itu...? Mengapa... api ini... begitu dingin...?"
+              },
+              {
+                "speaker": "Hero",
+                "text": "Jenderal Merah... jadi itu yang tersisa darimu?"
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "The Ashen Warlord",
+                "text": "AAARRGHHH! Pergi... dari... kepalaku!"
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Korupsi *The Void* mencengkeram jiwanya kembali. Jangan lengah, dia akan menyerang lebih membabi butu!"
+              }
+            ]
+          }
+        },
+        {
+          "depth": 19,
+          "exp_gain": 24500,
+          "level_range": {
+            "min": 91,
+            "max": 95
+          },
+          "tale": {
+            "chapter_name": "Bab 4: Pusat Kawah & Sang Penjaga",
+            "depth_title": "Percikan Harapan Terakhir",
+            "lore_content": "Kesadaran The Ashen Warlord yang meronta-ronta di dalam kendali The Void, menunggu untuk dibebaskan."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Ashen Warlord",
+                "text": "Anak muda... pedangmu... tusuk jantungku... kumohon..."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Dia masih di dalam sana! Dia sedang melawan kendalinya sendiri!"
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Ini kesempatan terakhirmu, Kesatria. Bantu dia mengakhiri penderitaan ini dengan senjatamu!"
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "The Ashen Warlord",
+                "text": "Terima kasih... aku... bisa melihat... langit merah yang asli lagi..."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Satu pukulan lagi, Jenderal. Kau akan bebas sepenuhnya."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 20,
+          "exp_gain": 30000,
+          "level_range": {
+            "min": 96,
+            "max": 100
+          },
+          "tale": {
+            "chapter_name": "Bab 4: Pusat Kawah & Sang Penjaga",
+            "depth_title": "Lahirnya Crimson Orb",
+            "lore_content": "Cerita penutup dari pengorbanan jiwa sang Warlord yang mengkristal menjadi Crimson Orb setelah dikalahkan."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Tidak ada jalan mundur. Berikan dia kematian seorang kesatria."
+              },
+              {
+                "speaker": "The Ashen Warlord",
+                "text": "Datanglah! Biarkan... pertarungan terakhir ini... membakar habis sisaku!"
+              },
+              {
+                "speaker": "Hero",
+                "text": "Terima kasih atas jalannya, Jenderal. Selamat jalan."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "The Ashen Warlord",
+                "text": "Kerajaan kita... tidak akan sepenuhnya runtuh... selama... masih ada orang sepertimu..."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Lihatlah. Jasadnya meluruh menjadi abu emas yang tenang. Dan di tengah sisa-sisanya, sebuah kristal berkilau."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Crimson Orb... terasa sangat hangat. Seperti tekadnya yang membara."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dungeon_of_whispers_and_shadows",
+      "name": "Dungeon of Whispers and Shadows",
+      "theme": "Hutan mati yang selalu diselimuti kabut dan jurang gelap. Dihuni oleh assassin, monster beracun, dan roh-roh penasaran. Menguji kecepatan dan kelincahan (Evasion/AGI).",
+      "recommended_class_id": "wanderer",
+      "boss_name": "The Phantom Stalker",
+      "reward_orb": "Obsidian Orb",
+      "depths": [
+        {
+          "depth": 1,
+          "exp_gain": 50,
+          "level_range": {
+            "min": 1,
+            "max": 5
+          },
+          "tale": {
+            "chapter_name": "Bab 1: Hutan yang Terlupakan",
+            "depth_title": "Kanopi Zamrud yang Memudar",
+            "lore_content": "Masa ketika daun-daun di hutan ini bersinar di bawah sinar bulan, sebelum kabut menelan segalanya."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "hoot... Dahulu, daun-daun di hutan suci ini bersinar seindah zamrud di bawah cahaya bulan. Kini... semuanya tertutup kabut hitam."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Shadows... bayangan di tempat ini terasa jauh lebih pekat dan seolah bergerak sendiri."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Hutan ini adalah rumah bagi Ordo Pelindung Bayangan. Berhati-hatilah, Kesatria. Tempat ini telah melupakan tamunya."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Tanaman merambat di sini mencoba melilit kakiku. Rasanya seperti mereka memiliki rasa benci."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Alam telah terkorupsi. Hutan yang dulunya melindungi, kini berbalik memburu."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 2,
+          "exp_gain": 120,
+          "level_range": {
+            "min": 6,
+            "max": 10
+          },
+          "tale": {
+            "chapter_name": "Bab 1: Hutan yang Terlupakan",
+            "depth_title": "Jejak Kaki Tanpa Suara",
+            "lore_content": "Pengenalan tentang ordo pelindung bayangan kerajaan; prajurit elit yang bergerak tanpa suara."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Lihat goresan tipis di batang pohon ini. Teknik menyelinap tingkat tinggi. Para pelindung bayangan pernah berlatih di sini."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Tidak ada jejak kaki di tanah, tapi aku bisa merasakan keberadaan mereka di atas dahan."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Mereka bergerak tanpa suara, seperti angin malam. Bersiaplah untuk serangan dari kegelapan."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Mereka menyerang dari balik bayangan pohon. Gerakan mereka sangat cepat."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Untungnya refleksmu lebih cepat, Kesatria. Tapi ingat, ini baru gerbang luar wilayah mereka."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 3,
+          "exp_gain": 250,
+          "level_range": {
+            "min": 11,
+            "max": 15
+          },
+          "tale": {
+            "chapter_name": "Bab 1: Hutan yang Terlupakan",
+            "depth_title": "Nyanyian Burung Hantu yang Terdiam",
+            "lore_content": "Kisah sedih saat hewan-hewan dan roh penjaga hutan mulai mati satu per satu."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "(Tertunduk lesu, bulu emasnya sedikit merapat) Sunyi sekali... Tidak ada suara kepakan sayap burung hantu penjaga ataupun nyanyian roh hutan."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Mereka semua telah mati, Chronicler?"
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Ya. Kegelapan ini tidak menyisakan ruang bagi kehidupan yang murni. Mari kita tuntaskan ini."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Aku berhasil membersihkan sisa-sisa makhluk terinfeksi di dahan atas."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Terima kasih, Kesatria. Setidaknya kesunyian di hutan ini sekarang terasa lebih damai."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 4,
+          "exp_gain": 450,
+          "level_range": {
+            "min": 16,
+            "max": 20
+          },
+          "tale": {
+            "chapter_name": "Bab 1: Hutan yang Terlupakan",
+            "depth_title": "Kabut yang Mengaburkan Arah",
+            "lore_content": "The Void mengubah embun pagi menjadi kabut hitam yang membuat pemburu tersesat di rumah sendiri."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Kabut ini... terlalu tebal. Aku bahkan tidak bisa melihat ujung pedangku sendiri."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "(Mata bulatnya bersinar keemasan, memancarkan cahaya hangat) Tetap di dekatku, Kesatria. Ikuti pancaran mataku. Kabut ini dirancang untuk membuatmu tersesat selamanya."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Hawa kabut ini terasa dingin dan membuat kepalaku sedikit pusing."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Kita berhasil menembus zona kabut tebal tanpa terpisah."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Ikatan kita jauh lebih kuat daripada sihir ilusi apa pun di hutan ini. Tapi lihat ke depan... ada sesuatu yang mengawasi."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 5,
+          "exp_gain": 700,
+          "level_range": {
+            "min": 21,
+            "max": 25
+          },
+          "tale": {
+            "chapter_name": "Bab 1: Hutan yang Terlupakan",
+            "depth_title": "Mata di Balik Rimbunan Gelap",
+            "lore_content": "Satwa liar mulai bermutasi menjadi monster buas dengan mata menyala."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Banyak sekali mata merah menyala di balik semak-semak itu."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Satwa liar yang tersisa telah bermutasi menjadi monster buas. Mereka tidak lagi mengenal rasa takut ataupun kenyang."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Maka mereka hanya mengenal kematian. Majulah!"
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Pertarungan yang bersih, Kesatria. Kau bergerak secepat angin."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Aku harus cepat. Jika aku ragu sedetik saja, taring mereka sudah merobek leherku."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 6,
+          "exp_gain": 1050,
+          "level_range": {
+            "min": 26,
+            "max": 30
+          },
+          "tale": {
+            "chapter_name": "Bab 2: Paranoia dan Pengkhianatan",
+            "depth_title": "Racun di Ujung Belati",
+            "lore_content": "Para pemburu mulai menggunakan racun terlarang dan ilmu hitam untuk melawan anomali hutan."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Perhatikan botol-botol kaca yang pecah di tanah ini. Itu adalah racun terlarang milik para assassin."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Mereka menggunakan racun terhadap musuh mereka?"
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Bukan, Kesatria. Saat keputusasaan melanda, mereka mulai mengoleskan racun itu pada belati mereka sendiri untuk saling membantai."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Zirahku terkena cipratan racun dari perangkap belati tadi. Untungnya tidak menembus kulit."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Sangat berbahaya. Satu goresan kecil saja bisa melumpuhkan jantungmu. Kita harus lebih waspada."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 7,
+          "exp_gain": 1500,
+          "level_range": {
+            "min": 31,
+            "max": 35
+          },
+          "tale": {
+            "chapter_name": "Bab 2: Paranoia dan Pengkhianatan",
+            "depth_title": "Bisikan yang Membelah Pikiran",
+            "lore_content": "The Void mulai membisikkan kebohongan, memicu benih kecurigaan di antara para assassin."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Suara Berbisik",
+                "text": "Temanmu itu... dia akan meninggalkanmu... burung hantu itu menyembunyikan sesuatu..."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Berisik! Suara-suara ini tidak mau berhenti berbisik di telingaku!"
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "hoot! Jangan dengarkan mereka, Kesatria! Itu adalah bisikan The Void yang memicu benih kecurigaan di antara kita."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "(Menghela napas panjang, menatap The Chronicler) Aku tahu kau tidak akan pernah mengkhianatiku, pemanduku."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Dan aku tahu tekadmu tidak akan pernah goyah oleh kebohongan murahan mereka. Hubungan kita melampaui kegelapan ini."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 8,
+          "exp_gain": 2100,
+          "level_range": {
+            "min": 36,
+            "max": 40
+          },
+          "tale": {
+            "chapter_name": "Bab 2: Paranoia dan Pengkhianatan",
+            "depth_title": "Ilusi Tarian Daun Gugur",
+            "lore_content": "Halusinasi massal akibat spora beracun; kawan terlihat seperti monster."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Tunggu... kenapa daun-daun yang gugur ini berubah wujud menjadi prajurit yang siap menyerangku?"
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Spora beracun dari jamur bawah tanah mulai memengaruhi matamu. Kawan terlihat seperti monster, dan monster terlihat seperti kawan!"
+              },
+              {
+                "speaker": "Hero",
+                "text": "Aku akan memejamkan mata dan mengandalkan indra pendengaranku."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Pedangku berhasil menebas monster asli di balik ilusi daun gugur tadi."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Luar biasa, Kesatria. Mengandalkan insting di tengah kebutaan adalah tanda seorang petarung sejati."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 9,
+          "exp_gain": 2800,
+          "level_range": {
+            "min": 41,
+            "max": 45
+          },
+          "tale": {
+            "chapter_name": "Bab 2: Paranoia dan Pengkhianatan",
+            "depth_title": "Pohon Ek Tempat Menggantung Dosa",
+            "lore_content": "Penemuan pelindung bayangan yang saling mengeksekusi saudara sendiri karena paranoia."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Pohon ek raksasa di depan kita... apa yang tergantung di dahan-dahannya?"
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Jasad para pelindung bayangan. Mereka saling mengeksekusi saudara mereka sendiri karena dituduh berkhianat."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Tragis sekali. Mereka menghancurkan diri mereka sendiri sebelum musuh sempat menyerang."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Aku telah memotong tali-tali gantungan itu dan memakamkan jasad mereka dengan layak."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Kau membawa kehormatan kembali ke tempat yang penuh dosa ini. Semoga jiwa mereka kini tenang."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 10,
+          "exp_gain": 3700,
+          "level_range": {
+            "min": 46,
+            "max": 50
+          },
+          "tale": {
+            "chapter_name": "Bab 2: Paranoia dan Pengkhianatan",
+            "depth_title": "Putusnya Tali Persaudaraan",
+            "lore_content": "Pertumpahan darah terakhir mengubah hutan pelindung menjadi kuburan massal."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Di area lapang ini, pertumpahan darah terakhir di antara sesama assassin terjadi. Tidak ada yang selamat."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Hutan pelindung ini berubah menjadi kuburan massal karena paranoia."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "And energi benci dari kematian mereka mengundang sesuatu yang merayap dari bawah tanah. Bersiaplah, Kesatria!"
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Roh-roh amarah yang bangkit dari tanah lapang ini akhirnya kembali tertidur."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Kita telah menyelesaikan kekacauan di permukaan hutan. Sekarang, kita harus turun ke jurang di bawah akar pohon raksasa."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 11,
+          "exp_gain": 4800,
+          "level_range": {
+            "min": 51,
+            "max": 55
+          },
+          "tale": {
+            "chapter_name": "Bab 3: Turun ke Jurang Keputusasaan",
+            "depth_title": "Jurang Tanpa Dasar",
+            "lore_content": "Jalan setapak sempit menuju celah bumi yang gelap; satu langkah salah berarti mati."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Jalan setapak ini sangat sempit, dan di bawahnya... hanya ada kegelapan mutlak."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Ini adalah Abyss, jurang terdalam di bawah akar hutan. Satu langkah yang salah, dan kau akan jatuh selamanya."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Aku akan merayap di dinding batu. Tetaplah terbang dekat denganku."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Kakiku akhirnya menyentuh dasar jurang. Udaranya sangat lembap dan berbau darah."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Kita telah sampai di sistem akar terdalam. Hati-hati, tanah di bawah kita terasa basah."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 12,
+          "exp_gain": 6100,
+          "level_range": {
+            "min": 56,
+            "max": 60
+          },
+          "tale": {
+            "chapter_name": "Bab 3: Turun ke Jurang Keputusasaan",
+            "depth_title": "Akar Berdarah yang Menjalar",
+            "lore_content": "Akar-akar pohon raksasa yang kini hidup dan menghisap darah dari mayat."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Akar-akar pohon raksasa ini... mereka berdenyut? Dan ada cairan merah yang menetes."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Akar-akar ini menghisap sisa darah dari mayat-mayat para assassin yang jatuh dari atas. Mereka telah berubah menjadi parasit haus darah."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Aku akan memotong setiap akar yang mencoba mendekati kita."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Akar-akar itu menjerit kesakitan saat kupotong dan mengeluarkan asap hitam."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Korupsi telah menyebar hingga ke pembuluh darah alam di tempat ini. Kita harus segera mencari sumbernya."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 13,
+          "exp_gain": 7600,
+          "level_range": {
+            "min": 61,
+            "max": 65
+          },
+          "tale": {
+            "chapter_name": "Bab 3: Turun ke Jurang Keputusasaan",
+            "depth_title": "Gema Tangisan di Bawah Tanah",
+            "lore_content": "Roh pelindung bayangan terjebak; jiwa mereka diikat oleh The Void."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Suara tangisan ini... menggema dari setiap celah akar batu."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Itu adalah jiwa-jiwa para assassin yang terjebak. Jiwa mereka diikat oleh kekuatan The Void agar tidak bisa menuju akhirat."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Aku tidak bisa membiarkan mereka menderita seperti ini. Tunjukkan ke mana arah mereka."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Kekuatan kegelapan yang mengikat jiwa mereka telah kuhancurkan dengan pedangku."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Gema tangisan itu kini berubah menjadi embusan angin kebebasan. Pekerjaan yang mulia, Kesatria."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 14,
+          "exp_gain": 9400,
+          "level_range": {
+            "min": 66,
+            "max": 70
+          },
+          "tale": {
+            "chapter_name": "Bab 3: Turun ke Jurang Keputusasaan",
+            "depth_title": "Bunga Kematian yang Mekar",
+            "lore_content": "Flora mematikan yang menyemburkan gas pelumpuh saraf."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Awas, Kesatria! Jangan menghirup gas dari bunga ungu di depanmu. Itu adalah flora mematikan yang menyemburkan gas pelumpuh saraf."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Mereka mekar dengan sangat cepat di sekeliling kita! Aku harus bergerak lincah menghindari semburannya."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Gunakan kelincahanmu! Tebas tangkainya sebelum kelopak bunganya terbuka penuh!"
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "pant... pant... Gerakan cepat tadi benar-benar menguras tenagaku."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Tapi refleks dan kecepatanmu luar biasa, Kesatria. Tidak ada satu pun spora beracun yang berhasil menyentuh kulitmu."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 15,
+          "exp_gain": 11500,
+          "level_range": {
+            "min": 71,
+            "max": 75
+          },
+          "tale": {
+            "chapter_name": "Bab 3: Turun ke Jurang Keputusasaan",
+            "depth_title": "Jembatan Akar Rapuh",
+            "lore_content": "Ujian keseimbangan di atas jurang gelap, makhluk bayangan siap menarik siapa saja yang lengah."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Satu-satunya jalan menyeberangi jurang ini adalah jembatan dari jalinan akar yang mulai membusuk."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "And di bawah sana, makhluk-makhluk bayangan sudah bersiap untuk menarik kakimu jika kau kehilangan keseimbangan."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Fokus pada langkah kaki... aku akan menyeberang dengan cepat."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Jembatannya runtuh tepat setelah aku melompat ke sisi seberang!"
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "hoot! Itu sangat dekat. Tapi kita berhasil lolos dari jebakan maut mereka. Di depan adalah sarang utama."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 16,
+          "exp_gain": 14000,
+          "level_range": {
+            "min": 76,
+            "max": 80
+          },
+          "tale": {
+            "chapter_name": "Bab 4: Sarang Sang Pengintai",
+            "depth_title": "Sarang Sang Laba-laba Bayangan",
+            "lore_content": "Memasuki pusat episentrum kabut, tempat di mana cahaya sama sekali tidak bisa masuk."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "Hero",
+                "text": "Gelap sekali... Cahaya lilin pun seolah-olah ditelan oleh kegelapan di ruangan ini."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Kita telah sampai di pusat episentrum kabut paranoia. Tempat di mana cahaya matahari tidak pernah diizinkan masuk."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Aku bisa merasakan jaring-jaring halus menempel di wajahku. Sesuatu sedang merayap di atas kita."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Laba-laba bayangan itu mati, namun jaring mereka membuat gerakanku sedikit lambat."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Gunakan kehangatan energi pedangmu untuk membakar sisa jaringnya. Kita harus tetap bergerak cepat."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 17,
+          "exp_gain": 17000,
+          "level_range": {
+            "min": 81,
+            "max": 85
+          },
+          "tale": {
+            "chapter_name": "Bab 4: Sarang Sang Pengintai",
+            "depth_title": "Siluet yang Menari dalam Gelap",
+            "lore_content": "Menghadapi serangan beruntun dari entitas super cepat yang sulit ditangkap mata."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Awas, Kesatria! Ada serangan beruntun dari arah samping!"
+              },
+              {
+                "speaker": "Hero",
+                "text": "Aku tidak bisa melihat wujud mereka... hanya ada siluet hitam yang bergerak sangat cepat!"
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Andalkan insting dan pendengaranmu. Kecepatan mereka luar biasa, jangan biarkan matamu menipu gerakanmu!"
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Aku berhasil menebas siluet itu tepat saat mereka mencoba menyerang leherku."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Refleksmu telah melampaui batas manusia biasa, Kesatria. Kau menari bersama bayangan mereka dan menang."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 18,
+          "exp_gain": 20500,
+          "level_range": {
+            "min": 86,
+            "max": 90
+          },
+          "tale": {
+            "chapter_name": "Bab 4: Sarang Sang Pengintai",
+            "depth_title": "Kekosongan Hati The Phantom Stalker",
+            "lore_content": "Pemimpin assassin menyerahkan jiwanya pada The Void agar anak buahnya diampuni, namun ia ditipu."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Sosok di depan altar batu itu... dia adalah pemimpin para assassin. The Phantom Stalker."
+              },
+              {
+                "speaker": "The Phantom Stalker",
+                "text": "Aku... menyerahkan jiwaku... agar anak buahku diampuni... tapi kegelapan ini... menipuku..."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Dia mengorbankan dirinya demi menyelamatkan ordonya, namun kegelapan justru membuat mereka saling membantai."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "The Phantom Stalker",
+                "text": "Rasa bersalah ini... terus mencabik-cabik dadaku... arghhh!"
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Pikiran dan jiwanya telah dihancurkan oleh penyesalan yang mendalam. Kegelapan memanfaatkan celah itu untuk mengendalikannya."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 19,
+          "exp_gain": 24500,
+          "level_range": {
+            "min": 91,
+            "max": 95
+          },
+          "tale": {
+            "chapter_name": "Bab 4: Sarang Sang Pengintai",
+            "depth_title": "Tatapan Kosong Sang Pembunuh",
+            "lore_content": "Wujud mutasi The Phantom Stalker yang kini hanya memiliki satu insting dasar: membunuh."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Phantom Stalker",
+                "text": "Tidak ada lagi persaudaraan... tidak ada lagi pelindung... yang tersisa hanyalah... pembantaian!"
+              },
+              {
+                "speaker": "Hero",
+                "text": "Wujudnya berubah menjadi monster bayangan berkaki banyak dengan belati hitam di setiap tangannya!"
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Dia bergerak dengan kecepatan mutlak! Jangan biarkan dia berada di belakangmu, Kesatria!"
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "The Phantom Stalker",
+                "text": "Kecepatanmu... sungguh... luar biasa... ksatria..."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Dia terluka parah, tapi dia masih mencoba menyerang dengan insting pembunuhnya."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Satu tebasan terakhir untuk membebaskan jiwa sang pemimpin dari penderitaan ini!"
+              }
+            ]
+          }
+        },
+        {
+          "depth": 20,
+          "exp_gain": 30000,
+          "level_range": {
+            "min": 96,
+            "max": 100
+          },
+          "tale": {
+            "chapter_name": "Bab 4: Sarang Sang Pengintai",
+            "depth_title": "Kelahiran Obsidian Orb",
+            "lore_content": "Jiwa sang pemimpin bebas, meninggalkan esensi kelincahan yang memadat menjadi Obsidian Orb."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Akhiri ini, Kesatria. Berikan dia kematian yang layak bagi seorang pelindung sejati."
+              },
+              {
+                "speaker": "The Phantom Stalker",
+                "text": "Bebaskan aku... dari bayang-bayang kegagalan ini..."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Istirahatlah dengan damai, Phantom Stalker. Bebanmu telah selesai."
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "The Phantom Stalker",
+                "text": "Hutan ini... akhirnya... tenang kembali..."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Sosoknya meluruh menjadi kabut kelabu yang perlahan menguap ke udara. Di tengah sisa-sisa debunya, sebuah kristal hitam pekat terbentuk."
+              },
+              {
+                "speaker": "Hero",
+                "text": "(Mengambil batu kristal hitam yang melayang jatuh) Obsidian Orb... rasanya sangat dingin, ringan, dan seolah-olah menyerap cahaya di sekelilingnya."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "tahta_kehampaan",
+      "name": "Tahta Kehampaan",
+      "theme": "Dimensi akhir tempat The Void bersemayam, terdiri dari konstelasi bintang yang mati.",
+      "recommended_class_id": "null",
+      "boss_name": "null",
+      "reward_orb": "null",
+      "depths": [
+        {
+          "depth": 1,
+          "exp_gain": 50,
+          "level_range": {
+            "min": 1,
+            "max": 5
+          },
+          "tale": {
+            "chapter_name": "Bab Final",
+            "depth_title": "Panglima Gerhana",
+            "lore_content": "Langkah pertama Hero menembus dimensi The Void melawan Eclipse Vanguard."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Kita telah melintasi batas dunia nyata, Kesatria. Di sini tidak ada lagi daratan, hanya jalan setapak yang terbentuk dari konstelasi bintang yang telah mati."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Zirahku terasa sangat ringan, seakan-akan dimensi ini menolak keberadaan fisikku."
+              },
+              {
+                "speaker": "The Eclipse Vanguard",
+                "text": "Langkah yang sia-sia... ksatria terakhir... bergabunglah... bersama kegelapan kami..."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Awas! Dia adalah The Eclipse Vanguard, gabungan dari sisa-sisa bayangan prajurit terkuat kerajaanmu yang telah gugur!"
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "Dia hancur, namun aku sempat melihat sekilas wajah-wajah tersenyum dari rekan-rekan prajuritku di dalam bayangannya sebelum sirna."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Sebab kau baru saja membebaskan mereka dari belenggu abadi, Kesatria. Jiwa mereka kini benar-benar lepas. Mari melangkah lebih dalam."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 2,
+          "exp_gain": 120,
+          "level_range": {
+            "min": 6,
+            "max": 10
+          },
+          "tale": {
+            "chapter_name": "Bab Final",
+            "depth_title": "Tangan Kanan Kehancuran",
+            "lore_content": "Menghadapi Architect of Ruin yang memanipulasi gravitasi dan pikiran."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Hati-hati! Ruang di depan kita mulai meliuk dan terdistorsi secara ekstrem. Seseorang sedang memanipulasi pikiran kita."
+              },
+              {
+                "speaker": "The Architect of Ruin",
+                "text": "Akulah yang merancang kejatuhan negerimu, ksatria kecil. Kehancuran adalah karya seni murni, dan kau hanyalah sisa coretan yang lupa kuhapus."
+              },
+              {
+                "speaker": "Hero",
+                "text": "Jadi kau bajingan yang bertanggung jawab atas runtuhnya rumah kami? Rasakan ketukan pedang ksatria terakhir ini!"
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "pant... pant... ilusi reruntuhan istana yang dia bangun akhirnya runtuh berkeping-keping."
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Kau tidak hanya mengalahkannya secara fisik, Kesatria. Tekadmu telah membuktikan bahwa kehancuran tidak akan pernah bisa menghapus harapan."
+              }
+            ]
+          }
+        },
+        {
+          "depth": 3,
+          "exp_gain": 250,
+          "level_range": {
+            "min": 11,
+            "max": 15
+          },
+          "tale": {
+            "chapter_name": "Bab Final",
+            "depth_title": "Wujud Pertama: Lahirnya Sang Kehampaan",
+            "lore_content": "The Void menampakkan wujud pusaran badai anomali tanpa bentuk yang melahap cahaya."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Chronicler",
+                "text": "Tekanan ini... jiwaku rasanya seperti ditarik paksa dari raga! Bersiaplah, Kesatria, penguasa kegelapan ini telah bangkit!"
+              },
+              {
+                "speaker": "The Void (Form 1)",
+                "text": "Kau membawakan kelima Orb-ku kembali kepadaku, ngengat kecil. Apakah kau benar-benar sebodoh itu hingga mengira mainan tersebut bisa menyelamatkan duniamu?"
+              },
+              {
+                "speaker": "Hero",
+                "text": "Aku tidak membawa mereka untuk menyelamatkan diriku. Aku membawa mereka untuk membakarmu hingga tidak tersisa!"
+              },
+              {
+                "speaker": "The Void (Form 1)",
+                "text": "Keberanian yang menggelikan. Mari kuperlihatkan mengapa para dewa di langitmu memilih untuk mati daripada harus menatap mataku!"
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "Hero",
+                "text": "cough... kekuatannya... sangat masif. Hanya dengan satu kibasan badai hitamnya, aku hampir terlempar dari jalan setapak."
+              },
+              {
+                "speaker": "The Void (Form 1)",
+                "text": "Tebasan pedangmu tadi hanyalah gigitan nyamuk. Lihat sekelilingmu, cahayamu perlahan mati! Dunia ini ditakdirkan untuk menjadi kekaisaran sunyi milikku!"
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Awas, Kesatria! Ia menarik paksa seluruh dimensi di sekitar kita untuk mengubah wujudnya! Tahan posisimu!"
+              }
+            ]
+          }
+        },
+        {
+          "depth": 4,
+          "exp_gain": 450,
+          "level_range": {
+            "min": 16,
+            "max": 20
+          },
+          "tale": {
+            "chapter_name": "Bab Final",
+            "depth_title": "Wujud Kedua: Penelan Realita",
+            "lore_content": "The Void berevolusi menjadi monster raksasa berlengan banyak pemegang senjata realita retak."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Void (Form 2)",
+                "text": "Aku telah melahap jutaan peradaban, menghancurkan ribuan garis waktu! Kerajaan kecilmu yang hancur itu hanyalah hembusan napas satu sore bagiku! Berlututlah, dan jadilah debu di dalam galeri abadi milikku!"
+              },
+              {
+                "speaker": "Hero",
+                "text": "Udaranya... seakan-akan membeku. Lengan raksasanya memegang patahan realita... aku bahkan tidak bisa mencari celah untuk mendekat!"
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "(Mengepakkan sayap emasku dengan kencang, mataku memancarkan cahaya silau) Aku akan mengalihkan pandangannya dan membuka celah untukmu! Percayalah pada sayapku, Kesatria! Serang sekarang!"
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "The Void (Form 2)",
+                "text": "Burung hantu lancang! Manusia tidak berguna! Kau berani merusak baju zirahku?!"
+              },
+              {
+                "speaker": "Hero",
+                "text": "pant... pant... aku tidak hanya merusaknya. Aku akan menghancurkanmu sepenuhnya!"
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Ia tidak peduli lagi dengan penampilannya! Ia mengompres seluruh energi kegelapan di dimensinya menjadi satu titik singularitas. Ini adalah wujud sempurnanya!"
+              }
+            ]
+          }
+        },
+        {
+          "depth": 5,
+          "exp_gain": 700,
+          "level_range": {
+            "min": 21,
+            "max": 25
+          },
+          "tale": {
+            "chapter_name": "Bab Final",
+            "depth_title": "Wujud Sempurna: Akhir dari Segalanya",
+            "lore_content": "Entri terakhir The Chronicler: apakah akan berakhir dengan cahaya, atau ketiadaan abadi."
+          },
+          "dialog": {
+            "on_enter": [
+              {
+                "speaker": "The Void (Final Form)",
+                "text": "Cukup dengan permainan ini. Aku adalah awal dan akhir yang absolut. Aku akan menghapus namamu, ingatanmu, bahkan konsep keberadaanmu dari seluruh lembaran sejarah dunia. Kau akan menjadi ketiadaan!"
+              },
+              {
+                "speaker": "Hero",
+                "text": "Jika kau ingin menghapus namaku, maka kau harus mengukirnya terlebih dahulu di atas bangkai wujud sempurnamu!"
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "(Bulu-bulu emasku mulai terbakar menjadi abu demi menciptakan perisai cahaya raksasa di sekitar Hero) Kesatria! Sihir terakhirku akan melindungimu dari aura kematiannya! Majulah tanpa ragu! Biarkan pertarungan ini menjadi babak terakhir dari buku sejarah kita!"
+              }
+            ],
+            "on_clear": [
+              {
+                "speaker": "The Void (Final Form)",
+                "text": "Tidak... ini tidak mungkin... aku adalah... akhir dari segalanya... bagaimana bisa... manusia biasa..."
+              },
+              {
+                "speaker": "Hero",
+                "text": "(Berteriak histeris sambil menusukkan pedangnya langsung ke tengah singularitas hitam) Ini untuk semua orang yang kau hancurkan! Dan untuk pemanduku!"
+              },
+              {
+                "speaker": "The Chronicler",
+                "text": "Singularitasnya runtuh... (Bulu-bulu emas yang terbakar perlahan kembali lembut dan damai) Lihat, Kesatria... cahayanya. Langit di atas kita... akhirnya kembali membiru."
+              },
+              {
+                "speaker": "Hero",
+                "text": "(Menyeka darah di sudut bibirnya, terduduk lelah di samping The Chronicler sambil tersenyum) Kita berhasil, sahabatku. Kita benar-benar berhasil."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -9,7 +9,6 @@
 
 // ---- merged from src/database/json_and_paths.cpp
 
-
 using namespace std;
 
 namespace database_detail
@@ -32,7 +31,7 @@ namespace database_detail
             }
         }
         if (j.is_boolean())
-            return j.get<bool>() ? 1 : 0;
+            return j.get<bool>() ? Config::Defaults::BOOL_TRUE_AS_INT : Config::Defaults::BOOL_FALSE_AS_INT;
         return fallback;
     }
 
@@ -86,7 +85,7 @@ namespace database_detail
         }
 
         if (out.empty())
-            out = "hero";
+            out = Config::Defaults::PLAYER_ID;
 
         string compact;
         bool prevUnderscore = false;
@@ -108,7 +107,7 @@ namespace database_detail
             compact.erase(compact.begin());
         if (!compact.empty() && compact.back() == '_')
             compact.pop_back();
-        return compact.empty() ? "hero" : compact;
+        return compact.empty() ? Config::Defaults::PLAYER_ID : compact;
     }
 
     int equippedItemBonus(const GameContext &ctx, const Player &player, const string &bonusKey)
@@ -123,7 +122,7 @@ namespace database_detail
             if (!item || !item->contains("stats") || !(*item)["stats"].is_object())
                 continue;
 
-            total += asInt((*item)["stats"].value(bonusKey, json(0)), 0);
+            total += asInt((*item)["stats"].value(bonusKey, json(Config::Math::ZERO)), Config::Math::ZERO);
         }
         return total;
     }
@@ -156,26 +155,26 @@ namespace database_detail
             addStarterItem(ctx.player, itemId, quantity, equipped, slot);
         };
 
-        giveIfExists("healing_potion", 3, false);
-        giveIfExists("mana_elixir", 2, false);
+        giveIfExists(Config::StarterKit::HEALING_POTION_ID, Config::StarterKit::HEALING_POTION_QTY, false);
+        giveIfExists(Config::StarterKit::MANA_ELIXIR_ID, Config::StarterKit::MANA_ELIXIR_QTY, false);
 
-        if (ctx.player.class_id == "knight")
+        if (ctx.player.class_id == Config::StarterKit::KNIGHT_CLASS_ID)
         {
-            giveIfExists("leather_coif", 1, true);
-            giveIfExists("padded_tunic", 1, true);
-            giveIfExists("rusty_greatsword", 1, true);
-            giveIfExists("traveler_s_boots", 1, true);
+            giveIfExists(Config::StarterKit::KNIGHT_HELMET_ID, Config::StarterKit::EQUIPMENT_QTY, true);
+            giveIfExists(Config::StarterKit::KNIGHT_ARMOR_ID, Config::StarterKit::EQUIPMENT_QTY, true);
+            giveIfExists(Config::StarterKit::KNIGHT_WEAPON_ID, Config::StarterKit::EQUIPMENT_QTY, true);
+            giveIfExists(Config::StarterKit::KNIGHT_BOOTS_ID, Config::StarterKit::EQUIPMENT_QTY, true);
         }
-        else if (ctx.player.class_id == "sorcerer")
+        else if (ctx.player.class_id == Config::StarterKit::SORCERER_CLASS_ID)
         {
-            giveIfExists("apprentice_wand", 1, true);
-            giveIfExists("novice_robe", 1, true);
+            giveIfExists(Config::StarterKit::SORCERER_WEAPON_ID, Config::StarterKit::EQUIPMENT_QTY, true);
+            giveIfExists(Config::StarterKit::SORCERER_ARMOR_ID, Config::StarterKit::EQUIPMENT_QTY, true);
         }
-        else if (ctx.player.class_id == "wanderer")
+        else if (ctx.player.class_id == Config::StarterKit::WANDERER_CLASS_ID)
         {
-            giveIfExists("short_bow", 1, true);
-            giveIfExists("leather_cap", 1, true);
-            giveIfExists("rough_tunic", 1, true);
+            giveIfExists(Config::StarterKit::WANDERER_WEAPON_ID, Config::StarterKit::EQUIPMENT_QTY, true);
+            giveIfExists(Config::StarterKit::WANDERER_HELMET_ID, Config::StarterKit::EQUIPMENT_QTY, true);
+            giveIfExists(Config::StarterKit::WANDERER_ARMOR_ID, Config::StarterKit::EQUIPMENT_QTY, true);
         }
     }
 } // namespace database_detail
@@ -249,28 +248,28 @@ namespace database_detail
     void fillPlayerCore(Player &player, const json &source)
     {
         player.id = asString(source.value("id", json("")));
-        player.name = asString(source.value("name", json("Hero")));
-        player.class_id = asString(source.value("class_id", json("knight")));
+        player.name = asString(source.value("name", json(Config::Defaults::PLAYER_NAME)));
+        player.class_id = asString(source.value("class_id", json(Config::Defaults::CLASS_ID)));
         player.class_tier_id = asString(source.value("class_tier_id", json("")));
         player.class_tier_name = asString(source.value("class_tier_name", json("")));
-        player.level = asInt(source.value("level", json(1)), 1);
-        player.current_exp = asInt(source.value("current_exp", json(0)), 0);
+        player.level = asInt(source.value("level", json(Config::Defaults::PLAYER_LEVEL)), Config::Defaults::PLAYER_LEVEL);
+        player.current_exp = asInt(source.value("current_exp", json(Config::Defaults::PLAYER_EXP)), Config::Defaults::PLAYER_EXP);
         player.gold = asInt(source.value("gold", json(STARTING_GOLD)), STARTING_GOLD);
 
         if (source.contains("stats") && source["stats"].is_object())
         {
             const auto &stats = source["stats"];
-            player.stats.str = asInt(stats.value("str", json(10)), 10);
-            player.stats.intl = asInt(stats.value("int", json(10)), 10);
-            player.stats.agi = asInt(stats.value("agi", json(10)), 10);
-            player.stats.vit = asInt(stats.value("vit", json(10)), 10);
+            player.stats.str = asInt(stats.value("str", json(Config::Defaults::PLAYER_STAT_STR)), Config::Defaults::PLAYER_STAT_STR);
+            player.stats.intl = asInt(stats.value("int", json(Config::Defaults::PLAYER_STAT_INT)), Config::Defaults::PLAYER_STAT_INT);
+            player.stats.agi = asInt(stats.value("agi", json(Config::Defaults::PLAYER_STAT_AGI)), Config::Defaults::PLAYER_STAT_AGI);
+            player.stats.vit = asInt(stats.value("vit", json(Config::Defaults::PLAYER_STAT_VIT)), Config::Defaults::PLAYER_STAT_VIT);
         }
 
         player.hp = asInt(source.value("hp", json(STARTING_HP)), STARTING_HP);
         player.max_hp = asInt(source.value("max_hp", json(baseMaxHp(player))), baseMaxHp(player));
         player.mp = asInt(source.value("mp", json(STARTING_MP)), STARTING_MP);
         player.max_mp = asInt(source.value("max_mp", json(baseMaxMp(player))), baseMaxMp(player));
-        player.stat_points = asInt(source.value("stat_points", json(0)), 0);
+        player.stat_points = asInt(source.value("stat_points", json(Config::Defaults::PLAYER_STAT_POINTS)), Config::Defaults::PLAYER_STAT_POINTS);
     }
 
     void fillInventory(Player &player, const json &source)
@@ -283,7 +282,7 @@ namespace database_detail
         {
             InventoryEntry entry;
             entry.item_id = asString(row.value("item_id", json("")));
-            entry.quantity = asInt(row.value("quantity", json(1)), 1);
+            entry.quantity = asInt(row.value("quantity", json(Config::Defaults::INVENTORY_QUANTITY)), Config::Defaults::INVENTORY_QUANTITY);
             entry.equipped = row.contains("equipped") ? row["equipped"].get<bool>() : false;
             entry.slot = asString(row.value("slot", json("")));
             player.inventory.push_back(entry);
@@ -300,7 +299,7 @@ namespace database_detail
         {
             CooldownEntry entry;
             entry.skill_id = asString(row.value("skill_id", json("")));
-            entry.remaining_turns = asInt(row.value("remaining_turns", json(0)), 0);
+            entry.remaining_turns = asInt(row.value("remaining_turns", json(Config::Defaults::COOLDOWN_TURNS)), Config::Defaults::COOLDOWN_TURNS);
             player.cooldowns.push_back(entry);
         }
     }
@@ -309,8 +308,8 @@ namespace database_detail
     {
         DungeonProgressEntry entry;
         entry.dungeon_id = dungeonId;
-        entry.unlocked_depth = asInt(source.value("unlocked_depth", json(1)), 1);
-        entry.highest_cleared_depth = asInt(source.value("highest_cleared_depth", json(0)), 0);
+        entry.unlocked_depth = asInt(source.value("unlocked_depth", json(Config::Progress::START_DEPTH)), Config::Progress::START_DEPTH);
+        entry.highest_cleared_depth = asInt(source.value("highest_cleared_depth", json(Config::Progress::NO_DEPTH_CLEARED)), Config::Progress::NO_DEPTH_CLEARED);
         entry.completed = source.value("completed", false);
         return entry;
     }
@@ -322,10 +321,10 @@ namespace database_detail
             return;
 
         const auto &progress = source["progress"];
-        player.progress.current_depth = asInt(progress.value("current_depth", json(1)), 1);
+        player.progress.current_depth = asInt(progress.value("current_depth", json(Config::Progress::START_DEPTH)), Config::Progress::START_DEPTH);
         if (progress.contains("current_dungeon") && !progress["current_dungeon"].is_null())
             player.progress.current_dungeon = asString(progress["current_dungeon"]);
-        player.progress.max_depth_unlocked = asInt(progress.value("max_depth_unlocked", json(0)), 0);
+        player.progress.max_depth_unlocked = asInt(progress.value("max_depth_unlocked", json(Config::Progress::NO_DEPTH_UNLOCKED)), Config::Progress::NO_DEPTH_UNLOCKED);
 
         player.progress.dungeon_progress.clear();
         if (progress.contains("dungeon_progress") && progress["dungeon_progress"].is_object())
@@ -372,9 +371,77 @@ namespace database_detail
 
 // ---- merged from src/database/save_system.cpp
 
-
 using namespace std;
 using namespace database_detail;
+
+namespace
+{
+    bool mergeGameDataModule(json &target, const json &moduleData, const string &modulePath)
+    {
+        if (!moduleData.is_object())
+        {
+            cerr << "Game data module must be an object: " << modulePath << '\n';
+            return false;
+        }
+
+        for (auto it = moduleData.begin(); it != moduleData.end(); ++it)
+        {
+            if (target.contains(it.key()))
+            {
+                cerr << "Duplicate game data key '" << it.key() << "' in module: " << modulePath << '\n';
+                return false;
+            }
+            target[it.key()] = it.value();
+        }
+
+        return true;
+    }
+
+    bool loadGameDataManifest(const json &manifest, const string &manifestPath, json &out)
+    {
+        if (!manifest.contains("modules") || !manifest["modules"].is_array())
+        {
+            out = manifest;
+            return true;
+        }
+
+        out = json::object();
+        const filesystem::path baseDir = filesystem::path(manifestPath).parent_path();
+
+        for (const auto &entry : manifest["modules"])
+        {
+            string moduleName;
+            if (entry.is_string())
+                moduleName = entry.get<string>();
+            else if (entry.is_object())
+                moduleName = asString(entry.value("file", json("")));
+
+            if (moduleName.empty())
+            {
+                cerr << "Invalid game data module entry in: " << manifestPath << '\n';
+                return false;
+            }
+
+            filesystem::path modulePath(moduleName);
+            if (modulePath.is_relative())
+                modulePath = baseDir / modulePath;
+
+            ifstream moduleFile(modulePath);
+            if (!moduleFile.is_open())
+            {
+                cerr << "Failed to open game data module: " << modulePath.string() << '\n';
+                return false;
+            }
+
+            json moduleData;
+            moduleFile >> moduleData;
+            if (!mergeGameDataModule(out, moduleData, modulePath.string()))
+                return false;
+        }
+
+        return true;
+    }
+}
 
 bool loadGameData(GameContext &ctx)
 {
@@ -388,7 +455,10 @@ bool loadGameData(GameContext &ctx)
 
     try
     {
-        file >> ctx.gameData;
+        json root;
+        file >> root;
+        if (!loadGameDataManifest(root, path, ctx.gameData))
+            return false;
         ctx.gameDataPath = path;
         return true;
     }
@@ -433,7 +503,7 @@ bool loadSave(GameContext &ctx)
             syncPlayerClassTier(ctx, character);
 
         ctx.player = ctx.characters.front();
-        ctx.activeCharacterIndex = 0;
+        ctx.activeCharacterIndex = Config::Defaults::ACTIVE_CHARACTER_FIRST_INDEX;
         normalizePlayerResources(ctx);
         return true;
     }
@@ -468,8 +538,8 @@ bool saveGame(const GameContext &ctx)
     syncPlayerClassTier(ctx, current);
     current.max_hp = effectiveMaxHp(ctx, current);
     current.max_mp = effectiveMaxMp(ctx, current);
-    current.hp = clampInt(current.hp, 0, current.max_hp);
-    current.mp = clampInt(current.mp, 0, current.max_mp);
+    current.hp = clampInt(current.hp, player_balance::kResourceFloor, current.max_hp);
+    current.mp = clampInt(current.mp, player_balance::kResourceFloor, current.max_mp);
     upsertCharacter(characters, current);
 
     json saveRoot = json::object();
@@ -495,24 +565,24 @@ bool saveGame(const GameContext &ctx)
         return false;
     }
 
-    file << saveRoot.dump(2) << '\n';
+    file << saveRoot.dump(Config::Defaults::SAVE_JSON_INDENT) << '\n';
     return true;
 }
 
 void createNewGame(GameContext &ctx, const string &playerName, const string &classId)
 {
     ctx.player = Player{};
-    ctx.player.name = playerName.empty() ? "Hero" : playerName;
-    ctx.player.class_id = classId.empty() ? "knight" : classId;
-    ctx.player.level = 1;
-    ctx.player.current_exp = 0;
+    ctx.player.name = playerName.empty() ? Config::Defaults::PLAYER_NAME : playerName;
+    ctx.player.class_id = classId.empty() ? Config::Defaults::CLASS_ID : classId;
+    ctx.player.level = Config::Defaults::PLAYER_LEVEL;
+    ctx.player.current_exp = Config::Defaults::PLAYER_EXP;
     ctx.player.gold = STARTING_GOLD;
     ctx.player.stat_points = STARTING_STAT_POINTS;
     syncPlayerClassTier(ctx, ctx.player);
 
     ctx.player.id = sanitizeIdPart(ctx.player.name);
     bool duplicateId = true;
-    int suffix = 1;
+    int suffix = Config::Defaults::DUPLICATE_ID_SUFFIX_START;
     while (duplicateId)
     {
         duplicateId = false;
@@ -545,7 +615,5 @@ void createNewGame(GameContext &ctx, const string &playerName, const string &cla
     ctx.player.progress = Progress{};
     ctx.player.progress.dungeon_progress.clear();
     giveStarterKit(ctx);
-    ctx.activeCharacterIndex = -1;
+    ctx.activeCharacterIndex = Config::Defaults::ACTIVE_CHARACTER_NONE;
 }
-
-

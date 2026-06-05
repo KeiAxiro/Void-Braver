@@ -17,6 +17,19 @@ set(VOID_BRAVER_SOURCES
 
 set(VOID_BRAVER_HEADERS
     include/config.h
+    include/config/paths.h
+    include/config/math.h
+    include/config/rules.h
+    include/config/defaults.h
+    include/config/progress.h
+    include/config/starter_kit.h
+    include/config/player.h
+    include/config/enemy.h
+    include/config/item.h
+    include/config/dungeon_map.h
+    include/config/ui.h
+    include/config/skill.h
+    include/config/legacy.h
     include/globals.h
     include/database.h
     include/states.h

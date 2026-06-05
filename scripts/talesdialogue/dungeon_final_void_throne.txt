@@ -1,0 +1,52 @@
+=== TAB FINAL: TAHTA KEHAMPAAN ===
+
+- Depth 1: "Panglima Gerhana"
+  Pre:
+    The Chronicler: "Kita telah melintasi batas dunia nyata, Kesatria. Di sini tidak ada lagi daratan, hanya jalan setapak yang terbentuk dari konstelasi bintang yang telah mati."
+    Hero: "Zirahku terasa sangat ringan, seakan-akan dimensi ini menolak keberadaan fisikku."
+    The Eclipse Vanguard: "Langkah yang sia-sia... ksatria terakhir... bergabunglah... bersama kegelapan kami..."
+    The Chronicler: "Awas! Dia adalah The Eclipse Vanguard, gabungan dari sisa-sisa bayangan prajurit terkuat kerajaanmu yang telah gugur!"
+  Post:
+    Hero: "Dia hancur, namun aku sempat melihat sekilas wajah-wajah tersenyum dari rekan-rekan prajuritku di dalam bayangannya sebelum sirna."
+    The Chronicler: "Sebab kau baru saja membebaskan mereka dari belenggu abadi, Kesatria. Jiwa mereka kini benar-benar lepas. Mari melangkah lebih dalam."
+
+- Depth 2: "Tangan Kanan Kehancuran"
+  Pre:
+    The Chronicler: "Hati-hati! Ruang di depan kita mulai meliuk dan terdistorsi secara ekstrem. Seseorang sedang memanipulasi pikiran kita."
+    The Architect of Ruin: "Akulah yang merancang kejatuhan negerimu, ksatria kecil. Kehancuran adalah karya seni murni, dan kau hanyalah sisa coretan yang lupa kuhapus."
+    Hero: "Jadi kau bajingan yang bertanggung jawab atas runtuhnya rumah kami? Rasakan ketukan pedang ksatria terakhir ini!"
+  Post:
+    Hero: "pant... pant... ilusi reruntuhan istana yang dia bangun akhirnya runtuh berkeping-keping."
+    The Chronicler: "Kau tidak hanya mengalahkannya secara fisik, Kesatria. Tekadmu telah membuktikan bahwa kehancuran tidak akan pernah bisa menghapus harapan."
+
+- Depth 3: "Wujud Pertama: Lahirnya Sang Kehampaan"
+  Pre:
+    The Chronicler: "Tekanan ini... jiwaku rasanya seperti ditarik paksa dari raga! Bersiaplah, Kesatria, penguasa kegelapan ini telah bangkit!"
+    The Void (Form 1): "Kau membawakan kelima Orb-ku kembali kepadaku, ngengat kecil. Apakah kau benar-benar sebodoh itu hingga mengira mainan tersebut bisa menyelamatkan duniamu?"
+    Hero: "Aku tidak membawa mereka untuk menyelamatkan diriku. Aku membawa mereka untuk membakarmu hingga tidak tersisa!"
+    The Void (Form 1): "Keberanian yang menggelikan. Mari kuperlihatkan mengapa para dewa di langitmu memilih untuk mati daripada harus menatap mataku!"
+  Post:
+    Hero: "cough... kekuatannya... sangat masif. Hanya dengan satu kibasan badai hitamnya, aku hampir terlempar dari jalan setapak."
+    The Void (Form 1): "Tebasan pedangmu tadi hanyalah gigitan nyamuk. Lihat sekelilingmu, cahayamu perlahan mati! Dunia ini ditakdirkan untuk menjadi kekaisaran sunyi milikku!"
+    The Chronicler: "Awas, Kesatria! Ia menarik paksa seluruh dimensi di sekitar kita untuk mengubah wujudnya! Tahan posisimu!"
+
+- Depth 4: "Wujud Kedua: Penelan Realita"
+  Pre:
+    The Void (Form 2): "Aku telah melahap jutaan peradaban, menghancurkan ribuan garis waktu! Kerajaan kecilmu yang hancur itu hanyalah hembusan napas satu sore bagiku! Berlututlah, dan jadilah debu di dalam galeri abadi milikku!"
+    Hero: "Udaranya... seakan-akan membeku. Lengan raksasanya memegang patahan realita... aku bahkan tidak bisa mencari celah untuk mendekat!"
+    The Chronicler: "(Mengepakkan sayap emasku dengan kencang, mataku memancarkan cahaya silau) Aku akan mengalihkan pandangannya dan membuka celah untukmu! Percayalah pada sayapku, Kesatria! Serang sekarang!"
+  Post:
+    The Void (Form 2): "Burung hantu lancang! Manusia tidak berguna! Kau berani merusak baju zirahku?!"
+    Hero: "pant... pant... aku tidak hanya merusaknya. Aku akan menghancurkanmu sepenuhnya!"
+    The Chronicler: "Ia tidak peduli lagi dengan penampilannya! Ia mengompres seluruh energi kegelapan di dimensinya menjadi satu titik singularitas. Ini adalah wujud sempurnanya!"
+
+- Depth 5: "Wujud Sempurna: Akhir dari Segalanya"
+  Pre:
+    The Void (Final Form): "Cukup dengan permainan ini. Aku adalah awal dan akhir yang absolut. Aku akan menghapus namamu, ingatanmu, bahkan konsep keberadaanmu dari seluruh lembaran sejarah dunia. Kau akan menjadi ketiadaan!"
+    Hero: "Jika kau ingin menghapus namaku, maka kau harus mengukirnya terlebih dahulu di atas bangkai wujud sempurnamu!"
+    The Chronicler: "(Bulu-bulu emasku mulai terbakar menjadi abu demi menciptakan perisai cahaya raksasa di sekitar Hero) Kesatria! Sihir terakhirku akan melindungimu dari aura kematiannya! Majulah tanpa ragu! Biarkan pertarungan ini menjadi babak terakhir dari buku sejarah kita!"
+  Post:
+    The Void (Final Form): "Tidak... ini tidak mungkin... aku adalah... akhir dari segalanya... bagaimana bisa... manusia biasa..."
+    Hero: "(Berteriak histeris sambil menusukkan pedangnya langsung ke tengah singularitas hitam) Ini untuk semua orang yang kau hancurkan! Dan untuk pemanduku!"
+    The Chronicler: "Singularitasnya runtuh... (Bulu-bulu emas yang terbakar perlahan kembali lembut dan damai) Lihat, Kesatria... cahayanya. Langit di atas kita... akhirnya kembali membiru."
+    Hero: "(Menyeka darah di sudut bibirnya, terduduk lelah di samping The Chronicler sambil tersenyum) Kita berhasil, sahabatku. Kita benar-benar berhasil."

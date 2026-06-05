@@ -16,7 +16,7 @@ namespace state_helpers
     struct DropEntry
     {
         std::string item_id;
-        int drop_rate = 100;
+        int drop_rate = enemy_balance::kDefaultDropRate;
     };
 
     using DropList = ManualList<DropEntry>;
@@ -110,8 +110,8 @@ namespace state_helpers
     struct SkillTreeNode
     {
         const json *skill = nullptr;
-        int list_index = 0;
-        int unlock_level = 1;
+        int list_index = Config::Math::ZERO;
+        int unlock_level = Config::Defaults::PLAYER_LEVEL;
         SkillTreeNode *left = nullptr;
         SkillTreeNode *right = nullptr;
     };
@@ -121,16 +121,16 @@ namespace state_helpers
         std::string id;
         std::string name;
         std::string type;
-        int level = 1;
-        int hp = 1;
-        int max_hp = 1;
-        int mp = 0;
-        int max_mp = 0;
-        int atk = 1;
-        int def = 0;
-        double crit_rate = 0.05;
+        int level = Config::Defaults::PLAYER_LEVEL;
+        int hp = enemy_balance::kMinDamage;
+        int max_hp = enemy_balance::kMinDamage;
+        int mp = Config::Math::ZERO;
+        int max_mp = Config::Math::ZERO;
+        int atk = enemy_balance::kMinDamage;
+        int def = enemy_balance::kMinDefense;
+        double crit_rate = enemy_balance::kTemplateCritRateFallback;
         bool is_boss = false;
-        int exp_drop = 10;
+        int exp_drop = enemy_balance::kDefaultExpDrop;
         DropList drops;
     };
 
@@ -159,6 +159,7 @@ namespace state_helpers
         Defeat
     };
 
+    void clsScreen();
     int randInt(int minValue, int maxValue);
     double randUnit();
     std::string trim(const std::string &value);

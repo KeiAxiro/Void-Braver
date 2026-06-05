@@ -76,11 +76,24 @@ const json *findDungeonDepth(const json &dungeon, int depth)
 
     for (const auto &row : dungeon["depths"])
     {
-        if (row.contains("depth") && asInt(row["depth"], 0) == depth)
+        if (row.contains("depth") && asInt(row["depth"], Config::Math::ZERO) == depth)
             return &row;
     }
 
     return nullptr;
+}
+
+const json *getDepthDialog(const json &dungeon, int depth, const string &event)
+{
+    const json *depthRow = findDungeonDepth(dungeon, depth);
+    if (!depthRow)
+        return nullptr;
+    if (!depthRow->contains("dialog") || !(*depthRow)["dialog"].is_object())
+        return nullptr;
+    const auto &dialog = (*depthRow)["dialog"];
+    if (!dialog.contains(event) || !dialog[event].is_array())
+        return nullptr;
+    return &dialog[event];
 }
 
 string itemCategory(const GameContext &ctx, const string &itemId)
@@ -95,8 +108,8 @@ string classPrimaryStat(const GameContext &ctx, const string &classId)
 {
     const auto *cls = getClassById(ctx, classId);
     if (!cls)
-        return "STR";
-    return asString(cls->value("primary_stat", json("STR")), "STR");
+        return Config::Defaults::PRIMARY_STAT;
+    return asString(cls->value("primary_stat", json(Config::Defaults::PRIMARY_STAT)), Config::Defaults::PRIMARY_STAT);
 }
 
 string itemRequiredClass(const GameContext &ctx, const string &itemId)
@@ -136,63 +149,64 @@ using namespace database_detail;
 int expRequiredForNextLevel(const GameContext &ctx, int nextLevel)
 {
     if (!ctx.gameData.contains("balance") || !ctx.gameData["balance"].is_object())
-        return nextLevel * 100;
+        return nextLevel * player_balance::kExpFallbackLinearMultiplier;
     if (!ctx.gameData["balance"].contains("level_exp") || !ctx.gameData["balance"]["level_exp"].is_array())
-        return nextLevel * 100;
+        return nextLevel * player_balance::kExpFallbackLinearMultiplier;
 
     for (const auto &row : ctx.gameData["balance"]["level_exp"])
     {
-        if (asInt(row.value("level", json(-1)), -1) == nextLevel)
+        if (asInt(row.value("level", json(Config::Progress::MISSING_LEVEL)), Config::Progress::MISSING_LEVEL) == nextLevel)
         {
-            const int baseExp = asInt(row.value("exp_required", json(nextLevel * 100)), nextLevel * 100);
+            const int fallbackExp = nextLevel * player_balance::kExpFallbackLinearMultiplier;
+            const int baseExp = asInt(row.value("exp_required", json(fallbackExp)), fallbackExp);
 
             double multiplier = player_balance::kLevelUpEarlyMultiplier;
-            if (nextLevel >= 6)
+            if (nextLevel >= player_balance::kLevelUpMidStartLevel)
                 multiplier = player_balance::kLevelUpMidMultiplier;
-            if (nextLevel >= 11)
+            if (nextLevel >= player_balance::kLevelUpLateStartLevel)
                 multiplier = player_balance::kLevelUpLateMultiplier;
-            if (nextLevel >= 21)
+            if (nextLevel >= player_balance::kLevelUpEndgameStartLevel)
                 multiplier = player_balance::kLevelUpEndgameMultiplier;
 
             return max(player_balance::kMinimumExpRequirement, static_cast<int>(baseExp * multiplier));
         }
     }
 
-    return max(player_balance::kMinimumExpRequirement, static_cast<int>(nextLevel * nextLevel * 22));
+    return max(player_balance::kMinimumExpRequirement, static_cast<int>(nextLevel * nextLevel * player_balance::kExpFallbackQuadraticMultiplier));
 }
 
 int itemAtkBonus(const GameContext &ctx, const string &itemId)
 {
     const auto *item = getItemById(ctx, itemId);
     if (!item || !item->contains("stats") || !(*item)["stats"].is_object())
-        return 0;
-    return asInt((*item)["stats"].value("atk_bonus", json(0)), 0);
+        return Config::Math::ZERO;
+    return asInt((*item)["stats"].value("atk_bonus", json(Config::Math::ZERO)), Config::Math::ZERO);
 }
 
 int itemDefBonus(const GameContext &ctx, const string &itemId)
 {
     const auto *item = getItemById(ctx, itemId);
     if (!item || !item->contains("stats") || !(*item)["stats"].is_object())
-        return 0;
-    return asInt((*item)["stats"].value("def_bonus", json(0)), 0);
+        return Config::Math::ZERO;
+    return asInt((*item)["stats"].value("def_bonus", json(Config::Math::ZERO)), Config::Math::ZERO);
 }
 
 int itemHpBonus(const GameContext &ctx, const string &itemId)
 {
     const auto *item = getItemById(ctx, itemId);
     if (!item || !item->contains("stats") || !(*item)["stats"].is_object())
-        return 0;
-    return asInt((*item)["stats"].value("hp_bonus", json(0)), 0);
+        return Config::Math::ZERO;
+    return asInt((*item)["stats"].value("hp_bonus", json(Config::Math::ZERO)), Config::Math::ZERO);
 }
 
 int itemMpBonus(const GameContext &ctx, const string &itemId)
 {
     const auto *item = getItemById(ctx, itemId);
     if (!item || !item->contains("stats") || !(*item)["stats"].is_object())
-        return 0;
+        return Config::Math::ZERO;
     if ((*item)["stats"].contains("mp_bonus"))
-        return asInt((*item)["stats"]["mp_bonus"], 0);
-    return 0;
+        return asInt((*item)["stats"]["mp_bonus"], Config::Math::ZERO);
+    return Config::Math::ZERO;
 }
 
 int baseMaxHp(const Player &player)
@@ -208,7 +222,7 @@ int baseMaxMp(const Player &player)
     return player_balance::kBaseMpStart +
            (player.level - 1) * player_balance::kBaseMpPerLevel +
            player.stats.intl * player_balance::kBaseMpPerInt +
-           (player.stats.agi / 2) * player_balance::kBaseMpPerTwoAgi;
+           (player.stats.agi / player_balance::kBaseMpAgiDivisor) * player_balance::kBaseMpPerTwoAgi;
 }
 
 int effectiveMaxHp(const GameContext &ctx, const Player &player)
@@ -238,7 +252,7 @@ void syncPlayerClassTier(const GameContext &ctx, Player &player)
     {
         for (const auto &tier : (*cls)["tiers"])
         {
-            if (player.level >= asInt(tier.value("level", json(999)), 999))
+            if (player.level >= asInt(tier.value("level", json(Config::Progress::LEVEL_RANGE_MAX_FALLBACK)), Config::Progress::LEVEL_RANGE_MAX_FALLBACK))
             {
                 highestId = asString(tier.value("id", json(highestId)), highestId);
                 highestName = asString(tier.value("name", json(highestName)), highestName);
@@ -255,8 +269,8 @@ void normalizePlayerResources(GameContext &ctx)
     syncPlayerClassTier(ctx, ctx.player);
     ctx.player.max_hp = effectiveMaxHp(ctx, ctx.player);
     ctx.player.max_mp = effectiveMaxMp(ctx, ctx.player);
-    ctx.player.hp = clampInt(ctx.player.hp, 0, ctx.player.max_hp);
-    ctx.player.mp = clampInt(ctx.player.mp, 0, ctx.player.max_mp);
+    ctx.player.hp = clampInt(ctx.player.hp, player_balance::kResourceFloor, ctx.player.max_hp);
+    ctx.player.mp = clampInt(ctx.player.mp, player_balance::kResourceFloor, ctx.player.max_mp);
 
     if (ctx.activeCharacterIndex >= 0 && ctx.activeCharacterIndex < static_cast<int>(ctx.characters.size()))
         ctx.characters[static_cast<size_t>(ctx.activeCharacterIndex)] = ctx.player;

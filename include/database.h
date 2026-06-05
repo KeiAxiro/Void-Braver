@@ -17,6 +17,7 @@ const json* getSkillById(const GameContext& ctx, const std::string& skillId);
 const json* getDungeonById(const GameContext& ctx, const std::string& dungeonId);
 const json* getEnemyById(const GameContext& ctx, const std::string& enemyId);
 const json* findDungeonDepth(const json& dungeon, int depth);
+const json* getDepthDialog(const json& dungeon, int depth, const std::string& event);
 
 int expRequiredForNextLevel(const GameContext& ctx, int nextLevel);
 int itemAtkBonus(const GameContext& ctx, const std::string& itemId);
