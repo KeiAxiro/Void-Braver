@@ -5,11 +5,11 @@ namespace Config
     namespace Player
     {
         inline constexpr int BASE_HP_START = 200;                    // HP dasar sebelum bonus level/stat.
-        inline constexpr int BASE_HP_PER_LEVEL = 70;                 // Tambahan HP setiap level.
-        inline constexpr int BASE_HP_PER_VIT = 12;                   // Tambahan HP setiap 1 VIT.
+        inline constexpr int BASE_HP_PER_LEVEL = 105;                // Tambahan HP setiap level.
+        inline constexpr int BASE_HP_PER_VIT = 100;                  // Tambahan HP setiap 1 VIT.
         inline constexpr int BASE_HP_PER_STR = 4;                    // Tambahan HP setiap 1 STR.
-        inline constexpr int BASE_MP_START = 45;                     // MP dasar sebelum bonus level/stat.
-        inline constexpr int BASE_MP_PER_LEVEL = 3;                  // Tambahan MP setiap level.
+        inline constexpr int BASE_MP_START = 50;                    // MP dasar sebelum bonus level/stat.
+        inline constexpr int BASE_MP_PER_LEVEL = 20;                 // Tambahan MP setiap level.
         inline constexpr int BASE_MP_PER_INT = 4;                    // Tambahan MP setiap 1 INT.
         inline constexpr int BASE_MP_AGI_DIVISOR = 2;                // Pembagi AGI sebelum memberi bonus MP.
         inline constexpr int BASE_MP_PER_TWO_AGI = 1;                // Tambahan MP setiap AGI yang lolos pembagi.
@@ -26,7 +26,7 @@ namespace Config
         inline constexpr int DEFENSE_STR_DIVISOR = 12;               // Pembagi STR untuk DEF.
         inline constexpr double DEFENSE_EQUIPMENT_MULTIPLIER = 0.65; // Pengali bonus DEF dari equipment.
         inline constexpr double DEFENSE_BUFF_MULTIPLIER = 1.25;      // Pengali DEF saat buff aktif.
-        inline constexpr int SPEED_BASE_PER_LEVEL = 2;                // Kontribusi level ke speed.
+        inline constexpr int SPEED_BASE_PER_LEVEL = 4;               // Kontribusi level ke speed.
         inline constexpr int SPEED_PER_AGI = 2;                      // Tambahan speed setiap 1 AGI.
         inline constexpr double SPEED_BUFF_MULTIPLIER = 1.25;        // Pengali speed saat buff AGI aktif.
         inline constexpr double CRIT_BASE_RATE = 0.12;               // Peluang critical dasar player.
@@ -36,8 +36,8 @@ namespace Config
         inline constexpr int DEFEAT_RECOVERY_DIVISOR = 2;            // Pembagi max HP/MP untuk recovery setelah kalah.
         inline constexpr int MIN_ATTACK = 1;                         // ATK minimum setelah kalkulasi.
         inline constexpr int MIN_DEFENSE = 0;                        // DEF minimum setelah kalkulasi.
-        inline constexpr int MAX_EFFECTIVE_DEFENSE_FOR_DAMAGE = 500;  // Batas DEF efektif agar damage tidak selalu jatuh ke minimum.
-        inline constexpr int DEFENSE_REDUCED_DAMAGE_FLOOR_DENOMINATOR = 2; // Pembagi sisa DEF di atas cap agar scaling tetap terkendali.
+        inline constexpr int MAX_EFFECTIVE_DEFENSE_FOR_DAMAGE = 500;  // Batas DEF efektif agar damage output tidak jadi 1 saat DEF terlalu tinggi.
+        inline constexpr int DEFENSE_REDUCED_DAMAGE_FLOOR_DENOMINATOR = 2; // denominator agar mapping tetap mirip rumus semula.
 
         // Kap untuk damage yang diterima pemain dari serangan musuh.
         // Masalah yang dilaporkan: saat DEF target (player) terlalu tinggi, rumus damage enemy - player menjadi turun ke nilai floor (1).
