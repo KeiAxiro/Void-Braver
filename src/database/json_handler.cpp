@@ -481,10 +481,20 @@ bool loadSave(GameContext &ctx)
     if (!file.is_open())
         return false;
 
+    // If save file exists but is empty (or only whitespace), treat it as no save.
+    {
+        file.seekg(0, std::ios::end);
+        const std::streamoff size = file.tellg();
+        if (size <= 0)
+            return false;
+        file.seekg(0, std::ios::beg);
+    }
+
     try
     {
         json saveRoot;
         file >> saveRoot;
+
 
         if (saveRoot.contains("characters") && saveRoot["characters"].is_array())
         {
