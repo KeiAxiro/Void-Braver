@@ -1,15 +1,15 @@
-#include "states.h"
+#include "states/menu_hub.h"
 #include "database.h"
 #include "config.h"
 #include "utils/console_ui.h"
+
 #include <algorithm>
 #include <cctype>
 #include <iostream>
 #include <random>
 #include <string>
 
-// ---- merged from src/states/helpers/input_helpers.cpp
-
+// ---- Input helpers
 using namespace std;
 
 namespace state_helpers
@@ -93,8 +93,7 @@ namespace state_helpers
     }
 } // namespace state_helpers
 
-// ---- merged from src/states/helpers/inventory_helpers.cpp
-
+// ---- Inventory helpers
 using namespace std;
 
 namespace state_helpers
@@ -234,8 +233,7 @@ namespace state_helpers
     }
 } // namespace state_helpers
 
-// ---- merged from src/states/helpers/progress_helpers.cpp
-
+// ---- Dungeon progress helpers
 using namespace std;
 
 namespace state_helpers
@@ -604,8 +602,7 @@ namespace state_helpers
     }
 } // namespace state_helpers
 
-// ---- merged from src/states/helpers/player_stats_helpers.cpp
-
+// ---- Player stat helpers
 using namespace std;
 
 namespace state_helpers
@@ -694,8 +691,7 @@ namespace state_helpers
     }
 } // namespace state_helpers
 
-// ---- merged from src/states/helpers/ui_helpers.cpp
-
+// ---- UI helpers
 using namespace std;
 using namespace consoleui;
 
@@ -829,8 +825,7 @@ namespace state_helpers
     }
 } // namespace state_helpers
 
-// ---- merged from src/states/main_menu_state.cpp
-
+// ---- Main menu state
 using namespace std;
 using namespace consoleui;
 using namespace state_helpers;
@@ -954,8 +949,7 @@ void runMainMenu(GameContext &ctx)
     waitForEnter();
 }
 
-// ---- merged from src/states/hub_state.cpp
-
+// ---- Hub state
 using namespace std;
 using namespace consoleui;
 using namespace state_helpers;
