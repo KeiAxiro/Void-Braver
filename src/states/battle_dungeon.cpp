@@ -42,6 +42,26 @@ using namespace consoleui;
 
 namespace state_helpers
 {
+    constexpr int kStandardBossDepth = 20;
+    constexpr int kFinalDungeonBossSpawnDepth = 21;
+
+    bool isVoidThroneDungeon(const json &dungeon)
+    {
+        const string dungeonId = dungeon.value("id", string());
+        return dungeonId == Config::Progress::FINAL_DUNGEON_ID || dungeonId == "void_throne";
+    }
+
+    bool isBossEncounterDepth(const json &dungeon, int depth)
+    {
+        return depth == kStandardBossDepth || isVoidThroneDungeon(dungeon);
+    }
+
+    bool isUsableBossName(const string &name)
+    {
+        const string lowered = toLower(name);
+        return !name.empty() && lowered != "null" && lowered != "-";
+    }
+
     void printDungeonLore(const json &depthRow)
     {
         if (!depthRow.contains("tale") || !depthRow["tale"].is_object())
@@ -117,7 +137,7 @@ namespace state_helpers
 
                 cout << colorText(to_string(depth) + ". Depth " + to_string(depth), Color::Cyan, true)
                      << " | Recommended Lv " << minLevel << "-" << maxLevelRow;
-                if (depth == maxDepth)
+                if (isBossEncounterDepth(dungeon, depth))
                     cout << " [Boss]";
                 cout << '\n';
 
@@ -177,6 +197,131 @@ using namespace std;
 
 namespace state_helpers
 {
+    string normalizeBossName(string value)
+    {
+        value = toLower(value);
+        const string article = "the ";
+        if (value.rfind(article, 0) == 0)
+            value.erase(0, article.size());
+        return value;
+    }
+
+    bool bossNameMatches(const string &left, const string &right)
+    {
+        return isUsableBossName(left) && isUsableBossName(right) &&
+               normalizeBossName(left) == normalizeBossName(right);
+    }
+
+    bool textMentionsBossName(const string &text, const string &bossName)
+    {
+        if (!isUsableBossName(text) || !isUsableBossName(bossName))
+            return false;
+
+        const string normalizedText = normalizeBossName(text);
+        const string normalizedBossName = normalizeBossName(bossName);
+        return normalizedText.find(normalizedBossName) != string::npos;
+    }
+
+    bool enemySpawnDepthMatches(const json &enemy, int depth)
+    {
+        if (!enemy.contains("spawn_depth") || !enemy["spawn_depth"].is_object())
+            return false;
+
+        const int start = enemy["spawn_depth"].value("start", Config::Progress::START_DEPTH);
+        const int end = enemy["spawn_depth"].value("end", Config::Progress::START_DEPTH);
+        return depth >= start && depth <= end;
+    }
+
+    string findBossNameInText(const GameContext &ctx, const string &text)
+    {
+        if (!ctx.gameData.contains("enemies") || !ctx.gameData["enemies"].is_array())
+            return {};
+
+        for (const auto &enemy : ctx.gameData["enemies"])
+        {
+            if (!enemy.value("is_boss", false))
+                continue;
+
+            const string enemyName = enemy.value("name", string());
+            if (textMentionsBossName(text, enemyName))
+                return enemyName;
+        }
+
+        return {};
+    }
+
+    string bossNameForDepth(const GameContext &ctx, const json &dungeon, int depth)
+    {
+        if (!isVoidThroneDungeon(dungeon))
+            return dungeon.value("boss_name", string());
+
+        const json *depthData = findDungeonDepth(dungeon, depth);
+        if (depthData == nullptr || !depthData->contains("dialog") || !(*depthData)["dialog"].is_object())
+            return {};
+
+        const auto &dialog = (*depthData)["dialog"];
+        if (dialog.contains("on_enter") && dialog["on_enter"].is_array())
+        {
+            for (const auto &line : dialog["on_enter"])
+            {
+                const string speaker = line.value("speaker", string());
+                const string bossName = findBossNameInText(ctx, speaker);
+                if (isUsableBossName(bossName))
+                    return bossName;
+            }
+        }
+
+        if ((*depthData).contains("tale") && (*depthData)["tale"].is_object())
+        {
+            const auto &tale = (*depthData)["tale"];
+            const string titleBossName = findBossNameInText(ctx, tale.value("depth_title", string()));
+            if (isUsableBossName(titleBossName))
+                return titleBossName;
+
+            const string loreBossName = findBossNameInText(ctx, tale.value("lore_content", string()));
+            if (isUsableBossName(loreBossName))
+                return loreBossName;
+        }
+
+        return {};
+    }
+
+    void addBossesByNameToPool(const GameContext &ctx, JsonPointerList &pool, const string &bossName)
+    {
+        if (!isUsableBossName(bossName) || !ctx.gameData.contains("enemies") || !ctx.gameData["enemies"].is_array())
+            return;
+
+        for (const auto &enemy : ctx.gameData["enemies"])
+        {
+            if (enemy.value("is_boss", false) && bossNameMatches(enemy.value("name", string()), bossName))
+                pool.push_back(&enemy);
+        }
+    }
+
+    void addBossesBySpawnDepthToPool(const GameContext &ctx, JsonPointerList &pool, int spawnDepth)
+    {
+        if (!ctx.gameData.contains("enemies") || !ctx.gameData["enemies"].is_array())
+            return;
+
+        for (const auto &enemy : ctx.gameData["enemies"])
+        {
+            if (enemy.value("is_boss", false) && enemySpawnDepthMatches(enemy, spawnDepth))
+                pool.push_back(&enemy);
+        }
+    }
+
+    void addRegularEnemiesByDepthToPool(const GameContext &ctx, JsonPointerList &pool, int depth)
+    {
+        if (!ctx.gameData.contains("enemies") || !ctx.gameData["enemies"].is_array())
+            return;
+
+        for (const auto &enemy : ctx.gameData["enemies"])
+        {
+            if (!enemy.value("is_boss", false) && enemySpawnDepthMatches(enemy, depth))
+                pool.push_back(&enemy);
+        }
+    }
+
     bool isDepthLevelAllowed(const json &depthRow, int level)
     {
         if (!depthRow.contains("level_range") || !depthRow["level_range"].is_object())
@@ -189,44 +334,25 @@ namespace state_helpers
     EnemyInstance spawnEnemyForDepth(const GameContext &ctx, const json &dungeon, int depth)
     {
         JsonPointerList pool;
-        const bool wantsBoss = depth == dungeonMaxDepth(dungeon);
+        const bool wantsBoss = isBossEncounterDepth(dungeon, depth);
+        const string bossName = bossNameForDepth(ctx, dungeon, depth);
 
-        if (ctx.gameData.contains("enemies") && ctx.gameData["enemies"].is_array())
+        if (wantsBoss)
         {
-            for (const auto &enemy : ctx.gameData["enemies"])
-            {
-                if (!enemy.contains("spawn_depth") || !enemy["spawn_depth"].is_object())
-                    continue;
-
-                const int start = enemy["spawn_depth"].value("start", Config::Progress::START_DEPTH);
-                const int end = enemy["spawn_depth"].value("end", Config::Progress::START_DEPTH);
-                const bool matchesDepth = depth >= start && depth <= end;
-                const bool isBoss = enemy.value("is_boss", false);
-
-                if (matchesDepth && isBoss == wantsBoss)
-                    pool.push_back(&enemy);
-            }
-
+            addBossesByNameToPool(ctx, pool, bossName);
             if (pool.empty())
-            {
-                for (const auto &enemy : ctx.gameData["enemies"])
-                {
-                    if (!enemy.contains("spawn_depth") || !enemy["spawn_depth"].is_object())
-                        continue;
-
-                    const int start = enemy["spawn_depth"].value("start", Config::Progress::START_DEPTH);
-                    const int end = enemy["spawn_depth"].value("end", Config::Progress::START_DEPTH);
-                    if (depth >= start && depth <= end)
-                        pool.push_back(&enemy);
-                }
-            }
+                addBossesBySpawnDepthToPool(ctx, pool, isVoidThroneDungeon(dungeon) ? kFinalDungeonBossSpawnDepth : depth);
+        }
+        else
+        {
+            addRegularEnemiesByDepthToPool(ctx, pool, depth);
         }
 
         if (pool.empty())
         {
             EnemyInstance fallback;
             fallback.id = "training_slime";
-            fallback.name = wantsBoss ? dungeon.value("boss_name", string("Apex Slime")) : "Training Slime";
+            fallback.name = wantsBoss && isUsableBossName(bossName) ? bossName : (wantsBoss ? "Apex Slime" : "Training Slime");
             fallback.type = "Slime";
             fallback.level = depth;
             fallback.max_hp = fallback.hp = enemy_balance::kFallbackHpBase + depth * enemy_balance::kFallbackHpPerDepth;
@@ -244,7 +370,7 @@ namespace state_helpers
         enemy.id = templateEnemy.value("id", string("enemy"));
         enemy.name = templateEnemy.value("name", string("Enemy"));
         enemy.type = templateEnemy.value("type", string("Unknown"));
-        enemy.is_boss = wantsBoss || templateEnemy.value("is_boss", false);
+        enemy.is_boss = templateEnemy.value("is_boss", false);
 
         const int enemyLevelMin = templateEnemy["level_range"].value("min", Config::Progress::LEVEL_RANGE_MIN_FALLBACK);
         const int enemyLevelMax = templateEnemy["level_range"].value("max", enemyLevelMin);
@@ -275,9 +401,10 @@ namespace state_helpers
                                     templateEnemy["stats_range"]["def"].value("min", enemy_balance::kTemplateDefMinFallback),
                                     templateEnemy["stats_range"]["def"].value("max", enemy_balance::kTemplateDefMaxFallback));
 
-        if (wantsBoss)
+        if (enemy.is_boss)
         {
-            enemy.name = dungeon.value("boss_name", enemy.name);
+            if (isUsableBossName(bossName))
+                enemy.name = bossName;
             enemy.max_hp = static_cast<int>(enemy.max_hp * enemy_balance::kBossHpMultiplier);
             enemy.atk = static_cast<int>(enemy.atk * enemy_balance::kBossAtkMultiplier);
             enemy.def = static_cast<int>(enemy.def * enemy_balance::kBossDefMultiplier);
@@ -481,8 +608,20 @@ namespace state_helpers
         return DungeonMapEncounterType::Empty;
     }
 
-    DungeonMapNode *buildDungeonMap(const json &depthData)
+    DungeonMapNode *buildSingleEncounterDungeonMap()
     {
+        auto *finalNode = new DungeonMapNode();
+        finalNode->depth = Config::DungeonMap::FINAL_NODE_DEPTH;
+        finalNode->isFinalNode = true;
+        finalNode->encounterType = DungeonMapEncounterType::GuaranteedEncounter;
+        return finalNode;
+    }
+
+    DungeonMapNode *buildDungeonMap(const json &dungeon, const json &depthData, int depth)
+    {
+        if (isBossEncounterDepth(dungeon, depth))
+            return buildSingleEncounterDungeonMap();
+
         std::unordered_map<int, DungeonMapNode *> nodePool;
         DungeonMapNode *root = buildDungeonMapNode(Config::DungeonMap::ROOT_DEPTH, nodePool);
         std::vector<DungeonMapNode *> leaves;
@@ -1456,7 +1595,50 @@ void runBattle(GameContext &ctx)
             continue;
         }
 
-        DungeonMapNode *mapRoot = buildDungeonMap(*depthData);
+        const bool bossDepth = isBossEncounterDepth(*dungeon, ctx.player.progress.current_depth);
+
+        // Boss depth langsung menjalankan satu battle dari data enemies.json,
+        // tanpa membuat map node eksplorasi yang bisa memicu encounter lain.
+        if (bossDepth)
+        {
+            const json *enterDialog = getDepthDialog(*dungeon, ctx.player.progress.current_depth, "on_enter");
+            if (enterDialog)
+            {
+                clearScreen();
+                printStateHeader(ctx, "MEMASUKI DEPTH");
+                consoleui::playDialog(*enterDialog);
+            }
+
+            EnemyInstance enemy = spawnEnemyForDepth(ctx, *dungeon, ctx.player.progress.current_depth);
+            const bool enemyStartsFirst = enemyGetsFirstTurn(ctx, enemy, false);
+            const EncounterResult result = runEncounterBattle(ctx, *dungeon, *depthData, enemy, enemyStartsFirst);
+
+            if (result == EncounterResult::Defeat)
+            {
+                leaveBattleState();
+                return;
+            }
+
+            if (result == EncounterResult::Retreat)
+                continue;
+
+            clearScreen();
+            printStateHeader(ctx, "BOSS DIKALAHKAN");
+            cout << colorText("Kamu berhasil menyelesaikan encounter boss depth ini.", Color::Green, true) << '\n';
+
+            const json *clearDialog = getDepthDialog(*dungeon, ctx.player.progress.current_depth, "on_clear");
+            if (clearDialog)
+                consoleui::playDialog(*clearDialog);
+
+            applyDepthCompletionRewards(ctx, *dungeon, *depthData);
+            waitForEnter();
+
+            leaveBattleState();
+            selectDungeonDepth(ctx, false);
+            return;
+        }
+
+        DungeonMapNode *mapRoot = buildDungeonMap(*dungeon, *depthData, ctx.player.progress.current_depth);
         DungeonMapNode *currentNode = mapRoot;
         bool journeyCancelled = false;
         bool reachedFinalNode = false;
