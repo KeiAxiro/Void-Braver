@@ -429,7 +429,7 @@ namespace state_helpers
     int calculateEnemySpeed(const EnemyInstance &enemy)
     {
         return max(enemy_balance::kMinDamage, enemy.level * enemy_balance::kEnemySpeedPerLevel +
-                          (enemy.atk / enemy_balance::kEnemySpeedAttackDivisor));
+                                                  (enemy.atk / enemy_balance::kEnemySpeedAttackDivisor));
     }
 
     bool enemyGetsFirstTurn(const GameContext &ctx, const EnemyInstance &enemy, bool ambush)
@@ -478,7 +478,7 @@ namespace state_helpers
         if (depth >= Config::DungeonMap::LATE_BRANCH_START_DEPTH)
         {
             DungeonMapNode *nextNode = buildDungeonMapNode(depth + Config::DungeonMap::NORMAL_STEP, nodePool);
-            
+
             const bool shareNode = randInt(Config::Math::PERCENT_ROLL_MIN, Config::Math::PERCENT_ROLL_MAX) <= Config::DungeonMap::LATE_SHARE_NODE_CHANCE;
             if (shareNode)
             {
@@ -789,7 +789,8 @@ namespace state_helpers
     {
         BattleState battle;
 
-        auto showBattlePanel = [&](const string &title, bool showActions) {
+        auto showBattlePanel = [&](const string &title, bool showActions)
+        {
             clearScreen();
             printStateHeader(ctx, title);
             cout << colorText("Dungeon", Color::Yellow, true) << " : " << dungeon.value("name", string()) << '\n';
@@ -823,7 +824,8 @@ namespace state_helpers
             printLine('-');
         };
 
-        auto enemyTurn = [&](bool openingAttack = false) {
+        auto enemyTurn = [&](bool openingAttack = false)
+        {
             if (battle.enemyStunTurns > 0 && !openingAttack)
             {
 
@@ -831,7 +833,8 @@ namespace state_helpers
                 return;
             }
 
-            int playerEffectiveDef = [&]() {
+            int playerEffectiveDef = [&]()
+            {
                 int defense = calculatePlayerDefense(ctx, &battle);
                 defense = max(player_balance::kMinDefense, defense);
 
@@ -843,15 +846,12 @@ namespace state_helpers
                     defense = player_balance::kMaxEffectiveDefenseForEnemyDamage;
                 }
 
-
                 return max(player_balance::kMinDefense, defense);
             }();
-
 
             int enemyDamage = calculateEnemyDamage(enemy, battle) - playerEffectiveDef;
             enemyDamage = max(enemy_balance::kMinDamage, enemyDamage + randInt(enemy_balance::kEnemyDamageJitterMin,
                                                                                enemy_balance::kEnemyDamageJitterMax));
-
 
             bool criticalHit = randUnit() <= enemy.crit_rate;
             if (criticalHit)
@@ -982,7 +982,7 @@ namespace state_helpers
             }
             else if (choice == "3")
             {
-                turnConsumed = useBattleConsumable(ctx);
+                turnConsumed = useBattleConsumable(ctx, battle);
                 if (!turnConsumed)
                     continue;
             }
@@ -1033,7 +1033,6 @@ using namespace consoleui;
 
 namespace state_helpers
 {
-
 
     void grantEnemyDrops(GameContext &ctx, const EnemyInstance &enemy)
 
@@ -1104,9 +1103,7 @@ namespace state_helpers
         return max(player_balance::kMinDefense, defense);
     }
 
-
     // Defense efektif yang dipakai musuh saat menghitung damage ke player.
-
 
     int calculateEnemyDefense(const EnemyInstance &enemy, const BattleState &battle)
 
@@ -1201,7 +1198,7 @@ using namespace consoleui;
 
 namespace state_helpers
 {
-    bool useBattleConsumable(GameContext &ctx)
+    bool useBattleConsumable(GameContext &ctx, BattleState &battle)
     {
         IndexList consumableIndexes;
         for (size_t i = 0; i < ctx.player.inventory.size(); ++i)
@@ -1244,7 +1241,7 @@ namespace state_helpers
 
         clearScreen();
         printStateHeader(ctx, "ITEM USED");
-        useConsumable(ctx, consumableIndexes[static_cast<size_t>(selected - 1)]);
+        useConsumable(ctx, consumableIndexes[static_cast<size_t>(selected - 1)], &battle);
         return true;
     }
 
@@ -1486,7 +1483,8 @@ using namespace state_helpers;
 // 4. jika seluruh langkah selesai, depth dianggap clear
 void runBattle(GameContext &ctx)
 {
-    auto leaveBattleState = [&]() {
+    auto leaveBattleState = [&]()
+    {
         if (!ctx.stateStack.empty() && ctx.stateStack.back() == GameState::Battle)
             ctx.stateStack.pop_back();
     };
