@@ -670,7 +670,9 @@ namespace state_helpers
         syncPlayerClassTier(ctx, tierBefore);
         const string previousTierId = tierBefore.class_tier_id;
         bool leveled = false;
-        while (ctx.player.current_exp >= expRequiredForNextLevel(ctx, ctx.player.level + 1))
+        ctx.player.level = clampInt(ctx.player.level, Config::Defaults::PLAYER_LEVEL, player_balance::kMaxLevel);
+        while (ctx.player.level < player_balance::kMaxLevel &&
+               ctx.player.current_exp >= expRequiredForNextLevel(ctx, ctx.player.level + 1))
         {
             ++ctx.player.level;
             ctx.player.stat_points += STAT_POINTS_PER_LEVEL;
@@ -706,8 +708,12 @@ namespace state_helpers
              << " | Tier: " << tierName
              << " | Level: " << ctx.player.level << "\033[0m\n";
         cout << colorText("Gold", Color::Yellow, true) << ": " << ctx.player.gold
-             << " | EXP: " << ctx.player.current_exp << " / "
-             << expRequiredForNextLevel(ctx, ctx.player.level + 1) << "\033[0m\n";
+             << " | EXP: " << ctx.player.current_exp << " / ";
+        if (ctx.player.level >= player_balance::kMaxLevel)
+            cout << "MAX";
+        else
+            cout << expRequiredForNextLevel(ctx, ctx.player.level + 1);
+        cout << "\033[0m\n";
         cout << colorText("HP", Color::Green, true) << ": " << ctx.player.hp << "/" << ctx.player.max_hp
              << " | " << colorText("MP", Color::Cyan, true) << ": " << ctx.player.mp << "/" << ctx.player.max_mp << "\033[0m\n";
         cout << "STR: " << ctx.player.stats.str << " | INT: " << ctx.player.stats.intl

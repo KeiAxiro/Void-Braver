@@ -27,6 +27,7 @@ namespace game_rules {
     inline constexpr const char *kTitleSeparator = Config::Rules::TITLE_SEPARATOR;
 }
 namespace player_balance {
+    inline constexpr int kMaxLevel = Config::Player::MAX_LEVEL;
     inline constexpr int kMaxEffectiveDefenseForDamage = Config::Player::MAX_EFFECTIVE_DEFENSE_FOR_DAMAGE;
     inline constexpr int kMaxEffectiveDefenseForEnemyDamage = Config::Player::MAX_EFFECTIVE_PLAYER_DEFENSE_FOR_ENEMY_DAMAGE;
     inline constexpr int kDefenseReducedPlayerDamageFloorDenominator = Config::Player::DEFENSE_REDUCED_PLAYER_DAMAGE_FLOOR_DENOMINATOR;

@@ -253,7 +253,9 @@ namespace database_detail
         player.class_id = asString(source.value("class_id", json(Config::Defaults::CLASS_ID)));
         player.class_tier_id = asString(source.value("class_tier_id", json("")));
         player.class_tier_name = asString(source.value("class_tier_name", json("")));
-        player.level = asInt(source.value("level", json(Config::Defaults::PLAYER_LEVEL)), Config::Defaults::PLAYER_LEVEL);
+        player.level = clampInt(asInt(source.value("level", json(Config::Defaults::PLAYER_LEVEL)), Config::Defaults::PLAYER_LEVEL),
+                                Config::Defaults::PLAYER_LEVEL,
+                                player_balance::kMaxLevel);
         player.current_exp = asInt(source.value("current_exp", json(Config::Defaults::PLAYER_EXP)), Config::Defaults::PLAYER_EXP);
         player.gold = asInt(source.value("gold", json(STARTING_GOLD)), STARTING_GOLD);
 
@@ -534,7 +536,11 @@ bool saveGame(const GameContext &ctx)
     PlayerList characters = ctx.characters;
     Player current = ctx.player;
     for (auto &character : characters)
+    {
+        character.level = clampInt(character.level, Config::Defaults::PLAYER_LEVEL, player_balance::kMaxLevel);
         syncPlayerClassTier(ctx, character);
+    }
+    current.level = clampInt(current.level, Config::Defaults::PLAYER_LEVEL, player_balance::kMaxLevel);
     syncPlayerClassTier(ctx, current);
     current.max_hp = effectiveMaxHp(ctx, current);
     current.max_mp = effectiveMaxMp(ctx, current);

@@ -4,6 +4,7 @@ namespace Config
 {
     namespace Player
     {
+        inline constexpr int MAX_LEVEL = 100;                       // Level maksimum karakter.
         inline constexpr int BASE_HP_START = 200;                    // HP dasar sebelum bonus level/stat.
         inline constexpr int BASE_HP_PER_LEVEL = 105;                // Tambahan HP setiap level.
         inline constexpr int BASE_HP_PER_VIT = 100;                  // Tambahan HP setiap 1 VIT.
