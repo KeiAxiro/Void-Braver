@@ -1,0 +1,2832 @@
+{
+  "enemies": [
+    {
+      "id": "abyssal_brute",
+      "name": "Abyssal Brute",
+      "type": "Demon",
+      "level_range": {
+        "min": 51,
+        "max": 60
+      },
+      "stats_range": {
+        "hp": {
+          "min": 6500,
+          "max": 10500
+        },
+        "atk": {
+          "min": 330,
+          "max": 430
+        },
+        "def": {
+          "min": 170,
+          "max": 220
+        },
+        "mp": {
+          "min": 204,
+          "max": 240
+        }
+      },
+      "crit_rate": 0.16,
+      "spawn_depth": {
+        "start": 11,
+        "end": 12
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "ancestral_wraith",
+      "name": "Ancestral Wraith",
+      "type": "Spirit",
+      "level_range": {
+        "min": 61,
+        "max": 70
+      },
+      "stats_range": {
+        "hp": {
+          "min": 8800,
+          "max": 13000
+        },
+        "atk": {
+          "min": 470,
+          "max": 600
+        },
+        "def": {
+          "min": 180,
+          "max": 230
+        },
+        "mp": {
+          "min": 610,
+          "max": 700
+        }
+      },
+      "crit_rate": 0.4,
+      "spawn_depth": {
+        "start": 13,
+        "end": 14
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "ancient_behemoth",
+      "name": "Ancient Behemoth",
+      "type": "Beast",
+      "level_range": {
+        "min": 81,
+        "max": 90
+      },
+      "stats_range": {
+        "hp": {
+          "min": 38000,
+          "max": 55000
+        },
+        "atk": {
+          "min": 730,
+          "max": 920
+        },
+        "def": {
+          "min": 310,
+          "max": 420
+        },
+        "mp": {
+          "min": 0,
+          "max": 0
+        }
+      },
+      "crit_rate": 0.24,
+      "spawn_depth": {
+        "start": 17,
+        "end": 19
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "ancient_monolith",
+      "name": "Ancient Monolith",
+      "type": "Elemental",
+      "level_range": {
+        "min": 91,
+        "max": 100
+      },
+      "stats_range": {
+        "hp": {
+          "min": 35000,
+          "max": 50000
+        },
+        "atk": {
+          "min": 1000,
+          "max": 1300
+        },
+        "def": {
+          "min": 750,
+          "max": 1000
+        },
+        "mp": {
+          "min": 728,
+          "max": 800
+        }
+      },
+      "crit_rate": 0.26,
+      "spawn_depth": {
+        "start": 20,
+        "end": 20
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "apex_predator",
+      "name": "Apex Predator",
+      "type": "Beast",
+      "level_range": {
+        "min": 91,
+        "max": 100
+      },
+      "stats_range": {
+        "hp": {
+          "min": 60000,
+          "max": 85000
+        },
+        "atk": {
+          "min": 950,
+          "max": 1250
+        },
+        "def": {
+          "min": 450,
+          "max": 650
+        },
+        "mp": {
+          "min": 0,
+          "max": 0
+        }
+      },
+      "crit_rate": 0.26,
+      "spawn_depth": {
+        "start": 20,
+        "end": 20
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "arcane_assassin",
+      "name": "Arcane Assassin",
+      "type": "Mercenary",
+      "level_range": {
+        "min": 51,
+        "max": 60
+      },
+      "stats_range": {
+        "hp": {
+          "min": 6500,
+          "max": 10000
+        },
+        "atk": {
+          "min": 330,
+          "max": 430
+        },
+        "def": {
+          "min": 150,
+          "max": 190
+        },
+        "mp": {
+          "min": 204,
+          "max": 240
+        }
+      },
+      "crit_rate": 0.35,
+      "spawn_depth": {
+        "start": 11,
+        "end": 12
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "iron_scrap",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "architect_of_ruin",
+      "name": "Architect of Ruin",
+      "type": "Void (Spirit)",
+      "level_range": {
+        "min": 91,
+        "max": 100
+      },
+      "stats_range": {
+        "hp": {
+          "min": 420000,
+          "max": 500000
+        },
+        "atk": {
+          "min": 5000,
+          "max": 5800
+        },
+        "def": {
+          "min": 2400,
+          "max": 2600
+        },
+        "mp": {
+          "min": 1365,
+          "max": 1500
+        }
+      },
+      "crit_rate": 0.2,
+      "spawn_depth": {
+        "start": 21,
+        "end": 21
+      },
+      "is_boss": true,
+      "drops": [
+        {
+          "item_id": "void_essence",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "iron_scrap",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "banshee_queen",
+      "name": "Banshee Queen",
+      "type": "Spirit",
+      "level_range": {
+        "min": 71,
+        "max": 80
+      },
+      "stats_range": {
+        "hp": {
+          "min": 14000,
+          "max": 21000
+        },
+        "atk": {
+          "min": 630,
+          "max": 780
+        },
+        "def": {
+          "min": 250,
+          "max": 320
+        },
+        "mp": {
+          "min": 710,
+          "max": 800
+        }
+      },
+      "crit_rate": 0.45,
+      "spawn_depth": {
+        "start": 15,
+        "end": 16
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "cave_crawler",
+      "name": "Cave Crawler",
+      "type": "Beast",
+      "level_range": {
+        "min": 11,
+        "max": 20
+      },
+      "stats_range": {
+        "hp": {
+          "min": 550,
+          "max": 1100
+        },
+        "atk": {
+          "min": 40,
+          "max": 75
+        },
+        "def": {
+          "min": 8,
+          "max": 20
+        },
+        "mp": {
+          "min": 0,
+          "max": 0
+        }
+      },
+      "crit_rate": 0.06,
+      "spawn_depth": {
+        "start": 3,
+        "end": 4
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "iron_scrap",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "chaos_weaver",
+      "name": "Chaos Weaver",
+      "type": "Demon",
+      "level_range": {
+        "min": 61,
+        "max": 70
+      },
+      "stats_range": {
+        "hp": {
+          "min": 11000,
+          "max": 16500
+        },
+        "atk": {
+          "min": 450,
+          "max": 580
+        },
+        "def": {
+          "min": 230,
+          "max": 300
+        },
+        "mp": {
+          "min": 244,
+          "max": 280
+        }
+      },
+      "crit_rate": 0.18,
+      "spawn_depth": {
+        "start": 13,
+        "end": 14
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "crystal_shardling",
+      "name": "Crystal Shardling",
+      "type": "Elemental",
+      "level_range": {
+        "min": 31,
+        "max": 40
+      },
+      "stats_range": {
+        "hp": {
+          "min": 1400,
+          "max": 2400
+        },
+        "atk": {
+          "min": 145,
+          "max": 205
+        },
+        "def": {
+          "min": 90,
+          "max": 130
+        },
+        "mp": {
+          "min": 248,
+          "max": 320
+        }
+      },
+      "crit_rate": 0.11,
+      "spawn_depth": {
+        "start": 7,
+        "end": 8
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "iron_scrap",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "cursed_revenant",
+      "name": "Cursed Revenant",
+      "type": "Spirit",
+      "level_range": {
+        "min": 51,
+        "max": 60
+      },
+      "stats_range": {
+        "hp": {
+          "min": 5200,
+          "max": 8200
+        },
+        "atk": {
+          "min": 350,
+          "max": 450
+        },
+        "def": {
+          "min": 130,
+          "max": 170
+        },
+        "mp": {
+          "min": 510,
+          "max": 600
+        }
+      },
+      "crit_rate": 0.35,
+      "spawn_depth": {
+        "start": 11,
+        "end": 12
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "demon_commander",
+      "name": "Demon Commander",
+      "type": "Demon",
+      "level_range": {
+        "min": 71,
+        "max": 80
+      },
+      "stats_range": {
+        "hp": {
+          "min": 18000,
+          "max": 26000
+        },
+        "atk": {
+          "min": 600,
+          "max": 750
+        },
+        "def": {
+          "min": 320,
+          "max": 410
+        },
+        "mp": {
+          "min": 284,
+          "max": 320
+        }
+      },
+      "crit_rate": 0.21,
+      "spawn_depth": {
+        "start": 15,
+        "end": 16
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "desert_marauder",
+      "name": "Desert Marauder",
+      "type": "Mercenary",
+      "level_range": {
+        "min": 31,
+        "max": 40
+      },
+      "stats_range": {
+        "hp": {
+          "min": 2000,
+          "max": 3500
+        },
+        "atk": {
+          "min": 155,
+          "max": 220
+        },
+        "def": {
+          "min": 65,
+          "max": 95
+        },
+        "mp": {
+          "min": 124,
+          "max": 160
+        }
+      },
+      "crit_rate": 0.25,
+      "spawn_depth": {
+        "start": 7,
+        "end": 8
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "iron_scrap",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "dread_overlord",
+      "name": "Dread Overlord",
+      "type": "Demon",
+      "level_range": {
+        "min": 81,
+        "max": 90
+      },
+      "stats_range": {
+        "hp": {
+          "min": 28000,
+          "max": 43000
+        },
+        "atk": {
+          "min": 780,
+          "max": 1000
+        },
+        "def": {
+          "min": 420,
+          "max": 580
+        },
+        "mp": {
+          "min": 324,
+          "max": 360
+        }
+      },
+      "crit_rate": 0.24,
+      "spawn_depth": {
+        "start": 17,
+        "end": 19
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "elder_basilisk",
+      "name": "Elder Basilisk",
+      "type": "Beast",
+      "level_range": {
+        "min": 51,
+        "max": 60
+      },
+      "stats_range": {
+        "hp": {
+          "min": 8500,
+          "max": 13000
+        },
+        "atk": {
+          "min": 300,
+          "max": 390
+        },
+        "def": {
+          "min": 110,
+          "max": 150
+        },
+        "mp": {
+          "min": 0,
+          "max": 0
+        }
+      },
+      "crit_rate": 0.16,
+      "spawn_depth": {
+        "start": 11,
+        "end": 12
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "elite_sellsword",
+      "name": "Elite Sellsword",
+      "type": "Mercenary",
+      "level_range": {
+        "min": 81,
+        "max": 90
+      },
+      "stats_range": {
+        "hp": {
+          "min": 30000,
+          "max": 45000
+        },
+        "atk": {
+          "min": 780,
+          "max": 1000
+        },
+        "def": {
+          "min": 380,
+          "max": 520
+        },
+        "mp": {
+          "min": 324,
+          "max": 360
+        }
+      },
+      "crit_rate": 0.5,
+      "spawn_depth": {
+        "start": 17,
+        "end": 19
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "iron_scrap",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "eternal_phantasm",
+      "name": "Eternal Phantasm",
+      "type": "Spirit",
+      "level_range": {
+        "min": 91,
+        "max": 100
+      },
+      "stats_range": {
+        "hp": {
+          "min": 40000,
+          "max": 58000
+        },
+        "atk": {
+          "min": 1100,
+          "max": 1450
+        },
+        "def": {
+          "min": 520,
+          "max": 750
+        },
+        "mp": {
+          "min": 910,
+          "max": 1000
+        }
+      },
+      "crit_rate": 0.55,
+      "spawn_depth": {
+        "start": 20,
+        "end": 20
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "exiled_slinger",
+      "name": "Exiled Slinger",
+      "type": "Mercenary",
+      "level_range": {
+        "min": 11,
+        "max": 20
+      },
+      "stats_range": {
+        "hp": {
+          "min": 450,
+          "max": 900
+        },
+        "atk": {
+          "min": 48,
+          "max": 82
+        },
+        "def": {
+          "min": 15,
+          "max": 30
+        },
+        "mp": {
+          "min": 44,
+          "max": 80
+        }
+      },
+      "crit_rate": 0.15,
+      "spawn_depth": {
+        "start": 3,
+        "end": 4
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "iron_scrap",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "fallen_paladin",
+      "name": "Fallen Paladin",
+      "type": "Mercenary",
+      "level_range": {
+        "min": 41,
+        "max": 50
+      },
+      "stats_range": {
+        "hp": {
+          "min": 3800,
+          "max": 6000
+        },
+        "atk": {
+          "min": 230,
+          "max": 310
+        },
+        "def": {
+          "min": 100,
+          "max": 140
+        },
+        "mp": {
+          "min": 164,
+          "max": 200
+        }
+      },
+      "crit_rate": 0.3,
+      "spawn_depth": {
+        "start": 9,
+        "end": 10
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "flame_sprite",
+      "name": "Flame Sprite",
+      "type": "Elemental",
+      "level_range": {
+        "min": 11,
+        "max": 20
+      },
+      "stats_range": {
+        "hp": {
+          "min": 300,
+          "max": 650
+        },
+        "atk": {
+          "min": 45,
+          "max": 80
+        },
+        "def": {
+          "min": 20,
+          "max": 45
+        },
+        "mp": {
+          "min": 88,
+          "max": 160
+        }
+      },
+      "crit_rate": 0.06,
+      "spawn_depth": {
+        "start": 3,
+        "end": 4
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "iron_scrap",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "giant_rock_boar",
+      "name": "Giant Rock-Boar",
+      "type": "Beast",
+      "level_range": {
+        "min": 21,
+        "max": 30
+      },
+      "stats_range": {
+        "hp": {
+          "min": 1200,
+          "max": 2200
+        },
+        "atk": {
+          "min": 80,
+          "max": 130
+        },
+        "def": {
+          "min": 25,
+          "max": 45
+        },
+        "mp": {
+          "min": 0,
+          "max": 0
+        }
+      },
+      "crit_rate": 0.08,
+      "spawn_depth": {
+        "start": 5,
+        "end": 6
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "glacier_sentinel",
+      "name": "Glacier Sentinel",
+      "type": "Elemental",
+      "level_range": {
+        "min": 61,
+        "max": 70
+      },
+      "stats_range": {
+        "hp": {
+          "min": 7500,
+          "max": 11500
+        },
+        "atk": {
+          "min": 420,
+          "max": 530
+        },
+        "def": {
+          "min": 270,
+          "max": 360
+        },
+        "mp": {
+          "min": 488,
+          "max": 560
+        }
+      },
+      "crit_rate": 0.18,
+      "spawn_depth": {
+        "start": 13,
+        "end": 14
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "gorgon_guard",
+      "name": "Gorgon Guard",
+      "type": "Demon",
+      "level_range": {
+        "min": 41,
+        "max": 50
+      },
+      "stats_range": {
+        "hp": {
+          "min": 3800,
+          "max": 6000
+        },
+        "atk": {
+          "min": 230,
+          "max": 315
+        },
+        "def": {
+          "min": 115,
+          "max": 160
+        },
+        "mp": {
+          "min": 164,
+          "max": 200
+        }
+      },
+      "crit_rate": 0.14,
+      "spawn_depth": {
+        "start": 9,
+        "end": 10
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "iron_scrap",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "grand_mercenary",
+      "name": "Grand Mercenary",
+      "type": "Mercenary",
+      "level_range": {
+        "min": 91,
+        "max": 100
+      },
+      "stats_range": {
+        "hp": {
+          "min": 50000,
+          "max": 72000
+        },
+        "atk": {
+          "min": 1050,
+          "max": 1400
+        },
+        "def": {
+          "min": 550,
+          "max": 800
+        },
+        "mp": {
+          "min": 364,
+          "max": 400
+        }
+      },
+      "crit_rate": 0.55,
+      "spawn_depth": {
+        "start": 20,
+        "end": 20
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "harbinger_of_doom",
+      "name": "Harbinger of Doom",
+      "type": "Demon",
+      "level_range": {
+        "min": 91,
+        "max": 100
+      },
+      "stats_range": {
+        "hp": {
+          "min": 48000,
+          "max": 70000
+        },
+        "atk": {
+          "min": 1050,
+          "max": 1400
+        },
+        "def": {
+          "min": 600,
+          "max": 850
+        },
+        "mp": {
+          "min": 364,
+          "max": 400
+        }
+      },
+      "crit_rate": 0.26,
+      "spawn_depth": {
+        "start": 20,
+        "end": 20
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "hellbound_hound",
+      "name": "Hellbound Hound",
+      "type": "Demon",
+      "level_range": {
+        "min": 31,
+        "max": 40
+      },
+      "stats_range": {
+        "hp": {
+          "min": 1900,
+          "max": 3400
+        },
+        "atk": {
+          "min": 155,
+          "max": 220
+        },
+        "def": {
+          "min": 70,
+          "max": 100
+        },
+        "mp": {
+          "min": 124,
+          "max": 160
+        }
+      },
+      "crit_rate": 0.11,
+      "spawn_depth": {
+        "start": 7,
+        "end": 8
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "horned_ravager",
+      "name": "Horned Ravager",
+      "type": "Demon",
+      "level_range": {
+        "min": 21,
+        "max": 30
+      },
+      "stats_range": {
+        "hp": {
+          "min": 950,
+          "max": 1700
+        },
+        "atk": {
+          "min": 90,
+          "max": 145
+        },
+        "def": {
+          "min": 40,
+          "max": 65
+        },
+        "mp": {
+          "min": 84,
+          "max": 120
+        }
+      },
+      "crit_rate": 0.08,
+      "spawn_depth": {
+        "start": 5,
+        "end": 6
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "iron_scrap",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "iron_claw_raptor",
+      "name": "Iron-Claw Raptor",
+      "type": "Beast",
+      "level_range": {
+        "min": 61,
+        "max": 70
+      },
+      "stats_range": {
+        "hp": {
+          "min": 14500,
+          "max": 21000
+        },
+        "atk": {
+          "min": 410,
+          "max": 520
+        },
+        "def": {
+          "min": 160,
+          "max": 210
+        },
+        "mp": {
+          "min": 0,
+          "max": 0
+        }
+      },
+      "crit_rate": 0.18,
+      "spawn_depth": {
+        "start": 13,
+        "end": 14
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "lesser_imp",
+      "name": "Lesser Imp",
+      "type": "Demon",
+      "level_range": {
+        "min": 1,
+        "max": 10
+      },
+      "stats_range": {
+        "hp": {
+          "min": 110,
+          "max": 380
+        },
+        "atk": {
+          "min": 15,
+          "max": 45
+        },
+        "def": {
+          "min": 5,
+          "max": 15
+        },
+        "mp": {
+          "min": 4,
+          "max": 20
+        }
+      },
+      "crit_rate": 0.04,
+      "spawn_depth": {
+        "start": 1,
+        "end": 2
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "iron_scrap",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "living_pebble",
+      "name": "Living Pebble",
+      "type": "Elemental",
+      "level_range": {
+        "min": 1,
+        "max": 10
+      },
+      "stats_range": {
+        "hp": {
+          "min": 80,
+          "max": 250
+        },
+        "atk": {
+          "min": 12,
+          "max": 40
+        },
+        "def": {
+          "min": 10,
+          "max": 25
+        },
+        "mp": {
+          "min": 6,
+          "max": 24
+        }
+      },
+      "crit_rate": 0.04,
+      "spawn_depth": {
+        "start": 1,
+        "end": 2
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "iron_scrap",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "lost_soul",
+      "name": "Lost Soul",
+      "type": "Spirit",
+      "level_range": {
+        "min": 1,
+        "max": 10
+      },
+      "stats_range": {
+        "hp": {
+          "min": 80,
+          "max": 300
+        },
+        "atk": {
+          "min": 20,
+          "max": 50
+        },
+        "def": {
+          "min": 3,
+          "max": 10
+        },
+        "mp": {
+          "min": 8,
+          "max": 30
+        }
+      },
+      "crit_rate": 0.1,
+      "spawn_depth": {
+        "start": 1,
+        "end": 2
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "iron_scrap",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "magma_colossus",
+      "name": "Magma Colossus",
+      "type": "Elemental",
+      "level_range": {
+        "min": 81,
+        "max": 90
+      },
+      "stats_range": {
+        "hp": {
+          "min": 20000,
+          "max": 30000
+        },
+        "atk": {
+          "min": 740,
+          "max": 940
+        },
+        "def": {
+          "min": 500,
+          "max": 680
+        },
+        "mp": {
+          "min": 648,
+          "max": 720
+        }
+      },
+      "crit_rate": 0.24,
+      "spawn_depth": {
+        "start": 17,
+        "end": 19
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "molten_core",
+      "name": "Molten Core",
+      "type": "Elemental",
+      "level_range": {
+        "min": 51,
+        "max": 60
+      },
+      "stats_range": {
+        "hp": {
+          "min": 4500,
+          "max": 7000
+        },
+        "atk": {
+          "min": 310,
+          "max": 400
+        },
+        "def": {
+          "min": 180,
+          "max": 250
+        },
+        "mp": {
+          "min": 408,
+          "max": 480
+        }
+      },
+      "crit_rate": 0.16,
+      "spawn_depth": {
+        "start": 11,
+        "end": 12
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "iron_scrap",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "mud_golem",
+      "name": "Mud Golem",
+      "type": "Elemental",
+      "level_range": {
+        "min": 21,
+        "max": 30
+      },
+      "stats_range": {
+        "hp": {
+          "min": 700,
+          "max": 1200
+        },
+        "atk": {
+          "min": 85,
+          "max": 135
+        },
+        "def": {
+          "min": 50,
+          "max": 85
+        },
+        "mp": {
+          "min": 168,
+          "max": 240
+        }
+      },
+      "crit_rate": 0.08,
+      "spawn_depth": {
+        "start": 5,
+        "end": 6
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "novice_thief",
+      "name": "Novice Thief",
+      "type": "Mercenary",
+      "level_range": {
+        "min": 1,
+        "max": 10
+      },
+      "stats_range": {
+        "hp": {
+          "min": 120,
+          "max": 380
+        },
+        "atk": {
+          "min": 18,
+          "max": 42
+        },
+        "def": {
+          "min": 4,
+          "max": 12
+        },
+        "mp": {
+          "min": 4,
+          "max": 18
+        }
+      },
+      "crit_rate": 0.1,
+      "spawn_depth": {
+        "start": 1,
+        "end": 2
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "iron_scrap",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "phantom_assassin",
+      "name": "Phantom Assassin",
+      "type": "Spirit",
+      "level_range": {
+        "min": 41,
+        "max": 50
+      },
+      "stats_range": {
+        "hp": {
+          "min": 3000,
+          "max": 4800
+        },
+        "atk": {
+          "min": 250,
+          "max": 330
+        },
+        "def": {
+          "min": 90,
+          "max": 120
+        },
+        "mp": {
+          "min": 410,
+          "max": 500
+        }
+      },
+      "crit_rate": 0.3,
+      "spawn_depth": {
+        "start": 9,
+        "end": 10
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "iron_scrap",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "rogue_guard",
+      "name": "Rogue Guard",
+      "type": "Mercenary",
+      "level_range": {
+        "min": 21,
+        "max": 30
+      },
+      "stats_range": {
+        "hp": {
+          "min": 1000,
+          "max": 1800
+        },
+        "atk": {
+          "min": 85,
+          "max": 135
+        },
+        "def": {
+          "min": 35,
+          "max": 60
+        },
+        "mp": {
+          "min": 84,
+          "max": 120
+        }
+      },
+      "crit_rate": 0.2,
+      "spawn_depth": {
+        "start": 5,
+        "end": 6
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "iron_scrap",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "savage_direwolf",
+      "name": "Savage Direwolf",
+      "type": "Beast",
+      "level_range": {
+        "min": 41,
+        "max": 50
+      },
+      "stats_range": {
+        "hp": {
+          "min": 5000,
+          "max": 7500
+        },
+        "atk": {
+          "min": 210,
+          "max": 280
+        },
+        "def": {
+          "min": 75,
+          "max": 100
+        },
+        "mp": {
+          "min": 0,
+          "max": 0
+        }
+      },
+      "crit_rate": 0.14,
+      "spawn_depth": {
+        "start": 9,
+        "end": 10
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "iron_scrap",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "shadow_lurker",
+      "name": "Shadow Lurker",
+      "type": "Demon",
+      "level_range": {
+        "min": 11,
+        "max": 20
+      },
+      "stats_range": {
+        "hp": {
+          "min": 420,
+          "max": 900
+        },
+        "atk": {
+          "min": 50,
+          "max": 85
+        },
+        "def": {
+          "min": 18,
+          "max": 35
+        },
+        "mp": {
+          "min": 44,
+          "max": 80
+        }
+      },
+      "crit_rate": 0.06,
+      "spawn_depth": {
+        "start": 3,
+        "end": 4
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "soul_eater",
+      "name": "Soul Eater",
+      "type": "Spirit",
+      "level_range": {
+        "min": 81,
+        "max": 90
+      },
+      "stats_range": {
+        "hp": {
+          "min": 23000,
+          "max": 35000
+        },
+        "atk": {
+          "min": 820,
+          "max": 1050
+        },
+        "def": {
+          "min": 350,
+          "max": 480
+        },
+        "mp": {
+          "min": 810,
+          "max": 900
+        }
+      },
+      "crit_rate": 0.5,
+      "spawn_depth": {
+        "start": 17,
+        "end": 19
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "spectral_monk",
+      "name": "Spectral Monk",
+      "type": "Spirit",
+      "level_range": {
+        "min": 31,
+        "max": 40
+      },
+      "stats_range": {
+        "hp": {
+          "min": 1600,
+          "max": 2800
+        },
+        "atk": {
+          "min": 165,
+          "max": 230
+        },
+        "def": {
+          "min": 55,
+          "max": 80
+        },
+        "mp": {
+          "min": 310,
+          "max": 400
+        }
+      },
+      "crit_rate": 0.25,
+      "spawn_depth": {
+        "start": 7,
+        "end": 8
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "static_cloud",
+      "name": "Static Cloud",
+      "type": "Elemental",
+      "level_range": {
+        "min": 41,
+        "max": 50
+      },
+      "stats_range": {
+        "hp": {
+          "min": 2600,
+          "max": 4200
+        },
+        "atk": {
+          "min": 215,
+          "max": 290
+        },
+        "def": {
+          "min": 120,
+          "max": 170
+        },
+        "mp": {
+          "min": 328,
+          "max": 400
+        }
+      },
+      "crit_rate": 0.14,
+      "spawn_depth": {
+        "start": 9,
+        "end": 10
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "the_ashen_warlord",
+      "name": "The Ashen Warlord",
+      "type": "Demon",
+      "level_range": {
+        "min": 91,
+        "max": 100
+      },
+      "stats_range": {
+        "hp": {
+          "min": 250000,
+          "max": 350000
+        },
+        "atk": {
+          "min": 2500,
+          "max": 3200
+        },
+        "def": {
+          "min": 1500,
+          "max": 1800
+        },
+        "mp": {
+          "min": 364,
+          "max": 400
+        }
+      },
+      "crit_rate": 0.15,
+      "spawn_depth": {
+        "start": 20,
+        "end": 20
+      },
+      "is_boss": true,
+      "drops": [
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "iron_scrap",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "the_eclipse_vanguard",
+      "name": "The Eclipse Vanguard",
+      "type": "Void (Demon)",
+      "level_range": {
+        "min": 91,
+        "max": 100
+      },
+      "stats_range": {
+        "hp": {
+          "min": 380000,
+          "max": 450000
+        },
+        "atk": {
+          "min": 4500,
+          "max": 5200
+        },
+        "def": {
+          "min": 2000,
+          "max": 2300
+        },
+        "mp": {
+          "min": 910,
+          "max": 1000
+        }
+      },
+      "crit_rate": 0.2,
+      "spawn_depth": {
+        "start": 21,
+        "end": 21
+      },
+      "is_boss": true,
+      "drops": [
+        {
+          "item_id": "void_essence",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "iron_scrap",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "the_grand_archivist",
+      "name": "The Grand Archivist",
+      "type": "Mercenary",
+      "level_range": {
+        "min": 91,
+        "max": 100
+      },
+      "stats_range": {
+        "hp": {
+          "min": 180000,
+          "max": 240000
+        },
+        "atk": {
+          "min": 3500,
+          "max": 4200
+        },
+        "def": {
+          "min": 1200,
+          "max": 1400
+        },
+        "mp": {
+          "min": 364,
+          "max": 400
+        }
+      },
+      "crit_rate": 0.15,
+      "spawn_depth": {
+        "start": 20,
+        "end": 20
+      },
+      "is_boss": true,
+      "drops": [
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "iron_scrap",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "the_oracle_of_ruin",
+      "name": "The Oracle of Ruin",
+      "type": "Elemental",
+      "level_range": {
+        "min": 91,
+        "max": 100
+      },
+      "stats_range": {
+        "hp": {
+          "min": 220000,
+          "max": 300000
+        },
+        "atk": {
+          "min": 3200,
+          "max": 4000
+        },
+        "def": {
+          "min": 2000,
+          "max": 2500
+        },
+        "mp": {
+          "min": 728,
+          "max": 800
+        }
+      },
+      "crit_rate": 0.15,
+      "spawn_depth": {
+        "start": 20,
+        "end": 20
+      },
+      "is_boss": true,
+      "drops": [
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "the_phantom_stalker",
+      "name": "The Phantom Stalker",
+      "type": "Spirit",
+      "level_range": {
+        "min": 91,
+        "max": 100
+      },
+      "stats_range": {
+        "hp": {
+          "min": 150000,
+          "max": 200000
+        },
+        "atk": {
+          "min": 3800,
+          "max": 4500
+        },
+        "def": {
+          "min": 900,
+          "max": 1100
+        },
+        "mp": {
+          "min": 910,
+          "max": 1000
+        }
+      },
+      "crit_rate": 0.15,
+      "spawn_depth": {
+        "start": 20,
+        "end": 20
+      },
+      "is_boss": true,
+      "drops": [
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "iron_scrap",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "the_rotting_behemoth",
+      "name": "The Rotting Behemoth",
+      "type": "Beast",
+      "level_range": {
+        "min": 91,
+        "max": 100
+      },
+      "stats_range": {
+        "hp": {
+          "min": 450000,
+          "max": 600000
+        },
+        "atk": {
+          "min": 2200,
+          "max": 2800
+        },
+        "def": {
+          "min": 1300,
+          "max": 1600
+        },
+        "mp": {
+          "min": 0,
+          "max": 0
+        }
+      },
+      "crit_rate": 0.15,
+      "spawn_depth": {
+        "start": 20,
+        "end": 20
+      },
+      "is_boss": true,
+      "drops": [
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "the_void_final_form",
+      "name": "The Void (Final Form)",
+      "type": "Void (Demon)",
+      "level_range": {
+        "min": 91,
+        "max": 100
+      },
+      "stats_range": {
+        "hp": {
+          "min": 1200000,
+          "max": 1500000
+        },
+        "atk": {
+          "min": 8500,
+          "max": 10000
+        },
+        "def": {
+          "min": 5000,
+          "max": 6000
+        },
+        "mp": {
+          "min": 9999,
+          "max": 9999
+        }
+      },
+      "crit_rate": 0.3,
+      "spawn_depth": {
+        "start": 21,
+        "end": 21
+      },
+      "is_boss": true,
+      "drops": [
+        {
+          "item_id": "void_essence",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "iron_scrap",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "the_void_form_1",
+      "name": "The Void (Form 1)",
+      "type": "Void (Elemental)",
+      "level_range": {
+        "min": 91,
+        "max": 100
+      },
+      "stats_range": {
+        "hp": {
+          "min": 550000,
+          "max": 650000
+        },
+        "atk": {
+          "min": 5800,
+          "max": 6500
+        },
+        "def": {
+          "min": 2800,
+          "max": 3200
+        },
+        "mp": {
+          "min": 1365,
+          "max": 1500
+        }
+      },
+      "crit_rate": 0.2,
+      "spawn_depth": {
+        "start": 21,
+        "end": 21
+      },
+      "is_boss": true,
+      "drops": [
+        {
+          "item_id": "void_essence",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "iron_scrap",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "the_void_form_2",
+      "name": "The Void (Form 2)",
+      "type": "Void (Beast)",
+      "level_range": {
+        "min": 91,
+        "max": 100
+      },
+      "stats_range": {
+        "hp": {
+          "min": 750000,
+          "max": 900000
+        },
+        "atk": {
+          "min": 6500,
+          "max": 7500
+        },
+        "def": {
+          "min": 3500,
+          "max": 4200
+        },
+        "mp": {
+          "min": 0,
+          "max": 0
+        }
+      },
+      "crit_rate": 0.2,
+      "spawn_depth": {
+        "start": 21,
+        "end": 21
+      },
+      "is_boss": true,
+      "drops": [
+        {
+          "item_id": "void_essence",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "thornback_bear",
+      "name": "Thornback Bear",
+      "type": "Beast",
+      "level_range": {
+        "min": 31,
+        "max": 40
+      },
+      "stats_range": {
+        "hp": {
+          "min": 2500,
+          "max": 4500
+        },
+        "atk": {
+          "min": 140,
+          "max": 200
+        },
+        "def": {
+          "min": 40,
+          "max": 70
+        },
+        "mp": {
+          "min": 0,
+          "max": 0
+        }
+      },
+      "crit_rate": 0.11,
+      "spawn_depth": {
+        "start": 7,
+        "end": 8
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "thunder_mammoth",
+      "name": "Thunder Mammoth",
+      "type": "Beast",
+      "level_range": {
+        "min": 71,
+        "max": 80
+      },
+      "stats_range": {
+        "hp": {
+          "min": 23000,
+          "max": 35000
+        },
+        "atk": {
+          "min": 550,
+          "max": 700
+        },
+        "def": {
+          "min": 220,
+          "max": 290
+        },
+        "mp": {
+          "min": 0,
+          "max": 0
+        }
+      },
+      "crit_rate": 0.21,
+      "spawn_depth": {
+        "start": 15,
+        "end": 16
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "vengeful_mist",
+      "name": "Vengeful Mist",
+      "type": "Spirit",
+      "level_range": {
+        "min": 21,
+        "max": 30
+      },
+      "stats_range": {
+        "hp": {
+          "min": 800,
+          "max": 1400
+        },
+        "atk": {
+          "min": 100,
+          "max": 155
+        },
+        "def": {
+          "min": 30,
+          "max": 50
+        },
+        "mp": {
+          "min": 210,
+          "max": 300
+        }
+      },
+      "crit_rate": 0.2,
+      "spawn_depth": {
+        "start": 5,
+        "end": 6
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "veteran_gladiator",
+      "name": "Veteran Gladiator",
+      "type": "Mercenary",
+      "level_range": {
+        "min": 61,
+        "max": 70
+      },
+      "stats_range": {
+        "hp": {
+          "min": 11000,
+          "max": 17000
+        },
+        "atk": {
+          "min": 450,
+          "max": 580
+        },
+        "def": {
+          "min": 200,
+          "max": 260
+        },
+        "mp": {
+          "min": 244,
+          "max": 280
+        }
+      },
+      "crit_rate": 0.4,
+      "spawn_depth": {
+        "start": 13,
+        "end": 14
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "iron_scrap",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "void_cultist",
+      "name": "Void Cultist",
+      "type": "Mercenary",
+      "level_range": {
+        "min": 71,
+        "max": 80
+      },
+      "stats_range": {
+        "hp": {
+          "min": 18000,
+          "max": 28000
+        },
+        "atk": {
+          "min": 600,
+          "max": 750
+        },
+        "def": {
+          "min": 280,
+          "max": 360
+        },
+        "mp": {
+          "min": 284,
+          "max": 320
+        }
+      },
+      "crit_rate": 0.45,
+      "spawn_depth": {
+        "start": 15,
+        "end": 16
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "wailing_echo",
+      "name": "Wailing Echo",
+      "type": "Spirit",
+      "level_range": {
+        "min": 11,
+        "max": 20
+      },
+      "stats_range": {
+        "hp": {
+          "min": 350,
+          "max": 750
+        },
+        "atk": {
+          "min": 55,
+          "max": 95
+        },
+        "def": {
+          "min": 12,
+          "max": 25
+        },
+        "mp": {
+          "min": 110,
+          "max": 200
+        }
+      },
+      "crit_rate": 0.15,
+      "spawn_depth": {
+        "start": 3,
+        "end": 4
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "iron_scrap",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "wild_fang",
+      "name": "Wild Fang",
+      "type": "Beast",
+      "level_range": {
+        "min": 1,
+        "max": 10
+      },
+      "stats_range": {
+        "hp": {
+          "min": 150,
+          "max": 450
+        },
+        "atk": {
+          "min": 10,
+          "max": 35
+        },
+        "def": {
+          "min": 2,
+          "max": 8
+        },
+        "mp": {
+          "min": 0,
+          "max": 0
+        }
+      },
+      "crit_rate": 0.04,
+      "spawn_depth": {
+        "start": 1,
+        "end": 2
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "iron_scrap",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        }
+      ]
+    },
+    {
+      "id": "zephyr_spirit",
+      "name": "Zephyr Spirit",
+      "type": "Elemental",
+      "level_range": {
+        "min": 71,
+        "max": 80
+      },
+      "stats_range": {
+        "hp": {
+          "min": 12500,
+          "max": 18000
+        },
+        "atk": {
+          "min": 560,
+          "max": 710
+        },
+        "def": {
+          "min": 350,
+          "max": 450
+        },
+        "mp": {
+          "min": 568,
+          "max": 640
+        }
+      },
+      "crit_rate": 0.21,
+      "spawn_depth": {
+        "start": 15,
+        "end": 16
+      },
+      "is_boss": false,
+      "drops": [
+        {
+          "item_id": "fine_fiber",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "mana_shard",
+          "drop_rate": 100
+        },
+        {
+          "item_id": "heavy_ore",
+          "drop_rate": 100
+        }
+      ]
+    }
+  ]
+}
