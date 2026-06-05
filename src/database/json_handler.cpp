@@ -378,6 +378,35 @@ using namespace database_detail;
 
 namespace
 {
+    bool writeCharactersToSave(const GameContext &ctx, const PlayerList &characters)
+    {
+        json saveRoot = json::object();
+        saveRoot["characters"] = json::array();
+        for (const auto &character : characters)
+            saveRoot["characters"].push_back(playerToJson(character));
+
+        const string path = resolveSavePath(ctx);
+        try
+        {
+            const filesystem::path parent = filesystem::path(path).parent_path();
+            if (!parent.empty())
+                filesystem::create_directories(parent);
+        }
+        catch (...)
+        {
+        }
+
+        ofstream file(path);
+        if (!file.is_open())
+        {
+            cerr << "Failed to write save file: " << path << '\n';
+            return false;
+        }
+
+        file << saveRoot.dump(Config::Defaults::SAVE_JSON_INDENT) << '\n';
+        return true;
+    }
+
     bool mergeGameDataModule(json &target, const json &moduleData, const string &modulePath)
     {
         if (!moduleData.is_object())
@@ -558,31 +587,48 @@ bool saveGame(const GameContext &ctx)
     current.mp = clampInt(current.mp, player_balance::kResourceFloor, current.max_mp);
     upsertCharacter(characters, current);
 
-    json saveRoot = json::object();
-    saveRoot["characters"] = json::array();
-    for (const auto &character : characters)
-        saveRoot["characters"].push_back(playerToJson(character));
+    return writeCharactersToSave(ctx, characters);
+}
 
-    const string path = resolveSavePath(ctx);
-    try
-    {
-        const filesystem::path parent = filesystem::path(path).parent_path();
-        if (!parent.empty())
-            filesystem::create_directories(parent);
-    }
-    catch (...)
-    {
-    }
-
-    ofstream file(path);
-    if (!file.is_open())
-    {
-        cerr << "Failed to write save file: " << path << '\n';
+bool deleteCharacter(GameContext &ctx, int index)
+{
+    if (index < 0 || index >= static_cast<int>(ctx.characters.size()))
         return false;
+
+    PlayerList remaining;
+    for (int i = 0; i < static_cast<int>(ctx.characters.size()); ++i)
+    {
+        if (i == index)
+            continue;
+
+        Player character = ctx.characters[static_cast<size_t>(i)];
+        character.level = clampInt(character.level, Config::Defaults::PLAYER_LEVEL, player_balance::kMaxLevel);
+        syncPlayerClassTier(ctx, character);
+        character.max_hp = effectiveMaxHp(ctx, character);
+        character.max_mp = effectiveMaxMp(ctx, character);
+        character.hp = clampInt(character.hp, player_balance::kResourceFloor, character.max_hp);
+        character.mp = clampInt(character.mp, player_balance::kResourceFloor, character.max_mp);
+        remaining.push_back(character);
     }
 
-    file << saveRoot.dump(Config::Defaults::SAVE_JSON_INDENT) << '\n';
-    return true;
+    ctx.characters = remaining;
+    if (ctx.characters.empty())
+    {
+        ctx.player = Player{};
+        ctx.activeCharacterIndex = Config::Defaults::ACTIVE_CHARACTER_NONE;
+    }
+    else
+    {
+        int nextIndex = ctx.activeCharacterIndex;
+        if (nextIndex == index)
+            nextIndex = min(index, static_cast<int>(ctx.characters.size()) - 1);
+        else if (nextIndex > index)
+            --nextIndex;
+        nextIndex = clampInt(nextIndex, Config::Defaults::ACTIVE_CHARACTER_FIRST_INDEX, static_cast<int>(ctx.characters.size()) - 1);
+        loadCharacter(ctx, nextIndex);
+    }
+
+    return writeCharactersToSave(ctx, ctx.characters);
 }
 
 void createNewGame(GameContext &ctx, const string &playerName, const string &classId)

@@ -268,27 +268,17 @@ namespace state_helpers
         DungeonProgressEntry &progress = ensureDungeonProgress(player, dungeon);
         const string dungeonId = dungeon.value("id", string());
         int maxDepth = Config::Progress::START_DEPTH;
-        int levelUnlockedDepth = Config::Progress::START_DEPTH;
 
         if (dungeon.contains("depths") && dungeon["depths"].is_array())
-        {
             maxDepth = max(Config::Progress::START_DEPTH, static_cast<int>(dungeon["depths"].size()));
-            int fallbackDepth = Config::Progress::START_DEPTH;
-            for (const auto &depthRow : dungeon["depths"])
-            {
-                const int depth = depthRow.value("depth", fallbackDepth);
-                int minLevel = Config::Progress::LEVEL_RANGE_MIN_FALLBACK;
-                if (depthRow.contains("level_range") && depthRow["level_range"].is_object())
-                    minLevel = depthRow["level_range"].value("min", Config::Progress::LEVEL_RANGE_MIN_FALLBACK);
 
-                if (player.level >= minLevel)
-                    levelUnlockedDepth = max(levelUnlockedDepth, depth);
-                ++fallbackDepth;
-            }
-        }
+        if (progress.completed)
+            progress.highest_cleared_depth = max(progress.highest_cleared_depth, maxDepth);
 
-        progress.unlocked_depth = clampInt(max(progress.unlocked_depth, levelUnlockedDepth), Config::Progress::START_DEPTH, maxDepth);
         progress.highest_cleared_depth = clampInt(progress.highest_cleared_depth, Config::Progress::NO_DEPTH_CLEARED, maxDepth);
+        progress.unlocked_depth = clampInt(progress.highest_cleared_depth + Config::Progress::DEPTH_UNLOCK_STEP,
+                                           Config::Progress::START_DEPTH,
+                                           maxDepth);
         if (progress.highest_cleared_depth >= maxDepth)
             progress.completed = true;
 
@@ -926,10 +916,45 @@ void runMainMenu(GameContext &ctx)
                      << " | Gold: " << character.gold << '\n';
             }
 
-            cout << "Pilih nomor character atau c untuk kembali: ";
+            cout << "Pilih nomor character, d hapus character, atau c untuk kembali: ";
             string input = toLower(readLine());
             if (input == "c")
                 return;
+            if (input == "d")
+            {
+                cout << "Nomor character yang ingin dihapus: ";
+                string deleteInput = toLower(readLine());
+                int deleteIndex = 0;
+                if (!tryParseInt(deleteInput, deleteIndex) || deleteIndex < 1 || deleteIndex > static_cast<int>(ctx.characters.size()))
+                {
+                    cout << "Pilihan character tidak valid.\n";
+                    waitForEnter();
+                    continue;
+                }
+
+                const Player &target = ctx.characters[static_cast<size_t>(deleteIndex - 1)];
+                cout << "Hapus character " << target.name << " (" << target.class_id << ", Lv " << target.level << ")? (y/n): ";
+                const string confirm = toLower(readLine());
+                if (confirm != "y" && confirm != "yes")
+                {
+                    cout << "Hapus character dibatalkan.\n";
+                    waitForEnter();
+                    continue;
+                }
+
+                if (!deleteCharacter(ctx, deleteIndex - 1))
+                {
+                    cout << "Character gagal dihapus.\n";
+                    waitForEnter();
+                    continue;
+                }
+
+                cout << "Character berhasil dihapus.\n";
+                waitForEnter();
+                if (ctx.characters.empty())
+                    return;
+                continue;
+            }
 
             int selected = 0;
             if (!tryParseInt(input, selected) || selected < 1 || selected > static_cast<int>(ctx.characters.size()))

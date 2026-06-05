@@ -113,6 +113,7 @@ namespace state_helpers
 
             const int unlockedDepth = getDungeonUnlockedDepth(ctx.player, dungeon);
             const int maxDepth = dungeonMaxDepth(dungeon);
+            DungeonProgressEntry &dungeonProgress = ensureDungeonProgress(ctx.player, dungeon);
 
             clearScreen();
             printStateHeader(ctx, dungeon.value("name", std::string()));
@@ -129,6 +130,8 @@ namespace state_helpers
 
                 cout << colorText(to_string(depth) + ". Depth " + to_string(depth), Color::Cyan, true)
                      << " | Recommended Lv " << minLevel << "-" << maxLevelRow;
+                if (depth <= dungeonProgress.highest_cleared_depth)
+                    cout << " [Completed]";
                 if (isBossEncounterDepth(dungeon, depth))
                     cout << " [Boss]";
                 cout << '\n';
@@ -1483,8 +1486,17 @@ using namespace state_helpers;
 // 4. jika seluruh langkah selesai, depth dianggap clear
 void runBattle(GameContext &ctx)
 {
+    auto restorePlayerResourcesToFull = [&]()
+    {
+        refreshPlayerResources(ctx);
+        ctx.player.hp = ctx.player.max_hp;
+        ctx.player.mp = ctx.player.max_mp;
+        saveGame(ctx);
+    };
+
     auto leaveBattleState = [&]()
     {
+        restorePlayerResourcesToFull();
         if (!ctx.stateStack.empty() && ctx.stateStack.back() == GameState::Battle)
             ctx.stateStack.pop_back();
     };
@@ -1536,6 +1548,7 @@ void runBattle(GameContext &ctx)
         const string explorationChoice = readLine();
         if (explorationChoice == "2")
         {
+            restorePlayerResourcesToFull();
             selectDungeonDepth(ctx, false);
             continue;
         }

@@ -12,6 +12,60 @@ using namespace consoleui;
 
 namespace state_helpers
 {
+    Stats baseStatsForCurrentClass(const GameContext &ctx)
+    {
+        Stats stats;
+        stats.str = Config::Defaults::PLAYER_STAT_STR;
+        stats.intl = Config::Defaults::PLAYER_STAT_INT;
+        stats.agi = Config::Defaults::PLAYER_STAT_AGI;
+        stats.vit = Config::Defaults::PLAYER_STAT_VIT;
+
+        const string primary = classPrimaryStat(ctx, ctx.player.class_id);
+        if (primary == "INT")
+            stats.intl += player_balance::kPrimaryStatBonusOnNewGame;
+        else if (primary == "AGI")
+            stats.agi += player_balance::kPrimaryStatBonusOnNewGame;
+        else if (primary == "VIT")
+            stats.vit += player_balance::kPrimaryStatBonusOnNewGame;
+        else
+            stats.str += player_balance::kPrimaryStatBonusOnNewGame;
+
+        return stats;
+    }
+
+    void resetCharacterStats(GameContext &ctx)
+    {
+        const Stats baseStats = baseStatsForCurrentClass(ctx);
+        const int refundedPoints =
+            max(Config::Math::ZERO, ctx.player.stats.str - baseStats.str) +
+            max(Config::Math::ZERO, ctx.player.stats.intl - baseStats.intl) +
+            max(Config::Math::ZERO, ctx.player.stats.agi - baseStats.agi) +
+            max(Config::Math::ZERO, ctx.player.stats.vit - baseStats.vit);
+
+        clearScreen();
+        printStateHeader(ctx, "RESET STATS");
+        cout << "Stat akan dikembalikan ke base class dan " << refundedPoints << " point dialokasikan ulang.\n";
+        cout << "Konfirmasi reset stats? (y/n): ";
+
+        const string confirm = toLower(readLine());
+        if (confirm != "y" && confirm != "yes")
+        {
+            cout << "Reset stats dibatalkan.\n";
+            waitForEnter();
+            return;
+        }
+
+        ctx.player.stats = baseStats;
+        ctx.player.stat_points += refundedPoints;
+        refreshPlayerResources(ctx);
+        ctx.player.hp = ctx.player.max_hp;
+        ctx.player.mp = ctx.player.max_mp;
+        saveGame(ctx);
+
+        cout << "Stats berhasil di-reset. HP dan MP dipulihkan penuh.\n";
+        waitForEnter();
+    }
+
     void characterMenu(GameContext &ctx)
     {
         while (true)
@@ -21,7 +75,8 @@ namespace state_helpers
             std::cout << colorText("1. Allocate Stats", Color::Green) << '\n';
             std::cout << colorText("2. Inventory & Equipment", Color::Cyan) << '\n';
             std::cout << colorText("3. Skill List", Color::Yellow) << '\n';
-            std::cout << colorText("4. Back", Color::Magenta) << '\n';
+            std::cout << colorText("4. Reset Stats", Color::Red) << '\n';
+            std::cout << colorText("5. Back", Color::Magenta) << '\n';
             std::cout << "Choose: ";
 
             const std::string choice = readLine();
@@ -32,6 +87,8 @@ namespace state_helpers
             else if (choice == "3")
                 skillMenu(ctx);
             else if (choice == "4")
+                resetCharacterStats(ctx);
+            else if (choice == "5")
                 return;
             else
             {
