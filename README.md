@@ -14,7 +14,7 @@ Metadata:
 
 ## Tujuan Refactor
 
-Arsitektur project disederhanakan menjadi beberapa file besar agar flow game lebih mudah dibaca dan lebih cocok untuk pengembangan tugas SDA. Struktur data manual berbasis Node/pointer akan masuk pada fase berikutnya.
+Arsitektur project dibuat modular secukupnya: fitur yang mirip digabung dalam beberapa file general agar mudah dibaca, tetapi flow tetap terpisah dari `main.cpp`. Detail struktur ada di `docs.md`.
 
 ## Struktur Folder
 
@@ -25,13 +25,24 @@ Void-Braver/
 |     |- game_data.json
 |     `- save.json
 |- include/
+|  |- game.h
 |  |- config.h
 |  |- database.h
+|  |- database_detail.h
 |  |- globals.h
 |  |- states.h
+|  |- state_helpers.h
+|  |- database/
+|  |  |- json_handler.h
+|  |  `- data_lookup.h
+|  |- states/
+|  |  |- menu_hub.h
+|  |  |- character_inventory.h
+|  |  `- battle_dungeon.h
 |  `- utils/
 |     `- console_ui.h
 |- src/
+|  |- game.cpp
 |  |- database/
 |  |  |- json_handler.cpp
 |  |  `- data_lookup.cpp
@@ -41,15 +52,19 @@ Void-Braver/
 |  |  `- battle_dungeon.cpp
 |  `- main.cpp
 |- CMakeLists.txt
+|- docs.md
 `- README.md
 ```
 
 ## File Penting
 
-- `include/config.h`: semua path, rule, dan angka balance.
+- `include/game.h`: deklarasi flow aplikasi utama.
+- `include/config.h`: aggregator path, rule, dan angka balance.
 - `include/globals.h`: enum, struct runtime, dan `GameContext`.
-- `include/database.h`: deklarasi load JSON, save/load character, lookup data, dan formula resource.
-- `include/states.h`: deklarasi flow menu, helper UI/input, inventory, dungeon, battle, crafting, dan shop.
+- `include/database.h`: aggregator header database.
+- `include/states.h`: aggregator header state.
+- `include/state_helpers.h`: deklarasi helper internal antar modul state.
+- `src/game.cpp`: load data, loop state, dispatch state, dan save saat keluar.
 - `src/database/json_handler.cpp`: path, JSON, serialization, save/load, dan create new game.
 - `src/database/data_lookup.cpp`: lookup ID, kategori item, formula EXP, HP/MP, dan bonus equipment.
 - `src/states/menu_hub.cpp`: main menu, hub, input helper, progress helper, UI helper, dan stat helper.
