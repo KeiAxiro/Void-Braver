@@ -163,6 +163,195 @@
         "str": 30293,
         "vit": 10
       }
+    },
+    {
+      "class_id": "knight",
+      "class_tier_id": "knight",
+      "class_tier_name": "Knight",
+      "cooldowns": [],
+      "current_exp": 0,
+      "gold": 1200,
+      "hp": 1272,
+      "id": "freestyle",
+      "inventory": [
+        {
+          "equipped": false,
+          "item_id": "healing_potion",
+          "quantity": 3
+        },
+        {
+          "equipped": false,
+          "item_id": "mana_elixir",
+          "quantity": 2
+        },
+        {
+          "equipped": true,
+          "item_id": "leather_coif",
+          "quantity": 1,
+          "slot": "Helmet"
+        },
+        {
+          "equipped": true,
+          "item_id": "padded_tunic",
+          "quantity": 1,
+          "slot": "Armor"
+        },
+        {
+          "equipped": true,
+          "item_id": "rusty_greatsword",
+          "quantity": 1,
+          "slot": "Weapon"
+        },
+        {
+          "equipped": true,
+          "item_id": "traveler_s_boots",
+          "quantity": 1,
+          "slot": "Boots"
+        }
+      ],
+      "level": 1,
+      "max_hp": 1527,
+      "max_mp": 95,
+      "mp": 95,
+      "name": "freestyle",
+      "progress": {
+        "current_depth": 1,
+        "current_dungeon": null,
+        "max_depth_unlocked": 0
+      },
+      "stat_points": 15,
+      "stats": {
+        "agi": 10,
+        "int": 10,
+        "str": 18,
+        "vit": 10
+      }
+    },
+    {
+      "class_id": "knight",
+      "class_tier_id": "knight",
+      "class_tier_name": "Knight",
+      "cooldowns": [],
+      "current_exp": 0,
+      "gold": 1200,
+      "hp": 1272,
+      "id": "ppp",
+      "inventory": [
+        {
+          "equipped": false,
+          "item_id": "healing_potion",
+          "quantity": 3
+        },
+        {
+          "equipped": false,
+          "item_id": "mana_elixir",
+          "quantity": 2
+        },
+        {
+          "equipped": true,
+          "item_id": "leather_coif",
+          "quantity": 1,
+          "slot": "Helmet"
+        },
+        {
+          "equipped": true,
+          "item_id": "padded_tunic",
+          "quantity": 1,
+          "slot": "Armor"
+        },
+        {
+          "equipped": true,
+          "item_id": "rusty_greatsword",
+          "quantity": 1,
+          "slot": "Weapon"
+        },
+        {
+          "equipped": true,
+          "item_id": "traveler_s_boots",
+          "quantity": 1,
+          "slot": "Boots"
+        }
+      ],
+      "level": 1,
+      "max_hp": 1527,
+      "max_mp": 95,
+      "mp": 95,
+      "name": "ppp",
+      "progress": {
+        "current_depth": 1,
+        "current_dungeon": null,
+        "max_depth_unlocked": 0
+      },
+      "stat_points": 15,
+      "stats": {
+        "agi": 10,
+        "int": 10,
+        "str": 18,
+        "vit": 10
+      }
+    },
+    {
+      "class_id": "knight",
+      "class_tier_id": "knight",
+      "class_tier_name": "Knight",
+      "cooldowns": [],
+      "current_exp": 0,
+      "gold": 1200,
+      "hp": 1272,
+      "id": "1",
+      "inventory": [
+        {
+          "equipped": false,
+          "item_id": "healing_potion",
+          "quantity": 3
+        },
+        {
+          "equipped": false,
+          "item_id": "mana_elixir",
+          "quantity": 2
+        },
+        {
+          "equipped": true,
+          "item_id": "leather_coif",
+          "quantity": 1,
+          "slot": "Helmet"
+        },
+        {
+          "equipped": true,
+          "item_id": "padded_tunic",
+          "quantity": 1,
+          "slot": "Armor"
+        },
+        {
+          "equipped": true,
+          "item_id": "rusty_greatsword",
+          "quantity": 1,
+          "slot": "Weapon"
+        },
+        {
+          "equipped": true,
+          "item_id": "traveler_s_boots",
+          "quantity": 1,
+          "slot": "Boots"
+        }
+      ],
+      "level": 1,
+      "max_hp": 1527,
+      "max_mp": 95,
+      "mp": 95,
+      "name": "1",
+      "progress": {
+        "current_depth": 1,
+        "current_dungeon": null,
+        "max_depth_unlocked": 0
+      },
+      "stat_points": 15,
+      "stats": {
+        "agi": 10,
+        "int": 10,
+        "str": 18,
+        "vit": 10
+      }
     }
   ]
 }
