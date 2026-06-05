@@ -1,5 +1,8 @@
-#include "database.h"
+#include "database/json_handler.h"
+#include "database/data_lookup.h"
+#include "database_detail.h"
 #include "config.h"
+
 #include <cctype>
 #include <filesystem>
 #include <fstream>
@@ -7,8 +10,7 @@
 #include <sstream>
 #include <string>
 
-// ---- merged from src/database/json_and_paths.cpp
-
+// ---- JSON and path helpers
 using namespace std;
 
 namespace database_detail
@@ -179,8 +181,7 @@ namespace database_detail
     }
 } // namespace database_detail
 
-// ---- merged from src/database/player_serialization.cpp
-
+// ---- Player serialization
 using namespace std;
 using namespace database_detail;
 
@@ -369,8 +370,7 @@ namespace database_detail
     }
 } // namespace database_detail
 
-// ---- merged from src/database/save_system.cpp
-
+// ---- Save system
 using namespace std;
 using namespace database_detail;
 

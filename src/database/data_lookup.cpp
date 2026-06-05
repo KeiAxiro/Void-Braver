@@ -1,10 +1,11 @@
-#include "database.h"
+#include "database/data_lookup.h"
+#include "database_detail.h"
 #include "config.h"
+
 #include <algorithm>
 #include <string>
 
-// ---- merged from src/database/data_lookup.cpp
-
+// ---- Data lookup
 using namespace std;
 using namespace database_detail;
 
@@ -140,9 +141,7 @@ bool isEquipmentCategory(const string &category)
     return !slotFromCategory(category).empty();
 }
 
-
-// ---- merged from src/database/resource_balance.cpp
-
+// ---- Resource balance
 using namespace std;
 using namespace database_detail;
 

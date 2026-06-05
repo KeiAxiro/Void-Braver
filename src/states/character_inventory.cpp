@@ -1,15 +1,12 @@
-#include "states.h"
+#include "states/character_inventory.h"
 #include "database.h"
 #include "utils/console_ui.h"
+
 #include <algorithm>
 #include <iostream>
 #include <string>
 
-
-// ---- merged from src/states/character_menu.cpp
-
-
-
+// ---- Character menu
 using namespace std;
 using namespace consoleui;
 
@@ -45,10 +42,7 @@ namespace state_helpers
     }
 } // namespace state_helpers
 
-// ---- merged from src/states/character_progression.cpp
-
-
-
+// ---- Character progression and skills
 using namespace std;
 using namespace consoleui;
 
@@ -210,10 +204,7 @@ namespace state_helpers
     }
 } // namespace state_helpers
 
-// ---- merged from src/states/inventory_menu.cpp
-
-
-
+// ---- Inventory menu
 using namespace std;
 using namespace consoleui;
 
@@ -444,10 +435,7 @@ namespace state_helpers
     }
 } // namespace state_helpers
 
-// ---- merged from src/states/item_catalog_features.cpp
-
-
-
+// ---- Item catalog helpers
 using namespace std;
 
 namespace state_helpers
@@ -584,10 +572,7 @@ namespace state_helpers
     }
 } // namespace state_helpers
 
-// ---- merged from src/states/crafting_menu.cpp
-
-
-
+// ---- Crafting menu
 using namespace std;
 using namespace consoleui;
 
@@ -792,10 +777,7 @@ namespace state_helpers
 
 } // namespace state_helpers
 
-// ---- merged from src/states/shop_menu.cpp
-
-
-
+// ---- Shop menu
 using namespace std;
 using namespace consoleui;
 
@@ -1123,5 +1105,3 @@ namespace state_helpers
     }
 
 } // namespace state_helpers
-
-

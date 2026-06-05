@@ -1,19 +1,17 @@
-#include "states.h"
+#include "states/battle_dungeon.h"
 #include "database.h"
 #include "config.h"
 #include "utils/console_ui.h"
+
 #include <algorithm>
 #include <cmath>
 #include <iostream>
 #include <string>
-#include <unordered_set>
 #include <unordered_map>
+#include <unordered_set>
 #include <vector>
 
-
-// ---- merged from src/states/math_helpers.cpp
-
-
+// ---- Math helpers
 namespace state_helpers
 {
     double normalizedRatio(int value, int minValue, int maxValue)
@@ -33,18 +31,12 @@ namespace state_helpers
     }
 } // namespace state_helpers
 
-// ---- merged from src/states/dungeon_menu.cpp
-
-
-
+// ---- Dungeon menu
 using namespace std;
 using namespace consoleui;
 
 namespace state_helpers
 {
-    constexpr int kStandardBossDepth = 20;
-    constexpr int kFinalDungeonBossSpawnDepth = 21;
-
     bool isVoidThroneDungeon(const json &dungeon)
     {
         const string dungeonId = dungeon.value("id", string());
@@ -189,10 +181,7 @@ namespace state_helpers
     }
 } // namespace state_helpers
 
-// ---- merged from src/states/enemy_factory.cpp
-
-
-
+// ---- Enemy factory
 using namespace std;
 
 namespace state_helpers
@@ -431,10 +420,7 @@ namespace state_helpers
     }
 } // namespace state_helpers
 
-// ---- merged from src/states/battle_helpers.cpp
-
-
-
+// ---- Battle and dungeon-map helpers
 using namespace std;
 using namespace consoleui;
 
@@ -480,26 +466,6 @@ namespace state_helpers
 
         return steps;
     }
-
-    enum class DungeonMapEncounterType
-    {
-        Empty,
-        VisibleEncounter,
-        HiddenEncounter,
-        Campfire,
-        Trap,
-        GuaranteedEncounter
-    };
-
-    struct DungeonMapNode
-    {
-        int depth = 0;
-        bool isFinalNode = false;
-        DungeonMapEncounterType encounterType = DungeonMapEncounterType::Empty;
-        bool encounterResolved = false;
-        DungeonMapNode *left = nullptr;
-        DungeonMapNode *right = nullptr;
-    };
 
     DungeonMapNode *buildDungeonMapNode(int depth, std::unordered_map<int, DungeonMapNode *> &nodePool)
     {
@@ -1061,10 +1027,7 @@ namespace state_helpers
     }
 } // namespace state_helpers
 
-// ---- merged from src/states/battle_effects.cpp
-
-
-
+// ---- Battle effects and rewards
 using namespace std;
 using namespace consoleui;
 
@@ -1232,10 +1195,7 @@ namespace state_helpers
     }
 } // namespace state_helpers
 
-// ---- merged from src/states/battle_skills.cpp
-
-
-
+// ---- Battle skills
 using namespace std;
 using namespace consoleui;
 
@@ -1514,9 +1474,7 @@ namespace state_helpers
     }
 } // namespace state_helpers
 
-// ---- merged from src/states/battle_state.cpp
-
-
+// ---- Battle state
 using namespace std;
 using namespace consoleui;
 using namespace state_helpers;
@@ -1764,5 +1722,3 @@ void runBattle(GameContext &ctx)
             continue;
     }
 }
-
-

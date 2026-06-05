@@ -8,6 +8,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 set(VOID_BRAVER_SOURCES
     src/main.cpp
+    src/game.cpp
     src/database/json_handler.cpp
     src/database/data_lookup.cpp
     src/states/menu_hub.cpp
@@ -16,6 +17,7 @@ set(VOID_BRAVER_SOURCES
 )
 
 set(VOID_BRAVER_HEADERS
+    include/game.h
     include/config.h
     include/config/paths.h
     include/config/math.h
@@ -32,7 +34,14 @@ set(VOID_BRAVER_HEADERS
     include/config/legacy.h
     include/globals.h
     include/database.h
+    include/database/json_handler.h
+    include/database/data_lookup.h
+    include/database_detail.h
     include/states.h
+    include/states/menu_hub.h
+    include/states/character_inventory.h
+    include/states/battle_dungeon.h
+    include/state_helpers.h
     include/utils/console_ui.h
 )
 
