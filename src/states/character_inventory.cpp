@@ -285,7 +285,7 @@ namespace state_helpers
         return true;
     }
 
-    void useConsumable(GameContext &ctx, size_t index)
+    void useConsumable(GameContext &ctx, size_t index, BattleState *battle)
     {
         if (index >= ctx.player.inventory.size())
             return;
@@ -296,6 +296,50 @@ namespace state_helpers
         if (item->value("category", string()) != "consumable")
         {
             cout << "Item ini bukan consumable.\n";
+            return;
+        }
+
+        const string itemId = item->value("id", string());
+        const string itemName = item->value("name", string());
+        if (itemId == "infinity_sphere")
+        {
+            if (battle)
+            {
+                battle->playerAtkBuffTurns = max(battle->playerAtkBuffTurns, 999);
+                battle->playerDefBuffTurns = max(battle->playerDefBuffTurns, 999);
+                battle->playerAgiBuffTurns = max(battle->playerAgiBuffTurns, 999);
+                cout << itemName << " digunakan. Semua statistik battle meningkat 100% untuk sisa pertarungan.\n";
+            }
+            else
+            {
+                cout << itemName << " digunakan. Efek ini hanya aktif saat battle.\n";
+            }
+            removeItem(ctx.player, ctx.player.inventory[index].item_id, Config::Item::CONSUMABLE_USE_QUANTITY);
+            return;
+        }
+
+        if (itemId == "soul_lantern")
+        {
+            const int targetHp = ctx.player.max_hp * 75 / 100;
+            const int targetMp = ctx.player.max_mp * 75 / 100;
+            const int healHp = max(0, targetHp - ctx.player.hp);
+            const int healMp = max(0, targetMp - ctx.player.mp);
+
+            ctx.player.hp = max(ctx.player.hp, targetHp);
+            ctx.player.mp = max(ctx.player.mp, targetMp);
+            removeItem(ctx.player, ctx.player.inventory[index].item_id, Config::Item::CONSUMABLE_USE_QUANTITY);
+            cout << itemName << " digunakan. ";
+            if (healHp > 0)
+                cout << "HP +" << healHp;
+            if (healMp > 0)
+            {
+                if (healHp > 0)
+                    cout << ", ";
+                cout << "MP +" << healMp;
+            }
+            if (healHp == 0 && healMp == 0)
+                cout << "HP dan MP sudah berada di atas 75% maksimum.";
+            cout << '\n';
             return;
         }
 
@@ -310,7 +354,7 @@ namespace state_helpers
         ctx.player.hp = min(ctx.player.max_hp, ctx.player.hp + healHp);
         ctx.player.mp = min(ctx.player.max_mp, ctx.player.mp + healMp);
         removeItem(ctx.player, ctx.player.inventory[index].item_id, Config::Item::CONSUMABLE_USE_QUANTITY);
-        cout << item->value("name", string()) << " digunakan. ";
+        cout << itemName << " digunakan. ";
         if (healHp > 0)
             cout << "HP +" << healHp;
         if (healMp > 0)
@@ -626,7 +670,7 @@ namespace state_helpers
                 }
 
                 manualSort(recipes, [&](const json *left, const json *right)
-                          {
+                           {
                     const bool leftCanCraft = canCraftItem(ctx, *left);
                     const bool rightCanCraft = canCraftItem(ctx, *right);
                     const bool leftClass = left->value("required_class_id", std::string()) == ctx.player.class_id;
@@ -829,7 +873,7 @@ namespace state_helpers
                 }
 
                 manualSort(items, [&](const json *left, const json *right)
-                          {
+                           {
                     const bool leftClass = left->value("required_class_id", std::string()) == ctx.player.class_id;
                     const bool rightClass = right->value("required_class_id", std::string()) == ctx.player.class_id;
                     if (leftClass != rightClass)

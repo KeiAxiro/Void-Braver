@@ -34,15 +34,15 @@
           "skill_id": "calamity_end"
         }
       ],
-      "current_exp": 144498787,
-      "gold": 1955019,
-      "hp": 265542,
+      "current_exp": 144562188,
+      "gold": 1738355,
+      "hp": 290156,
       "id": "kei",
       "inventory": [
         {
           "equipped": false,
           "item_id": "healing_potion",
-          "quantity": 68
+          "quantity": 67
         },
         {
           "equipped": false,
@@ -72,17 +72,17 @@
         {
           "equipped": false,
           "item_id": "fine_fiber",
-          "quantity": 5
+          "quantity": 8
         },
         {
           "equipped": false,
           "item_id": "iron_scrap",
-          "quantity": 6
+          "quantity": 8
         },
         {
           "equipped": false,
           "item_id": "heavy_ore",
-          "quantity": 6
+          "quantity": 11
         },
         {
           "equipped": true,
@@ -111,13 +111,28 @@
         {
           "equipped": false,
           "item_id": "mana_shard",
-          "quantity": 4
+          "quantity": 8
+        },
+        {
+          "equipped": false,
+          "item_id": "void_essence",
+          "quantity": 1
+        },
+        {
+          "equipped": false,
+          "item_id": "infinity_sphere",
+          "quantity": 10
+        },
+        {
+          "equipped": false,
+          "item_id": "soul_lantern",
+          "quantity": 9
         }
       ],
-      "level": 2562,
-      "max_hp": 393707,
-      "max_mp": 51315,
-      "mp": 51315,
+      "level": 2563,
+      "max_hp": 393812,
+      "max_mp": 51335,
+      "mp": 51190,
       "name": "kei",
       "progress": {
         "current_depth": 20,
@@ -129,34 +144,34 @@
             "unlocked_depth": 20
           },
           "dungeon_of_knowledge_and_wisdom": {
-            "completed": false,
-            "highest_cleared_depth": 0,
+            "completed": true,
+            "highest_cleared_depth": 20,
             "unlocked_depth": 20
           },
           "dungeon_of_thorns_and_resilience": {
-            "completed": false,
-            "highest_cleared_depth": 0,
+            "completed": true,
+            "highest_cleared_depth": 20,
             "unlocked_depth": 20
           },
           "dungeon_of_valor_and_ember": {
-            "completed": false,
+            "completed": true,
             "highest_cleared_depth": 0,
             "unlocked_depth": 20
           },
           "dungeon_of_whispers_and_shadows": {
-            "completed": false,
+            "completed": true,
             "highest_cleared_depth": 0,
             "unlocked_depth": 20
           },
           "tahta_kehampaan": {
             "completed": false,
-            "highest_cleared_depth": 0,
+            "highest_cleared_depth": 1,
             "unlocked_depth": 5
           }
         },
         "max_depth_unlocked": 20
       },
-      "stat_points": 0,
+      "stat_points": 10,
       "stats": {
         "agi": 10,
         "int": 10,

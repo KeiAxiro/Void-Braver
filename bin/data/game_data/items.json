@@ -1527,7 +1527,7 @@
       "id": "infinity_sphere",
       "category": "consumable",
       "name": "Infinity Sphere",
-      "description": "Mengurangi seluruh durasi cooldown skill yang sedang aktif sebanyak 1-2 turn secara instan.",
+      "description": "Meningkatkan semua statistik player sebesar 100% selama battle.",
       "buy_price": 15000,
       "sell_price": 1800,
       "required_class_id": "null",
@@ -1537,7 +1537,7 @@
         "hp_bonus": 0,
         "def_bonus": 0
       },
-      "special_effect": "null"
+      "special_effect": "Meningkatkan ATK/DEF/Speed 100% selama battle."
     },
     {
       "id": "iron_chainmail",
@@ -2989,7 +2989,7 @@
       "id": "soul_lantern",
       "category": "consumable",
       "name": "Soul Lantern",
-      "description": "Memberikan Auto-Revive satu kali kesempatan.",
+      "description": "Mengembalikan HP dan MP hingga 75% maksimum.",
       "buy_price": 8000,
       "sell_price": 2500,
       "required_class_id": "null",
@@ -2999,7 +2999,7 @@
         "hp_bonus": 0,
         "def_bonus": 0
       },
-      "special_effect": "null"
+      "special_effect": "Memulihkan HP dan MP ke 75% maksimum."
     },
     {
       "id": "specter_s_gaze",

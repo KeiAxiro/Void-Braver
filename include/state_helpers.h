@@ -227,7 +227,8 @@ namespace state_helpers
     void allocateStats(GameContext &ctx);
     bool equipInventoryEntry(GameContext &ctx, std::size_t index);
     bool unequipInventoryEntry(GameContext &ctx, std::size_t index);
-    void useConsumable(GameContext &ctx, std::size_t index);
+    void useConsumable(GameContext &ctx, std::size_t index, BattleState *battle = nullptr);
+    bool useBattleConsumable(GameContext &ctx, BattleState &battle);
     void inventoryMenu(GameContext &ctx);
     void skillMenu(const GameContext &ctx);
     void characterMenu(GameContext &ctx);
