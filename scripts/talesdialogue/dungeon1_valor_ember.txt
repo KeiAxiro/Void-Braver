@@ -1,0 +1,193 @@
+=== DUNGEON OF VALOR AND EMBER ===
+
+[Bab 1: Memasuki Reruntuhan (Depth 1-5)]
+
+- Depth 1: "Bara Api yang Memanggil"
+  Pre:
+    The Chronicler: "Kastil Obsidian. Dahulu, kepak sayap naga pun takkan sanggup menggetarkan dindingnya. Kini... lihatlah. Hanya abu."
+    Hero: "Panasnya tidak biasa. Rasanya seperti ada sesuatu yang sengaja menungguku di dalam."
+    The Chronicler: "Bara apinya belum sepenuhnya mati. Tempat ini tahu kau datang."
+  Post:
+    Hero: "Mereka menyerang seakan tidak kenal rasa sakit."
+    The Chronicler: "Sisa kemarahan yang tertinggal di tanah ini memang menolak padam. Melangkahlah, abu di bawah kakimu masih hangat."
+
+- Depth 2: "Jejak Pasukan Penjaga"
+  Pre:
+    Gema Prajurit: "Tahan posisimu! Demi mahkota... jangan mundur!"
+    Hero: "Suara-suara itu... sangat jelas. Di mana mereka?"
+    The Chronicler: "Tidak ada siapa-siapa di sini. Hanya zirah-zirah tua yang merindukan tuannya."
+  Post:
+    Hero: "Zirah-zirah itu langsung hancur menjadi debu saat kusentuh."
+    The Chronicler: "Jiwa mereka terikat pada kewajiban masa lalu. Setidaknya, pedangmu baru saja mengakhiri tugas panjang mereka."
+
+- Depth 3: "Runtuhnya Tembok Obsidian"
+  Pre:
+    The Chronicler: "Tembok sekokoh ini hancur berantakan dari dalam. Ironis, bukan?"
+    Hero: "Pengkhianatan? Atau mereka kehilangan akal sehat?"
+    The Chronicler: "Kegelapan tidak melulu mendobrak pintu depan. Terkadang, ia hanya membisikkan keputusasaan ke telinga yang rapuh."
+  Post:
+    Hero: "Suhu di sekitar reruntuhan ini mendadak turun. Menyeramkan."
+    The Chronicler: "Itulah tanda kedatangan The Void. Dingin, hampa, dan tidak meninggalkan apa pun."
+
+- Depth 4: "Raungan dari Kawah Bawah"
+  Pre:
+    Hero: "Udaranya mulai membakar tenggorokan... cough... ada bau belerang yang sangat menyengat."
+    Raungan Monster: "Gggrrr... ROOOAAAR!"
+    The Chronicler: "Binatang kawah telah mencium aroma darah segar. Mereka lapar."
+  Post:
+    Hero: "Kulitnya sekeras batu lava, tapi akhirnya jatuh juga."
+    The Chronicler: "Itu baru permulaan. Raungan kematiannya pasti terdengar hingga ke dasar terdalam."
+
+- Depth 5: "Abu yang Tak Pernah Padam"
+  Pre:
+    Hero: "Magma di bawah sana... warnanya kebiruan? Ini tidak masuk akal."
+    The Chronicler: "Itu api yang memakan jiwamu, bukan jasadmu. Kutukan di tempat ini menolak mati."
+    Hero: "Aku tidak punya pilihan selain melewatinya."
+  Post:
+    The Chronicler: "Kau selamat dari kawah atas. Napasmu terdengar sangat terengah-engah."
+    Hero: "Aku baik-baik saja. Tapi jalan ke bawah... terlihat seperti mulut monster yang terbuka lebar."
+    The Chronicler: "Tetaplah waspada, kita memasuki wilayah terdalam."
+
+
+[Bab 2: Invasi Kegelapan (Depth 6-10)]
+
+- Depth 6: "Senjata Patah di Lautan Magma"
+  Pre:
+    The Chronicler: "Selamat datang di ruang tempa terakhir kastil ini. Di tempat ini, para pandai besi terbaik mati lemas oleh asap mereka sendiri."
+    Hero: "Mereka bertarung dengan waktu?"
+    The Chronicler: "Menempa siang dan malam, berharap bisa menciptakan zirah yang kebal terhadap bayangan. Tapi semua usaha mereka sia-sia."
+  Post:
+    Hero: "Semua pedang di rak ini patah. Logamnya meleleh seperti lilin."
+    The Chronicler: "Karena tidak ada logam di dunia ini yang sanggup menahan rasa takut, Kesatria."
+
+- Depth 7: "Sumpah Sang Kesatria Merah"
+  Pre:
+    Gema Jenderal Merah: "Selama jantungku masih berdetak, jembatan ini tidak akan pernah jatuh!"
+    Hero: "Suara ini... begitu berat, penuh dengan amarah."
+    The Chronicler: "Itulah Jenderal Merah. Pria yang berdiri di garis depan saat semua orang memilih untuk lari. Aku mengingat keberaniannya."
+  Post:
+    Hero: "Aku bisa merasakan getaran tekadnya. Udara di jembatan ini masih terasa hangat."
+    The Chronicler: "Puing-puing emosi yang kuat memang sulit terhapus oleh waktu, Kesatria."
+
+- Depth 8: "Ketika Langit Menjadi Gelap"
+  Pre:
+    Hero: "Tunggu... kenapa semua suara gemuruh magma mendadak hilang?"
+    The Chronicler: "Saat kegelapan itu datang, ia tidak membawa gemuruh. Hanya keheningan absolut yang mencekik langit."
+    Hero: "Rasanya seperti ada tangan tak kasat mata yang meremas jantungku."
+  Post:
+    The Chronicler: "Kau berhasil bertahan, Kesatria. Tarik napasmu dalam-dalam."
+    Hero: "Aku sempat berpikir... duniaku akan lenyap di sini, lagi."
+    The Chronicler: "Itulah ilusi kehampaan. Jangan biarkan ia merayap lebih jauh ke dalam pikiranmu."
+
+- Depth 9: "Keputusasaan di Ruang Barikade"
+  Pre:
+    Hero: "Banyak bekas kuku di pintu besi ini. Mereka mencoba mendobraknya?"
+    The Chronicler: "Bukan dari luar, Kesatria. Para prajurit mengunci diri di dalam, lalu saling menyerang karena paranoia."
+    Hero: "Mengerikan... terjebak bersama ketakutanmu sendiri."
+  Post:
+    Hero: "Mereka yang menghalangi jalan tadi... wujudnya sudah bukan manusia lagi."
+    The Chronicler: "Mereka hanya cangkang kosong yang digerakkan oleh rasa benci. Kau telah mengakhirinya."
+
+- Depth 10: "Kejatuhan Sang Jenderal"
+  Pre:
+    The Chronicler: "Di ujung jembatan ini, sang Jenderal akhirnya berlutut. Tubuhnya ditarik ke dalam aliran magma hitam."
+    Hero: "Dia berjuang sendirian sampai akhir?"
+    The Chronicler: "Ya. Dan tempat dia terjatuh kini menjadi sarang dari sesuatu yang menolak mati."
+  Post:
+    Hero: "Jembatan ini bergetar hebat. Lava di bawah mulai meluap!"
+    The Chronicler: "Kita harus segera pergi, Kesatria. Pemilik tempat ini tahu ada penyusup yang melintasi wilayahnya."
+
+
+[Bab 3: Korupsi Api (Depth 11-15)]
+
+- Depth 11: "Api yang Berubah Hitam"
+  Pre:
+    Hero: "Magmanya... benar-benar hitam sekarang. Dan baunya seperti pembusukan."
+    The Chronicler: "Korupsi di tempat ini telah mencapai puncaknya. Elemen murni gunung ini telah tunduk sepenuhnya pada The Void."
+  Post:
+    Hero: "Dingin sekali... aneh rasanya menggigil di dekat aliran lava."
+    The Chronicler: "Itulah dingin yang meracuni jiwa, Kesatria. Jangan biarkan kehangatan tubuhmu memudar."
+
+- Depth 12: "Monster yang Lahir dari Kepanikan"
+  Pre:
+    Suara Berbisik: "Tolong... di mana kepalaku...? Dingin..."
+    Hero: "Siapa di sana?! Tunjukkan dirimu!"
+    The Chronicler: "Jangan dengarkan, Kesatria. Itu bukan manusia lagi. Hanya sisa-sisa kepanikan yang mewujud menjadi monster."
+  Post:
+    Hero: "Mereka menangis saat aku menebasnya..."
+    The Chronicler: "Pedangmu adalah belas kasihan terbaik yang bisa mereka terima hari ini."
+
+- Depth 13: "Pesan Terakhir di Dinding Hangus"
+  Pre:
+    Hero: "Ada coretan di batu ini... 'Maaf, ayah tidak bisa pulang.'"
+    The Chronicler: "Pesan yang ditulis dengan jemari yang terbakar. Dia tahu dia tidak akan pernah melihat putrinya lagi."
+    Hero: "Setidaknya aku akan memastikan kematiannya tidak berakhir sia-sia."
+  Post:
+    The Chronicler: "Kata-kata yang berani, Kesatria. Kuharap tekadmu bertahan hingga ke ujung kawah."
+    Hero: "Aku tidak akan membiarkan tempat ini merenggut sisa hidupku."
+
+- Depth 14: "Kebangkitan Pasukan Abu"
+  Pre:
+    Hero: "Tumpukan abu itu... bergerak sendiri. Seperti ada yang mengaduknya dari dalam."
+    The Chronicler: "Mereka kembali bangkit. Jasad-jasad hangus yang menolak dilupakan, digerakkan oleh benang tak terlihat."
+    Hero: "Bahkan kematian pun tidak memberi mereka ketenangan."
+  Post:
+    Hero: "Mereka hancur menjadi debu lagi."
+    The Chronicler: "Dan debu itu tidak akan bangkit lagi. Kau telah memutus benang yang mengikat mereka, Kesatria."
+
+- Depth 15: "Lorong Keputusasaan"
+  Pre:
+    The Chronicler: "Satu jalan terakhir menuju inti gunung. Lorong ini dikenal sebagai jalan tanpa kepulangan."
+    Hero: "Aku bisa merasakan tekanan yang luar biasa di kepalaku."
+    The Chronicler: "Kematian begitu dekat di sini, Kesatria. Tetap fokus, atau pikiranmu akan hancur sebelum sempat bertarung."
+  Post:
+    Hero: "Aku berhasil lolos... tapi napas dan dadaku rasanya sesak sekali."
+    The Chronicler: "Kita sudah di gerbang kuil terdalam. Di balik pintu besar itu, takdirmu menanti."
+
+
+[Bab 4: Pusat Kawah & Sang Penjaga (Depth 16-20)]
+
+- Depth 16: "Jantung Gunung Berapi"
+  Pre:
+    Hero: "Kuil ini... melayang di atas magma. Bagaimana mungkin?"
+    The Chronicler: "Sihir kuno kerajaan. Tempat ini dulu menyimpan esensi kehidupan sebelum dikotori oleh kegelapan."
+  Post:
+    Hero: "Udaranya begitu pekat... sulit bahkan untuk sekadar berdiri tegak."
+    The Chronicler: "Istirahatlah sejenak, Kesatria. Lawanmu berikutnya tidak akan memberimu waktu untuk menarik napas."
+
+- Depth 17: "Gema Peperangan yang Terlupakan"
+  Pre:
+    Suara Berisik: "*Teriakan perang, benturan baja, tangisan ketakutan yang bersahut-sahutan*"
+    Hero: "Suara ini... rasanya seperti berada langsung di tengah medan pertempuran!"
+    The Chronicler: "Waktu telah kehilangan maknanya di sini. Peperangan ratusan tahun lalu masih berlangsung di dalam ruang hampa ini."
+  Post:
+    Hero: "Keheningan ini... hampir terasa menyakitkan setelah semua teriakan bising tadi."
+    The Chronicler: "Karena kau baru saja membungkam paksa sisa peperangan itu dengan langkah kakimu, Kesatria."
+
+- Depth 18: "Kegilaan The Ashen Warlord"
+  Pre:
+    The Chronicler: "Dia di sana, Kesatria. Berdiri di atas altar hangus."
+    The Ashen Warlord: "...Langkah... siapa itu...? Mengapa... api ini... begitu dingin...?"
+    Hero: "Jenderal Merah... jadi itu yang tersisa darimu?"
+  Post:
+    The Ashen Warlord: "AAARRGHHH! Pergi... dari... kepalaku!"
+    The Chronicler: "Korupsi *The Void* mencengkeram jiwanya kembali. Jangan lengah, dia akan menyerang lebih membabi butu!"
+
+- Depth 19: "Percikan Harapan Terakhir"
+  Pre:
+    The Ashen Warlord: "Anak muda... pedangmu... tusuk jantungku... kumohon..."
+    Hero: "Dia masih di dalam sana! Dia sedang melawan kendalinya sendiri!"
+    The Chronicler: "Ini kesempatan terakhirmu, Kesatria. Bantu dia mengakhiri penderitaan ini dengan senjatamu!"
+  Post:
+    The Ashen Warlord: "Terima kasih... aku... bisa melihat... langit merah yang asli lagi..."
+    Hero: "Satu pukulan lagi, Jenderal. Kau akan bebas sepenuhnya."
+
+- Depth 20: "Lahirnya Crimson Orb"
+  Pre:
+    The Chronicler: "Tidak ada jalan mundur. Berikan dia kematian seorang kesatria."
+    The Ashen Warlord: "Datanglah! Biarkan... pertarungan terakhir ini... membakar habis sisaku!"
+    Hero: "Terima kasih atas jalannya, Jenderal. Selamat jalan."
+  Post:
+    The Ashen Warlord: "Kerajaan kita... tidak akan sepenuhnya runtuh... selama... masih ada orang sepertimu..."
+    The Chronicler: "Lihatlah. Jasadnya meluruh menjadi abu emas yang tenang. Dan di tengah sisa-sisanya, sebuah kristal berkilau."
+    Hero: "Crimson Orb... terasa sangat hangat. Seperti tekadnya yang membara."
