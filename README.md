@@ -4,11 +4,11 @@ CLI Text RPG berbasis C++17 untuk project UAS Struktur Data & Algoritma.
 
 Metadata:
 
-- Anggota 1: Keidjaru Axiro (2511446)
+- Anggota 1: Aziz Hardiyan (2507361)
 - Anggota 2: Keidjaru Axiro (2511446)
-- Anggota 3: Keidjaru Axiro (2511446)
-- Anggota 4: Keidjaru Axiro (2511446)
-- Anggota 5: Keidjaru Axiro (2511446)
+- Anggota 3: Muhammad Hasan Albana (2506896)
+- Anggota 4: Muhammad Dzhafa Abdurrahman (2511041)
+- Anggota 5: Rizky Aryo Prasetyo (2509694)
 
 - Program Studi: Rekayasa Perangkat Lunak, Universitas Pendidikan Indonesia Kampus Cibiru
 
