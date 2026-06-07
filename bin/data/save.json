@@ -6,7 +6,7 @@
       "class_tier_name": "Warlord",
       "cooldowns": [
         {
-          "remaining_turns": 0,
+          "remaining_turns": 4,
           "skill_id": "undying_juggernaut"
         },
         {
@@ -30,24 +30,23 @@
           "skill_id": "blood_and_iron"
         },
         {
-          "remaining_turns": 0,
+          "remaining_turns": 3,
           "skill_id": "calamity_end"
+        },
+        {
+          "remaining_turns": 0,
+          "skill_id": "pommel_strike"
         }
       ],
-      "current_exp": 144562188,
-      "gold": 1738355,
+      "current_exp": 144588377,
+      "gold": 1753133,
       "hp": 135197,
       "id": "kei",
       "inventory": [
         {
           "equipped": false,
           "item_id": "healing_potion",
-          "quantity": 67
-        },
-        {
-          "equipped": false,
-          "item_id": "mana_elixir",
-          "quantity": 2
+          "quantity": 52
         },
         {
           "equipped": false,
@@ -72,17 +71,17 @@
         {
           "equipped": false,
           "item_id": "fine_fiber",
-          "quantity": 8
+          "quantity": 99999
         },
         {
           "equipped": false,
           "item_id": "iron_scrap",
-          "quantity": 8
+          "quantity": 99999
         },
         {
           "equipped": false,
           "item_id": "heavy_ore",
-          "quantity": 11
+          "quantity": 99999
         },
         {
           "equipped": true,
@@ -111,22 +110,37 @@
         {
           "equipped": false,
           "item_id": "mana_shard",
-          "quantity": 8
+          "quantity": 99999
         },
         {
           "equipped": false,
           "item_id": "void_essence",
-          "quantity": 1
+          "quantity": 99999
+        },
+        {
+          "equipped": false,
+          "item_id": "arcane_crystal",
+          "quantity": 99999
+        },
+        {
+          "equipped": false,
+          "item_id": "refined_plate",
+          "quantity": 99999
+        },
+        {
+          "equipped": false,
+          "item_id": "silent_thread",
+          "quantity": 99999
         },
         {
           "equipped": false,
           "item_id": "infinity_sphere",
-          "quantity": 10
+          "quantity": 4
         },
         {
           "equipped": false,
           "item_id": "soul_lantern",
-          "quantity": 9
+          "quantity": 8
         }
       ],
       "level": 100,
@@ -135,8 +149,8 @@
       "mp": 2075,
       "name": "kei",
       "progress": {
-        "current_depth": 20,
-        "current_dungeon": "dungeon_of_echoes_and_destiny",
+        "current_depth": 5,
+        "current_dungeon": "tahta_kehampaan",
         "dungeon_progress": {
           "dungeon_of_echoes_and_destiny": {
             "completed": true,
@@ -155,21 +169,21 @@
           },
           "dungeon_of_valor_and_ember": {
             "completed": true,
-            "highest_cleared_depth": 0,
+            "highest_cleared_depth": 20,
             "unlocked_depth": 20
           },
           "dungeon_of_whispers_and_shadows": {
             "completed": true,
-            "highest_cleared_depth": 0,
+            "highest_cleared_depth": 20,
             "unlocked_depth": 20
           },
           "tahta_kehampaan": {
             "completed": false,
-            "highest_cleared_depth": 1,
+            "highest_cleared_depth": 4,
             "unlocked_depth": 5
           }
         },
-        "max_depth_unlocked": 20
+        "max_depth_unlocked": 5
       },
       "stat_points": 10,
       "stats": {
@@ -286,6 +300,231 @@
         "agi": 10,
         "int": 10,
         "str": 953,
+        "vit": 10
+      }
+    },
+    {
+      "class_id": "sorcerer",
+      "class_tier_id": "archon",
+      "class_tier_name": "Archon",
+      "cooldowns": [
+        {
+          "remaining_turns": 0,
+          "skill_id": "mana_bolt"
+        },
+        {
+          "remaining_turns": 4,
+          "skill_id": "meteor_fall"
+        },
+        {
+          "remaining_turns": 1,
+          "skill_id": "abyssal_singularity"
+        },
+        {
+          "remaining_turns": 5,
+          "skill_id": "void_apocalypse"
+        },
+        {
+          "remaining_turns": 0,
+          "skill_id": "astral_rebirth"
+        },
+        {
+          "remaining_turns": 0,
+          "skill_id": "frost_nova"
+        },
+        {
+          "remaining_turns": 0,
+          "skill_id": "ignite"
+        }
+      ],
+      "current_exp": 190043788,
+      "gold": 1215754067,
+      "hp": 21295,
+      "id": "tessa",
+      "inventory": [
+        {
+          "equipped": false,
+          "item_id": "healing_potion",
+          "quantity": 54
+        },
+        {
+          "equipped": false,
+          "item_id": "mana_elixir",
+          "quantity": 2000
+        },
+        {
+          "equipped": false,
+          "item_id": "leather_coif",
+          "quantity": 1
+        },
+        {
+          "equipped": false,
+          "item_id": "padded_tunic",
+          "quantity": 1
+        },
+        {
+          "equipped": false,
+          "item_id": "rusty_greatsword",
+          "quantity": 1
+        },
+        {
+          "equipped": false,
+          "item_id": "traveler_s_boots",
+          "quantity": 1
+        },
+        {
+          "equipped": false,
+          "item_id": "fine_fiber",
+          "quantity": 89934
+        },
+        {
+          "equipped": false,
+          "item_id": "iron_scrap",
+          "quantity": 10013
+        },
+        {
+          "equipped": false,
+          "item_id": "heavy_ore",
+          "quantity": 13011
+        },
+        {
+          "equipped": false,
+          "item_id": "heavy_war_boots",
+          "quantity": 1
+        },
+        {
+          "equipped": false,
+          "item_id": "royal_vanguard_blade",
+          "quantity": 1
+        },
+        {
+          "equipped": false,
+          "item_id": "commander_s_crest",
+          "quantity": 1
+        },
+        {
+          "equipped": false,
+          "item_id": "knight_s_plate",
+          "quantity": 1
+        },
+        {
+          "equipped": false,
+          "item_id": "mana_shard",
+          "quantity": 1006
+        },
+        {
+          "equipped": false,
+          "item_id": "void_essence",
+          "quantity": 2999839
+        },
+        {
+          "equipped": false,
+          "item_id": "infinity_sphere",
+          "quantity": 999
+        },
+        {
+          "equipped": false,
+          "item_id": "soul_lantern",
+          "quantity": 89999
+        },
+        {
+          "equipped": true,
+          "item_id": "god_stepper_soles",
+          "quantity": 1,
+          "slot": "Boots"
+        },
+        {
+          "equipped": true,
+          "item_id": "genesis_pillar",
+          "quantity": 1,
+          "slot": "Weapon"
+        },
+        {
+          "equipped": false,
+          "item_id": "refined_plate",
+          "quantity": 173463
+        },
+        {
+          "equipped": false,
+          "item_id": "astral_halo",
+          "quantity": 1234231
+        },
+        {
+          "equipped": false,
+          "item_id": "silent_thread",
+          "quantity": 132428
+        },
+        {
+          "equipped": true,
+          "item_id": "eternity_raiment",
+          "quantity": 1,
+          "slot": "Armor"
+        },
+        {
+          "equipped": true,
+          "item_id": "void_pendulum",
+          "quantity": 1,
+          "slot": "Accessory"
+        },
+        {
+          "equipped": false,
+          "item_id": "arcane_crystal",
+          "quantity": 1
+        },
+        {
+          "equipped": true,
+          "item_id": "astral_halo",
+          "quantity": 1,
+          "slot": "Helmet"
+        }
+      ],
+      "level": 100,
+      "max_hp": 21295,
+      "max_mp": 35526127,
+      "mp": 35526127,
+      "name": "Tessa",
+      "progress": {
+        "current_depth": 5,
+        "current_dungeon": "tahta_kehampaan",
+        "dungeon_progress": {
+          "dungeon_of_echoes_and_destiny": {
+            "completed": true,
+            "highest_cleared_depth": 20,
+            "unlocked_depth": 20
+          },
+          "dungeon_of_knowledge_and_wisdom": {
+            "completed": true,
+            "highest_cleared_depth": 20,
+            "unlocked_depth": 20
+          },
+          "dungeon_of_thorns_and_resilience": {
+            "completed": true,
+            "highest_cleared_depth": 20,
+            "unlocked_depth": 20
+          },
+          "dungeon_of_valor_and_ember": {
+            "completed": true,
+            "highest_cleared_depth": 20,
+            "unlocked_depth": 20
+          },
+          "dungeon_of_whispers_and_shadows": {
+            "completed": true,
+            "highest_cleared_depth": 20,
+            "unlocked_depth": 20
+          },
+          "tahta_kehampaan": {
+            "completed": true,
+            "highest_cleared_depth": 5,
+            "unlocked_depth": 5
+          }
+        },
+        "max_depth_unlocked": 5
+      },
+      "stat_points": 0,
+      "stats": {
+        "agi": 10,
+        "int": 8881023,
+        "str": 10,
         "vit": 10
       }
     }
